@@ -1,0 +1,76 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 16}
+\newcommand{\chtitle}{Lentilles minces convergentes}
+\newcommand{\dtype}{Cours}
+
+\newcommand{\lecon}[1]{
+	\colorbox{gray!20}{
+		\begin{minipage}{.98\linewidth}
+    			\centering \textbf{#1}
+		\end{minipage}
+	}
+}
+
+\begin{document}
+\maketitle
+\section{L'\oe il }
+Un \oe il réel est un récepteur de lumière. Il est constitué de l'\textbf{iris} qui limite la quantité de lumière pénétrant dans l'\oe il par la pupille. L'ensemble des milieux transparents comprenant la \textbf{cornée} et le \textbf{cristallin} forment l'image de l'objet observé sur la rétine. La \textbf{rétine} est située au fond de l'\oe il est là où se forme l'image avant d'être captée et traduite vers les cerveau.\\
+L'étude optique de ce système complexe peut être simplifiée en utilisant un modèle : le modèle de l'\oe il réduit.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|>{\centering}m{.25\linewidth}|>{\centering}m{.25\linewidth}|>{\centering\arraybackslash}m{.25\linewidth}|}
+    \hline  & L'\oe il réel & Modèle de l'\oe il réduit\\
+    \hline Limitation de la lumière pénétrant dans l'\oe il & Iris & Diaphragme\\
+    \hline Système optique & Ensemble des lumineux transparents (cornée, cristallin ...) & Lentille mince convergente\\
+    \hline Lieu de formation de l'image & Rétine & Écran situé à une distance constante $d$ de la lentille\\
+    \hline 
+    \end{tabular}
+\end{table}
+
+\section{Lentilles minces convergentes}
+    \subsection{Modèle du rayon lumineux}
+    Un \textbf{rayon lumineux} modélise le trajet suivi par la lumière pour aller d'un point à un autre. Il est représenté par un segment de droite fléché, la flèche indiquant le sens de propagation. C'est un \textbf{modèle :} il n'a pas de réalité physique. Une source émet toujours un faisceau lumineux constitué d'une infinité de rayons.
+
+    \subsection{Modèle de la lentille mince convergente}
+    Une lentille est dite minci si son épaisseur $e$ au centre est très inférieure aux rayons de courbure $R_1$ et $R_2$ de ses faces. Elle est convergente si le bord est plus mince que le centre.\\
+    Le modèle d'une lentille mince convergente néglige l'épaisseur de la lentille. La lentille mince convergente est représentée par un segment fléché.
+    \begin{itemize}
+        \item l'\textbf{axe optique} est l'axe de symétrie de la lentille.
+        \item le centre de la lentille est appelé \textbf{centre optique} $O$.
+    \end{itemize}
+    \lecon{Tout rayon lumineux passant par le centre optique d'une lentille mince convergente n'est pas dévié.}
+    \begin{itemize}
+        \item Les foyers $F$ et $F'$ d'une lentille convergente sont deux points particuliers de l'axe optique.
+    \end{itemize}
+    $F$ et $F'$ sont symétriques par rapport au centre optique $O$. La distance focale $f'$ d'une lentille mince convergente est la distance qui sépare le centre optique $O$ du foyer image $F'$ : $$f'=OF'$$
+    \lecon{\begin{itemize}
+        \item Tout rayon lumineux incident parallèle à l'axe optique émerge d'une lentille mince convergents en passant par le foyer image F'.
+       \item Tout rayon lumineux incident passant par le foyer objet F émerge d'une lentille minci convergente parallèlement à l'axe optique.
+    \end{itemize}}
+
+\section{Image réelle d'un objet réel formée par une lentille mince convergente}
+    \subsection{Point objet et point image}
+    \begin{itemize}
+        \item Un \textbf{objet réel} est modélisé par un ensemble de points objets. Un point objet est le point de croisement des rayons lumineux qui arrivent sur la lentille.
+        \item Un \textbf{point image} est le point de croisement des rayons lumineux qui émergent de la lentille. À chaque point objet correspond un point image et un seul. 
+    \end{itemize}
+
+    \subsection{Construction de l'image réelle d'un objet réel}
+        \subsubsection{Objet réel $AB$ situé à une distance finie de la lentille}
+        Le point $B'$ image du point objet $B$ est construit à l'aide d'au moins deux des trois rayons lumineux dont le chemin est connu.\\
+        Le point $A'$ image du point objet $a$ est tel que $A'B'$ est perpendiculaire à l'axe optique.
+
+        \subsubsection{Objet réel $AB$ situé à l'infini}
+        Lorsqu'un objet $AB$ est à l'infini, le faisceau issu de chaque point de cet objet et arrivant sur la lentille est un faisceau parallèle.\\
+        Le point image $A'$ est alors confondu avec le foyer image $F'$. Le point image $B'$ est dans le plan orthogonal à l'axe optique passant par $F'$, appelé plan focal image.\\ Pour construire le point image $B'$, le rayon lumineux passant par le centre optique suffit.
+    \subsection{Grandissement}
+    Pour comparer la taille et le sens de l'image $A'B'$ à ceux de l'objet $AB$, on détermine le \textbf{grandissement} $\mathbf{\gamma}$.\\
+    
+    \lecon{\begin{itemize}
+        \item Si l'image est dans le même sens que l'objet : $\mathbf{\gamma = \dfrac{A'B'}{AB}}$
+        \item Si l'image et l'objet sont dans des sens opposés : $\mathbf{\gamma = -\dfrac{A'B'}{AB}}$
+    \end{itemize}}
+\end{document}

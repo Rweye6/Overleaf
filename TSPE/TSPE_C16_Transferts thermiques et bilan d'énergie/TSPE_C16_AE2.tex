@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{10cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		AE2 & \textbf{\textsc{Loi phénoménologique de Newton}} &  Chapitre 14 \\
+		\hline
+\end{tabular}
+\vspace{-5em}}
+\date{}
+
+\begin{document}
+	\maketitle
+
+Newton a étudié l'évolution de la température d'un corps au contact d'un thermostat en fonction du temps. Il a proposé que cette évolution était de la forme : $$\theta (t) = A'\cdot e^{-kt} + B'$$
+avec $A'$, $B'$ et $k$ des constantes qui dépendant des conditions expérimentales.\\
+On se propose de vérifier cete loi dans le cas d'un réchauffement.\\
+Les liquides de refroidissement automobile sont constitués de manière à rester liquide à des températures négatives afin de ne pas risquer de détériorer les moteurs en hiver.\\
+
+\noindent\fbox{\begin{minipage}[t][14em][t]{.74\linewidth}
+    \textbf{Document 1 : Complément scientifique}\\
+    Un système incompressible à la température $\theta$ effectue un transfert thermique par convection avec un milieu extérieur de température constante $\theta_{ext}$. Le système ou le milieu extérieur est un fluide.\\
+    La dérivée de la température de ce système par rapport au temps, notée $\dfrac{d\theta}{dt}$, est proportionnelle à la différence de température entre le milieu extérieur et le système : $$\dfrac{d\theta}{dt}=-k \cdot (\theta - \theta_{ext})$$
+    Dans cette relation, $k$ est une constante positive relative au système et au milieu extérieur, qui dépend de leur surface de contact $S$.
+\end{minipage}}
+\fbox{\begin{minipage}[t][14em][t]{.25\linewidth}
+    \textbf{Document 2 : Matériel et produits disponibles}
+    \begin{itemize*}
+        \item support tube à essai
+        \item système automatisé de mesure de température
+        \item tube à essai contenant \SI{10}{mL} de liquide de refroidissement sorti du congélateur
+        \item tableur de Latis Pro
+    \end{itemize*}
+\end{minipage}}\\
+
+\textbf{On admet que la température est uniforme en chaque point du système étudié et que le transport thermique par rayonnement entre le système et le milieu extérieur est négligeable.}
+\begin{enumerate}
+    \item Sortir un tube à essai contenant \SI{10}{mL} de liquide de refroidissement préalablement stocké dans un congélateur puis le mettre sur un support. Plonger la sonde de température et relever la température toutes les 2 minutes pendant 60 minutes à l'aide d'un système automatisé.
+    \item À l'aide du tableur de Latis Pro, représenter l'évolution de la température $\theta$ en fonction du temps.
+    \item En réalisant la modélisation, justifier que cette évolution obéit à la loi de Newton.
+    \item Vérifier que l'équation de la courbe tracée à la question 2, peut être modélisée par la fonction : $$\theta (t) = (\theta_i-\theta_{ext}) \cdot e^{-kt} + \theta_{ext}$$
+    avec $\theta_i$ la température initiale du système et $\theta_{ext}$ la température ambiante de la pièce.
+    \item Montrer que la relation $\theta(t) = (\theta_i-\theta_{ext}) \cdot e^{-kt} + \theta_{ext}$ est solution de l'équation différentielle : $$\dfrac{d\theta}{dt} = -k\cdot(\theta - \theta_{ext})$$
+    \item À l'aide du premier principe de la thermodynamique et de la loi phénoménologique de Newton, établir l'équation différentielle vérifiée par la température $\theta$. En déduire l'expression de $k$.
+    \item En considérant que la surface de contact $S$ entre le liquide de refroidissement et l'air est de \SI{1,2}{\centi\meter\squared} et que la capacité thermique massique du liquide de refroidissement est $c=\SI{2,4000}{\joule\per\gram\per\celsius}$, déterminer le coefficient d'échange convectif $h$ entre l'air et le liquide de refroidissement (donnée : $\rho_{liquide}=\SI{1,036}{\gram\per\centi\meter\cubed}$)
+    \item Estimer, à l'aide de la fonction $\theta(t)$, la durée au bout de laquelle le liquide de refroidissement a atteint la température $\theta = \SI{15}{\celsius}$.
+\end{enumerate}
+\end{document}

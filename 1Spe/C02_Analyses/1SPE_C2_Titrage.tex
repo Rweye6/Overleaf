@@ -1,0 +1,43 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 2}
+\newcommand{\chtitle}{Composition chimique des solutions}
+\newcommand{\dtype}{Cours}
+
+\begin{document}
+	\maketitle
+
+\section{Principe du titrage}
+Titrer une espèce chimique revient à déterminer la quantité de matière ou la concentration en quantité de matière de cette espèce chimique en solution grâce à une transformation chimique. Lors d’un titrage, une solution de concentration en quantité de matière connue est ajoutée progressivement à la solution à titrer.\\
+L’espèce chimique de concentration inconnue est appelée réactif titré. L’espèce chimique de concentration connue est appelée réactif titrant.\\
+Pour déterminer la concentration du réactif titré, un échantillon de cette solution est prélevé avec de la verrerie de précision (pipette jaugée et pro pipette) et placé dans un erlenmeyer ou un bécher. La solution titrante est ensuite ajoutée progressivement à l’aide d’une burette graduée.\\
+La transformation chimique ayant lieu entre les réactifs titrant et titré est modélisée par une réaction de titrage qui doit être :
+\begin{itemize}
+	\item Totale
+	\item Rapide
+	\item Spécifique de l'espèce titrée (seule l'espèce titrée réagit)
+\end{itemize}
+
+	\subsection{Évolution des quantités de matière}
+	\begin{definition}
+		Le réactif titrant réagit immédiatement et totalement avec le réactif titré. Ainsi la quantité de matière de réactif titré diminue à chaque ajout jusqu’à devenir nulle.
+	\end{definition}
+
+\textbf{Exemple d titrage des ions \ce{F2^2+} par une solution titrante de \ce{MnO4-}}
+\begin{center}
+	\footnotesize
+	\begin{tabular}{|>{\centering}m{.11\linewidth}|>{\centering}m{.11\linewidth}|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{Equation chimique} & \ce{5Fe^2+(aq)} & +\ce{MnO4-(aq)} & + \ce{8 H+(aq)} & \ce{->} & \ce{5Fe^3+(aq)} & + \ce{Mn^2+(aq)} & + \ce{4H2O(l)}\\
+		\hline
+		État du système & Avancement (\unit{\mole}) & \multicolumn{7}{c|}{Quantités de matière (\unit{\mole})}\\
+		\hline
+		État initial & $x=0$ & $n_i(\ce{Fe^2+})$ & $n_{verse}(\ce{MnO4-})$ & Excès & & 0 & 0 & Excès\\
+		\hline
+		État final & $x_f = x_{eq}$ & $n_i(\ce{Fe^2+}) - 5x_f$ & $n_{verse,eq}(\ce{MnO4-})$ &Excès& & $5x_f$ & $x_f$ & Excès \\
+		\hline
+	\end{tabular}
+\end{center}
+\end{document}

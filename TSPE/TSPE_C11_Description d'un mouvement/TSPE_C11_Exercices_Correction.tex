@@ -1,0 +1,257 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
+
+\newcommand{\chnum}{Chapitre 11}
+\newcommand{\chtitle}{Décrire un mouvement}
+\newcommand{\dtype}{Exercices \emph{corrigés}}
+
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+\section{La route du rhum}
+
+\begin{enumerate}
+	\item Dans le référentiel géocentrique, la trajectoire parcourue trace une portion de cercle. Il s'agit donc d'une trajectoire circulaire.
+	\item Le mile marin correspond à une minute d’arc ($1/60$\unit{\degree} d’angle) du diamètre terrestre soit \SI{1852}{m}.
+	\item Conversion de la vitesse en \unit{\kilo\metre\per\hour} :\\
+	\SI{23.92}{nd} $\times$ \SI{1852}{m} = \SI{44,35}{\kilo\meter\per\hour}\\
+	Calcul de la distance parcourue :\\
+	$$d=v \times t$$
+	\fbox{AN} $d=\num{44,35} \times (7\times 24+14+\dfrac{47}{3600}$ = \SI{8.07E-3}{km}\\
+	On remarque que la distance parcourue est bien plus grande que l’orthodromie valant 6393 km
+\end{enumerate}
+
+\section{Conditions initiales d'un mouvement}
+ \begin{enumerate}
+	\item $\vec{v_0} \left\lbrace \begin{array}{c}
+	v_0\cdot \cos{\theta}\\
+	v_0\cdot \sin{\theta}\\
+	0\\
+	\end{array} \right\rbrace_{O,\vec{i},\vec{j},\vec{k}}$
+	$\vec{a} \left\lbrace \begin{array}{c}
+	0\\
+	-a\\
+	0\\
+	\end{array} \right\rbrace_{O,\vec{i},\vec{j},\vec{k}}$
+	\item $\vec{v_0} \left\lbrace \begin{array}{c}
+	v_0\cdot \cos{\theta}\\
+	0\\
+	v_0\cdot \sin{\theta}\\
+	\end{array} \right\rbrace_{O,\vec{i},\vec{j},\vec{k}}$
+	$\vec{a} \left\lbrace \begin{array}{c}
+	0\\
+	a\\
+	0\\
+	\end{array} \right\rbrace_{O,\vec{i},\vec{j},\vec{k}}$
+	\item $\vec{v_0} \left\lbrace \begin{array}{c}
+		0\\
+		v_0\cdot \sin{\theta}\\
+		v_0\cdot \cos{\theta}\\
+		\end{array} \right\rbrace_{O,\vec{i},\vec{j},\vec{k}}$
+		$\vec{a} \left\lbrace \begin{array}{c}
+		0\\
+		0\\
+		-a\\
+		\end{array} \right\rbrace_{O,\vec{i},\vec{j},\vec{k}}$
+
+ \end{enumerate}
+
+\section{Aiguilles d'une horloge}
+Une coccinelle se tient immobile sur l'aiguille des secondes d'une horloge. Cette aiguille mesure \SI{2,0}{cm}.
+\begin{enumerate}
+	\item Préciser le référentiel dans lequel la coccinelle est immobile.\\
+\textcolor{blue}{La coccinelle est immobile dans le référentiel de l'aiguille des secondes}
+	\item Donner la nature du mouvement de la coccinelle dans le référentiel des la pièce dans laquelle se trouve l'horloge.\\
+\textcolor{blue}{Dans le référentiel de la pièce, la coccinelle a un mouvement circulaire uniforme.}
+	\item Préciser les caractéristiques des vecteurs vitesse et accélération de la coccinelle dans le référentiel de la pièce.\\
+\textcolor{blue}{Le vecteur vitesse aura les caractéristiques suivantes :
+\begin{itemize}
+	\item direction : tangent à la trajectoire / au cercle formé par la coccinelle
+	\item sens : horaire
+	\item norme : $v = \dfrac{p}{\Delta t} = \dfrac{2 \pi R}{\SI{60}{s}} = \dfrac{2 \times \pi \times \num{2.0E-2}}{60} = \SI{2,1E-3}{\meter\per\second}$
+\end{itemize}
+Le vecteur accélération aura pour caractéristiques :
+\begin{itemize}
+	\item direction : normal à la vitesse / vers le centre du cercle formé par la trajectoire
+	\item sens : centripète
+	\item norme : $a = \dfrac{v^2}{R} = \dfrac{\num{2,1E-3}^2}{\num{2,0E-2}} = \SI{2,2E-4}{\meter\per\second\squared}$
+\end{itemize}}
+\end{enumerate}
+
+\section{Chute de la tour Eiffel}
+On étudie le mouvement d'un objet lâché depuis le troisième étage de la tour Eiffel, dont l'altitude au cours du temps est décrite par l'équation horaire suivante :
+$$z(t) = -\dfrac{a}{2} \cdot t^2 + h_3$$
+\begin{center}
+	\includegraphics[scale=.6]{Ressources/TSPE_C4_Exercices_Fig1.png}
+\end{center}
+\begin{enumerate}
+	\item Des deux repères représentés sur la photo, identifier celui choisi pour la modélisation de la coordonnée $z(t)$. Justifier.
+	\item Déterminer la composante du vecteur vitesse $v_z(t)$.
+	\item En déduire les normes des vitesses de l'objet au moment où il atteint la deuxième étage, puis le premier étage.
+	\item Déterminer la durée de la chute jusqu'au sol.
+\end{enumerate}
+\noindent \colorbox{red!10}{
+\begin{minipage}{.48\textwidth}
+\textbf{Données :}\begin{itemize}
+	\item \textbf{Hauteur du premier étage :} $h_1$ = \SI{58}{m}.
+	\item \textbf{Hauteur du deuxième étage :} $h_2$ = \SI{116}{m}.
+	\item \textbf{Hauteur du troisième étage :} $h_3$ = \SI{276}{m}.
+	\item \textbf{Coefficient :} $a$ = \SI{9,8}{\meter\per\second\squared}
+\end{itemize}
+\end{minipage}}
+
+\section{Mouvement rectiligne accéléré}
+Un système, assimilé à un point $M$, se déplace le long d'un axe ($Ox$), en un mouvement rectiligne. On repère celui-ci par son abscisse $x(t)$ d'équation horaire : $$x(t) = -\dfrac{a}{2} \cdot t^2 + v_0 \cdot t + x_0$$
+Ici, $a$ = \SI{8,0}{\meter\per\second\squared}, $v_0$ = \SI{16}{\meter\per\second} et $x_0$ = \SI{-5,0}{m}.
+\begin{enumerate}
+	\item Situer le système à l'instant initial $t_0$ = \SI{0}{s}.
+	\item Exprimer le vecteur vitesse $\vec{v}(t)$ dans le repère ($O$, $\vec{i}$) et sa norme $v(t)$ en fonction du temps.
+	\item Déterminer la date et la position d'arrêt du système.
+	\item Calculer à quel instant le système passe par l'origine.
+\end{enumerate}
+
+\section{Mouvement rectiligne uniforme}
+Un point mobile $M$ est suivi par enregistrement dans un repère ($O$, $\vec{i}$, $\vec{j}$). La modélisation de son mouvement fournit des équations horaires suivantes : $$x(t) = -v_0 \cdot t + x_0$$ $$y(t) = y_0$$ avec : $v_0$ = \SI{8}{\meter\per\second}, $x_0$ = \SI{4}{m} et $y_0$ = \SI{1}{m}.
+\begin{enumerate}
+	\item Exprimer les coordonnées du vecteur position initiale.\\
+\textcolor{blue}{$$ \vv{OM}(0) \left\{
+	\begin{array}{c}
+		x(0) = -v_0 \cdot 0 + x_0\\
+		y(0) =  y_0
+	\end{array}
+\right\} = \left\{
+	\begin{array}{c}
+		4\\
+		1
+	\end{array}
+\right\}$$}
+	\item Exprimer les coordonnées du vecteur vitesse et caractériser le mouvement.\\
+\textcolor{blue}{$$ \vec{v}(t) = \dfrac{d\vv{OM}(t)}{dt}$$
+$$ \vec{v}(t) \left\{
+	\begin{array}{c}
+		v_x(t) = -v_0\\
+		v_y(t) = 0
+	\end{array}
+\right\}$$}
+	\item Calculer la vitesse du point $M$ en (-12m ; 1m).\\
+\textcolor{blue}{\emph{Description de la situation :} En regardant l'expression du vecteur vitesse on remarque qu'il ne dépend pas du temps. Il s'agit donc d'un mouvement uniforme. La vitesse étant constante, au point $M$ on aura $v(t) = v_0 = \SI{8}{\meter\per\second}$}
+\end{enumerate}
+
+\section{Mouvement parabolique}
+Un point $M$ adoptant une trajectoire parabolique admet comme équations horaires :
+$$x(t)=v_{0x} \cdot t$$
+$$y(t) = -\dfrac{a_y}{2} \cdot t^2 + v_{0y} \cdot t$$
+avec : $v_{0x}$ = \SI{15,3}{\meter\per\second}, $a_y$ = \SI{9,81}{\meter\per\second\squared}, $v_{0y}$ = \SI{12,9}{\meter\per\second}.
+\begin{enumerate}
+	\item Exprimer les coordonnées du vecteur vitesse.
+	\item Monter que la vitesse initiale du point $M$ vaut $v_0$ = \SI{20,0}{\meter\per\second}.
+	\item En déduire l'angle $\alpha$ formé par le vecteur vitesse initiale $\vec{v_0}$ avec l'axe horizontal.
+\end{enumerate}
+\noindent \colorbox{red!10}{\begin{minipage}{.48\textwidth}
+\textbf{Données : }\\
+\textbf{Expression de la tangente de l'angle $\alpha$ :} $$\tan{(\alpha)} = \dfrac{v_{0y}}{v_{0x}}$$
+\end{minipage}}
+
+\begin{center}
+\begin{tikzpicture}[scale=.9, transform shape]
+	\node[below left] (O) at (0,0){\Large $O$};
+	\draw[thick, -stealth] (0,0) -- (0,3);
+	\draw[thick, -stealth] (0,0) -- (3,0);
+		
+	\draw[line width = 2pt, -stealth] (0,0) to (1,0);
+	\draw[line width = 2pt, -stealth] (0,0) to (0,1);
+	
+	\node[left] (y) at (0,3){\Large $y$};
+	\node[below] (x) at (3,0){\Large $x$};
+		
+	\node[left] (j) at (0,.5){\Large $\vec{j}$};
+	\node[below] (i) at (.5,0){\Large $\vec{i}$};
+	
+	%\draw[line width = 1.2pt, blue!60!green,-stealth] (-1.2,1) to (-2,2);
+	
+	\node[left,blue!60!green] (v0) at (1,2){\Large $\vec{v_0}$};
+	\node[above] (alpha) at (.75,0.3){\large $\alpha$};
+	
+	\draw[line width = 2pt, -stealth, blue!60!green] (0,0) to (1.5,2.5);
+	
+	\draw[thick] (0.6,0) arc (0:60:.6);
+	\draw [domain=0:2.7, thick, red!60!black] plot(\x,{-0.75*\x * \x  + 2*\x});
+\end{tikzpicture}
+\end{center}
+\section{Mouvement circulaire}
+Un point $M$ décrit une trajectoire dont les équations horaires de position sont : $$x(t) = R \cdot \cos{(\omega \cdot t)}$$
+$$y(t) = R \cdot \sin{(\omega \cdot t)}$$
+avec $R$ = \SI{2}{m}, $\omega$ = \SI{2}{\radian\per\second}.
+\begin{enumerate}
+	\item Montrer que la trajectoire est circulaire.
+	\item Déterminer les caractéristiques du vecteur vitesse à $t_0$ = \SI{0}{s}.
+\end{enumerate}
+\noindent \colorbox{red!10}{\begin{minipage}{.48\textwidth}
+\textbf{Données : }\\
+\textbf{Équation d'un cercle de centre O (0m ; 0m) : } $$x^2 + y^2 = R^2$$
+\textbf{Dérivées usuelles :} $$\cos{(u)}' = -u'\cdot \sin{(u)}$$
+$$\sin{(v)'} = v' \cdot \cos{(v)}$$
+\end{minipage}}
+
+\section{Ballon-sonde}
+\noindent \colorbox{orange!10}{\begin{minipage}{.48\textwidth}
+\textbf{Définition}\\
+Un ballon-sonde est un ballon à gaz utilisé dans les domaines de la météorologie et de l'astronautique. Il s'agit d'un ballon libre non habité, utilisé pour faire des mesures locales dans l'atmosphère grâce à un certain nombre d'instruments à bord, dans une nacelle appelée radiosonde. Le ballon-sonde a été inventé par Gustavo Hermite en 1892.\\
+Son principal intérêt est de pouvoir atteindre des altitudes d'au moins \SI{35}{km}, le record étant à \SI{53}{km}, difficile à obtenir avec des moyens plus conventionnels tels que les avions, et à un coût bien inférieur à une fusée-sonde ou un satellite.
+\end{minipage}}
+
+Lors d'un lâcher, un ballon-sonde a une vitesse verticale constante $v_0$ tout au long de son ascension. Le vent emporte le ballon-sonde à la vitesse horizontale $v_x(t) = k \cdot z(t)$, proportionnelle à l'altitude du ballon.\\
+L'étude du mouvement du centre du ballon-sonde s'effectue dans le repère galiléen ($O$, $\vec{i}$, $\vec{k}$).
+\begin{enumerate}
+	\item Déterminer l'équation horaire $z(t)$.\\
+\textcolor{blue}{La vitesse ascendante est constante et peut s'exprimer comme étant $\vec{v_z}(t) = -v_0\cdot \vec{k}$. L'équation horaire sera la fonction dont la dérivée temporelle est $v_z(t)$. On peut donc écrire que $z(t) = -v_0 \cdot t + cste$. La constante va coorespondre à l'ordonnée de départ du ballon, c'est à dire \SI{0}{m}. On aura donc $z(t) = -v_0 \cdot t$}
+	\item À l'aide de $v_x(t)$, déterminer $x(t)$.\\
+\textcolor{blue}{De la même manière, $x(t)$ sera une fonction dont la dérivée donnera $v_x(t)$. Dans ce cas on aura $v_x(t) = k \cdot y(t) = k \cdot -v_0(t) \cdot t$. \\ Donc la fonction primitive donnera $ x(t) = -\dfrac{k \cdot v_0}{2} \cdot t^2 + cste$. Ici la constante correspondra à la position initiale du ballon-sonde c'est à dire $x(0)=\SI{0}{m}$.\\
+Au finl on aura : $ x(t) = -\dfrac{k \cdot v_0}{2} \cdot t^2$ }
+	\item Déterminer les composantes du vecteur accélération.\\
+\textcolor{blue}{Le vecteur accélération est la dérivée temporelle du vecteur vitesse. Soit $$ \vec{v}(t) \left\{
+	\begin{array}{c}
+		v_x(t) = -v_0\cdot k \cdot t\\
+		v_y(t) = -v_0 
+	\end{array}
+\right\}$$ 
+$$ \vec{a}(t) \left\{
+	\begin{array}{c}
+		\dfrac{dv_x(t)}{dt}\\
+		\dfrac{dv_y(t)}{dt} 
+	\end{array}
+\right\}$$
+$$ \vec{a}(t) \left\{
+	\begin{array}{c}
+		a_x(t) = -v_0 \cdot k\\
+		a_y(t) = 0
+	\end{array}
+\right\}$$
+}
+\end{enumerate}
+
+\section{Lancer de poids}
+Lors des Championnats du monde d'athlétisme qui ont eu lieu à Paris en août 2003, le vainqueur de l'épreuve du lancer du poids, Andrei Mikhnevich, a réussi un jet à une distance $d$ = \SI{21,69}{m}.\\
+L'entraîneur de l'un de ses concurrents souhaite étudier ce lancer. Pour cela, il dispose pour le centre d'inertie du boulet, en plus de la valeur \SI{21,69}{m} du recors, de la vitesse initiale $v_0$ mesurée à l'aide d'un cinémomètre et de l'altitude $h$.\\
+L'entraîneur a étudié le mouvement du boulet et a obtenu trois graphiques :
+\begin{itemize}
+	\item Le graphique de la trajectoire $y=f(x)$ du boulet
+	\item les graphes de $v_x(t)$ et de $v_y(t)$ en fonction du temps $t$ où $v_x(t)$ et $v_y(t)$ sont les coordonnées horizontales et verticales du vecteur vitesse $\vec{v}(t)$.
+\end{itemize}
+
+\noindent \colorbox{red!10}{\begin{minipage}{.48\textwidth}
+\textbf{Données : }
+\begin{itemize}
+	\item \textbf{Vitesse initiale du boulet : } $v_0$ = \SI{13,8}{\meter\per\second}
+	\item \textbf{Hauteur initiale du lancer :} $h$ = \SI{2,62}{m}
+	\item \textbf{Intensité de pesanteur :} $g$ = \SI{9,81}{\newton\per\kilo\gram}
+\end{itemize}
+\end{minipage}}
+
+\begin{center}
+	\includegraphics[scale=.7]{Ressources/TSPE_C4_Exercices_Fig2.png}
+	\includegraphics[scale=.75]{Ressources/TSPE_C4_Exercices_Fig3.png}
+\end{center}
+
+\end{multicols}
+\end{document}

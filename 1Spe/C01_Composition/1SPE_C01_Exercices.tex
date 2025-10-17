@@ -1,0 +1,118 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
+
+\newcommand{\chnum}{Chapitre 1}
+\newcommand{\chtitle}{Composition initiale d'un système chimique}
+\newcommand{\dtype}{Exercices}
+
+\definecolor{bleuclair}{HTML}{c7e1e2}
+\definecolor{bleumoyen}{HTML}{78beb6}
+\definecolor{bleufonce}{HTML}{3796a4}
+\begin{document}
+	\maketitle
+	
+	\begin{multicols}{2}
+\section{Juste un morceau de sucre}
+Un morceau de sucre en forme de cube pèse \SI{3}{g}. Le sucre est un corps pur : le saccharose \ce{C12H22O11}.
+\begin{enumerate}
+	\item Calculer la masse molaire du saccharose.
+	\item En déduire la quantité de matière de saccharose dans ce morceau de sucre.
+\end{enumerate}
+
+\section{Bonus écologique}
+Pour bénéficier d'un bonus écologique, un véhicule doit émettre moins de \SI{4,55E1}{\mole} de \ce{CO2} aux \SI{100}{km}. Un véhicule moyen rejette \SI{6,05E3}{L} de \ce{CO2} aux \SI{100}{km}.
+\begin{enumerate}
+	\item Calculer la quantité de \ce{CO2} émise par ce véhicule.
+	\item En déduire si ce véhicule bénéficie ou pas du bonus.
+\end{enumerate}
+\textbf{Donnée : Volume molaire : $V_m = \SI{24}{\liter\per\mole}$}
+
+\section{Dureté d'une eau}
+La dureté d'une eau (ou titre hydrotimétrique) est d'autant plus élevée qu'elle est calcaire. Un agriculteur a reçu la composition de son eau de puits et veut connaître la dureté associée. Il est indiqué une masse de \SI{84}{mg} d'ions \ce{Ca^2+} et \SI{24}{mg} d'ions \ce{Mg^2+} pour \SI{1}{L} d'eau.
+\begin{enumerate}
+	\item Calculer les quantités de matière en ions calcium et en ions magnésium correspondantes.
+	\item Calculer la dureté de cette eau.
+	\item Comment peut-on qualifier cette eau de puits ?
+\end{enumerate}
+\textbf{Données :}
+\begin{itemize*}
+	\item Pour \SI{1}{L} d'eau, \SI{1}{\degree TH} = \SI{1E-4}{\mole} d'ions \ce{Ca^2+} ou \ce{Mg^2+}
+	\item La dureté est la somme des deux valeurs en \unit{\degree TH}
+	\item Plage de dureté de l'eau :\\
+	\begin{tikzpicture}[scale=1.3,transform shape]
+		\filldraw[bleuclair] (0,0)--(1.5,0)--(1.5,1)--(0,1)--cycle;
+		\filldraw[bleumoyen] (1.5,0)--(3,0)--(3,1)--(1.5,1)--cycle;
+		\filldraw[bleufonce] (3,0)--(4.5,0)--(4.5,1)--(3,1)--cycle;
+		\draw [-Latex](-.5,0) to (5,0);
+		\draw (.75,.5) node{\tiny Eau douce};
+		\draw (2.25,.5) node[text width=1.5cm]{\tiny\centering Eau moyennement dure};
+		\draw (3.75,.5) node{\tiny Eau dure};
+		\draw (0,0) node[below]{\tiny 0};
+		\draw (1.5,0) node[below]{\tiny 15};
+		\draw (3,0) node[below]{\tiny 30};
+		\draw (5,0) node[below]{\tiny Dureté (\unit{\degree TH})};
+	\end{tikzpicture}
+\end{itemize*}
+
+\section{Aspartame et soda}
+L'aspartame \ce{C14H18O5N2} est un édulcorant, une molécule au goût 200 fois plus sucré que le sucre alimentaire (saccharose). la règlementation impose une dose journalière admissible (DJA) de \SI{40}{\milli\gram\per\kilo\gram} de masse corporelle de l'individu. Un adolescent diabétique de \SI{55}{kg} en consomme régulièrement dans des sodas qui indiquent une masse de \SI{500}{mg} pour \SI{1,0}{L} de boisson.
+\begin{enumerate}
+	\item Déterminer la quantité de matière d'aspartame contenue dans \SI{1,0}{L} de soda.
+	\item Quel volume de soda l'adolescent peut-il ingérer quotidiennement sans dépasser la dose d'aspartame conseillée ?
+\end{enumerate}
+
+\section{Le protoxyde d'azote et la chirurgie}
+Le protoxyde d'azote \ce{N2O} est un gaz utilisé en mélange comme anesthésiant. Il est stocké en bouteille de \SI{442}{L}, à une température de \SI{20}{\celsius} et à une pression de \SI{15}{\bar}.
+\begin{itemize}
+	\item Déterminer la masse de gaz dans la bouteille.
+\end{itemize}
+
+\section{Composition d'eau d'une station d'épuration}
+Les rejets industriels dans les cours d'eau sont réglementés et nécessitent parfois la mis en place d'une station d'épuration des eaux usées.\\
+Une entreprise de traitement de surface l’exploite pour surveiller les rejets en élément chrome, cuivre, nickel, zinc et en ions sulfates \ce{SO4^2-}. Suite à un incident de vanne, une analyse des eaux usées est réalisée. Pour un litre d'eau traitée, les masses, les masses maximales rejetables et les résultats d'analyse sont résumés dans le tableau ci-dessous.\\
+\begin{tabular}{|>{\centering}m{1.8cm}|c|c|c|c|c|}
+	\hline
+	\textbf{Composé} & \ce{Cu} & \ce{Zn}& \ce{Ni}& \ce{Cr}& \ce{SO4^2-}\\
+	\hline
+	$n_{compose}$ (en \unit{\milli\mole})& \num{0.252} & \num{0.107} & \num{0.306} & \num{0.423} & \num{1.31}\\
+	\hline
+	$m_{max}$ (en \unit{\milli\gram})& \num{0.10} & \num{15.0} & \num{15.0} & \num{15.0} & \num{15.0}\\
+	\hline
+\end{tabular}
+\begin{enumerate}
+	\item Déterminer les masses des différents constituants de l'échantillon d'eau analysée.
+	\item Cet incident de vanne peut-il avoir des conséquences ?
+\end{enumerate}
+
+\section{Le début des vendanges}
+La maturité du raisin est un élément essentiel pour le début des vendanges et l'obtention d'un vin de qualité. un des critères est la teneur en sucre du raisin : elle est mesurée à l'aide d'un réfractomètre. La mesure de l'indice de réfraction permet de connaître la masse de sucre dans \SI{1,00}{L} de jus de raisin. On fait l'hypothèse que le sucre du raisin n'est que du saccharose \ce{C12H22O11}.\\
+Un laboratoire de contrôle mesure un indice de réfraction de \SI{1.3645} pour le jus de raisin d'un vigneron. Il est considéré qu'une teneur satisfaisante en sucre est atteinte pour \SI{0,585}{\mol} de saccharose dans \SI{1,00}{L} de jus.
+
+\begin{tikzpicture}[scale=.68, transform shape]
+	\draw[blue!20] (0,0) grid[step =  .5](9,8);
+	\draw[-Latex] (0,0) to (9.5,0);
+	\draw[-Latex] (0,0) to (0,8.5);
+	\draw (0,0) grid (9,8);
+	\foreach \k in {0,...,9} :
+	\pgfmathsetmacro\grdx{140+10*\k}
+	\pgfmathsetmacro\grdy{1.3560+0.001*\k}
+		\draw (\k,0) node[below]{\pgfmathprintnumber[precision=1]{\grdx}};
+		
+	\foreach \k in {0,...,8} :
+		\pgfmathsetmacro\grdy{1.3560+0.002*\k}
+		\draw (0,\k) node[left]{\pgfmathprintnumber[precision=6]{\grdy}};
+	
+	\draw (0,8.5) node[right]{Indice de réfraction};
+	\draw (9.5,0) node[right, text width = 3cm]{Masse de saccharose (en \unit{\gram})};
+	
+	\draw[thick, blue] plot[domain=0:9] (\x,0.2 + 0.725*\x);
+\end{tikzpicture}
+
+\begin{enumerate}
+	\item Déterminer la masse de saccharose lors de ce contrôle.
+	\item Déterminer la quantité de matière de saccharose correspondante.
+	\item Le vigneron peut-il commencer les vendanges ?
+\end{enumerate}
+
+\end{multicols}
+\end{document}

@@ -1,0 +1,203 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+
+\usepackage[french]{babel}
+\usepackage[sf,tiny,bf]{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage{romannum}
+%\allsectionsfont{\sffamily\raggedright\underline}
+
+
+
+
+
+
+\usepackage{tgheros,textcomp}%Police Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+%\setlength{\mathindent}{0pt}%indentation dans math = 0
+
+\usepackage[top = 1cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
+%\usepackage{titlesec}
+%\setcounter{secnumdepth}{4}
+\usepackage{xcolor}
+\usepackage{amssymb} %double flèche de réaction
+%\usepackage{xtab}%tableau sur plusieurs pages
+%\usepackage{esvect}%grands vecteurs
+
+\usepackage[version=4]{mhchem} %equations chimiques
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{multirow}
+%\usepackage{sectsty}
+%\usepackage{caption}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage[cal=boondoxo]{mathalfa} 
+\usepackage{enumitem}
+\usepackage{lastpage}%Pour noter le bon nombre de pages au total
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage[european, straightvoltages, RPvoltages]{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usetikzlibrary{automata,positioning}
+\usepackage{multicol}
+\usepackage{eqnarray}
+\usepackage{tabularx,colortbl}%colorer fond cellules
+
+\sisetup{
+	detect-all,
+	output-decimal-marker={,},
+	group-minimum-digits = 3,
+	group-separator={~},
+	number-unit-separator={~},
+	inter-unit-product={~}
+} %setup pour SIunitx
+
+
+\usepackage{pgf}
+\usepgflibrary{fpu}
+\pgfkeys{/pgf/number format/.cd, precision = 2, fixed, fixed zerofill}
+
+\usepackage{listings}%pour insérer le code python
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\titlespacing\section{5pt}{5pt plus 4pt minus 2pt}{5pt plus 2pt minus 2pt}
+\titlespacing\subsection{8pt}{5pt plus 4pt minus 2pt}{5pt plus 2pt minus 2pt}
+
+%\sectionfont{\fontsize{14}{8}\selectfont}
+\renewcommand{\thesection}{\fontsize{14}{8}\arabic{section}. }
+\renewcommand{\thesubsection}{\hspace{2cm}\emph{\alph{subsection}.}}
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|>{\centering}m{6cm}|>{\centering}m{7cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		Questionnaire & \textbf{\textsc{Préparation à la mécanique}} &  Chapitre 4 \\
+		\hline
+\end{tabular}}
+\date{}
+
+\newpagestyle{mystyle}{%
+	\setfoot{ROSALIE}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+\renewpagestyle{plain}{%
+	\setfoot{ROSALIE}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+
+\pagestyle{mystyle}
+
+\newenvironment{itemize*}%
+{\begin{itemize}[label=$-$]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\newenvironment{itemize**}%
+{\begin{itemize}[label=]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\begin{document}
+	\maketitle
+	\vspace{-2.2cm}
+\begin{enumerate}
+	\item Quels sont les éléments nécessaires à la description d'un mouvement ?
+	\item Définir la vitesse ?
+	\item Etablir les coordonnées des vecteurs suivants :
+\end{enumerate}
+\begin{tikzpicture}
+	\draw[thick, -Stealth] (0,0) to (0,5.5);
+	\draw[thick, -Stealth] (0,0) to (5.5,0);
+	\foreach \k in {0,1,...,5} {
+		\draw[thick] (\k,-0.1 ) -- (\k,0.1);
+		\draw[thick] (-.1,\k) -- (0.1,\k);
+		}
+	\node[left] (y) at (0,5){$y$};
+	\node[below] (x) at (5,0){$x$};
+	
+	\draw[thick,blue!60!green,-Stealth] (2,1) to (2,4);
+\end{tikzpicture}
+\begin{tikzpicture}
+	\draw[thick, -Stealth] (0,0) to (0,5.5);
+	\draw[thick, -Stealth] (0,0) to (5.5,0);
+	\foreach \k in {0,1,...,5} {
+		\draw[thick] (\k,-0.1 ) -- (\k,0.1);
+		\draw[thick] (-.1,\k) -- (0.1,\k);
+		}
+	\node[left] (y) at (0,5){$y$};
+	\node[below] (x) at (5,0){$x$};
+	
+	\draw[thick,blue!60!green,-Stealth] (0,0) to (2,3);
+\end{tikzpicture} \\↑
+
+\begin{tikzpicture}
+	\draw[thick, -Stealth] (0,0) to (0,5.5);
+	\draw[thick, -Stealth] (0,0) to (5.5,0);
+	\foreach \k in {0,1,...,5} {
+		\draw[thick] (\k,-0.1 ) -- (\k,0.1);
+		\draw[thick] (-.1,\k) -- (0.1,\k);
+		}
+	\node[left] (y) at (0,5){$y$};
+	\node[below] (x) at (5,0){$x$};
+	
+	\draw[thick,blue!60!green,-Stealth] (1,3) to (3,3);
+\end{tikzpicture}
+\begin{tikzpicture}
+	\draw[thick, -Stealth] (0,0) to (0,5.5);
+	\draw[thick, -Stealth] (0,0) to (5.5,0);
+	\foreach \k in {0,1,...,5} {
+		\draw[thick] (\k,-0.1 ) -- (\k,0.1);
+		\draw[thick] (-.1,\k) -- (0.1,\k);
+		}
+	\node[left] (y) at (0,5){$y$};
+	\node[below] (x) at (5,0){$x$};
+	
+	\draw[thick,blue!60!green,-Stealth] (1,3) to (4,1);
+\end{tikzpicture}
+\begin{enumerate}[resume]
+	\item Etablir la somme des vecteurs suivants :\\
+	\begin{tikzpicture}
+	\draw[thick, -Stealth] (0,0) to (0,5.5);
+	\draw[thick, -Stealth] (0,0) to (5.5,0);
+	\foreach \k in {0,1,...,5} {
+		\draw[thick] (\k,-0.1 ) -- (\k,0.1);
+		\draw[thick] (-.1,\k) -- (0.1,\k);
+		}
+	\node[left] (y) at (0,5){$y$};
+	\node[below] (x) at (5,0){$x$};
+	
+	\draw[thick,blue!60!green,-Stealth] (1,3) to (4,1);
+	\draw[thick,red!60!orange,-Stealth] (2,4) to (4,4);
+\end{tikzpicture}
+\begin{tikzpicture}
+	\draw[thick, -Stealth] (0,0) to (0,5.5);
+	\draw[thick, -Stealth] (0,0) to (5.5,0);
+	\foreach \k in {0,1,...,5} {
+		\draw[thick] (\k,-0.1 ) -- (\k,0.1);
+		\draw[thick] (-.1,\k) -- (0.1,\k);
+		}
+	\node[left] (y) at (0,5){$y$};
+	\node[below] (x) at (5,0){$x$};
+	
+	\draw[thick,blue!60!green,-Stealth] (1,1) to (3,1);
+	\draw[thick,red!60!orange,-Stealth] (2,2) to (2,5);
+\end{tikzpicture}
+	\item En se basant  sur les trajectoires suivantes, représenter le vecteur vitesse aux points marqués par une croix :
+\end{enumerate}
+
+\begin{tikzpicture}
+	\foreach \k in {0,1,...,5} {
+		\draw[thick] (\k,0.1 ) -- (\k,0.1);
+		\draw[thick] (-.1,\k) -- (0.1,\k);
+		}
+	\node[left] (y) at (0,5){$y$};
+	\node[below] (x) at (5,0){$x$};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,89 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 3}
+\newcommand{\chtitle}{Facteurs cinétiques et catalyse}
+\newcommand{\dtype}{TP}
+
+\begin{document}
+\maketitle
+
+On réalise plusieurs expériences pour tester différents paramètres.
+\section*{Expérience 1 : Le coucher de soleil}
+En milieu acide, les ions thiosulfate \ce{S2O3^2-(aq)} réagissent lentement avec les ions hydrogène \ce{H+(aq)} pour donner du soufre \ce{S(s)} et du dioxyde de soufre \ce{SO2(aq)} selon la réaction d'équation :
+\begin{eqnarray}
+\ce{S2O3^2-(aq) + 2H+(aq) -> S(s) + SO2(aq) + H2O(l)} \nonumber
+\end{eqnarray}
+Le soufre formé reste en suspension dans la solution et le mélange s'opacifie progressivement. L'appréciation de la rapidité d'évolution du système se fait en mesurant la durée $t_d$ nécessaire à la disparition visuelle d'un motif placé sous le bêcher et toujours observé dans les mêmes conditions.\\
+Observée à l'aide d'un rétroprojecteur, l'expérience ressemble alors à un coucher de Soleil. Le soufre en suspension diffuse une partie de la lumière qui arrive sur la solution (radiation de courte longueur d'onde donc lumière bleue). Les autres radiations traversent la solution et sont projetées à nos yeux : le Soleil devient de plus en plus rouge.\\
+On réalise trois mélanges donnant lieu à la transformation décrite ci-dessus.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|>{\centering}m{6cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+    \hline \textbf{Contenu des béchers} & Bécher 1 & Bécher 2 & Bécher 3\\
+    \hline Solution de thiosulfate de sodium à \num{0,2} \unit{\mole\per\liter} & 40 mL & 20 mL & 10 mL\\
+    \hline Eau distillée & 0 mL & 20 mL & 30 mL\\
+    \hline Solution d'acide chlorhydrique à \num{1} \unit{\mole\per\liter} & 10 mL & 10 mL & 10 mL\\
+    \hline
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+\begin{enumerate}
+    \item Quel paramètre est testé ici ?
+    \item Quelle est l'influence de ce paramètre sur la vitesse de la transformation chimique ?
+\end{enumerate}
+
+\section*{Expérience 2 : Influence de la température}
+Les ions permanganate \ce{MnO4-}, de couleur violette, peuvent être réduits en ions manganèse \ce{Mn^2+}, incolores, par l'acide oxalique. L'équation de réaction modélisant la transformation est la suivante :
+\begin{eqnarray}
+    \ce{2MnO4-(aq) + 5H2C2O4(aq) + 6H+(aq) -> 2Mn^2+(aq) + 10CO2(aq) + 8H2O(l)} \nonumber
+\end{eqnarray}
+On se propose d'étudier l'influence de la température sur la vitesse de cette transformation chimique.
+\begin{itemize}
+    \item Prendre 3 béchers en verre et verser dans chacun d'eux 4 mL de solution de permanganate de potassium à \num{2e-3} \unit{\mole\per\liter} et \num{1} \unit{\milli\liter} d'acide sulfurique concentré.
+    \item Placer le bécher n°1 dans un grand bécher rempli d'un mélange eau-glace et le bécher n°3 dans un cristallisoir rempli d'eau chaude. Laisser le bécher n°2 à température ambiante.
+    \item À l'aide d'une pipette jaugée, prélever \num{3} \unit{\milli\liter} d'acide oxalique et les verser dans le bécher n°1. \underline{Déclencher simultanément le chronomètre !} Agiter.
+    \item Ajouter, de même, \num{3} \unit{\milli\liter} d'acide oxalique dans les deux autres béchers. Penser à relever le temps au moment de l'ajout. Agiter.
+    \item Observer et relever la durée au bout de laquelle est observé un changement significatif du milieu réactionnel.
+\end{itemize}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|>{\centering}m{6cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+    \hline & Bécher 1 & Bécher 2 & Bécher 3\\
+    \hline Température & basse & ambiante & élevée\\
+    \hline Durée de transformation & & & \rule[1cm]{0cm}{0cm} \\
+    \hline
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+
+\textbf{Conclusion : La température a t elle une influence sur la vitesse d'une transformation chimique ? Préciser.}
+
+\section*{Expérience 3 : Catalyse}
+L'eau oxygénée (ou péroxyde d'hydrogène) \ce{H2O2} est un désinfectant, pouvant être utilisée pour désinfecter des plaies ou nettoyer des lentilles de contact. Son efficacité est limitée dans le temps car elle se décompose selon la réaction d'équation :
+\begin{eqnarray}
+    \ce{2H2O2(aq) -> 2H2O(l) + O2(g)} \nonumber
+\end{eqnarray}
+On verse de l'eau oxygénée "20 volumes" dans quatre tubes à essais. On ajoute dans chaque tube les éléments suivants :
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{6cm}|>{\centering\arraybackslash}m{9cm}|}
+    \hline  \rule[.5cm]{0cm}{0cm} & Ajout & Observations\\
+    \hline Tube 1 & &  \rule[1cm]{0cm}{0cm}\\
+    \hline Tube 2 & quelques gouttes de solution de chlorure de fer à \num{0,5} \unit{\mole\per\liter} & \rule[1cm]{0cm}{0cm}\\
+    \hline Tube 3 & engrenage recouvert de platine & \rule[1cm]{0cm}{0cm}\\
+    \hline Tube 4 & & \rule[1cm]{0cm}{0cm}\\
+    \hline
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+\begin{enumerate}
+    \item À quoi sert le tube n° 1 ?
+    \item Qu'observe t on dans chaque tube ? Compléter le tableau.
+    \item Quel est le rôle  des ions fer (III) \ce{Fe^3+} et du platine lors de cette expérience ?
+    \item Les ions fer (III) \ce{Fe^3+}, de couleur brune, sont un catalyseur. Ont ils été consommés lors de l'expérience ?
+\end{enumerate}
+\textbf{Conclusion : Déduire des réponses précédentes une définition du mot "catalyseur".}\\
+\textbf{Bilan : Lister les différents moyens de modifier la vitesse d'une transformation chimique.}
+\end{document}

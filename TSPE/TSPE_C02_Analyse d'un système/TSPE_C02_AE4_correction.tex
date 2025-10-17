@@ -1,0 +1,73 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 3}
+\newcommand{\chtitle}{Titrage par avec suivi conductimétrique - \emph{Correction}}
+\newcommand{\dtype}{TP}
+
+
+\begin{document}
+\maketitle
+
+\section{Détermination de l'équivalence lors d'un titrage par suivi conductimétrique}
+	\subsection{Analyser et Raisonner}
+
+\begin{enumerate}
+	\item Matériel pour la dilution : fiole jaugée de \SI{1}{L} ; pipette jaugée de \SI{10}{mL} ; propipette ; solution $S_0$ ; eau distillée.
+	\item Pour réaliser un suivi conductimétrique il faut que l'équation support de la réaction implique des ion. C'est le cas ici : \ce{H3O+(aq) + HO-(aq) -> 2H2O(l)}\\
+	Il faut aussi une solution assez diluée ce qui devrait être le cas avec la solution $S_1$ qui est diluée 100 fois.
+	\item Protocole expérimental :
+	\begin{itemize*}
+		\item Prélever \SI{10}{mL} de solution $S_1$ à l'aide d'une pipette jaugée et les placer dans un grand bécher.
+		\item Prélever \SI{200}{mL} d'eau distillée à l'aide d'une éprouvette graduée et les ajouter dans le bécher.
+		\item Rincer la burette graduée avec la solution d'acide chlorhydrique à \SI{3.00E-2}{\mole\per\liter} puis remplir la burette.
+		\item Placer un barreau aimanté dans le grand bécher
+		\item Placer le bécher sur un agitateur magnétique et mettre l'ensemble sous la burette graduée.
+		\item Placer la sonde du conductimètre étalonné dans la solution et commencer l'agitation.
+		\item Ajouter la solution titrante mL par mL jusqu'à \SI{20}{mL} en notant les valeurs de conductivité à chaque fois.
+		\item Rentrer les valeurs dans LatisPro
+		\item Utiliser la fonction "Tracer droite" pour tracer les droites tangentes à la courbe avant et après la rupture de courbe.
+		\item Relever le volume équivalent $V_E$ correspondant à l'abscisse de l'intersection des deux droites.
+	\end{itemize*}
+\end{enumerate}
+
+\subsection{Réaliser}
+
+\begin{enumerate}[resume]
+	\item (manipulation)
+	\item On obtient $V_E \approx$ \SI{9.8}{mL}. 
+	\item On calcule $c_1$ à partir des données à l'équivalence. $$n_1=n_E$$ $$\leftrightarrow c_1 \cdot V_1 = c_A \cdot V_E$$ $$\leftrightarrow c_1 = \dfrac{c_A \cdot V_E}{V_1}$$ 
+	\fbox{AN : } $ c_1 = \dfrac{\num{3.00E-2}\times \num{9.8E-3}}{\num{10E-3}}= \SI{2.94E-2}{\mole\per\liter}$
+	\item La solution $S_0$ est 100 fois plus concentrée que la solution $S_1$ ce qui donne une concentration $c_0 = 100 \times c_1$\\
+	\fbox{AN : } $c_0 = 100 \times \num{2.94E-2} = \SI{2.94}{\mole\per\liter}$
+\end{enumerate}
+
+\subsection{Valider}
+
+ \begin{enumerate}[resume]
+	\item Le fabricant donne $C_m $ = \SI{120}{\gram\per\liter}. $$c_{0, fabricant} = \dfrac{C_m}{M}$$
+	\fbox{AN : } $c_{0, fabricant} = \dfrac{\num{120}}{\num{40}} = \SI{3}{\mole\per\liter}$
+	\item En observant le matériel on note les incertitudes de mesure suivantes : $u(V_1)$ = \SI{0.040}{mL} (pipette jaugée de \SI{10}{mL}) et $u(V_A,E)$ = \SI{0.1}{mL} (burette graduée de \SI{25}{mL}). Pour déterminer l'incertitude $u(c_0)$ on modifie la formule donnée, soit :
+	$$u(c_0) = c_0 \cdot \sqrt{\left(\frac{u(c_A)}{c_A}\right)^2+\left(\frac{u(V_{A,E})}{V_{A,E}}\right)^2+\left(\frac{u(V_1)}{V_1}\right)^2}$$
+	\fbox{AN : } $u(c_0) =\num{2.94} \cdot \sqrt{\left(\dfrac{\num{0.001}}{\num{3.00E-2}}\right)^2+\left(\dfrac{\num{0.1E-3}}{\num{9.8E-3}}\right)^2+\left(\dfrac{\num{0.040E-3}}{\num{10E-3}}\right)^2} = \SI{3.94E-2}{\mole\per\liter}$
+	\item L'écart entre la valeur expérimentale et la valeur annoncée $\Delta c_0$ donne : $$\Delta c_0 = c_{0,fabricant} - c_0$$
+	\fbox{AN : } $\Delta c_0 = \num{3}-\num{2.94} = \SI{6E-2}{\mole\per\liter}$\\
+	On constate que la différence dépasse l'intervalle de confiance calculé précédemment : Le titrage n'est pas assez précis.
+\end{enumerate}
+\section*{Comprendre la courbe de titrage}
+\begin{enumerate}[resume]
+	\item 
+\end{enumerate}
+\noindent \begin{tabular}{|>{\centering}m{3.4cm}|>{\centering}m{3.4cm}|>{\centering}m{3.4cm}|>{\centering}m{3.4cm}|>{\centering\arraybackslash}m{3.4cm}|} \hline
+	\textbf{Temps} & \ce{HO-} & \ce{Na+} & \ce{H3O+} & \ce{Cl-}\\ \hline
+	Avant l'équivalence & $\downarrow$ & $=$ & $0$ & $\uparrow$\\ \hline
+	A l'équivalence & $0$ & $=$ & $0$ &$\uparrow$\\ \hline
+	Après l'équivalence & $0$ & $=$ & $\uparrow$ & $\uparrow$ \\ \hline
+\end{tabular}
+\begin{enumerate}[resume]
+	\item La conductivité peut se calculer par la formule : $$\sigma = \sum{\lambda_i \cdot [X_i]}$$
+	\item Avant l'équivalence, les ions en présence dans le milieu sont \ce{HO-}, \ce{Na+} et \ce{Cl-}, la conductivité va doucement diminuer avec la consommation des ion \ce{HO-} et ce malgré l'augmentation des ions \ce{Cl-} dans le milieu car $\lambda (\ce{HO_}) >\lambda (\ce{Cl-})$.\\
+	Après l'équivalence, les ions en présence dans le milieu seront \ce{Na+}, \ce{H3O+} et \ce{Cl-}. La conductivité va augmenter avec l'ajout continu d'ions \ce{H3O+} et \ce{Cl-} dans le milieu.
+\end{enumerate}
+\end{document}

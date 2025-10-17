@@ -1,0 +1,62 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
+
+\newcommand{\chnum}{Chapitre 18}
+\newcommand{\chtitle}{Interférences et diffraction}
+\newcommand{\dtype}{Exercices}
+
+  
+\begin{document}
+\maketitle
+
+\section*{Ex 35} 
+
+\begin{enumerate}
+	\item Fréquence perçue par le passant pendant l'approche : $$f_{rec} = \dfrac{f_{em}\cdot v_{son}}{v_{son}-v}$$
+\fbox{AN :} $f_{rec}(pin) = \dfrac{494\times 340}{340-70/3.6} = \SI{524}{Hz}$ La note associée est le Do$_4$\\
+$f_{rec}(pon) = \dfrac{440\times 340}{340-70/3.6} = \SI{467}{Hz}$ La note associée est le Sib$_3$\\
+	\item Fréquence perçue par le passant pendant l'éloignement : $$f_{rec} = \dfrac{f_{em}\cdot v_{son}}{v_{son}+v}$$
+\fbox{AN} $f_{rec}(pin) = \dfrac{494\times 340}{340+70/3.6} = \SI{467}{Hz}$ La note associée est le Sib$_3$\\
+$f_{rec}(pon) = \dfrac{440\times 340}{340+70/3.6} = \SI{416}{Hz}$ La note associée est le Sol\#$_3$\\
+\end{enumerate}
+
+\section*{Ex 36}
+
+\begin{enumerate}
+	\item $$cos(\theta) = \dfrac{x}{FS}$$ $$cos(\theta) = \dfrac{x}{\sqrt{d^2 + x^2}} $$
+	\item Le déplacement de la voiture sur l'axe (FS) est la projectoin du vecteur vitesse $\vec{v}$ sur ce même axe soit $v\cdot \cos(\theta)$, soit $v\cdot \dfrac{x}{\sqrt{d^2 + x^2}}$\\
+	Fréquence perçue par le spectateur pendant l'approche : $$f_{rec} = \dfrac{f_{em}\cdot v_{son}}{v_{son}-(v\cdot \dfrac{x}{\sqrt{d^2 + x^2}})}$$
+\end{enumerate}
+
+
+\section*{Ex 37}
+
+\begin{enumerate}
+	\item La différence de retard entre les deux échos correspond à un aller retour entre la paroi du vaisseau sanguin et le globule rouge, soit $2d$. On peut donc dire que $2d = v_{US} \cdot \Delta \tau$ soit : \\
+\fbox{AN :} $d = \dfrac{\num{1,57E3} \times (\num{29E-9}-\num{25E-9})}{2} = \SI{3.14E-6}{m}$
+	\item L'atténuation entre les deux échos s'obtient en calculant la différence entre les deux niveaux d'intensité sonores, ou directement en utilisant la formule : $$A = \log(\dfrac{I_2}{I_1})$$
+\fbox{AN :} $A = \log(\dfrac{\num{1.05E-11}}{\num{1.58E-11}}) = \SI{-0.18}{dB}$
+	\item On peut calculer l'absorption à partir des données obtenues : $Ab = \dfrac{A}{2d}$\\
+\fbox{AN :} $Ab = \dfrac{\num{-0.18}}{2\times \num{3.14E-3}} = \SI{-28,7}{\deci\bel\per\milli\meter}$\\
+La valeur proposée est trop faible par rapport à celle mesurée.
+	\item Le 2 dans la formule vient du fait que pour une échographie, le phénomène Doppler est pris en compte deux fois : une fois à l'aller avec une source fixe et un récepteur mobile (le globule rouge ici) et une fois au retour avec le globule rouge jouant le rôle de source mobile et la sonde jouant le rôle de récepteur fixe.
+	\item Calcul de la vitesse : on a la formule $$\Delta f = \dfrac{2 f_{em} \cdot \cos{\theta} \cdot v}{v_{US}}$$ $$v = \dfrac{v_{US} \cdot \Delta f}{2 f_{em} \cdot \cos{\theta}}$$
+\fbox{AN :} $v = \dfrac{\num{1.57E3} \cdot \num{1.5E3}}{2 \times \num{10E6} \cdot \cos{45}} = \SI{0.17}{\meter\per\second}$
+\end{enumerate}
+
+\section*{Ex 38}
+
+\textbf{Démonstration via la longueur d'onde}
+\begin{enumerate}
+	\item Pendant une période le bip sonore parcourra une distance $d_1 = v_{son} \cdot T_{em}$\\
+	la source parcourra une distance $d_2 = v \cdot T_{em}$
+	\item La longueur d'onde reçue sera donc égale à $\lambda = (v_{son} - v) \cdot T_{em}$
+	\item La fréquence reçue sera donc $\lambda = \dfrac{(v_{son} - v)} {f_{rec}}$ soit : $$f_{rec} = \dfrac{(v_{son} - v)} {\lambda}$$
+
+\end{enumerate}
+\textbf{Démonstration via la période}
+\begin{enumerate}
+	\item L'onde est émise à la vitesse du son, une première onde est émise et parcourra une distance $d_1$ jusqu'à l'observateur. On aura pour cette première onde une durée $T = T_{em}$. Le bip suivant aura une distance plus petite à parcourir et donc une durée plus cours de parcours pour atteindre l'observateur correspondant à $T = d/v_{son}$ la distance étant égale à $d_2 - d_1$ soit $\dfrac{v_{son}-v}{T_{em}}$. La différence de temps de parcours sera donc $\Delta t = T_{em} - \dfrac{v_{son}-v}{T_{em}}$
+\end{enumerate}
+
+\end{document}

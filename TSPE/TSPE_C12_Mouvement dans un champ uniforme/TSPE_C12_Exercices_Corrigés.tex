@@ -1,0 +1,114 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
+
+\newcommand{\chnum}{Chapitre 12}
+\newcommand{\chtitle}{Mouvement dans un champ uniforme}
+\newcommand{\dtype}{Exercices}
+\begin{document}
+\maketitle
+
+\section*{Exercice 1 : L'expérience de Scott}
+1. Le référentiel d'étude est le sol lunaire, assimilé à un référentiel galiléen car le référentiel est en mouvement uniforme et que le temps de la chute est faible et ne permet pas d'observer d'effets d'accélération ou de rotation.\\
+2. La deuxième loi de Newton dit que la somme des forces appliquées sur un système est égale à sa masse multipliée par l'accélération qu'il subit. $\sum \vec{F} = m \cdot \vec{a}$. Pour le marteau on n'aura qu'une force qui s'appliquera : l'attraction gravitationnelle de la Lune notée $F_{L/M}$. Pour la plume on aura une force d'attraction gravitationnelle de la Lune notée $F_{L/P}$. On peut donc dresser le tableau suivant :\\
+\begin{tabular}{|>{\centering}m{.3 \textwidth}|>{\centering}m{.3 \textwidth}|>{\centering\arraybackslash}m{.3 \textwidth}|}
+\hline
+Force & $F_{L/M}$ &$F_{L/P}$\\
+\hline
+Direction & Verticale & Verticale \\
+\hline
+Sens & Vers la bas & Vers la bas \\
+\hline
+Norme & $F_{L/M} = G \cdot \dfrac{m_L \cdot m_M}{(R_L + h)^2}$ &$F_{L/P} = G \cdot \dfrac{m_L \cdot m_P}{(R_L + h)^2}$\\
+\hline
+\end{tabular}\\
+
+En appliquant la deuxième loi de Newton on obtient :\\
+
+\noindent \begin{tabular}{|>{\centering}m{.3 \textwidth}|>{\centering}m{.3 \textwidth}|>{\centering\arraybackslash}m{.3 \textwidth}|}
+\hline
+Force & Marteau &Plume\\
+\hline
+Seconde Loi de Newton & $\vec{F_{L/M}} = m \cdot \vec{a}$ &$\vec{F_{L/M}} = m \cdot \vec{a}$\\
+&  $G \cdot \dfrac{m_L \cdot m_M}{(R_L + h)^2} \cdot \vec{k} = m_M \cdot \vec{a}$ &$G \cdot \dfrac{m_L \cdot m_P}{(R_L + h)^2} \cdot \vec{k} = m_P \cdot \vec{a}$\\
+&  $G \cdot \dfrac{m_L}{(R_L + h)^2} \cdot \vec{k} = \vec{a}$ &$G \cdot \dfrac{m_L}{(R_L + h)^2} \cdot \vec{k} = \vec{a}$\\
+\hline
+\end{tabular}\\
+
+On constate que dans les deux cas le vecteur accélération est égale à $G \cdot \dfrac{m_L}{(R_L + h)^2} \cdot \vec{k}$\\
+
+3.On obtient l'expression de la composante verticale de la vitesse en cherchant la primitive de l'accélération sur l'axe $(Oz)$. On aura donc : $\vec{a_z}(t) = G \cdot \dfrac{m_L}{(R_L + h)^2}$ donc $\vec{v_z}(t) = G \cdot t \cdot \dfrac{m_L}{(R_L + h)^2} + cste_1$. On peut déterminer la constante d'intégration en se plaçant à $t=0$, on constate que la vitesse initiale selon l'axe $(Oz)$ est nulle et donc que la constante vaut $0$. On aboutit donc à $\vec{v_z}(t) = G \cdot t \cdot \dfrac{m_L}{(R_L + h)^2}$.\\
+On obtient l'expression de l'équation horaire du mouvement selon l'axe vertical en intégrant l'expression de la vitesse sur ce même axe ce qui nous donne : $z(t) = \frac{1}{2} \cdot G \cdot t^2 \cdot \dfrac{m_L}{(R_L + h)^2} + cste_2$.On peut déterminer la constante d'intégration en se plaçant à $t=0$, on constate que la position initiale du système est confondu avec l'origine du repère et donc que la constante vaut $0$. On aura donc $z(t) = \frac{1}{2} \cdot G \cdot t^2 \cdot \dfrac{m_L}{(R_L + h)^2}$\\
+
+4.L'intensité de pesanteur sur la Lune correspond directement à son accélération sur l'axe $(Oz)$. On peut donc le calculer à partir de l'expression de $z(t)$ car$z(t) = \frac{1}{2} \cdot g_L \cdot t^2$ donc $g_L = \dfrac{2h}{t^2}$ .\\
+
+5. En se basant sur la photographie fournie on peut mettre en place une échelle se basant sur la taille de David Scott. On peut déterminer que la hauteur de chute est d'environ \SI{1,22}{\meter}. On peut calculer $g_L$ ce qui donne $g_L = \dfrac{2 \times 1,22}{1,2^2}=\SI{1,69}{\meter \per \second \squared}$
+
+6. La valeur obtenue est proche de la valeur de référence, la différence peut s'expliquer par le fait que les tailles sont faussées car l'astronaute est en tenue de sortie spatiale et que l'angle de la photographie peut jouer sur les distances calculées.
+
+\section*{Exercice 2 : Détermination d'une vitesse initiale}
+1. On applique la seconde loi de Newton au système : la seule force s'y appliquant est le poids, ce qui donne : $\vec{P}=m \cdot \vec{a}$ donc $m \cdot \vec{g}=m \cdot \vec{a}$ ce qui nous donne l'expression de l'accélération $\vec{a}=\vec{g}$. L'accélération peut donc s'exprimer sur l'axe $(Oz)$ comme : $a_z(t)=-g$.\\
+La composante $v_z(t)$ est la primitive de $a_z(t)$ ce qui donne $v_z(t)= -gt + cste_1$. Pour déterminer la constante d'intégration, il faut se placer à $t=0$ exprimer $v_z(0) = -g\times 0 + cste_1 = v_0$. On en déduit donc que la constante d'intégration correspond à la vitesse initiale du lancer notée $v_0$ orientée vers le haut. On aura donc, pour conclure, $$v_z(t) = -g\cdot t + v_0$$
+
+2.Pour déterminer l'équation horaire $z(t)$ il faut intégrer l'expression précédente ce qui donne : $z(t) = -\frac{1}{2} g \cdot t^2 + v_0 \cdot t + cste_2$. Afin de déterminer la valeur de la constante d'intégration on se place à $t=0$ ce qui nous donne $z(0) =-\frac{1}{2} g \times 0^2 + v_0 \times 0 + cste_2 = 0$ (la position de la balle à $t=0$ correspond à l'origine du repère). On en déduit donc que la constante d'intégration est nulle ce qui nous donne l'expression suivante  $$z(t) = -\frac{1}{2} g \cdot t^2 + v_0 \cdot t$$
+
+3. Pour obtenir étudier la hauteur maximale du lancer, il faut étudier le moment où la dérivée de l'équation $z(t)$ s'annule. C'est-à-dire quand la vitesse est nulle (en haut de la trajectoire. On aura donc à résoudre l'équation suivante : $v_z(t)=0$
+$$-g\cdot t + v_0 = 0$$ $$ \Rightarrow t = \frac{v_0}{g}$$
+à cet instant on aura $$z(t) = -\frac{1}{2} g \cdot (\frac{v_0}{g})^2 + v_0 \cdot (\frac{v_0}{g})$$
+Pour obtenir une hauteur maximale  de \SI{2,0}{\meter}, on aura l'équation suivante à résoudre : $$-\frac{1}{2} g \cdot (\dfrac{v_0}{g})^2 + v_0 \cdot (\frac{v_0}{g})=2$$
+$$ \text{Soit : }-\dfrac{v_0^2}{2g}+\dfrac{v_0^2}{g} = 2$$
+$$\dfrac{v_0^2}{2g}= 2$$
+$$ v_0^2 =4g$$
+$$v_0 = 2 \cdot \sqrt{g} = \SI{6,26}{\meter \per \second}$$
+
+\section*{Exercice 3 : Représentation des équations horaires}
+1. Pour déterminer les expressions de $x(t)$ et $y(t)$ il faut intégrer l'expression de $v(t)$ sur les axes $Ox$ et $Oy$. Cela donne : 
+$\left \lbrace \begin{array}{l}
+	x(t) = v_0 \cdot t \cdot \cos{\alpha} + cste_1\\
+	y(t) = - \frac{1}{2} g\cdot t^2 + v_0 \cdot t \cdot \sin{\alpha} + cste_2
+\end{array}\right  \rbrace$\\
+
+2. En analysant les différentes courbes et fonctions on peut dire que :
+\begin{itemize*}
+	\item Graphique 1 : Il s'agit d'une fonction linéaire (passant par l'origine) donc associée à une équation de type $f(t)= a \cdot t$, il s'agit ici de $x(t)$ (avec $cste_1 = 0$)
+	\item Graphique 2 : Il s'agit d'une fonction du seconde degré, ayant une équation du type $f(t) = a \cdot t^2 + b \cdot t + c$, ce qui ici correspond à $y(t)$.
+	\item Graphique 3 : Il s'agit d'une fonction constante (ne dépendant pas de $t$), dont l'équation donnerait $f(t) = a$. Ici cela correspond à $v_x(t)$.
+	\item Graphique 4 : Il s'agit d'une fonction linéaire avec une pente négative, ayant une équation du type : $f(t) = a \cdot t + b$. Elle est donc attribuable à $v_y(t)$.
+\end{itemize*}
+
+
+\section*{Exercice 4 : Accélération d'un électron}
+\begin{enumerate}
+	\item  Pour que l'électron soit accéléré il faut qu'il soit attiré vers la plaque B, donc que la plaque B soit positive et A négative : donc une tension U orientée positivement par rapport à l'axe $(Ox)$.
+	\item Le champ $\vec{E}$ est orienté perpendiculairement aux plaques (donc selon l'axe $(Ox)$), il est orienté de la plaque positive vers la plaque négative (négativement selon l'axe $(Oy)$) et sa norme vaut $E = \dfrac{|U|}{d} = \dfrac{200}{0,04} = \SI{5000}{\volt \per \meter}$
+	\item Calcul du poids d'un électron : $P = m \cdot g = \num{9,11E-31} \times \num{9,81} = \SI{8,94E-30}{\newton}$.\\
+Pour montrer qu'il est négligeable il suffit de comparer le poids à la force électrique subie par l'électron : $$F_e = q \cdot E = 1,60 \cdot 10^{-19} \times 5000 = \SI{8,00E-16}{\newton}.$$
+$$\dfrac{F_e}{P} = \dfrac{\num{8,000E-16}}{\num{8,94E-30}} =  \num{8,95E13} >> 10^{3}$$ La force électrique est largement supérieure au poids de l'électron, celui-ci est donc négligeable.
+	\item Pour calculer la vitesse de l'électron à l'approche du poids O, il faut commencer par appliquer la deuxième loi de Newton : $$\sum \vec{F} = m \cdot {a}$$
+	La seule force que l'on considère ici sera la force électrique soit : $$\vec{F_e} = m_e \cdot \vec{a}$$
+	L'expression de l'accélération sera donc $\vec{a} = \dfrac{\vec{F_e}}{m_e}$. En projection sur l'axe $(Ox)$ on aura $$a_x(t) = \dfrac{F_e}{m_e}$$
+L'expression de la vitesse s'obtient en intégrant la fonction $a_x(t)$, cela donne : $$v_x(t) = \dfrac{F_e}{m_e} \cdot t + cste_1$$
+L'énoncé donne une vitesse initiale négligeable, on peut donc dire que $cste_1 = 0$ ce qui donne l'expression suivante : $$v_x(t) = \frac{F_e}{m_e} \cdot t$$
+Enfin, l'expression de la position $x(t)$ s'obtient en intégrant $v_x(t)$ ce qui donnera : $$x(t) = \dfrac{F_e}{2 \cdot m_e} \cdot t^2 + cste_2$$
+Pour trouver la constante d'intégration on se place à $t=0$, où l'on peut estimer la position de l'électron au niveau de la plaque A. On aura alors $$x(0) = \dfrac{F_e}{2 \cdot m_e} \times 0^2 + cste_2= -0,04$$
+On aura donc $cste_2 = -0,04$. L'équation horaire de la position sera donc : $$x(t) = \dfrac{F_e}{2 \cdot m_e} \cdot t^2 - 0,04$$
+
+Pour déterminer la vitesse au point $O$, il nous faut connaître le temps nécessaire pour atteindre cette position, donc résoudre $x(t)=0$. Cela donne : $$\dfrac{F_e}{2 \cdot m_e} \cdot t^2 - 0,04 = 0$$
+$$\Rightarrow t^2 = \dfrac{0,04 \cdot 2 \cdot m_e}{F_e}$$
+$$\Rightarrow t = \sqrt{\frac{0,08 \cdot m_e}{F_e}} = \SI{9,54E-9}{\second}$$
+Enfin il faut déterminer la vitesse pour le temps $t_O$ 
+$$t_O = \sqrt{\dfrac{0,08 \cdot m_e}{F_e}}$$
+$$v_x(t_O) = \dfrac{F_e}{m_e} \cdot \sqrt{\dfrac{0,08 \cdot m_e}{F_e}}$$
+$$\dfrac{F_e}{m_e} \cdot \dfrac{\sqrt{0,08} \cdot \sqrt{m_e}}{\sqrt{F_e}}$$
+$$\sqrt{\dfrac{F_e}{m_e} \cdot 0,08}$$
+\fbox{AN :} $v_x(t_O) = \sqrt{0,08 \cdot \dfrac{8,00\cdot 10^{-16}}{9,11 \cdot 10^{-31}}} = \SI{8,38E6}{\meter \per \second}$
+\end{enumerate}
+
+\section*{Exercice 5 : Déviation d'une particule}
+
+1 et 2. Sur le schéma, on peut voir que la particule possède une trajectoire non linéaire qui laisse penser qu'elle est repoussée par la deuxième plaque. On peut donc dire que la première plaque a une charge opposée à celle de la particule (ici négative) et la deuxième a une charge de même signe que la particule (positive). Dans cette configuration le champ $\vec{E}$ sera orienté sur le schéma de la droite vers la gauche.\\
+Le vecteur accélération sera colinéaire à la résultante des forces appliquées (2ème loi de Newton) ici la force électrique. La force électrique sera elle même colinéaire au champ $\vec{E}$ et donc l'accélération sera orientée horizontalement et vers la gauche.\\
+
+3. Si $\vec{v_0}$ était perpendiculaire aux plaques, la trajectoire serait rectiligne vers la droite et ralentie. (analogie : une balle lancée en chute libre avec une vitesse initiale vers le haut dans un champ de pesanteur uniforme )\\
+
+4. Une particule chargée négativement dans la même situation aurait une trajectoire courbée (curviligne) et accélérée orientée vers la plaque de droite.\\
+\end{document}

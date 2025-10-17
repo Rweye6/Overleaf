@@ -1,0 +1,189 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 10}
+\newcommand{\chtitle}{Chimie organique}
+\newcommand{\dtype}{Cours}
+
+
+
+\begin{document}
+	\maketitle
+	
+\section{Optimisation d'une synthèse}
+	\subsection{Augmenter un rendement}
+	L'augmentation du rendement d'une synthèse peut être réalisée par :
+	\begin{itemize}
+		\item l'introduction d'un réactif en excès
+		\item l'élimination d'un produit du mélange réactionnel
+	\end{itemize}
+
+\textbf{Exemple :}\\
+La synthèse du méthanol \ce{CH3OH} est réalisée à partir du bromométhane selon la réaction d'équation : $$\ce{CH3Br + HO- <=> CH3OH + Br-}$$
+$$Q_{r,eq} = K(T) = \dfrac{[\ce{CH3OH}]_f \times [\ce{Br-}]_f}{[\ce{CH3Br}]_f \times [\ce{HO-}]_f} $$
+\begin{itemize}
+	\item Si une quantité de \ce{HO-} est ajouté dans le milieu, $Q_r \ne K(T)$ et $Q_r$ a diminué. Le système va alors évoluer spontanément pour retourner vers l'équilibre en formant plus de \ce{CH3OH}.
+	\item Si une quantité d'ions \ce{Ag+} est ajoutée au milieu réactionnel, il pourra réagir avec les ions \ce{Br-} pour former du bromure d'argent \ce{AgBr(s)} qui précipitent dans le milieu.  Dans le mélange on aura alors $[\ce{Br-]} = \SI{0}{\mole\per\liter}$ et par conséquent $Q_r=0$. Le système va alors vouloir spontanément se déplacer vers l'équilibre dans le sens de la formation de \ce{CH3OH}.
+\end{itemize}
+	
+	\subsection{Augmenter de la vitesse}
+	Lors d'une synthèse, le contrôle de la vitesse volumique de formation du produit d'intérêt peut se faire en agissant sur les facteurs cinétiques. Par exemple :
+	\begin{itemize}
+		\item en modifiant la concentration d'un réactif lorsque celle-ci est un facteur cinétique
+		\item en modifiant la température
+		\item en ajoutant un catalyseur adapté
+	\end{itemize}
+
+\section{Synthèse multi-étapes}
+	\subsection{Classification des réactions}
+	Une transformation en chimie organique fait le plus souvent intervenir plusieurs espèces. Parmi les réactifs, l'espèce organique sont les modifications au cours de la transformation sont caractérisées est appelée "substrat".\\
+	Les transformations d'un substrat organique peuvent être classés dans différentes catégories.\\
+	\noindent \begin{tabular}{|>{\centering}m{.2\linewidth}|>{\centering}m{.32\linewidth}|>{\centering\arraybackslash}m{.4\linewidth}|}
+	\hline
+	
+	\textbf{Nom de la réaction} & \textbf{Caractérisation de la transformation} & \textbf{Exemple}\\
+	\hline
+	
+	\textbf{Oxydoréduction} & Couple oxydant$_1$/réducteur$_1$ ;  transformation de l'oxydant$_1$ en réducteur$_1$ (ou inversement) & Oxydation de l'alcool benzylique en acide benzoïque
+	\schemestart
+	\chemfig[atom sep=1.5em]{*6(-=-(--[7]OH)=-=)}
+	\arrow{->[\ce{MnO4-}][\ce{H+}]}
+	\chemfig[atom sep=1.5em]{*6(-=-(-(=[2]O)-[7]OH)=-=)}
+	\schemestop
+	
+	 (couples red/ox : \ce{C7H6O2}/\ce{C7H8O} et \ce{MnO4-}/\ce{Mn^2+})\\
+	 \hline
+	 
+	 \textbf{Acide-base} & Coule acide$_1$/base$_1$ ; transformation de l'acide$_1$ en base$_1$ (ou inversement) & Transformation de l'acide benzoïque en ion benzoate
+	 \schemestart
+	\chemfig[atom sep=1.5em]{*6(-=-(-(=[2]O)-[7]OH)=-=)}
+	\arrow{->[\ce{CO3^2-}]}
+	\chemfig[atom sep=1.5em]{*6(-=-(-(=[2]O)-[7]O^{-})=-=)}
+	\schemestop
+	
+	 (couples acide/base : \ce{C7H6O2}/\ce{C7H6O2-} et \ce{HCO3-}/\ce{CO3^2-})\\
+	 \hline
+	
+	\textbf{Addition} & Un ou des atome(s) du produit possède(nt) plus de liaisons simples que dans le substrat. & Hydrogénation de l'éthylène
+	\schemestart
+	\chemfig[atom sep=1.5em]{H-[7]C(-[5]H)=C(-[7]H)-[1]H}
+	\arrow{->[\ce{H2}][$[\ce{Pd}]$]}
+	\chemfig[atom sep=1.5em]{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+	\schemestop\\
+	
+	\hline
+	
+	\textbf{Élimination} & Un ou des atomes(s) du produit possède(nt) moins de liaisons simples que dans le substrat & Déshydratation du 2-méthylpropan-2-ol
+	\schemestart
+	\chemfig[atom sep=2em]{H_3C-C(-[2]CH_3)(-[6]OH)-C(-[2]H)(-[6]H)-H}
+	\arrow{->[\ce{H2SO4}]}
+	\chemfig[atom sep=1.5em]{H_3C-[7]C(-[5]H_3C)=C(-[7]H)-[1]H}
+	\schemestop\\
+	
+	\hline
+	
+	\textbf{Substitution} & Un atome ou un groupe d'atomes du substrat est remplacé par un autre atome ou un groupe d'atomes dans le produit & Transformation du 2-chloro-2-méthylpropane en 2-méthylpropan-2-ol
+	\schemestart
+	\chemfig[atom sep=1.5em]{H_3C-[7]C(-[5]H_3C)(-[7]CH_3)-[1]Cl}
+	\arrow{->[\ce{HO-}]}
+	\chemfig[atom sep=1.5em]{H_3C-[7]C(-[5]H_3C)(-[7]CH_3)-[1]OH}
+	\schemestop\\
+	
+	\hline
+	\end{tabular}
+\newpage
+	\subsection{Séquence réactionnelle}
+		\subsubsection{Séquence multi-réactions}
+		Afin de synthétiser une espèce organique souhaitée à partir d'autres espèces organiques, il est nécessaire d'effectuer \textbf{plusieurs transformations successives} pouvant transformer des groupes caractéristiques et/ou des chaînes carbonées.\\
+		\textbf{Exemple :}\\
+		\begin{minipage}{.5\linewidth}
+		L'objectif d'une synthèse est organique est de fabriquer l'espèce \textbf{B} (2-méthylpentan-3-one) à partir de substrat, l'espèce \textbf{A} (pentan-3-ol). Une stratégie de synthèse possible consiste à réaliser deux transformations successive.
+		\begin{enumerate}
+			\item \textbf{Modification d'un groupe caractéristique} par une réaction d'oxydation du substrat organique \textbf{A}.
+			\item \textbf{Modification de la chaîne carbonée} du nouveau substrat organique \textbf{C}
+		\end{enumerate}
+		\end{minipage}
+		\begin{minipage}{.5\linewidth}
+		\begin{center}
+		\schemestart
+		\chemname{\chemfig[atom sep=1.5em]{-[7]-[1](-[2]OH)-[7]-[1]}}{\textbf{A}}		
+		\arrow
+		\chemname{\chemfig[atom sep=1.5em]{-[7]-[1](=[2]O)-[7](-[6])-[1]}}{\textbf{B}}
+		\schemestop
+		\chemnameinit{}
+		
+		\vspace{1em}
+		\schemestart
+		\chemname{\chemfig[atom sep=1.5em]{-[7]-[1](-[2]OH)-[7]-[1]}}{\textbf{A}}		
+		\arrow{->[\ce{CrO3}][(1)]}
+		\chemname{\chemfig[atom sep=1.5em]{-[7]-[1](=[2]O)-[7]-[1]}}{\textbf{C}}
+		\schemestop
+		\chemnameinit{}
+		
+		\vspace{1em}
+		\schemestart
+		\chemname{\chemfig[atom sep=1.5em]{-[7]-[1](=[2]O)-[7]-[1]}}{\textbf{C}}	
+		\arrow{->[\ce{NaH}][\ce{CH3Br}~(2)]}
+		\chemname{\chemfig[atom sep=1.5em]{-[7]-[1](=[2]O)-[7](-[6])-[1]}}{\textbf{B}}
+		\schemestop
+		\chemnameinit{}
+		
+		\end{center}
+		\end{minipage}
+		
+		\subsubsection{Utilisation d'une banque de réactions}
+		Les réactions en chimie organiques sont nombreuses. Des banques de réactions regroupent les informations sur la réactivité des espèces organiques de différentes familles fonctionnelles en spécifiant les conditions expérimentales dans lesquelles les espèces réagissent ou ne réagissent pas.
+		
+		\subsubsection{Protection des groupes caractéristiques}
+		Lorsqu'une espèce chimiques appartient à plusieurs familles fonctionnelles réagissent dans les mêmes conditions expérimentales, il est parfois nécessaire de mettre en place une stratégie de synthèse appelée \textbf{protection-transformation-déprotection} afin de synthétiser le produit désiré.\\
+		\textbf{Exemples :}\\
+		L'objectif d'une synthèse est de former l'acide  lactique \textbf{F} (acide 2-hydroxypropanoïque) à partir de 2-hydroxypropanal \textbf{E} par une réaction d'oxydation du substrat organique.\\
+		La banque e réactions permet de déterminer que l'oxydant \ce{MnO4-}   transforme l'aldéhyde en acide carboxylique, mais aussi l'alcool en cétone. L'utilisation de ce réactif conduisant donc à la transformation ci-contre et l'objectif ne serait pas atteint.\\
+		La banque de réactions montre qu'une voie de synthèse possible est la suivante :
+		\begin{center}
+		\schemestart
+		\chemname{\chemfig[atom sep=1.5em]{HO-[7](-[6])-[1]=[2]O}}{\textbf{E}}	
+		\arrow{->[1) \ce{NaH}][2) \chemfig[atom sep=1.5em]{Ph-[7]-[1]Cl}]}
+		\chemname{\chemfig[atom sep=1.5em]{Ph-[7]-[1]O-[7](-[6])-[1]=[2]O}}{\textbf{G}}
+		\arrow{->[\ce{MnO4-}]}
+		\chemname{\chemfig[atom sep=1.5em]{Ph-[7]-[1]O-[7](-[6])-[1](-[7]OH)=[2]O}}{\textbf{H}}
+		\arrow{->[\ce{H2}][$[\ce{Ni}]$]}
+		\chemname{\chemfig[atom sep=1.5em]{HO-[7](-[6])-[1](-[7]OH)=[2]O}}{\textbf{F}}
+		\schemestop
+		\chemnameinit{}
+		\end{center}
+		\textbf{Protection} : le groupe hydroxy a été transformé en un autre groupe caractéristique appelé groupe protecteur, qui n'est pas transformé par \ce{MnO4-}.\\
+		\textbf{Transformation} : \ce{MnO4-} permet de transformer le groupe carbonyle et groupe carboxy.\\
+		\textbf{Déprotection :} le groupe protecteur est retransformé en groupe hydroxy, permettant de former le produit désiré, l'acide lactique \textbf{F}.
+		
+		\subsubsection{Réaction de polymérisation}
+		Une réaction de polymérisation peut avoir lieu lorsqu'une espèce chimique possède deux groupes caractéristiques différents pouvant réagir entre eux dans certaines conditions expérimentales.\\
+		\textbf{Exemples :}\\
+		La banque de réaction montre qu'un acide carboxylique réagit avec un alcool en milieu acide pour former un ester (et de l'eau).\\ L'acide lactique est une espèce chimique appartenant à l a fois à la famille des acides carboxyliques et à celle des alcools. En milieu acide, cette espèce réagit avec elle même pour former un polymère acide polylactique selon le processus :
+		\begin{center}
+		\schemestart
+		... \+ \chemfig[atom sep=1.5em]{HO-[7](-[6])-[1](=[2]O)-[7]OH}
+		\+ \chemfig[atom sep=1.5em]{HO-[1](-[2])-[7](=[6]O)-[1]OH}
+		\+ \chemfig[atom sep=1.5em]{HO-[7](-[6])-[1](=[2]O)-[7]OH}
+		\+ ...
+		\arrow{->[\ce{H2SO4}]}
+		\chemfig[atom sep=1.5em]{HO-[7](-[6])-[1](=[2]O)-[7]O-[1](-[2])-[7](=[6]O)-[1]O-[7](-[6])-[1](=[2]O)-[7]OH}		
+		\schemestop\\
+		
+		\schemestart
+\chemfig[atom sep=1.5em]{-[@{op,.75}](-[6])-[1](=[2]O)-[7]O-[@{cl,0.25}]}
+\polymerdelim[height = 20pt,depth = 20pt, indice = \!\!n]{op}{cl}
+		\schemestop
+		\end{center}
+	\subsection{Impact environnemental}
+	La synthèse d'un produit d'intérêt en chimie organique utilise des ressources énergétiques, des réactifs, des solvants et des catalyseurs. Afin d'élaborer des synthèses \textbf{écoresponsables}, les chimistes proposent des améliorations.\\
+	Il est possible par exemple de :
+	\begin{itemize}
+		\item mettre au points des réactions formant le moins possible de sous-produits
+		\item valoriser les sous-produits par leur utilisation dans d'autres synthèses
+		\item créer des catalyseurs permettant de diminuer l'apport d'énergie
+		\item utiliser des réactifs et des catalyseurs permettant d'éviter les stratégies de protection-transformation-déprotection
+		\item limiter l'utilisation des solvants
+	\end{itemize}
+\end{document}

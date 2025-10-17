@@ -1,0 +1,94 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Eval}
+\usepackage[toc,page]{appendix}
+
+
+\newcommand{\chnum}{Chapitres 6 et 13}
+\newcommand{\chtitle}{Équilibres chimiques et mouvement des satellites}
+\newcommand{\dtype}{DS 5}
+
+\begin{document}
+\maketitle
+\section{Nanosatellite}
+Le projet Janus (Jeunes en Apprentissage pour la réalisation de Nanosatellites au sein des Universités et des écoles de l'enseignement Supérieur) a pour objectif de promouvoir les technologies de l'aérospatial auprès des étudiants des écoles et universités françaises.\\
+Pour cela, le CNES leur propose de développer et d'envoyer dans l'espace sous le format "Cubesats", c'est-à-dire de petits systèmes cubiques de masse comprise entre 1 et 10 kg.\\
+Les satellites X-CubeSat et Spacecube ont été mis au point par des étudiants de l'école polytechnique, de l'école des mines de Paris et du BTS du lycée Diderot à Paris. Ils ont été mis en orbite les 17 et 18 mai 2017 depuis la station spatiale internationale et ont pour mission d'analyser le taux d'oxygène atomique de la thermosphère, partie supérieure de l'atmosphère.\\
+\textbf{Données :}
+\begin{itemize}
+    \item masse de la Terre : $M_T$ = \SI{5,97E24}{kg}
+    \item rayon de la Terre : $R_T$ = \SI{6400}{km}
+    \item constante universelle de gravitation : $G$ = \SI{6,67E-11}{S.I.}
+    \item vitesse de la lumière dans le vide : $c$ = \SI{3,00E8}{\meter\per\second}
+\end{itemize}
+On se place dans  le référentiel géocentrique.\\
+\begin{minipage}{.48\linewidth}
+    Les caractéristiques de l'orbite de Spacecube sont les suivantes :
+    \begin{itemize}
+        \item altitude minimale au point $P$ : \SI{395}{km}
+        \item altitude maximale au point $A$ : \SI{402}{km}
+        \item nombre de révolutions par jour : \num{15,56}
+    \end{itemize}
+\end{minipage}
+\begin{minipage}{.5\linewidth}
+    \centering
+    \includegraphics[width = .7\linewidth]{Ressources/TSPE_DS5_25_fig1.png}
+\end{minipage}
+
+
+\begin{enumerate}
+    \item Montrer par un calcul d'écart relatif qu'il est possible de considérer que l'orbite de ce satellite est quasi-circulaire. On calculera pour cela le pourcentage d'écart entre les extremums.
+\end{enumerate}
+on considère pour la suite de l'exercice que l'orbite est effectivement circulaire, d'altitude $h$= \SI{400}{km}.
+\begin{enumerate}[resume]
+    \item Exprimer la vitesse $v$ su satellite en fonction de sa période de rotations $T$ et du rayon de l'orbite $R$.
+    \item Donner l'expression de l'accélération $a_N$ du satellite dans le cas d'un mouvement circulaire.
+    \item A l'aide de la seconde loi de Newton et des réponses aux questions précédentes, calculer le nombre de révolutions effectuées par jour par ce satellites. Conclure quant à l'approximation d'une orbite circulaire.
+\end{enumerate}
+
+\section{La pile au méthanol}
+
+La pile au méthanol fait partie des piles à combustibles. Elle est constituée de deux électrodes en platine, au niveau desquelles se produisent une réaction d’oxydation et une réaction de réduction. Le platine sert de catalyseur pour les réactions d’oxydo-réduction. Les deux électrodes sont séparées par une membrane poreuse riche en ions hydrogène \ce{H+(aq)}, appelée membrane protonique. L’une des électrodes est alimentée par du dioxygène puisé dans l’air, et l’autre est alimentée par un combustible, ici le méthanol en solution aqueuse.\\
+\textbf{Données :}
+\begin{itemize}
+    \item masse molaire du méthanol : $M_{\text{méthanol}}$ = \SI{32,0}{\gram\per\mole}
+    \item masse volumique du méthanol : $\rho_{\text{méthanol}}$ = \SI{0,792}{\gram\per\milli\liter}
+    \item composition volumique de l'air : \SI{20}{\percent} de dioxygène et \SI{80}{\percent} de diazote
+    \item volume molaire du dioxygène dans les conditions de l'expérience : $V_m$ = \SI{24,5}{\liter\per\mole}
+    \item constante de Faraday : $\mathcal{F}$ = \SI{9,5E4}{\coulomb\per\mole}
+    \item le rendement $r$ d'une pile relie sa capacité électrique réelle $Q'_{max}$ à sa capacité électrique théorique $Q_{max}$ par la relation : $Q'_{max}= r \times Q_{max}$
+    \item lorsqu'on associe des piles en série, leurs capacité électriques s'ajoutent.
+\end{itemize}
+
+\subsection{Étude du fonctionnement de la pile au méthanol}
+Les demi-équations traduisant les réactions au niveau des électrodes de la pile au méthanol sont données ci-dessous :
+\begin{itemize}
+    \item Electrode 1 : \ce{CH3OH(aq) + H2O(l) = CO2(g) + 6 e- + 6 H+(aq)}
+    \item Electrode 2 : \ce{O2(g) + 4 e- + 4 H+ = 2H2O(l)}
+\end{itemize}
+\begin{enumerate}
+    \item Identifier quelle électrode constitue l’anode et quelle électrode constitue la cathode dans la pile au méthanol.
+    \item Indiquer sur le schéma du circuit en annexe, les pôles de la pile ainsi que le sens du courant électrique.
+    \item Expliquer le rôle de la membrane protonique dans la pile au méthanol.
+    \item . Indiquer le sens de circulation des porteurs de charge à l’intérieur et à l’extérieur de la pile sur le schéma en annexe.
+    \item Écrire l'équation de la réaction chimique modélisant le fonctionnement de la pile.
+\end{enumerate}
+La pile est alimentée par un volume $V$ = \SI{5,0}{mL} d'une solution aqueuse de méthanol à \SI{10}{\percent} en volume et avec de l'air ambiant. Le compartiment qui contient l'air est constamment en contact avec l'air ambiant.
+
+\begin{enumerate}[resume]
+    \item Montrer que la quantité de matière de méthanol introduite dans la pile au méthanol a pour valeur $n(\ce{CH3OH})$ = \SI{1,2E-2}{\mole}.
+    \item Justifier que le dioxygène est le  réactif en excès.
+    \item Déterminer le volume d'air $V(air)$ consommé lors du fonctionnement de la pile jusqu'à son usure.
+\end{enumerate}
+
+\subsection{Alimentation d'un circuit comportant un petit ventilateur}
+Au laboratoire du lycée, des élèves cherchent à faire fonctionner un petit ventilateur avec la pile au méthanol étudiée dans la partie a. Pour y parvenir, ils doivent associer deux piles en série. Ils mesurent alors que l'intensité du courant qui circule dans le circuit lorsque le ventilateur fonctionne vaut $I$ = \SI{450}{mA}. Chacune des piles a un rendement de \SI{70}{\percent}.
+\begin{enumerate}
+    \item Calculer la capacité électrique théorique de la pile au méthanol étudiée dans la partie a.
+    \item Les élèves souhaitent faire fonctionner le ventilateur pendant au moins une heure. Expliquer, en argumentant la réponse, s'ils y parviendront.
+\end{enumerate}
+
+\section*{ANNEXE}
+\begin{center}
+    \includegraphics[width=.9\linewidth]{Ressources/TSPE_DS5_25_fig2.png}
+\end{center}
+\end{document}

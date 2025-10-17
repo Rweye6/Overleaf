@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+		<!--Titre de la page-->
+		<title>TSPE_C3_Cours</title>
+		<!--Icone de l'onglet-->
+		<link rel="shortcut icon" href="../Ressources/logo_chimie.jpg">
+	</head>
+<link href="Activités.css" rel="stylesheet"/>
+<body>
+	<h1> AE 1 : Mesurer le pH</h1>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <h2>Notions d'acides et de bases</h2>
+    Le pH renseigne sur l'acidité ou  la basicité d'une solution. Il dépend de la concentration en ions oxonium H<sub>3</sub>O<sup>+</sup>(aq) présents dans la solution.
+    <br>
+    <b>Problématique : Le pH est une grandeur sans unité permettant d'apprécier le caractère acide ou basique d'une solution. Comment est donc définit le pH ?</b>
+    <br>
+    Pour répondre à cette question, nous allons préparer un ensemble de solutions de concentrations différentes et en mesurer le pH. les valeurs mesurées seront alors comparées aux valeurs théoriques.
+    <div class="document">
+        <b>Document 1 : La définition du pH</b>
+        <br>
+        C'est au sein du laboratoire Carlsberg, chargé d'effectuer des recherches sur la fabrication de la bière, que le danois Soren SORENSEN introduit le notion de pH. Dès 1881, son prédécesseur à la direction du laboratoire, J. G. KJELDAHL, avait observé que l'activité de l'enzyme saccharase dépendait de la quantité des différents acides présents dans le milieu, mais aucune relation claire entre ces acides et l'activité enzymatique n'avait pu être établie. SORENSEN comprit que le facteur déterminant n'était pas la concentration en acides, mais la concentration en ions hydrogène H<sup>+</sup> provenant de ces acides. C'est ainsi qu'il a été amené à définir le pH. Par la suite, cette définition a évolué en faisant intervenir les ions oxonium H<sub>3</sub>O<sup>+</sup>(aq), forme solvatée des ions hydrogène.
+    </div>
+    <div class="document">
+        <b>Document 2 : Complément scientifique</b>
+        <br>
+        L'eau distillée contient des molécules d'eau H<sub>2</sub>O(l) mais également des ions oxonium H<sub>3</sub>O<sup>+</sup>(aq) et des ions hydroxyde HO<sup>-</sup>(aq) en quantités égales et très faibles :
+        <br>
+        [H<sub>3</sub>O<sup>+</sup>] = [HO<sup>-</sup>] = 1&times;10<sup>-7</sup> mol&middot;L<sup>-1</sup> à 25°C.
+        <br>
+        <b>Document 3 : Matériel et solutions disponibles</b>  
+        <ul>
+            <li>Solutions S<sub>1</sub> et S<sub>4</sub> d'acide chlorhydrique de concentration en ion oxonium [H<sub>3</sub>O<sup>+</sup>] = 1,0&times;10<sup>-1</sup> mol&middot;L<sup>-1</sup> et [H<sub>3</sub>O<sup>+</sup>] =1,0&times;10<sup>-4</sup> mol&middot;L<sup>-1</sup>.</li>
+            <li>pipettes jaugées de 5.0 mL ; 10 mL et 20 mL</li>
+            <li>propipette</li>
+            <li>3 fioles jaugées de 50.0 mL avec bouchon</li>
+            <li>4 béchers</li>
+            <li>pissette d'eau distillée</li>
+            <li>pipette pasteur</li>
+            <li>pH-mètre</li>
+            <li>bandes de papier filtre</li>
+            <li>tableur-grapheur ou edupython</li>
+            <li>lunettes</li>
+        </ul>
+    </div>
+    <div class="document">
+        <b>Document 4 : La solution d'acide chlorhydrique</b>
+    <br>
+    Une solution d'acide chlorhydrique est une solution aqueuse contenant des ion oxonium H<sub>3</sub>O<sup>+</sup>(aq) et des ions chlorure Cl<sup>-</sup>(aq) en quantités identiques.
+    <br>
+    <b>Extrait de l'étiquette d'une solution concentrée d'acide chlorhydrique :</b>
+    <br>
+    <b>Mentions de danger</b>
+    <b>H290 :</b> peut être corrosif pour les métaux.
+    {Ressources/Act1_Fig2.png}
+    <b>H314 :</b> provoque des brûlures de la peau et des lésions oculaires graves.
+    <b>H335 :</b> peut irriter les voies respiratoires.
+    </div>
+    
+    <table>
+        <th>Solution</th>
+        <th>S<sub>1</sub></th>
+        <th>S<sub>2</sub></th>
+        <th>S<sub>3</sub></th>
+        <th>S<sub>4</sub></th>
+        <th>S<sub>5</sub></th>
+        <th>S<sub>6</sub></th>
+        <th>Eau distillée</th>
+
+        <tr>
+            <td>[H<sub>3</sub>O<sup>+</sup>] (en mole&middot;L<sup>-1</sup>)</td>
+            <td>0,10</td>
+            <td>0,010</td>
+            <td>1,0&times;10<sup>-3</sup></td>
+            <td>1,0&times;10<sup>-4</sup></td>
+            <td>1,0&times;10<sup>-5</sup></td>
+            <td>1,0&times;10<sup>-6</sup></td>
+            <td>1,0&times;10<sup>-7</sup></td>
+        </tr>
+        <tr>
+            <td>pH mesuré</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+        
+    <h2>Préparation des solutions</h2>
+    <ol>
+        <li>A partir du matériel disponible, proposer un protocole expérimental pour préparer trois solutions par dilution successives d'un facteur 10 à partir de la solution S<sub>1</sub> ou S<sub>1</sub>.
+        <br>
+        <i>Penser à bien préciser : les règles de sécurité / le nom du matériel et des espèces chimiques / les quantités utilisées.</i> <font color="red"></font>ANA, COM</font></li>
+        <p>Appel n°1</p>
+        <li>Mettre en œuvre le protocole de dilution. \textcolor{gray!80!blue}{\textbf{REA}}</li>
+<h2>Mesure du pH</h2>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>\begin{enumerate}
+        \item 
+        \begin{center}
+        \textbf{\textsc{}}
+        \end{center}
+        \item 
+    \end{enumerate}
+    \section{Mesure du pH}
+    \begin{enumerate}[resume]
+        \item \begin{enumerate}
+            \item Lire la fiche méthode de l'utilisation d'un pH-mètre. \textcolor{gray!80!blue}{\textbf{APP}}
+            \item Étalonner le pH-mètre. \textcolor{gray!80!blue}{\textbf{REA}}
+            \item Mesurer le pH des 3 solutions précédentes et les 3 solutions d'un groupe ayant travaillé avec l'autre solution mère. Inscrire les résultats dans le tableau ci-dessus. \textcolor{gray!80!blue}{\textbf{REA}}
+        \end{enumerate}
+        \begin{center}
+        \textbf{\textsc{Appel n°2}}
+        \end{center}
+    \end{enumerate}
+    \section{Exploitation des mesures}
+    \begin{enumerate}[resume]
+        \item Compléter la première phrase du bilan. \textcolor{gray!80!blue}{\textbf{ANA}}
+        \item Compléter les lignes 7, 10, 11 et 12 du programme Python fourni pour afficher les points représentant le pH en fonction de la concentration en ions oxonium. \textcolor{gray!80!blue}{\textbf{APP, ANA}}
+        \item En déduire si le pH d'une solution est proportionnel à sa concentration en ions oxonium. Justifier. \textcolor{gray!80!blue}{\textbf{VAL}}
+        \item Dans la deuxième phrase du bilan, indiquer comment varie le pH lorsque la concentration en ions oxonium de la solution diminue d'un facteur 10. \textcolor{gray!80!blue}{\textbf{ANA}}
+        \item Tester alors les deux relations ci-dessous et en déduire laquelle convient pour définir le pH. Compléter alors la troisième phrase du bilan. \textcolor{gray!80!blue}{\textbf{ANA VAL}}
+        \begin{center}
+        \fbox{$pH = Log \frac{[H_3O^{+}]}{c^0}$} ou \fbox{$pH = -Log \frac{[H_3O^{+}]}{c^0}$}\\
+        avec $c^0$ la concentration standard égale à $1~mol\cdot L^{-1}$
+        \end{center}
+        \begin{center}
+        \textbf{\textsc{Appel n°3}}
+        \end{center}
+        \item Modéliser la courbe de la question 8. Pour cela, déplacer les lignes concernant le modèle (lignes 19 à 24) entre la ligne 13 et 14. A quoi sert la ligne 21 ? \textcolor{gray!80!blue}{\textbf{REA, ANA}}
+    \end{enumerate}
+    
+    \begin{center}\fbox{\begin{minipage}{\linewidth}
+    \section{BILAN}
+    Plus la concentration en ions oxonium d'une solution est faible, plus le pH est .......................\\
+    Lorsque cette concentration est divisée par 10, le pH  ..................................\\
+    La relation entre pH est concentration en ions oxonium est :\\
+    \vspace{2em}
+    
+    \end{minipage}}
+    \end{center}
+</body>
+
+<footer>
+	<a href =".../TSPE_C01_Réaction Acide-Base/TSPE_C1_Cours.pdf" download="TSPE_C1_Cours">Télécharger le PDF</a>
+	<br>
+	ROSALIE - 2024 - Lycée Georges Cuvier
+</footer>
+
+</html>

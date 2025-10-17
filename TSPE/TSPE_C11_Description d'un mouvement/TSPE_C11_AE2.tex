@@ -1,0 +1,89 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 11}
+\newcommand{\chtitle}{Mouvement circulaire uniforme}
+\newcommand{\dtype}{TP}
+
+
+\begin{document}
+\maketitle
+
+\section{Le MCU}
+Le mouvement d'un objet est analysé deux fois, chacune avec un intervalle de temps différent.
+\begin{table}[h!]
+	\begin{tabular}{|>{\centering}m{9cm} | >{\centering \arraybackslash}m{9cm}|}
+	\hline
+	Intervalle de temps $\Delta t$ & Intervalle de temps $\dfrac{\Delta t}{3}$\\
+	\hline
+	\begin{tikzpicture}
+		\draw[blue] (0,0) circle (4);
+		\foreach \k in {0,45,90,135,180,315}{
+			\pgfmathsetmacro{\x}{4*cos(\k)}
+			\pgfmathsetmacro{\y}{4*sin(\k)}
+			%\node at (\x,\y){\Huge +};
+			\draw (\x,\y) node{\Huge + };
+		}
+		\node[above] (Mi) at (0,4){\Huge $M_i$};
+		\draw[->,thick,>=latex, out=90, in =220] (-4.5,0) to (-3.19,3.19);
+	\end{tikzpicture}&
+	\begin{tikzpicture}
+		\draw[blue] (0,0) circle (4);
+		\foreach \k in {0,15,30,45,60,75,90,105,120,135,150,165,180,315,330,345}{
+			\pgfmathsetmacro{\x}{4*cos(\k)}
+			\pgfmathsetmacro{\y}{4*sin(\k)}
+			%\node at (\x,\y){\Huge +};
+			\draw (\x,\y) node{\Huge + };
+		}
+		\node[above] (Mi) at (0,4){\Huge $M_i$};
+		\draw[->,thick,>=latex, out=90, in =220] (-4.5,0) to (-3.19,3.19);
+	\end{tikzpicture}\\
+	\hline
+	\end{tabular}
+\end{table}
+\begin{enumerate}
+	\item Décrire le mouvement de l'objet.\vspace{2cm}
+	\item Représenter les vecteurs vitesse $\vec{v_i}$ et $\vv{v_{i+1}}$ dans les deux situations, sans considération d'échelle, en bleu.\vspace{2cm}
+	\item Construire le vecteur variation de vitesse $\Delta \vec{v_i}$, en rouge.\vspace{2cm}
+	\item En déduire la direction et le sens du vecteur accélération $\vec{a_i}$ lors d'un mouvement circulaire uniforme pour un intervalle de temps infiniment court.\vspace{2cm}
+\end{enumerate}
+\newpage
+\section{Accélération dans le repère de Frenet}
+\begin{enumerate}
+	\item Construire, sur le document fourni, les vecteurs accélération en $M_2$ et $M_9$, en rouge.\vspace{2cm}
+	\item En déduire, par lecture graphique, les coordonnées $a_T$ et $a_N$ du vecteur accélération dans le repère de Frenet en $M_2$ et $M_9$. \vspace{2cm}
+	\item Montrer que ces coordonnées sont en accord avec l'expression suivante :
+	$$	\vec{a}=\dfrac{dv}{dt} \cdot \vec{T} + \dfrac{v^2}{R} \cdot \vec{N} $$
+\end{enumerate}
+\begin{figure}[b!]
+	\centering
+\begin{tikzpicture}
+	\draw[blue] (0,0) circle (4);
+	\foreach \k in {1,...,26}{
+		\pgfmathsetmacro{\i}{\k*360/26}
+		\pgfmathsetmacro{\x}{4*cos(\i)}
+		\pgfmathsetmacro{\y}{4*sin(\i)}
+		%\node at (\x,\y){\Huge +};
+		\draw (\x,\y) node{\Huge +};
+	}
+	\foreach \l in {-4,...,4}{
+		\draw[line width=0.05cm](\l,-4.7)--(\l,-4.3);
+		\draw[line width=0.05cm](-4.7,\l)--(-4.3,\l);
+		\node[below] at (\l,-4.7){\l};
+		\node[left] at (-4.7,\l){\l};
+	}
+	\node[above] (M2) at (0.5,4.2){\huge $M_2$};
+	\node[right] (M9) at (-4,0){\huge $M_9$};
+	%\draw[->,thick,>=latex, out=90, in =220] (-4.5,0) to (-3.19,3.19);
+	\draw[-Latex, line width=.05cm] (-4.5,-4.5) to (4.5,-4.5);
+	\draw[-Latex, line width=.05cm] (-4.5,-4.5) to (-4.5,4.5);
+	\draw[line width=.05cm] (-4.5,0)--(4.5,0);
+	\draw[line width=.05cm] (0,-4.5)--(0,4.5);
+	\draw[color=gray] (-4.5,-4.5) grid(4.5,4.5);
+
+	\node[right] at(4.5,-4.5){\huge x(m)};
+	\node[above] at(-4.5,4.5){\huge y(m)};
+\end{tikzpicture}\\
+Durée entre deux positions consécutives $\Delta t$ = \SI{25}{ms}
+\end{figure}
+\end{document}

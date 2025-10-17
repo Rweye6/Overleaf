@@ -1,0 +1,74 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+\usepackage[top = 1cm, bottom = 1.5cm, left = 1cm, right = 1cm]{geometry}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{xcolor}
+\usepackage{amssymb} %double flèche de réaction
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usepackage{sectsty}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\graphicspath{ {/home/remy/Documents/Enseignement/2022/2GT/C2/Ressources/} }
+
+\sectionfont{\fontsize{14}{8}\selectfont}
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+
+\title{\vspace{-1cm}\Large \textbf{Chapitre 2 - Étude de la réfraction}}
+\date{}
+
+\newenvironment{itemize*}%
+  {\begin{itemize}[label=$-$]%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parskip}{0pt}}%
+  {\end{itemize}}
+
+
+\begin{document}
+\maketitle
+\vspace{-2cm}
+Une lanterne émet un faisceau rectiligne dont le trajet peut être observé sur un disque gradué en degrés.
+\begin{itemize}
+	\item Allumer la lanterne et aligner le faisceau pour qu’il passe par la graduation zéro et le centre du disque.
+    \item Poser le demi-cylindre en plexiglas au centre du disque gradué.
+    \item On peut repérer à l’aide des graduations les valeurs des angles $i_1$ et $i_2$.
+    \item On peut déplacer le disque et le demi-cylindre de manière à faire varier la valeur de l’angle d’incidence $i_1$.
+   \end{itemize}
+\begin{enumerate}
+	\item Régler le disque pour obtenir $i_1$ = 40°. Noter la valeur que prend l'angle de réfraction $i_2$. Faire valider cette valeur par le professeur.\vspace*{1cm}
+	\item Représenter la situation précédente à l'aide d'un schéma légendé.\vspace*{4cm}
+	\item Faire varier $i_1$ entre 0 et 70° et mesurer chaque valeur de $i_2$ pour compléter le tableau suivant :\\
+	\begin{tabular}{|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering\arraybackslash}m{.08\textwidth}|}
+	\hline
+	$i_1$ (en °) & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70\\
+	\hline
+	$i_2$ (en °) &  &  &  &  &  &  &  & \rule[1cm]{0cm}{0cm}\\
+	\hline
+	\end{tabular}
+	\item Calculer les valeurs de $sin(i_1)$ et $sin(i_2)$ pour compléter le tableau suivant :\\
+	\begin{tabular}{|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering\arraybackslash}m{.08\textwidth}|}
+	\hline
+	$sin(i_1)$ &  &  &  &  &  &  &  & \rule[1cm]{0cm}{0cm}\\
+	\hline
+	$sin(i_2)$ &  &  &  &  &  &  &  & \rule[1cm]{0cm}{0cm}\\
+	\hline
+	\end{tabular}
+	\item À partir des lois de Snell-Descartes, déterminer ce que représente le rapport $\frac{sin(i_1)}{sin(i_2)}$.\vspace*{2cm}
+	\item Compléter le tableau suivant :\\
+	\begin{tabular}{|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering}m{.08\textwidth}|>{\centering\arraybackslash}m{.08\textwidth}|}
+	\hline
+	$\frac{sin(i_1)}{sin(i_2)}$ &  &  &  &  &  &  &  & \rule[1cm]{0cm}{0cm}\\
+	\hline
+	\end{tabular}
+	\item Calculer la moyenne des valeurs obtenues pour la question 6. et exprumer une valeur moyenne de $n_2$.
+\end{enumerate}
+\end{document}

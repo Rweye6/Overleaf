@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{/home/rweye/Nextcloud/Documents/Overleaf/Styles/cours}
+
+\newcommand{\chnum}{Chapitre 8}
+\newcommand{\chtitle}{Modélisation des transformations chimiques}
+\newcommand{\dtype}{Cours}
+  
+\begin{document}
+\maketitle
+
+\section{Rappel sur le dénombrement d'espèces chimiques}
+\textbf{Exercice 1 :} calculer le nombre d’entités chimiques présentes dans un morceau de sucre de 5g. Formule chimique du saccharose \ce{C12H24O12}. Atomes : \ce{_{6}^{12}C},\ce{_{8}^{16}O}, \ce{_{1}^{1}H} . Masses : $m_{nucléon}=\SI{1,67E-27}{kg}$.\\ 
+\vspace{1cm}
+\textbf{Exemple 2 :} on fait brûler une tige de graphite de 20 g,  constituée à 100$\%$ de carbone. La réaction chimique met en jeu le carbone à l’état solide, de dioxygène gazeux présent dans l’air, pour produire du dioxyde de carbone.\\
+Selon vous quelle quantité de dioxyde de carbone sera produit ? Données : $m_C = 1,99 \cdot 10^{-26}~kg$, $m_O = 2,66 \cdot 10^{-26}~kg$.\\
+Peut-on utiliser facilement les masses pour déterminer les quantités de produit formés ?\\
+Si on considère une réaction chimique est-il pratique de travailler en utilisant le nombre d’entités pour caractériser la réaction ?
+
+\section{Définition de la quantité de matière : la mole}
+Puisqu’il y a proportionnalité entre la masse d’un échantillon et le nombre d’entité qui la constitue, on définit la quantité de matière, notée $n$ comme étant un « paquet » contenant un certain nombre d’unité. Ce nombre d’entité s’appelle nombre d’Avogadro et vaut : $N_A = \SI{6,022E23}{\per\mole}$.\\
+Pour calculer la quantité de matière $n$ correspondant à un nombre $N$ d’entités, on a :\\
+\begin{center}
+1 mol → $N_A$\\
+$n$ mol → $N$\\
+donc $n=\dfrac{N}{N_A}$\\
+\end{center}
+Exercice d’application : Calculer la quantité de matière contenue dans un carré de sucre de $5~g$.
+
+\section{L'équation de réaction chimique (la symbolique et l'équilibrage)}
+Que représente l’équation de réaction suivante : $CH_4(g)~+~2O_2(g) \rightarrow CO_2(g)~+~2H_2O(g)$\\
+Décrire l’expérience réalisée à partir de celle équation de réaction.\\
+Comment appelle t’on les espèces chimiques situées à gauche de la flèche ? et celles qui sont situées à droite ?\\
+Une réaction de réaction obéit à des règles strictes d’écriture comprenant le codage des molécules et des ions et le codage de la transformation chimique qu’elle modélise. Dans ce dernier cas, elle se doit de respecter la règle de la conservation de la masse qui veut qu’aucun élément ne soit créé ou ne disparaisse d’un coté à l’autre de l’équation. Ainsi par exemple, l’atome de carbone présent dans la molécule de méthane de l’exemple se retrouve dans la molécule de dioxyde de carbone du coté des produits. De manière à équilibrer les équations de réaction, on modifie le nombre stœchiométrique qui va modifier la proportion d’une molécule dans la réaction.\\
+En appliquant cette règle de conservation, équilibrer les équations de réaction suivantes :
+\begin{center}
+... \ce{H2} + ... \ce{O2} $\rightarrow$ ... \ce{H2O}\\
+... \ce{NH3} + ... \ce{O2} $\rightarrow$ ... \ce{NO} + ... \ce{H2O}\\
+... \ce{C5H12} + ... \ce{O2} $\rightarrow$ ... \ce{CO2} + ... \ce{H2O}
+\end{center}
+\newpage
+\begin{itemize}
+	\item Faire la liste des différents éléments chimiques présents dans les produits et les réactifs 
+    \item Compter le nombre total d’éléments n°1 présents dans les réactifs en tenant compte de chaque de toutes les espèces chimiques.
+    \item Compter le nombre total d’éléments n°1 présents dans les produits
+    \item Si les deux nombres précédents sont égaux alors l’équilibre est déjà respecté pour cet élément
+    \item Si les deux nombres précédents sont différents alors il faut rajouter un coefficient stœchiométrique du coté du nombre le plus petit, devant l’une espèce chimique comportant cet élément.
+    \item Passer en suite à l’élément chimique n°2 et aux suivant puis opérer de la même manière à chaque fois.
+    \item Compter et comparer à nouveau le nombre de chaque élément dans les réactifs et les produits afin de vérifier que l’équation est bien équilibrée et que l’équilibrage d’un élément n’a pas rompu l’équilibre des précédents.
+    \item Vérifier que la charge totale est la même pour les réactifs et les produits.
+\end{itemize}
+\section{Représentation de la réaction chimique (macroscopique vers symbolique)}
+Une réaction chimique est en fait une réaction qui se passe entre plusieurs entités lors qu’elles rentrent en contact. Il est donc nécessaire pour qu’elle ait lieu que les réactifs se touchent. L’équation de réaction permet donc de représenter à la fois les entités chimiques qui vont réagit et les proportions de chaque réactif devant être en présence pour que la réaction ait lieu. Si lors d’une transformation, une espèce présente dans le mélange n’intervient pas dans la réaction, celle-ci est dite spectatrice. Puisqu’elles ne réagissent pas, les quantités d’espèces spectatrices restent les mêmes entre le début et la fin de la réaction.
+\section{Réactif limitant}
+Les nombres stœchiométriques donnent une information sur les proportions de chacun des réactifs. Une fois la réaction chimique lancée, elle va s’arrêter s’il n’y a plus de réactif pour réaliser la transformation. Seul un ces réactifs peut être responsable de cet arrêt.
+Le réactif limitant est celui qui est totalement transformé au cours de la réaction. Il est responsable de l’arrêt de la réaction.\\
+Pour identifier le réactif limitant, il faut comparer les quantités de matière de chacun des réactifs. Cela permet ensuite de calculer les quantités de produits formés et celles des réactifs restants.
+\end{document}
+

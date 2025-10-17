@@ -1,0 +1,120 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 12}
+\newcommand{\chtitle}{Mouvement dans un champ uniforme}
+\newcommand{\dtype}{Cours}
+
+
+\begin{document}
+\maketitle
+
+\section{Deuxième loi de Newton}
+	\subsection{Centre de masse d'un système}
+Le système est l'objet ou l'ensemble d'objets dont on étudie le mouvement.\\
+Le centre de masse \textbf{G} d'un système est le point où se situe, en moyenne, la masse du système :
+\begin{itemize*}
+	\item si la masse est répartie de manière homogène dans le système, alors le centre de masse est au centre de symétrie de l'objet
+	\item si la masse est inégalement répartie, le centre de masse ne se situe pas au milieu de l'objet
+\end{itemize*}
+Le centre de masse d'un système est le point qui décrit la trajectoire la plus simple lors du mouvement. On modélise donc un système par don centre de masse de manière à \textbf{simplifier} l'étude du mouvement.
+	\subsection{Référentiel galiléen}
+Les lois de Newton, qui régissent l'ensemble  de la mécanique classique, ne sont valables que dans des référentiels appelés galiléens.\\
+Un \textbf{référentiel galiléen} est un référentiel dans lequel le principe d'inertie est vérifié.
+\begin{itemize*}
+	\item un référentiel est galiléen s'il est un mouvement rectiligne uniforme par rapport à un autre référentiel galiléen
+	\item on peut considérer un référentiel comme galiléen si la durée de l'expérience est suffisamment faible pour négliger les effets de la rotation ou de l'accélération.
+\end{itemize*}
+	\subsection{Deuxième loi de Newton}
+En Première, on voit la relation approchée de la deuxième loi de Newton :
+$$\sum \vec{F} = m \dfrac{\Delta \vec{v}}{\Delta t}$$
+En considérant une durée infiniment faible, la relation devient : $\sum{\vv{F}} = m \dfrac{d \vec{v}}{dt}$, soit :
+$$\sum \vec{F} = m \vec{a}$$
+Autrement dit :\\
+
+\centerline{\colorbox{red!10}{\begin{minipage}{.9\textwidth} \centering
+\textbf{Dans un référentiel galiléen, la somme des forces appliquées à un système de masse $\mathbf{m}$ constante est égale au produit de sa masse par le vecteur accélération de son centre de masse.}
+\end{minipage}}}
+
+Le \textbf{Principe d'inertie} est un cas particulier de la deuxième loi de Newton dans lequel les forces se compensent. Cela équivaut à écrire : $$\sum \vec{F} = \vec{0} \Leftrightarrow m \vec{a} = \vec{0} \Leftrightarrow \vec{a} = \vec{0} \Leftrightarrow \vec{v} = \vv{cste}$$ 
+Ce qui revient à dire que le système est immobile ou en mouvement rectiligne uniforme. Ainsi tout objet soumis à des forces qui se compensent est immobile ou en mouvement rectiligne uniforme.
+
+\section{Mouvement dans un champ de pesanteur uniforme} \label{grandeux}
+	\subsection{Champ de pesanteur}
+\textbf{Rappel :} tous les corps ayant une masse s'attirent mutuellement, c'est interaction gravitationnelle. L'influence d'un corps ayant une masse sur l'espace qui l'entoure est modélisé par un champs de vecteur. Le champ gravitationnel représente ainsi l'action possible d'une masse dans une zone donnée.\\
+La Terre crée en son voisinage un \textbf{champ de pesanteur} noté $\vec{g}$, assimilable au champ de gravitation terrestre. Le vecteur champ de pesanteur $\vec{g}$ a pour caractéristiques :
+\begin{itemize*}
+	\item direction : verticale
+	\item sens : vers le bas
+	\item valeur : \textbf{g}, dépendant du lieu (à Paris, $g$ = \SI{9,81}{\meter\per\second\squared})
+\end{itemize*}
+Les coordonnées de $\vec{g}$ dans le repère ($O$, $\vec{i}$,$\vec{j}$, $\vec{k}$) sont : $\left\lbrace \begin{array}{c} 0 \\ 0\\ -g \end{array} \right\rbrace$.\\
+Du fait du champ de pesanteur, toute masse plongée dans ce champ voit apparaître une force qui l'attire vers la Terre : \textbf{le poids} $\vv{P}$. On a : $$	\vv{P} = m \vec{g}$$
+avec $m$ la masse de l'objet subissant le poids (en \unit{kg})\\
+Le champ de pesanteur est considéré comme \textbf{uniforme} dans une zone si sa direction, son sens et sa norme sont identiques en tout point de cette zone.
+\begin{itemize*}
+	\item À l'échelle de la Terre, le champ de pesanteur n'est pas uniforme
+	\item À l'échelle humaine, il peut être considéré comme uniforme
+\end{itemize*}
+
+	\subsection{Chute libre}
+En physique, on appelle \textbf{chute libre} le mouvement dans un champ de pesanteur uniforme d'un système soumis \underline{uniquement} à son poids. La plupart des mouvement dans un champ de pesanteur étudiés au lycées sont des cas de chute libre.\\
+En appliquant la deuxième loi de Newton, on montre que, dans le cas d'une chute libre, le vecteur accélération est égal au champ de pesanteur.
+	\subsection{Étude du mouvement}
+Étudier un mouvement consiste à établir ses \textbf{équations horaires} : déterminer les coordonnées du centre de masse du système en fonction du temps. Pour y parvenir, il faut méthodiquement suivre les étapes données dans l'activité autour de la balle de tennis.
+
+
+	\subsection{Exploitation des équations}
+Les équations horaires et l'équation de la trajectoire permettent de déterminer différentes grandeurs caractéristiques du mouvement, comme la hauteur ou la distance maximales atteintes, l'angle de tir $\alpha$ ...
+
+\section{Mouvement dans un champ électrique uniforme}
+	\subsection{Champ électrique}
+\underline{\textbf{Rappel :}}\\
+Tous les corps ayant une \textbf{charge} s'attirent ou se repoussent mutuellement (selon l'interaction électrostatique). L'influence d'un corps ayant une charge sur l'espace qui l'entoure est modélisé par un champ de vecteurs. Le \textbf{champ électrique} représente ainsi l'action possible d'une charge dans une zone donnée.
+		\subsubsection*{Champ électrique dans un condensateur plan}
+Un condensateur plant est constitué de deux plaques métalliques parallèles, séparées par un matériau isolant. Lorsqu'on applique une tension $U$ entre ses plaques, elles se charges électriquement. Il apparait alors un \textbf{champ électrique $\mathbf{\vec{E}}$ uniforme} qui a pour caractéristiques :
+\begin{itemize*}
+	\item direction : \textbf{perpendiculaire aux plaques}
+	\item sens : \textbf{de la plaque positive vers la plaque négative}
+	\item valeur : $E = \dfrac{|U|}{d}$ en (\unit{\volt\per\meter})
+\end{itemize*}
+Lorsqu'une particule de charge $q$ est placée dans un tel champ, elle est soumise à une force électrique $\vv{F_e}$ telle que : 
+$$\vv{F_e}=q \cdot \vv{E}$$
+
+	\subsection{Étude du mouvement}
+Pour étudier le mouvement d'une particule chargée dans un champ électrique uniforme, on suit la même démarche que dans la partie~\textbf{\ref{grandeux}}. Au moment de l'inventaire des forces, \textbf{on considère généralement que la particule est soumise uniquement à la force électrique, le poids de la particule étant négligeable devant la force électrique}.
+
+\section{Aspects énergétiques}
+
+	\subsection{Conservation de l'énergie mécanique}
+	$$E_m = E_c + E_p $$
+	\textbf{En l'absence de forces non conservatives comme les forces de frottement, l'énergie mécanique se conserve} au cours du temps : $\Delta E_m = E_{finale} -E_{initiale} = 0$.\\
+	Cela signifie que toute l'énergie cinétique est convertie en énergie potentielle et réciproquement.
+	
+	\subsection{Théorème de l'énergie cinétique}
+		\subsubsection*{Travail d'une force (rappel) :}
+		Le travail d'une force permet d'évaluer l'effet d'une force sur l'énergie cinétique d'un système, autrement dit le transfert d'énergie entre le milieu extérieur et le système en mouvement. Le travail $W$ d'une force $\vec{F}$ appliquée à un système se déplaçant d'un point $A$ à un point $B$ se calcule ainsi :\\
+		\begin{tabular}{>{\centering}m{8cm} |>{\centering\arraybackslash}m{10cm}}
+		$$W_{A \rightarrow B}(\vec{F}) = \vec{F} \cdot \vv{AB} = F \times AB \times \cos \alpha$$& \begin{itemize**}
+		\item $W_{A \rightarrow B}(\vec{F})$ : le travail de la force $\vec{F}$ lors du déplacement de $A$ vers $B$ (en $J$)
+		\item $F$ : la valeur de la force (en $N$)
+		\item $AB$ : la longueur du déplacement (en $m$)
+		\item $\alpha$ : l'angle entre les vecteurs $\vec{F}$ et $\vv{AB}$ \end{itemize**} \\
+		\end{tabular}
+		
+		\vspace*{1cm}
+		
+		\begin{tabular}{|>{\centering}m{5cm}|>{\centering}m{5cm}|>{\centering\arraybackslash}m{5cm}|}
+		\hline $W_{A \rightarrow B}(\vec{F}) > 0$ & $W_{A \rightarrow B}(\vec{F}) = 0$ & $W_{A \rightarrow B}(\vec{F}) < 0$\\
+		\hline $0° \leq \alpha < 90°$ & $\alpha = 90°$ & $90° < \alpha \leq 180°$\\
+		\hline la force favorise le déplacement & la force n'agit pas sur le déplacement & la force s'oppose au déplacement\\
+		\hline le travail est \textbf{moteur} & le travail est \textbf{nul} & le travail est \textbf{résistant}\\
+		\hline		
+		\end{tabular}
+		\subsubsection*{Théorème de l'énergie cinétique :}
+		La variation d'énergie cinétique d'un système qui se déplace d'un point $A$ à un point $B$ est égale à la somme des travaux des forces appliquées aux système au cours de son mouvement entre $A$ et $B$  :
+		$$\Delta E_c = E_{c(B)} - E_{c(A)} = \sum_i W_{A \rightarrow B}(\vec{F_i})$$
+	\subsection{Application : accélérateur linéaire de particules}
+	Un \textbf{accélérateur linéaire de particules} est un dispositif permettant de communiquer de l'énergie cinétique à une particule chargée par application d'un champ électrique.\\
+	L'application du théorème de l'énergie cinétique permet de calculer la variation d'énergie cinétique d'une particule dans un tel dispositif et d'en déduire la vitesse qu'elle atteint.
+\end{document}

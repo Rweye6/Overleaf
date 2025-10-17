@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 11}
+\newcommand{\chtitle}{Caractéristiques d'un mouvement}
+\newcommand{\dtype}{TP}
+
+
+
+\begin{document}
+\maketitle
+
+Pour décrire un mouvement, on utilise deux adjectifs : l'un indique la forme de la trajectoire et l'autre informe sur l'évolution de la vitesse au cours du temps. Ainsi, le mouvement d'un système qui suit un cercle à vitesse constante est qualifié de \textit{circulaire} et \textit{uniforme}.\\ Il est possible d'étudier les caractéristiques du mouvement d'un système à partir d'une vidéo.
+\section{Trajectoire}
+	\subsection*{Position du système}
+	\begin{enumerate}
+		\item Ouvrir le fichier vidéo fourni avec le logiciel \textit{Latis Pro} puis lire la vidéo.
+		\item Régler les paramètres d'étude :
+		\begin{itemize*}
+			\item sélection de l'origine : sélectionner le bas de la fenêtre vidéo
+			\item sélection de l'étalon : sélectionner la règle et indiquer sa taille (\SI{0,507}{m})
+			\item sens des axes : vers le haut
+			\item déplacement absolu
+			\item sélection manuelle des points
+		\end{itemize*}
+		\item Repérer les positions successives du système en cliquant dessus image après image
+		\item Enregistrer le fichier
+		\item Transférer vers les vecteurs. Un document s'ouvre représentant la trajectoire du système. Comment peut-on qualifier cette trajectoire ?
+	\end{enumerate}
+	\subsection*{Vitesse}
+	\begin{enumerate}[resume]
+	\item Rappeler les caractéristiques du vecteur vitesse $\vec{v_i}$
+	\item Calculer les valeurs des vecteurs vitesse aux points $M_2$, $M_3$, $M_6$ et $M_7$
+	\item Les représenter sur la trajectoire à l'aide d'une échelle de votre choix.
+	\item Comment évolue le vecteur vitesse au cours du temps ?
+	\end{enumerate}
+	\subsection*{Accélération}
+	L'accélération correspond à la variation de la vitesse par rapport au temps.
+	\begin{enumerate}[resume]
+	\item Donner l'expression du vecteur accélération $\vec{a_i}$
+	\item Représenter les vecteurs variation de vitesse aux points $M_2$ et $M_6$
+	\item Calculer les valeurs des vecteurs accélération aux points $M_2$ et $M_6$
+	\item Les représenter sur la trajectoire à l'aide d'une échelle choisie
+	\item Comment évolue le vecteur accélération au cours du temps ?
+	\item Qualifier le mouvement
+	\end{enumerate}
+\section{Coordonnées}
+
+La position d'un point $M$ à la date $t$ est donnée par le vecteur $\vv{OM}(t)$, de coordonnées :\\
+	\begin{tabular}{>{\centering}m{6cm} | m{13cm}}
+	\multirow{2}{5cm}{\begin{eqnarray}
+	\vv{OM}(t) \left\{ 
+	\begin{array}{l} x(t) \\ y(t) \\ z(t) \\ 
+	\end{array} \right\} _{(O, \vec{i}, \vec{j}, \vec{k})} 	\nonumber
+	\end{eqnarray}} & $x(t)$ : abscisse du point M (en $m$)\rule[.75cm]{0cm}{0cm}\\
+	& $y(t)$ : ordonnée du point M (en $m$)\rule[.75cm]{0cm}{0cm}\\
+	& $z(t)$ : altitude du point M (en $m$)\rule[.75cm]{0cm}{0cm}\\
+	\end{tabular}\\
+Le vecteur vitesse $\vec{v}(t)$ de $M$ à la date $t$ est la dérivée du vecteur position par rapport au temps : $\vec{v}=\dfrac{d \vv{OM}}{dt}$\\
+Il a pour coordonnées (en \unit{\meter\per\second}) :\\
+$$\vec{v}(t)
+	\left( 
+	\begin{array}{l} v_x(t)=\dfrac{dx}{dt} \\ v_y(t)=\dfrac{dy}{dt} \\ v_z(t)=\dfrac{dz}{dt} \\ 
+	\end{array} 
+	\right) _{(O, \vec{i}, \vec{j}, \vec{k})}$$
+\begin{enumerate}[resume]
+	\item Ouvrir le tableur
+	\item Glisser la courbe liée à $x$ dans une colonne et celle liée à $y$ dans une autre. Comment évolue la position $x$ du système au cours du temps ? et sa position $y$ ?
+	\item Représenter l'évolution de la coordonnée $x(t)$ en fonction du temps et l'évolution de la coordonnée $y(t)$ en fonction du temps
+	\item Modéliser les courbes obtenues et relever leurs équations :\\
+	$x(t)$ =\\
+	$y(t)$ =
+	\item À l'aide du document ci-dessous et de la fiche maths sur les dérivées, déterminer l'expression des coordonnées du vecteur vitesse :\\
+	$v_x(t)$ =\\
+	$v_y(t)$ =
+	\item En déduire l'expression des coordonnées du vecteur accélération : \\
+	$a_x(t)$ =\\
+	$a_y(t)$ =
+	\item Utiliser les expressions précédentes pour donner les coordonnées des vecteurs vitesse et accélération au point $M_2$ (date $t_2$).\\
+	Comparer ces coordonnées et les représentations graphiques de la partie \textbf{1}.
+\end{enumerate}
+\end{document}

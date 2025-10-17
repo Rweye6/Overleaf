@@ -1,0 +1,88 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 2}
+\newcommand{\chtitle}{Dosage par étalonnage}
+\newcommand{\dtype}{TP}
+
+\begin{document}
+\maketitle
+
+On étudie l'évolution des quantités de matière des différentes espèces chimiques au cours du titrage réalisé lors du TP \textbf{\textsf{"Titrage avec suivi-pH -métrique"}}.
+\section{Étude qualitative}
+\begin{enumerate}
+	\item Dans le \textbf{Tableau 1} indiquer les espèces chimiques présentes dans le milieu réactionnel à l'état initial.
+	\item Identifier ensuite les espèces chimiques ajoutées lors de l'ajout de solution titrante. Parmi elles, indiquer celles qui réagissent et disparaissent du mélange réactionnel, ainsi que celles qui perdurent dans le mélange réactionnel.
+	\item Compléter le \textbf{Tableau 1} en indiquant l'évolution des quantités de matière des différentes espèces chimiques dans le milieu réactionnel avant l'équivalence. Répondre à l'aide de : $\nearrow$, $\searrow$, $=$
+	\item Compléter la ligne du \textbf{Tableau 1} correspondant à l'équivalence.
+	\item Une fois l'équivalence atteinte, les espèces chimiques ajoutées lors de nouvelles additions de solution titrante continuent-elles de réagit ou de d'accumuler dans le milieu réactionnel ?
+	\item Compléter le \textbf{Tableau 1} en indiquant l'évolution des quantités de matière des différentes espèces chimiques dans le milieu réactionnel après l'équivalence.
+\end{enumerate}
+
+\section{Étude quantitative}
+\begin{enumerate}[resume]
+	\item Compléter la phrase suivante :
+\end{enumerate}
+
+"\textbf{Avant l'équivalence}, chaque fois qu'un ion hydroxyde \ce{HO-} est versé, un ion sodium \ce{Na+} .............\\..........................., une molécule d'acide éthanoïque \ce{CH3CO2H} .................................................... et un ion éthanoate \ce{CH3CO2-} .................................................... ."
+\begin{enumerate}[resume]
+	\item Déduire, en fonction de la quantité de matière $n_{B,\text{versé}}$ d'ions hydroxyde versée, l'expression de :
+		\begin{itemize}
+			\item la quantité de matière d'ions sodium \ce{Na+}
+			\item la quantité de matière d'acide éthanoïque \ce{CH3CO2H} avant l'équivalence
+			\item la quantité de matière d'ions éthanoate \ce{CH3CO2-}
+		\end{itemize}
+		\item Exprimer la quantité de matière $n_{B,\text{verse}}$ d'ions hydroxyde versé en fonction du volume $V_B$ de solution titrante versé
+		\item Adapter les expressions de la question 8 en conséquence et compléter le tableau avec ces expressions.
+		\item Exprimer la quantité de matière d'ions hydroxyde \ce{HO-} consommés à l'équivalence en fonction du volume $V_E$ de solution titrante versé à l'équivalence.
+		\item Déduire des questions 9 et 11 l'expression de la quantité de matière d'ions hydroxyde \ce{HO-} dans le mélange réactionnel après l'équivalence, puis compléter le \textbf{Tableau 2}.
+\end{enumerate}
+
+\section{Représentation graphique}
+\begin{enumerate}[resume]
+	\item Ouvrir le fichier Python "Evolution quantités" depuis MOODLE puis l'enregistrer dans votre répertoire personnel.
+	\item Le programme utilise une structure "if/else" entre les lignes 46 et 55. Exprimer l'intérêt de cette structure, puis compléter les lignes 52 à 55 à l'aide du tableau réalisé dans la partie 2
+	\item Compléter les lignes 60 à 63 et 65 à 67
+	\item Exécuter le programme
+	\item Imprimer ou reproduire les courbes ainsi obtenues
+	\item Les comparer aux prévisions de la question 6
+\end{enumerate}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+	\hline
+	\rowcolor{gray!30} \multirow{2}{3cm}{} & \ce{CH3CO2H} & \ce{H2O} & \ce{HO-} &  \ce{Na+} & \ce{CH3CO2-}\\
+	\cline{2-6}
+	\cellcolor{gray!30}& Titré & Spectateur + Produit & Titrant & Spectateur & Produit\\
+	\hline	
+	État initial ($V_B = 0$) & & & & & \\
+	\hline
+	Avant l'équivalence ($V_B < V_E$) & & & & & \\
+	\hline
+	À l'équivalence ($V_B = V_E$) & & & & & \\
+	\hline
+	Après l'équivalence ($V_B >V_E$) & & & & & \\
+	\hline	
+	\end{tabular}
+	\caption*{\textbf{Tableau 1 : Évolution \underline{qualitative} des quantités de matière des différentes espèces chimiques dans le milieu réactionnel lors du titrage}}
+	\vspace{2em}
+	\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+	\hline
+	\rowcolor{gray!30} \multirow{2}{3cm}{} &  \ce{CH3CO2H} & \ce{H2O} & \ce{HO-} &  \ce{Na+} & \ce{CH3CO2-}\\
+	\cline{2-6}
+	\cellcolor{gray!30}& Titré & Spectateur + Produit & Titrant & Spectateur & Produit\\
+	\hline	
+	État initial ($V_B = 0$) & & & & & \\
+	\hline
+	Avant l'équivalence ($V_B < V_E$) & & & & & \\
+	\hline
+	À l'équivalence ($V_B = V_E$) & & & & & \\
+	\hline
+	Après l'équivalence ($V_B >V_E$) & & & & & \\
+	\hline	
+	\end{tabular}
+	\caption*{\textbf{Tableau 2 : Évolution \underline{quantitative} des quantités de matière des différentes espèces chimiques dans le milieu réactionnel lors du titrage}}
+\end{table}
+\end{document}

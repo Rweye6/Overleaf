@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 17}
+\newcommand{\chtitle}{Caractérisation d'un dipôle ohmique}
+\newcommand{\dtype}{TP}
+
+\begin{document}
+
+\maketitle
+
+%\section*{Partie 2 : Caractéristique d'une résistance}
+\begin{figure}[h!]
+	\caption{Montage à réaliser}
+	\centering
+	\begin{circuitikz}[scale=1.2,transform shape]
+		\draw (0,0)
+			to [rmeter, t=GBF] (0,3)
+			to [rmeter, t= A](3,3)
+			to [R, l=$R_1$] (3,0)
+			--(0,0);
+		\draw (3,3)
+			--(6,3)
+			to [rmeter, t =V] (6,0)
+			--(3,0);
+		\end{circuitikz}
+\end{figure}
+
+On fait varier la valeur de tension du générateur de 0 à 6V par pas de 0,5V en notant à chaque fois les valeurs d'intensité et de tension que l'on reporte dans le tableau suivant :
+
+\begin{tabular}{|>{\centering\arraybackslash}m{.3\textwidth}| >{\centering\arraybackslash}m{.3\textwidth}|>{\centering\arraybackslash}m{.3\textwidth}|}
+	\hline
+	Tension du générateur (V)& Intensité (A)& Tension $U_{R1}$ (V)\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+	&& \rule[.8cm]{0cm}{0cm}\\
+	\hline
+\end{tabular}
+
+\begin{figure}[h!]
+	\begin{minipage}{.3\linewidth}
+		\caption{Caractéristique d'un dipôle}
+		La caractéristique d'un dipôle est la relation existante entre l'intensité $I$ du courant traversant le dipôle et la tension $U$ aux bornes de celui-ci. On représente la caractéristique  d'un dipôle en traçant graphiquement la courbe : $U = f(I)$.
+	\end{minipage}\hspace{.04\linewidth}
+	\begin{minipage}{.66\linewidth}
+		\caption{Représenter et modéliser un graphique}
+		\lstinputlisting[language = Python, numbers=left, stepnumber=1, basicstyle=\footnotesize]{Ressources/2GT_Act1.py}
+
+		Pour représenter un nuage de points dans le langage de programmation python, on utilise le script ci-dessus dans lequel les valeurs ont été remplacées par des "...".\\
+		\begin{itemize}
+			\item Lignes 1-3 : importation des bibliothèques.
+			\item Lignes 6-7 : np.array() crée des lignes de tableau, contenant ici les valeurs des abscisses et les ordonnées des points.
+			\item Ligne 10 : plt.plot(x,y) trace le graphique de $y=f(x)$.
+			\item Ligne 13 : linegress(x,y) calcule le coefficient directeur et l'ordonnée à l'origine de la droite de régression.
+		\end{itemize}
+	\end{minipage}
+\end{figure}
+
+\newpage
+\subsection*{Questions :}
+\begin{enumerate}
+	\item Réaliser le montage et prendre les mesures indiquées dans le Document 1.
+	\item Sur votre copie représenter graphiquement $I=f(U)$ à partir des points obtenus.
+	\item Que peut on dire des points obtenus ?
+	\item Ouvrir le fichier $"2GT\_Act1.py$" et compléter les "...".
+	\item Relever les valeurs obtenues pour le coefficient directeur et l'ordonnée à l'origine de la droite de régression.
+	\item Quelle loi permet de vérifier cette courbe caractéristique ?
+\end{enumerate}
+\end{document}
+
+\section*{Partie 1 : Loi des nœuds, loi des mailles et loi d'Ohm}
+
+\subsubsection*{Document 1 : Schéma électrique}
+
+\begin{circuitikz}
+\draw (0,0)
+	to [rmeter, t=G, v>=$U_G$, i=$I$] (0,3) 
+	to [R,l=$R_1$, i=$I_1$] (3,3)
+	to [R,l=$R_2$ , i=$I_2$] (3,0) 
+	-- (0,0);
+\node [above] at (0,3) {A};
+\node [above] at (0.7,3) {B};
+\node [above] at (3,3) {C};
+\node [above] at (6,3) {D};
+\node [below] at (6,0) {E};
+\node [below] at (3,0) {F};
+%\draw [help lines] (-6,-6) grid (6,6);
+\draw (3,3)
+	to [R,l=$R_3$] (6,3)
+	to [R,l=$R_4$, i=$I_3$] (6,0)
+	-- (3,0);
+\end{circuitikz}
+
+\subsubsection*{Document 2 : Représenter une tension}
+Comment flécher une tension électrique aux bornes d'un dipôle pour que la tension soit positive ?
+
+\begin{circuitikz}
+\draw (0,0)
+	to [R, v=$U_{AB}$, i=$I$, l = R] (3,0);
+\node [above] at (0,0) {A};
+\node [above] at (3,0) {B};
+\end{circuitikz}
+
+\subsubsection*{Document 3 : Matériel à sélectionner}
+\begin{itemize}
+	\item Générateur de tension 6V
+	\item Dipôles ohmiques de valeurs $R_1 = R_3 = 68 \Omega$ et $R_2 = R_4 = 100 \Omega$
+	\item Un voltmètre et un ampèremètre 
+\end{itemize}
+\subsubsection*{Questions :}
+\begin{enumerate}
+		\item Flécher les tensions $U_1$, $U_2$, $U_3$ et $U_4$ aux bornes des résistances. Déterminer le nombre de mailles du circuit, les nommer et donner le nom des nœuds électriques.
+		\item Réaliser le circuit du document 1. en respectant les valeurs des résistances indiquées.
+		\item Rappeler le mode de branchement d'un voltmètre et d'un ampèremètre. Représenter un voltmètre mesurant $U_4$ et un ampèremètre mesurant $I_1$.
+		\item Mesurer toutes les grandeurs (tensions et intensités) du montage à l'aide de l'appareil de mesure adapté. Rassembler toutes les mesures dans un tableau.
+		\item Compléter la phrase suivante correspondant à la loi des nœuds : à un nœuds la somme des courants entrants est égale à ... .
+		\item Compléter la phrase suivante correspondant à la loi des mailles : dans une maille la somme des tensions des dipôles est égale à ... .
+		\item En utilisant la loi d'Ohm, calculer les valeurs des résistances du circuit et les comparer avec les valeurs marquées sur celles-ci.
+\end{enumerate}

@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 21}
+\newcommand{\chtitle}{Détermination des caractéristiques d'un dipole RC avec un micro-contrôleur}
+\newcommand{\dtype}{TP}
+
+
+\begin{document}
+	\maketitle
+
+Objectifs : Déterminer expérimentalement le temps caractéristique d'un dipôle $RC$ à l'aide d'un microcontrôleur.
+
+\begin{figure}[h!]
+		\caption{Montage à réaliser}
+		\begin{minipage}{.6\linewidth}
+			La borne D2 peut être portée à +\SI{5}{V} pour charger le condensateur. ou à \SI{0}{V} pour le décharger.\\
+			La borne A0 permet de mesurer la tension aux bornes du condensateur. Elle donne une valeur numérique de la tension. Elle peut comprendre $2^{10} = 1024$ valeurs différentes comprises entre 0 (correspondant à \SI{0}{V}) et 1023 (correspondant à \SI{5}{V}).\\
+			Le montage sera réalisé via un simulateur en ligne.
+		\end{minipage}
+		\begin{minipage}{.3\linewidth}
+			\includegraphics[scale = .2]{Ressources/TSPE_C11_AE2_Fig1.png}
+		\end{minipage}
+	\end{figure}
+
+\begin{figure}[h!]
+	\caption{Lancement du programme Ardiuno}
+	\begin{minipage}{.9\linewidth}
+		\begin{itemize}
+			\item Télécharger le fichier code "TSPE\_TauRC.ino" dans votre dossier personnel.
+			\item Ouvrir le programme
+			\item Recréer un circuit ci-dessus
+			\item Suivez les indications du document 1 pour les connections
+			\item Ouvrir l'onglet "Code" et coller le contenu du fichier "TSPE\_TauRC.ino"
+			\item Lancer la simulation
+		\end{itemize}
+	\end{minipage}
+\end{figure}
+
+\textbf{Questions}\\
+	Les lignes 1 à 11 définissent les variables qui seront utilisées par le programme.
+	\begin{enumerate}
+		\item En ligne 10, la variable $R$ prend la valeur de la résistance, quelle est son unité ?\\
+		Les lignes 15 et 16 préparent l'écriture des résultats dans le moniteur série.\\
+		La ligne 17 lance une boucle "for" qui va réaliser 10 fois les instructions comprises entre les lignes 18 et 30.
+		\item Expliquer pourquoi les lignes 19 à 21 permettent de décharger le condensateur.\\
+		La fonction millis() est une fonction "chronomètre" : elle prend la valeur de la durée écoulée depuis le lancement du programme (ou depuis l'appui sur reset) en millisecondes.
+		\item Le circuit n'a pas d'interrupteur, mais la ligne 24 peut être comparée à une action dur un interrupteur : quelle en serait l'action ?
+		\item En ligne 26, on attend que la valeur lue sur la borne A0 dépasse 647, pourquoi cette valeur ?
+		\item Expliquer pourquoi en ligne 19, la variable "tau" prendra la valeur du temps caractéristique du circuit en millisecondes
+		\item Quand on arrivera à la 10$^e$ répétition de la boucle, qui contiendra la variable nommée "tau10" ?
+		\item Quel est l'intérêt de faire cette boucle de 10 mesures ?
+		\item Justifier que les lignes 32 et 33 permettent d'obtenir la valeur de la capacité en nanofarad dans la variable C.
+	\end{enumerate}
+
+\end{document}

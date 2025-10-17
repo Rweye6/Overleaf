@@ -1,0 +1,61 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 12}
+\newcommand{\chtitle}{Pression dans un liquide}
+\newcommand{\dtype}{AE2}
+
+\begin{document}
+	\maketitle
+La pression dans un liquide ne dépend pas du volume d’eau environnant mais de la profondeur considérée. On
+peut se demander quelle relation relie la pression de l’eau et la profondeur.\\
+Le montage expérimental est le suivant : la sonde d’un manomètre est plongée dans une éprouvette graduée.
+On mesure la pression de l’eau à différentes profondeurs.
+
+\begin{itemize}
+	\item Remplir l’éprouvette de \SI{500}{mL} d’eau.
+	\item Relever la pression atmosphérique indiquée par la sonde et la noter dans le tableau ci-dessous. Elle
+	correspond à la pression à la surface, à l’altitude $z=0$ .
+	\item Plonger l’embout de la sonde dans l’eau et, dès que la pression change, noter sa valeur et l’altitude
+	correspondante dans le tableau. Attention, l’altitude est négative car on descend. L’axe $Oz$ est orienté
+	vers le haut.
+	\item Continuer à plonger la sonde. Relevez la pression et l’altitude correspondante dès que la pression
+	change. Faire en sorte d’avoir environ une dizaine de mesures.
+\end{itemize}
+
+\begin{center}
+	\begin{tabular}{|>{\centering}m{.15\linewidth}|>{\centering}m{.06\linewidth}|>{\centering}m{.06\linewidth}|>{\centering}m{.06\linewidth}|>{\centering}m{.06\linewidth}|>{\centering}m{.06\linewidth}|>{\centering}m{.06\linewidth}|>{\centering}m{.06\linewidth}|>{\centering}m{.06\linewidth}|>{\centering}m{.06\linewidth}|>{\centering\arraybackslash}m{.06\linewidth}|}
+		\hline
+		Altitude $z$ (\unit{\meter}) & & & & & & & & &&\\
+		\hline
+		Pression $P$ (\unit{\pascal}) & & & & & & & &&& \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{enumerate}
+	\item Représenter la situation à l’aide d’un schéma muni d’un axe $Oz$.
+	\item Recopier les valeurs mesurées con convertissant la pression en Pa.
+	\begin{itemize}
+		\item Ouvrir une page de tableau et recopier les valeurs de $z$ en \unit{\meter} et de $P$ en \unit{\pascal}.
+		\item Tracer la courbe représentant $P$ en fonction de $z$.
+	\end{itemize}
+	\item La pression dans un liquide est-elle proportionnelle à l’altitude ? Justifier.
+\end{enumerate}
+On parle en général de profondeur plutôt que l’altitude quand on descend en dessous de $0$ sur l’axe $Oz$. Il ne
+faut pas oublier le signe « - » devant la valeur de profondeur.
+\begin{itemize}
+	\item Afficher l’équation de la droite obtenue.
+\end{itemize}
+\begin{enumerate}[resume]
+	\item Recopier l’équation de la droite et faire le lien entre cette équation et les grandeurs mesurées.
+	\item A quoi correspond l’ordonnée à l’origine ?
+\end{enumerate}
+Sachant que la formule reliant la pression mesurée dans un liquide a pour formule : $P-P_0 =\rho\cdot g\cdot ( z_0-z )$ .
+
+\begin{enumerate}[resume]
+	\item Par association, déterminer une valeur approchée de $g$ pendant l’expérience.
+\end{enumerate}
+
+\end{document}

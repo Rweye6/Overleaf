@@ -1,0 +1,118 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Eval}
+
+
+\newcommand{\chnum}{Chapitre 1 et 2}
+\newcommand{\chtitle}{Transformation acide-base et pH}
+\newcommand{\dtype}{DS 1b}
+
+\begin{document}
+\maketitle
+
+\section{Acides et bases dans la bouche}
+La carie dentaire est une maladie infectieuse d'origine bactérienne qui détruit progressivement la dent par déminéralisation de ses tissus durs. Elle évolue toujours de l'extérieur vers l'intérieur de la dent en formant une cavité.\\
+Elle peut se développer du fait de la présence de plaque dentaire bactérienne qui est un enduit mou collant se formant sur la surface des dents à la suite des repas. Les bactéries de la plaque dentaire se "nourrissent" des glucides contenus dans les aliments et produisent des acides qui agressent l'émail des dents. De même, une alimentation riche en acides favorisera la déminéralisation de l'émail.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=.5]{Ressources/TSPE_DS1b_carie.jpg}
+\end{figure}
+\subsection{L'émail}
+L'émail est la partie externe de la couronne des dents. Cette substance est la plus dure de l'organisme. Elle est constituée principalement d'hydroxyapatite, forme de phosphate de calcium.
+\begin{enumerate}
+	\item Sachant que les ions calcium et phosphate ont respectivement la forme \ce{Ca^{2+}} et \ce{PO4^{2-}}, donner la formule du phosphate de calcium solide.
+	\item L'atome de phosphore de l'anion phosphate possède cinq doublets liants autour de lui. Combien un atome d'oxygène neutre possède t il de doublets liants et non liants ?\\
+	Qu'en est il pour un oxygène portant une charge négative?\\
+	En déduire le schéma de Lewis de l'anion phosphate.
+	\item Montrer que cet anion est une base de Brônsted. Quel est son acide conjugué ? Quelle propriété possède cet acide ?
+\end{enumerate}
+	\subsection{Les bactéries de la plaque dentaire}
+	L'acide glutamique  et l'acide lactique, dont les modèles moléculaires sont donnés ci-dessous, peuvent être formés par des bactéries à partir du glucose et du saccharose, sucres présents dans les aliments ingérés.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=.2]{Ressources/TSPE_DS1b_Fig3.png}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item Donner les schémas de Lewis et les formules brutes de ces molécules.
+	\item Montrer que ce sont des acides de Brönsted.
+	\item Donner les schémas de Lewis et les formules brutes de leurs bases conjuguées. Justifier.
+	\item Écrire l'équation de la réaction entre l'acide lactique formé par les bactéries et les ions phosphate de l'émail.\\
+	Expliquer pourquoi un milieu buccal riche en bactéries présente plis de risques de développer des caries.
+	\item Pourquoi est il parfois conseillé de faire des bains de bouche à l'hydrogénocarbonate de sodium (\ce{NaHCO3})?
+\end{enumerate}
+
+	\subsection{Érosion liée à l'alimentation}
+	L'émail peut également être détruit par des acides apportés par l'alimentation. Ainsi, les dents des consommateurs de sodas et de jus de fruits sont souvent plus touchés par des lésions d'usure.\\
+	Deux adolescentes, Anne et Laure, veulent estimer leur apport quotidien en ions hydrogène lié à leur consommation de ce type de boissons.\\
+	En une journée, Anne boit quatre verres de jus de pamplemousse contenant de l'acide citrique à la concentration $c_1$ = \SI{66}{\milli\mole\per\liter} alors que Laure boit cinq verres de jus de pomme contenant de l'acide malique à la concentration $c_2$ = \SI{75}{\milli\mole\per\liter}.
+\begin{enumerate}[resume]
+	\item Le volume $V$ d'un verre étant de \SI{200}{mL}, calculer les quantités de matière $n_1$ et $n_2$ d'acide citrique et d'acide malique nues en jour par Anne et Laure.
+	\item L'acide citrique, noté AH$_3$, est un triacide de Brönsted et l'acide malique, noté A'H$_2$, est un diacide. Proposer une explication à ces termes et en déduire les quantités de matière d'ions hydrogène pouvant être libérés par les acides bus par Anne et Laure. Les comparer et conclure.
+\end{enumerate}
+
+	\subsection{Traitement de l'émail}
+Certains traitements dentaires nécessitent au préalable que le dentiste effectue un mordançage de l'émail : une solution d'acide phosphorique \ce{H3PO4(aq)} réagit avec les ions phosphate de l'émail si bien que la surface de celui-ci devient plus rugueuse.
+\begin{enumerate}[resume]
+	\item Écrire l'équation de la réaction qui se produit.
+\end{enumerate}
+
+
+\section{La vanilline}
+L'arôme de vanille, la vanilline, est utilisé dans de nombreux domaines, comme la parfumerie ou l'industrie agro-alimentaire.
+
+\colorbox{gray!10}{\begin{minipage}{.6\textwidth}
+\textbf{Données :}
+\begin{itemize*}
+	\item \textbf{Masse molaire moléculaire :}	$M_{vanilline}$ = \SI{152}{\gram\per\mole}
+	\item \textbf{Formule semi-développée de la vanilline ci-contre :}
+\end{itemize*}
+\end{minipage}
+\begin{minipage}{.25\textwidth}
+\chemfig[atom sep=2em]{C(-[:90]OH)=[:-45]C(-[:45]O-CH_3)-[:-90]CH=[:-135]C(-[:-90]CH=[:-90]O)-[:135]HC=[:90]HC-[:45]}
+%\chemfig[atom sep=2em]{C*6((-OH)=C(-O-CH_3)-CH=C(-CH=O)-C=[1,,]HC-)}
+\end{minipage}}
+
+\subsection{Synthèse de la vanilline}
+La vanilline peut être synthétisée. Pour vérifier la nature de la molécule synthétisée, on peut étudier son spectre IR.\\
+\begin{figure}[h!]
+	\includegraphics[scale=.4]{Ressources/TSPE_DS1b_Fig1.png}
+	\includegraphics[scale=.35]{Ressources/TSPE_DS1b_Fig2.png}
+\end{figure}
+\begin{enumerate}
+	\item Justifier que ce spectre correspond bien à la vanilline.
+\end{enumerate}
+
+\subsection{Principe du dosage de la vanilline}
+La vanilline contenue dans un échantillon du commerce est extraite à l'aide du protocole suivant :\\
+\colorbox{olive!10}{\begin{minipage}{.97\textwidth}
+\textbf{Protocole :}
+\begin{itemize}
+	\item Extraire la vanilline d'un mélange d'arôme de vanille liquide du commerce de \SI{1}{mL} à l'aide du dichlorométhane.
+	\item Traiter la phase organique par une solution d'hydroxyde de sodium à \SI{0,1}{\mole\per\liter}. La phase aqueuse a un volume de \SI{250}{mL}.
+\end{itemize}
+\end{minipage}}
+
+La vanilline réagit avec l'ion hydroxyde pour former l'ion phénolate, que l'on peut doser par étalonnage. On précise que la concentration en vanilline est égale à celle de l'ion phénolate.\\
+Le spectre d'absorption de l'ion phénolate est donné ci-après.
+
+\begin{enumerate}[resume]
+	\item Une solution d'ion phénolate est-elle colorée ? Justifier la réponse.
+	\item Quelle longueur d'onde faut-il utiliser pour faire la mesure avec un spectrophotomètre ?
+\end{enumerate}
+
+\subsection{Dosage}
+On réalise le dosage par étalonnage en utilisant des solutions d'ion phénolate de concentrations $c$ connues, dont on mesure les absorbances $A$.
+\begin{table}[h!]
+	\begin{tabular}{|>{\centering}m{4cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|} \hline
+	$\mathbf{c}$ (en \unit{\micro\mole\per\liter}) & 50 & 40 & 30 & 20 & 10 \\ \hline
+	$\mathbf{A}$ & 1,36 & 1,08 & 0,81 & 0,54 & 0,27\\ \hline
+	\end{tabular}
+\end{table}
+L'absorbance de la solution à doser est $A$ = \num{0,88}.
+\begin{enumerate}[resume]
+	\item Tracer la courbe d'étalonnage.
+	\item La loi de Beer-Lambert est elle vérifiée ?
+	\item Déterminer en détaillant la méthode utilisée la concentration en vanilline dans la solution à doser.
+	\item Compte tenu du protocole suivi, en déduire la concentration en masse en \unit{\gram\per\liter} de vanilline dans l'échantillon de vanille liquide du commerce.
+\end{enumerate}
+\end{document}

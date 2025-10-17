@@ -1,0 +1,116 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{/home/rweye/Nextcloud/Documents/Overleaf/Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 17}
+\newcommand{\chtitle}{Circuits électriques}
+\newcommand{\dtype}{Cours}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Description d'un circuit}
+\subsection{Deux types de circuits électriques}
+Un circuit électrique est une association de dipôles, comprenant un générateur dont le rôle est de délivrer le courant électrique. Un circuit \textbf{en série} comporte une seule \textbf{maille}. Un circuit \textbf{en dérivation} comporte \textbf{au moins deux mailles}.\\
+La portion de circuit entre deux \textbf{nœuds} consécutifs est une \textbf{branche}. La branche principale comporte le générateur et les autres branches sont des branches dérivées.
+
+\vspace{3cm}
+
+\subsection{Le courant électrique}
+Le \textbf{courant électrique} circule à l'extérieur du générateur \textbf{de la borne positive vers la borne négative} : c'est le \textbf{sens conventionnel} du courant électrique représenté par une flèche.\\
+L'\textbf{intensité $I$ du courant} électrique s'exprime en \textbf{ampères (A)}. Elle se mesure à l'aide d'un \textbf{ampèremètre} branché en série.\\
+L'\textbf{intensité} du coutant électrique qui traverse des dipôles associés en série est la même.
+
+\subsection{La tension}
+La \textbf{tension $U$} aux bornes d'un dipôle est représentée par une flèche. La tension s'exprime en \textbf{volts (V)}. Elle se mesure avec un \textbf{voltmètre} branché en dérivation aux bornes du dipôle.\\
+La \textbf{tension} aux bornes de dipôles associés en \textbf{dérivation} est \textbf{la même}.
+
+\vspace{3cm}
+
+\section{Lois des circuits électriques}
+\subsection{La loi des nœuds}
+Dans un circuit \textbf{en dérivation}, la somme \textbf{des intensités} des courants électriques qui \textbf{arrivent à un nœuds} est \textbf{égale à la somme des intensités} des courants électriques \textbf{qui en repartent}.
+
+\vspace{3cm}
+\begin{figure}[h!]
+	\centering
+	\begin{circuitikz}[scale=1.2, transform shape]
+		\draw
+			(0,-1) [battery1]
+			to (0,3)
+			to [R] (2,3)
+			to [short,*-] (2,3)
+			to [R] (2,1)
+			to [R] (2,-1)
+			to [short,*-] (2,-1)
+			to [short] (0,-1)
+			to [short] (0,0)
+		;
+		\draw
+			(2,3)
+			to [R] (4,3)
+			to [short] (5,3)
+			to [R] (5,-1)
+			to [short] (5,-1)
+			to [short] (2,-1)
+			to [cground] (2,-2)
+		;
+	\end{circuitikz}
+\end{figure}
+
+
+\subsection{La loi des mailles}
+Dans une \textbf{maille orientée}, la \textbf{somme des tensions} est \textbf{nulle}.\\
+Pour additionner les tensions de la maille orientée, on affecte :
+\begin{itemize}
+	\item un signe "+" à une tension si sa flèche est dans le même sens que celui du parcours
+	\item un signe "-" dans le sens contraire
+\end{itemize}
+
+Remarque : la tension aux bornes d'un fil est nulle.
+%\vspace{3cm}
+
+\section{Caractéristiques d'un dipôle}
+La \textbf{caractéristique tension-courant} d'un dipôle est la représentation graphique de l'\textbf{évolution de la tension $U$ en fonction de l'intensité $I$} du courant électrique.\\
+C'est la courbe d'équation $U=f(I)$\\
+La caractéristique \textbf{courant-tension} d'un dipôle est la représentation graphique de l'\textbf{évolution de l'intensité $I$ du courant électrique en fonction de la tension $U$}.\\
+C'est la courbe d'équation $I=g(U)$.
+
+\subsection{Caractéristique d'un dipôle ohmique}
+La caractéristique tension-courant $U=f(I)$ d'un dipôle ou du conducteur ohmique est une droite qui passe par l'origine, d'équation $U=R \times I$. La résistance $R$ est alors égale au coefficient directeur de la droite.\\
+La tension $U$ et l'intensité $I$ du courant électrique sont donc liées par une relation de proportionnalité régie par le \textbf{Loi d'Ohm}.\\
+D'après la \textbf{loi d'Ohm}, la tension $U$ aux bornes d'un conducteur ohmique est \textbf{égale} au \textbf{produit} de sa résistance $R$ et de l'intensité $I$ du courant électrique qui la traverse : 
+\textbf{$U=R \times I$ avec $U$ en $V$, $R$ en $\Omega$ et $I$ en $A$}
+
+%\vspace{3cm}
+
+\subsection{Point de fonctionnement}
+Lorsqu'un dipôle récepteur est branché aux bornes d'un générateur, un \textbf{courant de même intensité $I_f$} traverse les deux dipôle. La \textbf{tension $U_f$} à leurs bornes est également \textbf{la même}.\\
+Ces deux conditions sont réalisées simultanément à l'intersection des caractéristiques des deux dipôles.\\
+Le \textbf{point de fonctionnement d'un circuit, noté P($I_f$; $U_f$)}, est le \textbf{point d'intersection} des caractéristiques du générateur et du dipôle récepteur branché en série.\\
+
+\section*{Fihe de révision}
+\begin{tabular}{|m{.6\linewidth}|>{\centering}m{.15\linewidth}|>{\centering\arraybackslash}m{.15\linewidth}|}
+	\hline
+	\centering \textbf{Caractéristiques exigibles} & \textbf{Où la trouver} & \textbf{Maîtrise}\\
+	\hline
+	Exploiter la loi des mailles et la loi des n\oe uds dans un circuit électrique comportant au plus deux mailles. & & \\
+	\hline
+	Mesurer une tension et une intensité & &\\
+	\hline
+	Exploiter la caractéristique d'un dipôle électrique : point de fonctionnement, modélisation par la relation $U = f(t)$ ou $I = g(U)$. & &\\
+	\hline
+	Représenter et exploiter la caractéristique d'un dipôle et modéliser la caractéristique de ce dipôle à l'aide d'un langage de programmation. & & \\
+	\hline
+	Identifier une situation de proportionnalité & &\\
+	\hline
+	Citer des exemples de capteurs présents dans les objets de la vie quotidienne.& & \\
+	\hline 
+	Mesurer une grandeur physique à l'aide d'un capteur électrique résistif. Produire et utiliser une courbe d'étalonnage utilisant la résistance d'un système avec une grandeur d'intérêt (température, pression, intensité lumineuse, etc.) & & \\
+	\hline
+	Utiliser un dispositif avec micro-contrôleur et capteur. & &\\
+	Exploiter une série de mesures, discuter de l'influence du protocole et/ou évaluer une incertitude-type pour comparer des résultats &&\\
+	\hline
+\end{tabular}
+\end{document}

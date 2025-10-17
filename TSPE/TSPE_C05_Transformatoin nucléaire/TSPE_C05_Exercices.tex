@@ -1,0 +1,161 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{/home/rweye/Documents/Overleaf/Styles/Exercice}
+
+
+\newcommand{\chnum}{Chapitre 8}
+\newcommand{\chtitle}{Radioactivité}
+\newcommand{\dtype}{Exercices}
+  
+\begin{document}
+	\maketitle
+\begin{multicols}{2}
+\section{Types de radioactivité}
+Voici une chaîne de désintégration à partir du thorium 232 :\\
+\begin{tikzpicture}
+    \node (Th232) at (0,0) {\ce{^{232}_{90}Th}};
+    \node (Ra228) at (3.5,0) {\ce{^{4}_{2}He + ^{228}_{88}Ra}};
+    \draw[->] (Th232) -- (Ra228);
+    \node (Ac228) at (7,0) {\ce{^{228}_{89}Ac + ^{0}_{-1}e-}};
+    \draw[->] (Ra228) -- (Ac228);
+    \node (Th228) at (7,-2) {\ce{^{228}_{90}Th + ^{0}_{-1}e-}};
+    \draw[->] (Ac228) -- (Th228);
+    \node (Ra*) at (3.5,-2) {\ce{^{224}_{88}Ra^* + ^{4}_{2}He}};
+    \draw[->] (Th228) -- (Ra*);
+    \node (Ra224) at (0,-2) {\ce{\gamma} + \ce{^{224}_{88}Ra}};
+    \draw[->] (Ra*) -- (Ra224);
+    \node (Rn220) at (0,-4) {\ce{^{4}_{2}He + ^{220}_{86}Rn}};
+    \draw[->] (Ra224) -- (Rn220);
+    \node (At) at (3.5,-4) {\ce{^{0}_{1}e+ + ^{220}_{85}At^*}};
+    \draw[->] (Rn220) -- (At);
+    \node (At220) at (7,-4) {\ce{^{220}_{85}At + \gamma}};
+    \draw[->] (At) --(At220);
+\end{tikzpicture}\\
+Identifier à chaque étape le type de radioactivité.
+
+\section{Équation radioactive}
+\begin{enumerate}
+    \item Compléter les équations suivantes en précisant la particule $p$ et le noyau fils \ce{^A_ZX}.
+\end{enumerate}
+    \begin{multicols}{2}
+\begin{itemize**}
+        \item (\ce{\beta +}) \ce{^{15}_{8}O -> ^A_ZX + p}
+        \item (\ce{\gamma}) \ce{^{234}_{91}Pa^* -> ^A_ZX + p}
+        \item (\ce{\beta -}) \ce{^{14}_{6}C -> ^A_ZX + p}
+        \item (\ce{\gamma}) \ce{^{20}_{9}F^* -> ^A_ZX + p}
+        \item (\ce{\beta -}) \ce{^{3}_{1}H -> ^A_ZX + p}
+        \item (\ce{\alpha}) \ce{^{212}_{84}Po -> ^A_ZX + p}
+        \item (\ce{\alpha}) \ce{^{172}_{79}Au -> ^A_ZX + p}
+        \item (\ce{\beta +}) \ce{^{201}_{86}Rn -> ^A_ZX + p}
+\end{itemize**}
+    \end{multicols}
+\begin{enumerate}
+\setcounter{enumi}{1}
+    \item Préciser les grandeurs conservées lors de ces désintégrations.
+    \end{enumerate}
+    
+\section{Désintégration}
+On considère l'équation suivante :
+$$\ce{^{165}_{59}Pr -> ^{165}_{60}Nd + ^0_{-1}e-}$$
+\begin{enumerate}
+    \item Identifier le type de radioactivité et la particule émise.
+\end{enumerate}
+On considère maintenant l'équation de réaction suivante :
+$$\ce{^A_ZX -> ^{168}_{62}Sm + ^4_2He}$$
+\begin{enumerate}[resume]
+    \item Identifier le type de radioactivité.
+    \item Déterminer la composition du noyau radioactif avant sa désintégration et à quel élément il correspond.
+\end{enumerate}
+
+\section{Activité radioactive}
+Un échantillon de roche contenant du cobalt 59, bombardé artificiellement par des neutrons, contient dès lors \num{57E17} noyaux de cobalt 60. Au bout de 2 min, il n'en reste plus que \num{23E16}.\\
+Déterminer l'activité radioactive de cette roche.
+
+\section{Vallée de la stabilité}
+Le diagramme (N,Z) de Segrè représente l'ensemble des isotopes connus. On retrouve en rouge les isotopes stables, mais également les isotopes radioactifs en jaune et en bleu sur le schéma ci-dessous.\\
+\begin{tabular}{ccccccm{2.5cm}}
+    \cellcolor{blue!25} \ce{^{15}_5B}&\cellcolor{blue!25}\ce{^{16}_6C}&\cellcolor{blue!25}\ce{^{17}_7N}&\cellcolor{red!25}\ce{^{18}_8O}&\cellcolor{red!25}\ce{^{19}_9F}&\cellcolor{red!25}\ce{^{19}_10Ne}&\multirow{2}{*}{\huge \ce{^{14}_7N}}\\
+    \cellcolor{blue!25}\ce{^{14}_5B}&\cellcolor{blue!25}\ce{^{15}_6C}&\cellcolor{blue!25}\ce{^{16}_7N}&\cellcolor{red!25}\ce{^{17}_8O}&\cellcolor{orange!25}\ce{^{18}_9F}&\cellcolor{orange!25}\ce{^{19}_10Ne}&\\
+    
+    \cellcolor{blue!25}\ce{^{13}_5B}&\cellcolor{blue!25}\ce{^{14}_6C}&\cellcolor{red!25}\ce{^{15}_7N}&\cellcolor{red!25}\ce{^{16}_8O}&\multicolumn{3}{c}{\textbf{Masse du noyau :} \SI{14,0067}{u}}\\
+    
+    \cellcolor{blue!25}\ce{^{12}_5B}&\cellcolor{red!25}\ce{^{13}_6C}&\cellcolor{red!25}\ce{^{14}_7N}&\cellcolor{orange!25}\ce{^{15}_8O}&\multicolumn{3}{c}{\textbf{Abondance :} \SI{99,634}{\percent}}\\
+    
+    \cellcolor{red!25}\ce{^{11}_5B}&\cellcolor{red!25}\ce{^{12}_6C}&\cellcolor{orange!25}\ce{^{13}_7N}&\cellcolor{orange!25}\ce{^{14}_8O}&\multicolumn{3}{c}{\textbf{Demi-vie :} stable}\\
+    \cellcolor{red!25}\ce{^{10}_5B}&\cellcolor{orange!25}\ce{^{11}_6C}&\cellcolor{orange!25}\ce{^{12}_7N}&\cellcolor{orange!25}\ce{^{13}_8O}&\multicolumn{3}{c}{\textbf{Décroissance(s) :} noyau stable}\\
+\end{tabular}
+
+\begin{enumerate}
+    \item Définir le terme isotope
+    \item Donner la composition du noyau de chaque isotope de l'azote
+    \item En analysant leur structure, identifier quelle particule est en excès dans chacun de ces isotopes.
+    \item En déduire le type de radioactivité associée.
+    \item Expliquer le fait que les isotopes d'azote 14 et 15 représentent près de 100 \% des atomes d'azote présents sur Terre.
+\end{enumerate}
+
+\section{Radiographie au phosphore}
+Un patient reçoit \SI{30}{ng} de phosphore 32 radioactif de type $\beta ^{-}$. Les émissions $\gamma$ émises par les noyaux fils du phosphore 32 permettent d'effectuer une radiographie.
+\begin{enumerate}
+    \item Écrire l'équation de désexcitation du noyau fils.
+    \item Déterminer le nombre de noyaux injectés dans le patient.
+    \item Déterminer la date à laquelle 99 \% des noyaux se sont désintégrés.    
+\end{enumerate}
+\textbf{Données :}
+\begin{itemize}
+    \item \textbf{Masse molaire du phosphore :} M(\ce{^{32}P}) = \SI{32,0}{\gram\per\mole}
+    \item \textbf{Temps de demi-vie du phosphore 32 :} $t_{1/2}$(\ce{^{32}P}) = \SI{14,26}{j}
+    \item \textbf{Constante d'Avogadro :} $N_A$ = \SI{6,02E23}{\per\mole}
+\end{itemize}
+
+\section{Identification de roches}
+Des roches radioactives ont été retrouvées dans un laboratoire. Après des analyses sur leur radioactivité, la décroissance radioactive de chacune de ces roches a été représentée ci-dessous :\\
+\includegraphics[scale=.3]{Ressources/TSPE_C15_Exercices_Fig1.png}
+\begin{enumerate}
+    \item Définir l'activité radioactive d'un échantillon.
+    \item Établir la relation entre l'activité et le nombre de noyaux radioactifs présents dans l'échantillon.
+    \item Identifier la nature des noyaux radioactifs présnets dans chacune de ces roches.
+\end{enumerate}
+\textbf{Données :}
+\begin{itemize}
+    \item \textbf{Temps de demi-vie :} $t_{1/2}$(\ce{^{230}Th}) = \SI{75E3}{a}
+    \item $t_{1/2}$(\ce{^{202}Pb}) = \SI{53E3}{a}
+    \item $t_{1/2}$(\ce{^{231}Pa}) = \SI{33E3}{a}
+    \item $t_{1/2}$(\ce{^{233}U}) = \SI{159E3}{a}
+\end{itemize}
+
+\section{Âge de la Terre}
+La datation à l'uranium-plomb permet de déterminer assez précisément l'âge de la Terre, le plomb étant le produit final stable de la désintégration de l'uranium 238. Si l'on mesure la quantité de plomb 206 dans un échantillon de roche, en considérant qu'il n'y en avait pas initialement, on peut déterminer l'âge du minéral.\\
+On s'intéresse à un échantillon de roche dont l'âge correspond à celui de la Terre. la courbe de décroissance radioactive théorique de cette roche est fournie dans le document 2. Le nombre de noyaux de plomb mesuré dans la roche à la date $t_{Terre}$, notée $N_{Pb}(t_{Terre})$, est égale à \num{2,5E12}.
+\begin{enumerate}
+    \item Indiquer le nombre initial $N_U(t_0)$ de noyaux d'uranium.
+    \item Définir et déterminer graphiquement le temps de demi-vie $t_{1/2}$.
+    \item Exprimer le nombre de noyaux d'uranium 239 au cours du temps.
+    \item Établie la relation entre le nombre de noyaux d'uranium 238 au moment de la formation de la roche, $N_U(t_0)$, $N_U(t_{Terre})$ et $N_{Pb}(t_{Terre})$.
+    \item Calculer le nombre $N_U(t_{Terre})$ de noyaux d'uranium et déterminer l'âge de la Terre.
+\end{enumerate}
+
+\section{Datation d'une carotte glaciaire}
+Une carotte de glace est formée de couches de neige compressées. Plus on creuse en profondeur, plus on obtient des mesures anciennes sur les composés en éléments chimiques à cette époque.\\
+Dans les eaux de surface, le chlore 36 est constamment renouvelé et sa teneur reste constante au cours du temps. Dans la glace, ce renouvellement n'existe plus et la quantité de chlore 36 diminue au cours du temps.
+\begin{enumerate}
+	\item Donner la composition nu noyau de chlore 36.
+	\item Préciser en quoi le renouvellement en chlore 36 dans les eaux de surface est importante pour la datation.
+	\item Donner l'équation de la désintégration du chlore 36 sachant qu'un noyau d'argon se forme.
+	\item Donner le nom de la particule émise et le type de radioactivité mise en jeu.
+\end{enumerate}
+La variation temporelle du nombre de noyau radioactifs $\dfrac{dN}{dt}$ est proportionnelle à la population : $$-\dfrac{dN}{dt}=\lambda \cdot N$$
+\begin{enumerate}[resume]
+	\item Résoudre l'équation différentielle.
+	\item Donner la définition du temps de demi-vie $t_{1/2}$ et calculer la valeur de la constante radioactive $\lambda$.
+\end{enumerate}
+On cherche à déterminer l'âge $t_1$ d'un échantillon de glace prélevé dans une carotte glaciaire de l'Arctique et pour lequel il n'y a plus que \SI{75}{\percent} de noyau de chlore 36 par rapport à un échantillon récent de même masse.
+\begin{enumerate}[resume]
+	\item Donner la valeur du rapport $\dfrac{N(t_1)}{N_0}$ pour le morceau de glace étudié.
+	\item Exprimer, puis calculer l'âge $t_1$ de l'échantillon.
+	\item La glace contient également des bulles de dioxyde de carbone \ce{CO2(g)}. Exprimer pourquoi la datation au carbone 14 est inadéquate.
+\end{enumerate}
+\textbf{Données :}
+\begin{itemize}
+	\item \textbf{Temps de demi-vie :} $t_{1/2}(\ce{^36 Cl})$ = \SI{3.01E5}{a} et $t_{1/2}(\ce{^14 C})$ = \SI{5.75E3}{a}
+\end{itemize}
+\end{multicols}
+\end{document}

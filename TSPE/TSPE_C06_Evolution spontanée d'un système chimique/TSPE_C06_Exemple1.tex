@@ -1,0 +1,92 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+
+\usepackage{helvet}%Police Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[top = 1cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{xcolor}
+\usepackage{amssymb} %double flèche de réaction
+\usepackage{xtab}%tableau sur plusieurs pages
+\usepackage{esvect}%grands vecteurs
+
+ \usepackage[version=4]{mhchem} %equations chimiques
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usepackage{sectsty}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[cal=boondoxo]{mathalfa} 
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage{tikz}
+
+\graphicspath{ {/home/remy/Documents/Enseignement/2022/Tspe/C7/Ressources/} }
+
+\sectionfont{\fontsize{14}{8}\selectfont}
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|>{\centering}m{5cm}|>{\centering}m{8cm}|>{\centering\arraybackslash}m{4cm}|}
+	\hline
+	Exercice & \textbf{\textsc{Évolution spontanée d'un système chimique}} &  Chapitre 7\\
+	\hline
+	\end{tabular}}
+\date{}
+
+\newpagestyle{mystyle}{%
+\setfoot{}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+\renewpagestyle{plain}{%
+\setfoot{}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+
+\pagestyle{mystyle}
+
+\newenvironment{itemize*}%
+  {\begin{itemize}[label=$-$]%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parskip}{0pt}}%
+  {\end{itemize}}
+
+\newenvironment{itemize**}%
+  {\begin{itemize}[label=]%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parskip}{0pt}}%
+  {\end{itemize}}
+  
+  
+\begin{document}
+\textbf{Action du cuivre sur le zinc}\\
+On plonge une lame de zinc \chemfig{Zn_{(s)}} dans une solution de sulfate de cuivre (II) bleue (\chemfig{SO_{4(aq)}^{2-} + Cu^{2+}_{(aq)}}). On observe la formation de cuivre solide \chemfig{Cu_{(s)}} et la formation d’ions zinc (II) \chemfig{Zn^{2+}_{(aq)}}.
+L’eau étant le solvant, la quantité de matière en eau est considérée en excès ($n_{eau}$ = excès) par rapport aux autres espèces chimiques.\\
+Les ions sulfate \chemfig{SO_{4(aq)}^{2-}} et l’eau sont des espèces spectatrices. L’équation chimique de la réaction modélisant la transformation chimique est : \schemestart \chemfig{Zn_{(s)} + Cu^{2+}_{(aq)}} \arrow{->} \chemfig{Zn^{2+}_{(aq)} + Cu_{(s)}} \schemestop \\
+Une lame de zinc de masse m = \num{3,27} \unit{\gram} est plongée entièrement dans un bécher contenant
+un volume $V$ = \num{200} \unit{\milli \liter} de solution de sulfate de cuivre de concentration molaire $c$ = \num{1,00e-1} \unit{\mole \per \liter}. On laisse la réaction se dérouler quelques instants, puis on retire la lame de zinc et on détermine la concentration molaire en ions cuivre restants dans la solution restants dans la solution  $c_{Cu^{2+}}$= \num{2,00e-2} \unit{\mole \per \liter}.
+\begin{enumerate}
+	\item Calculer les quantités de matière initiales des réactifs.
+	\item Établir le tableau d’avancement de la réaction.
+	\item D’après le texte, quel est le réactif limitant ?
+	\item Quel est le lien entre la quantité de matière d’ions \chemfig{Cu^{2+}_{(aq)}} consommé et l’avancement de la réaction $x_{max}$ au moment où on retire la lame de zinc. Montrer que la valeur de l’avancement maximal $x_{max}$ est égale à \num{1,60e-2} \unit{\mole}.
+	\item Déterminer la composition, en quantité de matière, du système (c’est à dire toutes les espèces chimiques présentes dans le bécher) à l’état final lorsque l’on a retiré la lame de zinc.
+	\item Déterminer la masse de zinc ayant réagi et la masse de cuivre formé.
+	\item Déterminer la concentration molaire en \unit{\mole \per \liter} de tous les ions présents à l’état final dans le bécher.
+	\item Les ions cuivre (II) \chemfig{Cu^{2+}} sont colorés en bleu tandis que les ions zinc (II) \chemfig{Zn^{2+}} sont incolores. Justifier le fait que la solution soit moins colorée lorsque la lame de zinc est retirée.
+	\item Si on avait laissé la réaction se produire jusqu’à la fin, quel aurait été le réactif limitant ? Justifier.
+\end{enumerate}
+\textbf{Données :}\\
+Masse molaire atomique du zinc et du cuivre : $M(Zn)$ = \num{65,4} \unit{\gram \per \mole} ; $M(Cu)$ = \num{63,5} \unit{\gram \per \mole}.\\
+
+
+\end{document}

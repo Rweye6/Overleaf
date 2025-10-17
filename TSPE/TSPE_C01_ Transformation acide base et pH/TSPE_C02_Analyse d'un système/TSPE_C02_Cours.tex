@@ -1,0 +1,218 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Style/Cours}
+
+\newcommand{\chnum}{Chapitre 2}
+\newcommand{\chtitle}{Analyse d'un système}
+\newcommand{\dtype}{Cours}
+
+
+\begin{document}
+\maketitle
+\section{Méthodes d'analyse physique}
+	\subsection{Spectroscopie}
+La spectroscopie permet de caractériser les espèces chimiques présentes dans une substance. Cette technique est fondée sur l'absorption de certains rayonnements par la substance à analyser. Les rayonnements absorbés dépendent des niveaux d'énergie de la matière, eux-même liés à sa composition et à sa nature. L'analyse spectroscopique permet ainsi d'obtenir des informations pour identifier la substance étudiée.
+		\subsubsection{Spectroscopie UV-visible}
+En spectroscopie UV-visible, on soumet une solution à des rayonnements compris entre 100 et 800 nm. Ces rayonnements peuvent être absorbés par les électrons de certaines liaisons moléculaires. On représente alors l'\textbf{absorbance A} de la solution en fonction de la \textbf{longueur d'onde $\lambda$} : on obtient ainsi un \textbf{spectre d'absorption}.\\
+La \textbf{longueur d'onde $\lambda_{max}$} correspondant à l'\textbf{absorbance maximale $A_{max}$} peut permettre l'identification d'une espèce chimique.\\
+\textbf{Rappel :} La \textbf{couleur apparente} d'une espèce colorée est la \textbf{couleur complémentaire} de la couleur la plus absorbée.
+\begin{table}[h!]
+    \centering
+	\begin{tabular}{cc}
+	\includegraphics[scale=.8]{Ressources/TSPE_C2_Fig1.png} & \includegraphics[scale=.8]{Ressources/TSPE_C2_Fig2.png}\\
+	\end{tabular}
+    
+\end{table}
+
+		\subsubsection{Spectroscopie infrarouge}
+En spectroscopie infra-rouge, on mesure la \textbf{transmittance} d'une solution en fonction du \textbf{nombre d'onde} des rayonnements auxquels elle est soumis. Ces rayonnements permettent de faire vibrer les atomes des liaisons moléculaires. Le graphique obtenu est appelé \textbf{spectre IR} et les \textbf{pics} ou \textbf{bandes} observées correspondant aux longueurs d'onde absorbées. Ils renseignent sur la nature des liaisons présentes dans une molécule et permettent d'en déduire ses \textbf{groupes caractéristiques}.\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics{Ressources/TSPE_C2_Fig3.png}
+    \caption{Spectre Infrarouge}
+    \label{fig:spectro}
+\end{figure}
+
+	\subsection{Dosage par étalonnage}
+La réalisation d'un dosage par étalonnage permet de \textbf{déterminer la concentration d'une espèce en solution} en comparant une grandeur physique caractéristique de la solution (masse volumique, absorbance, conductivité électrique, indice de réfraction ...), à la même grandeur physique mesurée pour des solutions étalons de concentration connues.\\
+Pour cela, il faut :
+\begin{itemize*}
+	\item préparer une gamme de solutions étalons
+	\item mesurer la grandeur physique pour ces solutions étalons
+	\item tracer la courbe d'étalonnage
+	\item mesurer la grandeur physique pour la solution à analyser
+	\item déterminer la concentration (par lecture graphique ou par le calcul)
+\end{itemize*}
+		\subsubsection{Dosage spectrophotométrique}
+Lorsque la solution est colorée, un dosage par étalonnage peut être réalisé en utilisant la \textbf{spectrophotométrie}. La grandeur mesurée est alors l'\textbf{absorbance} et se mesure grâce à un \textbf{spectrophotomètre}.\\
+Pour une longueur d'onde fixée et une solution suffisamment diluée, l'absorbance $A$ est proportionnelle à la concentration $c$ :
+
+\begin{table}[h!]
+	\begin{tabular}{m{.1\textwidth}m{.2\textwidth}m{.5\textwidth}}
+	&$$A = \epsilon \times l \times c = k \times c$$ Loi de Beer-Lambert &\includegraphics[scale=.45]{Ressources/TSPE_C2_Fig4.png}\\
+avec :& \multicolumn{2}{l}{$A$ : absorbance (sans unité)}\\
+& \multicolumn{2}{l}{$c$ : concentration de la solution (en \unit{\mole\per\liter})}\\
+& \multicolumn{2}{l}{$\epsilon$ : coefficient d'extinction molaire de l'espèce absorbante (en \unit{\liter\per\mole\per\centi\meter})}\\
+& \multicolumn{2}{l}{$l$ : largeur de la cuve (en \unit{\centi\meter})}\\
+& \multicolumn{2}{l}{$k$ : (en \unit{\liter\per\mole})}\\
+\end{tabular}
+\end{table}
+
+Cette relation n'est vérifiée que pour des solutions suffisamment diluées ($c <$ \SI{1E-2}{\mole\per\liter}).
+
+		\subsubsection{Dosage conductimétrique}
+Une solution ionique conduit le courant électrique. Cette propriété physique peut permettre de réaliser un \textbf{dosage conductimétrique} par étalonnage pour déterminer la concentration en un ion d'une solution inconnue. La grandeur mesurée est alors la \textbf{conductivité}, déterminée à l'aide d'un \textbf{conductimètre étalonné}.\\
+Pour une solution suffisamment diluée, la conductivité $\sigma$ est proportionnelle à la concentration$c$ :
+
+
+\begin{table}[h!]
+	\begin{tabular}{m{.1\textwidth}m{.2\textwidth}m{.5\textwidth}}
+	& $$\sigma = k \times c$$ Loi de Kohlrausch &\includegraphics[scale=.45]{Ressources/TSPE_C2_Fig5.png}\\
+avec : & \multicolumn{2}{l}{$\sigma$ : conductivité (en \unit{\siemens\per\meter})}\\
+&\multicolumn{2}{l}{$c$ : concentration de la solution (en \unit{\mole\per\liter})}\\
+&\multicolumn{2}{l}{$k$ : (en \unit{\siemens\liter\per\meter\per\mole})}\\
+\end{tabular}
+\end{table}
+
+Cette relation n'est vérifiée que pour des solutions suffisamment diluées ($c$  < \SI{1E-2}{\mole\per\liter}) et ne contenant qu'un seul soluté ionique !\\
+
+La conductivité d'une solution dépend de la nature et de la concentration des ions présents en solution. On a :
+$$\sigma = \sum_{i=1}^n \lambda_i \times [x_i] = \lambda_1 \times [x_1] + ... +\lambda_n \times [x_n]$$
+
+\begin{table}[h!]
+	\begin{tabular}{p{.1\textwidth} p{.9\textwidth}}
+	avec : &$[x_i]$ : concentration, en \unit{\mole\per\meter\cubed}, de chaque ion $X_i$ présent dans la solution\\
+	&$\lambda_i$ : conductivité molaire ionique de l'ion $X_i$, en \unit{\siemens\meter\squared\per\mole}\\
+\end{tabular}
+\end{table}
+
+Un conductimètre ne mesure pas directement la conductivité d'une solution mais la \textbf{conductance de la portion de solution} située au cœur de la cellule de mesure. La conductance $G$ dépend donc des dimensions de la cellule de mesure. On a :
+
+\begin{table}[h!]
+	\begin{tabular}{c| p{.7\textwidth}}
+	\multirow{3}{*}{$G = \dfrac{S}{l} \times \sigma$} & $G$ : conductance (en \unit{\siemens})\\
+&$\sigma$ : conductivité (en \unit{\siemens\per\meter})\\
+&$l$ : écart entre les électrodes de mesure (en \unit{\meter})\\
+\multirow{2}{*}{souvent noté : $ G = k_{cellule} \times \sigma$} & $S$ : surface des électrodes (en \unit{\meter\squared})	\\
+&$k_{cellule}$ : constante de cellule\\
+\end{tabular}
+\end{table}
+
+Pour mesurer quand même une conductivité avec un conductimètre, il est nécessaire d'étalonner l'appareil avec une solution de conductivité connue. L'appareil peut alors déterminer la valeur de la constante de cellule et en déduire la conductivité à partir de la mesure de la conductance.
+
+
+	\subsection{Le cas des gaz}
+À l'échelle microscopique, un gaz est modélisé par un ensemble d'entités (molécules ou atomes) en mouvement désordonné. Un gaz est dit "parfait" si la taille de ses entités est négligeable devant la distance qui les sépare et si les interactions entre elles sont négligeables.\\
+À basse pression, tous les gaz peuvent être assimilés à des gaz parfaits. L'équation d'état du gaz parfait s'écrit :
+\begin{table}[h!]
+	\begin{tabular}{c|p{.8\textwidth}}
+	\multirow{5}{*}{$P \cdot V = n \cdot R \cdot T$} &$P$ : pression (en \unit{\pascal})\\
+&$V$ : volume (en \unit{\meter\cubed})\\
+&$n$ : quantité de matière (en \unit{\mole})\\
+&$R$ : constante des gaz parfaits $R$ = \num{8,314} (en \unit{\pascal\meter\cubed\per\mole\per\kelvin})	\\
+&$T$ : température (en \unit{\kelvin})\\
+\end{tabular}
+\end{table}
+\section{Méthodes chimiques d'analyse}
+	\subsection{Rappels}
+Un dosage est une méthode ayant pour objectif de déterminer la quantité de matière, la masse ou la concentration d'une espèce chimique. Dans le cas d'un \textbf{dosage par titrage}, cette détermination se fait à l'aide d'une transformation chimique entre le réactif à titrer (appelé "\textbf{réactif titré}") et un \textbf{réactif titrant} de concentration connue. Cette \textbf{transformation support} est modélisée par une équation de réaction : $$ aA + bB \rightarrow cC + dD $$
+La transformation doit être \textbf{totale} et \textbf{rapide}.
+Mise en œuvre pratique :\\
+\begin{figure}[h!]
+    \centering
+   \caption{\textbf{Montage classique d'un titrage}}
+    \includegraphics[scale=.35]{Ressources/TSPE_C3_Fig1.png}
+\end{figure}
+Exploitation :\\
+Lorsque le réactif titré finit par être totalement consommé, on atteint l'\textbf{équivalence}. Il y a alors changement de réactif limitant. À ce moment, les réactifs ont été introduits en proportions \textbf{stœchiométriques}, autrement dit :
+$$ \frac{n_{éq}(A)}{a} = \frac{n_{éq}(B)}{b}$$
+$$ \text{ soit } \frac{n_{0}(A)}{a} = \frac{n_{éq}(B)}{b}$$
+\begin{figure}[h!]
+    \centering
+   \caption{\textbf{Repérer l'équivalence}}
+    \includegraphics[scale=.5]{Ressources/TSPE_C3_Fig2.png}
+\end{figure}
+ 
+	\subsection{Méthodes de suivi d'un titrage}
+L'équivalence d'un titrage peut être repéré par colorimétrie (vu en première), par pH-métrie et par conductimétrie.
+
+\begin{xtabular}{|>{\centering}m{9cm}|>{\centering\arraybackslash}m{9cm}|}
+	\hline 
+	\tabletail{\hline}
+	%\tablefirsthead{\rowcolor{lightgray} \hline Suivi par pH-métrie & Suivi par conductimétrie \\ \hline }
+	%\tablehead{\hline \rowcolor{lightgray} Suivi par pH-métrie & Suivi par conductimétrie \\ \hline }
+	\textbf{Suivi par pH-métrie} & \textbf{Suivi par conductimétrie}\\
+	\hline
+	\rowcolor{lightgray} \multicolumn{2}{|c|}{\textbf{Condition}}\\
+	\hline
+La réaction support du titrage doit être une \textbf{réaction acide-base} & La réaction support du titrage \textbf{fait intervenir des ions}.\\
+	\hline
+	\rowcolor{lightgray} \multicolumn{2}{|c|}{\textbf{Montage}}\\
+	\hline
+	\multicolumn{2}{|c|}{\includegraphics[scale=.5]{Ressources/TSPE_C3_Fig3.png}}\\
+	\hline
+	Appareil de mesure : \textbf{pH-mètre} & Appareil de mesure : \textbf{conductimètre}\\
+	\hline
+	\rowcolor{lightgray} \multicolumn{2}{|c|}{\textbf{Mode opératoire}}\\
+	\hline
+	Pour déterminer précisément l'équivalence, il convient de resserrer les mesures à l'approche de l'équivalence. & \begin{itemize}
+	\item Le suivi peut se faire en versant la solution titrante mL par mL.
+	\item Un grand volume d'eau est versé initialement pour négliger les effets de la dilution qui surviendra ensuite.
+	\end{itemize}\\
+	\hline
+	\rowcolor{lightgray} \multicolumn{2}{|c|}{\textbf{Courbe de titrage}}\\
+	\hline
+	Courbe représentant un \textbf{saut de pH}  & Courbe présentant une \textbf{rupture de pente} (deux segments de droites.\\
+	\includegraphics[scale=.45]{Ressources/TSPE_C3_Fig5.png}&\includegraphics[scale=.45]{Ressources/TSPE_C3_Fig9.png}\\
+	\hline
+	& L'évolution de la conductivité s'explique par l'évolution des quantités de matière des ions présents dans le bécher :
+	\begin{itemize}
+		\item si $n_{ion}$ diminue, la contribution de l'ion à la conductivité diminue
+		\item si $n_{ion}$ augmente, la contribution de l'ion à la conductivité augmente
+		\item si $n_{ion}$ reste constante, l'ion n'a pas d'impact sur l'évolution de la conductivité.
+	\end{itemize}
+	La contribution de chaque ion doit être prise en compte, y compris celle des ions spectateurs. Cette contribution dépend aussi des conductivités ioniques molaires $\lambda_{ion}$.\\
+	& \begin{tabular}{|>{\centering}m{2.3cm}|>{\centering}m{2.3cm}|>{\centering\arraybackslash}m{2.3cm}|}
+		\hline
+		\multicolumn{3}{|c|}{Évolution des quantités de matière}\\
+		\hline
+		& Avant équivalence & Après équivalence\\
+		\hline
+		Ion titré & $\searrow$ réagit avec le réactif titrant & 0\\
+		\hline
+		Ion spectateur contenu dans le bécher & = & =\\
+		\hline
+		Ion titrant & 0 réagit à mesure avec le réactif titré & $\nearrow$ réaction terminée car plus de réactif titré\\
+		\hline
+		Ion spectateur ajouté avec réactif titrant & $\nearrow$ & $\nearrow$\\
+		\hline
+		\end{tabular}
+		\begin{itemize}
+			\item Avant l'équivalence, les ions titrés disparaissent mais les ion spectateurs s'accumulent. Il faut comparer leurs conductivité ionique molaire pour déterminer la pente de la courbe.
+			\item Après l'équivalence, la pente est positive car les ions titrants et les ions spectateurs ajoutés avec s'accumulent dans le bécher.
+		\end{itemize}\\
+		\hline
+		\rowcolor{lightgray} \multicolumn{2}{|c|}{\textbf{Détermination de $\mathbf{V_E}$}}\\
+	\hline
+	L'équivalence du titrage peut être repérée par :
+	\begin{itemize}
+		\item La \textbf{méthode des tangentes}
+		\begin{center}\includegraphics[scale=.35]{Ressources/TSPE_C3_Fig7.png}\end{center}
+		\item La \textbf{méthode de la courbe dérivée}
+		\begin{center}\includegraphics[scale=.4]{Ressources/TSPE_C3_Fig8.png}\end{center}
+	\end{itemize} & L'équivalence du titrage est repérée grâce à l'\textbf{intersection des segments}.
+		\begin{center}\includegraphics[scale=.6]{Ressources/TSPE_C3_Fig10.png}\end{center}\\
+	\hline
+\end{xtabular}
+	\subsection{Titre massique et densité}
+L'équivalence permet de déterminer la quantité de matière de réactif titré présente initialement dans le bécher. Il est alors possible d'en déduire la masse de réactif titré, la concentration de la solution ou encore son titre massique.\\
+Le \textbf{titre massique}, noté $t$ ou $\gamma$, est le rapport entre la masse de soluté et la masse de la solution. On a alors :
+$$ t = \dfrac{m_{soluté}}{m_{solution}} $$
+On peut faire le lien entre le titre massique et la concentration grâce à la masse volumique ou la densité de la solution :
+$$ c=\dfrac{n_{soluté}}{V_{solution}} = \dfrac{m_{soluté}}{M \cdot V_{solution}}$$
+Or, $V_{solution} = \dfrac{m_{solution}}{\rho}$ avec $\rho$ la masse volumique de la solution. Donc :\\
+
+$$ c=\dfrac{m_{soluté}}{M \cdot \dfrac{m_{solution}}{\rho}}=\dfrac{m_{soluté} \cdot \rho}{M \cdot m_{solution}}=\dfrac{t \cdot \rho}{M}$$
+Souvent, l'information données n'est pas la masse volumique mais la \textbf{densité} $d$. On a donc :
+$$ d=\dfrac{\rho}{\rho_{eau}}$$
+
+\end{document}

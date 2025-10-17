@@ -1,0 +1,152 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{Eval}
+
+
+\newcommand{\chnum}{Chapitre 18 et 4}
+\newcommand{\chtitle}{Interférences et mouvements}
+\newcommand{\dtype}{DS 3}
+
+\begin{document}
+\maketitle
+\section{Structure d'une plume d'oie cendrée}
+
+Pour identifier l'espèce d'un oiseau, la plume est une des parties du corps de l'animal qu'il est possible d'étudier. Les plumes d'oiseaux sont des objets complexes qui possèdent des structures géométriques périodiques à des échelles différentes, qu'il est possible d'étudier par des méthodes interférométriques.\\
+L'expérience des fentes d'Young permet d'obtenir, sur un écran, une figure d'interférences constituée d'une succession de franges brillantes et sombres qui se répartissent sur un axe de direction parallèle à la droite joignant les deux fentes.\\
+Le \emph{document \ref{doc4}} donne une schématisation d'une expérience des fentes d'Young, de centres $F_1$ et $F_2$, ainsi qu'une photographie de la figure d'interférence obtenue.
+
+\begin{figure}[h!]
+    \caption{Schéma du dispositif expérimental}
+    \label{doc4}
+    \begin{center}
+    \includegraphics[width=.8\linewidth]{Ressources/TSPE_DS3_24_Fig1.png}
+    \end{center}
+    Un faisceau lumineux issu d'un laser de longueur d'onde $\lambda$, éclaire un objet plan totalement opaque en dehors de deux fentes, séparées d'une distance $b$. Cet objet est appelé "fentes d'Young".\\
+    Le faisceau est constitué d'un ensemble de rayons parallèles, et se propage parallèlement à l'axe optique $(OO')$, le point $O$ étant à égale distance des points $F_1$ et $F_2$ et le point $O'$ étant situé sur l'écran.\\
+    Les ondes issues des fentes interfèrent sur l'écran. en un point $M$ de celui-ci, on admet que la différence de chemin optique entre les deux ondes s'écrit $\delta = F_2M - F_1M$.\\
+    L'écran est situé à une distance $D$ des fentes très grande devant la distance $b$ ($D >> b$).
+\end{figure}
+
+\begin{enumerate}
+    \item Préciser la condition que doit vérifier la différence de chemin $\delta$ pour que les ondes issues des fentes interfèrent de manière constructive au point $M$.
+    \item Indiquer en justifiant dans ce cas si la frange au point $O'$ est brillante ou sombre.
+\end{enumerate}
+
+Sur le \emph{document \ref{doc5}}, le point $H$ représente le projeté de $F_1$ sur le segment $[F_2M]$. On admet que la différence de chemin optique $\delta$ est égale à la longueur du segment $[F_2H]$.
+
+\begin{figure}[h!]
+    \caption{Agrandissement du schéma des fentes d'Young}
+    \label{doc5}
+    \begin{center}
+        \includegraphics[width=.4\linewidth]{Ressources/TSPE_DS3_24_Fig2.png}
+    \end{center}
+    
+\end{figure}
+
+On montre, avec une très bonne approximation, que l'angle $\theta$ est égal à l'angle $\widehat{O'OM}$ dans le triangle rectangle $O'OM$ représenté sur le \emph{document \ref{doc6}}. l'abscisse du point $M$ sur l'axe $O'x$ est notée $x$.
+
+\begin{figure}[h!]
+    \caption{Mise en évidence de l'angle $\theta$ dans le triangle $O'OM$}
+    \label{doc6}
+    \includegraphics[width=.8\linewidth]{Ressources/TSPE_DS3_24_Fig3.png}
+\end{figure}
+
+\begin{enumerate}[resume]
+    \item Après avoir exprimé l'angle $\theta$ en fonction de $D$ et $x$, montrer que la différence de chemin optique $\delta$ a pour expression : $$ \delta = \dfrac{b \cdot x}{D}$$
+    \item En déduire l'expression des abscisses $x_k$ des franges brillantes, en fonction de $\lambda$, $D$, $b$ et d'un entier relatif $k$.
+    \item Montrer que l'interfrange $i$ est donnée par l'expression littérale suivante : $$ i = \dfrac{\lambda \cdot D}{b}$$
+\end{enumerate}
+
+\begin{figure}[h!]
+    \caption{Schéma simplifié d'une plume}
+    \label{doc7}
+    \begin{minipage}{.58\linewidth}
+        \includegraphics[width=\linewidth]{Ressources/TSPE_DS3_24_Fig4.png}
+    \end{minipage}\hspace{.02\linewidth}
+    \begin{minipage}{.38\linewidth}
+        Le \emph{document \ref{doc7}} montre qu'une plume d'oie est composée d'un ensemble de barbes (tiges) fixées sur le rachis (axe principal de la plume d'oie). Les barbes supportent des éléments plus petits et fins, invisibles à l'\oe il nu, appelés barbules. Les barbes sont régulièrement espacées d'une distance notée $b_{barbe}$, les barbules sont régulièrement espacées d'une distance notée $b_{barbule}$ (voir \emph{document \ref{doc7}}) et sont dans une direction pratiquement perpendiculaire à celle des barbes. Les barbules sont plus resserrées que les barbes, on a donc $b_{barbule} < b_{barbe}$.
+    \end{minipage}
+\end{figure}
+On réalise la même expérience que celle décrite dans le \emph{document \ref{doc4}} en remplaçant l'objet "fentes d'Young" par une plume d'oie, éclairée par un laser dont la longueur d'onde est $\lambda = \SI{650}{nm}$. L'écran est placé à une distance $D = \SI{74}{cm}$ de la plume. On obtient alors une figure d'interférences dont la protographie (en négatif) est donnée \emph{document \ref{doc8}}.\\
+L'écran est rapporté à un repère d'origine $O'$ et d'axes $O'x$ et $O'y$ orthogonaux. Dans un modèle très simplifié, il est possible de montrer que les interférences sont constructives uniquement en des points de coordonnées ($x_k$, $y_l$), vérifiant les relations :
+$$ x_k = k \cdot \dfrac{\lambda \cdot D}{b_{barbe}} \text{ et } y_l = l \cdot \dfrac{\lambda \cdot D}{b_{barbule}} $$
+où $k$ et $l$ sont des entiers relatifs.\\
+Le modèle prévoit que seulement certains de ces points sont lumineux du fait des détails de la géométrie des plumes auxquels on ne s'intéresse pas ici.
+
+\begin{enumerate}[resume]
+    \item Montrer que le modèle simplifié permet d'expliquer certaines des caractéristiques de la figure d'interférences observées sur le \emph{document \ref{doc8}}. Dans les cases vides de ce document, identifier, en justifiant, l'axe $O'x$ puis l'axe $O'y$.
+    \item En exploitant la figure \ref{doc8}, évaluer les valeurs des interfranges $i_1$ et $i_2$ puis en déduire les valeurs des espacements $b_{barbule}$ et $b_{barbe}$.
+\end{enumerate}
+
+\begin{figure}[h!]
+    \caption{Figure d’interférences obtenue avec la plume d’oie}
+    \label{doc8}
+    \begin{center}
+        \includegraphics[width=\linewidth]{Ressources/TSPE_DS3_24_Fig5.png}
+    \end{center}
+    \emph{Il s’agit d’une photographie en négatif : les points sombres sur la photographie correspondent à des points brillants dans la réalité.}
+\end{figure}
+
+\newpage
+\section{Lancer de poids}
+Lors des Championnats du monde d'athlétisme qui ont eu lieu à Paris en août 2003, le vainqueur de l'épreuve du lancer du poids, Andrei Mikhnevich, a réussi un jet à une distance $d = \SI{21,69}{m}$.\\
+L'entraîneur de l'un de ses concurrents souhaite étudier ce lancer. Pour cela, il dispose pour le centre d'inertie du boulet, en plus de la valeur \SI{21,69}{m} du record, de la vitesse initiale $v_0$ mesurée à l'aide d'un cinémomètre et de l'altitude $h$.
+\begin{center}\includegraphics[width=.5\linewidth]{Ressources/TSPE_DS3_24_Fig6.png}\end{center}
+\newpage
+L'entraîneur a étudié le mouvement du boulet et a obtenu trois graphes :
+\begin{itemize}
+    \item le graph de la trajectoire $y=f(x)$ du boulet\\
+    \begin{center}\includegraphics[width=.8\linewidth]{Ressources/TSPE_DS3_24_Fig7.png}\end{center}
+    \item les graphes de $v_x(t)$ et de $v_y(t)$ en fonction du temps $t$ où $v_x(t)$ et $v_y(t)$ sont les coordonnées horizontale et verticale du vecteur vitesse $\vec{v}(t)$.\\
+    \begin{center}\includegraphics[trim={0 3cm 0 0}, clip,width=.9\linewidth]{Ressources/TSPE_DS3_24_Fig8.png}\end{center}
+\end{itemize}
+\textbf{Données :}
+\begin{itemize}
+    \item \textbf{Vitesse initiale du boulet :} $v_0 = \SI{13,8}{\meter\per\second}$
+    \item \textbf{Hauteur initiale du lancer :} $h = \SI{2,62}{\meter}$
+    \item \textbf{Intensité de pesanteur :} $g = \SI{9,81}{\newton\per\kilo\gram}$
+\end{itemize}
+
+
+\subsection{Etude de la projection horizontale du mouvement du boulet}
+    \begin{enumerate}
+        \item Déterminer la composante $v_{0x}$ du vecteur du boulet à l'instant de date $t_0 = \SI{0}{s}$.
+        \item Caractériser la nature du mouvement de la projection sur l'axe ($Ox$) en justifiant la réponse.
+        \item Déterminer la composante $v_{Sx}$ du vecteur vitesse lorsque le boulet est au sommet $S$ de sa trajectoire.
+    \end{enumerate}
+\subsection{Etude des conditions initiales du lancer}
+    \begin{enumerate}
+        \item En utilisant la \emph{figure 2}, déterminer la composante $v_{0y}$ du vecteur vitesse à l'instant $t_0 = \SI{0}{s}$.
+        \item A partir des résultats précédents, vérifier que la valeur de la vitesse initiale et celle de l'angle de tir soient compatibles avec les valeurs respectives $v_0 = \SI{13,8}{\meter\per\second}$ et $\alpha = \SI{43}{\degree}$.
+    \end{enumerate}
+\subsection{Etude du vecteur vitesse du boulet}
+    \begin{enumerate}
+        \item Déterminer toutes les caractéristiques du vecteur vitesse du boulet au sommet de la trajectoire.
+        \item Reproduire, à main levée et sans souci d'échelle, le graphe $y=f(x)$, puis représenter :
+            \begin{itemize}
+                \item le vecteur vitesse du boulet à l'instant du lancer
+                \item le vecteur vitesse du boulet au sommet de la trajectoire
+            \end{itemize}
+    \end{enumerate}
+\subsection{Etude du mouvement}
+L'accélération du boulet admet comme coordonnées en fonction du temps :
+$$ \vec{a}(t)\left\{
+    \begin{array}{c}
+        a_x(t) = 0\\
+        a_y(t) = -g
+    \end{array}
+\right\}_{(O,\vec{i},\vec{j})}$$
+\begin{enumerate}
+    \item Dans le repère d'espace défini en introduction, montrer que les équations horaires de la vitesse s'expriment sous la forme : $$ \vec{v}(t)\left\{
+        \begin{array}{c}
+            v_x(t) = v_0 \cdot \cos(\alpha)\\
+            v_y(t) = -g \cdot t + v_0 \cdot \sin(\alpha)
+        \end{array}
+    \right\}_{(O,\vec{i},\vec{j})}$$
+    \item Dans le repère d'espace défini en introduction, montrer que les équations horaires du mouvement s'expriment sous la forme : $$ x(t) = v_0 \cdot \cos(\alpha) \cdot t$$ $$ y(t) = -\frac{1}{2} g \cdot t^2 + v_0 \cdot \sin(\alpha) \cdot t +h$$
+\end{enumerate}
+L'équation de la trajectoire $y(t)$ s'obtient en isolant $t$ dans l'équation horaire $x(t)$, puis en remplaçant $t$ par sa nouvelle forme dans l'équation horaire $y(t)$.
+\begin{enumerate}[resume]
+    \item Vérifier ainsi que l'équation de la trajectoire est de la forme : $$ y(x) = -\dfrac{g \cdot x^2}{2v_0^2\cdot \cos(\alpha)^2} + \tan(\alpha) \cdot x + h$$
+    \item En déduire la position téhorique atteinte par le boulet lorsqu'il touche le sol avec les conditions initiales précédemment évoquées : $v_0 = \SI{13,8}{\meter\per\second}$, $h = \SI{2,62}{m}$ et $\alpha = \SI{43}{\degree}$
+\end{enumerate}
+\end{document}

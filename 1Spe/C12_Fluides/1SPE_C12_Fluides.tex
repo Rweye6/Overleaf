@@ -1,0 +1,80 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 12}
+\newcommand{\chtitle}{Modélisation d'un fluide au repos}
+\newcommand{\dtype}{Cours}
+
+\begin{document}
+	\maketitle
+\section{Grandeurs pour étudier un fluide}
+	\subsection{La masse volumique}
+	La masse volumique, notée $\rho$, est liée au nombre de particules par unité de volume. Elle s'exprime en \unit{\kilo\gram\per\meter\cubed}. Ainsi la masse volumique des liquides est supérieure à celle des gaz.\\
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\multicolumn{2}{|c|}{Quelques masses volumiques de gaz (\unit{\kilo\gram\per\meter\cubed})}& \multicolumn{2}{c|}{Quelques masses volumiques de liquides (\unit{\kilo\gram\per\meter\cubed})}\\
+			\hline
+			Air (\SI{0}{\celsius}) & \num{1,293} & Eau (\SI{20}{\celsius}) & \num{1000}\\
+			\hline
+			Air (\SI{20}{\celsius}) & \num{1,204} & Éthanol (\SI{20}{\celsius}) & \num{789}\\
+			\hline
+			Hélium (\SI{0}{\celsius}) & \num{0,178} & Glycérine (\SI{20}{\celsius}) & \num{1260}\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\subsection{La température $T$}
+	La température, notée $T$, est une grandeur liée à l'agitation des particules. Elle s'exprime en kelvin (\unit{\kelvin}) : $$T \text{ (en \unit{\kelvin} )} = \theta \text{ (en \unit{\celsius}) } + 273,15 $$
+	Plus la température du fluide est élevée, plus les particules sont agitées.
+	
+	\subsection{La pression $P$}
+	La pression, notée $P$, est définie en tout point du fluide et traduit la poussée qu’il exerce sur la paroi. La pression est due aux chocs des molécules du fluide contre les parois du récipient.
+	
+\section{Pression et force pressante}
+	\subsection{Force pressante d'un fluide}
+	Un fluide est une substance dont les entités chimiques sont libres de se déplacer les unes par rapport aux autres. Il s'agit de gaz ou de liquides. N'ayant pas de forme propre, les fluides vont prendre celle de leur contenant et ainsi exercer sur les parois de celui-ci une action mécanique de contact. Cette action mécanique est modélisée par une force appelée force pressante.\\
+	La force pressante d'un fluide sur une surface est toujours normale (perpendiculaire) à la surface et don sens va du fluide vers la surface.
+	Exemple du ballon.
+	
+	\subsection{Pression d'un fluide}
+	Il est souvent plus pratique de considérer la pression d'un fluide plutôt que la force pressante qu'il exerce sur une paroi.\\
+	Si un fluide exerce une force pressante F sur une surface S, la pression P est définie par : 
+	\begin{center}
+		\begin{tabular}{>{\centering}m{.3\linewidth}|m{.6\linewidth}}
+			\multirow{3}{*}{$P = \dfrac{F}{S}$} & $P$ :  la pression en pascal (\unit{\pascal}) correspondant à des \unit{\newton \per\meter\squared}\\
+			&$F$ : la force pressante (\unit{\newton})\\
+			& $S$ : la surface (\unit{\meter\squared})\\
+		\end{tabular}
+	\end{center}
+	Une autre unité usuelle de la pression est le bar, définie comme \SI{1}{\bar} = \SI{1E5}{\pascal}.\\
+	Poussée d'Archimède : un objet immergé dans un fluide subit une pression du fluide plus grande en bas. Il en résulte une force orientée du bas vers le haut, égale au poids du fluide déplacé, appelée force d'Archimède.
+	$$\Pi = F_P(B) - F_P(A) $$
+	
+	\section{La loi de Boyle-Mariotte}
+	La pression dépend des autres propriétés du fluide (volume, température, etc.) Une des premières relations reliant ces différentes propriétés est la loi de Boyle-Mariotte. Pour une quantité de gaz constante à température constante on a :
+	
+	\begin{center}
+		\begin{tabular}{>{\centering}m{.3\linewidth}|m{.6\linewidth}}
+			\multirow{2}{*}{$P \cdot V =cste$} & $P$ :  la pression en pascal (\unit{\pascal})\\
+			& $V$ : le volume en mètre cube (\unit{\meter\cubed})\\
+		\end{tabular}
+	\end{center}
+	
+\section{Loi fondamentale de la statique des fluides}
+	Dans un fluide au repos, la pression $P$ n’est pas uniforme en tout point du fluide. La loi fondamentale de la statique des fluides permet de relier la variation de la pression d’un fluide à sa masse volumique et au champ de gravité $g$.\\
+	Pour un fluide incompressible dans un champ de gravité uniforme, la loi fondamentale de la statique des fluides s’écrit :
+	\begin{center}
+		\begin{tabular}{>{\centering}m{.3\linewidth}|m{.6\linewidth}}
+			\multirow{4}{*}{$ P_A - P_B = \rho \cdot g \cdot (z_B - z_A)$} & $P_A$ et $P_B$ : en pascal (\unit{\pascal})\\
+			& $\rho$ : la masse volumique en \unit{\kilo\gram\per\meter\cubed}\\
+			& $g$ : l'intensité de la pesanteur terrestre (\unit{\newton\per\kilo\gram})\\
+			& $z_A$ et $z_B$ en mètre (\unit{\meter})\\
+		\end{tabular}
+	\end{center}
+	
+	On peut la plupart du temps dire qu’un liquide est incompressible (la masse volumique est constante), mais ce n’est pas le cas d’un gaz. On considérera le champ de pesanteur uniforme jusqu’à quelques dizaines de mètres.\\
+	Exemple d’application :
+	Quelle est la pression que subit un plongeur à 10 mètres de profondeur ?
+\end{document}

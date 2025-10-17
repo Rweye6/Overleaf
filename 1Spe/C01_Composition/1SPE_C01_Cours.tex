@@ -1,0 +1,116 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 1}
+\newcommand{\chtitle}{Détermination de la composition du système initial à l’aide de grandeurs physiques}
+\newcommand{\dtype}{Cours}
+
+\begin{document}
+	\maketitle
+	
+	\section{La mole}
+	\begin{cours}
+		La mole représente un paquet contenant \num{6,023E23} entités chimiques identiques (atomes, ions ou molécules). C’est une unité pratique en chimie pour quantifier l’état d’un système.
+	\end{cours}
+	
+	\section{Le nombre d’Avogadro}
+	\begin{cours}
+		Le nombre d’Avogadro est le nombre d’entités contenues dans une mole. Il se note $N_A$ et son unité est le \unit{\per\mole}.
+	\end{cours}
+	
+	\section{La masse molaire}
+	\begin{definition}
+		la masse molaire est la masse d’une mole d’entités chimiques (atomes, ions ou molécules) identiques. Elle est notée \textbf{M} et a pour unité le \unit{\gram\per\mole}.
+	\end{definition}
+	Chaque élément chimique possède une masse molaire moyenne accessible dans le tableau périodique des éléments. Cette valeur est calculée en se basant sur la masse et l’abondance naturelle des isotopes de cet élément. Exemple du chlore $^{35}Cl$ (\SI{75,8}{\percent}) et $^{37}Cl$ (\SI{24,2}{\percent}) calculer la masse molaire moyenne du chlore.\\
+	Calculer une masse molaire : La masse molaire d’une entité chimique se calcule à partir des différents éléments chimiques qui la composent.\\
+	
+	\textbf{Calculer :}\\
+	\begin{tabular}{|>{\centering}m{2cm}|m{16cm}|}
+		\hline
+		M(\ce{Al}) &  \rule{0pt}{2em}\\
+		\hline
+		M(\ce{CO2}) & \rule{0pt}{2em}\\
+		\hline
+		M(\ce{Cl-}) & \rule{0pt}{2em}\\
+		\hline
+		M(\ce{SO4^{2-}}) & \rule{0pt}{2em}\\
+		\hline
+	\end{tabular}
+	
+	\section{Déterminer une quantité de matière}
+	La quantité de matière est une grandeur indispensable pour décrire l’état d’un système chimique et expliquer son évolution. Elle n’est pas mesurable directement par un appareil et n’est donc accessible que par le calcul.
+		\subsection{À partir de la masse (pour tous les états) :}
+		La quantité de matière et la masse d'une même entité chimique sont proportionnelles entre elles :\\
+		\begin{tabular}{>{\centering} m{6cm}|m{12cm}}
+			\multirow{3}{*}{$n(X) = \dfrac{m(X)}{M(X)}$} & $n(X)$ : la quantité de matière de l'entité $X$ en \unit{\mole}\\
+			& $m(X)$ : la masse de l'entité $X$ en \unit{\gram}\\
+			& $M(X)$ : la masse molaire de l'entité $X$ en \unit{\gram \per \mole}\\
+		\end{tabular}
+	
+	\subsection{À partir du volume (corps liquide)}
+	Dans le cas des corps purs à l’état liquide, il peut être plus simple d’en mesurer un volume. Dans ce cas on utilise la masse volumique du liquide. Ainsi la masse du liquide se calcule par la formule :  $m(X)=\rho(X)\cdot V(X)$. En la combinant avec la formule précédente on obtient :\\
+		\begin{tabular}{>{\centering} m{6cm}|m{12cm}}
+			%\hline
+			\multirow{4}{*}{$n(X) = \rho(X)\cdot \dfrac{V(X)}{M(X)}$} & $n(X)$ : la quantité de matière de l'entité $X$ en \unit{\mole}\\
+			&$\rho(X)$ : la masse volumique de l'entité $X$ en \unit{\gram\per\liter}\\
+			& $V(X)$ : le volume de corps pur liquide en \unit{\liter}\\
+			& $M(X)$ : la masse molaire de l'entité $X$ en \unit{\gram \per \mole}\\
+		%\hline
+		\end{tabular}
+		
+	\subsection{À partir du volume pour un corps pur gazeux}
+	Dans les mêmes conditions de températures et de pression, une mole de gaz occupe un volume précis qui ne dépend pas de la nature du gaz considéré. Ce même volume se note $V_m$ et s’exprime en \unit{\liter\per\mole}. La relation est alors :\\
+	\begin{tabular}{>{\centering} m{6cm}|m{12cm}}
+		%\hline
+		\multirow{3}{*}{$n(X) = \dfrac{V(X)}{V_m}$} & $n(X)$ : la quantité de matière de l'entité $X$ en \unit{\mole}\\
+		& $V(X)$ : le volume de corps gaz $X$ en \unit{\liter}\\
+		& $V_m$ : le volume molaire en \unit{\liter \per \mole}\\
+		%\hline
+	\end{tabular}
+
+\section{Notions de concentration}
+	\subsection{Concentration en masse d'une espèce en solution}
+	La concentration en masse d'un soluté, notée $C_m$ ou $\gamma$, dissout dans une solution s'obtient par la relation :\\
+	\begin{tabular}{>{\centering} m{6cm}|m{12cm}}
+		%\hline
+		\multirow{3}{*}{$C_m = \dfrac{m_{\text{\textit{soluté}}}}{V_{solution}}$} & $C_m$ : la concentration en masse  en \unit{\gram\per\liter}\\
+		& $m_{\text{soluté}}$ : la masse de soluté en \unit{\gram}\\
+		& $V_{solution}$ : le volume de la solution en \unit{\liter}\\
+		%\hline
+	\end{tabular}
+	
+	\subsection{Concentration en quantité de matière d'une espèce en solution}
+	La concentration en quantité de matière, notée $C$, d'un soluté dissout représente la quantité de matière de ce soluté par litre de solution. Elle se détermine par la relation :\\
+	\begin{tabular}{>{\centering} m{6cm}|m{12cm}}
+		%\hline
+		\multirow{3}{*}{$C = \dfrac{n_{\text{\textit{soluté}}}}{V_{solution}}$} & $C$ : la concentration en masse  en \unit{\mole\per\liter}\\
+		& $n_{\text{soluté}}$ : la masse de soluté en \unit{\mole}\\
+		& $V_{solution}$ : le volume de la solution en \unit{\liter}\\
+		%\hline
+	\end{tabular}
+	
+	\subsection{Relation entre la concentration en masse et la concentration en quantité de matière}
+	La concentration en quantité de matière et la concentration en masse sont liées grâce à la masse molaire :
+	\begin{center}
+	$C = \dfrac{n_{\text{soluté}}}{V_{solution}}$ et $n_{\text{soluté}} = \dfrac{m_{\text{soluté}}}{M_{\text{soluté}}}$\\
+	$C = \dfrac{m_{\text{soluté}}}{M_{\text{soluté}}\cdot V_{Solution}} = \dfrac{C_m}{M_{\text{soluté}}}$
+	\end{center}
+	\begin{tabular}{>{\centering} m{6cm}|m{12cm}}
+		%\hline
+		\multirow{3}{*}{$C = \dfrac{C_m}{M_{\text{soluté}}}$} & $C$ : la concentration en quantité de matière  en \unit{\mole\per\liter}\\
+		& $C_m$ : la concentration en masse de soluté en \unit{\gram}\\
+		& $M_{\text{soluté}}$ : la masse molaire du soluté en \unit{\gram \per \liter}\\
+		%\hline
+	\end{tabular}
+	
+\section{Préparation d'une solution}
+	\subsection{Par dissolution}
+	Pour préparer une solution de volume $V$, la concentration en quantité de matière $C$ d'un soluté, il faut prélever puis dissoudre une masse $m$ de soluté correspondante. Cette masse se calcule comme : 
+	$$ m = n \cdot M \hspace{1cm} \text{ou} \hspace{1cm} m = C \cdot V \cdot M$$
+	
+	\subsection{Par dissolution}
+	Pour rappel, la dilution d'une solution aqueuse correspond à l'ajout d'eau à cette solution afin d'en diminuer la concentration. Pour fabriquer une solution fille, on prélève un volume de solution mère. Comme la quantité de matière en soluté dans le volume prélevé est la même que dans la solution fille, on aura :
+	$$ n_{\text{mère}}= n_{\text{fille}} \hspace{1cm} \text{d'où} \hspace{1cm} C_{\text{mère}} \cdot V_{\text{mère}} = C_{\text{fille}} \cdot V_{\text{fille}}$$
+\end{document}

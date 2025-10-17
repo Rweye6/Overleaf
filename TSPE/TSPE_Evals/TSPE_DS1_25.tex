@@ -1,0 +1,228 @@
+\documentclass[a4paper,14pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Eval}
+
+
+\newcommand{\chnum}{Chapitre 1 et 2}
+\newcommand{\chtitle}{Transformation acide-base et pH}
+\newcommand{\dtype}{DS 1}
+
+\begin{document}
+\maketitle
+\section*{Exercice 1 : Acidité d'un vin}
+L’acidité d’un vin peut être exprimée de deux façons, à partir de son acidité totale ou de son pH [...]. L’acidité totale est surtout un indicateur des caractéristiques gustatives, alors que le pH intervient dans la stabilité du vin. L’acidité du vin (pH compris entre 2,7 et 3,7) est principalement due à la présence d’acides organiques en partie à l’état libre; l’acidité totale d’un vin est constituée par les acides représentant l’acidité fixe (acides tartrique, malique, lactique, citrique, etc) et par des molécules représentant l’acidité volatile (essentiellement l’acide éthanoïque, et l’éthanoate d’éthyle susceptible de libérer l’acide éthanoïque par
+saponification) [...].\\
+Le goût aigre de l’acide éthanoïque est perçu lorsque sa concentration est supérieure à \SI{0,6}{\gram\per\liter}
+\begin{flushright}
+    D’après « Chimie dans la maison » - Cultures et Techniques
+\end{flushright}
+
+\begin{figure}[h!]
+    \caption*{Données :}
+    Masse molaire de l'acide éthanoïque (\ce{CH3COOH} : $M=\SI{60}{\gram\per\mole}$)\\
+    Formule semi-développée de l'acide lactique : \chemfig[atom sep = 2em]{H_3C-CH(-[6]OH)-C(=[1]O)-[7]OH}
+\end{figure}
+
+\subsection{A propos du texte}
+    \begin{enumerate}
+        \item Déterminer la valeur de la condentration en quantité de matière en ions oxonium \ce{H3O+} d'un vin dont le pH est égal à \num{3,0}. (1)
+        \item Calculer la concentration molaire de l'acide éthanoïque pour que le goût aigre soit perçu. (1)
+        \item L'acide lactique se forme lors de la fermentation du vin. Sa formule semi-développée est représentée dans les données. Recopier la formule en entourant et nommant les groupes caractéristiques.(1)
+        \item Justifier la propriété acide de l'acide lactique.(1)
+        \item Entre les deux spectres infra-rouge fournis en Annexe, justifier lequel appartient à l'acide lactique.(1)
+    \end{enumerate}
+\subsection{Réaction de l'acide éthanoïque avec l'eau}
+    On dispose d'un volume $V=\SI{50}{mL}$ d'une solution $S$ d'acide éthanoïque de concentration molaire en soluté apporté $C=\SI{1,0E-2}{\mole\per\liter}$ et de $pH = 3,4$.
+    \begin{enumerate}[resume]
+        \item Écrire l'équation de la réaction de l'acide éthanoïque avec l'eau. (1)
+        \item Calculer la concentration molaire en ions oxonium \ce{H3O+} effective de la solution. (1)
+        \item La réaction entre l'acide éthanoïque et l'eau est elle totale ? (1)
+    \end{enumerate}
+
+\subsection{Titrage de l'acide éthanoïque par une solution d'hydroxyde de sodium}
+    Au laboratoire, l'étiquette d'un flacon d'une solution d'acide éthanoïque est effacée. On décide alors d'éffectuer un titrage afin de déterminer la concentration molaire de cette solution.\\
+    Pour cela, on dispose d'une solution d'hydroxyde de sodium (\ce{Na+}; \ce{HO-}) de concentration molaire égale à \SI{1,0E-2}{\mole\per\liter} et du matériel suivant :
+    \begin{itemize}
+        \item fioles jaugées de \SI{50,0}{mL} et de \SI{100}{mL}
+        \item pipette jaugées de \SI{5,0}{mL} et de \SI{10}{mL}
+        \item bécher  de \SI{100}{mL}
+        \item éprouvette graduée de \SI{50}{mL}
+        \item eau déminéralisée
+    \end{itemize}
+
+    Avec la solution d'hydroxyde de sodium ainsi préparée, on procède au titrage de $V_A = \SI{20,0}{mL}$ de solution d'acide éthanoïque. Les valeurs du pH , en fonction du volume $V_B$ de solution d'hydroxyde de sodium versé, sont donnée dans le tableau suivant :
+\begin{center}
+    \begin{tabular}{|c|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering\arraybackslash}m{.05\linewidth}|}
+    \hline
+    $V_B$ (mL) & 0 & 2,0 & 4,0 & 6,0 & 8,0 & 10,0 & 12,0 & 14,0 & 16,0 & 18,0 & 18,5\\
+    \hline
+    pH & 3,4 &3,9 &4,2 & 4,4 & 4,6 & 4,8 & 5,0 & 5,2 & 5,4 & 5,75 & 5,9\\
+    \hline
+\end{tabular}
+\vspace{1em}
+
+\begin{tabular}{|c|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering}m{.05\linewidth}|>{\centering\arraybackslash}m{.05\linewidth}|}
+    \hline
+    $V_B$ (mL) & 19,0 & 19,5 & 20,0 & 20,5 & 21,0 & 21,5 & 22,0 & 24,0 & 26,0 & 28,0 & 30,0\\
+    \hline
+    pH & 6,1 & 6,4 & 8,3 & 10,3 & 10,7 & 10,9 & 11,0 & 11,3 & 11,5 & 11,6 & 11,7\\
+    \hline
+\end{tabular}
+\end{center}
+\begin{enumerate}[resume]
+        \item Écrire l'équation de la réaction qui d'effectue entre la solution d'acide éthanoïque et la solution d'hydroxyde de sodium. (1)
+        \item Déterminer, graphiquement, sur la courbe donnée en Annexe, les coordonnées du point d'équivalence, en indiquant la méthode utilisée. (1)
+        \item Déterminer la concentration $C_A$ de la solution d'acide éthanoïque étudiée. (2)
+        \item Conclure sur la qualité du vin étudié.(1)
+\end{enumerate}
+
+\newpage
+\section*{Exercice 2 : Titrage des ions dans une eau minérale}
+Les eaux minérales contiennent des espèces dissoutes. La législation impose une étiquette précisant les auantités contenues dans un litre d'eau. Sur l'étiquette endommagée d'une bouteille d'eau minérale gazeuse, on peut lire les valeurs des concentrations massiques en ions données dans le tableau ci-dessous.  Les valeurs concernant les ions chlorure et calcium ne sont plus lisibles.
+
+\begin{center}
+    \begin{tabular}{|>{\centering}m{.18\linewidth}|>{\centering}m{.18\linewidth}|>{\centering}m{.18\linewidth}|>{\centering}m{.18\linewidth}|>{\centering\arraybackslash}m{.18\linewidth}|}
+    \hline
+    \textbf{Cation} & Sodium \ce{Na+} & Potassium \ce{K+} & Calcium \ce{Ca^2+} & Magnésium \ce{Mg^2+}\\
+    \hline
+    Concentration massique (\unit{\milli\gram\per\liter}) & 1708 & 132 & ? & 11 \\
+    \hline
+    \textbf{Anion} & Hydrogénocarbonate \ce{HCO3-} & Chlorure \ce{Cl-} & Sulfate \ce{SO4^2-} & Fluorure \ce{F-}\\
+    \hline
+    Concentration massique (\unit{\milli\gram\per\liter}) & 4368 & ? & 174 & 1 \\
+    \hline 
+\end{tabular}
+\end{center}
+Cet exercice propose, en deux parties, deux méthodes de titrage pour retrouver les valeurs manquantes :
+\begin{itemize}
+    \item un titrage par précipitation pour déterminer la concentration massique en ions chlorure \ce{Cl-}
+    \item un titrage complexométrique pour déterminer la concentration massique en ions calcium \ce{Ca^2+}
+\end{itemize}
+\subsection{Titrage par précipitation des ions chlorure}
+On dégaze l'eau minérale par agitation et on prélève un volume $V_1 = \SI{20,0}{mL}$ que l'on introduit dan sun grand bécher. On rajoute un volume d'environ \SI{200}{mL} d'eau distillée. On plonge dans le milieu une cellule de conductimétrie. À l'aide d'une burette graduée, on ajoute progressivement une solution aqueuse de nitrate d'argent (\ce{Ag+(aq)}; \ce{NO3-(aq)}) de concentration molaire $c_2 = \SI{2,00E-2}{\mole\per\liter}$.\\
+Le mélange obtenu dans le bécher est maintenu sous une agitation régulière le Document~\ref{doc3} donne la courbe d'évolution de la conductivité $\theta$ du mélange en fonction du volume $V_2$ versé de la solution de nitrate d'argent.
+\begin{enumerate}
+    \item Compléter le schéma de le Document~\ref{doc4} du dispositif utilisé lors de ce titrage.
+    \item Lors de ce titrage, les ions chlorure \ce{Cl-(aq)} réagissent avec les ions argent \ce{Ag+(aq)} pour former un précipité blanc de chlorure d'argent \ce{AgCl(s)}. La transformation associée à la réaction est totale. L'équation de la réaction de précipitation est la suivante :
+    $$ \ce{Ag+(aq) + Cl-(aq) = AgCl(s)}$$
+    %\begin{enumerate}
+        \item Compléter le tableau décrivant l'évolution du système à l'équivalence donnée par le Document~\ref{doc5}. On note $n_{2eq}$ la quantité de matière (en \unit{\mole}) d'ions argent versée à l'équivalence.
+        \item En décrire la relation entre la quantité initiale $n_1$ en \unit{\mole} des ions chlorure et la quantité de matière $n_{2eq}$ en \unit{\mole} d'ions argent versée à l'équivalence.
+        \item Quel évènement correspond au point d'intersection des deux segments de droite de la courbe du Document~\ref{doc4} ? En déduire la valeur du volume $V_{2eq}$ de la solution de nitrate d'argent versé à l'équivalence.
+        \item En utilisant les questions précédentes, calculer la concentration $c_1$ des ions chlorure dans l'eau minérale étudiée.
+        \item Calculer la concentration massique notée $t_1$ des ions chlorure de cette eau minérale. On donnera le résultat en \unit{\milli\gram\per\liter}
+    %\end{enumerate}
+\end{enumerate}
+\subsection{Titrage complexométrique des ions calcium}
+    On utilise comme solution titrante, une solution d'acide éthylènediaminetétraacétique (EDTA). Ce titrage se fait en présence d'un indicateur coloré de fin de réaction et d'une solution tampon permettant de maintenir le pH de la solution entre 9 et 10.\\
+    On réalise le titrage d'un volume $V'_1 = \SI{20,0}{mL}$ d'eau minérale par la solution d'EDTA de concentration $c'_2 = \SI{5,0E-3}{\mole\per\liter}$. À l'équivalence, le volume versé d'EDTA est $V'_{2eq} =\SI{10,8}{mL}$.
+\begin{enumerate}[resume]
+    \item En milieu basique, l'EDTA contient des ions notés \ce{Y^4-} qui réagissent avec les ions calcium (\ce{Ca^2+}) et magnésium (\ce{Mg^2+}) contenus dans l'eau minérale pour former des complexes très stables selon les équations :
+    $$\ce{Ca^2+(aq) + Y^4-(aq) = [CaY]^2-(aq)}$$
+    $$\ce{Mg^2+(aq) + Y^4-(aq) = [MgY]^2-(aq)}$$
+    Soient $n_i(\ce{Ca^2+})$ et $n_i(\ce{Mg^2+})$ les quantités de matière innitiales d'ions calcium et magnésium présents dans le volume $V_1$ d'eau minérale, $n'_{2eq}$ désigne la quantité de matière d'ions \ce{Y^4-} versée pour atteindre l'équivalence.\\
+    Quelle relation lie ces trois quantités de matière ?
+    \item Montrer que la somme des concentrations molaires des ions calcium et magnésium est donnée par la relation : $$[\ce{Ca^2+}] + [\ce{Mg^2+}] = \dfrac{C'_2 \cdot V'_{2eq}}{V'_1}$$
+    \item À l'aide de la valeur (donnée dans le tableau en introduction) de la concentration massique des ions magnésium contenus dans l'eau minérale étudiée, en déduire la valeur de la concentration massique (en \unit{\milli\gram\per\liter}) des ions calcium dans cette eau.
+\end{enumerate}
+\textbf{Données : } Masses molaires atomiques $M(\ce{Ca}) = \SI{40,1}{\gram\per\mole} \hspace{2em} M(\ce{Mg}) = \SI{24,3}{\gram\per\mole}$
+
+\newpage
+\section*{Annexes}
+\begin{figure}[h!]
+    \caption{\textbf{Spectres infrarouges à analyser}}
+    \begin{minipage}{.42\linewidth}
+        \centering \includegraphics[width=\linewidth]{Ressources/IR_Acide lactique.png}
+    \end{minipage}
+    \begin{minipage}{.55\linewidth}
+        \centering \includegraphics[width=\linewidth]{Ressources/Table_IR.png}
+    \end{minipage}
+\end{figure}
+\begin{figure}[h!]
+    \caption{\textbf{Résultats du titrage avec suivi pH-métrique}}
+    \includegraphics[width=\linewidth]{Ressources/TSPE_DS1_25_Fig1.png}
+\end{figure}
+
+
+\begin{figure}[h!]
+    %\begin{minipage}{.6\linewidth}
+    \centering 
+        \caption{\textbf{Résultats du titrage avec suivi conductimétrique}}
+    \includegraphics[width=.7\linewidth]{Ressources/TSPE_DS1_25_Fig2.png}
+    \label{doc3}
+    %\end{minipage}
+
+    %\begin{minipage}{.6\linewidth}
+        \caption{\textbf{Schéma du titrage par conductimétrie à annoter}}
+    \includegraphics[width=.7\linewidth]{Ressources/TSPE_DS1_25_Fig3.png}
+    \label{doc4}
+    %\end{minipage}
+\end{figure}
+\begin{figure}[h!]
+    \caption{\textbf{Tableau d'avancement de la réactio}}
+    \centering \includegraphics[width=.7\linewidth]{Ressources/TSPE_DS1_25_Fig4.png}
+    \label{doc5}
+\end{figure}
+
+
+\end{document}
+
+
+
+
+
+
+
+\section{Titrage des ions cuivre(II)}
+Le sulfate  de cuivre a des propriétés fongicides connues depuis fort longtemps. il intervient par exemple dans la "bouillie bordelaise", préparation destinée à protéger les vignes du mildiou (maladie de la vigne provoquée par un champignon). Mais le cuivre est aussi un oligoélément, indispensable au métabolisme. Des études ont montré que le sulfate de cuivre mélangé en très faible quantité aux aliments (quelques dizaines de \unit{\milli\gram\per\kilo\gram}) favorise la croissance des animaux d'élevage.\\
+Au cours d'une séance de travaux pratiques, on souhaite déterminer la concentration en ions cuivre (II) \ce{Cu^2+(aq)} d'une solution aqueuse de dulfate de cuivre notée $S$ dans la suite du texte. Les ions \ce{Cu^2+(aq)} colorent les solutions aqueuses en bleu.
+\subsection{A propos des dosages}
+\begin{enumerate}
+    \item Que signifie "doser une espèce chimiques ?" (1)
+    \item Pour déterminer la concentration en ions cuivre (II) d'une solution aqueuse, on peut réaliser un titrage. Citer une autre méthode utilisable.
+\end{enumerate}
+La solution $S$, très peu concentrée en ions \ce{Cu^2+(aq)}, est pratiquement incolore. Pour déterminer la concentration des ions \ce{Cu^2+(aq)}, on décide de réaliser un titrage.
+
+\subsection{Principe du titrage}
+On fait réagir les ions cuivre (II) de la solution à tirer avec des ions iodure introduits en très large excès. Il se forme du diiode et des ions complexes diiodocuprate \ce{CuI2-(aq)}.\\
+L'équation de la réaction modélisant cette transformation supposée totale s'écrit :\\
+\ce{2Cu^2+(aq) + 6I-(aq) = I2(aq) +2CuI2-(aq)} \begin{flushright}{(réaction 1)}\end{flushright}
+
+Le diiode formé est titré à l'aide d'une solution de thiosulfate de sodium de concentration bien déterminée. L'équation de la réaction modélisant cette transformation, également supposée totale, d'écrit :\\
+\ce{I2(aq) + 2S2O3^2-(aq) = 2I-(aq) + S4O6^2-(aq)} \begin{flushright}{(réaction 2)}\end{flushright}
+
+\begin{enumerate}[resume]
+    \item Le titrage des ions \ce{Cu^2+(aq)} réalisé est dit "indirect". Justifier cette dénomination.
+    \item Pourquoi les deux transformations doivent-elles être totales ?
+    \item Quelle autre caractéristique doit posséder la transformation 2 pour servir de support au titrage ?
+    \item Indiquer les deux couples oxydant/réducteur mis en jeu dans la réaction 2 en précisant pour chaque couple l'oxydant et le réducteur.
+\end{enumerate}
+
+
+\subsection{Protocole}
+Verser \SI{20,0}{mL} de solution $S$ dans un bécher. Mettre un barreau aimanté (turbulent) puis placer le bécher sur l'agitateur magnétique. Ajouter à la spatule de l'iodure de potassium \ce{KI(s)} tout en agitant doucement.\\
+La solution se teinte en brun et se trouble. Le trouble provient de la formation d'un précipité d'iodure de
+cuivre \ce{CuI(s)}. Continuer à ajouter lentement l'iodure de potassium jusqu'à disparition totale du précipité.\\
+La solution brune est alors limpide et prête à être titrée. On admet que l'ajout d'iodure de potassium se fait
+sans variation du volume de la solution.\\
+Réaliser le titrage de la solution $S'$ obtenue par une solution de thiosulfate de sodium. Lorsque la solution $S'$ devient jaune pâle, ajouter quelques gouttes d'empois d'amidon (ou de thiodène) puis poursuivre le titrage goutte à goutte jusqu'à disparition complète de la coloration bleue.
+
+\begin{enumerate}[resume]
+    \item Quelle verrerie faut-il utiliser pour prélever les \SI{20,0}{mL} de solution $S$ ? Justifier le choix.
+    \item Quelle est l'espèce chimique présente dans le bécher, responsable de la coloration brune de la solution ? justifier.
+    \item Quel est le rôle de l'ampois d'amidon (ou du thiodène) ?
+\end{enumerate}
+
+\subsection{Calcul de la concentration en ions \ce{Cu^2+(aq)} de la solution $S$}
+
+\begin{enumerate}[resume]
+    \item Rappeler la définition du terme "équivalence" utilisé lors d'un titrage.
+    \item Montrer qu'à l'équivalence du titrage la quantité $n(\ce{I2})$ de diiode initialmeent présente dans la solution $S'$ est liée à la quantité $n_T$ de thiosulfate de potassium versée par la relation $n(\ce{I2}) = \dfrac{n_T}{2}$\\
+    \textit{On pourra s'aider d'un tableau descriptif de l'évolution ddu système chimique relatif à la réaction 2.}
+    \item Calculer la quantité de diiode initialmeent présente dans la solution $S'$.\\
+    \emph{Données : } Concentration en ions thiosulfate de la solution titrante : $[\ce{S2O3^2-}] = \SI{1,00E-2}{\mole\per\liter}$.\\
+    Volume de thiosulfate de potassium versé à l'équivalence : $V_E = \SI{12,0}{mL}$
+    \item Quelle relation lie la quantité de diiode $n(\ce{I2})$ calculée à la question précédente et la quantité $n_0$ d'ions \ce{Cu^2+(aq)} présente dans les \SI{20,0}{mL} de solution $S$ ? Calculer $n_0$\\
+    \textit{On pourra s'aider d'un tableau descripif de l'évolution du système chimique relatif à la réaction 1.}
+    \item En déduire la concentration en ions \ce{Cu^2+(aq)} de la solution $S$.
+\end{enumerate}
+

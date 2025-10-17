@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 3}
+\newcommand{\chtitle}{Avancement d'un système}
+\newcommand{\dtype}{Cours}
+
+\begin{document}
+\maketitle
+\section{Travail préliminaire}
+Avant de dresser un tableau d'avancement, il faut connaitre : 
+\begin{itemize}
+\item l'équation de la réaction étudiée
+\item connaitre les quantités de matière des différents réactifs
+\end{itemize}
+
+\section{Construction d'un tableau d'avancement}
+Un tableau d'avancement se présenta de la manière suivante :\\
+\begin{center}
+    \begin{tabular}{|c|>{\centering}m{.2\linewidth}|>{\centering\arraybackslash}m{.5\linewidth}|}
+\hline
+ &&Equation de la réaction\\
+\hline
+Avancement & Quantité de matière & Une colonne par réactif et produit\\
+\hline
+0& à l'état initial& Quantités de matière apportées\\
+\hline
+x& au cours de la réactioné&Quantité de matière en fonction de x\\
+\hline
+$x_f$& à l'état final&Recopier la ligne du dessus en remplaçant $x$ par $x_f$\\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Méthode de construction d'un tableau d'avancement :}
+\begin{enumerate}
+\item Ecrire l'équation de la réaction
+\item Compléter la ligne suivante en donnant la composition de l'état initial
+\item La quantité e matière d'un réactif en cours de la réaction d'obtient en faisant la différence entre la valeur et l'avancement multiplié par le nombre stoechiométrique du réactif.
+\item La quantité de matière d'un produit en cours de léaction s'obtient en faisant la somme de sa valeur initiale (souvent nulle) et de l'avancement multiplié par le nombre stoechiométrique du produit.
+\end{enumerate}
+
+Exemple :\\
+Prenons l'étude de la réaction de préparation de l'hydroxyde de cuivre. Supposons que la quantité de matière apportée d'ions \ce{Cu^{2+}(aq)}, notée $n_0(\ce{Cu^{2+}})$, et celle d'ion \ce{HO-(aq)}, notée $n_0(\ce{HO-})$. Le tableau d'avancement se présente de la manière suivante :
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+\hline
+&& 1\ce{Cu^{2+}(aq)} &  + 2 \ce{HO-(aq)} & $\rightarrow$ & 1\ce{Cu(OH)_2 (aq)}\\
+\hline
+Avancement & Quantité de matière & \ce{Cu^{2+}} &\ce{HO-} &&\ce{Cu(OH)_2}\\
+\hline
+0& à l'état initial&$n_0(\ce{Cu^{2+}})$&$n_0(\ce{HO-})$&&0\\
+\hline
+x& au cours de la réactioné&$n_0(\ce{Cu^{2+}}) - 1x$&$n_0(\ce{HO-}) - 2x$&&$1x$\\
+\hline
+$x_f$& à l'état final&$n_0(\ce{Cu^{2+}}) - 1x_{max}$&$n_0(\ce{HO-}) - 2x_{max}$&&$1x_{max}$\\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+\section{État final pour une transformation totale}
+\textbf{Détermination de l'état final pour une transformation totale}
+\begin{enumerate}
+\item Pour chaque réactif, déterminer la valeur de $x_{max}$ obtenue en supposant que ce réactif est le réactif limitant.
+\item Comparer les valeurs obtenues. La plus petite valeur se $x_{max}$ ne peut être dépassée : au-delà, la quantité de matière du réactif associé serait négative, ce qui est impossible. Ce réactif est le réactif limitant.
+\item La composition finale du système s'obtient en remplaçant $x_{max}$ par la plus petite valeur trouvée en \textbf{2} dans la dernière ligne du tableau d'avancement.
+\end{enumerate}
+
+\section{Cas particulier des mélanges stœchiométriques}
+Lorsque les réactifs s'épuisent tous en même temps, on dit qu'ils ont réagit dans des proportions st\oe chiométriques. Ces proportions vont dépendrent des nombres st\oe chiométriques dans l'équation bilan :\\
+Exemple pour la préparation de l'oxyde de cuivre vue ci-dessus :
+$$ \dfrac{n_0 (\ce{Cu^2+})}{1} = \dfrac{n_0(\ce{HO-})}{2}$$
+Soit : $$n_0(\ce{HO-}) = 2 \cdot n_0(\ce{Cu^2+})$$
+On trouverait alors $$x_{max} = n_0(\ce{Cu^2+}) = \dfrac{n_0(\ce{HO-})}{2}$$
+À la fin de la réaction, il n'y a plus aucun des deux réactifs.
+
+\section{Comparer l'avancement final à l'avancement maximal}
+Lorsqu'on lance une réaction chimique on s'attend à ce que l'avancement à l'état final soit égal à l'avancement maximal $x_{max}$. Ce n'est cependant pas toujours le cas. Pour une réaction équilibrée ou limitée on détermine l'avancement final $x_f$ que l'on compare à $x_{max}$
+
+\end{document}

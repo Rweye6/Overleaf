@@ -1,0 +1,136 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+
+\usepackage{tgheros,textcomp}%Police Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[top = 1cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{xcolor}
+\usepackage{amssymb} %double flèche de réaction
+\usepackage{xtab}%tableau sur plusieurs pages
+\usepackage{esvect}%grands vecteurs
+
+\usepackage[version=4]{mhchem} %equations chimiques
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usepackage{sectsty}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[cal=boondoxo]{mathalfa} 
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{multicol}
+\usepackage{eqnarray}
+
+\sisetup{
+	detect-all,
+	output-decimal-marker={,},
+	group-minimum-digits = 3,
+	group-separator={~},
+	number-unit-separator={~},
+	inter-unit-product={~}
+} %setup pour SIunitx
+
+\usepackage{listings}%pour insérer le code python
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\graphicspath{ {/home/rweye/Documents/Enseignement/2022/2GT/C7/Ressources/} }
+
+\sectionfont{\fontsize{14}{8}\selectfont}
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|m{7cm}|>{\centering}m{6cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		 Nom :& \textbf{\textsc{Évaluation : Le son}} &  Chapitre 7\\
+		 Prénom : &&\\
+		\hline
+\end{tabular}}
+\date{}
+
+\newpagestyle{mystyle}{%
+	\setfoot{}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+\renewpagestyle{plain}{%
+	\setfoot{}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+
+\pagestyle{mystyle}
+
+\newenvironment{itemize*}%
+{\begin{itemize}[label=$-$]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\newenvironment{itemize**}%
+{\begin{itemize}[label=]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\begin{document}
+	\maketitle
+	\vspace{-3cm}
+\section*{Exercice 1 : Sons}
+\begin{tabular}{cc}
+	\includegraphics[scale=.5]{2GT_C7_Eval_Fig1.png}&\includegraphics[scale=.5]{2GT_C7_Eval_Fig3.png}\\
+	\includegraphics[scale=.5]{2GT_C7_Eval_Fig4.png}&\includegraphics[scale=.5]{2GT_C7_Eval_Fig2.png}\\
+\end{tabular}
+\begin{enumerate}
+	\item Dire si les signaux sonores présentés ci dessus sont périodiques. Justifier chaque réponse.
+	\item Pour un signal périodique, définir un motif. Repasser en couleur un motif pour chaque signal périodique trouvé dans la réponse précédente.
+	\item Déterminer les fréquences des signaux précédent si possible (des calculs détaillés sont attendus à chaque fois).
+\end{enumerate}
+
+\section*{Exercice 2 : Écholocalisation}
+L'écholocalisation est un système de perception de l'environnement développé par plusieurs espèces (chauve-souris, cétacés) afin de percevoir l'environnement proche dans utiliser la vision.\\
+Il s'agit pour l'animal de produire un son de haute fréquence qui va se propager jusqu'à un obstacle puis revenir à l'oreille de l'animal. La perception de proximité est faite par la mesure du temps mis par l'onde sonore pour revenir à son émetteur.
+\begin{enumerate}
+	\item Proposer un schéma permettant de représenter le système d'écholocalisation. Faire figurer un émetteur ($E$), un objet à localiser ($A$), un récepteur ($R$) et la distance entre le système émetteur/récepteur et l'objet ($d$).
+	\item Dans le cas d'une chauve-souris, exprimer le temps ($\Delta t_{CS}$)mis par l'onde sonore pour revenir vers elle après avoir rencontré un insecte situé à 3 m.
+	\item Sachant que, le son a une célérité $c_{air}$ = \SI{340}{\meter\per\second}, calculer la valeur de $\Delta t_{CS}$.
+	\item Dans le cas où l'animal est un dauphin, exprimer le temps ($\Delta t_{D}$)mis par l'onde sonore pour revenir vers elle après avoir rencontré un saumon situé à 3 m. Puis calculer $\Delta t_{D}$, sachant que $c_{eau}$ = \SI{1500}{\meter\per\second}
+	\item Lequel des deux animaux a le potentiel d'être le plus rapide pour chasser ?
+	\item \{Question supplémentaire non notée :\} imaginer d'autre paramètres pouvant influencer la vitesse en chasse des deux animaux
+\end{enumerate}
+
+\section*{Exercice 3 : Let's get loud !}
+
+	Lors d'un concert, un groupe d'amis cherchent une place où ils pourront apprécier le spectacle dans les meilleures conditions. Trois avis se font concurrence :\\
+	\noindent\begin{minipage}{.6\linewidth}
+\begin{itemize}
+	\item Avis 1 : "Devant ! On sera proche de la scène et on pourra voir les artistes de près et même avec un peu de chance récupérer des cadeaux !"
+	\item Avis 2 : "Il vaudrait mieux être au milieu ... On pourra toujours voir les artistes, le son ne sera pas trop fort et on sera en plein dans l'ambiance pour danser !"
+	\item Avis 3 : "Au fond, c'est plus proche de la sortie et des toilettes et on n'est pas chahuté par tout le monde."
+\end{itemize}
+\textbf{Document 2 : Données pour des enceintes de 200 W}\\
+\begin{minipage}{\linewidth}
+	\centering
+	\includegraphics[scale=.5]{2GT_C7_Eval_Fig5.png}
+\end{minipage}
+\end{minipage}
+\begin{minipage}{.4\linewidth}
+	\centering
+	\textbf{Document 1 :}\\
+	\includegraphics[scale=.4]{2GT_C7_Eval_Fig6.png}
+\end{minipage}
+
+\textbf{Question : } En se basant sur l'énoncé et sur vos connaissances, justifier quel endroit du public vous jugez le plus sûr d'un point de vue du volume sonore.
+\end{document}

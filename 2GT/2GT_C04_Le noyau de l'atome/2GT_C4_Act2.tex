@@ -1,0 +1,54 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 4}
+\newcommand{\chtitle}{Charges}
+\newcommand{\dtype}{Activité}
+
+\begin{document}
+	\maketitle
+	
+\noindent \fbox{\begin{minipage}[c][9cm][t]{.47\linewidth}
+		\textbf{Document 1 : Protons et électrons : un équilibre électrique}\\
+		Les protons et les électrons portent des charges électriques opposées : positives pour le proton et négatives pour
+		l’électron. Il est possible de donner des valeurs à ces charges qui sont exprimées en \textbf{coulomb} ($\mathbf{C}$).\\
+		La charge associée à un \textbf{proton} vaut \SI{+1,602E-19}{C}, alors que celle associée à un électron vaut
+		\SI{-1,602E-19}{C} . Les deux charges ont la même intensité mais des signes opposés. On appelle alors cette valeur (\SI{1,602E-19}), charge élémentaire que l’on note $\mathbf{e}$.\\
+		Ainsi un \textbf{proton} aura une charge élémentaire égale à $\mathbf{+e}$ et un \textbf{électron} une charge élémentaire égale à $\mathbf{-e}$.
+	\end{minipage}}
+\fbox{\begin{minipage}[c][9cm][t]{.48\linewidth}
+		\textbf{Document 2 : Neutralité de l'atome}\\
+		Un atome est constitué d'un noyau et d'un cortège d'électrons. La charge du noyau peut être calculée comme étant la somme des charges des protons qui le constituent : $$Q_{\text{noyau}}=Z \times (+e)$$
+		Cette charge sera exprimée en coulombs.\\
+		De même la charge du cortège électronique sera calculée pour  un atome comme étant :
+		$$Q_{\text{électrons}}=N_{\text{electrons}}\times (-e)$$
+		Dans le cas d'un atome on aura $$Q_{\text{noyau}}+Q_{\text{électrons}}=0$$ $\rightarrow$ l'atome n'a pas de charge.
+\end{minipage}}
+
+\vspace{2em}
+\noindent \fbox{\begin{minipage}{.97\linewidth}
+		\textbf{Document 3 : Les ions monoatomiques}\\
+		Les ions monoatomiques sont des atomes qui ont perdu ou gagné des électrons. Ainsi pour un ion donné, les charges positives du noyau ne compensent plus les charges négatives du cortège électronique ce qui mène à l'apparition d'une charge.\\
+		\textcolor{blue!30!black}{Exemple : l'ion \textbf{sodium \ce{Na+}}, est un ion monoatomique dérivé de l'atome de sodium \ce{^23_11Na} qui a perdu un électron pour former un cation.\\
+			La charge portée par son noyau est de :
+			$$Q_{noyau}=Z\times (+e) = 11\times (+\num{1,602E-19}) = +\SI{1,762E-18}{C}$$
+		La charge portée par don cortège électronique est de :
+	$$Q_{\text{électrons}}=(Z-1)\times (-e) = (11-1)\times (-\num{1,602E-19}) = -\SI{1,602E-18}{C}$$ 
+	On aura pour cet ion une charge égale à :
+$$Q_{\text{noyau}}+Q_{\text{électrons}} = +\num{1,762E-18}+(-\num{1,602E-18})=+\SI{1,602E-19}{C} = + e$$
+L'ion sodium aura une charge \textbf{positive} \textcolor{red}{$+e$}}
+\end{minipage}}
+
+\newpage
+\textbf{Compléter le tableau suivant en notant les calculs :}\\
+\noindent \begin{tabular}{|>{\centering}m{2.6cm}|>{\centering}m{2.6cm}|>{\centering}m{2.6cm}|>{\centering}m{2.6cm}|>{\centering}m{2.6cm}|>{\centering\arraybackslash}m{2.6cm}|}
+	\hline \textbf{Entités chimique} & \textbf{\ce{Fe}} & \textbf{\ce{Fe^3+}}&\textbf{\ce{O^2-}} &\textbf{\ce{Ca^2+}} & \textbf{\ce{N^3-}}\\
+	\hline \textbf{Écriture symbolique du noyau}&&&&&\\
+	\hline \textbf{Nombre de protons}&&&&&\rule[2cm]{0cm}{0cm}\\
+	\hline \textbf{Nombre d'électrons}&&&&&\rule[2cm]{0cm}{0cm}\\
+	\hline \textbf{Charge du noyau (en C)}&&&&&\rule[6cm]{0cm}{0cm}\\
+	\hline \textbf{Charge du cortège électronique (en C)} &&&&&\rule[6cm]{0cm}{0cm}\\
+	\hline \textbf{Charge totale (en C)}&&&&&\rule[6cm]{0cm}{0cm}\\
+	\hline
+\end{tabular}
+\end{document}

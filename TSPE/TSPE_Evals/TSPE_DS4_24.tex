@@ -1,0 +1,217 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{Eval}
+\usepackage[toc,page]{appendix}
+
+
+\newcommand{\chnum}{Chapitres 3 et 12}
+\newcommand{\chtitle}{Cinétique chimique et mouvement dans un champ uniforme}
+\newcommand{\dtype}{DS 4}
+
+\begin{document}
+\maketitle
+\section{Cinétique d'une saponification}
+L'éthanoate d'éthyle est un liquide incolore de formule topologique :
+\chemfig[atom sep=2em]{-[1](=[2]O)-[7]O-[1]-[7]}
+\begin{enumerate}
+    \item Recopier la formule topologique fournie et entourer le(s) groupement(s) fonctionnel(s). (0,5)
+    \item À quelle famille de composés organiques l'éthanoate d'éthyle appartient-il ? (0,5)
+\end{enumerate}
+
+C'est la réaction entre l'éthanoate d'éthyle et une solution de soude (par exemple) que l'on nomme saponification. L'équation chimique associée s'écrit : $$\ce{C4H8O2(aq) + Na+(aq) + HO-(aq) = Na+(aq) + A-(aq) + B(aq)}$$
+
+\begin{enumerate}[resume]
+    \item Écrire la formule semi-développée de l'espèce chimique \ce{A-}. Donner son nom. (0,5)
+    \item En illustrant votre propos par un schéma légendé et des flèches courbes, décrire la première étape nécessaire pour initier la réaction entre \ce{C4H8O2} et \ce{HO-}. (0,5)
+\end{enumerate}
+
+À un instant choisi comme la date $t=0$ , on introduit de l'éthanoate d'éthyle dans un bécher contenant une solution de soude. On obtient un volume $V = \SI{100,0}{mL}$ de solution où les concentrations de toutes les espèces chimiques valent $c_0 = \SI{1,0E-2}{\mole\per\liter} = \SI{10}{\mole\per\meter\cubed}$. La température est maintenue égale à \SI{30}{\celsius}. On plonge dans le mélange la sonde d'un conductimètre qui permet de mesurer à chaque instant la conductivité $\sigma$ de la solution. Le tableau ci-dessous regroupe quelques valeurs.
+
+\begin{figure}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+        $t$ en \unit{\minute} & 0 & 5 & 9 & 13 & 20 & 27 & $\infty$\\
+        \hline
+        $\sigma$ en \unit{\siemens\per\meter} & 0,250 & 0,210 & 0,192 & 0,178 & 0,160 & 0,148 & 0,091\\
+        \hline
+    \end{tabular}
+    \caption{Valeurs de conductivité au cours du temps}
+    \label{fig1}
+\end{figure}
+
+\begin{enumerate}[resume]
+    \item Soit $x(t)$ l'avancement de la transformation à un instant $t$. Compléter le tableau d'avancement de la réaction sur la page Annexe. (0,5)
+    \item Quelles sont les espèces chimiques responsables du caractère conducteur de la solution ? (0,5)
+    \item Pourquoi la conductivité de la solution diminue-t-elle ? (1)
+\end{enumerate}
+\textbf{Conductivités molaires ioniques :}\\
+$\lambda (\ce{Na+}) = \SI{5,0E-3}{\siemens\meter\squared\per\mole}$ ; $\lambda (\ce{HO-}) = \SI{2,0E-2}{\siemens\meter\squared\per\mole}$ ; $\lambda (\ce{A-}) = \SI{4,1E-3}{\siemens\meter\squared\per\mole}$
+\begin{enumerate}[resume]
+    \item Exprimer $\sigma(t)$, valeur de conductivité de la solution à un instant $t$ en fonction de $c_0$, $V$, $x(t)$ et des conductivités molaires ioniques. (1)
+    \item Les expressions de $\sigma_0$ et $\sigma_{\infty}$, valeurs de la conductivité de la solution à l'instant $t=0$ et au bout d'une durée très grande, sont : $$\sigma_0 = (\lambda_{\ce{Na+}} + \lambda_{\ce{HO-}}) \times c_0$$
+    $$\sigma_{\infty} = (\lambda_{\ce{Na+}} + \lambda_{\ce{A-}}) \times c_0$$
+    Justifier ces expressions. (1)
+    \item Montrer que l'avancement $x(t)$ peut être calculé par l'expression : $$ x(t) = c_0 \cdot V \cdot \dfrac{\sigma_0 - \sigma_t}{\sigma_0 - \sigma_{\infty}}$$ (1)
+\end{enumerate}
+
+La relation présentée ci-dessus permet de calculer les valeurs de l'avancement $x(t)$ à chaque instant. Le graphique fourni en Annexe représente l'évolution de l'avancement $x(t)$ en fonction du temps.
+\begin{enumerate}[resume]
+    \item Donner l'expression de la vitesse volumique de réaction en précisant les unités. (1)
+    \item Expliquer la méthode permettant d'évaluer graphiquement cette vitesse à un instant donné. (1)
+    \item Comment évolue cette vitesse au cours de la transformation chimique ? Quel est la facteur cinétique mis en jeu ici ? (1)
+    \item Calculer l'avancement final. (1)
+    \item Définir le temps de demi-réaction. Trouver sa valeur à partir du graphique. (1)
+    \item On reproduit la même expérience à \SI{50}{\celsius}. Tracer, sur le graphique, l'allure de la courbe obtenue. Justifier du tracé proposé. (1)
+\end{enumerate}
+
+
+\section{La mécanique au service de la pétanque}
+La pétanque est un jeu de boules dérivé du jeu provençal aussi appelé "la longue". Le but du jeu consiste tout simplement à lancer la boule le plus près possible du "but" matérialisé par le bouchon. Le terrain de jeu est horizontal.\\
+Au début d'une partie de pétanque, un joueur trace un cercle sur le sol, il se place dans ce cercle et lance le bouchon à une distance entre 6 et 10 mètres de ce cercle.\\
+Les joueurs de pétanque ont le choix entre \textit{pointer} c'est-à-dire tenter de placer leur boule plus près du "but" que l'adversaire ou \textit{tirer} c'est-à-dire déplacer la boule adverse pour l'éloigner du "but" et remporter le point.\\
+Le pointeur joue avec des boules de petit diamètre (71 à 74 mm) pour offrir moins de surface au tireur, assez lourdes pour un meilleur contrôle (710 à 740 g). Le tireur joue avec des boules de gros diamètre (74 à 78 mm), légères afin de limiter la fatigue (670 à 700 g).\\
+Cet exercice aborde l'étude d'un lancer d'une boule par un pointeur, puis par un tireur. Dans tout l'exercice, les frottements seront négligés.
+\subsection{Le pointeur}
+Le pointeur lance sa boule de masse $m=\SI{710}{g}$ avec une vitesse initiale $\Vec{V_0}$ faisant un angle $\alpha$ par rapport à l'horizontale. L'origine $O$ est prise au point où le pointeur lâche la boule. Le modèle de la chute libre conduit aux équations horaires du mouvement du centre $G$ de la boule dans le repère $(O,x,y)$ :
+$$x=v_0 \cdot \cos(\alpha)\cdot t$$
+$$y = -\dfrac{1}{2} g \cdot t^2 + v_0 \cdot \sin(\alpha)\cdot t$$
+
+\textbf{Donnée :} intensité du champ de pesanteur sur Terre : $g=\SI{9,81}{\meter\per\second\squared}$\\
+
+On réalise la chronophotographie du mouvement de la boule lancée par le pointeur. Cette chronophotographie est représentée ci-dessous. L'intervalle de temps entre deux prises de vue est de \SI{33,3}{ms}.
+
+\begin{figure}[h!]
+    \centering
+    \begin{tabular}{|>{\centering}m{.25\linewidth}|>{\centering}m{.25\linewidth}|>{\centering\arraybackslash}m{.25\linewidth}|}
+        \hline
+        Date $t$ (s) & $x$ (m) & $y$ (m)\\
+        \hline
+        0,000 & 0,000 & 0,000 \\
+        \hline
+        0,033 & 0,117 & 0,117\\
+        \hline
+        0,067 & 0,243 & 0,243\\
+        \hline
+        0,100 & 0,346 & 0,360\\
+        \hline
+    \end{tabular}
+    \caption{Quelques coordonnées du centre de la boule de pétanque}
+    \label{fig3}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Ressources/TSPE_DS4_24_Fig1.png}
+    \caption{Chronophotographie du lancer}
+    \label{fig4}
+\end{figure}
+\begin{enumerate}
+    \item Déterminer, à partir de la  chronophotographie, la valeur de l'angle $\alpha$ entre l'horizontale et le vecteur vitesse à l'origine des dates en précisant la méthode choisie. (1)
+    \item En exploitant le modèle de la chute libre et en utilisant les résultats expérimentaux, déterminer la valeur de la vitesse initiale $v_0$. (2)
+\end{enumerate}
+Le pointeur lance la boule en direction du bouchon et la lâche au point $O$ origine du repère choisi. Le point $O$ est situé à une hauteur de \SI{1,2}{m} du sol.
+
+\begin{enumerate}[resume]
+    \item Montrer que la boule suit une trajectoire parabolique d'équation :
+    $$y = -\dfrac{1}{2} g \cdot \dfrac{x^2}{(v_0\cdot \cos(\alpha))^2} + \tan(\alpha)\cdot x $$ (2)
+    \item Pour un angle $\alpha$ de $\SI{51}{\degree}$ et une vitesse initiale égale à \SI{5,5}{\meter\per\second}, la boule touche le sol, puis roule vers le bouchon. Calculer l'abscisse du point d'impact de la boule sur le sol. (2)
+\end{enumerate}
+
+On propose pour terminer l'exercice de déterminer la vitesse au point d'impact au sol.
+\begin{enumerate}[resume]
+    \item En utilisant l'expression de $x(t)$ déterminer le temps mis par la boule pour toucher le sol. (1)
+    \item On peut déterminer la valeur de la vitesse à l'impact en utilisant la formule suivante : $$v(t_f) = \sqrt{(v_x(t_f))^2+(v_y(t_f))^2}$$
+    Calculer la vitesse d'impact au sol. (2)
+\end{enumerate}
+
+
+\newpage
+\section*{Annexes}
+
+\begin{figure}[h!]
+    \centering
+    \begin{tabular}{|>{\centering}m{.12\linewidth}|>{\centering}m{.12\linewidth}|>{\centering}m{.12\linewidth}|>{\centering}m{.12\linewidth}||>{\centering}m{.12\linewidth}|>{\centering}m{.12\linewidth}|>{\centering\arraybackslash}m{.12\linewidth}|}
+    \hline
+        \textbf{Réaction} & \ce{C4H8O2(aq)} & + \ce{Na+(aq)} & + \ce{HO-(aq)} &= \ce{Na+(aq)} & + \ce{A-(aq)} & + \ce{B(aq)}\\
+        \hline
+        \textbf{Avancement} &\textcolor{white}{\ce{C4H8O2(aq)}} & \textcolor{white}{\ce{Na+(aq)}}& \textcolor{white}{\ce{HO-(aq)}}& \textcolor{white}{\ce{Na+(aq)}}&\textcolor{white}{\ce{A-(aq)}} & \textcolor{white}{\ce{B}}\\
+        \hline
+        0 & & & & & & \\
+        \hline
+        $x(t)$ & & & & & & \\
+        \hline
+        $x_{max}$ & & & & & & \\
+        \hline
+    \end{tabular}
+    \caption{Tableau d'avancement}
+    \label{tab1}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}[transform shape, scale = 1 ]
+        \draw[-Latex](0,0) to (16,0);
+        \draw[-Latex](0,0) to (0,9);
+
+        \foreach \k in {0,2,4,6,8}{
+        %\pgfmathsetmacro{\labs}{round(\k*0.1,1)}
+        \draw(0,\k) node[left]{\pgfmathparse{0.1*\k}\pgfmathprintnumber\pgfmathresult};
+        \draw[dashed,gray] (0,\k) -- (15.5,\k);
+        }
+
+        \foreach \j in {0,2.5,5,7.5,10,12.5,15}{
+        %\pgfmathsetmacro{\labs}{round(\k*0.1,1)}
+        \draw(\j,0) node[below]{\pgfmathparse{2*\j}\pgfmathprintnumber\pgfmathresult};
+        \draw[dashed,gray] (\j,0) -- (\j,8.5);
+        }
+
+        \foreach \x/\y in {0/0,2.5/2.52,4.5/3.75,6.5/4.53,10/5.66,13.5/6.42}{
+        \draw(\x,\y) node{$\times$};
+        }
+        \draw[domain = 0:15] plot (\x,{7.4*(1-exp(-0.15*\x))});
+
+        \draw(0,8.25) node[above right]{$x$ en \unit{\milli\mole}};
+        \draw(15.5,0) node[below right]{$t$ en \unit{\minute}};
+        
+    \end{tikzpicture}
+    \caption{Évolution de l'avancement en fonction du temps}
+    \label{fig:enter-label}
+\end{figure}
+\end{document}
+
+\subsection{Le tireur}
+La boule lancée par le pointeur étant proche du bouchon, le tireur de l'équipe adverse va chercher à la déplacer. Le tireur lance sa boule à quelques centimètres de la boule visée. La boule du tireur roule puis percute la boule du pointeur de plein fouet avec une vitesse $v_2 = \SI{8,0}{\meter\per\second}$.\\
+Dans un référentiel terrestre, après le choc, les deux boules, de masses respectives $m_1$ et $m_2$, possèdent les vecteurs vitesse $\vv{v'_1}$ et $\vv{v'_2}$ portés par la même direction.\\
+On étudie le cas de figure du choc donné par le schéma suivant :
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \draw[dashed](0,0) to (15,0);
+        \draw[dashed](0,-3) to (15,-3);
+        \draw(0,0) node[left]{Avant le choc};
+        \draw(0,-3) node[left]{Après le choc};
+
+        \draw(3,0) circle(.6);
+        \draw(8,0) circle(.6);
+        \draw[-Latex](3,0) to (5,0);
+        \draw(3,0) node[above]{$G_2$};
+        \draw(8,0) node[above]{$G_1$};
+        \draw(4,0) node[above]{$\vv{v_2}$};
+
+        \draw(6,-3) circle(.6);
+        \draw(9,-3) circle(.6);
+        \draw[-Latex](6,-3) to (7,-3);
+        \draw(6,-3) node[above]{$G_2$};
+        \draw(9,-3) node[above]{$G_1$};
+        \draw(6.75,-3) node[above]{$\vv{v'_2}$};
+        \draw[-Latex](9,-3) to (10.5,-3);
+        \draw(10,-3) node[above]{$\vv{v'_1}$};
+    \end{tikzpicture}
+    \caption{Schéma du tireur}
+    \label{fig3}
+\end{figure}
+Lors de ce choc, deux grandeurs se conservant et permettant d'écrire les relations suivantes : $$m_2 \cdot \vv{v_2} = m_1 \cdot \vv{v'_1} + m_2 \cdot \vv{v'_2}$$
+$$\frac{1}{2}m_2 \cdot v_2^2 = \frac{1}{2}m_1 \cdot {v'_1}^2 + \frac{1}{2}m_2 \cdot {v'_2}^2$$
+\begin{enumerate}
+    \item Nommer les deux grandeurs dont la conservation est exprimée par ces relations.
+\end{enumerate}

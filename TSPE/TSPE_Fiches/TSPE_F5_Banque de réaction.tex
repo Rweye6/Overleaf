@@ -1,0 +1,326 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{/home/rweye/Documents/Overleaf/Styles/Cours}
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|>{\centering}m{5cm}|>{\centering}m{8cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		Fiche méthode 5 & \textbf{\textsc{Banque de réactions}} &  TSPE \\
+		\hline
+\end{tabular}
+\vspace{-5em}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Définitions}
+Une \textbf{banque de réactions} en chimie organique permet d'identifier des transformations possibles d'un substrat organique en produit, en précisant les réactifs et les éventuels catalyseurs nécessaires. Les transformations sont représentées sous la forme suivante :
+\begin{center}
+	\schemestart
+	Substrat \hspace{2em}
+	\arrow{->[Réactif(s)][$[$Catalyseur$]$]} \hspace{2em}
+	Produit
+	\schemestop
+\end{center}
+\begin{itemize}
+	\item Le \textbf{substrat} est l'espèce organique dont la transformation en produit est analysée.
+	\item Les \textbf{réactifs} sont les espèces, organiques ou non organiques, autres que le substrat.
+\end{itemize}
+
+Note : les atomes halogènes sont représentés par le symbole \ce{X} : \ce{Cl}, \ce{Br} ou \ce{I}.
+\newpage
+\renewcommand{\arraystretch}{5}
+
+\begin{multicols}{2}
+\section{Alcools}
+\begin{center}
+	\begin{tabular}{|c|>{\centering\arraybackslash}m{.9\linewidth}|}
+	\hline
+	
+	\textbf{1} & \schemestart
+	\chemfig[atom sep=2em]{R-[1]-[7]OH} \hspace{2em}
+	\arrow{->[\ce{2 Na+} ; \ce{Cr_2O_7^{2-}}][ou \ce{K+} ; \ce{ MNO4-}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]OH}
+	\schemestop\\
+	\hline
+	
+	\textbf{2} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](-[2]R')-[7]OH} \hspace{2em}
+	\arrow{->[\ce{CrO2} ou \ce{2 Na+} ; \ce{Cr_2O_7^{2-}}][ou \ce{K+} ; \ce{ MNO4-}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](-[2]R')=[7]O}
+	\schemestop\\
+	\hline
+	
+	\textbf{3} & \schemestart
+	\chemfig[atom sep=2em]{R-[1]-[7]OH} \hspace{2em}
+	\arrow{->[\ce{CrO2}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1]=[7]O}
+	\schemestop\\
+	\hline
+	
+	\textbf{4} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](-[2]-[1]R')-[7]OH} \hspace{2em}
+	\arrow{->[\ce{H2SO4}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1]=[2]-[1]R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{5} & \schemestart
+	\chemfig[atom sep=2em]{HO--[1]R'} \hspace{1em}
+	\arrow{->[\chemfig[atom sep=2em]{R'-(=[1]O)-[7]OH}][\ce{H+}]} \hspace{1em}
+	\chemfig[atom sep=2em]{R'-(=[1]O)-[7]O--[1]R}
+	\schemestop\\
+	\hline
+	
+	\textbf{6} & \schemestart
+	\chemfig[atom sep=2em]{R-(-[2]OH)(-[6]R'')-R'} \hspace{2em}
+	\arrow{->[Base forte*][(* : \ce{LiAlH4}, ...)]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-(-[2]O^{-})(-[6]R'')-R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{7} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](-[2]OH)-[7]R'} \hspace{3em}
+	\arrow{->[1) \ce{NaH}][2) \chemfig{R''-X}]} \hspace{3em}
+	\chemfig[atom sep=2em]{R-[1](-[2]O-[1]R'')-[7]R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{8} & \schemestart
+	\chemfig[atom sep=2em]{R-OH} \hspace{2em}
+	\arrow{->[\ce{HX}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-X}
+	\schemestop\\
+	\hline
+	
+	\textbf{9} & \schemestart
+	\chemfig[atom sep=2em]{HO-R} \hspace{2em}
+	\arrow{->[\chemfig[atom sep=2em]{R'-[1](=[2]O)-[7]O-[1](=[2]O)-[7]R'}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R'-[1](=[2]O)-[7]O-[1]R}
+	\schemestop\\
+	\hline
+	\end{tabular}
+\end{center}
+
+\columnbreak
+\section{Aldéhydes et cétones}
+\begin{center}
+	\begin{tabular}{|c|>{\centering\arraybackslash}m{.9\linewidth}|}
+	\hline
+	
+	\textbf{10} & \schemestart
+	\chemfig[atom sep=2em]{R-[1]=[7]O} \hspace{2em}
+	\arrow{->[\ce{2 Na+} ; \ce{Cr_2O_7^{2-}}][ou \ce{K+} ; \ce{ MNO4-}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]OH}
+	\schemestop\\
+	\hline
+	
+	\textbf{12} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]R'} \hspace{2em}
+	\arrow{->[1) \ce{LiAlH4} ou \ce{NaBH4}][2) \ce{H2O}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](-[2]R')-[7]OH}
+	\schemestop\\
+	\hline
+	
+	\textbf{13} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]R'} \hspace{2em}
+	\arrow{->[\chemfig{HO-[1]--[7]OH}][$[$\ce{H+}$]$]} \hspace{3em}
+	\chemfig[atom sep=2em]{(-[:144]O)(-[:36]O-[:108]-[:180]-[:252])(-[7]R')-[5]R}
+	\schemestop\\
+	\hline
+	
+	\textbf{14} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]R'} \hspace{2em}
+	\arrow{->[1) \chemfig[atom sep=2em]{R''-Mg-X}][2) \ce{H2O}, \ce{H+}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-(-[2]OH)(-[6]R'')-R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{15} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]R'} \hspace{2em}
+	\arrow{->[1) \ce{Na+}, \ce{NC-}][2) \ce{H+}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-(-[2]OH)(-[6]CN)-R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{16} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]-[1]R'} \hspace{2em}
+	\arrow{->[1) \ce{NaH}][2) \chemfig[atom sep=2em]{R''-X]}} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7](-[6]R'')-[1]R'}
+	\schemestop\\
+	\hline
+	
+	\end{tabular}
+\end{center}
+\end{multicols}
+
+\begin{multicols}{2}
+\section{Halogénoalcanes}
+\begin{center}
+	\begin{tabular}{|c|>{\centering\arraybackslash}m{.9\linewidth}|}
+	\hline
+	
+	\textbf{17} & \schemestart
+	\chemfig[atom sep=2em]{R-X} \hspace{2em}
+	\arrow{->[\ce{Na+} ; \ce{HO-}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-OH}
+	\schemestop\\
+	\hline
+	
+	\textbf{18} & \schemestart
+	\chemfig[atom sep=2em]{R-X} \hspace{2em}
+	\arrow{->[\ce{Na+} ; \ce{CN-}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-CN}
+	\schemestop\\
+	\hline
+	
+	\textbf{19} & \schemestart
+	\chemfig[atom sep=2em]{R-X} \hspace{2em}
+	\arrow{->[\ce{Mg}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-Mg-X}
+	\schemestop\\
+	\hline
+	
+	\textbf{20} & \schemestart
+	\chemfig[atom sep=2em]{R-X} \hspace{2em}
+	\arrow{->[\chemfig[atom sep = 2em]{R'-Mg-X}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-R'}
+	\schemestop\\
+	\hline
+	
+	\end{tabular}
+\end{center}
+\columnbreak
+\section{Acides carboxyliques}
+\begin{center}
+	\begin{tabular}{|c|>{\centering\arraybackslash}m{.9\linewidth}|}
+	\hline
+	
+	\textbf{21} & \schemestart
+	\chemfig[atom sep=2em]{R-(=[1]O)-[7]OH} \hspace{1em}
+	\arrow{->[\chemfig[atom sep =2em]{HO--[1]R'}][$[$\ce{H+}$]$]} \hspace{1em}
+	\chemfig[atom sep=2em]{R-(=[1]O)-[7]O--[1]R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{22} & \schemestart
+	\chemfig[atom sep=2em]{R-(=[1]O)-[7]OH} \hspace{2em}
+	\arrow{->[Base forte][ou cert. bases faibles]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-(=[1]O)-[7]O^{-}}
+	\schemestop\\
+	\hline
+	
+	\textbf{23} & \schemestart
+	\chemfig[atom sep=2em]{R-(=[1]O)-[7]OH} \hspace{2em}
+	\arrow{->[\ce{SOCl2}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-(=[1]O)-[7]Cl}
+	\schemestop\\
+	\hline	
+	\end{tabular}
+\end{center}
+\end{multicols}
+
+%\begin{multicols}{2}
+\section{Esters}
+\begin{center}
+	\begin{tabular}{|c|>{\centering\arraybackslash}m{.9\linewidth}|}
+	\hline
+	
+	\textbf{24} & \schemestart
+	\chemfig[atom sep=2em]{R-(=[1]O)-[7]O-[1]R'} \hspace{2em}
+	\arrow{->[1) \ce{HO-} 2) \ce{H+}][ou \ce{H2O} $[$\ce{H+}$]$]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-(=[1]O)-[7]OH}
+	\+
+	\chemfig[atom sep=2em]{HO-[1]R}
+	\schemestop\\
+	\hline
+	
+	\textbf{25} & \schemestart
+	\chemfig[atom sep=2em]{R-[7]CH_2-[1](=[2]O)-[7]O-[1]R'} \hspace{4em}
+	\arrow{->[\ce{Na+}, \ce{C2H5O-}]} \hspace{4em}
+	\chemfig[atom sep=2em]{R-[7]CH^{-}-[1](=[2]O)-[7]O-[1]R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{26} & \schemestart
+	\chemfig[atom sep=2em]{R-[7]CH_2-[1](=[2]O)-[7]O-[1]R'} \hspace{2em}
+	\arrow{->[1) \chemfig[atom sep=2em]{R''-Mg-X}][2) \ce{H2O}, \ce{H+}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-(-[2]OH)(-[6]R'')-R''}
+	\schemestop\\
+	\hline	
+	
+	\textbf{27} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]O-[1]R'} \hspace{2em}
+	\arrow{->[\chemfig[atom sep=2em]{HO-R''}][$[$\ce{H+}$]$]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]O-[1]R''}
+	\schemestop\\
+	\hline
+	
+	\textbf{28} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]O-[1]R'} \hspace{2em}
+	\arrow{->[1) \ce{LiAlH4}][2) \ce{H2O}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](-[2]OH)}
+	\+
+	\chemfig[atom sep=2em]{HO-[1]R'}
+	\schemestop\\
+	\hline
+	\end{tabular}
+\end{center}
+%\columnbreak
+\section{Autres familles}
+\begin{center}
+	\begin{tabular}{|c|>{\centering\arraybackslash}m{.9\linewidth}|}
+	\hline
+	
+	\textbf{29} & \schemestart
+	\chemfig[atom sep=2em]{H_2N-R} \hspace{2em}
+	\arrow{->[\chemfig[atom sep=2em]{R''-[1](=[2]O)-[7]O-[1](=[2]O)-[7]R''}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R''-[1](=[2]O)-[7]NH-R}
+	\schemestop\\
+	\hline
+	
+	\textbf{30} & \schemestart
+	\chemfig[atom sep=2em]{=()-[1]R} \hspace{2em}
+	\arrow{->[\ce{HCl}]} \hspace{2em}
+	\chemfig[atom sep=2em]{(-[1]R)(-[5]Cl)(-[3])-[7]R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{31} & \schemestart
+	\chemfig[atom sep=2em]{(-[:144]O)(-[:36]O-[:108]-[:180]-[:252])(-[7]R')-[5]R} \hspace{2em}
+	\arrow{->[\ce{H2O}][$[$\ce{H+}$]$]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]R'}
+	\schemestop\\
+	\hline	
+	
+	\textbf{32} & \schemestart
+	\chemfig[atom sep=2em]{R-[1](-[2]O-[1]-[7]Ph)-[7]R'} \hspace{2em}
+	\arrow{->[\ce{H2(g)}][$[$\ce{Ni}$]$ ou $[$\ce{Pt}$]$]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](-[2]OH)-[7]R'}
+	\schemestop\\
+	\hline
+	
+	\textbf{33} & \schemestart
+	\chemfig[atom sep=2em]{R-Mg-X} \hspace{2em}
+	\arrow{->[1) \ce{CO2}][2) \ce{H2O}, \ce{H+}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]OH}
+	\schemestop\\
+	\hline
+	
+	\textbf{34} & \schemestart
+	\chemfig[atom sep=2em]{R-CN} \hspace{2em}
+	\arrow{->[\ce{H2O}, \ce{H+}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-[1](=[2]O)-[7]OH}
+	\schemestop\\
+	\hline
+	
+	\textbf{35} & \schemestart
+	\chemfig[atom sep=2em]{R-NO_2} \hspace{2em}
+	\arrow{->[1) \ce{LiAlH4}][2) \ce{H2O}, \ce{HO-}]} \hspace{2em}
+	\chemfig[atom sep=2em]{R-NH_2}
+	\schemestop\\
+	\hline
+	\end{tabular}
+\end{center}
+%\end{multicols}
+\end{document}

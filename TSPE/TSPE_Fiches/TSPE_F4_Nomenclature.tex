@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Méthode 4}
+\newcommand{\chtitle}{Nomenclature chimique}
+\newcommand{\dtype}{TSPE}
+
+
+\begin{document}
+\maketitle
+
+Le nom d'une molécule organique (essentiellement constituée d'atomes de carbone et d'hydrogène) dépend du nombre d'atomes de carbone de la chaîne linéaire principale, du ou des groupes caractéristiques présents dans la structure ainsi que des éventuelles ramifications. On se restreint ici à présenter uniquement les molécules organiques ne possédant qu'un seul groupe caractéristique positionné sur la chaîne principale.
+
+\section{Squelette carboné}
+La chaîne principale d'atomes de carbone correspond à la chaîne la plus longue présente dans la molécule. le tableau suivant dresse la liste des premiers préfixes employés.\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|} \hline
+\textbf{Nombre d'atomes de carbone} &1&2&3&4&5&6&7&8&9&10\\ \hline
+\textbf{Racine} &méth-&éth-&prop-&but-&pent-&hex-&hept-&oct-&non-&déc-\\ \hline
+\end{tabular}
+
+Le squelette carboné peut être constitué de liaisons entre carbones simples, doubles ou triples. On les classera alors respectivement dans les familles des alcanes, alcènes ou alcynes.\\
+\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.7cm}|>{\centering}m{2.7cm}|>{\centering\arraybackslash}m{2.7cm}|}
+	\hline
+	\textbf{Famille} & Alcane & Alcène & Alcyne\\
+	\hline 
+	\textbf{Formule} & \chemfig[atom sep = 2em]{C(-[2])(-[4])(-[6])-C(-[2])(-[6])-} & \chemfig[atom sep = 2em]{C(-[::120])(-[::-120])=C(-[::60])-[::-60]}& \chemfig[atom sep = 2em]{-C~C-} \\
+	\hline
+	Nomenclature & -ane & -\textit{n}-ène & -yne\\
+	\hline
+	\multirow{2}{*}{Exemples} &  \chemfig[atom sep = 2em]{C(-[2]H)(-[4]H)(-[6]H)-C(-[2]H)(-[6]H)-H} & \chemfig[atom sep = 2em]{C(-[::120]H)(-[::-120]H)=C(-[::60]H)-[::-60]H}&  \chemfig[atom sep = 2em]{H-C~C-H}\\
+	&Éthane &Éthène & Éthyne\\
+	\hline
+\end{tabular}
+
+\section{Familles chimiques et groupes caractéristiques}
+Le tableau suivant recense quelques groupes caractéristiques courants en chimie organique :
+\begin{itemize}
+	\item la notation \ce{R} désigne une suite quelconque commençant par un atome de carbone \ce{C}
+	\item l'absence de notation après une liaison - signifie qu'il s'agit soit d'un atome d'hydrogène \ce{H}, soit d'une suite d'atomes commençant par un atome de carbone \ce{C}
+	\item la notation \ce{X} désigne un atome halogène (\ce{F}, \ce{Cl}, \ce{Br} ou \ce{I})
+\end{itemize}
+
+\noindent
+\begin{tabular}{|>{\centering}m{5cm}|>{\centering}m{2.7cm}|>{\centering}m{2.7cm}|>{\centering\arraybackslash}m{2.7cm}|} \hline
+\textbf{Famille} & Alcool & Aldéhyde & Cétone\\ \hline
+\textbf{Formule} & \chemfig[atom sep = 2em]{R-OH}&\chemfig[atom sep = 2em]{R-C(=[1]O)-[7]H}&\chemfig[atom sep = 2em]{R-C(-[::-60]R')=[::60]O} \rule[1.cm]{0cm}{0cm} \\ \hline
+\textbf{Nom du groupe caractéristique} & Hydroxyle&Carbonyle&Carboxyle\\ \hline
+\textbf{Nomenclature groupement principal} & -\textit{n}-ol & -al & -\textit{n}-one\\ \hline
+\textbf{Nomenclature groupement secondaire} & hydroxy-& oxo-& oxo- \\ \hline
+\end{tabular}
+\vspace{.3cm}
+
+\noindent
+\begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.7cm}|>{\centering}m{2.7cm}|>{\centering}m{2.7cm}|>{\centering}m{2.7cm}|>{\centering\arraybackslash}m{2.7cm}|}  \hline
+\textbf{Famille} & Acide carboxylique & Ester & Amine primaire & Amide & Halogénoalcane\\ \hline
+\textbf{Formule} & \chemfig[atom sep = 2em]{C(-[::180])(-[::-60]OH)=[::60]O}& \chemfig[atom sep = 2em]{C(-[::180])(-[::-60]O-R)=[::60]O}&\chemfig[atom sep = 2em]{N(-[::180])(-[::60])(-[::-60])}&\chemfig[atom sep = 2em]{C(-[::180])(-[::-60]N(-[::-90])-)=[::60]O}&\chemfig[atom sep = 2em]{R-X} \rule[2cm]{0cm}{0cm}\\ \hline
+\textbf{Nom du groupe caractéristique} & Carboxyle & Ester&Amine&Amide & Halogénure\\ \hline
+\textbf{Nomenclature} & -(acide) -anoïque & -anoate d'alkyle & -an-\textit{n}-amine & -anamide & (\textit{n}-halogéno-)\\ \hline
+\end{tabular}
+
+\section{Règles de nomenclature}
+Pour nommer une molécule organique, il faut suivre les trois règles suivantes :
+\begin{itemize}
+	\item identifier la chaîne carbonée principale et lui associer la  racine adaptée en fonction du nombre d'atomes de carbone
+	\item repérer la présence ou non d'un groupe caractéristique, sa position sur la chaîne principale en imposant le début de la numérotation à l'extrémité de la chaîne principale la plus proche du groupe caractéristique. Lui associer le suffixe ou le préfixe adapté (on ne considère ici que des molécules comprenant un seul groupe caractéristique positionné sur la chaîne la plus longue)
+	\item dénombrer  les éventuelles ramifications sur la chaîne carbonée en comptant le nombre d'atomes de carbone, en leur associant la chaîne correspondante et en relevant leur position sur la chaîne principale. Si la numérotation n'est pas fixée par la présence d'un groupe caractéristique, commencer la numérotation de la chaîne principale à l'extrémité la plus proche de la plus longue ramification. En cas de plusieurs ramifications, les classer par ordre alphabétique (on se limite aux ramifications linéaires ne possédant aucun groupe caractéristiques).
+\end{itemize}
+
+\section{Exemples}
+On se propose de justifier dans les exemples suivants, le nom de la molécule avec la formule semi-développée associée :\\
+\begin{tabular}{m{4cm} m{14cm}}
+\chemfig[atom sep = 2em]{H_3C-[::-60]CH_2-[:60]CH_3} & \textbf{Exemple 1 :} La molécule ci-contre est constituée d'une chaîne principale de 3 atomes de carbone, sans groupe caractéristique et sans ramification. Son nom est le \textit{propane}\\
+&\\
+\chemfig[atom sep = 2em]{H_3C-[:60]CH(-[:90]CH_3)-[:-60]CH(-[:60]CH_2-[:-60]CH_3)-[:-90]CH_2-[:-120]CH_3} & \textbf{Exemple 2 :} La molécule est constituée d'une chaîne principale possédant 5 atomes de carbone. Elle ne possède pas de groupe caractéristique, mais présente 2 ramifications : la première, un éthyle, à la position 3 et la seconde un méthyle, à la position 2. Le nom de la molécule est le \textit{3-éthyl-2-méthylpentane}.\\
+&\\
+\chemfig[atom sep = 2em]{H_3C-[:60]CH_2-[:-60]CH(-[:60]CH_3)-[:-90]OH} & \textbf{Exemple 3 :} La molécule présente une chaîne principale de 4 atome de carbone, sans aucune ramification, mais possédant un groupe hydroxyle à la position 2. Son nom est donc le \textit{butan-2-ol}.\\
+&\\
+\chemfig[atom sep = 2em]{H_3C-[:-60]C(=[-90]O)-[:60]O-[:-60]CH_2-[:60]CH_2-[:-60]CH_3} & \textbf{Exemple 4 :} La molécule suivante est un ester. la chaîne principale est celle possédant le groupe ester et elle est constituée de 2 atomes de carbone. La seconde chaîne de l'ester est constituée de 3 atomes de carbone. Le nom de la molécule est donc \textit{l'éthanoate de propyle}.\\
+
+\end{tabular}
+\end{document}

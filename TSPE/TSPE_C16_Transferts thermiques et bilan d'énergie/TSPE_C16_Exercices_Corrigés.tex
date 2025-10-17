@@ -1,0 +1,145 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
+\usepackage{pdfcomment}
+
+\usetikzlibrary{shapes}
+\usepackage{xcolor}
+
+\newcommand{\chnum}{Chapitre 16}
+\newcommand{\chtitle}{Thermodynamique}
+\newcommand{\dtype}{Exercices corrigés}
+
+
+\begin{document}
+	\maketitle
+	\section{Plongeur}
+	\begin{enumerate}
+		\item $$\Delta \mathcal{U} =  Q_{th} - Q_{cc}$$ $$ \Delta \mathcal{U}  = \mathcal{P}_{th} \cdot \Delta t - \phi_{cc} \cdot \Delta t$$
+		\item 1$^{er}$ principe thermodynamique : $$\Delta U = W + Q$$
+		pour un système immobile on aura $\Delta U = Q$\\
+		Dans la situation du plongeur les échanges thermiques proviennent de la thermogénèse et du transfert conducto-convectif soit : $Q =\Delta U= \mathcal{P}_{th} \cdot \Delta t - \phi_{cc} \cdot  \Delta t$\\
+		De plus  ce transfert thermique résulte pour le plongeur en une variation de température qui dépendra de sa masse et de sa capacité thermique massique : $\Delta U = m \cdot c \cdot \Delta \theta$\\ 
+		On peut donc égaler l'expression de la variation d'énergie interne due aux échanges et celle décrivant la variation de température du plongeur : $$ m \cdot c \cdot \Delta \theta =  \mathcal{P}_{th} \cdot \Delta t - \phi_{cc} \cdot \Delta t$$
+		Si on considère une variation de temps infinitésimale on retrouve l'expression suivante : 
+		$$ m \cdot c \cdot d \theta =  \mathcal{P}_{th} \cdot d t - \phi_{cc} \cdot d t$$
+		Que l'on peut factoriser (par $dt$ à droite) pour obtenir :
+		$$ m \cdot c \cdot d \theta =  (\mathcal{P}_{th} - \phi_{cc} )\cdot d t$$
+		En divisant par $dt$ on a : 
+		$$ m \cdot c \cdot \dfrac{d\theta}{dt} =  \mathcal{P}_{th} - \phi_{cc}$$
+		On remplace $\phi_{cc}$ par son expression donnée dans l'énoncé :
+		$$ m \cdot c \cdot \dfrac{d\theta}{dt} =  \mathcal{P}_{th} - h\cdot S\cdot (\theta - \theta_{eau})$$
+		On distribue : 
+		$$ m \cdot c \cdot \dfrac{d\theta}{dt} =  \mathcal{P}_{th} - h\cdot S \cdot \theta + h\cdot S \cdot \theta_{eau}$$
+		On rassemble les termes en $\theta$ :
+		$$ m \cdot c \cdot \dfrac{d\theta}{dt} + h\cdot S \cdot \theta=  \mathcal{P}_{th}  + h\cdot S \cdot \theta_{eau}$$
+		On a une équation différentielle pour laquelle il faudra donner la forme de type $y' + ay = b$. on va donc diviser l'ensemble par $m \cdot c$ :
+		$$ \dfrac{d\theta}{dt} + \dfrac{h\cdot S}{m \cdot c} \cdot \theta=  \dfrac{\mathcal{P}_{th}}{m \cdot c}  +\dfrac{ h\cdot S}{m \cdot c} \cdot \theta_{eau}$$
+		On posera alors $\tau = \dfrac{m \cdot c}{h\cdot S}$. Ce qui donnera l'expression suivante :
+		$$ \dfrac{d\theta}{dt} + \dfrac{1}{\tau} \cdot \theta=  \dfrac{\mathcal{P}_{th}}{m \cdot c}  +\dfrac{ 1}{\tau} \cdot \theta_{eau}$$
+		Pour pouvoir exprimer correctement la solution de l'équation différentielle il faut que le deuxième membre soit sous la forme $\dfrac{1}{\tau} \cdot cste$ on écrira donc :
+		$$ \dfrac{d\theta}{dt} + \dfrac{1}{\tau} \cdot \theta=  \dfrac{1}{\tau \cdot h \cdot S} \cdot \mathcal{P}_{th}  +\dfrac{ 1}{\tau} \cdot \theta_{eau}$$
+		$$ \dfrac{d\theta}{dt} + \dfrac{1}{\tau} \cdot \theta=  \dfrac{1}{\tau } \cdot \left(\dfrac{ \mathcal{P}_{th}}{h \cdot S} + \theta_{eau}\right)$$
+		\item L'équation différentielle précédente aura pour solution une équation de la forme : $$\theta(t) = K \cdot e^{-\dfrac{t}{\tau}} + \dfrac{ \mathcal{P}_{th}}{h \cdot S} + \theta_{eau}$$
+		
+		On cherche ensuite la valeur de la constante $K$. Pour cela on se place à $t=0$ où l'on connait les conditions :
+		$$ \theta(0) = \theta_0$$
+		On aura alors : 
+		 $$\theta_0 = K \cdot e^{-\dfrac{0}{\tau}} + \dfrac{ \mathcal{P}_{th}}{h \cdot S} + \theta_{eau}$$
+		 $$\theta_0 = K + \dfrac{ \mathcal{P}_{th}}{h \cdot S} + \theta_{eau}$$
+		 $$K = \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau} $$
+		 
+		 L'équation caractérisant la variation de température du plongeur sera donc : 
+		 $$\theta(t) = \left( \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}\right)\cdot e^{-\dfrac{t}{\tau}} + \dfrac{ \mathcal{P}_{th}}{h \cdot S} + \theta_{eau}$$
+	\end{enumerate}
+	\noindent\fcolorbox{red}{yellow!20}{
+	 \begin{minipage}{\dimexpr0.8\textwidth-2\fboxrule-2\fboxsep\relax}
+		Vérifier que l'équation est bien solution de l'équation différentielle : \\
+		Expression de la dérivée $\dfrac{d \theta}{dt}$
+		$$ \dfrac{d \theta}{dt} = -\frac{1}{\tau} \cdot \left(\theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}\right)\cdot e^{-\dfrac{t}{\tau}}$$
+		
+		L'équation différentielle devient alors :
+		$$  \dfrac{d\theta}{dt} + \dfrac{1}{\tau} \cdot \theta \rightarrow  -\frac{1}{\tau} \cdot \left(\theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}\right)\cdot e^{-\dfrac{t}{\tau}} +  \dfrac{1}{\tau}  \cdot \left[ \left( \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}\right)\cdot e^{-\dfrac{t}{\tau}} + \dfrac{ \mathcal{P}_{th}}{h \cdot S} + \theta_{eau}\right]$$
+		$$  -\frac{1}{\tau} \cdot \left(\theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}\right)\cdot e^{-\dfrac{t}{\tau}} +  \dfrac{1}{\tau}  \cdot \left( \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}\right)\cdot e^{-\dfrac{t}{\tau}} +\dfrac{1}{\tau}  \cdot \dfrac{ \mathcal{P}_{th}}{h \cdot S} +\dfrac{1}{\tau}  \cdot \theta_{eau}$$
+		
+		En simplifiant, il reste :
+		$$\dfrac{1}{\tau}  \cdot \dfrac{ \mathcal{P}_{th}}{h \cdot S} +\dfrac{1}{\tau}  \cdot \theta_{eau}$$
+		Ce qui correspond à l'expression de l'equation différentielle.
+		
+		\end{minipage}
+	}
+	\begin{enumerate}[resume]
+		\item Il s'agit de calculer le temps pour lequel la température corporelle du plongeur aura chuté de \SI{1}{\celsius}. Soit $\theta(t) = \theta_0-1$\\
+		$$ \theta_0-1 =  \left( \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}\right)\cdot e^{-\dfrac{t}{\tau}} + \dfrac{ \mathcal{P}_{th}}{h \cdot S} + \theta_{eau}$$
+		On isole le terme contenant le temps :
+		$$ \theta_0-1 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}=  \left( \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}\right)\cdot e^{-\dfrac{t}{\tau}} $$
+		On divise ensuite par le coefficient devant l'exponentielle :
+		$$ e^{-\dfrac{t}{\tau}}  = \dfrac{\theta_0-1 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}} { \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}}$$
+		On utilise le logarithme népérien pour récupérer le comtenu de l'exponentielle :
+		$$ ln(e^{-\dfrac{t}{\tau}}) = ln\left(\dfrac{\theta_0-1 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}} { \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}}\right)$$
+		$$ -\dfrac{t}{\tau} = ln\left(\dfrac{\theta_0-1 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}} { \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}}\right)$$
+		On isole $t$  et on remplace $\tau$:
+		$$ t = - \dfrac{m \cdot c}{h\cdot S} \cdot ln\left(\dfrac{\theta_0-1 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}} { \theta_0 - \dfrac{ \mathcal{P}_{th}}{h \cdot S} - \theta_{eau}}\right)$$
+		
+		\textbf{Calcul sans la combinaison :}
+		$$ t_{nu} = - \dfrac{m \cdot c}{h_{nu}\cdot S} \cdot ln\left(\dfrac{\theta_0-1 - \dfrac{ \mathcal{P}_{th}}{h_{nu} \cdot S} - \theta_{eau}} { \theta_0 - \dfrac{ \mathcal{P}_{th}}{h_{nu} \cdot S} - \theta_{eau}}\right)$$
+		\fbox{AN}
+		$$ t_{nu} = - \dfrac{80 \cdot \num{3,5E3}}{100 \cdot 1} \cdot ln\left(\dfrac{37-1 - \dfrac{ 200}{100 \cdot 1} - 4} { 37 - \dfrac{ 200}{100 \cdot 1} - 4}\right) = \SI{91,8}{\second}$$
+		
+		\textbf{Calcul avec la combinaison :}
+		$$ t_{combi} = - \dfrac{m \cdot c}{h_{combi}\cdot S} \cdot ln\left(\dfrac{\theta_0-1 - \dfrac{ \mathcal{P}_{th}}{h_{combi} \cdot S} - \theta_{eau}} { \theta_0 - \dfrac{ \mathcal{P}_{th}}{h_{combi} \cdot S} - \theta_{eau}}\right)$$
+		\fbox{AN}
+		$$ t_{combi} = - \dfrac{80 \cdot \num{3,5E3}}{8 \cdot 1} \cdot ln\left(\dfrac{37-1 - \dfrac{ 200}{8 \cdot 1} - 4} { 37 - \dfrac{ 200}{8 \cdot 1} - 4}\right) = \SI{4674}{\second}$$
+		Soit : $t_{combi} = \SI{78}{\minute}$
+	\end{enumerate}
+	
+\section{Étude énergétique d'une centrale nucléaire}
+	\begin{enumerate}
+		\item \begin{enumerate}
+			\item La centrale a un rendement  $\eta = \SI{33}{\percent}$ ce qui signifie que l'énergie fournie est $\frac{1}{\eta}$ plus importante. Calcul de l'énergie fournie par la centrale chaque seconde : $$\mathcal{P} \cdot \dfrac{1}{\eta} = \dfrac{\mathcal{E}}{\Delta t} $$
+			$$\mathcal{E} = \mathcal{P} \cdot \Delta t \cdot \dfrac{1}{\eta}$$
+			\fbox{AN} $$\mathcal{E} = \num{900E6} \times 1 \cdot \dfrac{1}{33}= \SI{2,7E9}{\joule}$$
+			Chaque seconde la centrale fournit \SI{2,7}{\giga\joule} par transfert conducto-convectif.
+			
+			\item Le travail à haute pression permet de garder l'eau à haute température à l'état liquide, ce qui permet un meilleur transport de l'énergie thermique.
+		\end{enumerate}
+		\item 
+		\begin{enumerate}
+			\item 
+			\item 
+			\begin{center}
+				\begin{tikzpicture}
+					\node[draw,rectangle,rounded corners=3pt,fill=orange!30,text width = 2.5cm,text centered] (CP) at (0,0){Circuit primaire};
+					\node[draw,ellipse,fill=purple!30!pink,text width = 2.5cm,text centered] (CS) at (5,0){Circuit secondaire};
+					\node[draw,rectangle,rounded corners=3pt,fill=blue!80!green!50,text width = 2.75cm,text centered] (CR) at (10,0){Circuit de refroidissement};
+					\node[draw,rectangle,rounded corners=3pt,fill=green!60!blue!20,text width = 2.75cm,text centered] (T) at (5,-2.5){Turbine};
+					
+					\draw[-Stealth, line width = .1cm,color = red] (CP) to (CS);
+					\draw[-Stealth, line width = .1cm,color = red] (CR) to (CS);
+					\draw[-Stealth, line width = .1cm,color = red] (T) to (CS);
+					
+					\node[above](Qc) at (2.25,0){$Q_c >0$};
+					\node[above](Qf) at (7.75,0){$Q_f <0$};
+					\node[right](W) at (5,-1.5){$\mathcal{W} <0$};
+				\end{tikzpicture}
+			\end{center}
+			\item Au cours d'un cycle, la variation d'énergie interne du système {eau du circuit secondaire} est nulle.
+			\item On applique le premier principe : $\Delta \mathcal{U} = \mathcal{W} + Q_f + Q_c = 0$.\\
+			En isolant $Q_f$ : $$ Q_f = -\mathcal{W} - Q_c$$
+			\fbox{AN} $$Q_f = - \num{900E6}-\num{2,7E9} = -\SI{1,8}{\giga\joule}$$
+			Le flux thermique entre le circuit secondaire et le circuit de refroidissement est bien égal à \SI{1,8}{\giga\watt}.
+		\end{enumerate}
+		\item Chaque seconde, \SI{1,8}{\giga\joule} d'énergie thermique sont transférés à \SI{60}{\meter\cubed}. L'énergie échangée se traduit par une augmentation de température de l'eau : $\Delta \mathcal{U} = mc_{eau}(\theta_s - \theta_e)$.
+		$$ \theta_s-\theta_e = \frac{\Delta \mathcal{U}}{m\cdot c_{eau}}$$
+		$$ \theta_s-\theta_e = \frac{\Delta \mathcal{U}}{\rho \cdot V \cdot c_{eau}}$$
+		$$ \theta_s= \theta_e  + \frac{\Delta \mathcal{U}}{\rho \cdot V \cdot c_{eau}}$$
+		\fbox{AN} $$ \theta_s= 19  + \frac{\num{1,8E9}}{1,0 \times \num{60E3} \cdot \num{4,18E3}} $$
+		$$ \theta_s= \SI{26}{\celsius}$$
+	\end{enumerate}
+	
+	\section{Piscine municipale}
+	\begin{enumerate}
+		\item Le système {eau de la piscine} a une variation d'énergie interne $\Delta \mathcal{U} = \Delta U_t + \Delta U_c$ avec $\Delta U_t$ l'énergie apportée par l'eau froide et $\Delta U_c$ l'énergie apportée par l'eaeu chaude.
+		\item 
+		
+	\end{enumerate}
+\end{document}

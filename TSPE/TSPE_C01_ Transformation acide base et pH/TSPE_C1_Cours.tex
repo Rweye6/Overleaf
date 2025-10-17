@@ -1,0 +1,89 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 1}
+\newcommand{\chtitle}{Transformation acide-base et pH}
+\newcommand{\dtype}{Cours}
+
+\begin{document}
+\maketitle
+
+\section{Notions d'acides et de bases}
+	\subsection{Définitions}
+Selon \textbf{Brönsted} (chimiste danois, 1879 - 1947) :
+\begin{itemize*}
+	\item un \textbf{acide} est une espèce chimique capable de libérer un ou plusieurs ions hydrogènes \textbf{\ce{H+}}
+	\item une \textbf{base}, est une espèce capable de capter un ou plusieurs ions hydrogènes \textbf{\ce{H+}}
+\end{itemize*}
+
+\begin{table}[h]
+	\begin{tabular}{|p{18cm}}
+\textit{Exemple :}\\
+- Le sulfure de dihydrogène \ce{H2S} est un acide car il peut libérer un ion hydrogène selon la réaction d'équation :\\
+\rule[1cm]{0cm}{0cm}\\
+- L'ammoniac \ce{NH3} est une base car elle peut capter un ion hydrogène\\
+\rule[1cm]{0cm}{0cm}\\
+	\end{tabular}
+\end{table}
+
+Certaines espèces possèdent à la fois des propriétés acides et des propriétés basiques : on les appelle des espèces \textbf{amphotères}.
+\begin{table}[h]
+\begin{tabular}{|m{18cm}}
+\textit{Exemple le caractère amphotère de l'eau : }\\
+\rule[1.5cm]{0cm}{0cm}\\
+\end{tabular}
+\end{table}
+	\subsection{Couple acide-base}
+Un acide et une base forment un \textbf{couple acide base}, noté \textbf{\ce{AH(aq)} / \ce{A-(aq)}}, s'il est possible de passer de l'un à l'autre par un transfert d'un ion hydrogène \ce{H+}. On peut alors écrire une \textbf{demi-équation} de la forme :
+$$\ce{AH(aq) <=> A-(aq) + H+}$$
+L'acide et la base d'un couple sont dit \textbf{conjugués}.\\
+Les \textbf{formules semi-développées} ou les \textbf{schémas de Lewis} des entités acides ou basiques permettent de comprendre leur processus de formation. Une entité acide possède toujours un atome d'hydrogène lié à un atome fortement électronégatif (F, Cl, O, N ...). La liaison entre les deux peut ainsi être facilement rompue.
+
+\begin{table}[h]
+\begin{tabular}{|m{18cm}}
+\textit{Exemple acide carboxylique : }\\
+\rule[1cm]{0cm}{0cm}\\
+\end{tabular}
+\end{table}
+
+\newpage
+Couple acide/base à connaître :
+\begin{table}[h]
+\centering
+\begin{tabular}{|m{6cm}|c|m{7cm}|}
+\hline
+Eau / ion hydroxyde & \ce{H2O(l)} / \ce{HO-(aq)} &  \rule[1.5cm]{0cm}{0cm} \\
+\hline
+Ion oxonium / eau & \ce{H3O+(aq)} / \ce{H2O(l)} &  \rule[1.5cm]{0cm}{0cm} \\ 
+\hline
+Acide carbonique / ion hydrogénocarbonate & \ce{H2CO3 (aq)} / \ce{HCO3- (aq)} & \rule[1.5cm]{0cm}{0cm} \\ 
+\hline
+Acide carboxylique / ion carboxylate & \ce{RCO2H(aq)} / \ce{RCO2-(aq)} & \rule[1.5cm]{0cm}{0cm}\\
+\hline
+Ion ammonium / amine & \ce{RNH3+ (aq)} / \ce{RNH2 (aq)} & \rule[1.5cm]{0cm}{0cm}\\
+\hline
+\end{tabular}
+\end{table}
+	\subsection{Réaction acide-base}
+Une réaction acide-base met en jeux un \textbf{échange d'ions hydrogène $H^{+}$} entre d'acide d'un couple et la base d'un deuxième couple acide/base.\\
+\begin{tabular}{|m{\textwidth}}
+\textit{Exemple : Réaction de l'acide éthanoïque et de l'eau}\\
+1. Écrire la demi-équation associée au couple acide éthanoïque / ion éthanoate. \\
+\vspace{2cm}\\
+2. Choisir le couple acide/base de l'eau mis en jeu ici, puis la demi-équation associée.\\
+\vspace{2cm}\\
+3. En déduire l'équation de la réaction \\
+\vspace{2cm}\\
+\end{tabular}
+
+\section{pH d'une solution}
+	\subsection{Définition du pH}
+Le \textbf{pH} (potentiel Hydrogène) d'une solution aqueuse est défini par rapport à sa concentration en ions oxonium, notée : [\ce{H3O+}]. Il se détermine selon la relation suivante :
+$$pH = -log \frac{[\ce{H3O+}]}{c^0}$$
+avec $c^0$ : la concentration standard égale à \SI{1}{\mole\per\liter}.\\
+Si la concentration en ion oxonium augmente, alors le pH diminue : la solution devient plus acide.\\
+
+On peut déterminer la concentration en ion oxonium [\ce{H3O+}] à partir du pH d'une solution par la relation :
+$$[\ce{H3O+}] = c^0 \cdot 10^{-pH}$$
+\end{document}

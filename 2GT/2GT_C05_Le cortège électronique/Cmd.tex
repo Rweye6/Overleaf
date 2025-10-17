@@ -1,0 +1,227 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                %
+%                                                                %
+%                       PACKAGE                                  %
+%                                                                %
+%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Basique :
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel} 
+\usepackage{hyperref}                           %référence
+%\usepackage[margin=1,25cm]{geometry}           %Géométrie
+
+% Mathématiques :
+\usepackage{cancel}                             %rayer 
+\usepackage{amsthm,amsmath,amsfonts,amssymb,dsfont}    %maths et joli....
+\usepackage{stmaryrd}                           %crochet entre autre
+
+% Mise en forme : 
+
+\usepackage[x11names]{xcolor}                   % inclus les couleurs
+\usepackage{enumitem}                           % Énumération avec label
+\usepackage{multicol}                           % Colonne
+\usepackage{graphicx}                           % Pour le bigcdot notamment
+\usepackage{tcolorbox}                          % Box
+\setlength{\fboxrule}{3pt}
+\setlength{\fboxsep}{1em}
+
+
+
+
+% Figure et Image :
+
+\usepackage{wrapfig}                            %pour inclure des figures dans le texte  
+
+%Lettres grecques :
+\usepackage{savesym}
+\usepackage{amsmath, amssymb}
+\savesymbol{iint}
+\usepackage{txfonts,, newtxmath}
+\restoresymbol{TXF}{iint}
+%\usepackage{mathptmx} %uses times fontv
+
+%Beamer
+\usepackage{booktabs, comment} 
+\usepackage[absolute, overlay]{textpos}
+\usepackage{pgfpages}
+\usepackage[font=footnotesize]{caption}
+\useoutertheme{infolines} 
+\usepackage{csquotes}
+\usepackage{textpos}
+\usepackage{tikz}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                %
+%                                                                %
+%                       Théorème                                 %
+%                                                                %
+%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{plain}% default
+\newtheorem{Th}{Théorème}[section]
+\newtheorem{Lem}[Th]{Lemme}
+\newtheorem{Prop}[Th]{Proposition}
+\newtheorem*{Prop*}{Proposition}
+\newtheorem*{Cor}{Corollaire}
+\newtheorem*{Obj}{Objection}
+
+\theoremstyle{definition}
+\newtheorem{Df}{Définition}[section]
+\newtheorem*{Df*}{Définition}
+\newtheorem{Dfs}[Df]{Définitions}%[section]
+\newtheorem{conj}{conjecture}[section]
+\newtheorem{Ex}{Exemple}[section]
+\newtheorem*{Ex*}{Exemple}
+\newtheorem{Exs}[Ex]{Exemples}%[section]
+
+\theoremstyle{remark}
+\newtheorem*{NB}{Remarque}
+\newtheorem*{NBs}{Remarques}
+\newtheorem*{Gen}{Généralisation}
+\newtheorem*{nota}{Notation}
+\newtheorem*{Rap}{Rappel}
+
+
+\renewcommand{\proofname}{\textsc{Preuve}}
+
+\newtheoremstyle{exostyle}{\topsep}{\topsep}{}{}{\bfseries}{.}{ }{\thmname{#1}\thmnumber{ #2}\thmnote{. \normalfont{\textit{#3}} }}
+
+\theoremstyle{exostyle}
+\newtheorem{exercice}{Exercice} 
+
+\newtheoremstyle{exostyle}{\topsep}{\topsep}{}{}{\bfseries}{.}{ }{\thmname{#1}\thmnumber{ #2}\thmnote{. \normalfont{\textit{#3}}}}
+
+\theoremstyle{exostyle}
+\newtheorem*{preuve}{Preuve} 
+
+\newenvironment{questions}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{sousquestions}{\begin{enumerate}}{\end{enumerate}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                %
+%                                                                %
+%                       Code                                     %
+%                                                                %
+%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{color}
+\usepackage{listings}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{myorange}{rgb}{0.855,0.576,0.027}
+\lstset{
+language=Octave,
+frame=single,   
+morecomment = [l][\itshape\color{blue}]{\%},
+keywordstyle=\color{blue},
+commentstyle=\color{mygreen},
+breakatwhitespace=false,         
+breaklines=true,  
+numbers=left,
+numbersep=5pt,
+numberstyle=\tiny\color{mygray}, 
+showstringspaces=false,
+showtabs=false,                  
+tabsize=2,
+stringstyle=\color{myorange},
+title=\lstname,
+literate=
+{+}{{{\color{red}+}}}1
+{-}{{{\color{red}-}}}1
+{*}{{{\color{red}*}}}1
+{,}{{{\color{red},}}}1
+{=}{{{\color{red}=}}}1
+{(}{{{\color{black}(}}}1
+{)}{{{\color{red})}}}1
+{;}{{{\color{red};}}}1
+{:}{{{\color{red}:}}}1
+{[}{{{\color{red}[}}}1
+{]}{{{\color{red}]}}}1
+{>}{{{\color{red}>}}}1
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                %
+%                                                                %
+%                       Commandes                                %
+%                                                                %
+%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\D}{\mathcal D}
+\newcommand{\Cl}{\mathcal C}
+\newcommand{\Sm}{S^m_{0,1}}
+\newcommand{\et}{\text{ ~et~ }}
+\newcommand{\ou}{\text{ ~ou~ }}
+\newcommand{\espace}{\vspace*{1cm}}
+\everymath{\displaystyle}
+\renewcommand{\Im}{\text{Im}}
+\renewcommand{\Re}{\text{Re}}
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.4}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\newcommand{\framewithtitle}[1]{
+\begin{frame}[c]{  }
+\Huge{
+\begin{center}
+    \begin{tcolorbox}[arc=1ex, colback=myuniversity, colframe=myuniversity, left=3pt, right=3pt, top=3pt, bottom=2pt]
+    \emph{
+    \espace
+    \begin{center}
+        \textcolor{white}{#1}
+    \end{center}
+    \espace}
+    \end{tcolorbox}
+\end{center}}
+\end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                %
+%                                                                %
+%                       Beamer                                   %
+%                                                                %
+%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%% lien vers celui de janvier : https://fr.overleaf.com/8125717386bqbmvyhtchbt
+
+\definecolor{whitetxt}{RGB}{255,255,255}
+\definecolor{bluewhite}{RGB}{134, 165, 202}
+
+\setbeamercolor{title in head/foot}{bg=bluewhite, fg=whitetxt}
+\setbeamercolor{author in head/foot}{bg=myuniversity}
+\setbeamertemplate{page number in head/foot}{}
+
+\usetheme{Madrid}
+\definecolor{myuniversity}{RGB}{48, 157, 142}
+\usecolortheme[named=myuniversity]{structure}
+\usepackage{tikz}
+
+
+%\addtobeamertemplate{navigation symbols}{}{%
+%    \usebeamerfont{footline}%
+%    \usebeamercolor[fg]{footline}%
+%    \hspace{1em}%
+%    \insertframenumber/\inserttotalframenumber
+%}
+
+%\logo{\includegraphics[height=0.5cm]{petitlogo.png}~%
+}

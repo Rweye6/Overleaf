@@ -1,0 +1,129 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{Cours}
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|>{\centering}m{5cm}|>{\centering}m{8cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		Activité 1 & \textbf{\textsc{Charge et décharge d'un condensateur}} &  Chapitre 13 \\
+		\hline
+\end{tabular}
+\vspace{-5em}}
+\date{}
+
+
+\begin{document}
+	\maketitle
+	
+
+\section{Charge d'un condensateur}
+\begin{minipage}{.3\linewidth}
+	\textbf{Montage :}\\
+	\begin{circuitikz}
+		\node[cute spdt mid, rotate=90] (inter) {};
+		\draw   (inter.in)
+		to [R,v^<=$u_R$,l_=$R$] ++ (0,-3)
+		to [C,v^<=$u_C$,l_=$C$] ++ (0,-2) coordinate (aux1)
+		(inter.out 2)  node[above] {B}
+		to [short] ++ (+1,0) |- (aux1)
+		(inter.out 1)  node[above] {A}   
+		to [short] ++ (-2,0) coordinate (aux2)
+		to [vsource,V_<=$E$,i<=$i$]    (aux2 |- aux1)
+		to [short] (aux1)
+		;
+		\node at (-2.75,-1.75) {+};
+		\node at (-2.75,-3.25) {-};
+	\end{circuitikz}
+\end{minipage}
+\hspace{.5cm}
+\begin{minipage}{.6\linewidth}
+	\textbf{Matériel :}
+	\begin{itemize*}
+		\item générateur de tension à régler à \num{6,0} \unit{\volt} continu
+		\item boîte de capacités à régler sur $C$ = \num{15,27} \unit{\micro\farad}
+		\item boîte à décades de résistances à régler sur $R$ = \qty{2,00}{k}$\Omega$
+		\item interrupteur double position
+		\item fils
+		\item platine d'acquisition
+		\item ordinateur muni d'un logiciel d'acquisition
+	\end{itemize*}
+\end{minipage}
+	
+\begin{enumerate}
+	\item Indiquer sur quelle position basculer l'interrupteur pour effectuer la charge du condensateur d'une part, sa décharge d'autre part.
+	\item Prévoir le temps caractéristique $\tau$ de charge du condensateur.
+	\item En déduire la durée au bout de laquelle on peut considérer que le condensateur est complètement chargé\\ Expérimentalement, on doublera cette durée afin de visualiser correctement l'ensemble de la charge.
+\end{enumerate}	
+	\begin{center}
+		\textbf{APPEL N°1}
+	\end{center}
+\begin{enumerate}[resume]
+	\item Construire le montage ci-dessus et décharger le condensateur.
+	\item Faire les branchements nécessaires pour acquérir la tension $u_C$ (en EA1) à l'aide de Latis Pro.
+	\item Paramétrer l'acquisition sur le logiciel :
+		\begin{itemize}
+			\item régler la durée d'acquisition à l'aide de la question 3.
+			\item choisir 200 points
+			\item régler le déclenchement de l'acquisition de manière à ce qu'elle se déclenche dès que la tension $u_C$ initialement nulle, atteint \SI{0,1}{\volt}.
+		\end{itemize}
+\end{enumerate}
+\begin{center}
+	\textbf{APPEL N°2}
+\end{center}
+\begin{enumerate}[resume]
+	\item Lancer l'acquisition puis basculer l'interrupteur en position pour charger du condensateur.
+	\item Modéliser le courbe obtenue.
+	\item Imprimer la courbe.
+	\item Déterminer le temps caractéristique $\tau$ sur la courbe papier puis sur le logiciel. Comparer les valeurs obtenues.
+	\item Sur la courbe papier, représenter l'allure de la courbe obtenue si on diminuait la capacité utilisée.
+	\item Vérifier expérimentalement en utilisant un condensateur $C_2$ = \SI{10,57}{\micro\farad}, puis remettre en place le montage précédent.
+\end{enumerate}
+
+\section{Décharge d'un condensateur}
+	\begin{enumerate}[resume]
+		\item Indiquer comment va évoluer la tension $u_C(t)$aux bornes du condensateur lors de sa décharge.
+		\item Modifier les paramètres d'acquisition afin de pouvoir effectuer le suivi de la décharge.
+	\end{enumerate}
+\begin{center}
+	\textbf{APPEL N°3}
+\end{center}
+	\begin{enumerate}[resume]
+		\item Lancer une nouvelle acquisition des tensions puis basculer l'interrupteur pour réaliser la décharge du condensateur.
+		Déterminer le temps caractéristique $\tau_D$ du circuit par la méthode de la tangente. Commenter.
+		\item Relever la valeur de la tension $u_C$ aux bornes du condensateur lorsque $t=\tau_D$.
+		\item Déterminer à quelle proportion de la tension $u_C$ maximale cela correspond.\\
+		La tension $u_C$ peut être modélisée par la fonction ci-dessous :
+	\end{enumerate}
+		\begin{tabular}{>{\centering\arraybackslash}m{\linewidth}}
+			$u_C(t) = E \cdot e^{-\dfrac{t}{\tau}} $
+		\end{tabular}
+	\begin{enumerate}[resume]
+		\item Vérifier que pour $t=\tau$, on retrouve la proportion déterminée précédemment.
+	\end{enumerate}
+\begin{center}
+	\textbf{APPEL N°4}
+\end{center}
+\section{Régime transitoire et régime permanent}
+Lors de la charge, la tension $u_C$ peut être modélisée par la fonction ci-dessous :\\
+\begin{tabular}{>{\centering\arraybackslash}m{\linewidth}}
+	$u_C(t) = E (1- e^{-\dfrac{t}{\tau}})$\\
+\end{tabular}
+	\begin{enumerate}[resume]
+		\item Exprimer $u_C$ en fonction de $E$ pour $t=\tau, 2\tau, 3\tau$ ...\\
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+			\hline 
+			\textbf{t} & $\tau$ & $2\tau$ & $3\tau$ & $4\tau$ & $5\tau$ & $6\tau$ \\
+			\hline
+			$\mathbf{u_Cd}$&&&&&&\\
+			\hline 
+		\end{tabular}
+		\item Identifier le moment à partir duquel la tension $u_C$ dépasse 99\% de sa valeur maximale.\\
+		On considère dès lors que le régime transitoire est terminé et que le régime permanent débute.
+		\item Légender le graphique imprimé en conséquence.
+	\end{enumerate}
+\begin{center}
+	\textbf{APPEL N°5}\\
+	\vspace{1cm}
+	\textbf{\textsc{Débrancher et ranger le matériel, éteindre les ordinateurs}}
+\end{center}
+\end{document}

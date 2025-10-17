@@ -1,0 +1,127 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+
+\usepackage{tgheros,textcomp}%Police Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[top = 1cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{xcolor}
+\usepackage{amssymb} %double flèche de réaction
+\usepackage{xtab}%tableau sur plusieurs pages
+\usepackage{esvect}%grands vecteurs
+
+\usepackage[version=4]{mhchem} %equations chimiques
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usepackage{sectsty}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[cal=boondoxo]{mathalfa} 
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{multicol}
+\usepackage{eqnarray}
+
+\sisetup{
+	detect-all,
+	output-decimal-marker={,},
+	group-minimum-digits = 3,
+	group-separator={~},
+	number-unit-separator={~},
+	inter-unit-product={~}
+} %setup pour SIunitx
+
+\usepackage{listings}%pour insérer le code python
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\sectionfont{\fontsize{14}{8}\selectfont}
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|m{7cm}|>{\centering}m{6cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		 Nom :& \textbf{\textsc{2GT DS N°2}} &  Note\\
+		 &&\\
+		 Prénom : &&\\
+		\hline
+\end{tabular}}
+\date{}
+
+\newpagestyle{mystyle}{%
+	\setfoot{}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+\renewpagestyle{plain}{%
+	\setfoot{}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+
+\pagestyle{mystyle}
+
+\newenvironment{itemize*}%
+{\begin{itemize}[label=$-$]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\newenvironment{itemize**}%
+{\begin{itemize}[label=]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\begin{document}
+	\maketitle
+	\vspace{-3cm}
+\section*{Exercice 1 : Sons}
+\begin{tabular}{cc}
+	\includegraphics[scale=.5]{Ressources/2GT_C7_Eval_Fig1.png}&\includegraphics[scale=.5]{Ressources/2GT_C7_Eval_Fig3.png}\\
+	\includegraphics[scale=.5]{Ressources/2GT_C7_Eval_Fig4.png}&\includegraphics[scale=.5]{Ressources/2GT_C7_Eval_Fig2.png}\\
+\end{tabular}
+\begin{enumerate}
+	\item Dire si les signaux sonores présentés ci dessus sont périodiques. Justifier chaque réponse. (1 pt)
+	\item Pour un signal périodique, définir un motif. Repasser en couleur un motif pour chaque signal périodique trouvé dans la réponse précédente. (2 pts)
+	\item Déterminer les fréquences des signaux précédent si possible (des calculs détaillés sont attendus à chaque fois). (3 pts)
+\end{enumerate}
+
+\section*{Exercice 2 : Écholocalisation}
+L'écholocalisation est un système de perception de l'environnement développé par plusieurs espèces (chauve-souris, cétacés) afin de percevoir l'environnement proche dans utiliser la vision.\\
+Il s'agit pour l'animal de produire un son de haute fréquence qui va se propager jusqu'à un obstacle puis revenir à l'oreille de l'animal. L'animal joue ainsi, à la fois le rôle d'émetteur et de récepteur. La perception de proximité est faite par la mesure du temps mis par l'onde sonore pour revenir à son émetteur.
+\begin{enumerate}
+	\item Proposer un schéma permettant de représenter le système d'écholocalisation. Faire figurer un émetteur ($E$), un objet à localiser ($A$), un récepteur ($R$) et la distance entre le système émetteur/récepteur et l'objet ($d$). (1 pt)
+	\item Dans le cas d'une chauve-souris, exprimer le temps ($\Delta t_{CS}$) mis par l'onde sonore pour revenir vers elle après avoir rencontré un insecte situé à 3 m. (1pt)
+	\item Sachant que, le son a une célérité $c_{air}$ = \SI{340}{\meter\per\second}, calculer la valeur de $\Delta t_{CS}$. (1 pt)
+	\item Dans le cas où l'animal est un dauphin, exprimer le temps ($\Delta t_{D}$) mis par l'onde sonore pour revenir vers elle après avoir rencontré un saumon situé à 3 m. Puis calculer $\Delta t_{D}$, sachant que $c_{eau}$ = \SI{1500}{\meter\per\second}. (2 pts)
+	\item Lequel des deux animaux a le potentiel d'être le plus rapide pour chasser ? (1 pt)
+	%\item \{Question supplémentaire non notée :\} imaginer d'autre paramètres pouvant influencer la vitesse en chasse des deux animaux
+\end{enumerate}
+
+\section*{Exercice 3 : Atomes}
+On considère deux noyaux atomiques : le bismuth 209 (\ce{^209_82 Bi}) et le polonium 209 (\ce{^209_84 Po}).
+\begin{enumerate}
+	\item Donner la composition des deux noyaux et les comparer. (2 pts)
+	\item Calculer la masse des deux noyaux et les comparer.  (2 pts)
+	\item Donner dans chacun des cas le nombre d'électrons présent pour les atomes associés.  (1 pt)
+	\item S'agit-il d'isotopes ? Justifier.  (1 pt)
+\end{enumerate}
+
+\textbf{Données :}
+\begin{itemize*}
+	\item $m_{\text{nucléon}}$ = \SI{1.67E-27}{kg}
+	\item $m_{\text{électron}}$ = \SI{9.11E-31}{kg}
+\end{itemize*}
+\end{document}

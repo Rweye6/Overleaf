@@ -1,0 +1,42 @@
+\documentclass[a4paper,12pt]{article}
+
+% Packages utiles
+\usepackage[most]{tcolorbox}
+\usepackage{lipsum} % juste pour texte d'exemple
+
+% Définition du style "A retenir"
+\tcbset{
+	apprentissage/.style={
+		colback=blue!5,     % couleur de fond
+		colframe=blue!75!black, % couleur du cadre
+		fonttitle=\bfseries,    % titre en gras
+		coltitle=black,         % couleur du titre
+		title=À retenir,        % titre par défaut
+		enhanced,
+		sharp corners,
+		boxrule=0.8pt,          % épaisseur du cadre
+		arc=3mm,                % arrondi des coins
+		left=5mm,right=5mm,top=2mm,bottom=2mm, % marges internes
+	}
+}
+
+\begin{document}
+	
+	Texte normal de ton document.
+	
+	\begin{tcolorbox}[apprentissage]
+		Voici un paragraphe important du cours.  
+		Il doit être appris par cœur.  
+		Tu peux mettre ici des formules, du texte, etc.
+	\end{tcolorbox}
+	
+	\lipsum[2] % exemple de texte parasite
+	
+	\begin{tcolorbox}[apprentissage,title=Formule clé]
+		La loi des gaz parfaits s'écrit : 
+		\[
+		PV = nRT
+		\]
+	\end{tcolorbox}
+	
+\end{document}

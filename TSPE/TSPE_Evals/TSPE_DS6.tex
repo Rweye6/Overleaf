@@ -1,0 +1,141 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{Eval}
+
+\newcommand{\chnum}{Chapitre 4}
+\newcommand{\chtitle}{Cinétique chimique}
+\newcommand{\dtype}{DS 6}
+
+\begin{document}
+\maketitle
+\section{Ions triiodure}
+On étudie la cinétique de la réaction entre la propanone et des ions triiodure :
+$$\ce{CH3COCH3(aq) + I_3-(aq) -> CH3COCH2I(aq) + H+(aq) +2I-(aq)}$$
+Pour effectuer le suivi spectrophotométrique de cette réaction, on se place à la longueur du maximum d'absorption de l'ion triiodure \ce{I_3-(aq)}.\\
+On réalise dix mesures :
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline \textbf{Temps $t (min)$} & \textbf{Absorbance $A$}\\
+        \hline 0 & 1,89\\
+        \hline 1,0 & 1,79\\
+        \hline 2,0 & 1,68\\
+        \hline 3,0 & 1,58\\
+        \hline  4,0 & 1,48\\
+        \hline
+    \end{tabular}
+    \begin{tabular}{|c|c|}
+        \hline \textbf{Temps $t (min)$} & \textbf{Absorbance $A$}\\
+        \hline 5,0 & 1,38\\
+        \hline 6,0 & 1,28\\
+        \hline 7,0 & 1,17\\
+        \hline 8,0 & 1,07\\
+        \hline 9,0 & 0,97\\
+        \hline
+    \end{tabular}
+    \caption*{\textbf{Suivi spectroscopique de la réaction}}
+\end{table}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.5\linewidth]{Ressources/Abs_Triiodure.png}
+    \caption*{\textbf{Absorbance des ions triiodure}}
+    \label{fig:enter-label}
+\end{figure}
+Les conditions initiales du mélange réactionnel sont \SI{20,0}{mL} de propanone, diluée dans \SI{200,0}{mL} d'eau. On ajoute alors \SI{1,0}{mL} de solution aqueuse de triiodure de potassium (\ce{K+(aq)} ; \ce{I_3-(aq)}) de concentration  $c_0 = \SI{1,0E-2}{\mole\per\liter}$.\\
+De cette manière, la propanone est introduite en large excès.
+\begin{enumerate}
+    \item Proposer, en la justifiant la valeur à laquelle régler le spectrophotomètre pour réaliser le suivi.
+    \item En utilisant la loi de Beer-Lambert, exprimer la concentration en ion triiodure $[\ce{I_3-}]$ en fonction de l'absorbance $A$ de la solution et d'une constante de proportionnalité notée $K$.
+    \item Représenter l'évolution de $[\ce{I_3-}]$ en fonction du temps.
+    \item Calculer la vitesse volumique $v$ de disparition des ions triiodure pour les quatre premières mesures.
+    \item Représenter l'évolution de $v$ en fonction de $[\ce{I_3-}]$. Donner un argument permettant de dire s'il s'agit d'une réaction d'ordre 1.
+\end{enumerate}
+On se propose de déterminer quel est l'ordre correspondant. On précise que :
+\begin{itemize}
+    \item Pour une réaction d'ordre 0, la vitesse volumique s'écrit $v=k$
+    \item Pour une réaction d'ordre 2, la vitesse volumique s'écrit $v=k\cdot [\ce{I_3-}]^2$.
+\end{itemize}
+\begin{enumerate}[resume]
+    \item En déduire l'ordre de la réaction.
+    \item Proposer une unité cohérente pour $k$.
+\end{enumerate}
+
+\begin{comment}
+\section{Acide ascorbique}
+On étudie la cinétique d'oxydation de la vitamine C, également appelée acide ascorbique, que l'on note pour simplification \ce{AH2}. Cette oxydation est réalisée en milieu acide par l'ion \ce{Fe(CN)_6^3-}.
+$$2\ce{Fe(CN)_6^3- + AH2(aq) -> 2Fe(CN)_6^4- + A(aq) + 2H+(aq)}$$
+Le mécanisme réactionnel est la suivant :
+\begin{itemize}
+    \item \ce{AH2(aq) -> AH-(aq) + H+(aq)}
+    \item \ce{Fe(CN)_6^3-(aq) + AH-(aq) -> Fe(CN)_6^4-(aq) + AH(aq)}
+    \item \ce{HA(aq) -> H+(aq) + A-(aq)}
+    \item \ce{Fe(CN)_6^3-(aq) + A-(aq) -> Fe(CN)_6^4-(aq) + A(aq)}
+\end{itemize}
+\begin{enumerate}
+    \item Identifier les intermédiaires réactionnels présents dans ce mécanisme réactionnel.
+\end{enumerate}
+Dans des conditions où le pH du milieu réactionnel est maintenu constant et que les ions \ce{Fe(CN)_6^3-} sont introduits en large excès par rapport à l'acide ascorbique, on constate que la réaction suit une loi d'ordre 1.
+On réalise trois expériences différentes avec les mêmes conditions initiales en imposant une température au milieu réactionnel et en effectuant un suivi spectrophotométrique. Après calculs, on obtient les mesures suivantes pour trois températures différentes :
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|>{\centering}m{2cm}|>{\centering}m{4cm}|>{\centering}m{4cm}|>{\centering\arraybackslash}m{4cm}|}
+        \hline \textbf{Temps $t$ (min)} & \textbf{Concentration $[\ce{AH2}]$ $\unit{\mole\per\liter}$ pour $T = \SI{298}{\kelvin}$} & \textbf{Concentration $[\ce{AH2}]$ $\unit{\mole\per\liter}$ pour $T = \SI{293}{\kelvin}$} & \textbf{Concentration $[\ce{AH2}]$ $\unit{\mole\per\liter}$ pour $T = \SI{303}{\kelvin}$}\\
+        \hline 0 & \num{0,1000} & \num{0,1000} & \num{0,1000}\\
+        \hline 5 & \num{0,0906} & \num{0,0926} & \num{0,0898}\\
+        \hline 10 & \num{0,0821} & \num{0,0857} & \num{0,0806}\\
+        \hline 15 & \num{0,0743} & \num{0,0793} & \num{0,0723}\\
+        \hline 20 & \num{0,0673} & \num{0,0735} & \num{0,0649}\\
+        \hline 25 & \num{0,0610} & \num{0,0680} & \num{0,0583}\\
+        \hline 30 & \num{0,0553} & \num{0,0630} & \num{0,0523}\\
+        \hline 35 & \num{0,0501} & \num{0,0583} & \num{0,0470}\\
+        \hline 40 & \num{0,0454} & \num{0,0540} & \num{0,0422}\\
+        \hline 45 & \num{0,0411} & \num{0,0500} & \num{0,0378}\\
+        \hline
+    \end{tabular}
+\end{table}
+\begin{enumerate}[resume]
+    \item Préciser si la température est un facteur cinétique pour cette réaction. Si oui, en déduire comment évolue la vitesse de disparition de l'acide ascorbique en fonction de la température.
+    \item À l'aide d'un tableur, calculer les vitesses volumiques de disparition de l'acide ascorbique et tracer les évolutions de cette vitesse en fonction de la concentration $[\ce{AH2}]$.
+    \item En déduire les constantes de vitesse associées et préciser comment elles évoluent en fonction de la température $T$.
+\end{enumerate}
+\end{comment}
+
+\section{Déshydratation des alcools}
+En présence d'ion \ce{H+}, à condition de travailler à température suffisamment élevée, le 3-méthylbutan-2-ol subit uns transformation appelée déshydratation pour former du 2-méthylbut-2-ène. À l'échelle des entités, cette transformation peut être modélisée par le mécanisme réactionnel suivant.\\
+\begin{figure}[h!]
+    \centering
+    \textbf{Étape 1 : }\\
+    \schemestart
+\chemfig{H_3C-C(-[2]CH_3)(-[6]H)-CH(-[2]\charge{100=\|,190=\|}{O}-[1]H)-CH_3}
+\+
+\chemfig{\charge{45:4pt=$\oplus$,180=\"}{H}}
+\arrow{<=>} 
+\chemfig{H_3C-C(-[2]CH_3)(-[6]H)-CH(-[2]\charge{0=\|,90:4pt=$\oplus$}{O}(-[3]H)-[1]H)-CH_3}
+\schemestop\\
+    \textbf{Étape 2 : }\\
+\schemestart
+\chemfig{H_3C-C(-[2]CH_3)(-[6]H)-CH(-[2]\charge{0=\|,90:4pt=$\oplus$}{O}(-[3]H)-[1]H)-CH_3} 
+\arrow{<=>} 
+\chemfig{H_3C-C(-[2]CH_3)(-[6]H)-\charge{270:4pt=$\oplus$,90:4pt=\"}{C}H-CH_3}
+\+
+\chemfig{H-[7]\charge{225:2pt=\|,315:2pt=\|}{O}-[1]H}
+\schemestop\\
+    \textbf{Étape 3 : }\\
+\schemestart
+\chemfig{H_3C-C(-[2]CH_3)(-[6]H)-\charge{270:4pt=$\oplus$,90:4pt=\"}{C}H-CH_3}
+\arrow{<=>}
+\chemfig{C(-[3]H_3C)(-[5]H_3C)=CH-CH_3}
+\+
+\chemfig{\charge{45:4pt=$\oplus$,180=\"}{H}}
+\schemestop
+\end{figure}
+
+\begin{enumerate}
+    \item Déterminer l'équation de la réaction qui modélise la transformation.
+    \item Pour l'étape 1, justifier et situer les sites donneurs et accepteurs.
+    \item Compléter le mécanisme en faisant figurer les flèches courbes des actes élémentaires.
+    \item Identifier les deux intermédiaires réactionnels qui interviennent dans le mécanisme.
+    \item Préciser le rôle de l'ion \ce{H+}.
+\end{enumerate}
+\end{document}

@@ -1,0 +1,76 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
+
+\newcommand{\chnum}{Chapitre 17}
+\newcommand{\chtitle}{Propagation des ondes}
+\newcommand{\dtype}{Exercices}
+  
+\begin{document}
+\maketitle
+
+\begin{multicols}{2}
+\section{Alarme incendie}
+L'intensité sonore d'une alarme incendie à \SI{1,0}{m} de distance est de \SI{3,16}{\watt\per\meter\squared}. On suppose, pour simplifier, qu'elle émet de façon isotrope (identiquement dans toutes les directions) dans une demi-sphère.\\
+Calculer la puissance sonore de cette alarme.\\
+\textbf{Donnée} : \textbf{Surface d'une demi-sphère de rayon $R$} : $S=2\pi \cdot R^2$
+
+\section{Niveau d'intensité sonore}
+Compléter le tableau ci-après :\\
+\begin{tabular}{|>{\centering\footnotesize}m{.1\linewidth}|>{\centering\footnotesize}m{.2\linewidth}|>{\centering\footnotesize}m{.19\linewidth}|>{\centering\footnotesize}m{.125\linewidth}|>{\centering\footnotesize\arraybackslash}m{.16\linewidth}|}
+    \hline
+    \textbf{Bruit} & \textbf{Ronronnement de chat} & \textbf{Conversation} & \textbf{Rue bruyante} & \textbf{Avion au décollage}\\
+    \hline
+    \textbf{I} (\unit{\watt\per\meter\squared}) & & \num{3,2E-7}& & \num{100}\\
+    \hline
+    \textbf{L} (\unit{dB}) & \num{25} & & \num{80} & \\
+    \hline
+\end{tabular}
+
+\section{Seuil de danger}
+On estime qu'une exposition prolongée à un son de plus de \SI{90}{dB} peut entraîner des séquelles sur l'audition.
+\begin{enumerate}
+    \item Calculer l'intensité sonore $I_{danger}$ correspondante.
+    \item En déduire la puissance $P_{danger}$ reçue par le tympan sachant que sa surface est de \SI{60}{\milli\meter\squared}.
+\end{enumerate}
+
+\section{Sonar et radar}
+Un navire utilise un sonar pour cartographier le fond marin. Le signal est émis en surface avec une intensité de \SI{0,7}{\milli\watt\per\meter\squared}. Lorsqu'il atteint le fond, à \SI{1700}{m} de profondeur, son intensité est de \SI{0,6}{\milli\watt\per\meter\squared}.
+\begin{enumerate}
+    \item Calculer l'atténuation $A$ correspondante en (\unit{dB}).
+    \item En déduire le coefficient linéaire d'atténuation $\alpha$ en (\unit{\decibel\per\meter}) de l'eau pour cette onde.
+    \item Calculer la distance au bout de laquelle une onde radar subit la même atténuation. Commenter.
+\end{enumerate}
+\textbf{Donnée :} \textbf{Coefficient linéaire d'atténuation des ondes radar dans l'eau de mer :} $\alpha =\SI{-6}{\decibel\per\centi\meter}$
+
+\section{Guitar électrique}
+Le système d'amplification d'une guitare électriuque permet un gain de \SI{+60}{dB}.\\
+Cette même guitare électrique, non branchée, fournit à \SI{1}{m} une intensité sonore de \SI{1.6E-7}{\watt\per\meter\squared}.
+
+\begin{enumerate}
+    \item Calculer le rapport entre les intensités sonores avec et sans amplification.
+    \item Calculer son intensité, puis son niveau sonores à \SI{1}{m} après amplification.
+    \item Calculer le niveau et l'intensité sonore à \SI{5}{m}, sachant que cela correspond à une atténuation $A = \SI{-14}{dB}$.
+\end{enumerate}
+
+\section{Mesure de la vitesse d'un hélicoptère}
+Un hélicoptère émet un son de fréquence $f_0=\SI{810}{\hertz}$. Un observateur immobile au sol entend un son de fréquence$f_1=\SI{1.0}{\hertz}$.
+\begin{enumerate}
+    \item Préciser en le justifiant si l'hélicoptère s'approche ou s'éloigne.
+    \item Calculer la vitesse de l'hélicoptère.
+    \item Calculer la fréquence $f_2$ qui serait entendue si l'hélicoptère allait dans la direction opposée.
+\end{enumerate}
+
+\section{Chant du loup}
+Un navire de guerre immobile à la surface utilise un sonar émettant à une fréquence $f_{em}=\SI{30}{\kilo\hertz}$ pour sonder l'océan. Un sous-marin se déplaçant horizontalement réfléchit cette onde vers le sonar. L'axe sonar/sous-marin fait un angle $\theta = \SI{70}{\degree}$ avec l'horizontale. Le sonar détecte un décalage de fréquence $\Delta f =\SI{175}{\hertz}$ entre l'onde émise et l'onde reçue.
+
+\begin{enumerate}
+    \item Exprimer le décalage en fréquence $\Delta f = f_{rec} - f_{em}$ en fonction de la fréquence $f_{em}$, la vitesse $v$ du sous-marin et la vitesse du son dans l'eau $v_son$.
+    \item Calculer la vitesse $v$ du sous-marin.
+\end{enumerate}
+\textbf{Données :}
+\begin{itemize}
+    \item \textbf{Expression de la fréquence reçue dans cette situation :} $$f_{rec} = f_{em}\cdot \left(1+\dfrac{2v \cdot \cos{\theta}}{v_{son}}\right) $$
+    \item \textbf{Vitesse du son dans l'eau :} $$v_{son} =\SI{1.5E3}{\meter\per\second}$$
+\end{itemize}
+\end{multicols}
+\end{document}

@@ -1,0 +1,170 @@
+% Declare that this style file requires at least LaTeX version 2e.
+\NeedsTeXFormat{LaTeX2e}
+
+% Provide the name of your page, the date it was last updated, and a comment about what it's used for
+\ProvidesPackage{mystyle}[2010/07/28 BBischof's custom LaTeX style]
+
+% Now paste your code from the preamble here
+
+
+
+
+\RequirePackage{graphicx}
+\RequirePackage[utf8]{inputenc}  
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lscape}
+\RequirePackage{fancybox}%cadres décoratifs
+\RequirePackage{fancyhdr}%entetes et pieds de pages 
+
+
+\RequirePackage{tgheros,textcomp}%Police Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+%\setlength{\mathindent}{0pt}%indentation dans math = 0
+
+\RequirePackage[top = 1.5cm, bottom = 1.5cm, left = 1cm, right = 1cm]{geometry}
+\RequirePackage{titlesec}
+%\setcounter{secnumdepth}{4}
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{amssymb} %double flèche de réaction
+\RequirePackage{mathrsfs}%farraday
+\RequirePackage{xtab}%tableau sur plusieurs pages
+\RequirePackage{esvect}%grands vecteurs
+
+\RequirePackage[version=4]{mhchem} %equations chimiques
+
+\RequirePackage{wrapfig}
+
+\RequirePackage{array}
+\RequirePackage{chemfig}
+\RequirePackage{multirow}
+%\usepackage{sectsty}
+
+\RequirePackage{caption}
+\RequirePackage{adjustbox}
+\RequirePackage[labelformat=simple]{subfig}
+\RequirePackage{float}
+
+
+\RequirePackage{amsmath}
+\RequirePackage[cal=boondoxo]{mathalfa} 
+\RequirePackage{enumitem}
+\RequirePackage{lastpage}
+\RequirePackage{tcolorbox}
+\RequirePackage{siunitx}
+\RequirePackage[european, straightvoltages, RPvoltages]{circuitikz}
+\RequirePackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usetikzlibrary{automata,positioning}
+\usepackage{multicol}
+\usepackage{eqnarray}
+\usepackage{tabularx,colortbl}%colorer fond cellules
+\RequirePackage{ulem}
+
+\sisetup{
+	detect-all,
+	output-decimal-marker={,},
+	group-minimum-digits = 3,
+	group-separator={~},
+	number-unit-separator={~},
+	inter-unit-product={~}
+} %setup pour SIunitx
+
+\RequirePackage{listings}%pour insérer le code python
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\pagenumbering{arabic}
+
+\titleformat{\section}
+{\titlerule
+\vspace{.8ex}%
+\normalfont \bfseries}
+{\thesection :}{.5em}{\bfseries}
+
+\renewcommand{\thesection}{Exercice \arabic{section}}
+\titlespacing{\section}{0pt}{1em}{1em}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+\renewcommand\thesubfigure{\textbf{Document \arabic{subfigure} :}}
+
+%\pagestyle{mystyle}
+
+\newenvironment{itemize*}%
+{\begin{itemize}[label=$-$]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\newenvironment{itemize**}%
+{\begin{itemize}[label=,labelindent=0pt, leftmargin=*,topsep=0pt]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\renewcommand{\arraystretch}{1.5}
+
+
+\title{\vspace{-2em}%\large 
+	\boxput*(0 ,1){
+		\colorbox {white}{ \small \chnum}
+			}{
+			\setlength {\fboxsep}{6 pt }
+			\Ovalbox{
+				\begin {minipage}{.9\linewidth}
+					\vspace{.5em}
+					\textsc{\textbf{\chtitle}} \hfill \dtype
+				\end {minipage}}
+				}
+	\vspace{-3.5em}
+}	
+\date{}
+
+
+\pagestyle{fancy}
+
+\lhead{\chnum}
+\rhead{\chtitle}
+\lfoot{ROSALIE}
+\cfoot{\thepage\,$|$\,\pageref{LastPage}}
+
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\usepackage{mdframed}
+
+% --- Définition des environnements personnalisés ---
+
+\newmdenv[
+linewidth=.5pt,
+roundcorner=20pt,
+skipabove=0pt,
+skipbelow=0pt,
+innerleftmargin=8pt,
+innerrightmargin=8pt,
+innertopmargin=8pt,
+innerbottommargin=8pt
+]{basebox}
+
+\newenvironment{data}[1][Données :]{%
+	\begin{basebox}[
+		backgroundcolor=orange!5,
+		linecolor=white,
+		frametitle={\color{red!75!black}\bfseries #1}
+		]
+	}{\end{basebox}}
+
+\newenvironment{definition}[1][Définition]{%
+	\begin{basebox}[
+		backgroundcolor=green!5,
+		linecolor=green!75!black,
+		frametitle={\color{green!75!black}\bfseries #1}
+		]
+	}{\end{basebox}}
+
+
+% Finally, we'll use \endinput to indicate that LaTeX can stop reading this file. LaTeX will ignore anything after this line.
+\endinput

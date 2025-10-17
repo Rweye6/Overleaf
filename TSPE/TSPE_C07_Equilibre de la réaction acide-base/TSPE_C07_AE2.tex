@@ -1,0 +1,79 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 7}
+\newcommand{\chtitle}{Taux d'avancement d'une réaction}
+\newcommand{\dtype}{TP}
+
+\begin{document}
+\maketitle
+
+L'acide benzoïque est un solide blanc parfois utilisé comme conservateur alimentaire sous le code E210. Il s'agit d'un acide faible.\\
+\textbf{Comment déterminer l'avancement final d'une réaction acide-base ?}\\
+
+\noindent
+\begin{tabular}{|m{9cm} m{9cm}|}
+\hline
+\textbf{Document 1 : Taux d'avancement d'une réaction} & \textbf{Document 2 : Programme Python}\\
+Le taux d'avancement d'une réaction $\tau$ est défini comme le rapport de l'avancement final $x_f$ sur l'avancement maximal $x_{max}$ de cette réaction :
+\begin{eqnarray}
+\tau = \dfrac{x_f}{x_{max}} \nonumber
+\end{eqnarray}
+Le taux d'avancement d'une réaction dépend des conditions initiales et de la constante d'équilibre de la réaction, c'est-à-dire la constante d'acidité du couple acide-base, notée $K_A$, lors d'une réaction acide-base.
+
+\vspace{1em}
+\textbf{Document 3 : Acide benzoïque}
+
+Formule semi-développée de l'acide benzoïque : \begin{center} \chemfig[atom sep = 2em]{*6(HC-CH=CH-C(-[0]C(=[7]O)-[1]OH)=CH-CH=)} \end{center} 
+ & \begin{lstlisting}[language=Python]
+import numpy as np
+print("L'equation a resoudre est c_A*tau^2 + K_A*tau - K_A = 0")
+c_A = float(input('c_A ='))
+pK_A = float(input('pK_A ='))
+K_A = 10**(-pK_A)
+Delta = K_A**2 - 4*c_A*(-K_A)
+if (Delta > 0) :
+  x_1 = (-K_A - np.sqrt(Delta)) / (2*c_A)
+  x_2 = (-K_A + np.sqrt(Delta)) / (2*c_A)
+  print ("Deux solutions : tau_1 =" + str(x_1) + " et tau_2 = " + str(x_2))
+elif (Delta == 0) :
+  x = - K_A/(2*c_A)
+  print ("Une solution double : tau = ", + str(x))
+else : 
+  print ("Aucune solution")
+print ("fin")
+\end{lstlisting}\\
+\hline
+\end{tabular}
+
+\noindent
+\fbox{
+\begin{minipage}{.975\textwidth}
+\textbf{Données :}
+\begin{itemize**}
+	\item Solubilité de l'acide benzoïque dans l'eau à \num{20} \unit{\celsius} : $s$ = \SI{2,9}{\gram \per \liter}
+	\item Couple acide-base : \ce{C6H5COOH(aq)}/\ce{C6H5COO-(aq)}
+	\item $pK_A$ du couple considéré : $pK_A$ = 4,2
+	\item Soit l'équation du seconde degré : $a\cdot x^2 + b \cdot x + c =0$ a pour discriminant $\Delta = b^2 - 4 \cdot a \cdot c$ :
+	\begin{itemize}
+		\item si $\Delta < 0$, l'équation n'a pas de solution réelle
+		\item si $\Delta =0$, l'équation a une seule solution : $x=-\dfrac{b}{2a}$
+		\item si $\Delta >0$, l'équation a deux solutions  : $x_1=\dfrac{-b-\sqrt{\Delta}}{2a}$ et $x_2=\dfrac{-b+\sqrt{\Delta}}{2a}$
+	\end{itemize}
+\end{itemize**}
+\end{minipage}}
+
+\textbf{Questions :} \\
+\begin{enumerate}
+	\item Écrire l'équation de la réaction entre l'acide benzoïque et l'eau
+	\item Déterminer la concentration en quantité de matière d'acide benzoïque apporté $c_A$ d'une solution saturée en acide benzoïque
+	\item Déterminer l'avancement maximal $x_{max}$ de la réaction de l'acide benzoïque avec l'eau dans un volume $V$ = \num{40} \unit{\milli \liter} de solution saturée.
+	\item Cette solution a un pH de 2,9. Déterminer l'avancement final $x_f$, puis le taux d'avancement $\tau_{max}$ final de la réaction.
+	\item \begin{enumerate}
+		\item Écrire l'expression du quotient de réaction $Q_r$
+		\item Montrer qu'à l'équilibre l'expression de $K_A$ d'écrit : $K_A=\dfrac{c_A \cdot \tau^2}{c^0 \cdot (1-\tau)}$
+		\item Calculer $\tau$ avec le programme Python et comparer le résultat obtenu avec la valeur trouvée à la question \textbf{4}
+	\end{enumerate}
+\end{enumerate}
+\textbf{Synthèse : } Expliquer en quoi la résolution de l'équation du second degré permet de calculer le pH d'une solution préparée par dissolution d'un acide faible dans l'eau.
+\end{document}

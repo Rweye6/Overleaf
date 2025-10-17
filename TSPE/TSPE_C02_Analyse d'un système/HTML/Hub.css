@@ -1,0 +1,66 @@
+h1 {
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+    padding: 10px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    counter-reset: h2counter;
+  }
+  
+  h2:before {
+    content: counter(h2counter) ".\0000a0\0000a0";
+    counter-increment: h2counter;
+  }
+  
+  h2 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    font-variant: small-caps;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    counter-reset: h3counter;
+  }
+  
+  h3:before {
+    content: "\0000a0\0000a0"counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+    counter-increment: h3counter;
+  }
+  
+  h3 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+  body{
+      background: rgb(241, 232, 232);
+  }
+  table{
+      border-collapse: collapse;
+    }
+    
+    th, td{
+      border: 2px solid black;
+      padding: 5px;
+      background-color: rgba(193, 172, 252, 0.377);
+    }

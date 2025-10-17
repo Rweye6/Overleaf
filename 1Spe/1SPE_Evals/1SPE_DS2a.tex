@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+
+\usepackage{../../Styles/Eval}
+
+\newcommand{\chnum}{Chapitre 12}
+\newcommand{\chtitle}{Etude d'un fluide au repos}
+\newcommand{\dtype}{DS2}
+
+\begin{document}
+\maketitle
+
+\section{Gonflage d'un ballon de basket}
+
+Lors des compétitions, un ballon de basket doit être gonflé à une pression d'environ $P_{ballon}=\SI{1,55}{\bar}$.\\
+Un ballon de basket féminin de diamètre $D=\SI{23}{cm}$ est gonflé à l'aide d'une pompe dont la capacité est de \SI{105}{\centi\meter} par coup de pompe. Dans cet exercice la température est supposée constante et égale à \SI{25}{\celsius}.
+\textbf{Données :}
+\begin{itemize}
+    \item Volume d'une sphère de rayon $R$ :  $V = \frac{4}{3}\pi \cdot R^3$.
+    \item Volume molaire à \SI{25}{\celsius} : $V_m = \SI{24}{\liter\per\mole}$.
+    \item Nombre d'Avogadro $N_A = \SI{6,02E23}{\mole}$
+    \item Composition de l'air : \ce{N2(g)} : \SI{78}{\percent} ; \ce{O2(g)} : \SI{21}{\percent}
+\end{itemize}
+\begin{enumerate}
+    \item Calculer le volume d'air contenu dans le ballon.
+    \item Caluler le volume d'air correspondant à pression atmosphérique.
+    \item En déduire le nombre de coups de pompe nécessaires pour gonfler le ballon.
+    \item Calculer le nombre de molécules de dioxygène présentes dans le ballon.
+\end{enumerate}
+
+\section{Barrage hydroélectrique}
+Un barrage, supposé rectangulaire, permet de réaliser une retenue d’eau, afin de produire de l’électricité. Il a une hauteur $H =\SI{80}{m}$ et une largeur $L=\SI{120}{m}$. En prenant la référence des altitudes ($z=0$) au fond de l’eau, l’altitude de la surface de la retenue d’eau est $z_1=\SI{70}{m}$ . Une vanne a la forme d’un disque de surface $S =\SI{1,2}{\meter\squared}$ , elle se trouve à $z_2=\SI{5,0}{m}$ du fond.
+\begin{enumerate}
+    \item Représenter la situation vue de coté, en faisant figurer le barrage, le niveau de l'eau et la position de la vanne ainsi que l'axe Oz (échelle : 1 cm = 10 m)
+    \item Calculer la pression $P_2$ de l'eau au niveau de la vanne.
+    \item En déduire la norme de la force pressantes $F_{eau}$ exercée par l'eau sur la vanne.
+    \item Calculer la norme $F_{air}$ de la force pressante de l'air de l'autre coté de la vanne. Calculer le rapport : $\dfrac{F_{air}}{F_{eau}}$ et commenter le résultat.
+    \item Calculer la pression $P_3$ à l'altitude $z_3 = \SI{35}{m}$.
+    \item On note $S_{tot}$ la surface totale du barrage qui est au contact de l'eau, et $P_{moy}$ la pression moyenne de l'eau, égale à celle qui règne à mi-profondeur de l'eau. On peut démontrer que la résultatte des forces pressantes exercées apr l'eau sur le barrage a pour norme $F=P_{moy}\times S_{tot}$. Calculer sa valeur.
+\end{enumerate}
+
+\end{document}
+
+\section{Centrale hydroélectrique}
+Actuellement en France, environ \SI{10}{\percent} est d'origine hydraulique.\\
+La centrale hydroélectrique de Grand'Maison est la plus puissante de France. Elle se situe dans les Alpes et date de 1987.\\
+De l'eau provenant de la retenue de Grand'Maison coule par gravité dans des conduites forcées jusqu'à la centrale de Grand'Maison où elle permet de faire tourner des turbines produisant ainsi de l'électricité.
+\begin{enumerate}
+    \item Calculer la pression de l'eau au niveau de la centrale Grand'Maison.
+    \item Des Vannes sont situées sur la conduite forcée juste avant la centrale. Calculer la norme de la force qui s'exercerait sur une vanne sachant qu'elle boucherait alors la conduite forcée dont le diamètre est de \SI{1,30}{\meter}.
+\end{enumerate}
+\begin{figure}[h!]
+    \centering
+   \includegraphics[width=.8\linewidth]{Ressources/Capture d’écran 2025-10-15 à 15.15.14.png}
+\end{figure}
+
+\section{Pneumatique}
+\begin{minipage}{.6\linewidth}
+    Une voiture de masse \SI{1300}{\kilo\gram} est chaussée de pneus dont la largeur de contact avec le sol est de $l = \SI{205}{mm}$.
+\begin{enumerate}
+    \item En considérant que la masse de la voiture est équitablement répartie sur les 4 roues, montrer que la valeur de la force exercée par chaque roue sur le sol est de \SI{3200}{\newton}.
+    \item Le pneu est gonflé à la pression préconisée par le constructeur. Calculer cette pression sachant que la longueur de l'empreinte du pneu au sol est $L = \SI{5,0}{cm}$.
+    \item Le pneu est maintenant sous-gonnflé, la pression de l'air dans le pneu est de \SI{2,5}{\bar}. Calculer alors la longueur de l'empreinte du pneu sur le sol.
+\end{enumerate}
+\end{minipage}\hspace{1em}
+\begin{minipage}{.38\linewidth}
+    \centering
+    \includegraphics[width=.8\linewidth]{Ressources/Capture d’écran 2025-10-15 à 15.14.45.png}
+\end{minipage}
+
+\hspace{2em}
+
+\textbf{Données : }
+\begin{itemize}
+    \item Pression atmosphérique : $P_{atm} = \SI{1013}{hPa} = \SI{1}{\bar}$
+\end{itemize}

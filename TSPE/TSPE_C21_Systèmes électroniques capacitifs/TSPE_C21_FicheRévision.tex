@@ -1,0 +1,130 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+\usepackage{lscape}
+
+\usepackage{helvet}%Police Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[top = 1cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{xcolor}
+\usepackage{amssymb} %double flèche de réaction
+\usepackage{xtab}%tableau sur plusieurs pages
+\usepackage{esvect}%grands vecteurs
+
+\usepackage[version=4]{mhchem} %equations chimiques
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usepackage{sectsty}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[cal=boondoxo]{mathalfa} 
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage[european, straightvoltages]{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usetikzlibrary{automata,positioning}
+\usepackage{multicol}
+\usepackage{eqnarray}
+\usepackage{tabularx,colortbl}%colorer fond cellules
+
+\sisetup{
+	detect-all,
+	output-decimal-marker={,},
+	group-minimum-digits = 3,
+	group-separator={~},
+	number-unit-separator={~},
+	inter-unit-product={~}
+} %setup pour SIunitx
+
+\usepackage{listings}%pour insérer le code python
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\graphicspath{ {/home/remy/Documents/Enseignement/2022/Tspe/C11/Ressources/} }
+
+\sectionfont{\fontsize{14}{8}\selectfont}
+\subsectionfont{\fontsize{14}{8}\selectfont}
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+
+\title{\vspace{-1cm}\large Chapitre 10 : Systèmes électriques capacitifs}
+\date{}
+
+\newpagestyle{mystyle}{%
+	\setfoot{}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+\renewpagestyle{plain}{%
+	\setfoot{}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+
+\pagestyle{mystyle}
+
+\newenvironment{itemize*}%
+{\begin{itemize}[label=$-$]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\newenvironment{itemize**}%
+{\begin{itemize}[label=]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\begin{document}
+	\maketitle
+	\vspace{-2.5cm}
+
+
+\section*{Ce qu'il faut connaitre :}
+\begin{multicols}{2}
+	\subsection*{Le vocabulaire}
+	\begin{itemize}
+		\item[$\square$] comportement capacitif
+		\item[$\square$] condensateur
+	\end{itemize}
+	\columnbreak
+	\subsection*{Les grandeurs et relations associées}
+	\begin{itemize}
+		\item[$\square$] intensité
+		\item[$\square$] tension
+		\item[$\square$] charge
+		\item[$\square$] capacité
+	\end{itemize}
+\end{multicols}
+	
+
+\renewcommand{\arraystretch}{2}
+
+\section*{Ce qu'il faut savoir faire :}
+\begin{table}[h!]
+	\begin{tabular}{|m{12cm}|c|c|}
+		\hline \rowcolor{gray!20}\centering \textbf{La compétence }& \textbf{Où la trouver}& \textbf{Je la maitrise ?}\\
+		\hline Relier l'intensité d'un courant électrique au débit de charges. & &\\
+		\hline Identifier des situations variées où il y a accumulation de charges de signes opposés sur des surfaces en regard. & & \\
+		\hline Citer des ordres de grandeur de valeurs de capacités usuelles. & &\\
+		\hline Identifier et tester le comportement capacitif d'un dipôle. &&\\
+		\hline Illustrer qualitativement, par exemple à l'aide d'un microcontrôleur, d'un multimètre ou d'une carte d'acquisition, l'effet de la géométrie d'un condensateur sur la valeur de sa capacité.&&\\
+		\hline Établir et résoudre l'équation différentielle vérifiée par la tension aux bornes d'un condensateur (charge et décharge).&&\\
+		\hline Expliquer le principe de fonctionnement de quelques capteurs capacitifs.&&\\
+		\hline Étudier la réponse d'un dispositif modélisé par un dipôle RC.&&\\
+		\hline Déterminer le temps caractéristique d'un dipôle RC à l'aide d'un microcontrôleur, d'une carte d'acquisition ou d'un oscilloscope.&&\\
+		\hline \underline{Capacité mathématique :} Résoudre une équation différentielle linéaire du premier ordre à coefficient constant avec un second membre constant.&&\\
+		\hline
+	\end{tabular}
+\end{table}
+\end{document}

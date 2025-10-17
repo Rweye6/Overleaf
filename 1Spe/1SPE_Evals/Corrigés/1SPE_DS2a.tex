@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+
+\usepackage{../../../Styles/Eval}
+
+\newcommand{\chnum}{Chapitre 12}
+\newcommand{\chtitle}{Etude d'un fluide au repos}
+\newcommand{\dtype}{DS2}
+
+\begin{document}
+\maketitle
+
+\section{Gonflage d'un ballon de basket}
+
+\begin{tabular}{|c|m{.7\linewidth}|c|c|}
+    \hline
+    Question & Reponse & Barème & Note\\
+    \hline
+    1 & $$V_{Ballon} = \dfrac{4}{3} \cdot \pi \cdot R^3$$
+    $$V_{Ballon} = \dfrac{4}{3} \cdot \pi \cdot \left(\dfrac{23}{2}\right)^3$$
+    $$V_{Ballon} =\SI{6,4E4}{\centi\meter\cubed}$$
+    & & \\
+    \hline
+    
+    2 & Loi de Boyle-Mariotte : $$P_1 \cdot V_1 = P_{Atm} \cdot V_{Atm}$$
+    $$ V_{Atm} = \dfrac{P_1 \cdot V_1}{P_{Atm}}$$
+    $$ V_{Atm} = \dfrac{1,55 \cdot \num{6,4E4}}{1} = \SI{9,9E4}{\centi\meter\cubed}$$
+    & & \\
+    \hline
+
+    3 & Nombre de coup de pompe nécessaire pour gonfler le ballon : $$ N = \dfrac{V_{Atm}}{V_{pompe}}$$
+    $$N = \dfrac{\num{9,9E4}}{105} = 945$$
+    Il faudra \num{945} coups de pompe pour gonfler ce ballon.
+    & & \\
+    \hline
+
+    4 & Quantité de matière de l'air dans le ballon : $$ n = \dfrac{V}{Vm}$$ 
+    Quantité de dioxygène dans le ballon : $$ 0,21 \times \dfrac{V}{Vm} $$
+    Nombre de molécule de dioxygène dans le ballon : $$ N = n \cdot N_A = N_A \times 0,21 \times \dfrac{V}{Vm}$$
+    $$N = \num{6,02E11} \times 0,21 \times \dfrac{\num{9,9E4}}{24\times 1000} =\SI{5,2E11}{molecules} $$
+    Le ballon contient \num{5,2E11} molécules de dioxygène.
+    & & \\
+    \hline
+\end{tabular}
+
+
+\section{Barrage hydroélectrique}
+
+\begin{tabular}{|c|m{.7\linewidth}|c|c|}
+    \hline
+    Question & Reponse & Barème & Note\\
+    \hline
+    1 & \centering
+    \begin{tikzpicture}
+        \filldraw[gray](0,0)--(.5,0)--(.5,8)--(0,8)--cycle;
+        \draw[-latex,thick] (-.5,0) to (-.5,9);
+        \draw[dashed] (-.5,7)--(4,7);
+        \draw[dashed] (-.5,3)--(4,3);
+        \filldraw[black](0,2.86)--(.5,2.86)--(.5,3.2)--(0,3.2)--cycle;
+        %\draw[pattern={Lines[angle=45,distance={3pt/sqrt(2)}]},pattern color=blue] (0,1) rectangle +(1,1);
+        \draw[pattern=north east lines] (0,-1) rectangle +(4,1);
+    \end{tikzpicture}
+    & & \\
+    \hline
+
+    2 & On peut écrire : $$ $$
+    & & \\
+    \hline
+    
+\end{tabular}
+
+Un barrage, supposé rectangulaire, permet de réaliser une retenue d’eau, afin de produire de l’électricité. Il a une hauteur $H =\SI{80}{m}$ et une largeur $L=\SI{120}{m}$. En prenant la référence des altitudes ($z=0$) au fond de l’eau, l’altitude de la surface de la retenue d’eau est $z_1=\SI{70}{m}$ . Une vanne a la forme d’un disque de surface $S =\SI{1,2}{\meter\squared}$ , elle se trouve à $z_2=\SI{5,0}{m}$ du fond.
+\begin{enumerate}
+    \item Représenter la situation vue de coté, en faisant figurer le barrage, le niveau de l'eau et la position de la vanne ainsi que l'axe Oz (échelle : 1 cm = 10 m)
+    \item Calculer la pression $P_2$ de l'eau au niveau de la vanne.
+    \item En déduire la norme de la force pressantes $F_{eau}$ exercée par l'eau sur la vanne.
+    \item Calculer la norme $F_{air}$ de la force pressante de l'air de l'autre coté de la vanne. Calculer le rapport : $\dfrac{F_{air}}{F_{eau}}$ et commenter le résultat.
+    \item Calculer la pression $P_3$ à l'altitude $z_3 = \SI{35}{m}$.
+    \item On note $S_{tot}$ la surface totale du barrage qui est au contact de l'eau, et $P_{moy}$ la pression moyenne de l'eau, égale à celle qui règne à mi-profondeur de l'eau. On peut démontrer que la résultatte des forces pressantes exercées apr l'eau sur le barrage a pour norme $F=P_{moy}\times S_{tot}$. Calculer sa valeur.
+\end{enumerate}
+
+\end{document}
+

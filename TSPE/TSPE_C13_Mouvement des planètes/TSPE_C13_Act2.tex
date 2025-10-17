@@ -1,0 +1,74 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 13}
+\newcommand{\chtitle}{La masse du Soleil}
+\newcommand{\dtype}{TP2}
+
+\begin{document}
+\maketitle
+
+\textbf{Objectif : Déterminer la masse du Soleil à partir d'observations}
+\begin{figure}[h!]
+	\begin{minipage}{.4\linewidth}
+		\caption{Éphémérides de la Terre}
+		\begin{tabular}{|>{\centering}m{.25\linewidth}|>{\centering}m{.25\linewidth}|>{\centering\arraybackslash}m{.25\linewidth}|}
+			\hline Date $t$ (j) depuis le 01/01/2020 & Abscisse $x$ (u.a.) & Ordonnée $y$ (u.a.)\\
+			\hline 0 & 0,0175 & 0,9998\\
+			\hline 2 & -0,0170 & 0,9999\\
+			\hline 4 & -0,0513 & 0,9987\\
+			\hline 6 & -0,0857 & 0,9963\\
+			\hline 8 & -0,1199 & 0,9928\\
+			\hline 10 & -0,1540 & 0,9881\\
+			\hline 12 & -0,1879 & 0,9822\\
+			\hline
+			\end{tabular}\\
+			\textbf{Donnée :} 1 u.a. = \SI{1,5E8}{\kilo\meter}
+	\end{minipage}\hspace{.02\linewidth}
+	\begin{minipage}{.58\linewidth}
+			 \caption{Code Python}
+			\begin{lstlisting}[language = Python]
+			import numpy as np
+			import matplotlib.pyplot as plt
+			t = []
+			x = []
+			y = []
+			plt.xlabel('Coordonnees x')
+			plt.ylabel('Coordonnees y')
+			plt.title('Trajectoire de la Terre')
+			plt.scatter(x, y, marker = '+')
+			i = 1
+			while i < len(t)-1 :
+			  alpha = np.arctan2(y[i], x[i]) - np.arctan2(y[i-1], x[i-1])
+			  r0 = np.sqrt(x[i]**2 + y[i]**2)
+			  r1 = np.sqrt(x[i-1]**2 + y[i-1]**2)
+			  A = r0*r1*np.sin(alpha)/2
+			  plt.fill([x[i], x[i-1], 0], [y[i], y[i-1], 0], label='A = ' + "%.2e"%A + ' u.a.**2')
+			  i += 2
+			plt.legend(loc='center right')
+			plt.show()
+			\end{lstlisting}
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[h!]
+	\caption{ Caractéristiques planétaires}
+	\begin{tabular}{|>{\centering}m{2.5cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+		\hline Planète & Mercure & Vénus & Terre & Mars & Jupiter & Saturne\\
+		\hline Demi-grand axe $a$ (u.a.) & \num{0,39} & \num{0,72} & \num{1,00} & \num{1,52} & \num{5,20} & \num{9,52}\\
+		\hline Période de révolution $T$ (j) & \num{87,9} & \num{224,7} & \num{365,25} & \num{687} & \num{4331} & \num{1075}\\
+		\hline
+		\end{tabular}
+\end{figure}
+
+\textbf{Questions :}
+\begin{enumerate}
+	\item Préciser que est le référentiel choisi pour étudier le mouvement des planètes. En utilisant les éphémérides, on peut vérifier la 2$^\text{e}$ loi de Kepler à l'aide d'un programme Python qui calcule la surface balayée par une planète pendant des durées identiques.
+	\item Dans l'extrait du code Python proposé, expliquer comment se réalise le calcul d'une surface entre deux positions.
+	\item Tracer dans un tableau ou avec le langage Python la courbe $T^2=f(a^3)$.
+	\item Justifier que le tracé $T^2=f(a^3)$ est conforme à la relation suivante :
+	$$\dfrac{T^2}{a^3}=\dfrac{4 \pi ^2}{G \cdot M_S}$$
+	\item En déduire l'expression de la masse du Soleil $M_S$
+	\item Proposer alors un protocole pour déterminer la masse du Soleil $M_S$ à partir de la courbe $T^2=f(a^3)$. Le faire valider par le professeur avant de le réaliser.
+\end{enumerate}
+\end{document}

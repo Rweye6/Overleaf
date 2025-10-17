@@ -1,0 +1,20 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{Eval}
+
+
+\begin{document}
+    \schemestart
+ 	\chemfig{H-@{atoh}\charge{60[anchor=180+\chargeangle]=$-$,90=\|,270=\|}{O}}
+        +
+        \chemfig{H_3C-[1]@{dnl}\charge{45[anchor=180+\chargeangle]=$\delta^+$}{C}(=[2]\charge{-45[anchor=180+\chargeangle]=$\delta^-$,45=\|,135=\|}{O})-[7]\charge{-45[anchor=180+\chargeangle]=$\delta^-$}{O}-[1]CH_2-[7]CH_3}
+ 	\arrow{->}
+ 	\chemfig{H-C(-[2]H)(-[6]H)-\charge{45[anchor=180+\chargeangle]=$+$,90[anchor=180+\chargeangle]=\|}{O}(-[6]H)-H}
+    \schemestop
+  	\chemmove{
+ 		\draw[shorten <=2pt, shorten >=7pt]
+ 	(atoh).. controls +(north east:1cm) and +(north west:1cm).. (dnl);}
+
+\end{document}
+@{dnl}\charge{-120[anchor=180+\chargeangle]=$\delta^-$,35=\|,125=\|}{O}-[:-35]\charge{-60[anchor=180+\chargeangle]=$\delta^+$}{H}} 
+
+@{atoh}\charge{60[anchor=180+\chargeangle]=$+$}{H}

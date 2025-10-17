@@ -1,0 +1,145 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 17}
+\newcommand{\chtitle}{Optimiser un rendement}
+\newcommand{\dtype}{TP}
+  
+  
+  
+\begin{document}
+	\maketitle
+	
+Les esters sont très répandus dans la nature. Ils sont souvent responsables des odeurs et des arômes des plantes, des fruits ou des fleurs. Or, la réaction d'estérification est le siège d'un équilibre dynamique entre un acide carboxylique et un alcool d'une part et un ester et une molécule d'eau d'autre part.
+
+\begin{figure}[h!]
+    \begin{minipage}{.5\linewidth}
+    \caption*{\textbf{Document 1 : Réaction d'estérification}}
+    Historiquement, ce sont les chimistes Marcellin Berthelot et Léon Péan de Saint-Gilles qui se sont intéressés aux réactions d'estérification. Ils sont à l'origine des notions d'équilibre chimique et de réaction limitée. Ils se sont intéressés au mélange d'acide éthanoïque et d'éthanol permettant de former l'éthanoate d'éthyle.\\
+    Les esters sont formés par l'union des acides et des alcools. ils peuvent produire en se décomposant les acides et les alcools. [...] En général, les expériences consistent soit à faire agir sur un alcool pur un acide pur, les proportions de l'alcool et de l'acide 'tant déterminés par des pesées précises, soit à faire agir sur un ester de l'eau. Dans tous les cas de ce genre, le produit final se compose de quatre corps, à savoir : l'ester, l'alcool libre, l'acide libre et l'eau. Mais ces quatre corps sont dans des proportions telles qu'il suffit de déterminer exactement la masse d'un seul d'entre eus, à un moment quelconque des expériences, pour en déduire les autres, pourvu que l'on connaisse les masses des  matières primitivement mélangées.\\
+    \flushright{\emph{D'après MM.Berthelot et L. Péan de Saint-Gilles, Recherche sur les affinités de la formation et de la décomposition des esters, 1862.}}
+    \label{fig:doc1}
+    \end{minipage}
+    \begin{minipage}{.5\linewidth}
+    \caption*{\textbf{Document 2 : Matériel nécessaire}}
+    \begin{itemize}
+        \item Pipette jaugée et graduée
+        \item Grands béchers
+        \item Erlenmeyer et réfrigérant à air
+        \item Bain thermostaté à \SI{50}{\celsius} et thermomètre
+        \item Burette graduée
+        \item Acide acétique glacial (acide acétique pur)
+        \item Éthanol absolu
+        \item Solution d'hydroxyde de sodium de concentration $c=\SI{5,00}{\mole\per\liter}$
+        \item Bleu de bromothymol (BBT)
+        \item Solution d'acide sulfurique concentrée
+    \end{itemize}
+    \label{fig:doc2}
+    \end{minipage}
+\end{figure}
+\begin{figure}[h!]
+    \begin{minipage}{.5\linewidth}
+    \caption*{\textbf{Document 3 : Conditions initiales}}
+    \textbf{Etat initial du mélange 1 : mélange équimolaire}
+    \begin{itemize}
+        \item $n_1 = \SI{0,20}{\mole}$ d'acide éthanoïque \ce{C2H4O2}
+        \item $n_2 = \SI{0,20}{\mole}$ d'éthanol \ce{C2H6O}
+        \item \SI{1,0}{mL} d'acide sulfurique
+        \item Bain-marie à \SI{50}{\celsius}
+    \end{itemize}
+    \textbf{Etat initial du mélange 2 : éthanol en excès}
+    \begin{itemize}
+        \item $n_1 = \SI{0,174}{\mole}$ d'acide éthanoïque \ce{C2H4O2}
+        \item $n_2 = \SI{0,512}{\mole}$ d'éthanol \ce{C2H6O}
+        \item \SI{1,0}{mL} d'acide sulfurique
+        \item Bain-marie à \SI{50}{\celsius}
+    \end{itemize}
+    \label{fig:doc3}
+    \end{minipage}
+    \begin{minipage}{.5\linewidth}
+    \caption*{\textbf{Données}}
+    \begin{itemize}
+        \item \textbf{Masses molaires atomiques : }\\ $M(C) = \SI{12,0}{\gram\per\mole}$,\\ $M(H) = \SI{1,0}{\gram\per\mole}$,\\ $M(O) = \SI{16,0}{\gram\per\mole}$
+        \item \textbf{Masses volumiques :}\\$\rho(\text{éthanol})=\SI{0,789}{\gram\per\milli\liter}$,\\ $\rho(\text{acide acétique})=\SI{1,04}{\gram\per\milli\liter}$,\\ $\rho(\text{ester})=\SI{0,902}{\gram\per\milli\liter}$
+    \end{itemize}
+    \label{fig:doc4}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[h!]
+	
+    \begin{minipage}{.5\linewidth}
+    \caption*{\textbf{Document 4 : Programme Python}}
+    \begin{lstlisting}[language=Python]
+    	import numpy as np
+	import matplotlib.pyplot as plt
+	# Nombre de valeurs simulees
+	n = 10000
+	# Parametres
+	n_1=0.174
+	c = 5.00
+	V_E1mes = 10.6e-3
+	V_E2mes = 7.0e-3
+	# Incertitudes
+	V_E1 = V_E1mes + 0.05*np.random.randn(n)/1000
+	V_E2 = V_E2mes + 0.05*np.random.randn(n)/1000
+	# Calcul de la quantite d'ester
+	n_ester = n_1-c*(V_E1 - V_E2)
+	# Trace de l'histogramme associe
+	plt.hist(n_ester, 100, label = "Simulation de valeurs de quantite d'ester")
+	plt.xlabel("Quantite d'ester forme")
+	plt.ylabel("Nombre de mesures")
+	plt.title("Histogramme des mesures simulees")
+	plt.axvline(x=np.mean(n_ester)-np.sqrt(2)*c*0.05/1000, color = "red", label = "Incertitude de confiance")
+	plt.axvline(x=np.mean(n_ester)+np.sqrt(2)*c*0.05/1000, color = "red", label = "Incertitude de confiance")
+	plt.legend()
+	plt.show()
+    \end{lstlisting}
+    %\label{doc4}
+    \end{minipage}
+    \begin{minipage}{.5\linewidth}
+    \caption*{\textbf{Document 5 : Protocole}}
+    \textbf{Réaction d'estérification :}
+    \begin{itemize}
+        \item Verser le volume $V_1$ d'acide éthanoïque pur, puis le volume d'acide sulfurique, tous deux à l'aide d'une pipette jaugée adaptée
+        \item Ajouter le volume $V_2$ d'éthanol à l'aide d'une éprouvette, puis fixer sur l'erlenmeyer un tube réfrigérant et placer l'ensemble au bain-marie à \SI{50}{\celsius} pendant 45 minutes.
+        \item Récupérer le mélange final et y ajouter quelques gouttes de bleu de bromothymol. Titrer cette solution avec la solution aqueuse d'hydroxyde de sodium
+        \item Repérer la valeur du volume à l'équivalence $V_{E_1}$.
+    \end{itemize}
+    \textbf{Titrage de l'acide sulfurique concentré :}
+    \begin{itemize}
+        \item Verser \SI{1,0}{mL} d'acide sulfurique dans un bêcher et rajouter environ \SI{50}{mL} d'eau distillée
+        \item Y ajouter quelques gouttes de BBT
+        \item Titrer cette solution avec la solution aqueuse d'hydroxyde de sodium, puis repérer la valeur du volume équivalent $V_{E_2}$
+    \end{itemize}
+    \begin{center}
+        \includegraphics[width=.6\linewidth]{Ressources/TSPE_C1X_AE1_Fig1.png}
+    \end{center}
+    \label{fig:doc5}
+    \end{minipage}    
+    
+    \begin{minipage}{.5\linewidth}
+    \caption*{\textbf{Document 6 : Incertitude}}
+    Si la burette est graduée tous les mL, elle délivre \SI{25}{mL} avec une tolérance de $\pm \SI{0,05}{mL}$ à \SI{20}{\celsius}. On considère par la suite que seule la mesure des volumes à l'équivalence $V_{E_1}$ et $V_{E_2}$ est source d'incertitude : $$u(n_e)=\sqrt{2}c\cdot u(V_E)$$
+    \label{fig:enter-label}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[h!]
+\noindent \colorbox{blue!15}{\begin{minipage}{.98\linewidth}
+	\begin{center}\textbf{\textcolor{Blue}{Questions :}}\end{center}
+    \begin{enumerate}
+        \item Écrire la réaction de la synthèse, puis celle des deux titrages.
+        \item Déterminer les volumes $V_1$ et $V_2$ dans le cas du mélange 2. 
+        \item Préciser l'intérêt de ces deux titrages et le rôle joué par l'acide sulfurique.
+        \item Dans le cas du mélange 1, le rendement de la réaction d'estérification est de \SI{65}{\percent}. Réaliser le protocole proposé dans le cas du mélange 2 et déterminer le rendement.
+        \item Évaluer l'incertitude sur la quantité d'ester synthétisé.
+        \item Écrire avec un nombre adapté de chiffres significatifs le résultat de la quantité d'ester obtenu.
+        \item Comparer ce résultat à $n_{e~ref}=\SI{0,1565}{\mole}$ en utilisant le quotient : $$\displaystyle\left\lvert\dfrac{n_e-n_{e~ref}}{u(n_e)}\right\vert$$
+        \item Simuler, à l'aide du code Python, un processus aléatoire illustrant la détermination de la valeur de la quantité d'ester.
+        \item Proposer une modification des conditions opératoires pour optimiser le rendement.
+    \end{enumerate}
+\end{minipage}}
+\end{figure}
+\end{document}
