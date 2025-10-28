@@ -1,9 +1,9 @@
-PWD /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement
+PWD /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.tex
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.log
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.tex
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -264,7 +264,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemedefaul
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamericonbook.pdf
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.pdf
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamericonbook.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamericonbook.20.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamericonbook.20.pdf
@@ -352,10 +352,10 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -364,13 +364,13 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
@@ -392,25 +392,25 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-theorem
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.nav
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.nav
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.nav
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.nav
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.nav
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.nav
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/imagefond.jpg
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -446,15 +446,23 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathker
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/Diapo_Fig2.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -464,57 +472,70 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam1
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi12.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/reveil.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/maps2.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/kinetic_blur.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/kinetic_blur.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/kinetic_blur.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/kinetic_blur.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/kinetic_blur.jpg
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi12.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect5.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.nav
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.toc
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.snm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.nav
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.toc
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.snm
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_Mouvement_Diapo.out
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
@@ -523,6 +544,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/esvect/vect10.pfb

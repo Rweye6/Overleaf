@@ -33,6 +33,9 @@
 \title{\textbf{Chapitre 11 : Décrire un mouvement}}
 \author{}
 \date{}
+
+\setbeamercolor{background canvas}{bg=violet!5!white}
+
 % Title page frame
 \begin{frame}
 \titlepage
@@ -79,37 +82,37 @@
 		\end{itemize}
 	\end{minipage}
 	\begin{minipage}{.48\linewidth}
-		\begin{tikzpicture}[scale=.75, transform shape]
-		\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=3cm]{Ressources/Diapo_Fig2.png}};
+		\onslide<1->\begin{tikzpicture}[scale=.75, transform shape]
+		\onslide<1-> \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=3cm]{Ressources/Diapo_Fig2.png}};
 		%\draw (0,0) grid(3,6);
 		%\node[below] (m) at (2.5,1.5) {$M$};
-		\node (M) at (.6,.6) {+};
-		\node (M) at (.76,1.6) {+};
-		\node (M) at (.9,2.45) {+};
-		\node (M) at (1.1,3.1) {+};
-		\node (M) at (1.2,3.8) {+};
-		\node (M) at (1.3,4.4) {+};
-		\node (M) at (1.44,4.85) {+};
-		\node (M) at (1.5,5.1) {+};
-		\node (M) at (1.9,5.6) {+};
-		\node (M) at (2.3,5.45) {+};
-		\node (M) at (2.7,5.3) {+};
-		\end{tikzpicture}
-		\begin{tikzpicture}[scale=.75, transform shape]
+		\onslide<2-> \node (M) at (.6,.6) {+};
+		\onslide<2-> \node (M) at (.76,1.6) {+};
+		\onslide<2-> \node (M) at (.9,2.45) {+};
+		\onslide<2-> \node (M) at (1.1,3.1) {+};
+		\onslide<2-> \node (M) at (1.2,3.8) {+};
+		\onslide<2-> \node (M) at (1.3,4.4) {+};
+		\onslide<2-> \node (M) at (1.44,4.85) {+};
+		\onslide<2-> \node (M) at (1.5,5.1) {+};
+		\onslide<2-> \node (M) at (1.9,5.6) {+};
+		\onslide<2-> \node (M) at (2.3,5.45) {+};
+		\onslide<2-> \node (M) at (2.7,5.3) {+};
+		\onslide<1->\end{tikzpicture}
+		\onslide<3->\begin{tikzpicture}[scale=.75, transform shape]
 		%\draw (0,0) grid(3,6);
 		%\node[below] (m) at (2.5,1.5) {$M$};
-		\node (M) at (.6,.6) {+};
-		\node (M) at (.76,1.6) {+};
-		\node (M) at (.9,2.45) {+};
-		\node (M) at (1.1,3.1) {+};
-		\node (M) at (1.2,3.8) {+};
-		\node (M) at (1.3,4.4) {+};
-		\node (M) at (1.44,4.85) {+};
-		\node (M) at (1.5,5.1) {+};
-		\node (M) at (1.9,5.6) {+};
-		\node (M) at (2.3,5.45) {+};
-		\node (M) at (2.7,5.3) {+};
-		\end{tikzpicture}
+		\onslide<3-> \node (M) at (.6,.6) {+};
+		\onslide<3-> \node (M) at (.76,1.6) {+};
+		\onslide<3-> \node (M) at (.9,2.45) {+};
+		\onslide<3-> \node (M) at (1.1,3.1) {+};
+		\onslide<3-> \node (M) at (1.2,3.8) {+};
+		\onslide<3-> \node (M) at (1.3,4.4) {+};
+		\onslide<3-> \node (M) at (1.44,4.85) {+};
+		\onslide<3-> \node (M) at (1.5,5.1) {+};
+		\onslide<3-> \node (M) at (1.9,5.6) {+};
+		\onslide<3-> \node (M) at (2.3,5.45) {+};
+		\onslide<3-> \node (M) at (2.7,5.3) {+};
+		\onslide<3-> \end{tikzpicture}
 	\end{minipage}
 \end{frame}
 
@@ -150,7 +153,7 @@
 
 \begin{frame}
 	\frametitle{Exemples de référentiels}
-	\noindent \begin{tabular}{|>{\centering}m{.22\textwidth}|m{.33\textwidth}|m{.33\textwidth}|}\hline
+	\noindent \begin{tabular}{|>{\centering}m{.24\textwidth}|m{.33\textwidth}|m{.33\textwidth}|}\hline
 	\textbf{Référentiel} & \centering \textbf{Références} & \centering \arraybackslash \textbf{Utilisation}\\ \hline
 	
 	\textbf{Terrestre} & le sol ou un objet fixe par rapport au sol & pour étudier les mouvements à la surface de la Terre\\ \hline
@@ -217,40 +220,40 @@
 \begin{frame}
         \subsection{Vecteur vitesse}
 	\frametitle{Vecteur vitesse}
-	\begin{minipage}{.25\linewidth}
-	Vitesse instantanée :\\
-	\begin{itemize}
-		\item Besoin de beaucoup de points très proches
-		\item Complexe à déterminer 
-	\end{itemize}
-	\end{minipage}
-	\begin{minipage}{.6\linewidth}
+	\begin{minipage}{\linewidth}
 	\centering
-		\begin{tikzpicture}[scale=.75,transform shape]
+		\begin{tikzpicture}[scale=1,transform shape, block/.style={
+draw,
+fill=white,
+rectangle, 
+text width=15em,
+align=center,
+font=\small}]
 		\tikzstyle{ville}=[rectangle, aspect=2.5,thick,draw=green!30!black,fill=green!30,text=black]
 		
 		\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width = 10cm]{Ressources/maps2.png}};
 		\node[ville, above right] (Paris) at (1.5,6){$t_{Paris} = \text{13h01}$};
 		\node[ville, above left] (Montbéliard) at (10,2){$t_{M^tBeliard} = \text{8h00}$};
 		%\draw (0,0) grid(10,6);
+		\onslide<2-> \node[block](Vit) at (3,2){\textbf{Vitesse instantanée :} \begin{itemize}
+		\item Besoin de beaucoup de points très proches
+		\item Complexe à déterminer 
+	\end{itemize}};
 		\end{tikzpicture}
 	\end{minipage}
 \end{frame}
 
 \begin{frame}
 	%\frametitle{Vecteur vitesse}
-	\begin{minipage}{.25\linewidth}
-	Vitesse moyenne :\\
-	
-	Valeur : $\dfrac{d_{M^tBeliard-Paris}}{t_{Paris} - t_{M^tBeliard}}$\\
-	
-	Orientation : comme le vecteur déplacement\\
-	
-	Comment et où le tracer ?
-	\end{minipage}
-	\begin{minipage}{.6\linewidth}
+	\begin{minipage}{\linewidth}
 	\centering
-		\begin{tikzpicture}[scale=.7,transform shape]
+		\begin{tikzpicture}[scale=1,transform shape, block/.style={
+draw,
+fill=white,
+rectangle, 
+text width=20em,
+align=center,
+font=\small}]
 		\tikzstyle{ville}=[rectangle, aspect=2.5,thick,draw=green!30!black,fill=green!30,text=black]
 		
 		\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width = 10cm]{Ressources/maps2.png}};
@@ -259,6 +262,13 @@
 		%\draw (0,0) grid(10,6);
 		\draw[-Stealth,line width = 2pt,blue!80!black] (9.8, 1.5) to (1,5.5);
 		\node[below,blue!80!black, rectangle,fill=white] (d) at (4,3.5) { $\mathbf{\overrightarrow{d_{M^tBeliard-Paris}}}$};
+		\onslide<2-> \node[block](Vit) at (5,2){\textbf{Vitesse moyenne :}\\
+	
+	Valeur : $\dfrac{d_{M^tBeliard-Paris}}{t_{Paris} - t_{M^tBeliard}}$\\
+	
+	Orientation : comme le vecteur déplacement\\
+	
+	\textcolor{red}{Comment et où le tracer ?}};
 		\end{tikzpicture}
 	\end{minipage}
 \end{frame}
@@ -302,8 +312,17 @@
 \begin{frame}
         \section{Décrire un mouvement}
 	\frametitle{Variation du vecteur vitesse}
+	\begin{minipage}{\linewidth}
+		\centering
+		\includegraphics[width = \linewidth]{Ressources/kinetic_blur.jpg}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}
+        \section{Décrire un mouvement}
+	\frametitle{Variation du vecteur vitesse}
 	\begin{minipage}{.5\textwidth}
-		Variation de la norme du vecteur vitesse :\\
+		\textbf{Variation de la norme du vecteur vitesse :}\\
 		\begin{itemize}
 			\item Si la norme du vecteur ne change pas : le mouvement est \underline{uniforme}.
 		\end{itemize}
@@ -324,7 +343,7 @@
 \begin{frame}
 	%\frametitle{Variation du vecteur vitesse}
 	\begin{minipage}{.5\textwidth}
-		Variation de la norme du vecteur vitesse :\\
+		\textbf{Variation de la norme du vecteur vitesse :}\\
 		\begin{itemize}
 			\item Si la norme du vecteur vitesse augmente, le mouvement est \underline{accéléré}.
 		\end{itemize}
@@ -345,7 +364,7 @@
 \begin{frame}
 	%\frametitle{Variation du vecteur vitesse}
 	\begin{minipage}{.5\textwidth}
-		Variation de la norme du vecteur vitesse :\\
+		\textbf{Variation de la norme du vecteur vitesse :}\\
 		\begin{itemize}
 			\item Si la norme du vecteur vitesse diminue, le mouvement est \underline{ralenti}.
 		\end{itemize}
@@ -366,7 +385,7 @@
 \begin{frame}
 	%\frametitle{Variation du vecteur vitesse}
 	\begin{minipage}{.4\textwidth}
-		Variation de la direction et du sens :\\
+		\textbf{Variation de la direction et du sens :}\\
 		\begin{itemize}
 			\item Si la direction ou le sens du vecteur ne change pas : le mouvement est \underline{rectiligne}
 			\item Si ils changent, le mouvement est \underline{circulaire} ou \underline{curviligne}.
