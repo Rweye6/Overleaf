@@ -1,41 +1,15 @@
 \documentclass{beamer}
-\usetheme{Goettingen}
+\usepackage{../../Styles/Diapo}
 
-\usepackage[utf8]{inputenc}
-\usepackage{tikz}
-%\usetikzlibrary{patterns}
-\usetikzlibrary{shapes.geometric}
-\usetikzlibrary{calc}
-%\usetikzlibrary{automata,positioning}
-\usepackage{siunitx}
-\usepackage[e]{esvect}
 
-\usepackage{array}
-\usepackage{chemfig}
-\usepackage{amsmath}
-\usepackage{amssymb}
-%\usepackage[cal=boondoxo]{mathalfa} 
-%\usepackage{enumitem}
-%\usepackage{lastpage}
-\usepackage{tcolorbox}
-%\usepackage{siunitx}
-\usepackage{diagbox}
 
-\title{Chapitre 6 : Le mouvement}
-\author{ROSALIE}
-\date{2023 - 2024}
-
-\renewcommand{\arraystretch}{1.5}
-\setbeamersize{text margin left=3mm,text margin right=3mm}
+\newcommand{\chnum}{Chapitre 11}
+\newcommand{\chtitle}{Décrire un mouvement}
+\newcommand{\dtype}{Cours}
+\newcommand{\bgcol}{blue!2!white}
 
 
 \begin{document}
-\title{\textbf{Chapitre 11 : Décrire un mouvement}}
-\author{}
-\date{}
-
-\setbeamercolor{background canvas}{bg=violet!5!white}
-
 % Title page frame
 \begin{frame}
 \titlepage
@@ -43,10 +17,11 @@
     
 \end{frame}
 
+\section{Description d'un système en physique}
+%\setcounter{\section}
+
 \begin{frame}
-        \section{Description d'un système en physique}
 	\frametitle{Description d'un système en physique}
-	
         \begin{minipage}{.4\linewidth}
 		\begin{tikzpicture}
 		\node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\textwidth]{Ressources/Diapo_Fig1.png}};
@@ -70,10 +45,8 @@
 \end{frame}
 
 \begin{frame}
-	%\frametitle{Description d'un système en physique}
+	\frametitle{Inconvénients de la modélisation par un point}
 	\begin{minipage}{.5\linewidth}
-	Inconvénients de la modélisation par un point\\
-	
 	Perte d'information :
 		\begin{itemize}
 			\item seulement des positions du barycentre
@@ -117,9 +90,8 @@
 \end{frame}
 
 \begin{frame}
-	%\frametitle{Description d'un système en physique}
+	\frametitle{Observer un lancé entre deux personnes}
 	\begin{Large}
-	Observer un lancé entre deux personnes.\\
 	Pour décrire le mouvement d'un système, que manque t'il ?\end{Large}
 	
 	\onslide<2>\begin{itemize}
@@ -128,8 +100,8 @@
 	\end{itemize}
 \end{frame}
 
+\section{Le référentiel}
 \begin{frame}
-        \section{Le référentiel}
 	\frametitle{Le référentiel}
 	\large
 	C'est l'objet auquel on se réfère pour décrire un mouvement.\\
@@ -162,8 +134,8 @@
 	\end{tabular}
 \end{frame}
 
-\begin{frame}
-        \section{Trajectoire et vitesse}
+\section{Trajectoire et vitesse}
+\begin{frame}        
 	\frametitle{Trajectoire et vitesse}
 	\large
 	\textbf{Trajectoire :}\\	
@@ -181,8 +153,8 @@
 	\end{tikzpicture}
 \end{frame}
 
+\subsection{Vecteur déplacement}
 \begin{frame}
-        \subsection{Vecteur déplacement}
 	\frametitle{Vecteur déplacement}
 	\begin{center}
 		\begin{tikzpicture}
@@ -192,7 +164,7 @@
 \end{frame}
 
 \begin{frame}
-	%\frametitle{Vecteur déplacement}
+	\frametitle{Vecteur déplacement}
 	\begin{minipage}{.5\textwidth}
 		\large C'est le \underline{vecteur de translation} reliant une position $M$ observée à un instant $t$, à une position $M'$ observée à un instant $t'$.	\\
 		
@@ -217,8 +189,8 @@
 	\end{minipage}
 \end{frame}
 
+ \subsection{Vecteur vitesse}
 \begin{frame}
-        \subsection{Vecteur vitesse}
 	\frametitle{Vecteur vitesse}
 	\begin{minipage}{\linewidth}
 	\centering
@@ -274,7 +246,7 @@ font=\small}]
 \end{frame}
 
 \begin{frame}
-	%\frametitle{Vecteur vitesse}
+	\frametitle{Méthode de tracé}
 	\begin{minipage}{.5\textwidth}
 		Il faut disposer d'au moins trois positions du système. On aura le \textbf{vecteur vitesse moyenne} d'un système au point $M_2$, situé entre les dates $t_1$ et $t_3$ qui aura pour expression : $$\vv{v_2} = \dfrac{\vv{M_2M_3}}{t_3-t_1}$$
 		Ce vecteur a les caractéristiques suivantes :
@@ -309,20 +281,10 @@ font=\small}]
 	\end{minipage}
 \end{frame}
 
+\section{Décrire un mouvement}
 \begin{frame}
-        \section{Décrire un mouvement}
-	\frametitle{Variation du vecteur vitesse}
-	\begin{minipage}{\linewidth}
-		\centering
-		\includegraphics[width = \linewidth]{Ressources/kinetic_blur.jpg}
-	\end{minipage}
-\end{frame}
-
-\begin{frame}
-        \section{Décrire un mouvement}
-	\frametitle{Variation du vecteur vitesse}
+	\frametitle{Variation de la norme du vecteur vitesse}
 	\begin{minipage}{.5\textwidth}
-		\textbf{Variation de la norme du vecteur vitesse :}\\
 		\begin{itemize}
 			\item Si la norme du vecteur ne change pas : le mouvement est \underline{uniforme}.
 		\end{itemize}
@@ -341,9 +303,8 @@ font=\small}]
 \end{frame}
 
 \begin{frame}
-	%\frametitle{Variation du vecteur vitesse}
+	\frametitle{Variation de la norme du vecteur vitesse}
 	\begin{minipage}{.5\textwidth}
-		\textbf{Variation de la norme du vecteur vitesse :}\\
 		\begin{itemize}
 			\item Si la norme du vecteur vitesse augmente, le mouvement est \underline{accéléré}.
 		\end{itemize}
@@ -362,9 +323,8 @@ font=\small}]
 \end{frame}
 
 \begin{frame}
-	%\frametitle{Variation du vecteur vitesse}
+	\frametitle{Variation de la norme du vecteur vitesse}
 	\begin{minipage}{.5\textwidth}
-		\textbf{Variation de la norme du vecteur vitesse :}\\
 		\begin{itemize}
 			\item Si la norme du vecteur vitesse diminue, le mouvement est \underline{ralenti}.
 		\end{itemize}
@@ -383,9 +343,8 @@ font=\small}]
 \end{frame}
 
 \begin{frame}
-	%\frametitle{Variation du vecteur vitesse}
+	\frametitle{Variation de la direction et du sens}
 	\begin{minipage}{.4\textwidth}
-		\textbf{Variation de la direction et du sens :}\\
 		\begin{itemize}
 			\item Si la direction ou le sens du vecteur ne change pas : le mouvement est \underline{rectiligne}
 			\item Si ils changent, le mouvement est \underline{circulaire} ou \underline{curviligne}.
@@ -425,7 +384,7 @@ font=\small}]
 \end{frame}
 
 \begin{frame}
-	\textbf{Description d'un mouvement :}
+	\frametitle{Description d'un mouvement}
 	\begin{small}
 		\begin{tabular}{|>{\centering}m{.3\linewidth}|>{\centering}m{.18\linewidth}|>{\centering}m{.18\linewidth}|>{\centering\arraybackslash}m{.18\linewidth}|}
 			\hline

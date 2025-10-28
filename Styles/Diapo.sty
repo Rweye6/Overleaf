@@ -1,0 +1,89 @@
+% Declare that this style file requires at least LaTeX version 2e.
+\NeedsTeXFormat{LaTeX2e}
+
+% Provide the name of your page, the date it was last updated, and a comment about what it's used for
+\ProvidesPackage{mystyle}[2010/07/28 BBischof's custom LaTeX style]
+
+% Now paste your code from the preamble here
+
+\usetheme{Goettingen}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+%\usetikzlibrary{patterns}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+%\usetikzlibrary{automata,positioning}
+\usepackage{siunitx}
+\usepackage[e]{esvect}
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage[cal=boondoxo]{mathalfa} 
+%\usepackage{enumitem}
+%\usepackage{lastpage}
+\usepackage{tcolorbox}
+%\usepackage{siunitx}
+\usepackage{diagbox}
+\usepackage{transparent}
+
+\usetikzlibrary{patterns}
+\usetikzlibrary{decorations}
+
+\title{Chapitre 6 : Le mouvement}
+\author{ROSALIE}
+\date{2023 - 2024}
+
+\renewcommand{\arraystretch}{1.5}
+\setbeamersize{text margin left=3mm,text margin right=3mm}
+
+\newcounter{sectimg}
+
+\setbeamercolor{background canvas}{bg=\bgcol}
+
+\setbeamertemplate{section page}{%
+    \begingroup
+        \begin{beamercolorbox}[sep=10pt,center,rounded=true,shadow=true]{section title}
+        \usebeamerfont{section title}\thesection.~\insertsection\par
+        \end{beamercolorbox}
+    \endgroup
+}
+
+\setbeamertemplate{subsection page}{%
+    \begingroup
+        %\begin{beamercolorbox}[sep=2pt,center,rounded=true,shadow=true]{section title}
+        %\usebeamerfont{section title}\thesection~\insertsection\par
+        %\end{beamercolorbox}
+        %\vspace*{-1.pt}
+        \begin{beamercolorbox}[sep=6pt,center,rounded=true,shadow=true]{subsection title}
+        \usebeamerfont{subsection title}\thesection.\thesubsection.~\insertsubsection\par
+        \end{beamercolorbox}
+    \endgroup
+}
+
+\AtBeginSection[]{%
+{\usebackgroundtemplate{
+        \includegraphics[width=\paperwidth,height=\paperheight]{Ressources/ChBg.png}}
+        \begin{frame}
+        \textbf{\sectionpage}
+    \end{frame}
+    }
+}
+
+\AtBeginSubsection[]{%
+    \begin{frame}
+        \subsectionpage
+    \end{frame}
+}
+
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+
+\title{\textbf{\chnum} : \textbf{\chtitle}}
+\author{ROSALIE R}
+\date{\today}
+
+% Finally, we'll use \endinput to indicate that LaTeX can stop reading this file. LaTeX will ignore anything after this line.
+\endinput

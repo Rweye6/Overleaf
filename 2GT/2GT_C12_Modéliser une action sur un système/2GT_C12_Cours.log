@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.27)  10 FEB 2025 22:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.27)  28 OCT 2025 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.tex"
-(/Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.tex
+**"/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.tex"
+(/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
@@ -534,7 +534,13 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 \beamer@dima=\dimen292
 \beamer@dimb=\dimen293
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/../../Styles/Diapo.sty
+
+LaTeX Warning: You have requested package `../../Styles/Diapo',
+               but the package provides `mystyle'.
+
+Package: mystyle 2010/07/28 BBischof's custom LaTeX style
+(/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen294
 \beamer@headheight=\dimen295
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
@@ -592,353 +598,199 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@expandcount=\count345
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
-File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+))) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryautomata.code.tex
-File: tikzlibraryautomata.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box81
-\pgfnodeparttwobox=\box82
-\pgfnodepartthreebox=\box83
-\pgfnodepartfourbox=\box84
-\pgfnodeparttwentybox=\box85
-\pgfnodepartnineteenbox=\box86
-\pgfnodeparteighteenbox=\box87
-\pgfnodepartseventeenbox=\box88
-\pgfnodepartsixteenbox=\box89
-\pgfnodepartfifteenbox=\box90
-\pgfnodepartfourteenbox=\box91
-\pgfnodepartthirteenbox=\box92
-\pgfnodeparttwelvebox=\box93
-\pgfnodepartelevenbox=\box94
-\pgfnodeparttenbox=\box95
-\pgfnodepartninebox=\box96
-\pgfnodeparteightbox=\box97
-\pgfnodepartsevenbox=\box98
-\pgfnodepartsixbox=\box99
-\pgfnodepartfivebox=\box100
-))) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count346
+\l__siunitx_number_exponent_fixed_int=\count347
+\l__siunitx_number_min_decimal_int=\count348
+\l__siunitx_number_min_integer_int=\count349
+\l__siunitx_number_round_precision_int=\count350
+\l__siunitx_number_lower_threshold_int=\count351
+\l__siunitx_number_upper_threshold_int=\count352
+\l__siunitx_number_group_first_int=\count353
+\l__siunitx_number_group_size_int=\count354
+\l__siunitx_number_group_minimum_int=\count355
+\l__siunitx_angle_tmp_dim=\dimen309
+\l__siunitx_angle_marker_box=\box81
+\l__siunitx_angle_unit_box=\box82
+\l__siunitx_compound_count_int=\count356
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_table_tmp_box=\box83
+\l__siunitx_table_tmp_dim=\dimen310
+\l__siunitx_table_column_width_dim=\dimen311
+\l__siunitx_table_integer_box=\box84
+\l__siunitx_table_decimal_box=\box85
+\l__siunitx_table_uncert_box=\box86
+\l__siunitx_table_before_box=\box87
+\l__siunitx_table_after_box=\box88
+\l__siunitx_table_before_dim=\dimen312
+\l__siunitx_table_carry_dim=\dimen313
+\l__siunitx_unit_tmp_int=\count357
+\l__siunitx_unit_position_int=\count358
+\l__siunitx_unit_total_int=\count359
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen309
-\ar@mcellbox=\box101
-\extrarowheight=\dimen310
+\col@sep=\dimen314
+\ar@mcellbox=\box89
+\extrarowheight=\dimen315
 \NC@list=\toks50
 \extratabsurround=\skip65
 \backup@length=\skip66
-\ar@cellbox=\box102
+\ar@cellbox=\box90
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/esvect/esvect.sty
+Package: esvect 
+\symesvector=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \fldr on input line 38.
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/simplekv/simplekv.tex
 Package: simplekv 2023/10/02 v0.2c Simple keyval package (CT)
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen311
-\pgfarrowlength=\dimen312
-\pgfarrowwidth=\dimen313
-\pgfarrowlinewidth=\dimen314
+\pgfarrowinset=\dimen316
+\pgfarrowlength=\dimen317
+\pgfarrowwidth=\dimen318
+\pgfarrowlinewidth=\dimen319
 )
-\CF_cnt_atomgroup=\count346
-\CF_cnt_group=\count347
-\CF_cnt_atom=\count348
-\CF_cnt_cycle=\count349
-\CF_cnt_cyclebonds=\count350
-\CF_cnt_compound=\count351
-\CF_dim=\dimen315
-\CF_turnangle=\dimen316
-\CF_arrowsize=\dimen317
-\CF_zero=\dimen318
-\CF_box=\box103
-\CF_boxstuff=\box104
-\CF_testbox=\box105
-\CF_chargebox=\box106
+\CF_cnt_atomgroup=\count360
+\CF_cnt_group=\count361
+\CF_cnt_atom=\count362
+\CF_cnt_cycle=\count363
+\CF_cnt_cyclebonds=\count364
+\CF_cnt_compound=\count365
+\CF_dim=\dimen320
+\CF_turnangle=\dimen321
+\CF_arrowsize=\dimen322
+\CF_zero=\dimen323
+\CF_box=\box91
+\CF_boxstuff=\box92
+\CF_testbox=\box93
+\CF_chargebox=\box94
 \CF_substtoks=\toks51
 )
 Package: chemfig 2023/12/28 v1.66 Draw molecule with an easy syntax (CT)
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip67
-\multirow@cntb=\count352
-\multirow@dima=\skip68
-\bigstrutjot=\dimen319
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen320
-\captionmargin=\dimen321
-\caption@leftmargin=\dimen322
-\caption@rightmargin=\dimen323
-\caption@width=\dimen324
-\caption@indent=\dimen325
-\caption@parindent=\dimen326
-\caption@hangindent=\dimen327
-Package caption Info: beamer document class detected.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption-beamer.sto
-File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to the beamer document classes (AR)
-))
-\c@caption@flags=\count353
-\c@continuedfloat=\count354
-Package caption Info: hyperref package is loaded.
-Package caption Info: Hyperref support is turned off
-(caption)             because hyperref has stopped early.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathalpha/mathalfa.sty) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathalpha/mathalpha.sty
-Package: mathalpha 2021/11/18 - 1.143mathalpha (License LPPL) Michael Sharpe
- `mathalpha' v1.143, 2021/11/18, a renaming of mathalfa (msharpe) (/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks52
-\XKV@tempa@toks=\toks53
-)
-\XKV@depth=\count355
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 554.
-LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
-(Font)                  U/BOONDOX-calo/m/n --> U/BOONDOX-calo/b/n on input line 556.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip69
-\enit@outerparindent=\dimen328
-\enit@toks=\toks54
-\enit@inbox=\box107
-\enit@count@id=\count356
-\enitdp@description=\count357
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
  (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks55
-\verbatim@line=\toks56
+\every@verbatim=\toks52
+\verbatim@line=\toks53
 \verbatim@in@stream=\read3
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (/usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box108
-\tcb@upperbox=\box109
-\tcb@lowerbox=\box110
-\tcb@phantombox=\box111
-\c@tcbbreakpart=\count358
-\c@tcblayer=\count359
-\c@tcolorbox@number=\count360
-\l__tcobox_tmpa_box=\box112
-\l__tcobox_tmpa_dim=\dimen329
-\tcb@temp=\box113
-\tcb@temp=\box114
-\tcb@temp=\box115
-\tcb@temp=\box116
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count361
-\l__siunitx_number_exponent_fixed_int=\count362
-\l__siunitx_number_min_decimal_int=\count363
-\l__siunitx_number_min_integer_int=\count364
-\l__siunitx_number_round_precision_int=\count365
-\l__siunitx_number_lower_threshold_int=\count366
-\l__siunitx_number_upper_threshold_int=\count367
-\l__siunitx_number_group_first_int=\count368
-\l__siunitx_number_group_size_int=\count369
-\l__siunitx_number_group_minimum_int=\count370
-\l__siunitx_angle_tmp_dim=\dimen330
-\l__siunitx_angle_marker_box=\box117
-\l__siunitx_angle_unit_box=\box118
-\l__siunitx_compound_count_int=\count371
- (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
-Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+\tcb@titlebox=\box95
+\tcb@upperbox=\box96
+\tcb@lowerbox=\box97
+\tcb@phantombox=\box98
+\c@tcbbreakpart=\count366
+\c@tcblayer=\count367
+\c@tcolorbox@number=\count368
+\l__tcobox_tmpa_box=\box99
+\l__tcobox_tmpa_dim=\dimen324
+\tcb@temp=\box100
+\tcb@temp=\box101
+\tcb@temp=\box102
+\tcb@temp=\box103
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
 )
-\l__siunitx_table_tmp_box=\box119
-\l__siunitx_table_tmp_dim=\dimen331
-\l__siunitx_table_column_width_dim=\dimen332
-\l__siunitx_table_integer_box=\box120
-\l__siunitx_table_decimal_box=\box121
-\l__siunitx_table_uncert_box=\box122
-\l__siunitx_table_before_box=\box123
-\l__siunitx_table_after_box=\box124
-\l__siunitx_table_before_dim=\dimen333
-\l__siunitx_table_carry_dim=\dimen334
-\l__siunitx_unit_tmp_int=\count372
-\l__siunitx_unit_position_int=\count373
-\l__siunitx_unit_total_int=\count374
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/circuitikz/circuitikz.sty
-Package: circuitikz 2024/02/09{} The CircuiTikz circuit drawing package version 1.6.7
- (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex
-File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.tex
-File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformations.code.tex
-File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgftransformnonlinearflatness=\dimen335
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
-File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@curvilinear@time@a=\dimen336
-\pgf@curvilinear@length@a=\dimen337
-\pgf@curvilinear@length@b=\dimen338
-\pgf@curvilinear@length@c=\dimen339
-\pgf@curvilinear@length@d=\dimen340
+Package pict2e Info: Driver file: pdftex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
-\pgf@arrows@the@rigidity=\dimen341
-)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
-\pgf@circ@count@a=\count375
-\pgf@circ@count@b=\count376
-\pgf@circ@count@c=\count377
-\pgf@circ@res@up=\dimen342
-\pgf@circ@res@down=\dimen343
-\pgf@circ@res@zero=\dimen344
-\pgf@circ@res@left=\dimen345
-\pgf@circ@res@right=\dimen346
-\pgf@circ@res@other=\dimen347
-\pgf@circ@res@step=\dimen348
-\pgf@circ@res@temp=\dimen349
-\pgf@circ@Rlen=\dimen350
-\pgf@circ@scaled@Rlen=\dimen351
-\pgfstartlinewidth=\dimen352
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
-\ctikz@scratchbox=\box125
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
-\pgf@circ@res@count=\count378
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen353
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen354
-\pgfdecoratedremainingdistance=\dimen355
-\pgfdecoratedinputsegmentcompleteddistance=\dimen356
-\pgfdecoratedinputsegmentremainingdistance=\dimen357
-\pgf@decorate@distancetomove=\dimen358
-\pgf@decorate@repeatstate=\count379
-\pgfdecorationsegmentamplitude=\dimen359
-\pgfdecorationsegmentlength=\dimen360
+\pIIe@GRAPH=\toks54
+\@arclen=\dimen325
+\@arcrad=\dimen326
+\pIIe@tempdima=\dimen327
+\pIIe@tempdimb=\dimen328
+\pIIe@tempdimc=\dimen329
+\pIIe@tempdimd=\dimen330
+\pIIe@tempdime=\dimen331
+\pIIe@tempdimf=\dimen332
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count369
+\calc@Bcount=\count370
+\calc@Adimen=\dimen333
+\calc@Bdimen=\dimen334
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count371
+\calc@Cskip=\skip69
 )
-\tikz@lib@dec@box=\box126
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count380
-\mult@box=\box127
-\multicol@leftmargin=\dimen361
-\c@unbalance=\count381
-\c@collectmore=\count382
-\doublecol@number=\count383
-\multicoltolerance=\count384
-\multicolpretolerance=\count385
-\full@width=\dimen362
-\page@free=\dimen363
-\premulticols=\dimen364
-\postmulticols=\dimen365
-\multicolsep=\skip70
-\multicolbaselineskip=\skip71
-\partial@page=\box128
-\last@line=\box129
-\mc@boxedresult=\box130
-\maxbalancingoverflow=\dimen366
-\mult@rightbox=\box131
-\mult@grightbox=\box132
-\mult@firstbox=\box133
-\mult@gfirstbox=\box134
-\@tempa=\box135
-\@tempa=\box136
-\@tempa=\box137
-\@tempa=\box138
-\@tempa=\box139
-\@tempa=\box140
-\@tempa=\box141
-\@tempa=\box142
-\@tempa=\box143
-\@tempa=\box144
-\@tempa=\box145
-\@tempa=\box146
-\@tempa=\box147
-\@tempa=\box148
-\@tempa=\box149
-\@tempa=\box150
-\@tempa=\box151
-\@tempa=\box152
-\@tempa=\box153
-\@tempa=\box154
-\@tempa=\box155
-\@tempa=\box156
-\@tempa=\box157
-\@tempa=\box158
-\@tempa=\box159
-\@tempa=\box160
-\@tempa=\box161
-\@tempa=\box162
-\@tempa=\box163
-\@tempa=\box164
-\@tempa=\box165
-\@tempa=\box166
-\@tempa=\box167
-\@tempa=\box168
-\@tempa=\box169
-\@tempa=\box170
-\c@minrows=\count386
-\c@columnbadness=\count387
-\c@finalcolumnbadness=\count388
-\last@try=\dimen367
-\multicolovershoot=\dimen368
-\multicolundershoot=\dimen369
-\mult@nat@firstbox=\box171
-\colbreak@box=\box172
-\mc@col@check@num=\count389
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/eqnarray/eqnarray.sty
-equationarray 1.3 <December 1, 2010>
-Package: eqnarray 
-\@eqargcnt=\count390
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/esvect/esvect.sty
-Package: esvect 
-\symesvector=\mathgroup6
+\diagbox@boxa=\box104
+\diagbox@boxb=\box105
+\diagbox@boxm=\box106
+\diagbox@wd=\dimen335
+\diagbox@ht=\dimen336
+\diagbox@insepl=\dimen337
+\diagbox@insepr=\dimen338
+\diagbox@outsepl=\dimen339
+\diagbox@outsepr=\dimen340
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2022-10-27 v1.5 Transparency with color stacks
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen341
+\pgfdecoratedremainingdistance=\dimen342
+\pgfdecoratedinputsegmentcompleteddistance=\dimen343
+\pgfdecoratedinputsegmentremainingdistance=\dimen344
+\pgf@decorate@distancetomove=\dimen345
+\pgf@decorate@repeatstate=\count372
+\pgfdecorationsegmentamplitude=\dimen346
+\pgfdecorationsegmentlength=\dimen347
 )
-
-Package siunitx Info: Option "detect-all" has been deprecated in this release.
-(siunitx)             
-(siunitx)             Use "mode = match, propagate-math-font = true,
-(siunitx)             reset-math-version = false, reset-text-family = false,
-(siunitx)             reset-text-series = false, reset-text-shape = false,
-(siunitx)             text-family-to-math = true, text-series-to-math = true"
-(siunitx)             as a replacement.
-
-
-Package siunitx Info: Option "number-unit-separator" has been deprecated in
-(siunitx)             this release.
-(siunitx)             
-(siunitx)             Use "quantity-product = ~" as a replacement.
-
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 46.
+\tikz@lib@dec@box=\box107
+)
+\c@sectimg=\count373
+)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 12.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count391
-\l__pdf_internal_box=\box173
-) (/Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.aux)
+\l__color_backend_stack_int=\count374
+\l__pdf_internal_box=\box108
+) (/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.aux)
 \openout1 = `2GT_C12_Cours.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -948,14 +800,14 @@ LaTeX Font Info:    ... okay on input line 46.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(14.22636pt, 278.83713pt, 71.13187pt)
+* h-part:(L,W,R)=(8.53581pt, 290.21823pt, 65.44131pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=278.83713pt
+* \textwidth=290.21823pt
 * \textheight=244.6939pt
-* \oddsidemargin=-58.04362pt
-* \evensidemargin=-58.04362pt
+* \oddsidemargin=-63.73418pt
+* \evensidemargin=-63.73418pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -976,77 +828,77 @@ LaTeX Font Info:    ... okay on input line 46.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count392
-\scratchdimen=\dimen370
-\scratchbox=\box174
-\nofMPsegments=\count393
-\nofMParguments=\count394
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count395
-\MPscratchDim=\dimen371
-\MPnumerator=\count396
-\makeMPintoPDFobject=\count397
-\everyMPtoPDFconversion=\toks58
+\scratchcounter=\count375
+\scratchdimen=\dimen348
+\scratchbox=\box109
+\nofMPsegments=\count376
+\nofMParguments=\count377
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count378
+\MPscratchDim=\dimen349
+\MPnumerator=\count379
+\makeMPintoPDFobject=\count380
+\everyMPtoPDFconversion=\toks56
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 46.
- (/Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.out) (/Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.out)
+Package hyperref Info: Link coloring OFF on input line 12.
+ (/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.out) (/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.out)
 \@outlinefile=\write5
 \openout5 = `2GT_C12_Cours.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 46.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 12.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 46.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 12.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 46.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 46.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 46.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 46.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 12.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 46.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 46.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 46.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 12.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 46.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 46.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 46.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 12.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 46.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 46.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 12.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 46.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 12.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 46.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 46.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 46.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 46.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 46.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 46.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 46.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 12.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 12.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 46.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 12.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 46.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 12.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 46.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 12.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1059,119 +911,91 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-)
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 46.
- (/Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.nav)
-<Ressources/2GT_C6_Cours_force.png, id=91, 1606.0pt x 1071.00125pt>
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 12.
+ (/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.nav)
+<Ressources/2GT_C6_Cours_force.png, id=83, 1606.0pt x 1071.00125pt>
 File: Ressources/2GT_C6_Cours_force.png Graphic file (type png)
 <use Ressources/2GT_C6_Cours_force.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_force.png  used on input line 50.
+Package pdftex.def Info: Ressources/2GT_C6_Cours_force.png  used on input line 16.
 (pdftex.def)             Requested size: 291.34654pt x 218.51077pt.
 
-Overfull \hbox (12.50941pt too wide) in paragraph at lines 50--50
+Overfull \hbox (1.12831pt too wide) in paragraph at lines 16--16
 [][]  
+ []
+
+
+Overfull \vbox (15.03433pt too high) detected at line 16
  []
 
 [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_force.png>]
-<Ressources/2GT_C6_Cours_Fig2.png, id=159, 447.92343pt x 526.96875pt>
+ </Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_force.png>]
+<Ressources/ChBg.png, id=131, 216.81pt x 144.54pt>
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 18.
+(pdftex.def)             Requested size: 364.24161pt x 273.16216pt.
+ [2
+
+ </Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/ChBg.png>]
+<Ressources/2GT_C6_Cours_Fig2.png, id=156, 447.92343pt x 526.96875pt>
 File: Ressources/2GT_C6_Cours_Fig2.png Graphic file (type png)
 <use Ressources/2GT_C6_Cours_Fig2.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 70.
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 37.
 (pdftex.def)             Requested size: 134.37805pt x 158.09184pt.
 
-Overfull \hbox (8.9022pt too wide) in paragraph at lines 70--70
+Overfull \hbox (3.78075pt too wide) in paragraph at lines 37--37
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 70.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 37.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 70.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 37.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-Underfull \hbox (badness 1122) in paragraph at lines 70--70
+Underfull \hbox (badness 2351) in paragraph at lines 37--37
 []\OT1/cmss/m/n/10.95 Syst^^Reme ^^Setudi^^Se : le bal-lon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \OT1/cmss/m/n/12 Comment agis-sent ces
- []
-
-
-Underfull \hbox (badness 3396) in paragraph at lines 70--70
-[]\OT1/cmss/m/n/12 Le pied agit di-recte-
- []
-
-[2
-
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig2.png>]
-File: Ressources/2GT_C6_Cours_Fig2.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig2.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 70.
-(pdftex.def)             Requested size: 134.37805pt x 158.09184pt.
-
-Overfull \hbox (8.9022pt too wide) in paragraph at lines 70--70
-[][] 
- []
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 70--70
-[][]\OT1/cmss/m/n/10.95 Syst^^Reme ^^Setudi^^Se : le bal-lon
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-\OT1/cmss/m/n/12 Comment agis-sent ces
- []
-
-
-Underfull \hbox (badness 3396) in paragraph at lines 70--70
-[]\OT1/cmss/m/n/12 Le pied agit di-recte-
  []
 
 [3
 
-]
+ </Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig2.png>]
 File: Ressources/2GT_C6_Cours_Fig2.png Graphic file (type png)
 <use Ressources/2GT_C6_Cours_Fig2.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 70.
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 37.
 (pdftex.def)             Requested size: 134.37805pt x 158.09184pt.
 
-Overfull \hbox (8.9022pt too wide) in paragraph at lines 70--70
+Overfull \hbox (3.78075pt too wide) in paragraph at lines 37--37
 [][] 
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 70--70
+Underfull \hbox (badness 2351) in paragraph at lines 37--37
 [][]\OT1/cmss/m/n/10.95 Syst^^Reme ^^Setudi^^Se : le bal-lon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \OT1/cmss/m/n/12 Comment agis-sent ces
- []
-
-
-Underfull \hbox (badness 3396) in paragraph at lines 70--70
-[]\OT1/cmss/m/n/12 Le pied agit di-recte-
  []
 
 [4
@@ -1179,26 +1003,21 @@ Underfull \hbox (badness 3396) in paragraph at lines 70--70
 ]
 File: Ressources/2GT_C6_Cours_Fig2.png Graphic file (type png)
 <use Ressources/2GT_C6_Cours_Fig2.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 70.
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 37.
 (pdftex.def)             Requested size: 134.37805pt x 158.09184pt.
 
-Overfull \hbox (8.9022pt too wide) in paragraph at lines 70--70
+Overfull \hbox (3.78075pt too wide) in paragraph at lines 37--37
 [][] 
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 70--70
+Underfull \hbox (badness 2351) in paragraph at lines 37--37
 [][]\OT1/cmss/m/n/10.95 Syst^^Reme ^^Setudi^^Se : le bal-lon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \OT1/cmss/m/n/12 Comment agis-sent ces
- []
-
-
-Underfull \hbox (badness 3396) in paragraph at lines 70--70
-[]\OT1/cmss/m/n/12 Le pied agit di-recte-
  []
 
 [5
@@ -1206,26 +1025,21 @@ Underfull \hbox (badness 3396) in paragraph at lines 70--70
 ]
 File: Ressources/2GT_C6_Cours_Fig2.png Graphic file (type png)
 <use Ressources/2GT_C6_Cours_Fig2.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 70.
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 37.
 (pdftex.def)             Requested size: 134.37805pt x 158.09184pt.
 
-Overfull \hbox (8.9022pt too wide) in paragraph at lines 70--70
+Overfull \hbox (3.78075pt too wide) in paragraph at lines 37--37
 [][] 
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 70--70
+Underfull \hbox (badness 2351) in paragraph at lines 37--37
 [][]\OT1/cmss/m/n/10.95 Syst^^Reme ^^Setudi^^Se : le bal-lon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \OT1/cmss/m/n/12 Comment agis-sent ces
- []
-
-
-Underfull \hbox (badness 3396) in paragraph at lines 70--70
-[]\OT1/cmss/m/n/12 Le pied agit di-recte-
  []
 
 [6
@@ -1233,306 +1047,285 @@ Underfull \hbox (badness 3396) in paragraph at lines 70--70
 ]
 File: Ressources/2GT_C6_Cours_Fig2.png Graphic file (type png)
 <use Ressources/2GT_C6_Cours_Fig2.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 70.
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 37.
 (pdftex.def)             Requested size: 134.37805pt x 158.09184pt.
 
-Overfull \hbox (8.9022pt too wide) in paragraph at lines 70--70
+Overfull \hbox (3.78075pt too wide) in paragraph at lines 37--37
 [][] 
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 70--70
+Underfull \hbox (badness 2351) in paragraph at lines 37--37
 [][]\OT1/cmss/m/n/10.95 Syst^^Reme ^^Setudi^^Se : le bal-lon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \OT1/cmss/m/n/12 Comment agis-sent ces
- []
-
-
-Underfull \hbox (badness 3396) in paragraph at lines 70--70
-[]\OT1/cmss/m/n/12 Le pied agit di-recte-
  []
 
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-\OT1/cmss/m/n/10.95 On utilise des $[]$ pour
+File: Ressources/2GT_C6_Cours_Fig2.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig2.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig2.png  used on input line 37.
+(pdftex.def)             Requested size: 134.37805pt x 158.09184pt.
+
+Overfull \hbox (3.78075pt too wide) in paragraph at lines 37--37
+[][] 
  []
 
 
-Overfull \hbox (9.65pt too wide) in paragraph at lines 81--81
-[][][][][][][]  
+Underfull \hbox (badness 2351) in paragraph at lines 37--37
+[][]\OT1/cmss/m/n/10.95 Syst^^Reme ^^Setudi^^Se : le bal-lon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\OT1/cmss/m/n/12 Comment agis-sent ces
  []
 
 [8
 
+] [9
+
 ]
-<Ressources/2GT_C6_Cours_Fig1.png, id=479, 97.86563pt x 105.39375pt>
-File: Ressources/2GT_C6_Cours_Fig1.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig1.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig1.png  used on input line 107.
-(pdftex.def)             Requested size: 117.43814pt x 126.47185pt.
-
-Overfull \hbox (29.2808pt too wide) in paragraph at lines 107--107
-[][]
- []
-
-
-Overfull \hbox (19.37038pt too wide) in paragraph at lines 107--107
-[] 
- []
-
-[9
-
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig1.png>]
-File: Ressources/2GT_C6_Cours_Fig1.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig1.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig1.png  used on input line 107.
-(pdftex.def)             Requested size: 117.43814pt x 126.47185pt.
-
-Overfull \hbox (29.2808pt too wide) in paragraph at lines 107--107
-[][]
- []
-
-
-Overfull \hbox (19.37038pt too wide) in paragraph at lines 107--107
-[] 
+Overfull \hbox (9.65pt too wide) in paragraph at lines 48--48
+[][][][][][][]  
  []
 
 [10
 
-]
-Overfull \hbox (9.65pt too wide) in paragraph at lines 122--122
-[][][][][][][]  
- []
-
-[11
+] [11
 
 ]
+<Ressources/2GT_C6_Cours_Fig1.png, id=368, 97.86563pt x 105.39375pt>
 File: Ressources/2GT_C6_Cours_Fig1.png Graphic file (type png)
 <use Ressources/2GT_C6_Cours_Fig1.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig1.png  used on input line 140.
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig1.png  used on input line 74.
 (pdftex.def)             Requested size: 117.43814pt x 126.47185pt.
- [12
 
-]
-File: Ressources/2GT_C6_Cours_Fig1.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig1.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig1.png  used on input line 140.
-(pdftex.def)             Requested size: 117.43814pt x 126.47185pt.
- [13
-
-]
-Overfull \hbox (83.1243pt too wide) in paragraph at lines 166--166
-[][] 
- []
-
-[14
-
-]
-<Ressources/2GT_C6_Cours_Fig3.png, id=755, 357.58594pt x 286.06876pt>
-File: Ressources/2GT_C6_Cours_Fig3.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig3.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig3.png  used on input line 193.
-(pdftex.def)             Requested size: 143.03183pt x 114.42546pt.
-
-Overfull \hbox (31.49869pt too wide) in paragraph at lines 193--193
-[][] 
- []
-
-
-Overfull \hbox (5.42766pt too wide) in paragraph at lines 193--193
- [][] 
- []
-
-[15
-
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig3.png>]
-File: Ressources/2GT_C6_Cours_Fig3.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig3.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig3.png  used on input line 193.
-(pdftex.def)             Requested size: 143.03183pt x 114.42546pt.
-
-Overfull \hbox (31.49869pt too wide) in paragraph at lines 193--193
-[][] 
- []
-
-
-Overfull \hbox (5.42766pt too wide) in paragraph at lines 193--193
- [][] 
- []
-
-[16
-
-]
-Overfull \hbox (28.04518pt too wide) in paragraph at lines 217--217
-[][] 
- []
-
-[17
-
-]
-<Ressources/2GT_C6_Cours_Fig4.png, id=894, 288.07625pt x 242.9075pt>
-File: Ressources/2GT_C6_Cours_Fig4.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig4.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig4.png  used on input line 245.
-(pdftex.def)             Requested size: 115.22844pt x 97.16127pt.
-
-Overfull \hbox (3.6953pt too wide) in paragraph at lines 245--245
-[][] 
- []
-
-
-Overfull \hbox (34.89293pt too wide) in paragraph at lines 245--245
- [] 
- []
-
-
-Overfull \hbox (5.42766pt too wide) in paragraph at lines 245--245
- [][] 
- []
-
-[18
-
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig4.png>]
-File: Ressources/2GT_C6_Cours_Fig4.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig4.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig4.png  used on input line 245.
-(pdftex.def)             Requested size: 115.22844pt x 97.16127pt.
-
-Overfull \hbox (3.6953pt too wide) in paragraph at lines 245--245
-[][] 
- []
-
-
-Overfull \hbox (34.89293pt too wide) in paragraph at lines 245--245
- [] 
- []
-
-
-Overfull \hbox (5.42766pt too wide) in paragraph at lines 245--245
- [][] 
- []
-
-[19
-
-]
-Overfull \hbox (83.1243pt too wide) in paragraph at lines 271--271
+Overfull \hbox (24.15935pt too wide) in paragraph at lines 74--74
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
+Overfull \hbox (14.24892pt too wide) in paragraph at lines 74--74
+[] 
+ []
 
+[12
+
+ </Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig1.png>]
+File: Ressources/2GT_C6_Cours_Fig1.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig1.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig1.png  used on input line 74.
+(pdftex.def)             Requested size: 117.43814pt x 126.47185pt.
+
+Overfull \hbox (24.15935pt too wide) in paragraph at lines 74--74
+[][]
+ []
+
+
+Overfull \hbox (14.24892pt too wide) in paragraph at lines 74--74
+[] 
+ []
+
+[13
+
+] [14
+
+]
+Overfull \hbox (9.65pt too wide) in paragraph at lines 89--89
+[][][][][][][]  
+ []
+
+[15
+
+] [16
+
+]
+File: Ressources/2GT_C6_Cours_Fig1.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig1.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig1.png  used on input line 107.
+(pdftex.def)             Requested size: 117.43814pt x 126.47185pt.
+ [17
+
+]
+File: Ressources/2GT_C6_Cours_Fig1.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig1.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig1.png  used on input line 107.
+(pdftex.def)             Requested size: 117.43814pt x 126.47185pt.
+ [18
+
+] [19
+
+]
+Overfull \hbox (77.43375pt too wide) in paragraph at lines 133--133
+[][] 
  []
 
 [20
 
+] [21
+
 ]
-<Ressources/2GT_C6_Cours_Fig5.png, id=1033, 471.26062pt x 313.9228pt>
-File: Ressources/2GT_C6_Cours_Fig5.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig5.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig5.png  used on input line 279.
-(pdftex.def)             Requested size: 237.01326pt x 157.88548pt.
- [21
+<Ressources/2GT_C6_Cours_Fig3.png, id=611, 357.58594pt x 286.06876pt>
+File: Ressources/2GT_C6_Cours_Fig3.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig3.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig3.png  used on input line 160.
+(pdftex.def)             Requested size: 143.03183pt x 114.42546pt.
 
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig5.png>]
-Overfull \hbox (0.77234pt too wide) in paragraph at lines 308--308
- [] 
- []
-
-
-Overfull \hbox (0.77234pt too wide) in paragraph at lines 308--308
- [][] 
+Overfull \hbox (26.94632pt too wide) in paragraph at lines 160--160
+[][] 
  []
 
 [22
 
-]
-Overfull \hbox (125.51978pt too wide) in paragraph at lines 325--325
+ </Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig3.png>]
+File: Ressources/2GT_C6_Cours_Fig3.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig3.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig3.png  used on input line 160.
+(pdftex.def)             Requested size: 143.03183pt x 114.42546pt.
+
+Overfull \hbox (26.94632pt too wide) in paragraph at lines 160--160
 [][] 
  []
 
 [23
 
 ]
-<Ressources/2GT_C6_Cours_Fig6.png, id=1172, 818.05624pt x 309.155pt>
-File: Ressources/2GT_C6_Cours_Fig6.png Graphic file (type png)
-<use Ressources/2GT_C6_Cours_Fig6.png>
-Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig6.png  used on input line 329.
-(pdftex.def)             Requested size: 286.32397pt x 108.20586pt.
-
-Overfull \hbox (7.48685pt too wide) in paragraph at lines 329--329
-[][]  
+Overfull \hbox (22.35463pt too wide) in paragraph at lines 184--184
+[][] 
  []
 
 [24
 
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig6.png>]
-Overfull \hbox (9.65pt too wide) in paragraph at lines 344--344
-[][][][][][][]  
+]
+<Ressources/2GT_C6_Cours_Fig4.png, id=682, 288.07625pt x 242.9075pt>
+File: Ressources/2GT_C6_Cours_Fig4.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig4.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig4.png  used on input line 212.
+(pdftex.def)             Requested size: 115.22844pt x 97.16127pt.
+
+Overfull \hbox (29.20238pt too wide) in paragraph at lines 212--212
+ [] 
  []
 
 [25
 
-]
-<Ressources/2GT_C12_Cours_Forces.png, id=1265, 633.567pt x 275.22826pt>
-File: Ressources/2GT_C12_Cours_Forces.png Graphic file (type png)
-<use Ressources/2GT_C12_Cours_Forces.png>
-Package pdftex.def Info: Ressources/2GT_C12_Cours_Forces.png  used on input line 358.
-(pdftex.def)             Requested size: 167.30397pt x 72.67896pt.
-<Ressources/2GT_C12_Cours_Forces2.png, id=1266, 1606.0pt x 903.375pt>
-File: Ressources/2GT_C12_Cours_Forces2.png Graphic file (type png)
-<use Ressources/2GT_C12_Cours_Forces2.png>
-Package pdftex.def Info: Ressources/2GT_C12_Cours_Forces2.png  used on input line 358.
-(pdftex.def)             Requested size: 167.30397pt x 94.10593pt.
-<Ressources/bluetechBG.jpg, id=1267, 1927.2pt x 983.675pt>
-File: Ressources/bluetechBG.jpg Graphic file (type jpg)
-<use Ressources/bluetechBG.jpg>
-Package pdftex.def Info: Ressources/bluetechBG.jpg  used on input line 358.
-(pdftex.def)             Requested size: 364.17215pt x 273.14566pt.
- [26
+ </Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig4.png>]
+File: Ressources/2GT_C6_Cours_Fig4.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig4.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig4.png  used on input line 212.
+(pdftex.def)             Requested size: 115.22844pt x 97.16127pt.
 
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/bluetechBG.jpg> </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C12_Cours_Forces.png> </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C12_Cours_Forces2.png>]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 385.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-Overfull \hbox (17.71628pt too wide) in paragraph at lines 385--385
- [][] 
+Overfull \hbox (29.20238pt too wide) in paragraph at lines 212--212
+ [] 
+ []
+
+[26
+
+]
+Overfull \hbox (77.43375pt too wide) in paragraph at lines 238--238
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+
  []
 
 [27
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [28
-
-] [29
+]
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 239.
+(pdftex.def)             Requested size: 364.24161pt x 273.16216pt.
+ [28
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
-\OT1/mathkerncmss/m/sl/10 G$ \OT1/cmss/m/n/10 la con-stante de grav-i-ta-tion uni-verselle $\OT1/mathkerncmss/m/sl/10 G \OT1/cmss/m/n/10 =
+<Ressources/2GT_C6_Cours_Fig5.png, id=779, 471.26062pt x 313.9228pt>
+File: Ressources/2GT_C6_Cours_Fig5.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig5.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig5.png  used on input line 246.
+(pdftex.def)             Requested size: 246.68726pt x 164.32814pt.
+ [29
+
+ </Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig5.png>] [30
+
+]
+Overfull \hbox (120.39832pt too wide) in paragraph at lines 292--292
+[][] 
  []
 
-[30
-
-] [31
+[31
 
 ]
-<Ressources/inertieBG.jpg, id=1541, 130.086pt x 86.724pt>
-File: Ressources/inertieBG.jpg Graphic file (type jpg)
-<use Ressources/inertieBG.jpg>
-Package pdftex.def Info: Ressources/inertieBG.jpg  used on input line 479.
-(pdftex.def)             Requested size: 364.2601pt x 273.16214pt.
+<Ressources/2GT_C6_Cours_Fig6.png, id=852, 818.05624pt x 309.155pt>
+File: Ressources/2GT_C6_Cours_Fig6.png Graphic file (type png)
+<use Ressources/2GT_C6_Cours_Fig6.png>
+Package pdftex.def Info: Ressources/2GT_C6_Cours_Fig6.png  used on input line 296.
+(pdftex.def)             Requested size: 286.32397pt x 108.20586pt.
  [32
 
- </Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/inertieBG.jpg>] [33
+ </Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/Ressources/2GT_C6_Cours_Fig6.png>]
+Overfull \hbox (9.65pt too wide) in paragraph at lines 311--311
+[][][][][][][]  
+ []
 
-] [34
+[33
+
+]
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 313.
+(pdftex.def)             Requested size: 364.24161pt x 273.16216pt.
+ [34
 
 ] [35
+
+]
+Overfull \hbox (13.73283pt too wide) in paragraph at lines 340--340
+ [][] 
+ []
+
+[36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+] [41
+
+] [42
+
+] [43
+
+]
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 429.
+(pdftex.def)             Requested size: 364.24161pt x 273.16216pt.
+ [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
 
 ]
 \tf@nav=\write6
@@ -1544,27 +1337,27 @@ Package pdftex.def Info: Ressources/inertieBG.jpg  used on input line 479.
 \tf@snm=\write8
 \openout8 = `2GT_C12_Cours.snm'.
 
- (/Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.aux)
+ (/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `2GT_C12_Cours.out' has not changed.
-(rerunfilecheck)             Checksum: E40AB4132BA6EA57FB13B8EF071730E9;3508.
+(rerunfilecheck)             Checksum: 9AE20AFA70F7C1A56B4391DE339E5CF7;3200.
  ) 
 Here is how much of TeX's memory you used:
- 52634 strings out of 474116
- 1294858 string characters out of 5743681
- 1948187 words of memory out of 5000000
- 74216 multiletter control sequences out of 15000+600000
- 570370 words of font info for 84 fonts, out of 8000000 for 9000
+ 33463 strings out of 474116
+ 729724 string characters out of 5743681
+ 1945187 words of memory out of 5000000
+ 55113 multiletter control sequences out of 15000+600000
+ 572353 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,25n,123p,511b,1019s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
-Output written on "/Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.pdf" (35 pages, 4308417 bytes).
+ 128i,25n,123p,519b,970s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
+Output written on "/Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C12_Modéliser une action sur un système/2GT_C12_Cours.pdf" (50 pages, 3778377 bytes).
 PDF statistics:
- 1801 PDF objects out of 2073 (max. 8388607)
- 1695 compressed objects within 17 object streams
- 90 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1394 PDF objects out of 1440 (max. 8388607)
+ 1278 compressed objects within 13 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

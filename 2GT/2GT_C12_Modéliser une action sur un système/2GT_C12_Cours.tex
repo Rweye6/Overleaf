@@ -1,53 +1,20 @@
 \documentclass{beamer}
-\usetheme{Goettingen}
-\usepackage[utf8]{inputenc}
-\usepackage{tikz}
-\usetikzlibrary{patterns}
-\usetikzlibrary{shapes.geometric}
-\usetikzlibrary{calc}
-\usetikzlibrary{automata,positioning}
-
-\usepackage{array}
-\usepackage{chemfig}
-\usepackage{multirow}
-\usepackage{caption}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage[cal=boondoxo]{mathalfa} 
-\usepackage{enumitem}
-%\usepackage{lastpage}
-\usepackage{tcolorbox}
-\usepackage{siunitx}
-\usepackage[european, straightvoltages, RPvoltages]{circuitikz}
-
-\usetikzlibrary{decorations.pathmorphing}
+\usepackage{../../Styles/Diapo}
 
 
-\usepackage{multicol}
-\usepackage{eqnarray}
 
-
-\usepackage{esvect}
-\usepackage{siunitx}
- \sisetup{
-    detect-all,
-    output-decimal-marker={,},
-    group-minimum-digits = 3,
-    group-separator={~},
-    number-unit-separator={~},
-    inter-unit-product={~}
-} %setup pour SIunitx
-
-
-\title{Chapitre 12 : Actions et Forces}
-\author{}
-\date{}
+\newcommand{\chnum}{Chapitre 12}
+\newcommand{\chtitle}{Actions et Forces}
+\newcommand{\dtype}{Cours}
+\newcommand{\bgcol}{blue!2!white}
+\newcommand{\sectitle}{\section}
 
 \begin{document}
 \begin{frame}
     \maketitle \vspace{-2.5cm}
     \includegraphics[width=.8\paperwidth,height=.8\paperheight]{Ressources/2GT_C6_Cours_force.png}
 \end{frame}
+
 \section{Action et forces}
 \begin{frame}{Action et forces}
     \begin{minipage}[c]{.45\linewidth}
@@ -69,8 +36,8 @@ Décrire la situation suivante :\\
 \end{minipage}
 \end{frame}
 
+\subsection{Actions}
 \begin{frame}{Actions}
-	\subsection{Actions}
     \colorbox{red!10}{\begin{minipage}{\linewidth}
         Lorsqu'un système 1 agit sur un système 2, on dit qu'il exerce une action.\\
 	De manière \underline{réciproque} et \underline{simultanée}, le système 2 agit sur le système 1 et exerce une action.\\
@@ -80,8 +47,8 @@ Décrire la situation suivante :\\
     }
 \end{frame}
 
+\subsection{Diagrammes système-interaction}
 \begin{frame}{Diagrammes système-interaction}
-    \subsection{Diagrammes système-interaction}
 \begin{minipage}[t]{.45\linewidth}
    \includegraphics[scale = 1.2]{Ressources/2GT_C6_Cours_Fig1.png}
 \end{minipage}
@@ -106,8 +73,8 @@ Décrire la situation suivante :\\
 \end{minipage}
 \end{frame}
 
+\subsection{Modélisation d'une action par une force}
 \begin{frame}{Modélisation d'une action par une force}
-    \subsection{Modélisation d'une action par une force}
     \colorbox{red!10}{\begin{minipage}{\linewidth}
         Une action exercée par un système extérieur sur le système étudié peut être modélisée par une force.\\
     Cette force est représentée par un vecteur caractérisé par :
@@ -121,8 +88,8 @@ Décrire la situation suivante :\\
     }
 \end{frame}
 
-\begin{frame}{Analyse}
 \subsection{Analyse}
+\begin{frame}{Analyse}
 \begin{minipage}[t]{.45\linewidth}
    \includegraphics[scale = 1.2]{Ressources/2GT_C6_Cours_Fig1.png}
 \end{minipage}
@@ -139,8 +106,8 @@ Décrire la situation suivante :\\
 \end{small}
 \end{frame}
 
+\subsection{Représentation des vecteurs}
 \begin{frame}{Représentation des vecteurs}
-    \subsection{Représentation des vecteurs}
     \begin{minipage}[t]{.5\linewidth}
     \begin{small}
     \begin{tabular}{|>{\centering}m{1.5cm}|>{\centering}m{3cm}|>{\centering\arraybackslash}m{2cm}|}
@@ -344,21 +311,10 @@ Décrire la situation suivante :\\
     \end{frame}
     
 \section{Exemples de forces}
-    {\usebackgroundtemplate{
-        \includegraphics[width=\paperwidth,height=\paperheight]{Ressources/bluetechBG.jpg}}
-    \begin{frame}{Exemples de forces}
-    
-    \begin{minipage}{.6\linewidth}
-        \includegraphics[width=\linewidth]{Ressources/2GT_C12_Cours_Forces.png}
-    \end{minipage}
-    
-    \hspace{3cm}\begin{minipage}{.6\linewidth}
-        \includegraphics[width=\linewidth]{Ressources/2GT_C12_Cours_Forces2.png}
-    \end{minipage}
-    \end{frame}
-    }
+
+\subsection{Le poids}
     \begin{frame}{Le poids}
-    \subsection{Le poids}
+
     \begin{minipage}{.6\linewidth}
     À proximité de la surface de la Terre, tout corps de masse $m$ soumis à une force dite de pesanteur : c'est le \textbf{poids}. Le vecteur $\vec{P}$ a pour caractéristiques :
     \begin{itemize}
@@ -380,13 +336,12 @@ Décrire la situation suivante :\\
             \draw[line width =1.5,-Latex, red] (0,2) to (0,.25);
             %\draw[line width =1.5,-Latex, blue] (0,1) to (0,2.75);
         \end{tikzpicture}
-    \end{minipage}
-        
+    \end{minipage}  
     \end{frame}
     
+ \subsection{La force exercée par un support}
     \begin{frame}{Force exercée par un support}
     \begin{minipage}{.45\linewidth}
-    \subsection{La force exercée par un support}
     Un corps de masse $m$, immobile et à l'horizontale, reposant sur un autre corps subit une force exercée par ce support notée $\vec{R}$.\\
     On aura alors $\vec{R} = -\vec{P}$.
     \end{minipage}
@@ -402,9 +357,9 @@ Décrire la situation suivante :\\
     \end{minipage}
     \end{frame}
     
+\subsection{Force exercée par un fil}
     \begin{frame}{Force exercée par un fil}
     \begin{minipage}{.45\linewidth}
-    \subsection{Force exercée par un fil}
     Un corps de masse $m$, suspendu par un fil non extensible, subit une force exercée par le fil notée $\vec{T}$, telle que $\vec{T}=-\vec{P}$.
     \end{minipage}
     \begin{minipage}{.45\linewidth}
@@ -419,10 +374,10 @@ Décrire la situation suivante :\\
         \end{tikzpicture}
     \end{minipage}
     \end{frame}
-    
+
+ \subsection{Force d'interaction gravitationnelle}
     \begin{frame}{Force d'interaction gravitationnelle}
     \begin{minipage}{\linewidth}
-    \subsection{Force d'interaction gravitationnelle}
     \small
     On considère en deux points différents de l'espace, deux objets $A$ et $B$, de masses respectives $m_A$ et $m_B$.\\
     On note la distance qui les sépare $d$.\\
@@ -473,14 +428,9 @@ Décrire la situation suivante :\\
     
 \section{Le principe d'inertie}
 
-    {\usebackgroundtemplate{
-        \includegraphics[width=\paperwidth,height=\paperheight]{Ressources/inertieBG.jpg}}
-        \begin{frame}{Le principe d'inertie}
-        \end{frame}
-    }
-
-\begin{frame}{Effet d'une force exercée sur le mouvement d'un système}
     \subsection{Effet d'une force exercée sur le mouvement d'un système}
+\begin{frame}{Effet d'une force exercée sur le mouvement d'un système}
+    
             Une force s'exerçant sur un système peut modifier la valeur de sa vitesse et/ou la direction du mouvement de ce système. Elle peut donc modifier le vecteur vitesse $\vec{v}$ de ce système.\\
             \textbf{Principe d'inertie}\\
             Lorsque les forces qui s’appliquent sur un système se compensent, le vecteur vitesse $\vec{v}$ ne varie pas. Le mouvement est donc au repos ($\vec{v}=\vec{0}$) ou rectiligne et uniforme ($\vec{v}=\vec{cst}$)\\
@@ -489,12 +439,13 @@ Décrire la situation suivante :\\
             Lorsque, entre deux instants voisins, le vecteur vitesse d’un système varie, alors les forces qui s’exercent sur lui ne se compensent pas.
 \end{frame}
 
+\subsection{La variation du vecteur vitesse}
 \begin{frame}{La variation du vecteur vitesse}
-        \subsection{La variation du vecteur vitesse}
             Au cours de la trajectoire, si l’une des trois caractéristiques du vecteur vitesse change (valeur, direction ou sens), la contraposée du principe d’inertie permet de déduire que les forces exercées sur l’objet ne se compensent pas. Inversement, si le vecteur vitesse est invariant lors du mouvement, les forces appliquées au système se compensent.
 \end{frame}
+
+\subsection{La chute libre verticale}
 \begin{frame}{La chute libre verticale}
-        \subsection{La chute libre verticale}
         La chute libre est définie lorsqu’un système n’est soumis qu’à son poids $\vec{P}$.
         Dans le cas d’une chute libre verticale, le vecteur vitesse va varier entre deux instants voisins. On peut donc en conclure que le mouvement n’est pas rectiligne et uniforme. De plus, on constate que la direction et le sens du vecteur variation de vitesse $\Delta \vec{v}= \vv{v_{i+1}} - \vec{v_{i}}$ sont identiques à ceux du poids.
 \end{frame}

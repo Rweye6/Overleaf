@@ -1,9 +1,9 @@
-PWD /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement
+PWD /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C8_Exercices.tex
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C8_Exercices.log
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C11_Exercices.tex
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C11_Exercices.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/fleqn.clo
@@ -14,6 +14,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/../../Styles/Exercice.sty
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/../../Styles/Exercice.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
@@ -35,6 +37,10 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fancybox/fancybox.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fancybox/fancybox.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/tgheros.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/tgheros.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
@@ -61,6 +67,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/dvipsnam.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -95,6 +104,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.sty
@@ -309,6 +320,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
@@ -320,17 +334,31 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titleps.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titleps.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titleps.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C8_Exercices.aux
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C8_Exercices.aux
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C8_Exercices.aux
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C8_Exercices.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C11_Exercices.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C11_Exercices.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C11_Exercices.aux
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C11_Exercices.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -343,66 +371,83 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-bas
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr-sc.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvb-sc.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/esvect/uesvect.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/esvect/uesvect.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/esvect/uesvect.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect6.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvb-sc.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qhvr.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C8_Exercices.pdf
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C11_Exercices.pdf
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig3.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/Ressources/2GT_C8_Exercices_Fig2.jpg
+INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -410,15 +455,12 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam1
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
-INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qhvr.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C8_Exercices.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/2GT/2GT_C11_Décrire un mouvement/2GT_C11_Exercices.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb
