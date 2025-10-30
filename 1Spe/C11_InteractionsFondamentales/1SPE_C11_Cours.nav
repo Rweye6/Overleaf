@@ -15,8 +15,19 @@
 \headcommand {\sectionentry {3}{Force de gravitation}{7}{Force de gravitation}{0}}
 \headcommand {\slideentry {3}{0}{1}{7/8}{}{0}}
 \headcommand {\beamer@framepages {7}{8}}
-\headcommand {\beamer@partpages {1}{8}}
-\headcommand {\beamer@subsectionpages {7}{8}}
-\headcommand {\beamer@sectionpages {7}{8}}
-\headcommand {\beamer@documentpages {8}}
-\headcommand {\gdef \inserttotalframenumber {4}}
+\headcommand {\slideentry {3}{0}{2}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {3}{0}{3}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@sectionpages {7}{10}}
+\headcommand {\beamer@subsectionpages {7}{10}}
+\headcommand {\sectionentry {4}{Force électrostatique}{11}{Force électrostatique}{0}}
+\headcommand {\slideentry {4}{0}{1}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {4}{0}{2}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@partpages {1}{12}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\beamer@sectionpages {11}{12}}
+\headcommand {\beamer@documentpages {12}}
+\headcommand {\gdef \inserttotalframenumber {8}}
