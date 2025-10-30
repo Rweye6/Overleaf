@@ -1,0 +1,90 @@
+\documentclass[aspectratio=43]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{siunitx}
+
+
+\usepackage{xifthen}
+
+\usepackage{mdframed}
+\usepackage{calrsfs}
+
+% --- Définition des environnements personnalisés ---
+
+\newmdenv[
+linewidth=0pt,
+roundcorner=20pt,
+skipabove=5pt,
+skipbelow=5pt,
+innerleftmargin=8pt,
+innerrightmargin=8pt,
+innertopmargin=8pt,
+innerbottommargin=8pt
+]{basebox}
+
+\newenvironment{remarque}[1][Remarque]{%
+	\begin{basebox}[
+		backgroundcolor=blue!5,
+		linecolor=blue!75!black,
+		frametitle={\color{blue!75!black} #1}
+		]
+	}{\end{basebox}}
+
+\title{Interactions fondamentales et champs}
+\date{\today}
+\author{ROSALIE R}
+
+\usetheme{cours}
+
+\newcommand{\chnum}{Chapitre 11}
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+\section{Les interactions fondamentales}
+	\begin{frame} 
+		\frametitle{Les interactions fondamentales} 
+		\only<1>{\begin{itemize}
+            \item Quatres interactions fondamentales sont connues et permettent d'expliquer l'origine de toutes les forces qui gouvernent notre Univers.
+            \item Elles agissent à chaque instant sur la matière avec une intensité qui dépend de l'échelle considérée.
+        \end{itemize}}
+        \only<2>{\begin{itemize}
+            \item À l'échelle des galaxies, des étoiles ou des planètes (jusqu'à \SI{500}{km} de distance environ) : \emph{L'interaction gravitationnelle} explique la forme et le mouvement des astres.
+            \item À l'échelle de l'Homme, des bactéries et des atomes (jusqu'à \SI{1E-10}{m}) : \emph{L'interaction électromagnétique} domine les trois autres et permet aux objets solides d'avoir des formes diverses et variées.
+        \end{itemize}
+        \begin{remarque}
+            Pour une masse isolée de \num{200} à \SI{800}{km} de diamètre, les deux interactions sont en compétition et la forme d'un astéroïde, par exemple, dépendra principalement de la rigidité de son manteau.
+        \end{remarque}}
+        \only<3>{\begin{itemize}
+            \item À l'échelle du noyau des atomes (\SI{1E-15}{m}) : \emph{L'inreaction nucléaire forte} maintient collés entre eux les nucléons d'un même noyau malgré la répulsion entre les protons.
+            \item À l'échelle la pluus petite (\SI{1E-17}{m}) : \emph{L'interaction nucléaire faible} reste la seule à s'exprimer et permet à certaines particules supposées élémentaires (quarks, électrons, neutrinos, ...) de changer de nature. Son effet le plus connu est la radioactivité $\beta$.
+        \end{itemize}}
+	\end{frame}
+
+\section{Notions de champs}
+	\begin{frame}{Notions de champ}
+		\only<1>{\begin{itemize}
+            \item En physique, un champ est l'ensemble des valeurs d'une grandeur physique, en général à plusieurs composantes, en tout les points de l'espace.
+        \end{itemize}}
+        \only<2>{\begin{itemize}
+            \item Un champ est une grandeur physique présente en chaque point de l'espace considéré.\begin{itemize}
+                \item Si cette grandeur se limite à une valeur, on parle de champ scalaire. (exemple d'une carte des températures)
+                \item Si cette grandeur possède les caractéristiques d'un vecteur, on parle de champ vectoriel. (exemple d'une carte des vents)
+            \end{itemize}
+            \item Lors d'une éclipse de Soleil par la Lune, on peut voir l'effet du champ (vectoriel) magnétique chéé par le Soleil autour de lui sur les particules de matière qu'il emmet dans le vide interstellaire (vent solaire)
+        \end{itemize}}
+	\end{frame}
+\section{Force de gravitation}
+    \begin{frame}
+        \frametitle{Force de gravitation}
+        \begin{itemize}
+            \onslide<1->\item Tout objet, du fait de sa masse $m$, engendre autour de lui un champ de gravité noté $\mathcal{G}$.
+            \onslide<2->\item Un autre objet de masse $m'$, placé à une distance $d$ de $m$ subira alors une force toujours attractive, impossible à écranter dirigée vers $m$ et d'expression : $$ \vec{F} = G\cdot \dfrac{m\cdot m'}{d^2}\cdot \vec{u}$$
+            ou$$ \vec{F} = \vec{\mathcal{G}}\cdot m'$$
+        \end{itemize}
+    \end{frame}
+\end{document}

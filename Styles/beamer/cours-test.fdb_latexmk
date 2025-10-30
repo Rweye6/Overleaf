@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761740287.80377 "/Users/remy/Documents/GitHub/Education/Overleaf/Styles/theme beamer/cours-test.tex" "cours-test.pdf" "cours-test" 1761740288.64401 0
-  "/Users/remy/Documents/GitHub/Education/Overleaf/Styles/theme beamer/cours-test.tex" 1761740287.58674 967 31b774f6f67d6f4e0e5c1dbccf033c51 ""
+["pdflatex"] 1761813712.82691 "/Users/remy/Documents/GitHub/Education/Overleaf/Styles/beamer/cours-test.tex" "cours-test.pdf" "cours-test" 1761813714.27454 0
+  "/Users/remy/Documents/GitHub/Education/Overleaf/Styles/beamer/cours-test.tex" 1761813712.58606 967 31b774f6f67d6f4e0e5c1dbccf033c51 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsi1000.tfm" 1136768653 3584 87c00098505ed1ab5849d7a05016cb73 ""
@@ -223,11 +223,11 @@
   "beamercolorthemecours.sty" 1761727357.05305 276 be0ba2680ee35eee84185b731a7b825a ""
   "beamerinnerthemecours.sty" 1761740263.07213 1124 dd670f6fb1e95ef3901f96487aa81799 ""
   "beamerouterthemecours.sty" 1761689461.42635 710 031c04e7c78696c75eea156fcc00b0ad ""
-  "beamerthemecours.sty" 1761688402.18985 239 84bb0a6c987d782cf28545cfda365500 ""
-  "cours-test.aux" 1761740288.5743 843 d3eb8d062a45900f4ffc986a5e302ca7 "pdflatex"
-  "cours-test.nav" 1761740288.57489 483 6844ba10405e50f7fa84d0adc3808fca "pdflatex"
-  "cours-test.out" 1761740288.33398 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cours-test.tex" 1761740287.58674 967 31b774f6f67d6f4e0e5c1dbccf033c51 ""
+  "beamerthemecours.sty" 1761813704.38638 239 84bb0a6c987d782cf28545cfda365500 ""
+  "cours-test.aux" 1761813714.15833 843 d3eb8d062a45900f4ffc986a5e302ca7 "pdflatex"
+  "cours-test.nav" 1761813714.1592 483 6844ba10405e50f7fa84d0adc3808fca "pdflatex"
+  "cours-test.out" 1761813713.74267 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cours-test.tex" 1761813712.58606 967 31b774f6f67d6f4e0e5c1dbccf033c51 ""
   (generated)
   "cours-test.aux"
   "cours-test.log"
