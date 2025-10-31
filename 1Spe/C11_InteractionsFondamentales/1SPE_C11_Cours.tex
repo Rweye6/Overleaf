@@ -153,21 +153,21 @@ innerbottommargin=8pt
 \begin{frame}
     \frametitle{Origine de la force}
     \begin{minipage}{.7\textwidth}
-        L'interaction électromagnétique agit entre tous les objets possédant une charge électrique. Elle explique la force électrique qui s'exerce entre deux objet de charge électriques $q$ et $Q$ et distant de $d$ :
+        \only<1>{L'interaction électromagnétique agit entre tous les objets possédant une charge électrique. Elle explique la force électrique qui s'exerce entre deux objet de charge électriques $q$ et $Q$ et distant de $d$ :
     \begin{tabular}{c|m{3cm}}
         \multirow{4}{*}{$F_E = \dfrac{k\cdot |q|\cdot |Q|}{d^2}$} & $F_E$ en \unit{\newton}\\
         & $q$ et $Q$ en Coulombs (\unit{C})\\
         & $d$ en mètre (\unit{m})\\
         & $k$ une constante égale à \SI{9E9}{SI} dans l'air
-    \end{tabular}\\
-    L'interaction électromagnétique est : 
+    \end{tabular}\\}
+    \only<2>{L'interaction électromagnétique est : 
     \begin{itemize}
         \item attractive si les charges sont de signes contraires ou répulsive si les charges sont de même signes
         \item de portée infinie mais pouvant être écrantée
-    \end{itemize}
+    \end{itemize}}
     \end{minipage}
     \begin{minipage}{.25\textwidth}
-        \centering \begin{tikzpicture}
+        \centering \begin{tikzpicture}[scale=.7]
             \draw[color = black, fill = green!80!black] (0,0) circle(.5);
 
             \draw[color = black, fill = green!80!black] (0,2) circle(.5);
@@ -189,7 +189,7 @@ innerbottommargin=8pt
             \node[above left] (B) at (-.5,2){$\vec{F_E}$};
             \node[above right] (D) at (2.5,0){$\vec{F'_E}$};
         \end{tikzpicture}
-        Dans les deux cas : 
+        Dans les deux cas :
         \begin{align}
         \vec{F_E} = -\vec{F'_E}\nonumber\\
             F_E=F'_E \nonumber
