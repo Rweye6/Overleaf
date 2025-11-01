@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.27)  31 OCT 2025 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.27)  1 NOV 2025 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -923,12 +923,20 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 53.
  (./1SPE_C11_Cours.nav)
-Overfull \vbox (0.84012pt too high) detected at line 57
+Overfull \vbox (9.24011pt too high) detected at line 57
  []
 
 [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+<Ressources/ChBg.png, id=43, 1204.5pt x 682.55pt>
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 59.
+(pdftex.def)             Requested size: 364.20155pt x 273.15056pt.
+ [2
+
+ <./Ressources/ChBg.png>] [3
 
 ]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
@@ -953,19 +961,33 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 77.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 77.
- [3
-
-] [4
+ [4
 
 ] [5
 
-] [6
+]
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 79.
+(pdftex.def)             Requested size: 364.20155pt x 273.15056pt.
+ [6
 
 ] [7
 
 ] [8
 
-] [9
+]
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 92.
+(pdftex.def)             Requested size: 364.20155pt x 273.15056pt.
+ [9
+
+] [10
+
+] [11
+
+] [12
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -976,58 +998,93 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 135.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 135.
- [10
+ [13
 
 ]
-<Ressources/1SPE_C11_Electrisation.png, id=94, 156.66583pt x 62.56934pt>
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 136.
+(pdftex.def)             Requested size: 364.20155pt x 273.15056pt.
+ [14
+
+]
+<Ressources/1SPE_C11_Electrisation.png, id=126, 156.66583pt x 62.56934pt>
 File: Ressources/1SPE_C11_Electrisation.png Graphic file (type png)
 <use Ressources/1SPE_C11_Electrisation.png>
 Package pdftex.def Info: Ressources/1SPE_C11_Electrisation.png  used on input line 150.
 (pdftex.def)             Requested size: 107.55333pt x 42.95424pt.
- [11
+ [15
 
  <./Ressources/1SPE_C11_Electrisation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 []|$\OT1/mathkerncmss/m/sl/10.95 q$ \T1/cmss/m/n/10.95 et $\OT1/mathkerncmss/m/sl/10.95 Q$ \T1/cmss/m/n/10.95 en
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 198--198
+Underfull \hbox (badness 3884) in paragraph at lines 199--199
 []|$\OT1/mathkerncmss/m/sl/10.95 k$ \T1/cmss/m/n/10.95 une con-stante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 []\T1/cmss/m/n/10.95 L'interaction élec-tro-mag-né-tique agit en-
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 198--198
+Underfull \hbox (badness 2828) in paragraph at lines 199--199
 \T1/cmss/m/n/10.95 tre tous les ob-jets pos-sé-dant une charge
  []
 
 
-Underfull \hbox (badness 4779) in paragraph at lines 198--198
+Underfull \hbox (badness 4779) in paragraph at lines 199--199
 \T1/cmss/m/n/10.95 élec-trique. Elle ex-plique la force élec-
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 198--198
+Underfull \hbox (badness 5403) in paragraph at lines 199--199
 \T1/cmss/m/n/10.95 trique qui s'exerce en-tre deux ob-jet de
  []
 
 
-Overfull \hbox (77.44861pt too wide) in paragraph at lines 198--198
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+
+ []
+
+
+Overfull \hbox (43.30496pt too wide) in paragraph at lines 199--199
  [][] 
  []
 
-
-Overfull \vbox (41.88112pt too high) detected at line 198
- []
-
-[12
+[16
 
 ]
+Overfull \hbox (43.30496pt too wide) in paragraph at lines 199--199
+ [][] 
+ []
+
+[17
+
+]
+File: Ressources/ChBg.png Graphic file (type png)
+<use Ressources/ChBg.png>
+Package pdftex.def Info: Ressources/ChBg.png  used on input line 201.
+(pdftex.def)             Requested size: 364.20155pt x 273.15056pt.
+ [18
+
+]
+<Ressources/1SPE_C11_ChElec_dipole.png, id=151, 126.10872pt x 94.58154pt>
+File: Ressources/1SPE_C11_ChElec_dipole.png Graphic file (type png)
+<use Ressources/1SPE_C11_ChElec_dipole.png>
+Package pdftex.def Info: Ressources/1SPE_C11_ChElec_dipole.png  used on input line 213.
+(pdftex.def)             Requested size: 61.45703pt x 46.09279pt.
+<Ressources/1SPE_C11_ChElec_champ.png, id=152, 102.34209pt x 98.94684pt>
+File: Ressources/1SPE_C11_ChElec_champ.png Graphic file (type png)
+<use Ressources/1SPE_C11_ChElec_champ.png>
+Package pdftex.def Info: Ressources/1SPE_C11_ChElec_champ.png  used on input line 213.
+(pdftex.def)             Requested size: 61.45703pt x 59.41838pt.
+ [19
+
+ <./Ressources/1SPE_C11_ChElec_dipole.png> <./Ressources/1SPE_C11_ChElec_champ.png>]
 \tf@nav=\write6
 \openout6 = `1SPE_C11_Cours.nav'.
 
@@ -1043,21 +1100,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `1SPE_C11_Cours.out' has not changed.
-(rerunfilecheck)             Checksum: 135336534F4C574A35F886DFFFAF7F73;636.
+(rerunfilecheck)             Checksum: C392D098743CA15B31F52B74F45A41F0;765.
  ) 
 Here is how much of TeX's memory you used:
- 29928 strings out of 474116
- 635375 string characters out of 5743681
- 1943187 words of memory out of 5000000
- 51689 multiletter control sequences out of 15000+600000
- 571689 words of font info for 70 fonts, out of 8000000 for 9000
+ 30016 strings out of 474116
+ 637521 string characters out of 5743681
+ 1941187 words of memory out of 5000000
+ 51761 multiletter control sequences out of 15000+600000
+ 572461 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,123p,499b,935s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on 1SPE_C11_Cours.pdf (12 pages, 187079 bytes).
+ 128i,14n,123p,499b,970s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on 1SPE_C11_Cours.pdf (19 pages, 407055 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 243 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
