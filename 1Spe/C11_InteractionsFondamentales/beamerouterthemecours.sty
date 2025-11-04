@@ -1,9 +1,9 @@
 \mode<presentation>
 
-% Frame title
+% Frame layout
 \defbeamertemplate*{frametitle}{cours}[1][]
 {
-	\vskip1cm%
+	%\vskip1cm%
 	\begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
 		\begin{tikzpicture}
 			\useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
@@ -18,5 +18,44 @@
 		\end{tikzpicture}
 	\end{beamercolorbox}
 }
+
+
+\setbeamertemplate{section page}{%
+    \begingroup
+        \begin{beamercolorbox}[sep=10pt,center,rounded=true,shadow=true]{section title}
+        \usebeamerfont{section title}\thesection.~\insertsection\par
+        \end{beamercolorbox}
+    \endgroup
+}
+
+\setbeamertemplate{subsection page}{%
+    \begingroup
+        %\begin{beamercolorbox}[sep=2pt,center,rounded=true,shadow=true]{section title}
+        %\usebeamerfont{section title}\thesection~\insertsection\par
+        %\end{beamercolorbox}
+        %\vspace*{-1.pt}
+        \begin{beamercolorbox}[sep=6pt,center,rounded=true,shadow=true]{subsection title}
+        \usebeamerfont{subsection title}\thesection.\thesubsection.~\insertsubsection\par
+        \end{beamercolorbox}
+    \endgroup
+}
+
+\AtBeginSection[]{%
+{\usebackgroundtemplate{
+        \includegraphics[width=\paperwidth,height=\paperheight]{Ressources/ChBg.png}}
+        \begin{frame}
+        \textbf{\sectionpage}
+    \end{frame}
+    }
+}
+
+\AtBeginSubsection[]{%
+    \begin{frame}
+        \subsectionpage
+    \end{frame}
+}
+
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
 
 \mode<all>
