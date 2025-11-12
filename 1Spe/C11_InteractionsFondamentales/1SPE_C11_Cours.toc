@@ -2,4 +2,4 @@
 \beamer@sectionintoc {2}{Notions de champs}{6}{0}{2}
 \beamer@sectionintoc {3}{Force de gravitation}{9}{0}{3}
 \beamer@sectionintoc {4}{Force électrostatique}{14}{0}{4}
-\beamer@sectionintoc {5}{Force életcrique}{18}{0}{5}
+\beamer@sectionintoc {5}{Force électrique}{18}{0}{5}
