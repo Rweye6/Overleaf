@@ -1,9 +1,9 @@
-PWD /home/rweye/Nextcloud/Documents/Overleaf/TSPE/TSPE_C18_Diffraction des ondes et interférences
+PWD /home/rweye/Documents/Overleaf/TSPE/TSPE_C18_Diffraction des ondes et interférences
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/rweye/Nextcloud/Documents/Overleaf/TSPE/TSPE_C18_Diffraction des ondes et interférences/TSPE_C18_Cours.tex
+INPUT /home/rweye/Documents/Overleaf/TSPE/TSPE_C18_Diffraction des ondes et interférences/TSPE_C18_Cours.tex
 OUTPUT TSPE_C18_Cours.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -331,10 +331,16 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/romannum/romannum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/romannum/romannum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/stdclsdv/stdclsdv.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/stdclsdv/stdclsdv.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -343,6 +349,23 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 INPUT /usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
@@ -458,12 +481,12 @@ INPUT /usr/share/texmf/tex/latex/tex-gyre/ts1qhv.fd
 INPUT /usr/share/texmf/tex/latex/tex-gyre/ts1qhv.fd
 INPUT /usr/share/texmf/tex/latex/tex-gyre/ts1qhv.fd
 INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ts1-qhvr.tfm
+INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
+INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
+INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
+INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
+INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
 INPUT /usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc
-INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
-INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
-INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
-INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
-INPUT ./Ressources/TSPE_C9_Cours_Fig5.png
 INPUT TSPE_C18_Cours.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

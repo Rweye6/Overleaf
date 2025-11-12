@@ -21,13 +21,14 @@
 
 %\setlength{\mathindent}{0pt}%indentation dans math = 0
 
-\RequirePackage[top = 1.5cm, bottom = 1.5cm, left = .5cm, right = .5cm]{geometry}
+\RequirePackage[top = 1.5cm, bottom = 1.5cm, left = 1cm, right = 1cm]{geometry}
 \RequirePackage{titlesec}
 %\setcounter{secnumdepth}{4}
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{amssymb} %double flèche de réaction
 \RequirePackage{mathrsfs}%farraday
 \RequirePackage{xtab}%tableau sur plusieurs pages
+\RequirePackage{esvect}%grands vecteurs
 %\RequirePackage{esvect}%grands vecteurs
 
 \RequirePackage[version=4]{mhchem} %equations chimiques
@@ -175,6 +176,28 @@
 
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{1pt}
+
+\usepackage{mdframed}
+
+\newmdenv[
+linewidth=1pt,
+roundcorner=20pt,
+skipabove=10pt,
+skipbelow=10pt,
+innerleftmargin=8pt,
+innerrightmargin=8pt,
+innertopmargin=8pt,
+innerbottommargin=8pt
+]{basebox}
+
+\newenvironment{data}[1][Données]{%
+	\begin{basebox}[
+		backgroundcolor=blue!5,
+		linecolor=blue!75!black,
+		frametitle={\color{blue!75!black}\bfseries #1}
+		]
+	}{\end{basebox}}
+
 
 % Finally, we'll use \endinput to indicate that LaTeX can stop reading this file. LaTeX will ignore anything after this line.
 \endinput
