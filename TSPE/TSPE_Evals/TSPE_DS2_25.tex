@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 
 \usepackage{../../Styles/Eval}
 
@@ -25,7 +25,7 @@ L'objectif de cet exercice est d'établir l'équation horaire de la trajectoire 
     \caption{Schémam de la situation du lancer}
     \label{doc1}
     \centering
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=.9]
         \draw[-Latex] (0,0) -- (4,0);
         \draw[-Latex] (0,0) -- (0,4.5);
         \draw[dashed] (0,2.5) -- (4,2.5);
