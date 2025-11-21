@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,13pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 \usepackage{../../Styles/Cours}
 
 
@@ -94,17 +94,18 @@
     Dans le cas d'une transformation totale, la moitié du réactif limitant est alors consommée.
     \end{minipage}
     \begin{minipage}{.4\linewidth}
+        \centering
 \begin{tikzpicture}[scale=1.5]%formation de produit
 \draw [domain=0:3,samples = 300,blue!60,line width = 1.2pt] plot (\x,{3*exp(-3*\x)});
 \draw[-stealth,thick] (0.0,0) to (0,3.2);
 \draw[-stealth,thick] (0.0,0) to (3.2,0);
-\draw (3.2,0) node[below]{\Large Temps t (s)};
+\draw (3.2,0) node[below]{\large t (s)};
 \draw (0.231,0) node{$|$} node[below]{\Large $t_{1/2}$};
 \draw[->,line width = 1.2] (.231,1.5) to (0.231,0);
 \draw (0,3) node{$-$} node[left]{\Large $n_0$};
 \draw (0,1.5) node{$-$} node[left]{\Large $\dfrac{n_0}{2}$};
 \draw[->,line width = 1.2] (0,1.5) to (0.231,1.5);
-\draw (0,3.2) node[right]{\Large Quantités de matière n (mol)};
+\draw (0,3.2) node[above]{\large n (mol)};
 
 \foreach \k in {.5,1,1.5,2,2.5,3} {
     \draw[gray!80] (\k,0) --(\k,3) ;
@@ -121,10 +122,11 @@
     \textcolor{gray!80}{Pour aller plus loin : la transformation suit une loi d'ordre $n$ par rapport à un réactif $R$ si $v_{disp,R} = k \times [R]^n$.}\\
     \end{minipage}
     \begin{minipage}{.4\linewidth}
+        \centering
     \begin{tikzpicture}[scale=1.5]%formation de produit
 \draw [domain=0:3,samples = 300,blue!60,line width = 1.2pt] plot (\x,\x);
-\draw (2.5,0) node[below]{\large Concentration [X] (\unit{\mole\per\liter})};
-\draw (0,3.2) node[right]{\large Vitesse volumique $v_x$ (\unit{\mole\per\liter\per\second})};
+\draw (2.5,0) node[below]{\large[X] (\unit{\mole\per\liter})};
+\draw (0,3.2) node[right]{\large $v_X$ (\unit{\mole\per\liter\per\second})};
 \draw[-stealth,thick] (0,0) to (0,3);
 \draw[-stealth,thick] (0,0) to (3,0);
 \draw (0,0) node[below]{\Large 0};
@@ -152,40 +154,41 @@
     $$ t_{1/2}=\dfrac{\ln{2}}{k}$$
     \end{minipage}
     \begin{minipage}{.4\linewidth}
-    \begin{tikzpicture}[scale=1.5]%formation de produit
-\draw [domain=0:3,samples = 300,blue!60,line width = 1.2pt] plot (\x,{3*exp(-3*\x)});
-\draw [domain=0:3,samples = 300,green!60!blue,line width = 1.2pt] plot (\x,{2*exp(-3*\x)});
-\draw[-stealth,thick] (0.0,0) to (0,3.2);
-\draw[-stealth,thick] (0.0,0) to (3.2,0);
-\draw (3.2,0) node[below]{\Large Temps t (s)};
-\draw (0.231,0) node{$|$} node[below,red]{\Large $t_{1/2}$};
-\draw[dashed,red,line width = 1.2] (.231,1.5) to (0.231,0);
-\draw (0,3) node{$-$} node[left,blue!60]{\large $[A]_0$};
-\draw (0,1.5) node{$-$} node[left,blue!60]{\large $\dfrac{[A]_0}{2}$};
-\draw[dashed,red,line width = 1.2] (0,1.5) to (0.231,1.5);
-
-\draw (0,2) node{$-$} node[left,green!60!blue]{\large $[A]'_0$};
-\draw (0,1) node{$-$} node[below left,green!60!blue]{\large $\dfrac{[A]'_0}{2}$};
-\draw[dashed,red,line width = 1.2] (0,1) to (0.231,1);
-
-\draw (0,3.2) node[right]{\Large [A]};
-
-\foreach \k in {.5,1,1.5,2,2.5,3} {
-    \draw[gray!80] (\k,0) --(\k,3) ;
-    \draw[gray!80] (0,\k) -- (3,\k);}
-\end{tikzpicture}
+        \centering
+        \begin{tikzpicture}[scale=2]%formation de produit
+            \draw [domain=0:3,samples = 300,blue!60,line width = 1.2pt] plot (\x,{3*exp(-3*\x)});
+            \draw [domain=0:3,samples = 300,green!60!blue,line width = 1.2pt] plot (\x,{2*exp(-3*\x)});
+            \draw[-stealth,thick] (0.0,0) to (0,3.2);
+            \draw (3.2,0) node[below]{\large t (s)};
+            \draw (0.231,0) node{$|$} node[below,red]{\Large $t_{1/2}$};
+            \draw[dashed,red,line width = 1.2] (.231,1.5) to (0.231,0);
+            \draw (0,3) node{$-$} node[left,blue!60]{\large $[A]_0$};
+            \draw (0,1.5) node{$-$} node[left,blue!60]{\large $\dfrac{[A]_0}{2}$};
+            \draw[dashed,red,line width = 1.2] (0,1.5) to (0.231,1.5);
+            
+            \draw (0,2) node{$-$} node[left,green!60!blue]{\large $[A]'_0$};
+            \draw (0,1) node{$-$} node[below left,green!60!blue]{\large $\dfrac{[A]'_0}{2}$};
+            \draw[dashed,red,line width = 1.2] (0,1) to (0.231,1);
+            
+            \draw (0,3.2) node[right]{\Large [A]};
+            
+            \foreach \k in {.5,1,1.5,2,2.5,3} {
+                \draw[gray!80] (\k,0) --(\k,3) ;
+                \draw[gray!80] (0,\k) -- (3,\k);}
+            
+            \draw[-stealth,thick] (0.0,0) to (3.2,0);
+            \end{tikzpicture}
+            
     \end{minipage}
     
     \textbf{Le temps de demi-réaction d'une transformation d'ordre 1 est indépendante de la concentration initiale de réactif.}\\
     L'ordre d'une réaction se déduire uniquement de l'expérience. \textbf{Les trois méthodes précédentes permettent de vérifier si une transformation est d'ordre 1.}
 
-Modélisation microscopique cinétique
+\newpage
 
-Modéliser une réaction chimique à l'échelle microscopique permet de mieux comprendre et expliquer l'influence des facteurs cinétiques.
-%\newpage
 \section{Mécanismes réactionnels}
 	\subsection{Chocs efficaces}
-Une réaction chimique ne peut avoir lieu que d'il y a contact entre deux entités chimiques. Lors de cette rencontre, la réaction chimique peut être décrite comme une réorganisation des atomes ou des charges électriques entre les deux entités. Cela implique des ruptures de liaisons covalentes ou des arrachages d'électrons avant la formation de nouvelles liaisons ou la récupération d'électrons.\\
+Une réaction chimique ne peut avoir lieu que s'il y a contact entre deux entités chimiques. Lors de cette rencontre, la réaction chimique peut être décrite comme une réorganisation des atomes ou des charges électriques entre les deux entités. Cela implique des ruptures de liaisons covalentes ou des arrachages d'électrons avant la formation de nouvelles liaisons ou la récupération d'électrons.\\
 Si on considère la réaction \ce{A2 + B2 -> 2AB}, elle nécessite la rupture d'une liaison \chemfig{A-A} et d'une liaison \chemfig{B-B} avant la formation de deux liaisons \chemfig{A-B}.\\
 En modélisant la rencontre entre les espèces \ce{A2} et \ce{B2} par un \textbf{choc}, il faut que la somme des énergies de liaisons de deux molécules soit supérieure à la comme des énergies de liaison \chemfig{A-A} et \chemfig{B-B}.\\
 Après le choc, les atomes séparés ses recombinent en formant deux molécules \ce{AB}. On dit alors que le choc est \textbf{efficace}.
@@ -253,7 +256,7 @@ Un \textbf{acte élémentaire} est une réaction se déroulant à l'échelle mic
 
 	\subsection{Mécanismes réactionnels}
 A l'échelle microscopique, le passage des réactifs aux produits se décompose en une succession d'actes élémentaires. Pour une réaction chimique \textbf{complexe}, on appelle cette succession d'actes élémentaires le \textbf{mécanisme réactionnel}.
-		\subsubsection*{Intermédiaires réactionnels et catalyseur}
+		\subsubsection{Intermédiaires réactionnels et catalyseur}
 Lorsque l'on étudie le mécanisme réactionnel, celui-ci peut faire apparaître un intermédiaire réactionnel : une entité chimique initialement absente de la réaction, qui n'est pas dans l'équation de réaction et qui a une durée de vie très courte, il est produit dans un acte élémentaire et disparaît dans un acte suivant. ou un catalyseur : une entité chimique initialement présente dans le système, qui ne figure pas dans l'équation de réaction, qui réagit dans un acte élémentaire et est régénéré dans un acte suivant.\\
 
 \begin{table}[h!]
@@ -267,7 +270,6 @@ Lorsque l'on étudie le mécanisme réactionnel, celui-ci peut faire apparaître
     \label{tab:ex1}
 \end{table}
 \textbf{\ce{NO3}} est un intermédiaire réactionnel car il est absent dans le mélange initial, il est créé à l'acte 1 et il disparaît dans l'acte 2.
-
 \begin{table}[h!]
     \centering
     \caption*{\textbf{Exemple 2 : Réaction d'estérification}}
@@ -285,7 +287,7 @@ Bilan :& \ce{C4H8O2 + CH4O -> C5H20O2 + H2O}\\
 Les produits de l'estérification de l'acide butanoïque \ce{C4H8O2} avec le méthanol \ce{CH4O} sont le butanoate de méthyle \ce{C5H10O2} et l'eau \ce{H2O}.
 
 \subsection{Sites donneurs, accepteurs et flèches courbes}
-        \subsubsection*{Présence des sites donneurs et accepteurs}
+        \subsubsection{Présence des sites donneurs et accepteurs}
 Lorsque deux entités se rapprochent, les forces prédominantes, à cette échelle sont les forces d'interaction électrostatiques. Pour prévoir la manière dont les entités vont interagir, il faut pouvoir identifier la répartition de leurs charges électriques.\\
 L'\textbf{électronégativité $\mathbf{\chi}$} d'un élément chimique est une mesure de sa capacité à attirer à lui les électrons d'une liaison de valence. Si la différence d'électronégativité entre deux atomes liés est supérieure ou égale à 0,4, la liaison est \textbf{polarisée}. L'atome le plus électronégatif porte alors une \textbf{charge électrique partielle} négative $\delta^-$, l'atome le moins électronégatif porte une charge électrique partielle $\delta^+$.\\
 
@@ -301,10 +303,10 @@ L'\textbf{électronégativité $\mathbf{\chi}$} d'un élément chimique est une 
 	\begin{minipage}{.5\linewidth}
 	\centering
     \schemestart
- 	\chemfig{H-C(-[:90]H)(-[:-90]H)-@{dnl}\charge{-120[anchor=180+\chargeangle]=$\delta^-$,35=\|,125=\|}{O}-[:-35]\charge{-60[anchor=180+\chargeangle]=$\delta^+$}{H}} 
+ 	\chemfig[atom sep=2em]{H-C(-[:90]H)(-[:-90]H)-@{dnl}\charge{-120[anchor=180+\chargeangle]=$\delta^-$,35=\|,125=\|}{O}-[:-35]\charge{-60[anchor=180+\chargeangle]=$\delta^+$}{H}} 
  	\chemfig{@{atoh}\charge{60[anchor=180+\chargeangle]=$+$}{H}}
  	\arrow{->}
- 	\chemfig{H-C(-[2]H)(-[6]H)-\charge{45[anchor=180+\chargeangle]=$+$,90[anchor=180+\chargeangle]=\|}{O}(-[6]H)-H}
+ 	\chemfig[atom sep=2em]{H-C(-[2]H)(-[6]H)-\charge{45[anchor=180+\chargeangle]=$+$,90[anchor=180+\chargeangle]=\|}{O}(-[6]H)-H}
  	\schemestop
   	\chemmove{
  		\draw[shorten <=2pt, shorten >=7pt]
@@ -314,21 +316,21 @@ L'\textbf{électronégativité $\mathbf{\chi}$} d'un élément chimique est une 
 %\caption*{(a) Charges partielles (b) Attaque d'un doublet non liant}
 \end{figure}
 Un \textbf{site} est un lieu précis dans une entité chimique, atome, doublet d'électrons liant ou non liant. Un \textbf{site donneur} d'électrons est un site riche ou excédentaire en électrons : doublet non liant d'électrons, liaison double ou triple, atome portant une charge électrique ionique ou partielle négative. Un \textbf{site accepteur} d'électrons est un site pauvre ou en déficit d'électrons : un atome portant une charge ionique ou partielle positive.
-        \subsubsection*{Flèches courbes}
+        \subsubsection{Flèches courbes}
 Lorsque deux espèces réactives se rencontrent, une force électrostatique attractive s'exerce entre les sites donneurs et les sites accepteurs.\\
 Un acte élémentaire peut être expliqué par l'\textbf{attaque} d'un site donneur sur un site accepteur d'électrons. On schématise cette attaque par une \textbf{flèche courbe} tracée très précisément entre le site donneur (début de la flèche) et le site accepteur (pointe de la flèche).
 
 \subsection{Interprétation de l'influence des facteurs cinétiques}
-    \subsubsection*{La concentration}
+    \subsubsection{La concentration}
 L'augmentation de la concentration des réactifs se traduit par des collisions plus fréquentes entre les espèces réactives, et donc par une augmentation de la vitesse de disparition des réactifs.
-    \subsubsection*{La température}
+    \subsubsection{La température}
 L'augmentation de la température se traduit par une agitation plus importante des entités. Elle a donc un double effet :
 \begin{itemize*}
     \item les \textbf{collisions} entre les espèces réactives dont  \textbf{plus fréquentes}
     \item les \textbf{chocs} sont plus violents donc plus souvent efficaces.
 \end{itemize*}
 La vitesse d'apparition des réactifs est donc plus grande.
-    \subsubsection*{Catalyseur}
+    \subsubsection{Catalyseur}
 L'ajout d'un catalyseur modifie le mécanisme réactionnel d'une réaction, en remplaçant une duite d'actes lents en une suite d'actes plus \textbf{rapides}.
 
 
