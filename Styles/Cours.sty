@@ -21,7 +21,7 @@
 
 %\setlength{\mathindent}{0pt}%indentation dans math = 0
 
-\RequirePackage[top = 1.5cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
+\RequirePackage[top = 2cm, bottom = 2.3cm, left = 1cm, right = 1cm]{geometry}
 \RequirePackage{titlesec}
 %\setcounter{secnumdepth}{4}
 \RequirePackage[dvipsnames]{xcolor}
@@ -79,9 +79,9 @@
 \titleformat{\section}{\vspace{.8ex}%
 \normalfont \bfseries \normalsize}{\thesection.}{.5em}{\bfseries}
 
-\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesection}{\arabic{section}}
 \titlespacing{\section}{0pt}{1em}{.5em}
-\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}}
 \renewcommand{\thesubsubsection}{\hspace{1em}{$\rightarrow$}}
 \renewcommand{\figurename}{\textbf{Document }}
 
@@ -183,7 +183,7 @@ innerbottommargin=8pt
 \newenvironment{cours}[1][Cours]{%
 	\begin{basebox}[
 		backgroundcolor=blue!5,
-		linecolor=blue!75!black,
+		linecolor=blue!5,
 		frametitle={\color{blue!75!black}\bfseries #1}
 		]
 	}{\end{basebox}}
@@ -191,7 +191,7 @@ innerbottommargin=8pt
 \newenvironment{definition}[1][Définition]{%
 	\begin{basebox}[
 		backgroundcolor=green!5,
-		linecolor=green!75!black,
+		linecolor=green!5,
 		frametitle={\color{green!75!black}\bfseries #1}
 		]
 	}{\end{basebox}}
@@ -199,7 +199,7 @@ innerbottommargin=8pt
 \newenvironment{exemple}[1][Exemples]{%
 	\begin{basebox}[
 		backgroundcolor=orange!5,
-		linecolor=orange!75!black,
+		linecolor=orange!5,
 		frametitle={\color{orange!75!black}\bfseries #1}
 		]
 	}{\end{basebox}}

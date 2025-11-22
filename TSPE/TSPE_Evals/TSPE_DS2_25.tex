@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 
 \usepackage{../../Styles/Eval}
 
@@ -11,21 +11,21 @@
 \section{Le Mölkky}
 Le Mölkky, créé en 1996, est un jeu de plein air orifinaire de Finlande.
 Dans ce jeu, le joueur doit faire tomber des quilles en bois, à l'aide d'un bâton, afin d'atteindre un score de 50 points.\\
-Une quille tombée lui donnera le nombre de points dur cette dernière, compris entre 1 et 12. Plusieurs quilles tombées donneront au joueur le nombre de points correspondant au nombre de quilles au sol.\\
+Une quille tombée lui donnera le nombre de points sur cette dernière, compris entre 1 et 12. Plusieurs quilles tombées donneront au joueur le nombre de points correspondant au nombre de quilles au sol.\\
 
-L'objectif de cet exercice est d'établir l'équation horaire de la trajectoire du bâton lancé et de déterminer le lieu d'impact au sol afin de prévoir une éventuelle vuctoire d'un joueur.
+L'objectif de cet exercice est d'établir l'équation horaire de la trajectoire du bâton lancé et de déterminer le lieu d'impact au sol afin de prévoir une éventuelle victoire d'un joueur.
 
 \begin{figure}[h!]
 \begin{minipage}{.6\linewidth}
-    On s'intéresse au mouvement du centre de masse $G$ du bâton lorsqu'un joueur le lance afin de faire tomber une quille. L'étude est réalisée dans le référentiel terrestre supposé galiléen et on considère qu'une fois lancé, le bêton n'est soumis qu'ç son poids. Pour simplifier, on suppose que le bâton ne tourne pas sur lui-même. La masse du bâton est notée $m$.\\
-    Quand le bêton quitte la main du joueur, son centre de masse $G$ est situé à une heuteur $h$ par rapport au sol avec un vecteur vitesse initiale $\vv{v_0}$ qui forme un angle $\alpha$ avec l'horizontale.\\
+    On s'intéresse au mouvement du centre de masse $G$ du bâton lorsqu'un joueur le lance afin de faire tomber une quille. L'étude est réalisée dans le référentiel terrestre supposé galiléen et on considère qu'une fois lancé, le bâton n'est soumis qu'ç son poids. Pour simplifier, on suppose que le bâton ne tourne pas sur lui-même. La masse du bâton est notée $m$.\\
+    Quand le bâton quitte la main du joueur, son centre de masse $G$ est situé à une hauteur $h$ par rapport au sol avec un vecteur vitesse initiale $\vv{v_0}$ qui forme un angle $\alpha$ avec l'horizontale.\\
     On étudie le mouvement du centre de masse du système {bâton} dans le repère cartésien indique sur le Doc.~\ref{doc1}    
 \end{minipage}
 \begin{minipage}{.38\linewidth}
     \caption{Schémam de la situation du lancer}
     \label{doc1}
     \centering
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=.9]
         \draw[-Latex] (0,0) -- (4,0);
         \draw[-Latex] (0,0) -- (0,4.5);
         \draw[dashed] (0,2.5) -- (4,2.5);
@@ -33,6 +33,7 @@ L'objectif de cet exercice est d'établir l'équation horaire de la trajectoire 
         \draw[Latex-Latex,dashed] (3,0) -- (3,2.5);
         \draw[-Latex,thick] (0,0)--(1,0);
         \draw[-Latex,thick] (0,0)--(0,1);
+        \draw (1.5,2.5) arc(0:37:1.5);
 
 
         \node[below] (i) at (.5,0){$\vv{i}$};
@@ -47,6 +48,7 @@ L'objectif de cet exercice est d'établir l'équation horaire de la trajectoire 
         \node[right] (alpha) at (1.5,3){$\alpha$};
 
         \node[right] (v0) at (2,4){$\vv{v_0}$};
+        \node[right] (h) at (3,1.25){$h$};
     \end{tikzpicture}
 \end{minipage}
 \end{figure}
@@ -86,14 +88,14 @@ Un joueur ayant déjà marqué 41 points s'apprête à lancer le bâton de Mölk
     \includegraphics[width=\linewidth]{Ressources/TSPE_DS2_25_Fig2.png}
 \end{figure}
 
-Dans notre étude, la taille des quilles est considérée comme négligeable au regard des distances mises en jau. On assimilera alors la quille à un point posé au sol. On suppose qu'il n'y a pas de rebond du bâton à la suite du lancer.\\
+Dans notre étude, la taille des quilles est considérée comme négligeable au regard des distances mises en jeu. On assimilera alors la quille à un point posé au sol. On suppose qu'il n'y a pas de rebond du bâton à la suite du lancer.\\
 \textit{Dans la question suivante, le candidat est invité à prendre des initiatives et à présenter la démarche quivie, même si elle n'a pas abouti. La démarche est évaluée et nécessite d'être correctement présentée.}
 
 \begin{enumerate}[resume]
     \item Vérifier que la partie est remportée par le joueur si le lancer est réalisé dans les conditions précisées dans les données précédentes.
 \end{enumerate}
 
-Sur le doc.~\ref{doc3}, on a reproduit un extrait d'un programme Python qui permet de calculer puis de tracer les courbes représentant l'énergie cinétique $E_c$, l'énergie potentielle de pesanteur $E_p$ et l'énergie mécanique $E_m$ du bâton de Mölkky lors de son lancer. Les données numériques utilisées sont identiques aux questions présécentes.
+Sur le doc.~\ref{doc3}, on a reproduit un extrait d'un programme Python qui permet de calculer puis de tracer les courbes représentant l'énergie cinétique $E_c$, l'énergie potentielle de pesanteur $E_p$ et l'énergie mécanique $E_m$ du bâton de Mölkky lors de son lancer. Les données numériques utilisées sont identiques aux questions précédentes.
 
 \begin{figure}[h!]
     \caption{Extrait du programme python}
@@ -101,19 +103,19 @@ Sur le doc.~\ref{doc3}, on a reproduit un extrait d'un programme Python qui perm
     \begin{lstlisting}[language=Python]
 # [...] lignes precedentes
 
-Ecl = []
-Epl = []
-Eml = []
+Ec1 = []
+Ep1 = []
+Em1 = []
 
 for i in range(len(tl)):
-    Ec = 0.5 * 0.4 * (vxl[i]**2 + vyl[i]**2)
-    Ecl.append(Ec)
+    Ec1 = 0.5 * 0.4 * (vxl[i]**2 + vyl[i]**2)
+    Ec1.append(Ec)
 
-    Ep = 0.4 * 9.81 * y[i]
-    Epl.append(Ep)
+    Ep1 = 0.4 * 9.81 * y[i]
+    Ep1.append(Ep1)
 
-    Em = 
-    Eml.append(Em)
+    Em1 = 
+    Em1.append(Em1)
 
 # [...] lignes suivantes
 \end{lstlisting}
@@ -121,7 +123,7 @@ for i in range(len(tl)):
 
 \begin{enumerate}[resume]
     \item À partir du doc.~\ref{doc3}, déterminer la masse $m$ du bâton de Mölkky. justifier la réponse.
-    \item Écrire et compléter, sur votre copie, la ligne 15 du programme du doc.~\ref{doc3} qui permet de calculer l'énergie mécanique $E_m$ du bâton de Mölkky.
+    \item Écrire et compléter, sur votre copie, la ligne 14 du programme du doc.~\ref{doc3} qui permet de calculer l'énergie mécanique $E_m$ du bâton de Mölkky.
 \end{enumerate}
 Le doc.~\ref{doc4} représente les courbes affichées après avoir exécuté le programme Python complet.
 \begin{figure}[h!]
@@ -133,8 +135,11 @@ Le doc.~\ref{doc4} représente les courbes affichées après avoir exécuté le 
 
 \begin{enumerate}[resume]
     \item Attribuer chaque courbe du doc.~\ref{doc4} à l'énergie représentée. Justifier la réponse.
-    \item Déterminer la "durée de vol" du bêton de Mölkky (durée de chute) et en déduire que la partie décrite précédemment est remportée par le joueur, en considérant les équations horaires du mouvement établies dans la question 3.
+    \item Déterminer la "durée de vol" du bâton de Mölkky (durée de chute) et en déduire que la partie décrite précédemment est remportée par le joueur, en considérant les équations horaires du mouvement établies dans la question 3.
 \end{enumerate}
+
+\end{document}
+
 
 \section{Le scanner à rayons X}
 La radiographie réalisée par un scanner à rayons X est une technique d'imagerie médicale utile dans le diagnostique de nombreuses pathologies.\\
@@ -181,4 +186,3 @@ Le but de cet exercice est de calculer la tension à appliquer entre la cathode 
     \item Grâce aux deux questions précédentes, en déduire que l'expression de la vitesse de l'électron au niveau de l'anode est $v_A = \sqrt{\dfrac{2\cdot e \cdot U}{m}}$.
     \item Répondre à la problématique de l’exercice "trouver la tension minimale à appliquer entre la cathode et l’anode pour que le faisceau d’électron parvienne à provoquer l’émission de photons X an niveau de l’anode".
 \end{enumerate}
-\end{document}

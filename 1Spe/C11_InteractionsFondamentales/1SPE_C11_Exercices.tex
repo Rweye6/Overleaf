@@ -1,0 +1,115 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
+
+
+\newcommand{\chnum}{Chapitre 11}
+\newcommand{\chtitle}{Interactions fondamentales et champs}
+\newcommand{\dtype}{Exercices}
+
+\begin{document}
+	\maketitle
+\section{Réprésenetr une froce de gravitation}
+la planète Mars possède une orbite autour du Soleil dont le rayon moyen est $r = \SI{2,28E8}{km}$. Elle subit de la part du Soleil une force de gravitation dont la valeur est $F_S = \SI{1,64E21}{N}$.
+\begin{itemize}
+    \item Représenter sur un schéma les centres dex deux astres ainsi que la force exercée par Mars sur le Soleil.
+\end{itemize}
+\textbf{Échelles :} \SI{1}{cm} $\leftrightarrow$ \SI{2,0E7}{km}\\
+\SI{1}{cm} $\leftrightarrow$ \SI{0,5E21}{N}
+
+\section{Calculer une charge}
+Les forces d'interaction électrostatique entre les particules schématisées ci-dessous ont pour valeur : $$ F_{A/B} = F_{B/A} = \SI{4,0E-10}{N}$$
+\begin{center}
+    \begin{tikzpicture}
+    \draw[gray](0,0)--(12,0);
+    \fill[green!60!gray] (3,0) circle(.5);
+    \fill[blue!60!gray] (9,0) circle(.5);
+    \draw[-Latex,red,thick] (3,0) --(1,0);
+    \draw[-Latex,red,thick] (9,0) --(11,0);
+    \node[green!60!gray] (A) at (3,1){\textbf{A}};
+    \node[blue!60!gray] (A) at (9,1){\textbf{B}};
+    \node[red] (q) at (3,-1){$q_A = \SI{3,6E-19}{C}$};
+    \node (d) at (6,1){$d=\SI{2,0}{nm}$};
+    \end{tikzpicture}
+\end{center}
+\begin{enumerate}
+    \item Quel est le signe de la charge placée en $B$ ?
+    \item Calculer cette charge.
+\end{enumerate}
+\begin{data}
+$k = \SI{9,0E9}{\newton\meter\squared\per\coulomb\squared}$
+\end{data}
+
+\section{Le sel de table}
+\begin{minipage}{.68\linewidth}
+    Le sel de table ou chlorure de sodium est un arrangemnt ordonné (cristal) d'ions chlorure et d'ions sodium.
+\begin{enumerate}
+    \item Calculer la valeur des forces électrostatiques s'exerçant entre :\begin{enumerate}
+        \item un ion sodium et un ion chlorure voisins
+        \item deux ions sodium les plus proches
+        \item deux ions chlorure les plus proches
+    \end{enumerate}
+    \item Proposer une explication sur la cohésion du sel de table.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}{.3\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{Ressources/1SPE_C11_Ex_SelMaille.png}
+\end{minipage}
+
+\begin{data}
+\begin{itemize**}
+    \item $k = \SI{9,0E9}{\newton\meter\squared\per\coulomb\squared}$
+    \item $e = \SI{1,6E-19}{\coulomb}$
+\end{itemize**}
+\end{data}
+
+\section{Déviation des particules}
+Joseph John Thomson, prix nobel de physique en 1906, a notamment apporté des preuves de l'existance de l'électron. Il a montré que les rayons produits par un tube cathodique peuvent être déviés apr un champ électrique dans un sens qui indique que les particules constituant le rayon cathodique sont chargés négativement.
+\begin{center}
+    \includegraphics[width=.4\linewidth]{Ressources/1SPE_C11_Ex_Thomson.png}
+\end{center}
+Dans cette expérience, la tension affichée par le voltmètre est \SI{+300}{V}, ce qui entraîne l'existance d'un champ électristatique de direction prependiculaire aux plaques.
+\begin{enumerate}
+    \item Identifier la plaque de déviation chargée positivement lors de l'expérience.
+    \item Exprimer, en fonction du champ électrostatique, la force exercée sur la particule chargée électriquement.
+    \item Expliquer comment Joseph John Thomson a pu déterminer le signe de la charge des particules constituant les rayons cathodiques.
+\end{enumerate}
+
+\section{Influence de plusieurs champs}
+\begin{minipage}{.48\linewidth}
+Le schéma ci-contre représente quelques lignes de champ électrostatiques dûes à deux corps $A$ et $B$ chargés positivement et paintenus à une distance $d = \SI{10}{cm}$ d'u de l'autre.
+Déterminer la position du point $M$, par rapport au corps $A$, pour laquelle un système chargé est en équilibre sous l'action des forces électrostatiques exercées par les corps $A$ et $B$.   
+\end{minipage}
+\begin{minipage}{.48\linewidth}
+\begin{center}
+    \includegraphics[width=.5\linewidth]{Ressources/1SPE_C11_Ex_ChampCharge.png}
+\end{center}    
+\end{minipage}
+
+\section{Modèle planétaire de l'atome d'hydrogène}
+L'atome d'hydrogène est le plus abondant dans l'Univers. Sur Terre, il est notamment présent dans la molécule d'eau.
+
+\begin{data}
+    \begin{multicols}{2}
+    Rayon de l'atome d'hydrogène : $R = \SI{53}{\pico\meter}$\\
+    Masse de l'électron : $m_e = \SI{9,11E-31}{kg}$\\
+    Masse d'un proton : $m_p = \SI{1,67E-27}{kg}$\\
+    Pesanteur terrestre : $g = \SI{9,81}{\newton \per\kilo\gram}$
+\end{multicols}
+\end{data}
+
+\begin{enumerate}
+    \item Quelle est la composition d'un atome d'hydrogène ?
+\end{enumerate}
+
+Dans le modèle planétaire, on suppose que l'électron est snimé d'un mouvement circulaire de rayon $R$ autour du proton.
+
+\begin{enumerate}[resume]
+    \item Indiquer les trois interactions auxquelles sont soumises les deux particules constituant l'atome d'hydrogène sur Terre.
+    \item Ecrire la loi de Coulomb puis calculer l'intensité de la force électrostatique subie par l'électron dans l'hydrogène.
+    \item Ecrire la relation de la force modélisant l'interaction gravitationnelle entre les deux particules. Calculer son intensité.
+    \item Calculer la valeur du poids de chaque particule.
+    \item Quel pouvez vous en conclure en comprarant les différentes inetnsités des forces ?
+\end{enumerate}
+
+\end{document}
