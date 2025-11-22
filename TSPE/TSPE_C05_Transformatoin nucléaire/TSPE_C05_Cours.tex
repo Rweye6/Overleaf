@@ -1,114 +1,15 @@
 \documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
-\usepackage{graphicx}
-\usepackage[utf8]{inputenc}  
-\usepackage[T1]{fontenc}
-\usepackage{lscape}
 
-\usepackage{tgheros,textcomp}%Police Arial
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage{../../Styles/Cours}
 
-%\setlength{\mathindent}{0pt}%indentation dans math = 0
-
-\usepackage[top = 1cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
-\usepackage{titlesec}
-%\setcounter{secnumdepth}{4}
-\usepackage{xcolor}
-\usepackage{amssymb} %double flèche de réaction
-\usepackage{mathrsfs}%farraday
-\usepackage{xtab}%tableau sur plusieurs pages
-\usepackage{esvect}%grands vecteurs
-
-\usepackage[version=4]{mhchem} %equations chimiques
-
-\usepackage{array}
-\usepackage{chemfig}
-\usepackage{multirow}
-%\usepackage{sectsty}
-
-\usepackage{caption}
-\usepackage{adjustbox}
-\usepackage[labelformat=simple]{subfig}
-\usepackage{float}
-
-
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage[cal=boondoxo]{mathalfa} 
-\usepackage{enumitem}
-\usepackage{lastpage}
-\usepackage{tcolorbox}
-\usepackage{siunitx}
-\usepackage[european, straightvoltages, RPvoltages]{circuitikz}
-\usepackage{tikz}
-\usetikzlibrary{shapes.geometric}
-\usetikzlibrary{calc}
-\usetikzlibrary{automata,positioning}
-\usepackage{multicol}
-\usepackage{eqnarray}
-\usepackage{tabularx,colortbl}%colorer fond cellules
-
-\sisetup{
-	detect-all,
-	output-decimal-marker={,},
-	group-minimum-digits = 3,
-	group-separator={~},
-	number-unit-separator={~},
-	inter-unit-product={~}
-} %setup pour SIunitx
-
-\usepackage{listings}%pour insérer le code python
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-
-
-\titleformat{\section}
-{
-\vspace{.8ex}%
-\normalfont \bfseries \large}
-{\thesection.}{.5em}{\bfseries}
-
-\renewcommand{\thesection}{\arabic{section}}
-\titlespacing{\section}{0pt}{1em}{.5em}
-\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
-\renewcommand\thesubfigure{\textbf{Document \arabic{subfigure} :}}
-
-\title{\vspace{-1cm}\large 
-	\begin{tabular}{|>{\centering}m{5cm}|>{\centering}m{8cm}|>{\centering\arraybackslash}m{4cm}|}
-		\hline
-		Cours & \textbf{\textsc{La Radioactivité}} &  Chapitre 8 \\
-		\hline
-\end{tabular}}
-\date{}
-
-\newpagestyle{mystyle}{%
-	\setfoot{ROSALIE}{\thepage\,$|$\,\pageref{LastPage}}{}
-}
-\renewpagestyle{plain}{%
-	\setfoot{ROSALIE}{\thepage\,$|$\,\pageref{LastPage}}{}
-}
-
-\pagestyle{mystyle}
-
-\newenvironment{itemize*}%
-{\begin{itemize}[label=$-$,labelindent=0pt, leftmargin=*,topsep=0pt]%
-		\setlength{\itemsep}{0pt}%
-		\setlength{\parskip}{0pt}}%
-	{\end{itemize}}
-
-\newenvironment{itemize**}%
-{\begin{itemize}[label=,labelindent=0pt, leftmargin=*,topsep=0pt]%
-		\setlength{\itemsep}{0pt}%
-		\setlength{\parskip}{0pt}}%
-	{\end{itemize}}
-
-\renewcommand{\arraystretch}{1.5}
+\newcommand{\chnum}{Chapitre 05}
+\newcommand{\chtitle}{Transformations nucléaires}
+\newcommand{\dtype}{Cours}
 
 \begin{document}
 	\maketitle
-	\vspace{-3cm}
-\section{Désintégration radioactive}
+
+	\section{Désintégration radioactive}
 	\subsection{Stabilité et instabilité des noyaux}
 	118 éléments chimiques sont connus à ce jour. Ces éléments présentent un grand nombre d'\textbf{isotopes} : certains sont stables ou quasi-stables (environ 300) mais la grande majorité d'entre eux sont \textbf{instables} et considérés comme \textbf{radioactifs} (environ 3000).\\
 	L'ensemble des noyaux connus sont répertoriés dans un \textbf{diagramme (N,Z)} où N représente le nombre de neutrons et Z le nombre de protons. Les noyaux stables figurent dans une zone centrale, appelée vallée de la stabilité. Les noyaux instables figurent de part et d'autre de cette vallée. Leur proportion de neutrons et de protons ne permet pas d'assurer leur cohésion.
@@ -130,14 +31,14 @@
 		
 		\item \begin{tabular}{m{.6\textwidth}m{.4\textwidth}}
 			La radioactivité $\beta -$ correspond à l'émission d'un \textbf{électron} et d'un anti-neutrino selon la réaction d'équation :&\multirow{3}{*}{
-		\includegraphics[scale=.7]{Ressources/TSPE_C15_Cours_Fig2.png}}\\
+		\includegraphics[scale=.5]{Ressources/TSPE_C15_Cours_Fig2.png}}\\
 		\textcolor{gray}{Exemple :} \ce{^{14}_{6}C -> ^{14}_{7}N + ^{0}_{-1}e + ^0_0$\bar{\nu_e}$}&\\
 		Elle concerne les noyaux possédant un excès de neutrons.&\\
 		\end{tabular}
 		
 		\item  \begin{tabular}{m{.6\textwidth}m{.4\textwidth}}
 		La radioactivité $\beta +$ correspond à l'émission d'un \textbf{positon} et d'un neutrino selon la réaction d'équation :&\multirow{3}{*}{
-		\includegraphics[scale=.7]{Ressources/TSPE_C15_Cours_Fig3.png}}\\
+		\includegraphics[scale=.5]{Ressources/TSPE_C15_Cours_Fig3.png}}\\
 		\textcolor{gray}{Exemple :} \ce{^{30}_{15}P -> ^{30}_{14}Si + ^{0}_{1}e + ^0_0\nu_e}&\\
 		Elle concerne les noyaux possédant un excès de protons.&\\
 		\end{tabular}
