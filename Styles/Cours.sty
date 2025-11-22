@@ -204,6 +204,22 @@ innerbottommargin=8pt
 		]
 	}{\end{basebox}}
 
+\newenvironment{protocole}[1][Protocol expérimental]{%
+	\begin{basebox}[
+		backgroundcolor=white,
+		linecolor=black,
+		frametitle={\color{black}\bfseries #1}
+		]
+	}{\end{basebox}}
+
+\newenvironment{materiel}[1][Matériel]{%
+	\begin{basebox}[
+		backgroundcolor=white,
+		linecolor=black,
+		frametitle={\color{black}\bfseries #1}
+		]
+	}{\end{basebox}}
+
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 
 
