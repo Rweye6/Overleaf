@@ -1,0 +1,90 @@
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 15}
+\newcommand{\chtitle}{Fabriquer un radar de recul}
+\newcommand{\dtype}{TP}
+
+\begin{document}
+	\maketitle
+Les voitures autonomes sont commercialisées dans de nombreux pays depuis 2020. Ces voitures peuvent se conduire seules en ayant une perception globale de son environnement grâce à la contribution de plusieurs capteurs :  télémètres laser à balayage, caméra, capteurs à infrarouges, radars, capteurs lasern capteurs à ultrasons.
+\begin{documentboxenv}{Lidar, radar et sonar}
+    Le lidar et la radar utilisant les ondes électromagnétiques. Ils sont adaptés pour la détection d'obstacles à grande distance ou lors d'un déplacmeent du véhicule à vitesse élevée.\\
+    Le sonar utilise des ondes sonores et utilise, comme le radar et le lidar, la réflexion d'ondes sur des obstacles.
+\end{documentboxenv}
+
+\begin{materiel}
+\begin{itemize}
+    \item Microcontroleur Ardiuno et cable de connexion
+    \item Capteur à ultrasons
+    \item Haut parleur ou buzzer
+    \item Ruban à mesurer
+\end{itemize}
+\end{materiel}
+
+\begin{documentboxenv}{Principe du capteur à ultrasons}
+    %\caption{Principe du capteur à ultrasons}
+    Un capteur unique (émetteur et récepteur) génère des salves ultrasonores avec une périodicité déterminée par l'utilisateur. Le capteur fonctionne en récepteur quand l'émetteur est inactif. La branche "écho" génère un signal "HIGH" tant que la salve n'a pas été détectée après son aller-retour. C'est ce qu'on mesure en pratique et qui est proportionnel à la distance.
+\end{documentboxenv}
+
+\begin{documentboxenv}{Brancher le capteur ultrasonique}
+    On utilise le capteur de distance \emph{HC-SR04}. Afin de mesurer une distance, le capteur envoie une salve ultrasonore et mesure le temps que met la salve à effectuer l'aller-retour entre le capteur et l'objet dont on veut connaître la distance. Il fonctionne avec une tension d'alimentation de \SI{5}{\volt}, d'un angle de mesure de \SI{15}{\degree} et permet d'effectuer des mesures entre \SI{2}{cm} et \SI{4}{m}.
+\end{documentboxenv}
+
+\begin{documentboxenv}{Fabriquer le radar de recul}
+    Un microcontrôleur est une carte électronique qui comporte un processeur, un mini-ordinateur, qui va permettre de récupérer les mesures réalisées par un capteur et de contrôler la mise en fonctionnement de composants électroniques. Pour fabriquer le radar de recul, nous utiliserons un microcontrôleur, un émetteur-récepteur d'ondes ultrasonores et un écran. Nous mesurerons dans un rpemier temps une distance grâce au capteur, puis nous appliquerons un test afin d'avertir le conducteur à l'aide d'un écran donnant des informations sur la distance mesurée.
+\end{documentboxenv}
+
+\section{Calcul de la distance}
+\begin{enumerate}
+    \item Réaliser un schéma de recul en faisnat apparaitre, le récepteru, l'obstacle et le trajet de l'onde sonore. Quelle distance parcourt l'onde sonore au total entre l'émetteur et le récepteur ?
+    \item Récupérer le programme " mesurer\_une\_distance" et le tester (cliquer sur téléverser). Pour voir le résultat : Outils - Moniteur série. Observer les valeurs de distance ? Que peut-on en dire ?
+    \item Ce programme ne fonctionionne pas, il faut le modifier. \begin{enumerate}
+        \item Renseigner la vitesse du son en \unit{\milli\meter\per\second} à la ligne 15. Attention aux unites !
+        \begin{lstlisting}[language=C++]
+            const float vitesse_son = 0.00 ; // A modifier !!! vitesse du son en mm par microseconde
+        \end{lstlisting}
+
+        \item Renseigner le calcul de la distance à partir de la durée et de la vitesse du son dans l'air ligne 35. Attention aux unités !
+        \begin{lstlisting}[language=C++]
+            float distance = 0.0; // A modifier !!! Calcule la distance a l'obstacle
+        \end{lstlisting}
+
+        \item Renseigner l'unité de la vitesse calculée précédemment à la ligne 40.
+        \begin{lstlisting}[language=C++]
+            Serial.println("_unite_!!!"); // A modifier !!!
+        \end{lstlisting}
+    \end{enumerate}
+    \item Placer le capteur à \SI{2}{m} d'un obstacle. Vérifier en observant les indications du moniteur série. Est-ce cohérent ?
+\end{enumerate}
+
+\section{Étude statistique}
+\begin{enumerate}[resume]
+    \item Effectuer un nombre de mesure "n" (10 est un bon début) et remplir le tableau suivant : \begin{center}
+        \begin{tabular}{|c|>{\centering}m{2em}|>{\centering}m{2em}|>{\centering}m{2em}|>{\centering}m{2em}|>{\centering}m{2em}|>{\centering}m{2em}|>{\centering}m{2em}|>{\centering}m{2em}|>{\centering}m{2em}|>{\centering\arraybackslash}m{2em}|}
+            \hline
+            Mesure & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+            \hline
+            Distance mesurée $d_1$ & & & & & & & & & & \\
+            \hline$d_i-\bar{d}$ & & & & & & & & & & \\
+            \hline
+            
+        \end{tabular}
+    \end{center}
+    Pour remplir la dernière ligne, il faut avoir calculer la moyenne des distances au préalable.
+    \item Remplir le tableau suivant : \begin{center}
+        \begin{tabular}{|>{\centering}m{.18\linewidth}|>{\centering}m{.18\linewidth}|>{\centering}m{.18\linewidth}|>{\centering}m{.18\linewidth}|>{\centering\arraybackslash}m{.18\linewidth}|}
+            \hline
+            Nombre de mesure $n$ & Moyenne $\bar{d}$ des distances mesurées & Écart-type $\sigma$ des distances mesurées & Incertitude sur la moyenne $\Delta \bar{d}$ & Résultat final \\
+            \hline
+             & & & & $d = ... \pm ...$ \rule{0cm}{3em} \\
+             \hline
+        \end{tabular}
+    \end{center}
+    On rappelle les formules suivantes : 
+    $$ \text{Valeur moyenne : } \bar{d} = \dfrac{1}{n}\sum_{i=1}^{n} d_i$$
+    $$ \text{Écart-type : } \sigma = \sqrt{\dfrac{1}{n-1}\sum_{i=1}^{n}|d_i - \bar{d}|^2}$$
+    $$ \text{Incertitude sur la moyenne : } \Delta \bar{d} = \dfrac{\sigma}{\sqrt{n}}$$
+\end{enumerate}
+\end{document}

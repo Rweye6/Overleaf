@@ -207,7 +207,7 @@ innerbottommargin=8pt
 
 	\tcbuselibrary{skins, breakable}
 
-\newenvironment{protocole}[1][Protocole expérimental]{
+\newenvironment{protocole}[1][\faFlask~Protocole expérimental]{
   \begin{tcolorbox}[
     breakable,
     colframe=black,
@@ -219,7 +219,7 @@ innerbottommargin=8pt
 }{
   \end{tcolorbox}
 }
-\newenvironment{materiel}[1][Liste de matériel]{
+\newenvironment{materiel}[1][\faTools~Liste de matériel]{
   \begin{tcolorbox}[
     breakable,
     colframe=black!35,
@@ -229,6 +229,23 @@ innerbottommargin=8pt
     left=2mm, right=2mm, top=1mm, bottom=1mm
   ]
 }{
+  \end{tcolorbox}
+}
+
+\newcounter{documentbox}
+\usepackage{fontawesome5}
+
+\newenvironment{documentboxenv}[1]{%
+  \refstepcounter{documentbox}%
+  \begin{tcolorbox}[
+    breakable,
+    colframe=black,
+    colback=white,
+    title=\textbf{\faFile[regular]~Document \thedocumentbox : #1},
+    fonttitle=\bfseries,
+    left=2mm, right=2mm, top=1mm, bottom=1mm
+  ]
+}{%
   \end{tcolorbox}
 }
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
