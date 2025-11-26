@@ -10,10 +10,9 @@
 
 La diffraction est utilisée comme technique d'analyse dans l'industrie pour contrôler la taille de petits objets (grains de ciments, de toner d'imprimante, de farine, fils ...)\\
 Dans cette activité expérimentale, on observera d'abord les figures de diffraction obtenues avec différents objets diffractants. On exploitera ensuite le phénomène de diffraction afin de déterminer le diamètre d'un cheveu.\\
-
 \noindent
-\fbox{\begin{minipage}{.45\textwidth}
-\textbf{Document 1 : Matériel disponible}
+\begin{minipage}[t]{.44\textwidth}
+\begin{materiel}
 \begin{itemize*}
     \item un laser route (attention aux yeux)
     \item différentes diapositives (vide, avec fente, avec trou)
@@ -24,9 +23,10 @@ Dans cette activité expérimentale, on observera d'abord les figures de diffrac
     \item du ruban adhésif
     \item un ordinateur muni du logiciel de traitement de données \textit{Latis Pro}
 \end{itemize*}
-\end{minipage}}
-\fbox{\begin{minipage}{.5\textwidth}
-\textbf{Document 2 : Figure de diffraction}\\
+\end{materiel}
+\end{minipage}
+\begin{minipage}[t]{.55\textwidth}
+\begin{documentboxenv}{Figure de diffraction}
 \begin{tikzpicture} [scale=.65]
 \fill [red] (0,0) ellipse(2 and .5);
 \fill [red] (-3.5,0) ellipse(1 and .25);
@@ -56,18 +56,17 @@ Dans cette activité expérimentale, on observera d'abord les figures de diffrac
 
 \draw (2.25,-0.5) node[below]{Première extinction};
 \end{tikzpicture}
-\end{minipage}}
-
-\vspace{.25cm}
-\noindent \fbox{\begin{minipage}{\linewidth}
-\textbf{Document 3 : Trigonométrie}\\
+\end{documentboxenv}
+\begin{documentboxenv}{Trigonométrie}
 Lorsqu'un angle est faible, on peut faire l'approximation suivante : $\tan{\theta} \approx \theta$\\
 Exemple : pour $\theta$ = 0,1 \unit{\radian} ($\approx$ 5 \unit{\degree}), $\tan{\theta} \approx$ \num{0,10033} $\approx \theta$  
-\end{minipage}}
+\end{documentboxenv}
+\end{minipage}
 
-\vspace{.25cm}
-\noindent \fbox{\begin{minipage}{\linewidth}
-\textbf{Document 4 : Incertitude}\\
+\vspace{1em}
+
+\noindent\begin{minipage}{\linewidth}
+\begin{documentboxenv}{Incertitude}
 De nombreuses sources d'erreurs viennent entâcher la précidion d'une valeur mesurée :
 \begin{itemize*}
     \item erreur liée à la source de l'instrumentt utilisé
@@ -78,19 +77,23 @@ De nombreuses sources d'erreurs viennent entâcher la précidion d'une valeur me
 Toutes ces erreurs s'accumulent, il faut en tenir compte pour estimer raisonnablement l'incertitude-type.\\
 Dans le cas d'une double lecture sur une échelle graduée, l'incertitude-type peut être prisé égale à :
 $$ u(X) = \dfrac{1 \text{ graduation}}{\sqrt{6}} $$
-\end{minipage}}
+\end{documentboxenv}
+\end{minipage}
 
 \section{Étude qualitative des figures de diffraction (\emph{durée estimée : 10 min})}
 \begin{enumerate}
     \item Braquer un laser rouge vers une fente verticale
     \item Intercaler sur le trajet du rayon laser une fente verticale
-    \item Observer la figure de diffraction obtenue puis la représenter dans le tableau ci-dessous.\\
-    
-    \begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+    \item Observer la figure de diffraction obtenue puis la représenter dans le tableau ci-dessous.
+\end{enumerate}
+    \begin{center}
+        \begin{tabular}{|>{\centering}m{.17\linewidth}|>{\centering}m{.18\linewidth}|>{\centering}m{.18\linewidth}|>{\centering}m{.17\linewidth}|>{\centering\arraybackslash}m{.17\linewidth}|}
        \hline \textbf{Objet diffractant} & Fente verticale & Fente horizontale & Trou circulaire & Fil vertical\\
         \hline \textbf{Figure de diffraction}&&&&\rule[2cm]{0cm}{0cm}\\
         \hline
     \end{tabular}
+    \end{center}
+\begin{enumerate}[resume]
     \item Compléter le reste du tableau en recommençant l'expérience avec les autres objets diffractants proposés
     \item Expliquer la forme de la tache de diffraction obtenue avec le trou circulaire
 \end{enumerate}
