@@ -1,0 +1,41 @@
+\documentclass[aspectratio=43]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{siunitx}
+
+
+\usepackage{xifthen}
+
+\usepackage{mdframed}
+\usepackage{calrsfs}
+
+
+\usepackage{multicol}
+
+% --- Définition des environnements personnalisés ---
+
+\usetheme{Antibes}
+
+\makeatletter
+\newcommand\verbfile[1]{%
+	\begingroup
+		\let\do\@makeother\dospecials
+		\obeyspaces\obeylines\ttfamily
+		\input#1\relax
+	\endgroup
+}
+\makeatother
+
+\newcommand{\chnum}{Chapitre 11}
+
+\begin{document}
+	
+	\begin{frame}
+        \begin{multicols}{2}
+        \verbfile{Groupes_TP_TSPE4.txt}
+        \end{multicols}
+        
+	\end{frame}
+
+\end{document}

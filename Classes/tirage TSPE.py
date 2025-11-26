@@ -5,7 +5,9 @@ import csv
 import pandas as pd
 
 
-df = pd.read_csv("TSPE4.csv", delimiter =";")
+BASE = os.path.dirname(os.path.abspath(__file__))
+
+df = pd.read_csv(os.path.join(BASE, "TSPE4.csv"), delimiter=";")
 
 #Groupes 1 et 2
 etu = list(df["Prenom"])
@@ -19,6 +21,8 @@ for i in range(0,len(etu)) :
     elif int(i/2) == i/2 and i == len(etu)-1 : ligne.append(etu[i])
     else : next
 
-with open('Groupes TP TSPE4.txt', 'w') as fichier:
+with open('Groupes_TP_TSPE4.txt', 'w') as fichier:
     fichier.write('\n'.join(map(str, ligne)))
 
+import os  
+os.system("pdflatex Groupes_Terminales.tex")
