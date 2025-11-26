@@ -9,12 +9,11 @@
 \maketitle
 
 Le sucre de consommation est principalement constitué de saccharose, une molécule susceptible de se décomposer et de former du glucose et du fructose en quantité équimolaire.\\
-\textbf{Quelle équation peut modéliser la vitesse de réaction ?}
-
-\begin{figure}[h!]
-    \begin{minipage}[t]{0.45\linewidth}
-    \caption*{\textbf{Document 1 : Données expérimentales}}
-    Ce tableau présente l'évolution au cours du temps de la concentration en saccharose $[\ce{C12H22O11}]$ à \num{370} \unit{\kelvin}.\\
+%\textbf{Quelle équation peut modéliser la vitesse de réaction ?}\\
+    \begin{minipage}{0.48\linewidth}
+    %\caption*{\textbf{Document 1 : Données expérimentales}}
+	\begin{documentboxenv}{Données expérimentales}
+    Ce tableau présente l'évolution au cours du temps de la concentration en saccharose $[\ce{C12H22O11}]$ à \num{370} \unit{\kelvin}.
  	\begin{center}
 	\begin{tabular}{|>{\centering}m{.25\textwidth}|>{\centering\arraybackslash}m{.6\textwidth}|}
 		\hline \textbf{Temps (s)} & \textbf{Concentration $\mathbf{[\ce{C12H22O11}]}$ (\unit{\mole\per\liter})}\\
@@ -33,17 +32,21 @@ Le sucre de consommation est principalement constitué de saccharose, une moléc
 	\end{tabular}
 	\end{center}
 	La vitesse instantanée $v_1$ de disparition du saccharose peut être calculée pour tous les instants $t_i$ (hormis la dernière) à partir de : $$v_i = -\dfrac{[\ce{C12H22O11}]_{i+1}-[\ce{C12H22O11}]_i}{t_{i+1}-t_i}$$
-    \end{minipage}\hspace{.02\linewidth}
-    \begin{minipage}[t]{0.5\linewidth}
-    \caption*{\textbf{Document 2 : Vitesse volumique de disparition}}
+	\end{documentboxenv}
+	\begin{documentboxenv}{Vitesse volumique de disparition}
     Une réaction, dont la vitesse ne dépend que de la concentration d'un seul réactif $A$, est dite de l'ordre $\alpha$ si la vitesse volumique de disparition de $A$ s'écrit :
 	$$v_A = k \cdot [A]^{\alpha}$$
     $k$ : constante de vitesse (S.I)\\
 	$[A]$ : concentration en réactif $A$ (\unit{\mole\per\liter})\\
 	$\alpha$ : ordre de la réaction\\\\
 	De nombreuses réactions de décomposition sont d'ordre 1 ($\alpha$ = 1 et $k$ en \unit{\per\second}). La vitesse volumique de disparition de $A$ est alors proportionnelle à sa concentration $[A]$.
+		\end{documentboxenv}
+\end{minipage}\hspace{.02\linewidth}
+    \begin{minipage}[t]{0.5\linewidth}
+		
         \begin{minipage}{\linewidth}
-\caption*{\textbf{Document 3 : Extrait d'un code python}}
+%\caption*{\textbf{Document 3 : Extrait d'un code python}}
+		\begin{documentboxenv}{Extrait d'un code Pyhton}
 \begin{lstlisting}[language = Python, showstringspaces=false,breaklines=true,numbers=right]
 	import matplotlib.pyplot as plt
 	import numpy as np
@@ -62,17 +65,21 @@ Le sucre de consommation est principalement constitué de saccharose, une moléc
 	plt.title('Evolution de la vitesse en fonction de la concentration')
 	plt.show()
 	\end{lstlisting}
-        \end{minipage}
-    \end{minipage}
-
-\end{figure}
-
-\begin{enumerate}
+	\end{documentboxenv}
+	\begin{question}
+	\begin{enumerate}
 	\item Préciser le type de courbe représentant la vitesse de disparition  en fonction de la concentration en réactif dans le cas d'une réaction d'ordre 1.
 	\item Identifier la raison pour laquelle on ne peut pas calculer la dernière vitesse volumique de disparition du saccharose.
 	\item Expliquer le rôle des lignes 5 et 6 dans le code Python fourni.
 	\item Compléter le code Python et conclure quant à l'ordre de la réaction étudiée.
 \end{enumerate}
+\end{question}
+        \end{minipage}
+    \end{minipage}
+
+
+
+
 
 
 \end{document}

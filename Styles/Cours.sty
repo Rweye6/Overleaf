@@ -248,6 +248,20 @@ innerbottommargin=8pt
 }{%
   \end{tcolorbox}
 }
+
+\newenvironment{question}{%
+  \refstepcounter{documentbox}%
+  \begin{tcolorbox}[
+    breakable,
+    colframe=black!35,
+    colback=white,
+    title=\textbf{\faQuestion[regular]~Questions : },
+    fonttitle=\bfseries,
+    left=2mm, right=2mm, top=1mm, bottom=1mm
+  ]
+}{%
+  \end{tcolorbox}
+}
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 
 
