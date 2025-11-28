@@ -9,9 +9,9 @@
 \maketitle
 Deux perturbations à la surface de l'eau produisent des ondes qui se propagent et se rencontrent. \textbf{Comment expliquer ce que l'on observe à la surface de l'eau quand les deux ondes se croisent ?}
 
-\begin{figure}[h!]
-  \begin{minipage}{.48\linewidth}
-    \caption{Ondes à la surface de l'eau}
+%\begin{figure}[h!]
+  \noindent\begin{minipage}[t]{.48\linewidth}
+    \begin{documentboxenv}{Ondes à la surface de l'eau}
     \label{doc1}
     Les vibrations périodiques d'une poine $S$ à la surface de l'eau d'une cuve à onde (a) créent des ondes circulaires périodiques se propageant de façon concentriques à la surface de l'eau. l'alternance de ces crètes (traits pleins) et des creux (pointillés) de l'onde est représentée ci-dessous (b). l'état vibratoire d'un point de la surface est appélé \emph{phase}.
     \begin{center}
@@ -75,20 +75,34 @@ Deux perturbations à la surface de l'eau produisent des ondes qui se propagent 
       \draw (0,-2.5) rectangle(2.5,-.5);
     \end{tikzpicture}
     \end{center}
+  \end{documentboxenv}
   \end{minipage}\hspace{.02\linewidth}
-  \begin{minipage}{.5\linewidth}
-    \caption{interférences entre deux ondes cohérentes}
+  \begin{minipage}[t]{.5\linewidth}
+    \begin{documentboxenv}{interférences entre deux ondes cohérentes}
     \label{doc2}
     Deux sources d'ondes vibrant à la même fréquence et avec un déphasage constant sont dites cohérentes. Les ondes produites par deux sources cohérentes se rencontrent et se superposent. L'état d'un point donné dépend de l'état vibratoire de chaque onde en ce point :
     \begin{itemize}
       \item les ondes sont en opposition de phase, les interférences dont destructives
       \item les ondes ne sont pas en opposition de phase, les interférences sont constructives avec une stituation extrême correspondant au cas où les deux ondes sont à leur extremum d'amplitude
     \end{itemize}
+  \end{documentboxenv}
   \end{minipage}
-\end{figure}
-\begin{figure}
-  \caption{Schémma de la situation}
+
+\begin{question}
+  \begin{enumerate}
+        \item A partir du Document~\ref{doc3} déterminer précisément la longueur d'onde $\lambda$ des ondes produites.
+        \item Préciser l'état vibratoire des points circulaires résultant de la superposition des deux ondes.
+        \item Pour ces points, exprimer en fonction de $\lambda$ les distances $d_1$ et $d_2$, puis la différence de chemin $\delta = d_1 - d_2$.
+        \item Répéter les deux questions précédentes pour les points triangulaires et carrés.
+        \item Exprimer les relations liant la différence de chemin $\delta = d_1 - d_2$ et $\lambda$ dans le cas d'interférences constructives et dans le cas d'interférences destructives.
+      \end{enumerate}
+\end{question}
+
+\newpage
+
+  \begin{documentboxenv}{Schémma de la situation}
   \label{doc3}
+  \large
   L'interférence de deux ondes cohérentes est schématisée ci-après.\\
     $d_1$ et $d_2$ dont les distances entre un point de la surface et respectivement les sources 1 et 2. La différence entre ces deux distances est appelée différence de chemin $\delta$.
 \begin{center}
@@ -136,19 +150,5 @@ Deux perturbations à la surface de l'eau produisent des ondes qui se propagent 
       \draw(.7,.7) node{$\mathbf{d_2}$};
   \end{tikzpicture}
   \end{center}
-\end{figure}
-
-\noindent\colorbox{red!10}
-{\centering
-  \begin{minipage}{.98\linewidth}
-      \textbf{Questions :}
-      \begin{enumerate}
-        \item A partir du Document~\ref{doc3} déterminer précisément la longueur d'onde $\lambda$ des ondes produites.
-        \item Préciser l'état vibratoire des points circulaires résultant de la superposition des deux ondes.
-        \item Pour ces points, exprimer en fonction de $\lambda$ les distances $d_1$ et $d_2$, puis la différence de chemin $\delta = d_1 - d_2$.
-        \item Répéter les deux questions précédentes pour les points triangulaires et carrés.
-        \item Exprimer les relations liant la différence de chemin $\delta = d_1 - d_2$ et $\lambda$ dans le cas d'interférences constructives et dans le cas d'interférences destructives.
-      \end{enumerate}
-  \end{minipage}
-}
+  \end{documentboxenv}
 \end{document}

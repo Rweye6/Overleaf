@@ -239,9 +239,23 @@ innerbottommargin=8pt
   \refstepcounter{documentbox}%
   \begin{tcolorbox}[
     breakable,
-    colframe=black,
+    colframe=black!80,
     colback=white,
     title=\textbf{\faFile[regular]~Document \thedocumentbox : #1},
+    fonttitle=\bfseries,
+    left=2mm, right=2mm, top=1mm, bottom=1mm
+  ]
+}{%
+  \end{tcolorbox}
+}
+
+\newenvironment{question}{%
+  \refstepcounter{documentbox}%
+  \begin{tcolorbox}[
+    breakable,
+    colframe=black!35,
+    colback=white,
+    title=\textbf{\faQuestion[regular]~Questions : },
     fonttitle=\bfseries,
     left=2mm, right=2mm, top=1mm, bottom=1mm
   ]

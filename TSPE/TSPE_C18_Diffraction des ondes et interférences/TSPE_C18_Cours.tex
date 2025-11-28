@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,12pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 \usepackage{../../Styles/Cours}
 
 \newcommand{\chnum}{Chapitre 18}
@@ -34,7 +34,7 @@
 \draw [blue] (5.33, -2.83) arc (-45:45:4 );
 \draw [blue] (6.04, -3.54) arc (-45:45:5 );
 
-\draw [red] (4, 0) arc (0:45:1.5 );
+\draw [red,thick] (4, 0) arc (0:45:1.5 );
 \draw [red] (4,.6) node[above]{$\theta$};
 \draw [dashed] (0,0) -- (8,0 );
 
@@ -86,7 +86,7 @@
 	\subsection{Définition}
 	Il s'agit d'une propriété des ondes qui se caractérise en tout point d'un milieu par la superposition de deux ondes de même nature et de même fréquence. Pour cela, les ondes qui interfèrent doivent être émises par deux sources cohérentes. On dit que deux sources sont cohérentes si elles émettent des ondes de même fréquence et avec un déphasage constant.\\
 	\begin{minipage}{.35\textwidth}
-	\includegraphics[scale=.8]{Ressources/TSPE_C9_Cours_Fig4.png}
+	\includegraphics[width=\linewidth]{Ressources/TSPE_C9_Cours_Fig4.png}
 	\end{minipage}
 	\begin{minipage}{.6\textwidth}
 	\begin{small}
@@ -170,7 +170,7 @@
 	\item Les interférences sont \textbf{destructives} quand les ondes arrivent \textbf{en opposition de phase} au point $M$. \\ Dans ce cas : $\delta = \lambda \cdot \left( k+\dfrac{1}{2} \right)$
 	\end{itemize}
 \begin{center}
-\begin{tikzpicture}[scale=.7]
+\begin{tikzpicture}[scale=.8]
 \node (S1) at (0,0){};
 \draw (S1) node{$\bullet$} node[above]{$S_1$};
 \node (M) at (4,0){};
@@ -225,7 +225,7 @@
 \end{center}
 	Sur un écran, on observe à la fois les phénomènes de diffraction et d'interférences.\\
 	\begin{center}
-	\includegraphics[scale=.5]{Ressources/TSPE_C9_Cours_Fig5.png}
+	\includegraphics[scale=.6]{Ressources/TSPE_C9_Cours_Fig5.png}
 	\end{center}	 
 	
 	\subsection{Conditions d'interférences constructives ou destructives}
@@ -240,7 +240,7 @@
 	
 	\subsection{Interfrange}
 	La distance qui sépare les milieux de deux franges brillante consécutives (ou de deux franges sombres consécutives) est appelé \textbf{interfrange}, $i$.\\
-	Dans le vide ou l'air, $i = \dfrac{\lambda \cdot D}{a}$\\
+	Dans le vide ou l'air: $$i = \dfrac{\lambda \cdot D}{a}$$
 	avec $a$ la distance entre les deux fentes et $D$ la distance fentes-écran.
 
 
