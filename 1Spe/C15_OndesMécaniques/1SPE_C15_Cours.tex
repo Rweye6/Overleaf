@@ -13,27 +13,27 @@
     \textit{Exemple : }
         Le son, une onde le long d'une corde, une onde le long d'un ressort, des ondes sismiques, des vagues ...
     
-    \subsection{Définition}
-    \begin{minipage}{.58\linewidth}
+    \noindent \begin{minipage}{.58\linewidth}
+        \subsection{Définition}
     Une onde mécanique est \textbf{progressive} si la perturbation se propage dans le milieu matériel sans transport de matière. Il ne s'agit alors que d'un déplacement local et temporaire de particules.\\
     Une onde mécanique transporte avec elle de l'\textbf{énergie}.
 \end{minipage}
     \begin{minipage}{.35\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{Ressources/1SPE_C15_Cours_Bateau.png}
+        \includegraphics[width=.5\linewidth]{Ressources/1SPE_C15_Cours_Bateau.png}
     \end{minipage}
 
    
     \subsection{Grandeurs physiques associées aux ondes mécaniques}
     Pour étudier la propagation d'une onde mécanique, on mesure une grandeur physique qui varie, appelée \textbf{élongation}.\\
-    \begin{minipage}{.45\linewidth}
+    \begin{minipage}{.35\linewidth}
         \textit{Exemple : }
     Pour la propagation d'une vague à la surface de l'eau, on mesure la hauteur de la vaque par rapport à la surface de l'eau au repos.
     \begin{center}
         \includegraphics[width=\linewidth]{Ressources/1SPE_C15_Cours_Bateau2.png}
     \end{center}
     \end{minipage}\hspace{1em}
-    \begin{minipage}{.5\linewidth}
+    \begin{minipage}{.6\linewidth}
         \small \centering
         \begin{tabular}{|>{\centering}m{.25\linewidth}|>{\centering}m{.225\linewidth}|>{\centering}m{.22\linewidth}|>{\centering \arraybackslash}m{.22\linewidth}|}
             \hline
@@ -82,7 +82,6 @@
     Le terme "célérité" désigne la vitesse de propagation d'une onde progressive. On le différencie de la "vitesse" puisqu'il n'y a pas de propagation de la matière pour les ondes progressives. On la notera malgré tout "$v$".\\
     La célérité d'une onde dépend du type d'onde et également du milieu de propagation. plus le milieu est rigide, plus la célérité est grande.
 
-    \newpage
     \begin{cours}
         Une onde se propageant d'un point $M_1$ à une point $M_2$ avec un retard $\tau$ a une célérité qui se calcule par :\\
         \begin{tabular}{>{\centering}m{.3\linewidth}|l}
@@ -110,7 +109,7 @@
             \item Une onde se déplace à la célérité $v=\SI{4,5}{\meter\per\second}$ dans un milieu. Calculer avec quel retard elle arrivera à un récepteur situé à \SI{240}{\centi\meter} de sa source.
         \end{enumerate}
     \end{exemple}
-\newpage
+
 \section{Les ondes mécaniques progressives périodiques}
 Quand le phénomène à l'origine de l'onde mécanique progressive est périodique, chaque point du milieu de propagation subit une perturbation de manière préiodique. On peut donc dire que l'onde mécanique qui en résulte est \textbf{périodique}.
 \begin{cours}
@@ -165,18 +164,63 @@ On a donc la relation : $v = \dfrac{\lambda}{T}$ d'où on peut déduire les rela
         & $f$ la fréquence de l'onde en \unit{\hertz}\\
     \end{tabular}
 \end{center}
-\textbf{Exercices :}\\
+
+\begin{exemple}
 \begin{enumerate}
     \item Une onde sonore a pour fréquence $f = \SI{980}{\hertz}$. Sa célérité $v = \SI{340}{\meter\per\second}$. Calculer sa longueur d'onde.
     \item Une onde a pour longueur d'onde $\lambda = \SI{3,0}{\milli\meter}$. Sa célérité est $v =\SI{2,5E-6}{\meter\per\second}$. Calculer sa période puis sa fréquence.
 \end{enumerate}
+\end{exemple}
+
 \subsection{Ondes sinusoïdales}
 \begin{cours}
     Une \textbf{onde sonusoïdale} est un cas particulier d'ondes périodiques pour lequel les variations de la perturbation se font en suivant la fonction mathématique sinus.
 \end{cours}
-On peut identifier ce type de fonction à partir du graphique cimportant une alternance de "vaguesé positives et négatives de mêmes amplitudes.\\
-\textit{Remarque} : En pratique, peu d'ondes dans la nature ont allure sinusoïdale. Toutefois, il est possible de montrer mathématiquement que n'importe quel signal périodique peut être considéré comme une somme de signaux sinusoïdaux.\\
+On peut identifier ce type de fonction à partir du graphique comportant une alternance de "vagues" positives et négatives de mêmes amplitudes.\\
+\textit{Remarque} : En pratique, peu d'ondes dans la nature ont allure sinusoïdale. Toutefois, il est possible de montrer mathématiquement que n'importe quel signal périodique peut être considéré comme une somme de signaux sinusoïdaux.
 On peut alors analyser l'onde en étudiant chaque onde sinusoïdale qui la compose.\\
-\textbf{Exercice :} le diapason
-Un diapason permet de générer un son quasiment sinusoidal 
+
+\begin{exemple}
+    \begin{minipage}{.53\linewidth}
+Un diapason permet de générer un son quasiment sinusoidal. L'enregistrement réalisé à l'aide d'un microphone donne la courbe ci-contre.\\
+
+\textbf{Célérité du son dans l'air :} $v_{air} = \SI{340}{\meter\per\second}$\\
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Note} & Do3 & Ré3 & Mi3 & Fa3 & Sol3 & La3 & Si3\\
+    \hline
+    $f(\unit{\hertz})$ & 262 & 294 & 330 & 349 & 392 & 440 & 494\\
+    \hline
+\end{tabular}
+
+\end{minipage}
+\begin{minipage}{.45\linewidth}
+    \centering
+    \begin{tikzpicture}[scale=1.5, transform shape]
+        \draw[-Latex] (0,-1.2)--(0,1.2);
+        \draw[-Latex] (0,0) -- (4.7,0);
+        \draw[domain = 0:4.5,samples = 200,thick,red] plot (\x,{sin(155*\x)});
+        \foreach \k in {0,.5,...,4.5}{
+            \draw[gray] (\k,-1)--(\k,1);
+            \draw[thick] (\k,-.05)--(\k,.05);
+            \node[below] at (\k,0) {\tiny\k};
+        }
+        \foreach \k in {-1,-0.75,...,1}{
+            \draw[gray] (0,\k)--(4.5,\k);
+            \draw[thick] (-.05,\k)--(.05,\k);
+            \node[left] at (0,\k) {\tiny\k};
+        }
+        \node[above] at(0,1){\tiny $U(V)$};
+        \node[below] at(4.5,-1){\tiny $t(ms)$};
+        
+    \end{tikzpicture}
+\end{minipage}
+\begin{enumerate}
+    \item Déterminer la période depuis la fréquence du son émis par le diapason.
+    \item À quelle note correspond sa hauteur ?
+    \item Calculer sa longueur d'onde dans l'air.
+\end{enumerate}
+\end{exemple}
+
 \end{document}

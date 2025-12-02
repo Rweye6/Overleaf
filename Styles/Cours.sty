@@ -183,8 +183,8 @@ innerbottommargin=8pt
 \newenvironment{cours}[1][Cours]{%
 	\begin{basebox}[
 		backgroundcolor=blue!5,
-		linecolor=blue!5,
-		frametitle={\color{blue!75!black}\bfseries #1}
+		linecolor=blue!5%,
+		%frametitle={\color{blue!75!black}#1}
 		]
 	}{\end{basebox}}
 
@@ -196,7 +196,7 @@ innerbottommargin=8pt
 		]
 	}{\end{basebox}}
 
-\newenvironment{exemple}[1][Exemples]{%
+\newenvironment{exemple}[1][Exercice]{%
 	\begin{basebox}[
 		backgroundcolor=orange!5,
 		linecolor=orange!5,
