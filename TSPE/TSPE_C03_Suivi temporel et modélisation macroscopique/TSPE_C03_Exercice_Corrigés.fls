@@ -1,9 +1,9 @@
-PWD /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique
+PWD /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.tex
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.log
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.tex
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/fleqn.clo
@@ -14,8 +14,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/../../Styles/Exercice.sty
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/../../Styles/Exercice.sty
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/../../Styles/Exercice.sty
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/../../Styles/Exercice.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
@@ -334,14 +334,33 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -424,7 +443,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-OUTPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.pdf
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.pdf
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc
@@ -462,16 +481,16 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb

@@ -1,5 +1,6 @@
 \documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
 \usepackage{../../Styles/Exercice}
+\usepackage{xfp}
 
 
 \newcommand{\chnum}{Chapitre 3}
@@ -272,7 +273,7 @@ Par ailleurs, à la température de 20\unit{\celsius} en l'absence de charbon ac
 \end{enumerate}
 \textcolor{blue}{Dans ce cas le charbon actif est présent dans le milieu réactionnel mais il n'intervient pas dans l'équation de la réaction, il s'agit donc d'un catalyseur utilisé pour accélérer la réaction.}
 
-\newpage
+%\newpage
 \section{Un initiateur de polymère}
 Le péroxyde de di\emph{tert}butyle, noté \textbf{A} est un amorceur de nombreuses réactions de polymérisation formant des matières plastiques.\\
 Cette espèce chimique ne peut pas être utilisée à une température trop élevée car elle se décompose spontanément. Cette décomposition est modélisée par la réaction d'équation :
@@ -323,6 +324,117 @@ De plus la pression finale est la somme des pressions apportées par \ce{CH3COCH
 En remplaçant $x_{max}$ on peut fonc déduire que $P_{\infty}= \dfrac{3\cdot \dfrac{P_0\cdot V}{R\cdot T} \cdot R \cdot T}{V} $.\\
 En simplifiant on obtient $P_{\infty}= 3 P_0$ soit $P_0 = \dfrac{P_{\infty}}{3}$}\\
 
-1. (b) \textcolor{blue}{}
+1. (b) \textcolor{blue}{Parmis les grandeurs citées en fonction desquelles nous devons exprimer $[A](t)$, on remarque que $P(t)$ n'est pas encore définit. On commencera donc par cette étape. \begin{itemize}
+    \item Expression de $P(t)$
+\end{itemize}
+$P(t)$ est la pression mesurée à chaque instant dans le milieu réactionnel. Il s'agit donc de la somme des pressions apportée par chacun des gaz du mélange. $$P(t) = \sum{\dfrac{n_i R T}{V}}$$
+$$P(t) = \dfrac{n(A)_t R T}{V} + \dfrac{n(\ce{CH3COCH})_t R T}{V} + \dfrac{n(\ce{H3CCH3})_t R T}{V}$$
+En observant le tableau d'avancement on peut donc exprimer les quantités de matières en fonction de $x$, ce qui donne :
+$$P(t) = \dfrac{(n_i(A)-x) R T}{V} + \dfrac{2x R T}{V} + \dfrac{x R T}{V}$$
+$$P(t) = \dfrac{n_i(A) R T}{V} + \dfrac{-x R T}{V} + \dfrac{3x R T}{V}$$
+$$P(t) = \dfrac{n_i(A) R T}{V}+ \dfrac{2x R T}{V}$$
+\begin{itemize}
+    \item Définition de $[A](t)$
+\end{itemize}
+La condentration de l'espèce $A$ au cours du temps peut s'écrire comme :
+$$ [A](t) = \dfrac{n(A)_t}{V}$$
+Le tableau d'avancement nous dit que :
+$$ [A](t) = \dfrac{n_i(A)-x}{V}$$
+$$ [A](t) = \dfrac{n_i(A)}{V} - \dfrac{x}{V}$$
+En utilisant la relation des gaz parfaits on sait que $[A] = \dfrac{n(A)}{V} = \dfrac{P}{RT}$. Donc à $t=0$ on peut écrire que $\dfrac{n_i(A)}{V} = \dfrac{P_0}{RT}$ et remplacer dans l'expression de $ [A](t)$ :
+$$ [A](t) = \dfrac{P_0}{RT} - \dfrac{x}{V}$$
+Dans cette expression, seul $x$ n'est pas exprimé. L'avancement est donc à relier avec la pression, nous allons pour celà utiliser l'expression de $P(t)$ trouvée précédemment pour remplacer $\dfrac{x}{V}$
+\begin{itemize}
+    \item Expression de $x$ en fonction de $P(t)$
+\end{itemize}
+$$P(t) = \dfrac{n_i(A) R T}{V}+ \dfrac{2x R T}{V}$$
+$$\dfrac{2x R T}{V} = P(t) - \dfrac{n_i(A) R T}{V}$$
+$$\dfrac{x}{V} = \dfrac{P(t)}{2RT} - \dfrac{n_i(A) R T}{2VRT}$$
+$$\dfrac{x}{V} =\dfrac{P(t)}{2RT} - \dfrac{n_i(A)}{2V}$$
+Et comme dit précédemment, comme $\dfrac{n_i(A)}{V} = \dfrac{P_0}{RT}$, on aura :
+$$\dfrac{x}{V} =\dfrac{P(t)}{2RT} - \dfrac{P_0}{2RT}$$
+On remplace $\dfrac{x}{V}$ dans l'expression de $[A](t)$ ce qui donne :
+$$ [A](t) = \dfrac{P_0}{RT} - \left(\dfrac{P(t)}{2RT} - \dfrac{P_0}{2RT}\right)$$
+$$ [A](t) = \dfrac{P_0}{RT} - \dfrac{P(t)}{2RT} + \dfrac{P_0}{2RT}$$
+On met au même dénominateur :
+$$ [A](t) = \dfrac{2P_0}{2RT} - \dfrac{P(t)}{2RT} + \dfrac{P_0}{2RT}$$
+$$ [A](t) = \dfrac{3P_0}{2RT} - \dfrac{P(t)}{2RT}$$
+\begin{center}
+    \fbox{$ [A](t) = \dfrac{3P_0-P(t)}{2RT}$}
+\end{center}
+}
+
+\textcolor{blue}{
+1.c) Pour mettre en place cette représentation graphique il faut accéder aux grandeurx intermédiaires suivantes : 
+\begin{itemize}
+    \item Rapport $\dfrac{[A](t)}{[A]_0}$
+\end{itemize}
+$$\dfrac{[A](t)}{[A]_0}$$
+$$\dfrac{\dfrac{3P_0-P(t)}{2RT}}{\dfrac{P_0}{RT}}= \dfrac{3P_0-P(t)}{2RT} \cdot \dfrac{RT}{P_0}$$
+$$\dfrac{3P_0-P(t)}{2} \cdot \dfrac{1}{P_0}$$
+$$\dfrac{3P_0-P(t)}{2P_0}$$
+\begin{itemize}
+    \item Calcul de $\ln{\dfrac{[A](t)}{[A]_0}}$
+\end{itemize}
+\begin{center}
+    \pgfkeys{/pgf/number format/assume math mode=true} 
+    \newcommand{\Pzero}{\fpeval{71.8E3/3}}
+    \begin{tabular}{|c|c|}
+        \hline
+        Date $t$ (en min) & $\ln{\dfrac{[A](t)}{[A]_0}}$\\
+        \hline
+        2,00 & \fpeval{round(ln((3*\Pzero-25.0E3)/(2*\Pzero)),5)}\\
+        \hline
+        6,00 & \fpeval{round(ln((3*\Pzero-26.5E3)/(2*\Pzero)),5)}\\
+        \hline
+        14,0 & \fpeval{round(ln((3*\Pzero-29.5E3)/(2*\Pzero)),5)}\\
+        \hline
+        22,0 & \fpeval{round(ln((3*\Pzero-32.3E3)/(2*\Pzero)),5)}\\
+        \hline
+        30,0 & \fpeval{round(ln((3*\Pzero-34.9E3)/(2*\Pzero)),5)}\\
+        \hline
+        38,0 & \fpeval{round(ln((3*\Pzero-37.3E3)/(2*\Pzero)),5)}\\
+        \hline
+    \end{tabular}
+\end{center}
+\begin{tikzpicture}[scale=.8, transform shape]
+    \newcommand{\Pzero}{\fpeval{71.8E3/3}}
+    \draw[-Latex] (0,0) -- (8,0);
+    \draw[-Latex] (0,0) -- (0,-4);
+    \foreach \x/\y/\k in {.4/\fpeval{10*ln((3*\Pzero-25.0E3)/(2*\Pzero))}/+, 1.2/\fpeval{10*ln((3*\Pzero-26.5E3)/(2*\Pzero))}/+, 2.8/\fpeval{10*ln((3*\Pzero-29.5E3)/(2*\Pzero))}/+, 4.4/\fpeval{10*ln((3*\Pzero-32.3E3)/(2*\Pzero))}/+, 6/\fpeval{10*ln((3*\Pzero-34.9E3)/(2*\Pzero))}/+, 7.6/\fpeval{10*ln((3*\Pzero-37.3E3)/(2*\Pzero))}/+}{
+    \node at (\x,\y) {$\k$};
+}
+    \foreach \i in {0,...,7} {
+        \draw (\i, -.2) -- (\i, .2);
+        \draw (\i, .2) node[above]{\fpeval{\i/5}};
+    }
+    \foreach \i in {0,...,-3} {
+        \draw (-.2,\i) -- (.2,\i);
+        \draw (-.2,\i) node[left]{\fpeval{\i/10}};
+    }
+    \node[left] at (-.2,-4){$\ln{\dfrac{[A](t)}{[A]_0}}$};
+    \node[above] at (8,.2){$t$ (\unit{\minute})};
+    \draw[red,thick] (0,0) -- (7.6,\fpeval{10*ln((3*\Pzero-37.3E3)/(2*\Pzero))});
+    \node at (3,-3) {\fbox{$y=\num{-8.62E-3} \cdot x$}};
+\end{tikzpicture}
+}
+\textcolor{blue}{
+2.(a)
+On sait que la vitesse de disparition de $A$ peut s'exprimer comme : $$v_{disp} = \dfrac{-[A](t)}{dt}$$
+De plus pour une réaction suivant une loi de vitesse d'ordre 1, la vitesse de réaction est proportionnelle à la concentration en réactif : $$ d_{disp} = k\cdot [A](t)$$
+On peut alors égaler ces équations ce qui donne : $$ \dfrac{-[A](t)}{dt} = k\cdot [A](t) $$
+Que l'on pourra alors écrire sous forme d'une équation différentielle : $$ \dfrac{[A](t)}{dt} + k\cdot [A](t) = 0$$
+2.(b) Cette équation différentielle admet pour solution une fonction de la forme : $$ [A](t) = K\cdot e^{-kt}$$
+Se placer dans les conditions initiales permet de déterminer la valeur de $K$. On sait que pour $t=0$, $[A](0) = [A]_0$
+$$ [A](0) = K e^{-k\times 0}$$
+$$ [A](0) = K \times 1$$
+On aura donc $K = [A]_0$ et donc : $$ [A](t) = [A]_0\cdot e^{-kt}$$
+2.(c) Les données exploitent la relation $\ln{\dfrac{[A](t)}{[A]_0}}$. À partir de l'expression de $[A](t)$ on peut y accéder : 
+$$ [A](t) = [A]_0\cdot e^{-kt} $$
+$$ \dfrac{[A](t)}{[A]_0} = e^{-kt} $$
+$$ \ln \left(\dfrac{[A](t)}{[A]_0}\right) = \ln(e^{-kt}) $$
+$$ \ln \left(\dfrac{[A](t)}{[A]_0}\right) = -kt$$
+On remarque donc que pour cette réaction d'ordre 1, le tracer de $\ln \left(\dfrac{[A](t)}{[A]_0}\right)$ en fonction du temps va donner une fonction affine de pente négative dont le coefficient directeur est la constante de vitesse $k$ de la réaction. Cela valide la méthode mise en place dans la partie expérimentale.
+}
 \end{multicols}
 \end{document}

@@ -1,10 +1,10 @@
 Les binomes sont : 
-Jordan et Murat
-Paul et Nermina
-Romane et Maxence
-Anastassïa et Gabriel
-Jade et Melek
-Sarra et Sarah
-Abdussamed et Manel
-Zakaria et Lalie
-Kamil et Félix
+Kamil et Maxence
+Nermina et Manel
+Sarah et Sarra
+Félix et Murat
+Jade et Zakaria
+Paul et Melek
+Gabriel et Lalie
+Anastassïa et Romane
+Jordan et Abdussamed

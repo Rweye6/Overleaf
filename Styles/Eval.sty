@@ -190,14 +190,52 @@ innertopmargin=8pt,
 innerbottommargin=8pt
 ]{basebox}
 
-\newenvironment{data}[1][Données]{%
-	\begin{basebox}[
-		backgroundcolor=blue!5,
-		linecolor=blue!75!black,
-		frametitle={\color{blue!75!black}\bfseries #1}
-		]
-	}{\end{basebox}}
 
 
+	\newcounter{documentbox}
+\usepackage{fontawesome5}
+	\tcbuselibrary{skins, breakable}
+
+\newenvironment{documentboxenv}[1]{%
+  \refstepcounter{documentbox}%
+  \begin{tcolorbox}[
+    breakable,
+    colframe=black!80,
+    colback=white,
+    title=\textbf{\faFile[regular]~Document \thedocumentbox : #1},
+    fonttitle=\bfseries,
+    left=2mm, right=2mm, top=1mm, bottom=1mm
+  ]
+}{%
+  \end{tcolorbox}
+}
+
+\newenvironment{question}{%
+  \refstepcounter{documentbox}%
+  \begin{tcolorbox}[
+    breakable,
+    colframe=black!35,
+    colback=white,
+    title=\textbf{\faQuestion[regular]~Questions : },
+    fonttitle=\bfseries,
+    left=2mm, right=2mm, top=1mm, bottom=1mm
+  ]
+}{%
+  \end{tcolorbox}
+}
+
+\newenvironment{data}{%
+  \refstepcounter{documentbox}%
+  \begin{tcolorbox}[
+    breakable,
+    colframe=blue!75,
+    colback=white,
+    title=\textbf{\faFolder~Données : },
+    fonttitle=\bfseries,
+    left=2mm, right=2mm, top=1mm, bottom=1mm
+  ]
+}{%
+  \end{tcolorbox}
+}
 % Finally, we'll use \endinput to indicate that LaTeX can stop reading this file. LaTeX will ignore anything after this line.
 \endinput

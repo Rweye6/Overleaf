@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.27)  11 DEC 2024 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.27)  1 DEC 2025 17:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.tex"
-(/Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.tex
+**"/Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.tex"
+(/Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -32,7 +32,7 @@ File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen140
-) (/Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/../../Styles/Exercice.sty
+) (/Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/../../Styles/Exercice.sty
 
 LaTeX Warning: You have requested package `../../Styles/Exercice',
                but the package provides `mystyle'.
@@ -908,40 +908,151 @@ File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 9.
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 9.
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count381
+Package zref Info: New property: abspage on input line 67.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip95
+\c@mdf@globalstyle@cnt=\count382
+\mdf@skipabove@length=\skip96
+\mdf@skipbelow@length=\skip97
+\mdf@leftmargin@length=\skip98
+\mdf@rightmargin@length=\skip99
+\mdf@innerleftmargin@length=\skip100
+\mdf@innerrightmargin@length=\skip101
+\mdf@innertopmargin@length=\skip102
+\mdf@innerbottommargin@length=\skip103
+\mdf@splittopskip@length=\skip104
+\mdf@splitbottomskip@length=\skip105
+\mdf@outermargin@length=\skip106
+\mdf@innermargin@length=\skip107
+\mdf@linewidth@length=\skip108
+\mdf@innerlinewidth@length=\skip109
+\mdf@middlelinewidth@length=\skip110
+\mdf@outerlinewidth@length=\skip111
+\mdf@roundcorner@length=\skip112
+\mdf@footenotedistance@length=\skip113
+\mdf@userdefinedwidth@length=\skip114
+\mdf@needspace@length=\skip115
+\mdf@frametitleaboveskip@length=\skip116
+\mdf@frametitlebelowskip@length=\skip117
+\mdf@frametitlerulewidth@length=\skip118
+\mdf@frametitleleftmargin@length=\skip119
+\mdf@frametitlerightmargin@length=\skip120
+\mdf@shadowsize@length=\skip121
+\mdf@extratopheight@length=\skip122
+\mdf@subtitleabovelinewidth@length=\skip123
+\mdf@subtitlebelowlinewidth@length=\skip124
+\mdf@subtitleaboveskip@length=\skip125
+\mdf@subtitlebelowskip@length=\skip126
+\mdf@subtitleinneraboveskip@length=\skip127
+\mdf@subtitleinnerbelowskip@length=\skip128
+\mdf@subsubtitleabovelinewidth@length=\skip129
+\mdf@subsubtitlebelowlinewidth@length=\skip130
+\mdf@subsubtitleaboveskip@length=\skip131
+\mdf@subsubtitlebelowskip@length=\skip132
+\mdf@subsubtitleinneraboveskip@length=\skip133
+\mdf@subsubtitleinnerbelowskip@length=\skip134
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box170
+\mdf@footnotebox=\box171
+\mdf@splitbox@one=\box172
+\mdf@splitbox@two=\box173
+\mdf@splitbox@save=\box174
+\mdfsplitboxwidth=\skip135
+\mdfsplitboxtotalwidth=\skip136
+\mdfsplitboxheight=\skip137
+\mdfsplitboxdepth=\skip138
+\mdfsplitboxtotalheight=\skip139
+\mdfframetitleboxwidth=\skip140
+\mdfframetitleboxtotalwidth=\skip141
+\mdfframetitleboxheight=\skip142
+\mdfframetitleboxdepth=\skip143
+\mdfframetitleboxtotalheight=\skip144
+\mdffootnoteboxwidth=\skip145
+\mdffootnoteboxtotalwidth=\skip146
+\mdffootnoteboxheight=\skip147
+\mdffootnoteboxdepth=\skip148
+\mdffootnoteboxtotalheight=\skip149
+\mdftotallinewidth=\skip150
+\mdfboundingboxwidth=\skip151
+\mdfboundingboxtotalwidth=\skip152
+\mdfboundingboxheight=\skip153
+\mdfboundingboxdepth=\skip154
+\mdfboundingboxtotalheight=\skip155
+\mdf@freevspace@length=\skip156
+\mdf@horizontalwidthofbox@length=\skip157
+\mdf@verticalmarginwhole@length=\skip158
+\mdf@horizontalspaceofbox=\skip159
+\mdfsubtitleheight=\skip160
+\mdfsubsubtitleheight=\skip161
+\c@mdfcountframes=\count383
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count384
+\c@mdf@env@i=\count385
+\c@mdf@env@ii=\count386
+\c@mdf@zref@counter=\count387
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+Package: xfp 2024-02-18 L3 Floating point unit
+)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 10.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 10.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
-) (/Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux)
+) (/Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux)
 \openout1 = `TSPE_C03_Exercice_Corrigés.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count381
+\scratchcounter=\count388
 \scratchdimen=\dimen376
-\scratchbox=\box170
-\nofMPsegments=\count382
-\nofMParguments=\count383
+\scratchbox=\box175
+\nofMPsegments=\count389
+\nofMParguments=\count390
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count384
+\MPscratchCnt=\count391
 \MPscratchDim=\dimen377
-\MPnumerator=\count385
-\makeMPintoPDFobject=\count386
+\MPnumerator=\count392
+\makeMPintoPDFobject=\count393
 \everyMPtoPDFconversion=\toks59
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -958,14 +1069,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=540.60239pt
-* \textheight=731.23584pt
+* \textheight=759.6886pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-52.36449pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -984,7 +1095,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package chemgreek Info: Activating mapping `default' on line 9.
+Package chemgreek Info: Activating mapping `default' on line 10.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -994,32 +1105,32 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 9.
-\c@lstlisting=\count387
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 10.
+\c@lstlisting=\count394
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 10.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
 
 LaTeX Warning: No \author given.
 
-LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 13.
+LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 14.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
 )
-Overfull \hbox (126.13182pt too wide) in paragraph at lines 17--25
+Overfull \hbox (126.13182pt too wide) in paragraph at lines 18--26
  [][] 
  []
 
@@ -1030,29 +1141,29 @@ Package multicol Warning: Floats and marginpars not allowed inside `multicols' e
 Package multicol Warning: Floats and marginpars not allowed inside `multicols' environment!.
 
 
-Overfull \hbox (19.32298pt too wide) in alignment at lines 30--32
+Overfull \hbox (19.32298pt too wide) in alignment at lines 31--33
  [][][] []
  []
 
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-Overfull \hbox (195.3976pt too wide) in paragraph at lines 100--110
+Overfull \hbox (195.3976pt too wide) in paragraph at lines 101--111
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--110
+Underfull \hbox (badness 10000) in paragraph at lines 101--111
 
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 111--112
+Underfull \hbox (badness 5036) in paragraph at lines 112--113
 []\T1/qhv/m/n/10.95 Une anal-yse per-met d'�tablir : $\OT1/cmr/m/n/10.95 [[][]N[][]O[][]] =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
@@ -1064,33 +1175,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-Overfull \hbox (0.66205pt too wide) in paragraph at lines 214--214
+Overfull \hbox (0.66205pt too wide) in paragraph at lines 215--215
  []|$[] []$| 
  []
 
 
-Overfull \hbox (0.86172pt too wide) in paragraph at lines 214--214
+Overfull \hbox (0.86172pt too wide) in paragraph at lines 215--215
  [] 
  []
 
 <Ressources/TSPE_C10_Exercices_Fig1.png, id=27, 764.8575pt x 364.36125pt>
 File: Ressources/TSPE_C10_Exercices_Fig1.png Graphic file (type png)
 <use Ressources/TSPE_C10_Exercices_Fig1.png>
-Package pdftex.def Info: Ressources/TSPE_C10_Exercices_Fig1.png  used on input line 250.
+Package pdftex.def Info: Ressources/TSPE_C10_Exercices_Fig1.png  used on input line 251.
 (pdftex.def)             Requested size: 265.3012pt x 126.38304pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[3]
 File: Ressources/TSPE_C10_Exercices_Fig1.png Graphic file (type png)
 <use Ressources/TSPE_C10_Exercices_Fig1.png>
-Package pdftex.def Info: Ressources/TSPE_C10_Exercices_Fig1.png  used on input line 257.
+Package pdftex.def Info: Ressources/TSPE_C10_Exercices_Fig1.png  used on input line 258.
 (pdftex.def)             Requested size: 265.3012pt x 126.38304pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1098,32 +1200,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4 </Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png>]
+[3 </Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/Ressources/TSPE_C10_Exercices_Fig1.png>]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 280.
+LaTeX Font Warning: Command \small invalid in math mode on input line 281.
 
 
-Overfull \hbox (39.38104pt too wide) in alignment at lines 279--281
+Overfull \hbox (39.38104pt too wide) in alignment at lines 280--282
  [][][] []
  []
 
 
-Overfull \hbox (2.80992pt too wide) in paragraph at lines 284--289
+Overfull \hbox (2.80992pt too wide) in paragraph at lines 285--290
  [] 
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 293--294
+Underfull \hbox (badness 7238) in paragraph at lines 294--295
 []\T1/qhv/m/n/10.95 La con-cen-tra-tion en quan-tit� d'une es-p�ce
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--324
+Underfull \hbox (badness 10000) in paragraph at lines 312--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
 
@@ -1134,27 +1236,52 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5] 
+[4]
+Overfull \hbox (2.8569pt too wide) detected at line 365
+\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) = [] + [] + []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--438
+[] []
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(/Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux)
+(/Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 47447 strings out of 474116
- 1168351 string characters out of 5743681
- 1972187 words of memory out of 5000000
- 69218 multiletter control sequences out of 15000+600000
+ 48375 strings out of 474116
+ 1187997 string characters out of 5743681
+ 1973187 words of memory out of 5000000
+ 70111 multiletter control sequences out of 15000+600000
  616819 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,19n,115p,603b,1086s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,19n,115p,610b,1198s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on "/Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.pdf" (5 pages, 395745 bytes).
+Output written on "/Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C03_Suivi temporel et modélisation macroscopique/TSPE_C03_Exercice_Corrigés.pdf" (6 pages, 406035 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
