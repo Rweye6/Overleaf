@@ -1,0 +1,175 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+
+\usepackage{../../../Styles/Eval}
+
+\usepackage{longtable}
+
+\newcommand{\chnum}{Chapitre 12}
+\newcommand{\chtitle}{Mouvements dans un champ uniforme}
+\newcommand{\dtype}{DS2}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{document}
+\maketitle
+
+\section{Le Mölkky}
+
+\begin{longtable}{|c|m{.7\linewidth}|c|c|}
+    \hline
+    \tabletail{\hline}
+    Question & \centering Reponse & Barème & Note\\
+    \hline
+    1 & Deuxième loi de Newton : $\sum{\vv{F} = m\cdot \vv{a}}$ 
+    $$ \vv{P} = m\cdot \vv{a}$$
+    $$ m\cdot \vv{g} = m\cdot \vv{a}$$
+    $$\vv{a} = \vv{g}$$ & & 1 \\
+     & Projection dans le repère de l'énoncé : 
+     $$a_x(t) = 0$$ $$a_y(t) = -g$$ & & 1\\
+    \hline
+
+    2 & On sait que $\vv{a} = \dfrac{d\vv{v}}{dt}$ donc pour déterminer les expressions de $\vv{v}(t)$ il faut intégrer l'expressionde $\vv{a}$ ce qui nous donne :
+    $$v_x(t) = cste_1 $$ $$v_y(t) = -gt + cste_2 $$& & 1\\
+    & Pour résoudre les constantes on se place à $t=0$ où $v(O) = v_0$ ainsi on aura : $$ v_x(0) = cste_1 = v_{0,x} = v_0\cdot \cos(\alpha)$$
+    $$ v_y(0) = -g\times 0 + cste_2 =  v_{0,y} = v_0\cdot \sin(\alpha)$$ 
+    On aura donc : $$v_x(t) = v_0\cdot \cos(\alpha) $$ $$v_y(t) = -gt + v_0\cdot \sin(\alpha)$$& &1\\
+    \hline
+
+    3 & On sait que $\vv{v} = \dfrac{d\vv{OG}}{dt}$ donc pour déterminer les expressions de $\vv{OG}(t)$ il faut intégrer l'expressionde $\vv{v}$ ce qui nous donne :
+    $$ x(t) = v_0 \cdot t\cdot \cos(\alpha) + cste_3$$ $$ y(t) = -\frac{1}{2}gt^2  + v_0 \cdot t \cdot \sin(\alpha) + cste_4$$
+    & & 1\\
+    & Pour résoudre les constantes on se place à $t=0$ où $x(O) = 0$ et $y(0) = h$ ainsi on aura : $$ x(0) = v_0 \times 0 \cdot \cos(\alpha) + cste_3= 0 $$
+    $$ y(0) = -\frac{1}{2}g\times 0^2  + v_0 \times 0 \times \cdot \sin(\alpha) + cste_4 =  h $$ 
+    La constante 3 est nulle et la constante 4 vaut $h$ ce qui nous laisse avec les expressions : 
+    $$ x(t) = v_0 \cdot t\cdot \cos(\alpha)$$ $$ y(t) = -\frac{1}{2}gt^2  + v_0 \cdot t \cdot \sin(\alpha)+ h$$
+    & & 1\\
+    \hline
+
+    4 & Expression de $t$ en fonction de $x$ à partir de l'expression de $x(t)$ :
+    $$ x = v_0 \cdot t \cdot \cos(\alpha)$$
+    $$ t = \dfrac{x}{v_0 \cos{\alpha}}$$
+    & & 1 \\
+    & Substitution de $x$ dans l'expression de $y(t)$ :
+    $$ y = -\frac{1}{2}gt^2  + v_0 \cdot t \cdot \sin(\alpha)+ h$$
+
+    $$ y = -\frac{1}{2}g\left(\dfrac{x}{v_0 \cos{\alpha}}\right)^2  + v_0 \cdot \dfrac{x}{v_0 \cos{\alpha}} \cdot \sin(\alpha)+ h$$
+    & & 1\\
+    
+    & Calcul des coefficients de l'équation : 
+    $$ y = -\frac{1}{2}g\left(\dfrac{x}{v_0 \cos{\alpha}}\right)^2  + v_0 \cdot \dfrac{x}{v_0 \cos{\alpha}} \cdot \sin(\alpha)+ h$$
+    $$ y = -\dfrac{g}{2v_0^2 \cos^2{(\alpha)}}  \cdot x^2+  x\cdot \tan(\alpha)+ h$$
+    $$ y = -\dfrac{\num{9.81}}{2\times \num{4.9}^2 \cos^2{(30)}}  \cdot x^2+  x\cdot \tan(30)+ \num{0,70}$$
+    $$y  = -0,27 \cdot x^2 + 0,58 \cdot x + 0,70$$
+    & & 1\\
+    \hline
+
+    5 & Le joueur a un score de 41, il lui fait donc, pur gagner un un lancer, renverser la quille "9". Pour cela il faut que son bâton atteigne une distance de \SI{3,0}{m}. En étudiant l'équation de trajectoire on peut déterminer si le bâton atteindra cette quille dans les consitions du lancer soit si pour la coordonnée $x_{q9}$, $y$ sera proche de $0$.
+    $$y  = -0,27 \cdot x_{q9}^2 + 0,58 \cdot x_{q9} + 0,70$$
+    $$y  = -0,27 \cdot 3,0^2 + 0,58 \cdot 3,0 + 0,70$$
+    $$ y = \SI{0,01}{m}$$
+    Nous pouvons considérer que la trajectoire permet effectivement de renverser la quille dans les conditions proposées.
+    & & 2\\
+    \hline
+    6 & Le document 3 présente les équations utilisées pour le calcul des énergies cinétiques et potentielles. On remarque que l'énergie cinétique s'écrit $0.5 * 0.4 *0.4 * 9.81 * y[i]$. La valeur associée à la masse correspond ici à \SI{0,4}{kg}. On retrouve cette valeur dans l'expression de l'énergie potentielle $0.4 * 9.81 * y[i]$
+    & & 2\\
+    \hline
+
+    7& Ligne 11 : $ Em1 = Ec1 + Ep1$ 
+    & & 1\\
+    \hline
+
+    8 & Attribution des courbes : A : Energie potentielle (l'altitude du bâton augmente puis diminue jusqu'à $z=0$) ; B : Energie cinétique (le bâton a une vitesse qui diminue pendant son ascension et augmente dans la seconde phase du mouvement) ; C : Energie mécanique (la somme des deux courbe et est conservée pendant le déplacement)
+    & & 1,5\\
+    \hline
+
+    9 & Détermination de la durée de vol : Par lecture graphique l'énergie potentielle atteint $0$ au bout de \SI{0.7}{s}.
+    & & 1\\
+    & Pour savoir si la partie est remportée, il faut déterminer la position du bâton lorsqu'il touche le sol donc $x(0,7)$ et $y(0,7)$. $$x(0,7) = 4,9 \times 0,7 \times cos(30) = \SI{2,97}{m}$$
+    $$ y(0,7) = -0,5\times 9,81 \times (0,7)^2 + 4,9\times 0,7\times \sin(30)+0,70 = \SI{1,15E-2}{m}$$
+    Les coordonnées du point d'attérissage du bâton vont correspondre à la quille "9" et permettront au joueur de gagner la partie.
+    & & 1\\
+    \hline
+\end{longtable}
+
+\section{Le Mölkky}
+
+\begin{longtable}{|c|m{.7\linewidth}|c|c|}
+    \hline
+    \tabletail{\hline}
+    1 & Représenter $\vv{E}$ dans le sens positif vers négatif (vers la gauche sur le schéma). Représenter $\vv{F}$ dans le sens opposé à $\vv{E}$ (vers la droite sur le schéma).
+    & & 2\\
+    \hline
+
+    2 & $\vv{F} = \vv{E} \cdot -e$
+    & & 1\\
+    \hline
+
+    3 & Deuxième loi de Newton : $\sum{\vv{F}} = m\cdot \vv{a}$
+    $$ \vv{F} = m\cdot \vv{a}$$
+    $$  -e \cdot \vv{E}= m\cdot \vv{a}$$
+    & & 1\\
+    & On sait que $\vv{E} = \dfrac{U}{d}\cdot \vv{i}$ donc en prenant compte du sens des axes :
+    $$   \dfrac{-e\cdot -U}{d}\cdot \vv{i}= m\cdot \vv{a}$$
+    $$   \dfrac{e\cdot U}{d}\cdot \vv{i}= m\cdot \vv{a}$$
+    $$   \dfrac{e\cdot U}{m\cdot d}\cdot \vv{i}= \vv{a}$$
+    & & 1\\
+    & En projetant sur les axes on a : $$a_x(t) =\dfrac{e\cdot U}{m\cdot d}$$
+    $$a_y(t) = 0 $$
+    & & 1\\
+    \hline
+
+    4 & Les coordonnées du vecteur vitesse s'obtient en intégrant les fonctions des coordonnées de l'accélération ce qui nous donne : 
+    $$v_x(t) =\dfrac{e\cdot U}{m\cdot d}\cdot t + cste_1 $$
+    $$v_y(t) = cste_2 $$
+    & & 1\\
+    & On détermine les valeurs des constantes en se plaçant à $t=0$ où $v(0) = 0$
+    $$v_x(t) =\dfrac{e\cdot U}{m\cdot d}\times 0 + cste_1 = 0$$
+    $$v_y(t) = cste_2 =0$$
+    On a des constantes 1 et 2 qui sont nulles ce qui donne :
+    $$v_x(t) =\dfrac{e\cdot U}{m\cdot d}\cdot t $$
+    $$v_y(t) = 0 $$
+    & & 1\\
+    & Les équations horaires s'obtiennent en intégrant les fonctions des coordonnées de la vitesse ce qui nous donne :
+    $$x(t) =\dfrac{e\cdot U}{2 m\cdot d}\cdot t^2 + cste_3 $$
+    $$y(t) = cste_4 $$
+    & & 1\\
+    & Les constantes se déterminent à $t=0$ où la position initiale est aux coordonnées $(0;0)$ ce qui donne des constantes 3 et 4 nulles et des équations horaires : 
+    $$x(t) =\dfrac{e\cdot U}{2 m\cdot d}\cdot t^2 $$
+    $$y(t) = 0$$
+    & & 1\\
+    \hline
+    
+    5 & À partir de l'équation $x(t)$, à la date $T_A$ la position $x_A = d$, on peut écrire :
+    $$d =\dfrac{e\cdot U}{2 m\cdot d}\cdot (T_A)^2 $$
+    $$(T_A)^2  =\dfrac{d\cdot 2 m\cdot d}{e\cdot U}  $$
+    $$T_A  =\sqrt{\dfrac{ 2 m\cdot d^2}{e\cdot U}}$$
+     & & 2\\
+    \hline
+
+    6 & La vitesse de l'électron au niveau de l'anode ($x_A = d$). À partir de l'équation de $v_x(t)$ à la date $T_A$ on a :
+    $$ v_A = \dfrac{e\cdot U}{m\cdot d}\cdot T_A$$
+    On remplace $T_A$ par l'expression donnée à la question précédente :
+    $$ v_A = \dfrac{e\cdot U}{m\cdot d}\cdot \sqrt{\dfrac{ 2 m\cdot d^2}{e\cdot U}}$$
+    $$ v_A = \dfrac{d\cdot e\cdot U}{m\cdot d}\cdot \sqrt{\dfrac{ 2 m}{e\cdot U}}$$
+    $$ v_A = \dfrac{e\cdot U}{m}\cdot \sqrt{\dfrac{ 2 m}{e\cdot U}}$$
+    $$ v_A = \sqrt{\dfrac{ 2 m\cdot e ^2\cdot U^2}{m^2\cdot e\cdot U}}$$
+    $$ v_A = \sqrt{\dfrac{ 2 e\cdot U}{m}}$$
+     & & 2\\
+    \hline
+
+    7 & On donne comme information que pour l'émission de photons X, il faut que les électrons atteignent une énergie cinétique $Ec_{min} = \SI{6,4E-15}{\joule}$
+    $$ Ec_{min} =\dfrac{1}{2}\cdot m\cdot v_A^2$$
+    $$ v_A = \sqrt{\dfrac{2 Ec_{min}}{m}}$$
+    Or on sait déja que $ v_A = \sqrt{\dfrac{ 2 e\cdot U}{m}}$. Donc en égalant ces deux expressions on a :
+    $$\sqrt{\dfrac{2 Ec_{min}}{m}} = \sqrt{\dfrac{ 2 e\cdot U}{m}}$$
+    $$Ec_{min} =  e\cdot U$$
+    $$U = \dfrac{Ec_{min}}{e}$$
+    $$U = \dfrac{\num{6,4E-15}}{\num{1,6E-19}} = \SI{4,0E4}{V}$$
+    Pour émettre des rayons X, il faut une tension de \SI{4000}{V}.
+    & & 2\\
+    \hline
+\end{longtable}
+
+
+
+\end{document}
+
