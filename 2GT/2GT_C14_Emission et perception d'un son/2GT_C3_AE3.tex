@@ -1,5 +1,5 @@
 \documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
-\usepackage{/home/rweye/Nextcloud/Documents/Overleaf/Styles/Cours}
+\usepackage{../../Styles/Cours}
 
 \newcommand{\chnum}{Chapitre 14}
 \newcommand{\chtitle}{Vitesse des ondes sonores}
@@ -10,42 +10,47 @@
 	
 Lorsque le professeur d'adresse ax élèves depuis le bureau les élèves du premier rang  sont souvent les plus réactifs, alors que ceux du fond prennent plus longtemps à réagir et se mettre au travail.\\
 Est ce qu'il y a un réel décalage temporel entre les instructions reçues par les élèves du premier et du dernier rang d'une classe ?
-\vspace{.5cm}
+\vspace{1em}
 
-\noindent \fbox{\begin{minipage}{.47\linewidth}
-	\textbf{Document 1 : Les ultrasons}\\
-	L'oreille humaine ne perçoit que les sons dont la fréquence est comprise entre \SI{20}{\hertz} et \SI{20}{\kilo\hertz}. Au-delà de \SI{20}{\kilo\hertz}, il s'agit d'ultrasons. Les ultrasons se déplacent à la même vitesse que les sons audibles.\\
-	\includegraphics[scale=.35]{Ressources/2GT_C7_AE1_Fig3.png}
-\end{minipage}}
-\fbox{\begin{minipage}{.47\linewidth}
-	\textbf{Document 2 : Réglage du matériel}
-	\begin{itemize*}
+\noindent\begin{minipage}[t]{.49\linewidth}
+	\begin{documentboxenv}{Les ultrasons}
+	L'oreille humaine ne perçoit que les sons dont la fréquence est comprise entre \SI{20}{\hertz} et \SI{20}{\kilo\hertz}. Au-delà de \SI{20}{\kilo\hertz}, il s'agit d'ultrasons. Les ultrasons se déplacent à la même vitesse que les sons audibles.
+	\begin{center}
+		\includegraphics[scale=.35]{Ressources/2GT_C7_AE1_Fig3.png}
+	\end{center}
+	\end{documentboxenv}
+\end{minipage}\hspace{.02\linewidth}
+\begin{minipage}[t]{.49\linewidth}
+	\begin{documentboxenv}{Réglage du matériel}
+		\begin{itemize}[leftmargin=5pt]
 		\item L'émetteur à ultrasons $E$ est alimenté avec une tension continue de \SI{15}{V}.
 		\item Le récepteur à ultrasons transforme le signal perçu en signal électrique de même fréquence. On visualise les variations de ce signal électrique sur l'ordinateur.
 		\item Sélectionner le mode continu sur l'émetteur $E$
 		\item Pour pouvoir enregistrer les signaux reçus, relier le récepteur 1 en $EA0$, le récepteur 2 en $EA1$ (ne pas oublier de relier les masses en noir à celle de la carte d'acquisition)
 		\item Aligner l'émetteur et les deux récepteurs le long d'un rail gradué.
-	\end{itemize*}
+	\end{itemize}
+	\end{documentboxenv}
+\end{minipage}
 
-\end{minipage}}
-
-\noindent \fbox{\begin{minipage}{.65\linewidth}
-	\textbf{Document 3 : Réglage du logiciel LatisPro}
-	\begin{itemize*}
+\vspace{1em}
+\noindent\begin{documentboxenv}{Réglage du logiciel LatisPro}
+	\begin{minipage}{.65\linewidth}
+	\begin{itemize}[leftmargin=5pt]
 		\item Ouvrir le logiciel LatisPro
 		\item Cliquer sur les voies $EA0$ et $EA1$ pour les activer
 		\item Changer le style de courbe. Pour cela, faire un clic-droit sur la légende $EA1$ et cliquer sur "Propriétés" puis "Style" et choisir "Trait". Valider "Ok". N'oublier pas de faire la même chose avec $EA0$.
-	\end{itemize*}
-\end{minipage}
+	\end{itemize}
+\end{minipage}\hspace{1em}
 \begin{minipage}{.3\linewidth}
-	\includegraphics[scale=.4]{Ressources/2GT_C7_AE1_Fig1.png}\\
-	\includegraphics[scale=.4]{Ressources/2GT_C7_AE2_Fig1.png}
-\end{minipage}}
+	\centering 
+	\includegraphics[width=\linewidth]{Ressources/2GT_C7_AE1_Fig1.png}\\
+	\includegraphics[width=\linewidth]{Ressources/2GT_C7_AE2_Fig1.png}
+\end{minipage}
+\end{documentboxenv}
 
 \section*{Partie A : Période et fréquence de l'onde ultrasonore}
 
-\noindent \fbox{\begin{minipage}{.95\linewidth}
-	\textbf{Manipulation à faire :}
+	\begin{protocole}
 	\begin{itemize*}
 		\item Sélectionner le mode continu sur l'émetteur $E$
 		\item À gauche, sous "Acquisition", changer le nombre de points à mémoriser : taper 250 puis appuyer sur la touche "Entré". 
@@ -55,7 +60,7 @@ Est ce qu'il y a un réel décalage temporel entre les instructions reçues par 
 		\item Lancer l'acquisition (F10)
 		\item Pendant l'acquisition, faire un clic droit sur la zone graphique et cliquer sur "calibrage"
 	\end{itemize*}
-\end{minipage}}
+\end{protocole}
 
 \begin{enumerate}
 	\item Le signal reçu varie-t-il en fonction de la position du récepteur ? Justifier.

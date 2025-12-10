@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,12pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 \usepackage{../../Styles/Cours}
 
 \newcommand{\chnum}{Chapitre 14}
@@ -28,27 +28,30 @@ Il est donc nécessaire à une onde pour se propager de disposer d’un milieu m
         \label{tab:my_label}
     \end{table}
 	
-\textbf{Exercice d’application :}\\
-On place les deux enceintes d’une radio devant deux milieux différents, un aquarium de 15 m de long et un bloc de verre de mêmes dimensions. Quel écart de temps va séparer la perception du son à l’autre bout de l’aquarium et du bloc de verre ?
+%\textbf{Exercice d’application :}\\
+\begin{exemple}
+	On place les deux enceintes d’une radio devant deux milieux différents, un aquarium de 15 m de long et un bloc de verre de mêmes dimensions. Quel écart de temps va séparer la perception du son à l’autre bout de l’aquarium et du bloc de verre ?
+\end{exemple}
 
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{ccccc}
-        $v_{eau} = \dfrac{d}{\Delta t}$ & donc & $\Delta t = \dfrac{d}{v_{eau}}$ & $= \dfrac{15}{1500}$ & = \num{0,01} \unit{\second}\\
-        $v_{verre} = \dfrac{d}{\Delta t}$ & donc &$\Delta t = \dfrac{d}{v_{verre}}$ & $= \dfrac{15}{5300}$& = \num{0,003} \unit{\second}\\
-    \end{tabular}
-    \label{tab:my_label}
-\end{table}
+\vspace{10em}
+% \begin{table}[h!]
+%     \centering
+%     \begin{tabular}{ccccc}
+%         $v_{eau} = \dfrac{d}{\Delta t}$ & donc & $\Delta t = \dfrac{d}{v_{eau}}$ & $= \dfrac{15}{1500}$ & = \num{0,01} \unit{\second}\\
+%         $v_{verre} = \dfrac{d}{\Delta t}$ & donc &$\Delta t = \dfrac{d}{v_{verre}}$ & $= \dfrac{15}{5300}$& = \num{0,003} \unit{\second}\\
+%     \end{tabular}
+%     \label{tab:my_label}
+% \end{table}
 
 
-Le son propagé dans le verre arrivera avant celui propagé dans l'eau. Le retard peut se calculer comme : $retard = \Delta t_{eau} - \Delta t_{verre} = 10 - 7 $ = \num{7} \unit{\milli\second}.
-
+% Le son propagé dans le verre arrivera avant celui propagé dans l'eau. Le retard peut se calculer comme : $retard = \Delta t_{eau} - \Delta t_{verre} = 10 - 7 $ = \num{7} \unit{\milli\second}.
+\newpage
 \section{Description d'un signal sonore}
 	\subsection{Représentation temporelle}
 	Avec un système d’acquisition, on peut visualiser la représentation temporelle d’un signal sonore.
 Lorsque la représentation temporelle correspond à la répétition d’un motif élémentaire, on dit qu’elle est périodique.
 
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics[scale = .3]{Ressources/2GT_C7_Fig1.png}
     \label{fig:my_label}
@@ -80,29 +83,30 @@ Avec $f$, la fréquence en hertz (Hz) et $T$ la période en (s).
 	Les sons émis par deux cordes différentes d’un violon ou deux touches d’un piano n’ont pas la même fréquence. Ils n’ont pas la même hauteur.
 La hauteur d’un son est la perception auditive procurée par son audition : plus la hauteur d’un son est aiguë, plus sa fréquence est élevée.
 Le timbre d’un son est quant à lui lié à la forme du signal sonore.
-	\subsection{Intensité et niveau d'intensité sonore}
-	Plus l’amplitude d’un signal sonore est élevée, plus l’intensité sonore I est grande. L’intensité sonore s’exprime en watt par mètre carré (\unit{\watt\per\meter\squared})
-Pour lier la sensibilité de l’oreille humaine à l’intensité d’un son, le niveau d’intensité sonore ($L$) exprimée en (dB) a été mise en place. Il s’agit de changer d’échelle.
-Le niveau d’intensité sonore se mesure à l’aide d’un sonomètre :
-\begin{figure}[h!]
+	
+	\begin{minipage}{.48\linewidth}
+		\subsection{Intensité et niveau d'intensité sonore}
+		Plus l’amplitude d’un signal sonore est élevée, plus l’intensité sonore I est grande. L’intensité sonore s’exprime en watt par mètre carré (\unit{\watt\per\meter\squared})\\
+		Pour lier la sensibilité de l’oreille humaine à l’intensité d’un son, le niveau d’intensité sonore ($L$) exprimée en (dB) a été mise en place. Il s’agit de changer d’échelle.\\
+		Le niveau d’intensité sonore se mesure à l’aide d’un sonomètre $\rightarrow$
+	\end{minipage}
+	\begin{minipage}{.5\linewidth}
 		\centering
 		\begin{tikzpicture}
-		\draw[line width =2pt,-stealth] (0,-.5) to (0,9); 
-		\foreach \x in {0,1,...,8}{
-		\draw[line width = 2pt] (-.2,\x)--(.2,\x);
-		\pgfmathsetmacro{\CalL}{\x};
-		\pgfmathsetmacro{\CalI}{\x*10};
-		\node[left,color = red!60!black] at (-.2,\x) {$10^\x$};
-		\node[right,color = green!60!black] at (.2,\x) {\num[round-mode=places,round-precision=0]{\CalI}};
-		}
-		\node[left, color= red!60!black] at (-1,9) {\textbf{Intensité sonore $\mathbf{I}$ (\unit{\watt\per\meter\squared})}};
-		\node[right, color= green!60!black] at (1,9) {\textbf{Niveau d'intensité sonore $\mathbf{L}$ (\unit{\deci\bel})}};
+			\draw[line width =2pt,-stealth] (0,-.5) to (0,9); 
+			\foreach \x in {0,1,...,8}{
+				\draw[line width = 2pt] (-.2,\x)--(.2,\x);
+				\pgfmathsetmacro{\CalL}{\x};
+				\pgfmathsetmacro{\CalI}{\x*10};
+				\node[left,color = red!60!black] at (-.2,\x) {$10^\x$};
+				\node[right,color = green!60!black] at (.2,\x) {\num[round-mode=places,round-precision=0]{\CalI}};
+			}
+			\node[left, color= red!60!black] at (0,9) {\textbf{Intensité sonore $\mathbf{I}$ (\unit{\watt\per\meter\squared})}};
+			\node[right, color= green!60!black] at (0,9) {\textbf{Niveau d'intensité sonore $\mathbf{L}$ (\unit{\deci\bel})}};
 		\end{tikzpicture}
-	\end{figure}
-	\subsection{Exposition sonore}
-	Les risques liés à l’exposition sonore sont directement liés au niveau sonore et à la durée d’exposition. Une exposition sonore trop élevée peut avoir des conséquences irréversibles, comme une surdité partielle, voir totale.
-	\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=.4]{Ressources/2GT_C7_Fig2.png}
-	\end{figure}
+		\vspace{2em}
+
+		\includegraphics[width=0.9\linewidth]{Ressources/2GT_C7_Fig2.png}
+	\end{minipage}
+
 \end{document}
