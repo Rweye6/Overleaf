@@ -149,7 +149,7 @@ innertopmargin=8pt,
 innerbottommargin=8pt
 ]{basebox}
 
-\newenvironment{data}[1][Données :]{%
+\newenvironment{data}[1][Données]{%
 	\begin{basebox}[
 		backgroundcolor=orange!5,
 		linecolor=white,
@@ -158,6 +158,14 @@ innerbottommargin=8pt
 	}{\end{basebox}}
 
 \newenvironment{definition}[1][Définition]{%
+	\begin{basebox}[
+		backgroundcolor=green!5,
+		linecolor=green!75!black,
+		frametitle={\color{green!75!black}\bfseries #1}
+		]
+	}{\end{basebox}}
+
+\newenvironment{solution}[1][Solution]{%
 	\begin{basebox}[
 		backgroundcolor=green!5,
 		linecolor=green!75!black,
