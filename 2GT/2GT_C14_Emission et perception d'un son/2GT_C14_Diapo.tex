@@ -1,5 +1,5 @@
 \documentclass{beamer}
-%\usetheme(Goettingen}
+%\usetheme{Goettingen}
 
 \title{Chapitre 14 : Emission et Percéption d'un son}
 \author{ROSALIE}
@@ -26,7 +26,7 @@
 \begin{table}
 	\begin{tabular}{c>{\centering}m{3cm}c}
 		\includegraphics[scale=.15]{Ressources/Voix.jpg}&Quel est le point commun entre ces images ?&\includegraphics[scale=.165]{Ressources/unnamed.jpg}\\
-		\includegraphics[scale=.2]{Ressources/violin.jpg}&\only<2>{\textbf{Le son}}&image d'eau qui coule\\
+		\includegraphics[scale=.2]{Ressources/violin.jpg}&\only<2>{\textbf{Le son}}&\includegraphics[scale=.7]{Ressources/eau.jpg}\\
 	\end{tabular}
 \end{table}
 \end{frame}
@@ -110,16 +110,19 @@ séparer la perception du son à l’autre bout de l’aquarium et du bloc de ve
 \begin{frame}
 	\frametitle{2. Description d'un signal sonore}
 	\framesubtitle{B. Période et fréquence d'un signal sonore}
-	La \textbf{période $T$} d'un signal est la durée en seconde (s) d'un motif élémentaire.\\
+	\begin{minipage}{.48\linewidth}
+		La \textbf{période $T$} d'un signal est la durée en seconde (s) d'un motif élémentaire.\\
 	La \textbf{fréquence $\mathbf{f}$} du signal correspond au nombre de répétitions du motif élémentaire par seconde.
 	$$f=\dfrac{1}{T}$$
 	$f$, la fréquence en hertz (\unit{\hertz})\\
 	$T$, la période en secondes (\unit{\second})
-	
-	\begin{tikzpicture}[scale=2, transform shape]
-		\draw [domain=0:1,samples = 200, color = blue] plot(\x,{.75*sin(25*\x r)});
-		\draw[->] (0,0) -- (1.2,0);
-		\draw (1.2,0) node[right] {\tiny $t (s)$};
+	\end{minipage}
+	\begin{minipage}{.48\linewidth}
+		\begin{tikzpicture}[scale = 2.5]
+		\draw[color = gray!30] (0,-1) grid[step=.1](1,1);
+		\draw [domain=0:1,samples = 200, color = blue] plot(\x,{.85*sin(12.6*\x r)});
+		\draw[->] (0,0) -- (1.1,0);
+		\draw (1.1,0) node[below right] {\tiny $t (s)$};
 		\draw[->] (0,-1) -- (0,1);
 		\draw (0,1) node[above] {\tiny $Amplitude (V)$};
 		\foreach \i in {-1,-0.75,...,.75}{
@@ -128,9 +131,9 @@ séparer la perception du son à l’autre bout de l’aquarium et du bloc de ve
 			\node[left] (n2) at (-.05,\i){\tiny \pgfmathprintnumber[precision=2]{\i}};
 			%\draw (-.05,\i) node[left]{$A$};
 		}
-		\foreach \i in {.1,.2,...,1}{
+		\foreach \i in {.2,.4,...,1}{
 			\draw (\i,-.025)--(\i,.025);
-			\node[below] (n2) at (\i,-.05){\tiny \pgfmathprintnumber[precision=3]{\i}};
+			\node[below] (n2) at (\i,-.05){\tiny \pgfmathprintnumber[precision=2]{\i}};
 		}
 		%\foreach \d in {0,1,...,6} {
         %\pgfmathsetmacro\y{13.3+0.05*\d}
@@ -140,6 +143,9 @@ séparer la perception du son à l’autre bout de l’aquarium et du bloc de ve
         %\draw[gray] (-.1,\d)--(8,\d);
         %}
 	\end{tikzpicture}
+	\end{minipage}
+	
+	
 
 \end{frame}
 
@@ -168,7 +174,20 @@ séparer la perception du son à l’autre bout de l’aquarium et du bloc de ve
 	\frametitle{3. La perception d'un son}
 	\framesubtitle{B. Hauteur et timbre d'un son}
 	Les sons émis par deux cordes différentes d'un violon ou deux touches d'un piano n'ont pas la même fréquence. Ils n'ont pas la même \textbf{hauteur}.\\
-	La \textbf{hauteur} d'un son est la perception auditive procurée par son audition : plus la hauteur d'un son est aigüe, plus sa fréquence est élevée. 
+	La \textbf{hauteur} d'un son est la perception auditive procurée par son audition : plus la hauteur d'un son est aigüe, plus sa fréquence est élevée.
+	\begin{center}
+		\begin{tikzpicture}
+		\draw[dashed] (0,0)--(5,0);
+		\draw[very thick, green!70!blue] plot[domain=0:5,samples=200,color=blue] (\x,{0.75*sin(6.28*\x r) + 0.5*sin(2*6.28*\x r)});
+		\draw[<->,thick] (0,-1.5)--(1,-1.5);
+	\end{tikzpicture}\\\vspace{1em}
+	\begin{tikzpicture}
+		\draw[dashed] (0,0)--(5,0);
+		\draw[very thick, purple!70!blue] plot[domain=0:5,samples=200,color=blue] (\x,{0.75*sin(6.28*\x r) + 0.5*sin(3*6.28*\x r)});
+	\end{tikzpicture}
+	\end{center}
+	
+	
 \end{frame}
 
 \begin{frame}

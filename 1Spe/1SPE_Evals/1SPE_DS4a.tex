@@ -1,0 +1,81 @@
+\documentclass[a4paper,fontsize=14pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+
+\usepackage{../../Styles/Eval}
+
+\newcommand{\chnum}{Chapitre 11}
+\newcommand{\chtitle}{Interactions fondamentales}
+\newcommand{\dtype}{DS4}
+
+\begin{document}
+\maketitle
+
+\section{Etude d'un champ électrostatique}
+
+On crée un dispositif permettant de propulser un proton à haute vitesse. Pour cela, on utilise deux plaques métalliques reliées à un générateur de tension continue. Entre les plaques, distantes de $d=\SI{2}{cm}$, règne un champ électrique uniforme $\vec{E}$.\\
+
+
+\noindent \begin{minipage}{.49\linewidth}
+    \centering
+    \begin{tikzpicture}[scale=1.2]
+        \draw[very thick] (0,-3) -- (0,3);
+
+        \draw[very thick] (5,-3) -- (5,3);
+        \node[left] at (0,0) {$+$};
+        \node[right] at (5,0) {$-$};
+        \foreach \k in {1,...,4}
+            \draw[dashed] (\k,-3) -- (\k,3);
+    \end{tikzpicture}
+\end{minipage}
+\begin{minipage}{.49\linewidth}
+    \begin{enumerate}
+        \item Compléter le schéma ci-contre en  représentant la distance $d$ par une double flèche et l'orientation du champ électrique $\vec{E}$ entre les plaques. Justifier.
+        \item Que représentent les lignes pointillées ? Donner une explication de cette grandeur physique.
+        \item Calculer la valeur de l'intensité du champ électrique entre les plaques si la tension aux bornes du générateur est $U=\SI{1000}{V}$.
+    \end{enumerate}
+\end{minipage}
+\begin{enumerate}
+    \setcounter{enumi}{3}
+    \item On place un proton, de charge $q=+e=+\SI{1.6e-19}{C}$, au voisinage de la plaque positive. Donner la nature de la force électrostatique $\vec{F}$ exercée sur le proton (attractive ou répulsive) et représenter cette force sur le schéma.
+    \item Calculer la valeur de la force électrostatique $\vec{F}$ exercée sur le proton.
+    \item Comparer la valeur de cette force avec le poids du proton pour $m=\SI{1.67e-27}{kg}$ est la masse du proton. Conclure.
+\end{enumerate}
+\begin{data}
+    \begin{itemize}
+        \item Constante de Coulomb : $k=\SI{8.99e9}{N.m^{2}.C^{-2}}$
+        \item Charge élémentaire : $e=\SI{1.6e-19}{C}$
+        \item Accélération de la pesanteur : $g=\SI{9.81}{m.s^{-2}}$
+    \end{itemize}
+\end{data}
+
+\section{Voyager}
+Une sonde spatiale de masse $m=\SI{500}{kg}$ se déplace dans le vide intersidéral à la vitesse constante $v=\SI{1.0e4}{m.s^{-1}}$. Elle a pour mission de se rapprocher de la planète Saturne afin d'en prendre des cliqués et de les transmettre sur Terre. Pour économiser de l'énergie on souhaite minimiser l'utilisation de ses propulseurs et donc la placer à une distance d'équilibre entre l'attraction gravitationnelle de Saturne et celle son plus grand satellite naturel Titan.\\
+
+\noindent \begin{minipage}{.3\linewidth}
+    \centering
+    \begin{tikzpicture}[scale=1.2]
+        \node at (0,0) {$+$};
+        \node[left]at  (-.5,0) {S};
+
+        \node at (0,10) {$+$};
+        \node[left]at  (-.5,10) {T};
+    \end{tikzpicture}
+\end{minipage}
+\begin{minipage}{.69\linewidth}
+    \begin{enumerate}
+        \item Représenter, sans soucis d'échelle, les forces gravitationnelles exercées par Saturne et Titan sur la sonde.
+        \item Donner l'allure des courbes équipotentielles du champ gravitationnel créé par Saturne et Titan.
+    \end{enumerate}
+    On note $M$ la position de la sonde, $d_{SM}$ la distance entre Saturne et la sonde, $d_{TM}$ la distance entre Titan et la sonde, $M_S=\SI{5.68e26}{kg}$ la masse de Saturne et $M_T=\SI{1.35e23}{kg}$ la masse de Titan.
+    \begin{enumerate}[resume]
+        \item  Exprimer les forces gravitationnelles exercées par Saturne et Titan sur la sonde en fonction de ces différentes grandeurs et de la constante de gravitation universelle $G=\SI{6.67e-11}{N.m^{2}.kg^{-2}}$.
+    \end{enumerate}
+    Pour que la sonde soit à l'équilibre, il faut que les deux forces gravitationnelles soient égales en valeur.
+    \begin{enumerate}[resume]
+        \item Noter l'égalité décrite ci-dessus. En déduire que l'expression de $d_{SM}$ en fonction de $d_{TM}$, $M_S$ et $M_T$ peut s'écrire $$ \dfrac{M_S}{d_{SM}^2} = \dfrac{M_T}{d_{TM}^2}$$
+        \item À partir de l'expression précédente, montrer que  l'on peut écrire : $$ \dfrac{d_{SM}}{d_{TM}} = \sqrt{\dfrac{M_S}{M_T}}$$
+        \item En déduire que : $d_{SM} \approx \SI{65}{d_{TM}}$.
+        \item Placer approximativement la position de la sonde sur le schéma.
+    \end{enumerate}
+\end{minipage}
+\end{document}
+

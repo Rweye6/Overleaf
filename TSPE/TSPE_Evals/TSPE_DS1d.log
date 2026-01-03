@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.27)  7 OCT 2025 07:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.27)  20 DEC 2025 20:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_Evals/TSPE_DS1d.tex
-(/Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_Evals/TSPE_DS1d.tex
+**/Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_Evals/TSPE_DS1d.tex
+(/Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_Evals/TSPE_DS1d.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -185,6 +185,9 @@ Package: xtab 2011/07/31 v2.3f Extended supertabular package
 \ST@toadd=\dimen170
 \ST@dimen=\dimen171
 \ST@pbox=\box54
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/esvect/esvect.sty
+Package: esvect 
+\symesvector=\mathgroup7
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -899,7 +902,142 @@ File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count379
+Package zref Info: New property: abspage on input line 67.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip95
+\c@mdf@globalstyle@cnt=\count380
+\mdf@skipabove@length=\skip96
+\mdf@skipbelow@length=\skip97
+\mdf@leftmargin@length=\skip98
+\mdf@rightmargin@length=\skip99
+\mdf@innerleftmargin@length=\skip100
+\mdf@innerrightmargin@length=\skip101
+\mdf@innertopmargin@length=\skip102
+\mdf@innerbottommargin@length=\skip103
+\mdf@splittopskip@length=\skip104
+\mdf@splitbottomskip@length=\skip105
+\mdf@outermargin@length=\skip106
+\mdf@innermargin@length=\skip107
+\mdf@linewidth@length=\skip108
+\mdf@innerlinewidth@length=\skip109
+\mdf@middlelinewidth@length=\skip110
+\mdf@outerlinewidth@length=\skip111
+\mdf@roundcorner@length=\skip112
+\mdf@footenotedistance@length=\skip113
+\mdf@userdefinedwidth@length=\skip114
+\mdf@needspace@length=\skip115
+\mdf@frametitleaboveskip@length=\skip116
+\mdf@frametitlebelowskip@length=\skip117
+\mdf@frametitlerulewidth@length=\skip118
+\mdf@frametitleleftmargin@length=\skip119
+\mdf@frametitlerightmargin@length=\skip120
+\mdf@shadowsize@length=\skip121
+\mdf@extratopheight@length=\skip122
+\mdf@subtitleabovelinewidth@length=\skip123
+\mdf@subtitlebelowlinewidth@length=\skip124
+\mdf@subtitleaboveskip@length=\skip125
+\mdf@subtitlebelowskip@length=\skip126
+\mdf@subtitleinneraboveskip@length=\skip127
+\mdf@subtitleinnerbelowskip@length=\skip128
+\mdf@subsubtitleabovelinewidth@length=\skip129
+\mdf@subsubtitlebelowlinewidth@length=\skip130
+\mdf@subsubtitleaboveskip@length=\skip131
+\mdf@subsubtitlebelowskip@length=\skip132
+\mdf@subsubtitleinneraboveskip@length=\skip133
+\mdf@subsubtitleinnerbelowskip@length=\skip134
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box167
+\mdf@footnotebox=\box168
+\mdf@splitbox@one=\box169
+\mdf@splitbox@two=\box170
+\mdf@splitbox@save=\box171
+\mdfsplitboxwidth=\skip135
+\mdfsplitboxtotalwidth=\skip136
+\mdfsplitboxheight=\skip137
+\mdfsplitboxdepth=\skip138
+\mdfsplitboxtotalheight=\skip139
+\mdfframetitleboxwidth=\skip140
+\mdfframetitleboxtotalwidth=\skip141
+\mdfframetitleboxheight=\skip142
+\mdfframetitleboxdepth=\skip143
+\mdfframetitleboxtotalheight=\skip144
+\mdffootnoteboxwidth=\skip145
+\mdffootnoteboxtotalwidth=\skip146
+\mdffootnoteboxheight=\skip147
+\mdffootnoteboxdepth=\skip148
+\mdffootnoteboxtotalheight=\skip149
+\mdftotallinewidth=\skip150
+\mdfboundingboxwidth=\skip151
+\mdfboundingboxtotalwidth=\skip152
+\mdfboundingboxheight=\skip153
+\mdfboundingboxdepth=\skip154
+\mdfboundingboxtotalheight=\skip155
+\mdf@freevspace@length=\skip156
+\mdf@horizontalwidthofbox@length=\skip157
+\mdf@verticalmarginwhole@length=\skip158
+\mdf@horizontalspaceofbox=\skip159
+\mdfsubtitleheight=\skip160
+\mdfsubsubtitleheight=\skip161
+\c@mdfcountframes=\count381
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count382
+\c@mdf@env@i=\count383
+\c@mdf@env@ii=\count384
+\c@mdf@zref@counter=\count385
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+\c@documentbox=\count386
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fontawesome5
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def))) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box172
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box173
+\tcb@totalupperbox=\box174
+\tcb@totallowerbox=\box175
+))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 9.
 LaTeX Font Info:    Trying to load font information for T1+qhv on input line 9.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
@@ -923,16 +1061,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count379
+\scratchcounter=\count387
 \scratchdimen=\dimen370
-\scratchbox=\box167
-\nofMPsegments=\count380
-\nofMParguments=\count381
+\scratchbox=\box176
+\nofMPsegments=\count388
+\nofMParguments=\count389
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count382
+\MPscratchCnt=\count390
 \MPscratchDim=\dimen371
-\MPnumerator=\count383
-\makeMPintoPDFobject=\count384
+\MPnumerator=\count391
+\makeMPintoPDFobject=\count392
 \everyMPtoPDFconversion=\toks57
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -948,14 +1086,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(14.22636pt, 569.05515pt, 14.22636pt)
-* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(42.67912pt, 731.23584pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=569.05515pt
-* \textheight=759.6886pt
-* \oddsidemargin=-58.04362pt
-* \evensidemargin=-58.04362pt
+* \textwidth=540.60239pt
+* \textheight=731.23584pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -985,7 +1123,7 @@ Package caption Info: End \AtBeginDocument code.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 9.
-\c@lstlisting=\count385
+\c@lstlisting=\count393
 LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -998,7 +1136,11 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (8.36465pt too wide) in paragraph at lines 10--10
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 10.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/esvect/uesvect.fd
+File: uesvect.fd 
+)
+Overfull \hbox (9.78737pt too wide) in paragraph at lines 10--10
  [] 
  []
 
@@ -1014,12 +1156,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--17
 File: Ressources/Butanoate de méthyle1.png Graphic file (type png)
 <use Ressources/Butanoate de méthyle1.png>
 Package pdftex.def Info: Ressources/Butanoate de méthyle1.png  used on input line 39.
-(pdftex.def)             Requested size: 245.82796pt x 142.79211pt.
+(pdftex.def)             Requested size: 233.53656pt x 135.65157pt.
 <Ressources/Butanoic1.png, id=30, 353.06906pt x 204.01219pt>
 File: Ressources/Butanoic1.png Graphic file (type png)
 <use Ressources/Butanoic1.png>
 Package pdftex.def Info: Ressources/Butanoic1.png  used on input line 42.
-(pdftex.def)             Requested size: 245.82796pt x 142.04488pt.
+(pdftex.def)             Requested size: 233.53656pt x 134.94418pt.
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc} <./Ressources/Butanoate de méthyle1.png (PNG copy)> <./Ressources/Butanoic1.png>]
@@ -1035,7 +1177,7 @@ File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
 File: Ressources/TSPE_DS2_Fig2.png Graphic file (type png)
 <use Ressources/TSPE_DS2_Fig2.png>
 Package pdftex.def Info: Ressources/TSPE_DS2_Fig2.png  used on input line 88.
-(pdftex.def)             Requested size: 398.33685pt x 215.31677pt.
+(pdftex.def)             Requested size: 378.42001pt x 204.5504pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1043,6 +1185,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \hbox (badness 10000) in paragraph at lines 98--103
 
+ []
+
+
+Overfull \hbox (0.78258pt too wide) in paragraph at lines 92--105
+[]$[]$ 
  []
 
 
@@ -1055,6 +1202,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
 Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
+ []
+
+
+Overfull \hbox (0.5364pt too wide) in paragraph at lines 108--130
+[][] 
  []
 
 
@@ -1073,18 +1225,18 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 47447 strings out of 474116
- 1179699 string characters out of 5743681
- 1950187 words of memory out of 5000000
- 69238 multiletter control sequences out of 15000+600000
- 604717 words of font info for 90 fonts, out of 8000000 for 9000
+ 52827 strings out of 474116
+ 1308528 string characters out of 5743681
+ 1951187 words of memory out of 5000000
+ 74544 multiletter control sequences out of 15000+600000
+ 605227 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,17n,115p,551b,828s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on TSPE_DS1d.pdf (3 pages, 166088 bytes).
+ 114i,17n,115p,558b,828s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
+Output written on TSPE_DS1d.pdf (3 pages, 157029 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
