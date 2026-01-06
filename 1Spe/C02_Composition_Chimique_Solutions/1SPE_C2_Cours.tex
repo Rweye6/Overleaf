@@ -12,17 +12,136 @@
 	Concentration d'espèces dissoutes dans une solution :
 	La concentration d'un soluté en solution s'exprimer en utilisant :
 	\begin{itemize}
-		\item soit la concentration en masse $\gamma$ $$\gamma = \dfrac{m_{\text{soluté}}}{V_{solution}} $$
-		avec $m_{\text{soluté}}$ la masse de soluté dissoute (en g) et $V_{solution}$ le volume de la solution (en L ) et $\gamma$ en g.L$^{-1}$
-		 \\;
-		\item soit la concentration en quantité de matière $C$ $$C = \dfrac{n_{\text{soluté}}}{V_{solution}} $$\\
-		avec $n_{\text{soluté}}$ la quantité de matière de soluté dissoute (en mol) et $V_{solution}$ le volume de la solution (en L ) et $C$ en mol.L$^{-1}$
+		\item soit la concentration en masse $\gamma$ :\\
+		\begin{minipage}
+			{.4\linewidth}
+			$$\gamma = \dfrac{m_{\text{soluté}}}{V_{solution}} $$
+		\end{minipage}
+		\begin{minipage}
+			{.5\linewidth}
+			$m_{\text{soluté}}$ la masse de soluté dissoute (en \unit{\gram})\\
+			$V_{solution}$ le volume de la solution (en \unit{\liter})\\
+			$\gamma$ en \unit{\gram\per\liter};
+		\end{minipage}
+		\item soit la concentration en quantité de matière $C$ :\\
+		\begin{minipage}
+			{.4\linewidth}
+			$$C = \dfrac{n_{\text{soluté}}}{V_{solution}} $$
+		\end{minipage}\begin{minipage}
+			{.5\linewidth}
+			$n_{\text{soluté}}$ la quantité de matière de soluté dissoute (en \unit{\mole})\\
+			$V_{solution}$ le volume de la solution (en \unit{\liter})\\
+			$C$ en \unit{\mole\per\liter}
+		\end{minipage}
 	\end{itemize}
 	Ces deux concentrations sont reliées par la relation : $$\gamma =C\cdot M$$ avec $M$ la masse molaire du soluté (en g.mol$^{-1}$)
 
-	\section{L'absorbance}
-	L'absorbance $A$ d'une solution est une grandeur sans unité qui caractérise la capacité d'une solution à absorber la lumière. Elle dépend de la nature de l'espèce chimique dissoute, de sa concentration en quantité de matière $C$ (en mol.L$^{-1}$) et de l'épaisseur $l$ (en cm) de la solution traversée par la lumière.\\
-	L'absorbance est reliée à la concentration par la loi de Beer-Lambert : $$A = \varepsilon \cdot l \cdot C$$ avec $\varepsilon$ le coefficient d'extinction molaire (en L.mol$^{-1}$.cm$^{-1}$).
-	\includegraphics[width=.2\linewidth]{Ressources/Absorbance_cuve.png}
+	\section{Spectrophotométrie}
+	\begin{minipage}[t]
+		{.49\linewidth}
+		\subsection{L'absorbance}
+		\begin{center}
+			\includegraphics[width=.7\linewidth]{Ressources/Absorbance_cuve.png} \label{fig1}
+		\end{center}
+	L'absorbance $A$ d'une solution est une grandeur sans unité qui caractérise la capacité d'une solution à absorber une radiation lumineuse de longueur d'onde $\lambda$.
+	\end{minipage}
+	\begin{minipage}[t]
+		{.49\linewidth}
+		\subsection{Principe du spectrophotomètre}
+	Lorsqu'un faisceau de lumière polychromatique traverse une espèce colorée dissoute dans un solvant, certaines radiations sont plus ou moins absorbées par ce soluté alors que d'autres le traversent sans être absorbées.\\
+	Ainsi, pour les radiations de longueur d'onde $\lambda$ partiellement absorbées, l'intensité du faisceau transmis $I$ est inférieure à l'intensité incidente $I_0$.
+	\begin{center}
+		\includegraphics[width = \linewidth]{Ressources/Spectre_Absorption.png}\label{fig2}
+	\end{center}
+	\end{minipage}
 
+	\newpage
+
+	\begin{exemple}
+		On considère la solution colorée à l'origine de la figure~\ref{fig2}. La courbe $C_1$ a été obtenue avec une concentration en soluté 2 fois plus importante que la concentration de la solution qui a donné la courbe $C_2$.
+	\begin{enumerate}
+		\item Quelle est la longueur d'onde qui est la plus absorbée par le soluté qui colore la solution ?
+		\item Vers quelles longueurs d'onde la solution n'absorbe aucun rayon ?
+		\item Quelle est alors la couleur probable de la solution ?
+		\item On considère que l'absorbance est nulle pour $\lambda = \SI{400}{\nano\meter}$. Que signifie une absorbance nulle pour cette longueur d'onde ?
+		\item Quelle longueur d'onde faut-il idéalement choisir pour mesurer l'absorbance lorsqu'on cherche à comparer l'absorbance d deux solutions de même soluté mais de concentrations différentes ?
+		\item Quelle est ici la meilleure longueur d'onde à prendre pour effectuer ces mesures de l'absorbance ?
+		\item Quelle relation existe-t-il entre $A(C_1)$ et $A(C_2)$ ? Conclure.
+	\end{enumerate}
+	\end{exemple}
+\begin{cours}
+	\begin{minipage}
+		{.59\linewidth}
+		\begin{itemize}
+		\item Lorsqu'une espèce chimique absorbe dans un seul domaine de longueur d'onde, sa couleur en solution est la couleur complémentaire de celle la plus absorbée.
+		\item Il faut donc mesurer l'absorbance pour la longueur d'onde la plus absorbée $\lambda_{max}$.
+	\end{itemize}
+	\end{minipage}\hspace{1em}
+	\begin{minipage}
+		{.39\linewidth}
+		\includegraphics[width=\linewidth]{Ressources/Cercle_chromatique.png}
+	\end{minipage}
+\end{cours}
+
+\section{Loi de Beer-Lambert}
+D'après la loi de Beer-Lambert, l'absorbance $A$ d'une solution est proportionnelle à la concentration $C$ de l'espèce chimique colorée dissoute dans cette solution :\\
+
+\begin{minipage}
+	{.69\linewidth}
+	\begin{itemize}
+		\item $A$ : absorbance (sans unité)
+		\item $C$ : concentration en quantité de matière du soluté (\unit{\mole\per\liter\per\centi\meter})
+		\item $l$ : largeur de la cuve (en cm)
+		\item $\varepsilon$ : coefficient d'extinction molaire (en L.mol$^{-1}$.cm$^{-1}$)
+	\end{itemize}
+\end{minipage}
+\begin{minipage}
+	{.29\linewidth}
+	$$A = \varepsilon \cdot C \cdot l$$
+	$$ A = k \cdot C$$
+\end{minipage}
+
+Le coefficient d'extinction molaire $\varepsilon$ dépend de l'espèce chimique dissoute et de la longueur d'onde $\lambda$ choisie pour mesurer l'absorbance.\\
+La largeur de la cuve $l$ est généralement égale à \SI{1}{cm}.\\
+$k$ est la pente de la droite d'étalonnage. Elle dépend de l'espèce chimique dissoute, de la longueur d'onde choisie et de la largeur de la cuve.
+
+\section{Dosage par étalonnage}
+Le fait de doser une solution signifie déterminer expérimentalement la concentration en quantité de matière $C$ ou en masse $\gamma$ d'un soluté dissous dans cette solution.\\
+Une méthode de dosage par étalonnage courante est le dosage spectrophotométrique par étalonnage.\\
+Pour une longueur d'onde donnée idéalement choisir $\lambda_{max}$, on mesure l'absorbance $A$ de plusieurs solutions étalons de concentrations connues $C_n$. On trace ensuite la droite d'étalonnage $A = f(C)$.\\
+On mesure ensuite l'absorbance de la solution de concentration inconnue. Grâce à la courbe, on en déduit sa concentration.
+
+\begin{exemple}
+	On dispose d'une solution $S$ de chlorure de nickel de concentration $C_S$ inconnue.  Pour déterminer expérimentalement la valeur de cette concentration, on prépare une série de solution étalons de chlorure de nickel à diverses concentrations.\\
+
+	\begin{minipage}{.59\linewidth}
+		\begin{enumerate}
+			\item En observant le spectre d'absorption de la solution du chlorure de nickel, déterminer la longueur d'onde idéale $\lambda_{max}$  pour effectuer le dosage spectrophotométrique par étalonnage.
+		\end{enumerate}
+		On mesure alors l'absorbance à la longueur d'onde $\lambda_{max}$ de plusieurs solutions étalons de chlorure de nickel de concentrations connues. On obtient les résultats du tableau ci-dessous :
+	\begin{center}
+		\begin{tabular}{|>{\centering}m{3.8cm}|c|c|c|c|c|}
+			\hline
+			Solution étalon & 1 & 2 & 3 & 4 & 5 \\
+			\hline
+			Concentration $C$ (\unit{\milli\mol\per\liter}) & 20,0 & 25,0 & 30,0 & 35,0 & 40,0 \\
+			\hline
+			Absorbance $A$ & 0,10 & 0,12 & 0,16 & 0,17 & 0,21 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\end{minipage}
+	\begin{minipage}{.39\linewidth}
+		\begin{center}
+			\includegraphics[width=.85\linewidth]{Ressources/Spectre_Absorption_NiCl.png}
+		\end{center}
+	\end{minipage}
+	\begin{enumerate}
+		\setcounter{enumi}{1}
+		\item Les solutions étalons ont été obtenues en diluant une solution mère de concentration $C_m = \SI{0,100}{\mole\per\liter}$. Déterminer le volume $V_0$ de la solution mère qu'il a fallu prélever pour fabriquer \SI{50,0}{mL} de la solution étalon 1.
+		\item Tracer la droite d'étalonnage de ce dosage à partir des valeurs obtenues avec les solutions étalons.
+		\item À partir de la loi de Beer-Lambert, montrer que pour une même espèce chimique dissoute, l'absorbance est proportionnelle à la concentration du soluté.
+		\item On place alors de la solution $S$ dans la cuve du spectrophotomètre et on mesure pour la longueur d'onde $\lambda_{max}$ une absorbance $A_S = 0,14$. Déterminer la concentration $C_S$ de la solution $S$.
+	\end{enumerate}
+\end{exemple}
 \end{document}
