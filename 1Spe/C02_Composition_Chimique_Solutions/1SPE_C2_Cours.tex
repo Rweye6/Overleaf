@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 
 \usepackage{../../Styles/Cours}
 
@@ -34,7 +34,7 @@
 			$C$ en \unit{\mole\per\liter}
 		\end{minipage}
 	\end{itemize}
-	Ces deux concentrations sont reliées par la relation : $$\gamma =C\cdot M$$ avec $M$ la masse molaire du soluté (en g.mol$^{-1}$)
+	Ces deux concentrations sont reliées par la relation : $$\gamma =C\cdot M$$ avec $M$ la masse molaire du soluté (en \unit{\gram\per\mole})
 
 	\section{Spectrophotométrie}
 	\begin{minipage}[t]
@@ -58,7 +58,7 @@
 	\newpage
 
 	\begin{exemple}
-		On considère la solution colorée à l'origine de la figure~\ref{fig2}. La courbe $C_1$ a été obtenue avec une concentration en soluté 2 fois plus importante que la concentration de la solution qui a donné la courbe $C_2$.
+		On considère la solution colorée à l'origine du \ref{fig2}. La courbe $C_1$ a été obtenue avec une concentration en soluté 2 fois plus importante que la concentration de la solution qui a donné la courbe $C_2$.
 	\begin{enumerate}
 		\item Quelle est la longueur d'onde qui est la plus absorbée par le soluté qui colore la solution ?
 		\item Vers quelles longueurs d'onde la solution n'absorbe aucun rayon ?
@@ -92,17 +92,19 @@ D'après la loi de Beer-Lambert, l'absorbance $A$ d'une solution est proportionn
 		\item $A$ : absorbance (sans unité)
 		\item $C$ : concentration en quantité de matière du soluté (\unit{\mole\per\liter\per\centi\meter})
 		\item $l$ : largeur de la cuve (en cm)
-		\item $\varepsilon$ : coefficient d'extinction molaire (en L.mol$^{-1}$.cm$^{-1}$)
+		\item $\varepsilon$ : coefficient d'extinction molaire (en \unit{\liter\per\mole\per\centi\meter})
 	\end{itemize}
 \end{minipage}
 \begin{minipage}
 	{.29\linewidth}
-	$$A = \varepsilon \cdot C \cdot l$$
+	$$A = \varepsilon \cdot l \cdot C$$
 	$$ A = k \cdot C$$
-\end{minipage}
+\end{minipage}\\
 
 Le coefficient d'extinction molaire $\varepsilon$ dépend de l'espèce chimique dissoute et de la longueur d'onde $\lambda$ choisie pour mesurer l'absorbance.\\
+
 La largeur de la cuve $l$ est généralement égale à \SI{1}{cm}.\\
+
 $k$ est la pente de la droite d'étalonnage. Elle dépend de l'espèce chimique dissoute, de la longueur d'onde choisie et de la largeur de la cuve.
 
 \section{Dosage par étalonnage}
