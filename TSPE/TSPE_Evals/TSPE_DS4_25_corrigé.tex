@@ -1,0 +1,100 @@
+\documentclass[a4paper,14pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Eval}
+
+
+\newcommand{\chnum}{Chapitre 5 et 18}
+\newcommand{\chtitle}{Transformations nucléaires et Diffractions/interférences}
+\newcommand{\dtype}{DS 4}
+
+\begin{document}
+%\maketitle
+\section{Diffraction par une poudre de cacao}
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{|c|m{15cm}|c|}
+            \hline
+            Question & Correction & Barème \\
+            \hline
+            1.a & Un faisceau laser est : & /1\\
+             & - monochromatique (même longueur d'onde) & \\
+             & - cohérent (les ondes sont en phase) & \\
+             & - directionnel (faible divergence) & \\
+             \hline
+            1.b & La diffraction est d'autant plus importante que le diamètre $a$ de l'obstacle est petit devant la longueur d'onde $\lambda$. & /1\\
+             & La relation qui lie $\lambda$, $\theta_0$ et $a$ est : $\theta_0 = \dfrac{\lambda}{a} $ & \\
+             \hline
+            1.c & Pour un angle $\theta_0$ petit, on a : & /2\\
+             & $\tan \theta_0 \approx \theta_0 = \dfrac{L/2}{D} = \dfrac{L}{2D}$ & \\
+             & En remplaçant dans la relation précédente, on obtient : & \\
+             & $\lambda = a \cdot \dfrac{L}{2D}$ soit $L = 2 \lambda \cdot \dfrac{D}{a}$ & \\
+             & Donc $L = k \cdot \dfrac{1}{a}$ avec $k = 2 \lambda \cdot D$ & \\
+             \hline
+            1.d & A partir du graphique, on détermine la valeur du coefficient directeur $k = \SI{1,27E-6}{\meter\squared}$. & /2\\
+             & On en déduit la valeur de la longueur d'onde : & \\
+             & $\lambda = \dfrac{k}{2D} = \dfrac{\SI{1,27E-6}{\meter\squared}}{2 \cdot \SI{0,85}{\meter}} = \SI{7,47E-7}{\meter} = \SI{747}{nm}$ & \\
+             \hline
+            1.e & L'incertitude absolue sur la longueur d'onde est : & /2\\
+             & $u(\lambda) = \lambda \cdot \sqrt{\left(\dfrac{u(D)}{D}\right)^2 + \left(\d      frac{u(k)}{k}\right)^2}$ & \\
+             & $u(\lambda) = \SI{747}{nm} \cdot \sqrt{\left(\dfrac{\SI{0,01}{m}}{\SI{0,85}{m}}\right)^2 + \left(\dfrac{\SI{1,2E-7}{\meter\squared}}{\SI{1,27E-6}{\meter\squared}}\right)^2} \approx \SI{10}{nm}$ & \\
+             & La valeur de la longueur d'onde avec son incertitude est : $\lambda = \SI{747 \pm 10}{nm}$. & \\
+             & Pour le z-score, on choisit la valeur théorique $\lambda_{th} = \SI{635}{nm}$ & \\
+             & $z = \dfrac{|\lambda_{exp} - \lambda_{th}|}{u(\lambda)} = \dfrac{|\SI{747}{nm} - \SI{635}{nm}|}{\SI{10}{nm}} = 11,2$ & \\
+             & Comme $z > 2$, la valeur expérimentale n'est pas en accord avec la valeur théorique. & \\
+             \hline
+            2.a & Les grains de cacao sont assimilés à des sphères. Lorsqu'un faisceau laser rencontre une sphère, on observe une figure de diffraction similaire à celle obtenue avec un trou circulaire de même diamètre. & /2\\
+             \hline
+            2.b & On repère sur le graphique la position du premier minimum d'intensité lumineuse : $\theta_0 \approx \SI{0,014}{rad}$. & /2\\
+             & On utilise la relation : $\sin \theta_0 = \dfrac{1,22 \cdot \lambda}{a}$ & \\
+             & $a = \dfrac{1,22 \cdot \lambda}{\sin \theta_0} = \dfrac{1,22 \cdot \SI{635E-9}{m}}{\sin(\SI{0,014}{rad})} \approx \SI{5,53E-5}{m} = \SI{55,3}{\micro\meter}$ & \\
+             & Le diamètre moyen des grains de cacao est $a \approx \SI{55,3}{\micro\meter}$. & \\
+             & Pour un chocolat de couverture, le diamètre moyen recommandé est $a_{th} = \SI{10}{\micro\meter}$. & \\
+             & On calcule le z-score : & \\
+             & $z = \dfrac{|a_{exp} - a_{th}|}{u(a)}$ avec $u(a) = \SI{5}{\micro\meter}$ & \\
+             & $z = \dfrac{|\SI{55,3}{\micro\meter} - \SI{10}{\micro\meter}|}{\SI{5}{\micro\meter}} = 9,06$ & \\
+             & Comme $z > 2$, on ne peut pas utiliser cet échantillon pour un chocolat de couverture. & \\
+             \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+
+
+\newpage
+\section{Une potion radioactive}
+ \begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{|c|m{15cm}|c|}
+            \hline
+            Question & Correction & Barème \\
+            \hline
+            1. & Les deux noyaux ont le même nombre de protons (88) mais un nombre de neutrons différent (138 pour le radium 226 et 140 pour le radium 228). & /1\\
+            \hline
+            2. & Pour que la somme des nombres de masse soit conservée, on a : & /2\\
+             & $228 = 228 + A \Rightarrow A = 0$ & \\
+             & Pour que la somme des numéros atomiques soit conservée, on a : & \\
+             & $88 = 89 + Z \Rightarrow Z = -1$ & \\
+             & La particule \ce{X} est donc un électron : $\ce{^0_{-1}e}$. Il s'agit d'une radioactivité $\beta^-$. & \\
+            \hline
+            3. & La demi-vie est la durée au bout de laquelle la moitié des noyaux radioactifs initiaux se sont désintégrés. & /1\\
+            \hline
+            4. & A partir de la courbe, on constate que l'activité passe de \SI{3,7E4}{Bq} à \SI{1,85E4}{Bq} en \SI{1,60E3}{ans}. & /1\\
+            \hline
+            5. & A $t = t_{1/2}$, on a : & /2\\
+             & $A(t_{1/2}) = A_0 \cdot e^{-\lambda \cdot t_{1/2}} = \dfrac{A_0}{2}$ & \\
+             & Donc $e^{-\lambda \cdot t_{1/2}} = \dfrac{1}{2}$ soit $-\lambda \cdot t_{1/2} = \ln\left(\dfrac{1}{2}\right) = -\ln(2)$ & \\
+             & On en déduit : $\lambda = \dfrac{\ln(2)}{t_{1/2}} = \dfrac{\ln(2)}{\SI{1,60E3}{ans}} = \SI{1,37E-11}{\per\second}$ & \\
+            \hline
+            6. & L'activité est reliée au nombre de noyaux par la relation : & /1\\
+             & $A(t) = \lambda \cdot N(t)$ & \\
+            \hline
+            7. & A $t = 0$, on a : & /2\\
+             & $N_0 = \dfrac{A_0}{\lambda} = \dfrac{\SI{3,7E4}{Bq}}{\SI{1,37E-11}{\per\second}} \approx \num{2,70E15}$ & \\
+            \hline
+            8. & La masse est reliée au nombre de noyaux par la relation : & /2\\
+             & $m_0 = N_0 \cdot \dfrac{M}{N_A} = \num{2,70E15} \cdot \dfrac{\SI{226E-3}{\kilogram\per\mole}}{\SI{6,02E23}{\per\mole}} \approx \SI{1,0E-9}{\kilogram} = \SI{1,0}{\micro\gram}$ & \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\end{document}

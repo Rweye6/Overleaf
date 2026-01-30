@@ -1,9 +1,9 @@
-PWD /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C13_Mouvement des planètes
+PWD /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/remy/Nextcloud/Documents/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.tex
-OUTPUT TSPE_C13_Act2.log
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.tex
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/fleqn.clo
@@ -14,8 +14,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/size11.clo
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT ../../Styles/Cours.sty
-INPUT ../../Styles/Cours.sty
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/../../Styles/Cours.sty
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/../../Styles/Cours.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
@@ -317,7 +317,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-OUTPUT TSPE_C13_Act2.pdf
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/eqnarray/eqnarray.sty
@@ -330,10 +330,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/romannum/romannum.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/romannum/romannum.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/stdclsdv/stdclsdv.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/stdclsdv/stdclsdv.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/pifont.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/pifont.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/upzd.fd
@@ -355,14 +351,48 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/mdframed.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-abspage.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/zref/zref-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
-INPUT ./TSPE_C13_Act2.aux
-INPUT ./TSPE_C13_Act2.aux
-INPUT TSPE_C13_Act2.aux
-OUTPUT TSPE_C13_Act2.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.aux
+OUTPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -454,7 +484,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
-INPUT TSPE_C13_Act2.aux
+INPUT /Users/remy/Documents/GitHub/Education/Overleaf/TSPE/TSPE_C13_Mouvement des planètes/TSPE_C13_Act2.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb

@@ -1,0 +1,81 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+
+\newcommand{\chnum}{Chapitre 13}
+\newcommand{\chtitle}{Mouvements et forces}
+\newcommand{\dtype}{Cours}
+
+\begin{document}
+	\maketitle
+\section{Forces qui ne se compensent pas}
+    \subsection{Bilan des forces}
+        Lorsqu'un point matériel est soumis à des forces qui ne se compensent pas, la somme vectorielle des forces est un vecteur non nul : 
+        $$\sum \vv{F} \neq 0$$
+        Un objet, assimilé à un point matériel, est posé sur une table inclinée par rapport à l'horizontale. Les frottementssont supposés nuls. il est soumis à deux forces :
+        \begin{itemize}
+            \item son poids $\vv{P}$, dirigé vers le bas ;
+            \item la réaction de la table $\vv{R}$, perpendiculaire à la surface de la table.
+        \end{itemize}
+        Ces deux forces ne se compensent pas  $$\vv{P} + \vv{R} \neq 0$$
+        \begin{minipage}{0.45\textwidth}
+        \begin{center}
+            \begin{tikzpicture}[scale=1]
+                % Dessiner la table inclinée
+                \draw[thick] (0,0) -- (4,2);
+                
+                % Dessiner le poids
+                \draw[-Latex,red,thick] (2,1) -- (2,-1.5) node[midway,right] {$\vv{P}$};
+                % Dessiner la réaction de la table
+                \draw[-Latex,blue,thick] (2,1) -- (1,2.76) node[midway,right] {$\vv{R}$};
+                % Dessiner la résultante des forces
+                \draw[-Latex,purple,thick] (2,1) -- (1,.5) node[midway,above left] {$\sum \vv{F}$};
+                % Projection
+                \draw[dashed] (2,-1.5) -- (1,.5);
+                % Dessiner l'objet
+                \draw[thick] (2,1) node{$+$};
+            \end{tikzpicture}
+        \end{center}
+        \end{minipage}
+
+        \subsection{Conséquence sur la vitesse}
+        Dans un référentiel galiléen, si les forces qui s'exercent sur un point matériel ne se compensent pas, alors le point matériel ne possède pas un mouvement rectiligne et uniforme. Son vecteur vitesse varie (en norme et/ou en direction) au cours du temps.
+        \begin{center}
+            $$\sum \vv{F} \neq 0 \implies \vv{\Delta v} \neq \vv{0}$$
+            Les vecteurs $\Delta \vv{v}$ et $\sum \vv{F}$ sont colinéaires et de même sens.
+        \end{center}
+Lors d'une chute libre $\vv{P}$ et $\Delta \vv{v}$ sont colinéaires et orientés vers le bas.
+
+        \subsection{Référentiel galiléen}
+        Un référentiel est dit galiléen s'il respecte le principe d'inertie, c'est-à-dire que dans ce référentiel, un corps soumis à aucune force (ou à des forces qui se compensent) reste au repos ou en mouvement rectiligne uniforme. Les référentiels galiléens sont donc des référentiels d'observation dans lesquels les lois de la mécanique classique s'appliquent sans modification.\\
+        Le référentiel terrestre peut être considéré comme galiléen pour des études de mouvement de durée faible par rapport à la durée de rotation complète de la Terre sur elle-même.
+
+\section{Relation entre $\sum \vec{F}$ et $\Delta \vec{v}$}
+
+    \subsection{Influence de la masse du système sur $\Delta \vec{v}$}
+
+    Pour un même vecteur somme des forces $\sum \vec{F}$ appliqué au système pendant une durée $\Delta t$ fixe, le vecteur variation de vitesse $\Delta \vec{v}$ dépend de la masse $m$ du système.\\
+    Plus la masse $m$ du système est grande, plus le vecteur vitesse sera difficile à modifier en direction et/ou en norme ce qui implique un $\Delta \vv{v}$ faible et inversement.\\
+
+    \subsection{Conséquences}
+    La relation entre la cause ($\sum \vv{F}$) et la conséquence ($\Delta \vv{v}$) fait intervenir la masse $m$ du système :
+    $$\sum \vv{F} \approx m \cdot \dfrac{\Delta \vv{v}}{\Delta t}$$
+    avec :
+    \begin{itemize}
+        \item $\sum \vv{F}$ : somme des forces appliquées au système (en \unit{\newton}) ;
+        \item $m$ : masse du système (en \unit{\kilogram}) ;
+        \item $\Delta \vv{v}$ : variation du vecteur vitesse du système (en \unit{\meter\per\second}) ;
+        \item $\Delta t$ : durée pendant laquelle les forces s'exercent (en \unit{\second}).
+    \end{itemize}
+    \subsection{Cas de la chute libre}
+    Dans le cas d'une chute libre, la seule force qui s'exerce sur le système est son poids $\vv{P}$. La relation précédente devient :
+    $$\vv{P} = m \cdot \dfrac{\Delta \vv{v}}{\Delta t}$$
+    Or, le poids $\vv{P}$ est relié à la masse $m$ par la relation :
+    $$\vv{P} = m \cdot \vv{g}$$
+    avec $\vv{g}$ le vecteur champ de pesanteur (en \unit{\meter\per\second\squared}).\\
+    En combinant les deux relations, on obtient :
+    $$m \cdot \vv{g} = m \cdot \dfrac{\Delta \vv{v}}{\Delta t}$$
+    En simplifiant par $m$ (non nul), on trouve :
+    $$\vv{g} = \dfrac{\Delta \vv{v}}{\Delta t}$$
+    Cette relation montre que dans le cas d'une chute libre, la variation du vecteur vitesse $\Delta \vv{v}$ est indépendante de la masse $m$ du système. Tous les objets, quelle que soit leur masse, subissent la même variation de vitesse lorsqu'ils sont en chute libre pendant une même durée $\Delta t$.
+\end{document}
