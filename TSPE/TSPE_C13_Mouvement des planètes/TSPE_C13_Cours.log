@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.24)  1 FEB 2026 10:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.24)  3 FEB 2026 09:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,30 +7,131 @@ entering extended mode
 (c:/Users/remyr/Documents/GitHub/Overleaf/TSPE/TSPE_C13_Mouvement des planÃ¨tes/TSPE_C13_Cours.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-10>
-(C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo
+(C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cls
+Document Class: scrartcl 2023/07/07 v3.41 KOMA-Script document class (article)
+(C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.sty
+Package: scrkbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+))) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
+)) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.sty
+Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip48
+\scr@dte@tocline@numbox=\box51
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 133.
+Package scrartcl Info: You've used standard option `12pt'.
+(scrartcl)             This is correct!
+(scrartcl)             Internally I'm using `fontsize=12pt'.
+(scrartcl)             If you'd like to set the option with \KOMAoptions,
+(scrartcl)             you'd have to use `fontsize=12pt' there
+(scrartcl)             instead of `12pt', too.
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo
 File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
-\mathindent=\skip48
+\mathindent=\skip49
 Applying: [2015/01/01] Make \[ robust on input line 50.
 LaTeX Info: Redefining \[ on input line 51.
 Already applied: [0000/00/00] Make \[ robust on input line 62.
 Applying: [2015/01/01] Make \] robust on input line 74.
 LaTeX Info: Redefining \] on input line 75.
 Already applied: [0000/00/00] Make \] robust on input line 83.
-) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
+Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input line 2441.
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrsize12pt.clo
+File: scrsize12pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (12pt)
+) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typearea.sty
+Package: typearea 2023/07/07 v3.41 KOMA-Script package (type area)
+\ta@bcor=\skip50
+\ta@div=\count185
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip51
+\ta@vblk=\skip52
+\ta@temp=\skip53
+\footheight=\skip54
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 12
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 448.13095pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 1799.
+)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\scr@dte@section@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 5082.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 5082.
+\scr@dte@part@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 5090.
+\scr@dte@subsection@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 5100.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 5100.
+\scr@dte@subsubsection@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 5110.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 5110.
+\scr@dte@paragraph@maxnumwidth=\skip59
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 5121.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 5121.
+\scr@dte@subparagraph@maxnumwidth=\skip60
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 5131.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 5131.
+\abovecaptionskip=\skip61
+\belowcaptionskip=\skip62
+\c@pti@nb@sid@b@x=\box52
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 6309.
+\scr@dte@figure@maxnumwidth=\skip63
+\c@figure=\count192
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 6325.
+\scr@dte@table@maxnumwidth=\skip64
+\c@table=\count193
+Class scrartcl Info: Redefining `\numberline' on input line 6495.
 \bibindent=\dimen140
 ) (../../Styles/Cours.sty
 
@@ -40,10 +141,7 @@ LaTeX Warning: You have requested package `../../Styles/Cours',
 Package: mystyle 2010/07/28 BBischof's custom LaTeX style
 (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
@@ -66,26 +164,41 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box51
+\@fancybox=\box53
 \shadowsize=\dimen143
-\@Sbox=\box52
+\@Sbox=\box54
 \do@VerbBox=\toks20
 \the@fancyput=\toks21
 \this@fancyput=\toks22
 \EndVerbatimTokens=\toks23
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read2
-) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+)
+
+Class scrartcl Warning: Usage of package `fancyhdr' together
+(scrartcl)              with a KOMA-Script class is not recommended.
+(scrartcl)              I'd suggest to use 
+(scrartcl)              package `scrlayer' or `scrlayer-scrpage', because
+(scrartcl)              they support KOMA-Script classes.
+(scrartcl)              With `fancyhdr' several features of class `scrartcl'
+(scrartcl)              like options `headsepline', `footsepline' or command
+(scrartcl)              `\MakeMarkcase' and the commands `\setkomafont' and
+(scrartcl)              `\addtokomafont' for the page style elements need
+(scrartcl)              explicite user intervention to work.
+(scrartcl)              Nevertheless, using requested
+(scrartcl)              package `fancyhdr' on input line 18.
+
+(C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip51
-\f@nch@O@elh=\skip52
-\f@nch@O@erh=\skip53
-\f@nch@O@olh=\skip54
-\f@nch@O@orh=\skip55
-\f@nch@O@elf=\skip56
-\f@nch@O@erf=\skip57
-\f@nch@O@olf=\skip58
-\f@nch@O@orf=\skip59
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\tgheros.sty
 Package: tgheros 2009/09/27 v1.2 TeX Gyre Heros as default sans serif family
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
@@ -103,9 +216,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count193
-\Gm@cntv=\count194
-\c@Gm@tempcnt=\count195
+\Gm@cnth=\count194
+\Gm@cntv=\count195
+\c@Gm@tempcnt=\count196
 \Gm@bindingoffset=\dimen144
 \Gm@wd@mp=\dimen145
 \Gm@odd@mp=\dimen146
@@ -115,17 +228,49 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen150
 \Gm@layoutvoffset=\dimen151
 \Gm@dimlist=\toks24
- (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+Class scrartcl Warning: Usage of package `titlesec' together
+(scrartcl)              with a KOMA-Script class is not recommended.
+(scrartcl)              I'd suggest to use KOMA-Script features
+(scrartcl)              like \setkomafont, \RedeclareSectionCommand, \sectionlinesformat
+(scrartcl)              and several others to re-configure section
+(scrartcl)              headings.
+(scrartcl)              Nevertheless, using requested
+(scrartcl)              package `titlesec' on input line 27.
+
+(C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box53
-\beforetitleunit=\skip60
-\aftertitleunit=\skip61
+\ttl@box=\box55
+\beforetitleunit=\skip74
+\aftertitleunit=\skip75
 \ttl@plus=\dimen152
 \ttl@minus=\dimen153
 \ttl@toksa=\toks25
 \titlewidth=\dimen154
 \titlewidthlast=\dimen155
 \titlewidthfirst=\dimen156
+
+
+Package titlesec Warning: Non standard sectioning command \section
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subsection
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subsubsection
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \paragraph
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subparagraph
+(titlesec)                detected. Using default spacing and no format.
+
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -159,18 +304,18 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/xtab\xtab.sty
 Package: xtab 2011/07/31 v2.3f Extended supertabular package
-\c@tracingst=\count196
+\c@tracingst=\count197
 \PWSTcapht=\dimen157
 \ST@wd=\dimen158
-\ST@rightskip=\skip62
-\ST@leftskip=\skip63
-\ST@parfillskip=\skip64
-\c@PWSTtable=\count197
-\PWSTlastpage=\count198
-\PWSTpenultimate=\count199
-\PWSTcurpage=\count266
-\PWSTtempc=\count267
-\PWSTlines=\count268
+\ST@rightskip=\skip76
+\ST@leftskip=\skip77
+\ST@parfillskip=\skip78
+\c@PWSTtable=\count198
+\PWSTlastpage=\count199
+\PWSTpenultimate=\count266
+\PWSTcurpage=\count267
+\PWSTtempc=\count268
+\PWSTlines=\count269
 \PWST@lastht=\dimen159
 \PWST@generalht=\dimen160
 \PWST@ht=\dimen161
@@ -184,53 +329,55 @@ Package: xtab 2011/07/31 v2.3f Extended supertabular package
 \ST@prevht=\dimen169
 \ST@toadd=\dimen170
 \ST@dimen=\dimen171
-\ST@pbox=\box54
+\ST@pbox=\box56
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/esvect\esvect.sty
 Package: esvect 
 \symesvector=\mathgroup7
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip65
-\LTright=\skip66
-\LTpre=\skip67
-\LTpost=\skip68
-\LTchunksize=\count269
+\LTleft=\skip79
+\LTright=\skip80
+\LTpre=\skip81
+\LTpost=\skip82
+\LTchunksize=\count270
 \LTcapwidth=\dimen172
-\LT@head=\box55
-\LT@firsthead=\box56
-\LT@foot=\box57
-\LT@lastfoot=\box58
-\LT@gbox=\box59
-\LT@cols=\count270
-\LT@rows=\count271
-\c@LT@tables=\count272
-\c@LT@chunks=\count273
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count271
+\LT@rows=\count272
+\c@LT@tables=\count273
+\c@LT@chunks=\count274
 \LT@p@ftn=\toks27
-) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/mhchem\mhchem.sty
+)
+Class scrartcl Info: longtable captions redefined on input line 33.
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/mhchem\mhchem.sty
 Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2023-10-10 L3 programming layer (loader) 
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-10-10 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count274
-\l__pdf_internal_box=\box60
+\l__color_backend_stack_int=\count275
+\l__pdf_internal_box=\box62
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
 Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count275
-\calc@Bcount=\count276
+\calc@Acount=\count276
+\calc@Bcount=\count277
 \calc@Adimen=\dimen173
 \calc@Bdimen=\dimen174
-\calc@Askip=\skip69
-\calc@Bskip=\skip70
+\calc@Askip=\skip83
+\calc@Bskip=\skip84
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count277
-\calc@Cskip=\skip71
+\calc@Ccount=\count278
+\calc@Cskip=\skip85
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip72
+\@mathmargin=\skip86
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -245,19 +392,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count278
+\inf@bad=\count279
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count279
-\leftroot@=\count280
+\uproot@=\count280
+\leftroot@=\count281
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count281
-\DOTSCASE@=\count282
+\classnum@=\count282
+\DOTSCASE@=\count283
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box61
-\strutbox@=\box62
+\Mathstrutbox@=\box63
+\strutbox@=\box64
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
@@ -265,20 +412,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen177
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count283
+\macc@depth=\count284
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count284
+\c@MaxMatrixCols=\count285
 \dotsspace@=\muskip16
-\c@parentequation=\count285
-\dspbrk@lvl=\count286
+\c@parentequation=\count286
+\dspbrk@lvl=\count287
 \tag@help=\toks29
-\row@=\count287
-\column@=\count288
-\maxfields@=\count289
+\row@=\count288
+\column@=\count289
+\maxfields@=\count290
 \andhelp@=\toks30
 \eqnshift@=\dimen178
 \alignsep@=\dimen179
@@ -287,8 +434,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen182
 \lineht@=\dimen183
 \@envbody=\toks31
-\multlinegap=\skip73
-\multlinetaggap=\skip74
+\multlinegap=\skip87
+\multlinetaggap=\skip88
 \mathdisplay@stack=\toks32
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -296,21 +443,21 @@ LaTeX Info: Redefining \] on input line 2954.
 Package: xparse 2023-10-10 L3 Experimental document command parser
 )
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
-\l__chemgreek_tmpa_int=\count290
-\g__chemgreek_tmpa_int=\count291
+\l__chemgreek_tmpa_int=\count291
+\g__chemgreek_tmpa_int=\count292
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count292
-\__mhchem_arrow_extPgfLength_skip=\skip75
-\mhchem@minispace@tmp=\skip76
-\mhchem@minibackspace@tmp=\skip77
-\mhchem@bondwidth=\skip78
-\mhchem@bondheight=\skip79
-\mhchem@smallbondwidth@tmpA=\skip80
-\mhchem@smallbondwidth@tmpB=\skip81
-\mhchem@smallbondwidth=\skip82
-\mhchem@bondtmp@minussidebearingleft=\skip83
-\mhchem@bondtmp@minussidebearingright=\skip84
-\l__mhchem_option_version_int=\count293
+\l__mhchem_ce_distanceFromLastComma_int=\count293
+\__mhchem_arrow_extPgfLength_skip=\skip89
+\mhchem@minispace@tmp=\skip90
+\mhchem@minibackspace@tmp=\skip91
+\mhchem@bondwidth=\skip92
+\mhchem@bondheight=\skip93
+\mhchem@smallbondwidth@tmpA=\skip94
+\mhchem@smallbondwidth@tmpB=\skip95
+\mhchem@smallbondwidth=\skip96
+\mhchem@bondtmp@minussidebearingleft=\skip97
+\mhchem@bondtmp@minussidebearingright=\skip98
+\l__mhchem_option_version_int=\count294
 \mhchem@option@minusmathsidebearingleft=\dimen184
 \mhchem@option@minusmathsidebearingright=\dimen185
 \mhchem@option@minustextsidebearingleft=\dimen186
@@ -318,8 +465,8 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use 
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
 \wrapoverhang=\dimen188
 \WF@size=\dimen189
-\c@WF@wrappedlines=\count294
-\WF@box=\box63
+\c@WF@wrappedlines=\count295
+\WF@box=\box65
 \WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
@@ -336,45 +483,50 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@indent=\dimen195
 \caption@parindent=\dimen196
 \caption@hangindent=\dimen197
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count295
-\c@continuedfloat=\count296
+Package caption Info: KOMA-Script document class detected.
+ (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-koma.sto
+File: caption-koma.sto 2023/09/08 v2.0e Adaption of the caption package to the KOMA-Script document classes (AR)
+))
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
 Package caption Info: longtable package is loaded.
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
+Package caption Info: KOMA-Script scrextend package detected.
+\caption@addmargin@hsize=\dimen198
+\caption@addmargin@linewidth=\dimen199
 Package caption Info: xtab package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@KVtest=\count297
-\sf@farskip=\skip85
-\sf@captopadj=\dimen198
-\sf@capskip=\skip86
-\sf@nearskip=\skip87
-\c@subfigure=\count298
-\c@subfigure@save=\count299
-\c@lofdepth=\count300
-\c@subtable=\count301
-\c@subtable@save=\count302
-\c@lotdepth=\count303
-\sf@top=\skip88
-\sf@bottom=\skip89
+\c@KVtest=\count298
+\sf@farskip=\skip99
+\sf@captopadj=\dimen256
+\sf@capskip=\skip100
+\sf@nearskip=\skip101
+\c@subfigure=\count299
+\c@subfigure@save=\count300
+\c@lofdepth=\count301
+\c@subtable=\count302
+\c@subtable@save=\count303
+\c@lotdepth=\count304
+\sf@top=\skip102
+\sf@bottom=\skip103
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen199
-\ar@mcellbox=\box64
-\extrarowheight=\dimen256
+\col@sep=\dimen257
+\ar@mcellbox=\box66
+\extrarowheight=\dimen258
 \NC@list=\toks34
-\extratabsurround=\skip90
-\backup@length=\skip91
-\ar@cellbox=\box65
+\extratabsurround=\skip104
+\backup@length=\skip105
+\ar@cellbox=\box67
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/chemfig\chemfig.sty (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks35
-\pgfutil@tempdima=\dimen257
-\pgfutil@tempdimb=\dimen258
+\pgfutil@tempdima=\dimen259
+\pgfutil@tempdimb=\dimen260
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
-\pgfutil@abb=\box66
+\pgfutil@abb=\box68
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
@@ -387,26 +539,26 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks38
 ))
-\pgf@x=\dimen259
-\pgf@y=\dimen260
-\pgf@xa=\dimen261
-\pgf@ya=\dimen262
-\pgf@xb=\dimen263
-\pgf@yb=\dimen264
-\pgf@xc=\dimen265
-\pgf@yc=\dimen266
-\pgf@xd=\dimen267
-\pgf@yd=\dimen268
+\pgf@x=\dimen261
+\pgf@y=\dimen262
+\pgf@xa=\dimen263
+\pgf@ya=\dimen264
+\pgf@xb=\dimen265
+\pgf@yb=\dimen266
+\pgf@xc=\dimen267
+\pgf@yc=\dimen268
+\pgf@xd=\dimen269
+\pgf@yd=\dimen270
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count304
-\c@pgf@countb=\count305
-\c@pgf@countc=\count306
-\c@pgf@countd=\count307
+\c@pgf@counta=\count305
+\c@pgf@countb=\count306
+\c@pgf@countc=\count307
+\c@pgf@countd=\count308
 \t@pgf@toka=\toks39
 \t@pgf@tokb=\toks40
 \t@pgf@tokc=\toks41
-\pgf@sys@id@count=\count308
+\pgf@sys@id@count=\count309
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -417,59 +569,59 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count309
-\pgfsyssoftpath@bigbuffer@items=\count310
+\pgfsyssoftpath@smallbuffer@items=\count310
+\pgfsyssoftpath@bigbuffer@items=\count311
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen269
-\pgfmath@count=\count311
-\pgfmath@box=\box67
+\pgfmath@dimen=\dimen271
+\pgfmath@count=\count312
+\pgfmath@box=\box69
 \pgfmath@toks=\toks42
 \pgfmath@stack@operand=\toks43
 \pgfmath@stack@operation=\toks44
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count312
+\c@pgfmathroundto@lastzeros=\count313
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen270
-\pgf@picmaxx=\dimen271
-\pgf@picminy=\dimen272
-\pgf@picmaxy=\dimen273
-\pgf@pathminx=\dimen274
-\pgf@pathmaxx=\dimen275
-\pgf@pathminy=\dimen276
-\pgf@pathmaxy=\dimen277
-\pgf@xx=\dimen278
-\pgf@xy=\dimen279
-\pgf@yx=\dimen280
-\pgf@yy=\dimen281
-\pgf@zx=\dimen282
-\pgf@zy=\dimen283
+\pgf@picminx=\dimen272
+\pgf@picmaxx=\dimen273
+\pgf@picminy=\dimen274
+\pgf@picmaxy=\dimen275
+\pgf@pathminx=\dimen276
+\pgf@pathmaxx=\dimen277
+\pgf@pathminy=\dimen278
+\pgf@pathmaxy=\dimen279
+\pgf@xx=\dimen280
+\pgf@xy=\dimen281
+\pgf@yx=\dimen282
+\pgf@yy=\dimen283
+\pgf@zx=\dimen284
+\pgf@zy=\dimen285
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen284
-\pgf@path@lasty=\dimen285
+\pgf@path@lastx=\dimen286
+\pgf@path@lasty=\dimen287
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen286
-\pgf@shorten@start@additional=\dimen287
+\pgf@shorten@end@additional=\dimen288
+\pgf@shorten@start@additional=\dimen289
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box68
-\pgf@hbox=\box69
-\pgf@layerbox@main=\box70
-\pgf@picture@serial@count=\count313
+\pgfpic=\box70
+\pgf@hbox=\box71
+\pgf@layerbox@main=\box72
+\pgf@picture@serial@count=\count314
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen288
+\pgflinewidth=\dimen290
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen289
-\pgf@pt@y=\dimen290
-\pgf@pt@temp=\dimen291
+\pgf@pt@x=\dimen291
+\pgf@pt@y=\dimen292
+\pgf@pt@temp=\dimen293
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
@@ -478,17 +630,17 @@ File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen292
+\pgfarrowsep=\dimen294
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen293
-\pgf@sys@shading@range@num=\count314
-\pgf@shadingcount=\count315
+\pgf@max=\dimen295
+\pgf@sys@shading@range@num=\count315
+\pgf@shadingcount=\count316
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box71
+\pgfexternal@startupbox=\box73
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
@@ -499,84 +651,84 @@ File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box72
+\pgfnodeparttextbox=\box74
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen294
-\pgf@nodesepend=\dimen295
+\pgf@nodesepstart=\dimen296
+\pgf@nodesepend=\dimen297
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen296
-\pgffor@skip=\dimen297
+\pgffor@iter=\dimen298
+\pgffor@skip=\dimen299
 \pgffor@stack=\toks45
 \pgffor@toks=\toks46
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count316
-\pgfplotmarksize=\dimen298
+\pgf@plot@mark@count=\count317
+\pgfplotmarksize=\dimen300
 )
-\tikz@lastx=\dimen299
-\tikz@lasty=\dimen300
-\tikz@lastxsaved=\dimen301
-\tikz@lastysaved=\dimen302
-\tikz@lastmovetox=\dimen303
-\tikz@lastmovetoy=\dimen304
-\tikzleveldistance=\dimen305
-\tikzsiblingdistance=\dimen306
-\tikz@figbox=\box73
-\tikz@figbox@bg=\box74
-\tikz@tempbox=\box75
-\tikz@tempbox@bg=\box76
-\tikztreelevel=\count317
-\tikznumberofchildren=\count318
-\tikznumberofcurrentchild=\count319
-\tikz@fig@count=\count320
+\tikz@lastx=\dimen301
+\tikz@lasty=\dimen302
+\tikz@lastxsaved=\dimen303
+\tikz@lastysaved=\dimen304
+\tikz@lastmovetox=\dimen305
+\tikz@lastmovetoy=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
+\tikz@figbox=\box75
+\tikz@figbox@bg=\box76
+\tikz@tempbox=\box77
+\tikz@tempbox@bg=\box78
+\tikztreelevel=\count318
+\tikznumberofchildren=\count319
+\tikznumberofcurrentchild=\count320
+\tikz@fig@count=\count321
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count321
-\pgfmatrixcurrentcolumn=\count322
-\pgf@matrix@numberofcolumns=\count323
+\pgfmatrixcurrentrow=\count322
+\pgfmatrixcurrentcolumn=\count323
+\pgf@matrix@numberofcolumns=\count324
 )
-\tikz@expandcount=\count324
+\tikz@expandcount=\count325
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/chemfig\chemfig.tex (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/simplekv\simplekv.tex
 Package: simplekv 2023/10/02 v0.2c Simple keyval package (CT)
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen307
-\pgfarrowlength=\dimen308
-\pgfarrowwidth=\dimen309
-\pgfarrowlinewidth=\dimen310
+\pgfarrowinset=\dimen309
+\pgfarrowlength=\dimen310
+\pgfarrowwidth=\dimen311
+\pgfarrowlinewidth=\dimen312
 )
-\CF_cnt_atomgroup=\count325
-\CF_cnt_group=\count326
-\CF_cnt_atom=\count327
-\CF_cnt_cycle=\count328
-\CF_cnt_cyclebonds=\count329
-\CF_cnt_compound=\count330
-\CF_dim=\dimen311
-\CF_arrowsize=\dimen312
-\CF_zero=\dimen313
-\CF_box=\box77
-\CF_boxstuff=\box78
-\CF_testbox=\box79
-\CF_chargebox=\box80
+\CF_cnt_atomgroup=\count326
+\CF_cnt_group=\count327
+\CF_cnt_atom=\count328
+\CF_cnt_cycle=\count329
+\CF_cnt_cyclebonds=\count330
+\CF_cnt_compound=\count331
+\CF_dim=\dimen313
+\CF_arrowsize=\dimen314
+\CF_zero=\dimen315
+\CF_box=\box79
+\CF_boxstuff=\box80
+\CF_testbox=\box81
+\CF_chargebox=\box82
 \CF_substtoks=\toks47
 )
 Package: chemfig 2023/06/30 v1.6e Draw molecule with an easy syntax (CT)
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip92
-\multirow@cntb=\count331
-\multirow@dima=\skip93
-\bigstrutjot=\dimen314
+\multirow@colwidth=\skip106
+\multirow@cntb=\count332
+\multirow@dima=\skip107
+\bigstrutjot=\dimen316
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
@@ -588,7 +740,21 @@ LaTeX Warning: Command \underbar  has changed.
 LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
-) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/mathalpha\mathalfa.sty) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/mathalpha\mathalpha.sty
+)
+
+Class scrartcl Warning: Incompatible package `sectsty' loaded!
+(scrartcl)              Package `sectsty' up to version 2.0.2 is incompatible
+(scrartcl)              with KOMA-Script from version 2.8e released in 2001.
+(scrartcl)              You should avoid that package and configure the
+(scrartcl)              section titles of your document using the KOMA-Script
+(scrartcl)              user interface, e.g., \chapterlinesformat,
+(scrartcl)              \RedeclareSectionCommand etc. or you should ask
+(scrartcl)              the `sectsty' maintainer for a more compatible release.
+(scrartcl)              Ignoring this warning could result in several error
+(scrartcl)              messages and formatting issues after loading package
+(scrartcl)              `sectsty' on input line 44.
+
+(C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/mathalpha\mathalfa.sty) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/mathalpha\mathalpha.sty
 Package: mathalpha 2021/11/18 - 1.143mathalpha (License LPPL) Michael Sharpe
  `mathalpha' v1.143, 2021/11/18, a renaming of mathalfa (msharpe) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
@@ -596,7 +762,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks48
 \XKV@tempa@toks=\toks49
 )
-\XKV@depth=\count332
+\XKV@depth=\count333
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 554.
@@ -604,19 +770,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
 (Font)                  U/BOONDOX-calo/m/n --> U/BOONDOX-calo/b/n on input line 556.
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip94
-\enit@outerparindent=\dimen315
+\labelindent=\skip108
+\enit@outerparindent=\dimen317
 \enit@toks=\toks50
-\enit@inbox=\box81
-\enit@count@id=\count333
-\enitdp@description=\count334
+\enit@inbox=\box83
+\enit@count@id=\count334
+\enitdp@description=\count335
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
 Package: lastpage 2023/10/06 v2.0d lastpage: 2.09 or 2e? (HMM)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
 Package: lastpage2e 2023/10/06 v2.0d Decide which 2e lastpage version to use (HMM)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern.sty
 Package: lastpagemodern 2023-10-06 v2.0d Refers to last page's name (HMM; JPG)
-\c@lastpagecount=\count335
+\c@lastpagecount=\count336
 ) 
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
 Package: tcolorbox 2023/09/26 version 6.1.0 text color boxes
@@ -631,35 +797,35 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count336
+\etb@tempcnta=\count337
 )
-\tcb@titlebox=\box82
-\tcb@upperbox=\box83
-\tcb@lowerbox=\box84
-\tcb@phantombox=\box85
-\c@tcbbreakpart=\count337
-\c@tcblayer=\count338
-\c@tcolorbox@number=\count339
-\tcb@temp=\box86
-\tcb@temp=\box87
+\tcb@titlebox=\box84
+\tcb@upperbox=\box85
+\tcb@lowerbox=\box86
+\tcb@phantombox=\box87
+\c@tcbbreakpart=\count338
+\c@tcblayer=\count339
+\c@tcolorbox@number=\count340
 \tcb@temp=\box88
 \tcb@temp=\box89
+\tcb@temp=\box90
+\tcb@temp=\box91
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2023-10-07 v3.3.7 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count340
-\l__siunitx_number_exponent_fixed_int=\count341
-\l__siunitx_number_min_decimal_int=\count342
-\l__siunitx_number_min_integer_int=\count343
-\l__siunitx_number_round_precision_int=\count344
-\l__siunitx_number_lower_threshold_int=\count345
-\l__siunitx_number_upper_threshold_int=\count346
-\l__siunitx_number_group_first_int=\count347
-\l__siunitx_number_group_size_int=\count348
-\l__siunitx_number_group_minimum_int=\count349
-\l__siunitx_angle_tmp_dim=\dimen316
-\l__siunitx_angle_marker_box=\box90
-\l__siunitx_angle_unit_box=\box91
-\l__siunitx_compound_count_int=\count350
+\l__siunitx_number_uncert_offset_int=\count341
+\l__siunitx_number_exponent_fixed_int=\count342
+\l__siunitx_number_min_decimal_int=\count343
+\l__siunitx_number_min_integer_int=\count344
+\l__siunitx_number_round_precision_int=\count345
+\l__siunitx_number_lower_threshold_int=\count346
+\l__siunitx_number_upper_threshold_int=\count347
+\l__siunitx_number_group_first_int=\count348
+\l__siunitx_number_group_size_int=\count349
+\l__siunitx_number_group_minimum_int=\count350
+\l__siunitx_angle_tmp_dim=\dimen318
+\l__siunitx_angle_marker_box=\box92
+\l__siunitx_angle_unit_box=\box93
+\l__siunitx_compound_count_int=\count351
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
@@ -671,19 +837,19 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-\l__siunitx_table_tmp_box=\box92
-\l__siunitx_table_tmp_dim=\dimen317
-\l__siunitx_table_column_width_dim=\dimen318
-\l__siunitx_table_integer_box=\box93
-\l__siunitx_table_decimal_box=\box94
-\l__siunitx_table_uncert_box=\box95
-\l__siunitx_table_before_box=\box96
-\l__siunitx_table_after_box=\box97
-\l__siunitx_table_before_dim=\dimen319
-\l__siunitx_table_carry_dim=\dimen320
-\l__siunitx_unit_tmp_int=\count351
-\l__siunitx_unit_position_int=\count352
-\l__siunitx_unit_total_int=\count353
+\l__siunitx_table_tmp_box=\box94
+\l__siunitx_table_tmp_dim=\dimen319
+\l__siunitx_table_column_width_dim=\dimen320
+\l__siunitx_table_integer_box=\box95
+\l__siunitx_table_decimal_box=\box96
+\l__siunitx_table_uncert_box=\box97
+\l__siunitx_table_before_box=\box98
+\l__siunitx_table_after_box=\box99
+\l__siunitx_table_before_dim=\dimen321
+\l__siunitx_table_carry_dim=\dimen322
+\l__siunitx_unit_tmp_int=\count352
+\l__siunitx_unit_position_int=\count353
+\l__siunitx_unit_total_int=\count354
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/circuitikz\circuitikz.sty
 Package: circuitikz 2023/10/10{} The CircuiTikz circuit drawing package version 1.6.4
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
@@ -694,37 +860,37 @@ File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulenonlineartransformations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgftransformnonlinearflatness=\dimen321
+\pgftransformnonlinearflatness=\dimen323
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarycurvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@curvilinear@time@a=\dimen322
-\pgf@curvilinear@length@a=\dimen323
-\pgf@curvilinear@length@b=\dimen324
-\pgf@curvilinear@length@c=\dimen325
-\pgf@curvilinear@length@d=\dimen326
+\pgf@curvilinear@time@a=\dimen324
+\pgf@curvilinear@length@a=\dimen325
+\pgf@curvilinear@length@b=\dimen326
+\pgf@curvilinear@length@c=\dimen327
+\pgf@curvilinear@length@d=\dimen328
 )
-\pgf@arrows@the@rigidity=\dimen327
+\pgf@arrows@the@rigidity=\dimen329
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfpu.code.tex (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirc.defines.tex
-\pgf@circ@count@a=\count354
-\pgf@circ@count@b=\count355
-\pgf@circ@count@c=\count356
-\pgf@circ@res@up=\dimen328
-\pgf@circ@res@down=\dimen329
-\pgf@circ@res@zero=\dimen330
-\pgf@circ@res@left=\dimen331
-\pgf@circ@res@right=\dimen332
-\pgf@circ@res@other=\dimen333
-\pgf@circ@res@step=\dimen334
-\pgf@circ@res@temp=\dimen335
-\pgf@circ@Rlen=\dimen336
-\pgf@circ@scaled@Rlen=\dimen337
-\pgfstartlinewidth=\dimen338
+\pgf@circ@count@a=\count355
+\pgf@circ@count@b=\count356
+\pgf@circ@count@c=\count357
+\pgf@circ@res@up=\dimen330
+\pgf@circ@res@down=\dimen331
+\pgf@circ@res@zero=\dimen332
+\pgf@circ@res@left=\dimen333
+\pgf@circ@res@right=\dimen334
+\pgf@circ@res@other=\dimen335
+\pgf@circ@res@step=\dimen336
+\pgf@circ@res@temp=\dimen337
+\pgf@circ@Rlen=\dimen338
+\pgf@circ@scaled@Rlen=\dimen339
+\pgfstartlinewidth=\dimen340
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircutils.tex
-\ctikz@scratchbox=\box98
+\ctikz@scratchbox=\box100
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircpath.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircshapes.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmonopoles.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircbipoles.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirctripoles.tex
-\pgf@circ@res@count=\count357
+\pgf@circ@res@count=\count358
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircquadpoles.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmultipoles.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirclabel.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen339
+\pgfcirc@labelshift=\dimen341
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccurrent.tex) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircflow.tex)) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
@@ -735,44 +901,44 @@ File: tikzlibraryautomata.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box99
-\pgfnodeparttwobox=\box100
-\pgfnodepartthreebox=\box101
-\pgfnodepartfourbox=\box102
-\pgfnodeparttwentybox=\box103
-\pgfnodepartnineteenbox=\box104
-\pgfnodeparteighteenbox=\box105
-\pgfnodepartseventeenbox=\box106
-\pgfnodepartsixteenbox=\box107
-\pgfnodepartfifteenbox=\box108
-\pgfnodepartfourteenbox=\box109
-\pgfnodepartthirteenbox=\box110
-\pgfnodeparttwelvebox=\box111
-\pgfnodepartelevenbox=\box112
-\pgfnodeparttenbox=\box113
-\pgfnodepartninebox=\box114
-\pgfnodeparteightbox=\box115
-\pgfnodepartsevenbox=\box116
-\pgfnodepartsixbox=\box117
-\pgfnodepartfivebox=\box118
+\pgfnodepartlowerbox=\box101
+\pgfnodeparttwobox=\box102
+\pgfnodepartthreebox=\box103
+\pgfnodepartfourbox=\box104
+\pgfnodeparttwentybox=\box105
+\pgfnodepartnineteenbox=\box106
+\pgfnodeparteighteenbox=\box107
+\pgfnodepartseventeenbox=\box108
+\pgfnodepartsixteenbox=\box109
+\pgfnodepartfifteenbox=\box110
+\pgfnodepartfourteenbox=\box111
+\pgfnodepartthirteenbox=\box112
+\pgfnodeparttwelvebox=\box113
+\pgfnodepartelevenbox=\box114
+\pgfnodeparttenbox=\box115
+\pgfnodepartninebox=\box116
+\pgfnodeparteightbox=\box117
+\pgfnodepartsevenbox=\box118
+\pgfnodepartsixbox=\box119
+\pgfnodepartfivebox=\box120
 ))) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen340
+\arrowsize=\dimen342
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.markings.code.tex (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen341
-\pgfdecoratedremainingdistance=\dimen342
-\pgfdecoratedinputsegmentcompleteddistance=\dimen343
-\pgfdecoratedinputsegmentremainingdistance=\dimen344
-\pgf@decorate@distancetomove=\dimen345
-\pgf@decorate@repeatstate=\count358
-\pgfdecorationsegmentamplitude=\dimen346
-\pgfdecorationsegmentlength=\dimen347
+\pgfdecoratedcompleteddistance=\dimen343
+\pgfdecoratedremainingdistance=\dimen344
+\pgfdecoratedinputsegmentcompleteddistance=\dimen345
+\pgfdecoratedinputsegmentremainingdistance=\dimen346
+\pgf@decorate@distancetomove=\dimen347
+\pgf@decorate@repeatstate=\count359
+\pgfdecorationsegmentamplitude=\dimen348
+\pgfdecorationsegmentlength=\dimen349
 )
-\tikz@lib@dec@box=\box119
+\tikz@lib@dec@box=\box121
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.markings.code.tex)) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
@@ -785,30 +951,28 @@ File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count359
-\mult@box=\box120
-\multicol@leftmargin=\dimen348
-\c@unbalance=\count360
-\c@collectmore=\count361
-\doublecol@number=\count362
-\multicoltolerance=\count363
-\multicolpretolerance=\count364
-\full@width=\dimen349
-\page@free=\dimen350
-\premulticols=\dimen351
-\postmulticols=\dimen352
-\multicolsep=\skip95
-\multicolbaselineskip=\skip96
-\partial@page=\box121
-\last@line=\box122
-\mc@boxedresult=\box123
-\maxbalancingoverflow=\dimen353
-\mult@rightbox=\box124
-\mult@grightbox=\box125
-\mult@firstbox=\box126
-\mult@gfirstbox=\box127
-\@tempa=\box128
-\@tempa=\box129
+\c@tracingmulticols=\count360
+\mult@box=\box122
+\multicol@leftmargin=\dimen350
+\c@unbalance=\count361
+\c@collectmore=\count362
+\doublecol@number=\count363
+\multicoltolerance=\count364
+\multicolpretolerance=\count365
+\full@width=\dimen351
+\page@free=\dimen352
+\premulticols=\dimen353
+\postmulticols=\dimen354
+\multicolsep=\skip109
+\multicolbaselineskip=\skip110
+\partial@page=\box123
+\last@line=\box124
+\mc@boxedresult=\box125
+\maxbalancingoverflow=\dimen355
+\mult@rightbox=\box126
+\mult@grightbox=\box127
+\mult@firstbox=\box128
+\mult@gfirstbox=\box129
 \@tempa=\box130
 \@tempa=\box131
 \@tempa=\box132
@@ -843,44 +1007,46 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box161
 \@tempa=\box162
 \@tempa=\box163
-\c@minrows=\count365
-\c@columnbadness=\count366
-\c@finalcolumnbadness=\count367
-\last@try=\dimen354
-\multicolovershoot=\dimen355
-\multicolundershoot=\dimen356
-\mult@nat@firstbox=\box164
-\colbreak@box=\box165
-\mc@col@check@num=\count368
+\@tempa=\box164
+\@tempa=\box165
+\c@minrows=\count366
+\c@columnbadness=\count367
+\c@finalcolumnbadness=\count368
+\last@try=\dimen356
+\multicolovershoot=\dimen357
+\multicolundershoot=\dimen358
+\mult@nat@firstbox=\box166
+\colbreak@box=\box167
+\mc@col@check@num=\count369
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/eqnarray\eqnarray.sty
 equationarray 1.3 <December 1, 2010>
 Package: eqnarray 
-\@eqargcnt=\count369
+\@eqargcnt=\count370
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen357
-\TX@old@table=\dimen358
-\TX@old@col=\dimen359
-\TX@target=\dimen360
-\TX@delta=\dimen361
-\TX@cols=\count370
+\TX@col@width=\dimen359
+\TX@old@table=\dimen360
+\TX@old@col=\dimen361
+\TX@target=\dimen362
+\TX@delta=\dimen363
+\TX@cols=\count371
 \TX@ftn=\toks53
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks54
-\minrowclearance=\skip97
-\rownum=\count371
+\minrowclearance=\skip111
+\rownum=\count372
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
-\UL@box=\box166
-\UL@hyphenbox=\box167
-\UL@skip=\skip98
+\UL@box=\box168
+\UL@hyphenbox=\box169
+\UL@skip=\skip112
 \UL@hook=\toks55
-\UL@height=\dimen362
-\UL@pe=\count372
-\UL@pixel=\dimen363
-\ULC@box=\box168
+\UL@height=\dimen364
+\UL@pe=\count373
+\UL@pixel=\dimen365
+\ULC@box=\box170
 Package: ulem 2019/11/18
-\ULdepth=\dimen364
+\ULdepth=\dimen366
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
@@ -907,23 +1073,23 @@ Package siunitx Info: Option "number-unit-separator" has been deprecated in
 (siunitx)             Use "quantity-product = ~" as a replacement.
 
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count373
-\lst@gtempboxa=\box169
+\lst@mode=\count374
+\lst@gtempboxa=\box171
 \lst@token=\toks56
-\lst@length=\count374
-\lst@currlwidth=\dimen365
-\lst@column=\count375
-\lst@pos=\count376
-\lst@lostspace=\dimen366
-\lst@width=\dimen367
-\lst@newlines=\count377
-\lst@lineno=\count378
-\lst@maxwidth=\dimen368
+\lst@length=\count375
+\lst@currlwidth=\dimen367
+\lst@column=\count376
+\lst@pos=\count377
+\lst@lostspace=\dimen368
+\lst@width=\dimen369
+\lst@newlines=\count378
+\lst@lineno=\count379
+\lst@maxwidth=\dimen370
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count379
-\lst@skipnumbers=\count380
-\lst@framebox=\box170
+\c@lstnumber=\count380
+\lst@skipnumbers=\count381
+\lst@framebox=\box172
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
@@ -945,97 +1111,97 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count381
+\c@abspage=\count382
 Package zref Info: New property: abspage on input line 67.
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
-\mdf@templength=\skip99
-\c@mdf@globalstyle@cnt=\count382
-\mdf@skipabove@length=\skip100
-\mdf@skipbelow@length=\skip101
-\mdf@leftmargin@length=\skip102
-\mdf@rightmargin@length=\skip103
-\mdf@innerleftmargin@length=\skip104
-\mdf@innerrightmargin@length=\skip105
-\mdf@innertopmargin@length=\skip106
-\mdf@innerbottommargin@length=\skip107
-\mdf@splittopskip@length=\skip108
-\mdf@splitbottomskip@length=\skip109
-\mdf@outermargin@length=\skip110
-\mdf@innermargin@length=\skip111
-\mdf@linewidth@length=\skip112
-\mdf@innerlinewidth@length=\skip113
-\mdf@middlelinewidth@length=\skip114
-\mdf@outerlinewidth@length=\skip115
-\mdf@roundcorner@length=\skip116
-\mdf@footenotedistance@length=\skip117
-\mdf@userdefinedwidth@length=\skip118
-\mdf@needspace@length=\skip119
-\mdf@frametitleaboveskip@length=\skip120
-\mdf@frametitlebelowskip@length=\skip121
-\mdf@frametitlerulewidth@length=\skip122
-\mdf@frametitleleftmargin@length=\skip123
-\mdf@frametitlerightmargin@length=\skip124
-\mdf@shadowsize@length=\skip125
-\mdf@extratopheight@length=\skip126
-\mdf@subtitleabovelinewidth@length=\skip127
-\mdf@subtitlebelowlinewidth@length=\skip128
-\mdf@subtitleaboveskip@length=\skip129
-\mdf@subtitlebelowskip@length=\skip130
-\mdf@subtitleinneraboveskip@length=\skip131
-\mdf@subtitleinnerbelowskip@length=\skip132
-\mdf@subsubtitleabovelinewidth@length=\skip133
-\mdf@subsubtitlebelowlinewidth@length=\skip134
-\mdf@subsubtitleaboveskip@length=\skip135
-\mdf@subsubtitlebelowskip@length=\skip136
-\mdf@subsubtitleinneraboveskip@length=\skip137
-\mdf@subsubtitleinnerbelowskip@length=\skip138
+\mdf@templength=\skip113
+\c@mdf@globalstyle@cnt=\count383
+\mdf@skipabove@length=\skip114
+\mdf@skipbelow@length=\skip115
+\mdf@leftmargin@length=\skip116
+\mdf@rightmargin@length=\skip117
+\mdf@innerleftmargin@length=\skip118
+\mdf@innerrightmargin@length=\skip119
+\mdf@innertopmargin@length=\skip120
+\mdf@innerbottommargin@length=\skip121
+\mdf@splittopskip@length=\skip122
+\mdf@splitbottomskip@length=\skip123
+\mdf@outermargin@length=\skip124
+\mdf@innermargin@length=\skip125
+\mdf@linewidth@length=\skip126
+\mdf@innerlinewidth@length=\skip127
+\mdf@middlelinewidth@length=\skip128
+\mdf@outerlinewidth@length=\skip129
+\mdf@roundcorner@length=\skip130
+\mdf@footenotedistance@length=\skip131
+\mdf@userdefinedwidth@length=\skip132
+\mdf@needspace@length=\skip133
+\mdf@frametitleaboveskip@length=\skip134
+\mdf@frametitlebelowskip@length=\skip135
+\mdf@frametitlerulewidth@length=\skip136
+\mdf@frametitleleftmargin@length=\skip137
+\mdf@frametitlerightmargin@length=\skip138
+\mdf@shadowsize@length=\skip139
+\mdf@extratopheight@length=\skip140
+\mdf@subtitleabovelinewidth@length=\skip141
+\mdf@subtitlebelowlinewidth@length=\skip142
+\mdf@subtitleaboveskip@length=\skip143
+\mdf@subtitlebelowskip@length=\skip144
+\mdf@subtitleinneraboveskip@length=\skip145
+\mdf@subtitleinnerbelowskip@length=\skip146
+\mdf@subsubtitleabovelinewidth@length=\skip147
+\mdf@subsubtitlebelowlinewidth@length=\skip148
+\mdf@subsubtitleaboveskip@length=\skip149
+\mdf@subsubtitlebelowskip@length=\skip150
+\mdf@subsubtitleinneraboveskip@length=\skip151
+\mdf@subsubtitleinnerbelowskip@length=\skip152
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box171
-\mdf@footnotebox=\box172
-\mdf@splitbox@one=\box173
-\mdf@splitbox@two=\box174
-\mdf@splitbox@save=\box175
-\mdfsplitboxwidth=\skip139
-\mdfsplitboxtotalwidth=\skip140
-\mdfsplitboxheight=\skip141
-\mdfsplitboxdepth=\skip142
-\mdfsplitboxtotalheight=\skip143
-\mdfframetitleboxwidth=\skip144
-\mdfframetitleboxtotalwidth=\skip145
-\mdfframetitleboxheight=\skip146
-\mdfframetitleboxdepth=\skip147
-\mdfframetitleboxtotalheight=\skip148
-\mdffootnoteboxwidth=\skip149
-\mdffootnoteboxtotalwidth=\skip150
-\mdffootnoteboxheight=\skip151
-\mdffootnoteboxdepth=\skip152
-\mdffootnoteboxtotalheight=\skip153
-\mdftotallinewidth=\skip154
-\mdfboundingboxwidth=\skip155
-\mdfboundingboxtotalwidth=\skip156
-\mdfboundingboxheight=\skip157
-\mdfboundingboxdepth=\skip158
-\mdfboundingboxtotalheight=\skip159
-\mdf@freevspace@length=\skip160
-\mdf@horizontalwidthofbox@length=\skip161
-\mdf@verticalmarginwhole@length=\skip162
-\mdf@horizontalspaceofbox=\skip163
-\mdfsubtitleheight=\skip164
-\mdfsubsubtitleheight=\skip165
-\c@mdfcountframes=\count383
+\mdf@frametitlebox=\box173
+\mdf@footnotebox=\box174
+\mdf@splitbox@one=\box175
+\mdf@splitbox@two=\box176
+\mdf@splitbox@save=\box177
+\mdfsplitboxwidth=\skip153
+\mdfsplitboxtotalwidth=\skip154
+\mdfsplitboxheight=\skip155
+\mdfsplitboxdepth=\skip156
+\mdfsplitboxtotalheight=\skip157
+\mdfframetitleboxwidth=\skip158
+\mdfframetitleboxtotalwidth=\skip159
+\mdfframetitleboxheight=\skip160
+\mdfframetitleboxdepth=\skip161
+\mdfframetitleboxtotalheight=\skip162
+\mdffootnoteboxwidth=\skip163
+\mdffootnoteboxtotalwidth=\skip164
+\mdffootnoteboxheight=\skip165
+\mdffootnoteboxdepth=\skip166
+\mdffootnoteboxtotalheight=\skip167
+\mdftotallinewidth=\skip168
+\mdfboundingboxwidth=\skip169
+\mdfboundingboxtotalwidth=\skip170
+\mdfboundingboxheight=\skip171
+\mdfboundingboxdepth=\skip172
+\mdfboundingboxtotalheight=\skip173
+\mdf@freevspace@length=\skip174
+\mdf@horizontalwidthofbox@length=\skip175
+\mdf@verticalmarginwhole@length=\skip176
+\mdf@horizontalspaceofbox=\skip177
+\mdfsubtitleheight=\skip178
+\mdfsubsubtitleheight=\skip179
+\c@mdfcountframes=\count384
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count384
-\c@mdf@env@i=\count385
-\c@mdf@env@ii=\count386
-\c@mdf@zref@counter=\count387
+\mdf@envdepth=\count385
+\c@mdf@env@i=\count386
+\c@mdf@env@ii=\count387
+\c@mdf@zref@counter=\count388
 Package zref Info: New property: mdf@pagevalue on input line 895.
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.1.0'
@@ -1045,7 +1211,7 @@ Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box176
+\l__tikzfill_img_box=\box178
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.1.0'
 )) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
@@ -1054,11 +1220,11 @@ Library (tcolorbox): 'tcbbreakable.code.tex' version '6.1.0'
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box177
-\tcb@totalupperbox=\box178
-\tcb@totallowerbox=\box179
+\tcb@testbox=\box179
+\tcb@totalupperbox=\box180
+\tcb@totallowerbox=\box181
 )
-\c@documentbox=\count388
+\c@documentbox=\count389
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesome5.sty
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesome5-generic-helper.sty
@@ -1085,18 +1251,27 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
+Package scrbase Info: activating english \abstractname on input line 8.
+Package scrbase Info: activating english \partname on input line 8.
+Package scrbase Info: activating english \figurename on input line 8.
+Package scrbase Info: activating english \tablename on input line 8.
+Package scrbase Info: activating english \contentsname on input line 8.
+Package scrbase Info: activating english \listfigurename on input line 8.
+Package scrbase Info: activating english \listtablename on input line 8.
+Package scrbase Info: activating english \refname on input line 8.
+Package scrbase Info: activating english \indexname on input line 8.
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count389
-\scratchdimen=\dimen369
-\scratchbox=\box180
-\nofMPsegments=\count390
-\nofMParguments=\count391
+\scratchcounter=\count390
+\scratchdimen=\dimen371
+\scratchbox=\box182
+\nofMPsegments=\count391
+\nofMParguments=\count392
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count392
-\MPscratchDim=\dimen370
-\MPnumerator=\count393
-\makeMPintoPDFobject=\count394
+\MPscratchCnt=\count393
+\MPscratchDim=\dimen372
+\MPnumerator=\count394
+\makeMPintoPDFobject=\count395
 \everyMPtoPDFconversion=\toks58
 ) (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1113,22 +1288,22 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(56.9055pt, 722.69992pt, 65.44142pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=540.60239pt
-* \textheight=722.69992pt
+* \textheight=702.78308pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=10.0pt
+* \topmargin=-41.0131pt
+* \headheight=18.125pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
+* \marginparwidth=49.79233pt
+* \marginparsep=12.8401pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1149,20 +1324,20 @@ Package caption Info: End \AtBeginDocument code.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 8.
-\c@lstlisting=\count395
-LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+\c@lstlisting=\count396
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 9.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10.
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 9.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 10.
  (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
@@ -1172,52 +1347,46 @@ LaTeX Warning: No \author given.
 LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 17.
 (C:\Users\remyr\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qhv.fd
 File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
-) [1
+)
+Underfull \hbox (badness 6808) in paragraph at lines 19--20
+[]\T1/qhv/m/n/12 Le vecteur ac-céléra-tion s'écrit dans le repère de Frenet :
+ []
 
-{C:/Users/remyr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+Underfull \hbox (badness 1052) in paragraph at lines 47--48
+[]|\T1/qhv/m/n/12 Force d'interaction grav-i-ta-tion-nelle
+ []
 
-[2]
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[]|$\OML/cmm/m/it/12 G \OT1/cmr/m/n/12 =
+ []
+
+[1
+
+
+{C:/Users/remyr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [2]
 <Ressources/TSPE_C6_Fig2.png, id=50, 553.06625pt x 388.45125pt>
 File: Ressources/TSPE_C6_Fig2.png Graphic file (type png)
 <use Ressources/TSPE_C6_Fig2.png>
 Package pdftex.def Info: Ressources/TSPE_C6_Fig2.png  used on input line 104.
 (pdftex.def)             Requested size: 162.18236pt x 113.91048pt.
 
-Overfull \hbox (2.02573pt too wide) in paragraph at lines 94--106
+Overfull \hbox (2.22pt too wide) in paragraph at lines 94--106
 $[]$ $[]$ 
  []
 
+[3]
 File: Ressources/TSPE_C6_Fig2.png Graphic file (type png)
 <use Ressources/TSPE_C6_Fig2.png>
 Package pdftex.def Info: Ressources/TSPE_C6_Fig2.png  used on input line 112.
 (pdftex.def)             Requested size: 162.18236pt x 113.91048pt.
 
-Overfull \hbox (2.02573pt too wide) in paragraph at lines 107--114
+Overfull \hbox (2.22pt too wide) in paragraph at lines 107--114
 $[]$ $[]$ 
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[3 <./Ressources/TSPE_C6_Fig2.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[4] 
+[4 <./Ressources/TSPE_C6_Fig2.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (TSPE_C13_Cours.aux)
  ***********
@@ -1226,15 +1395,15 @@ L3 programming layer <2023-10-10>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 52265 strings out of 474823
- 1298740 string characters out of 5750955
- 1939043 words of memory out of 5000000
- 73546 multiletter control sequences out of 15000+600000
- 607623 words of font info for 101 fonts, out of 8000000 for 9000
+ 55169 strings out of 474823
+ 1370965 string characters out of 5750955
+ 2118372 words of memory out of 5000000
+ 76427 multiletter control sequences out of 15000+600000
+ 609246 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,26n,115p,538b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/esvect/vect10.pfb>
-Output written on TSPE_C13_Cours.pdf (4 pages, 195785 bytes).
+ 118i,26n,120p,11021b,695s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Users/remyr/AppData/Local/Programs/MiKTeX/fonts/type1/public/esvect/vect10.pfb>
+Output written on TSPE_C13_Cours.pdf (4 pages, 196871 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
