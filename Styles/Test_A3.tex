@@ -1,0 +1,75 @@
+\documentclass[12pt]{scrartcl}
+\usepackage{../../Styles/A3}
+
+\newcommand{\chnum}{Chapitre 15}
+\newcommand{\chtitle}{Etudes énergétiques en mécanique}
+\newcommand{\dtype}{DS}
+
+
+\begin{document}
+\begin{multicols}{2}
+\title{DS Solutions aqueuses et son}
+\begin{minipage}{.4\linewidth}
+    NOM :
+\end{minipage}
+\begin{minipage}{.4\linewidth}
+    Prénom :
+\end{minipage}
+\begin{minipage}{.2\linewidth}
+    Classe :
+\end{minipage}\\
+
+\begin{tabular}{p{.7\linewidth}|p{.22\linewidth}}
+    \hline
+    Observations : \vspace{3em}& Note \\
+    \hline
+\end{tabular}\\
+
+\section{Exercice 1 : Une pincée de sel}
+\begin{minipage}{.48\linewidth}
+    On souhaite préparer une solution saline utilisable comme eau physiologique pour bttoyer les yeux ou les plaies en cas de contact avec des substances dangereuses.\\
+L'eau physiologique commerciale est une solution aqueuse de chlorure de sodium (\ce{Na+} ; \ce{Cl-}) de concentration en masse $\gamma = \SI{9,00}{\gram\per\liter}$.
+\end{minipage}
+\begin{minipage}{.5\linewidth}
+    Matériel disponible au laboratoire
+    \begin{itemize}
+        \item balance
+        \item pipette graduée de 25 mL
+        \item fioles jaugées de 250, 500, 750 et 1000 mL
+        \item chlorure de sodium pur en poudre
+        \item spatules
+        \item coupelles de pesée
+        \item eau distillée
+    \end{itemize}
+\end{minipage}
+
+\begin{tabular}{m{.8\linewidth}|m{.18\linewidth}}
+    1. Définir les termes "solution aqueuse" et "concentration en masse". & /2\\
+    2. On souhaite préparer 500 mL d'eau physiologique. Ecrire un protocole permettant de réaliser cette solution. Noter les calculs nécessaires. & /4\\
+    3. On se rend compte que dans un des placards du laboratoire, on dispose d'un bidon de 2 L d'une solution de chlorure de sodium de concentration $\gamma_0 = \SI{450}{\gram\per\liter}$. Nommer la méthode employée puis écrire un protocole permettant de préparer 500 mL d'eau physiologique à partir de cette slution concentrée & /4\\
+\end{tabular}
+
+\section{Exercice 2 : Back to Bach}
+Un pianiste décide de jouer une pièce d'un auteur Allemand connu. Pour cela il voudrait tout d'abord vérifier que le piano qu'il utilise est correctement accordé. Il utilise un microphone et un logiciel pour visualiser le signal sonore amis par la touche "Do4" du piano dont la fréquence devrait être 554 Hz.
+Le logiciel affiche l'écran suivant :\\
+
+\begin{tikzpicture}{transform shape, scale = 2}
+    \draw[-Latex, thick] (0,0) -- (11,0);
+    \draw[-Latex, thick] (0,-2) -- (0,2);
+    \draw[dashed, gray] (0,-2) grid(10,2);
+
+    \draw[domain = 0:10, samples = 500, blue, thick] plot (\x,{1.9*sin(2.8*\x r)});
+
+    \foreach \k in {1,...,10}{
+        \draw (\k,-.1) -- (\k,.1);
+        %1ms par tiret
+        \draw (\k,0) node[below] {\k};
+    }
+
+    \foreach \k in {-1.5,-1,...,1.5}{
+        \draw (-.1,\k) -- (.1,\k);
+        \draw (0,\k) node[left] {\k};
+    }
+\end{tikzpicture}
+\end{multicols}
+\end{document}
