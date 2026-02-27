@@ -1,0 +1,99 @@
+\documentclass[a4paper,11pt,fleqn]{scrartcl}
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 8}
+\newcommand{\chtitle}{De la structure à la polarité d'une entité}
+\newcommand{\dtype}{cours}
+
+
+\begin{document}
+    \maketitle
+\section{Etablir un schéma de Lewis}
+    \subsection{Les règles du duet et de l'octet}
+    Dans une molécule, chaque atome respecte la règle du duet ou la règle de l'octet. Les formuules de Lewis des molécules permettent de vérifier le respect de ces règles en comptabilisant les électrons des liaisons covalentes et des doublets non-liants pour chaque atome de la molécule.
+    \subsection{Etablie un schéma de Lewis}
+    La méthode suivante permet d'établir en 4 étapes le schéma de Lewis d'une molécule :
+    \begin{cours}
+    \begin{itemize*}
+        \item Ecrire la configuration électronique de chaque atome
+        \item Déterminer le nombre total d'électrons de valence $n_t$ mis en jeu dans la molécule étidiée.
+        \item Déterminer le nombre de doublets d'électrons (impliqués dans des liaisons ou des doublets non liants) en divisant le nombre $n_t$ par deux.
+        \item Répartir les doublets en respectant les règles du duet (pour H) et de l'octet pour les autres atomes. Chaque atome forme un nombre de liaisons covalentes égal au nombre d'électrons manquant pour respecter la règle de l'octet ou du duet.
+    \end{itemize*}
+    \end{cours}
+
+    \begin{exemple}
+    Pour la molécule d'amoniac \ce{NH3}
+    \begin{center}
+        \begin{tabular}{|m{.2\linewidth}|m{.15\linewidth}|m{.15\linewidth}|m{.15\linewidth}|m{.15\linewidth}|}
+            \hline
+            \textbf{Molécule} & \multicolumn{4}{c|}{\ce{NH3}}\\
+            \hline
+            \textbf{Atomes} & H & H & H & N\\
+            \hline
+            \textbf{Configuration électronique}& & & & \\
+            \hline
+            \textbf{Electrons de valence} & & & & \\
+            \hline
+            \textbf{Electrons manquants pour respecter la règle} & & & & \\
+            \hline
+            $n_t$ &  \multicolumn{4}{c|}{}\\
+            \hline
+            \textbf{Nombre de doublets} &  \multicolumn{4}{c|}{}\\
+            \hline
+            \textbf{Répartition et nature des doublets} &  \multicolumn{4}{c|}{}\\
+            \hline
+        \end{tabular}
+    \end{center}
+    \end{exemple}
+    \subsection{Pour aller plus loin : les acides de Lewis}
+    Les atomes porteurs d'une lacune électronique ne respectent pas la règle de l'octet ou du duet et sont donc susceptibles de créer une liaison covalente avec un doublet non-liant d'une autre molécule.
+    \begin{exemple}
+        La molécule de borane \ce{BH3} :\\
+        \vspace{4em}
+    \end{exemple}
+
+\section{La géométrie spatiale des molécules}
+    \subsection{Géométrie d'une molécule}
+    On peut prévoir la géométrie d'une entité chimique à partir de sa structure de Lewis. Autour d'un atome qualifié de "central", les doublets liants, ou doublets des liaisons covalentes, et les doublets non-liants s'écartent au maximum les uns des autres afin de minimiser les forces de répulsion électrostatique.\\
+    Les réométries adoptées sont des formes géométriques simples :
+    \begin{center}
+        \begin{tabular}{|m{.2\linewidth}|m{.2\linewidth}|m{.2\linewidth}|m{.2\linewidth}|}
+            \hline
+            \textbf{Nombre de liaison (simples ou doubles) et de doublets liants}  & \textbf{Géométrie autour de l'atome central} & \textbf{Répartition spatiale} & \textbf{Exemple}\\
+            \hline
+            2 liaisons simples & Linéaire & & \\
+            \hline
+            2 liaisons simples et une liaison double & Plane trigonale  & & \\
+            \hline
+            4 liaisons simples & Tétraédrique & & \\
+            \hline
+            5 liaisons simples & Bipyramide trogonale & & \\
+            \hline
+            6 liaisons simples & Octaèdre & & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \begin{exemple}
+        A partir de la représentation de Lewis de la molécule d'ammoniac (\ce{NH3}), indiquer la géométrie adoptée.\\
+        \vspace{5em}
+    \end{exemple}
+
+\section{Polarité des molécules}
+    \subsection{Electronégativité et polarisation}
+    L'électronégativité d'un atome, notée par la lettre grecque $\chi$ (khi) traduit son aptitude à attirer à lui les électrons d'une liaison dans laquelle il est engagé. Cette grandeur sans unité varie en fonction de la place de l'élément chimique dans le tableau périodique.\\
+    Dans une liaison covalente entre deux atomes $A$ et $B$, si l'atome $A$ est plus électronégatif que l'atome $B$, la liaison $A-B$ est dite polarisée. On calculera alors $\Delta \chi$, la différence d'électronégativité  : $$\Delta \chi = \chi(A) - \chi(B) $$
+    Si $\Delta \chi >0.5$ alors la liaison sera considérée comme polarisée. Elle est alors notée $A^{\delta +} - B^{\delta -}$.\\
+    Les symboles $\delta +$ et $\delta -$ traduisent les charges partielles portées par les atomes de cette liaison covalente : $A$ étnt plus électronégatif, il porte une charge partielle négative notée $\delta -$, et $B$ porte une charge partielle notée  $\delta +$.
+
+    \subsection{Prévoir la polarité d'une molécule}
+    Une molécule peut être polaire si elle comporte au moins une liaison polarisée :
+    \begin{itemize}
+        \item si elle ne comporte qu'une liaison polarisée, elle est alors nécessairement polaire
+        \item si elle comporte plusieurs liaisons polarisées, il faut alors étudier la géométrie de cette molécule pour s'assurer que la polarisation des liaisons ne se compense pas.
+    \end{itemize}
+    \begin{exemple}
+        Polarité des molécules d'eau et de dioxyde de carbone :\\
+        \vspace{10em}
+    \end{exemple}
+\end{document}
