@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 \usepackage{../../Styles/Exercice}
 
 
@@ -47,7 +47,7 @@ La charge d'un condensateur se fait avec un courant d'intensité constante $I$ =
 	On étudie la décharge du condensateur de capacité $C$ = \SI{1,0}{\farad} à travers une résistance $R$ = \SI{330}{\ohm}. À $t$ = \SI{0}{\second}, on ferme l'interrupteur $K$ et la décharge débute.
 %\end{minipage}
 \begin{center}%{.3\linewidth}
-	 \begin{circuitikz}[scale=1.5]
+	 \begin{circuitikz}[scale=1.3]
 		\draw (0,0)
 		to [nos,l=$K$] ++(2,0)
 		to [short] ++ (0,-2)
@@ -57,7 +57,6 @@ La charge d'un condensateur se fait avec un courant d'intensité constante $I$ =
 		\foreach \k in {-.3,-.1,.1,.3}{\node[above] at (\k,-.9){\footnotesize +}; \node[above] at (\k,-1.4){\footnotesize -};}
 	\end{circuitikz}	
 \end{center}
-
 \begin{enumerate}
 	\item Établir l'équation différentielle vérifiée par $u_C(t)$ pendant la décharge et montrer qu'elle peut s'écrire sous la forme $\dfrac{du_C}{dt}+\dfrac{1}{\tau}\cdot u_C =0$ où $\tau = RC$ est le temps caractéristique du circuit.
 	\item Montrer que $u_C(t)=U_0\cdot e^{-\dfrac{t}{\tau}}$ est la solution de l'équation différentielle précédente.
@@ -130,7 +129,7 @@ Après avoir mis sous tension l'alarme d'un appartement il faut pouvoir disposer
 \end{center}
 
 La mise sous tension de l'alarme correspond à la fermeture de l'interrupteur $K$. Le circuit de commande de la sirène est tel qu'à la fermeture de la porte de l'appartement, le condensateur est mis en court-circuit (ses armatures sont alors reliées par un fil conducteur non représenté sur le schéma).
-	\subsection{Étude de la charge du condensateur dans le circuit RC}
+	\textbf{Étude de la charge du condensateur dans le circuit RC}\\
 	%\begin{minipage}{.5\linewidth}
 		Pour étudier la charge du condensateur de capacité $C$, on enregistre l'évolution de la tension $u_{AB}=f(t)$ entre ses bornes à l'aide d'une interface d'acquisition reliée à un ordinateur. Le circuit de commande de la sirène n'est pas relié au condensateur lors de cette expérience. L'acquisition commence lors de la fermeture de l'interrupteur $K$, le condensateur étant préalablement déchargé. La courbe $u_{AB}=f(t)$ obtenue est représentée ci-dessous.
 	%\end{minipage}
@@ -157,7 +156,7 @@ La mise sous tension de l'alarme correspond à la fermeture de l'interrupteur $K
 		\item Reproduire le schéma du montage et indiquer les branchements de l'interface pour visualiser $u_{AB}=f(t)$.
 		\item Déterminer la valeur de temps caractéristique $\tau$ de ce circuit et vérifier que cette valeur est en accord avec les caractéristiques du circuit.
 	\end{enumerate}
-	\subsection{Déclenchement de l'alarme}
+	\textbf{Déclenchement de l'alarme}\\
 	Ce circuit commande une sirène qui se déclenche dès que la tension aux bornes du condensateur atteint la valeur de \SI{8,0}{\volt}.
 	\begin{enumerate}
 		\item À l'aide de la courbe $u_{AB}=f(t)$ donnée, déterminer la durée $\Delta t$ dont dispose l'habitant pour quitter l'appartement et fermer la porte.
@@ -240,7 +239,7 @@ Les accéléromètres capacitifs sont des systèmes à réponse très rapides en
 	\end{tikzpicture}
 \end{minipage}
 
-	\subsection*{Questions}
+	\textbf{Questions}
 \begin{enumerate}
 	\item \textbf{Comportement de l'accéléromètre en dehors de chocs}\\
 	La mise sous tension de l'accéléromètre revient à fermer l'interrupteur $K$ du montage modélisant le dispositif représenté sur le \textbf{Document 2}.\\
