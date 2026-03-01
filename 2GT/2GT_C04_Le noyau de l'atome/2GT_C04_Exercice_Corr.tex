@@ -1,0 +1,66 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{/home/rweye/Nextcloud/Documents/Overleaf/Styles/Exercice}
+
+
+\newcommand{\chnum}{Chapitre 4}
+\newcommand{\chtitle}{Le noyau de l'atome}
+\newcommand{\dtype}{Correction d'exercices}
+
+\begin{document}
+\maketitle
+\textbf{Le bouclier de Captain America}
+\begin{enumerate}
+    \item Calcul du volume du bouclier :
+$$V = \pi r^2 h = \pi \times (\dfrac{76}{2})^2 \times 0,5 \approx \SI{2270}{\centi\meter\cubed}$$
+Le bouclier de Captain America a un volume d'environ \SI{2270}{\centi\meter\cubed}.
+    \item Détermination du prix brut du bouclier :
+\end{enumerate}
+    \begin{itemize}
+        \item Calcul de la masse du bouclier :
+$$m = \rho \cdot V = \SI{7,13}{\gram\per\centi\meter\cubed} \times \SI{2270}{\centi\meter\cubed} \approx \SI{16170}{\gram}$$
+        \item  Calcul des  masses atommiques pour les différents éléments de l'alliage :
+    \end{itemize}
+    \noindent\begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Élément} & \textbf{A} & \textbf{Masse (g)}\\
+    \hline \ce{Fe} & 56 & \SI{9,35E-23}{\gram}\\
+    \hline \ce{Mn} & 55 & \SI{9,19E-23}{\gram}\\
+    \hline \ce{Co} & 52 & \SI{8,68E-23}{\gram}\\
+    \hline \ce{Cr} & 52 & \SI{8,68E-23}{\gram}\\
+    \hline \ce{Si} & 28 & \SI{4,68E-23}{\gram}\\
+    \hline
+\end{tabular}
+\begin{itemize}
+    \item Calcul du pourcentage massique de chaque élément dans l'alliage :
+\end{itemize}
+\noindent\begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Élément} & \textbf{Nombre formule} & \textbf{Masse dans l'alliage (g)} & \textbf{Pourcentage massique (\%)}\\
+    \hline \ce{Fe} & 42 & $42 \times \SI{9,35E-23}{\gram} = \SI{3,93E-21}{\gram}$ & $\dfrac{\SI{3,93E-21}{\gram}}{\sum \text{masses}} \times 100 = \SI{39,02}{\percent}$\\
+    \hline \ce{Mn} & 28 & $28 \times \SI{9,19E-23}{\gram} = \SI{2,57E-21}{\gram}$ & $\dfrac{\SI{2,57E-21}{\gram}}{\sum \text{masses}} \times 100 = \SI{25,55}{\percent}$\\
+    \hline \ce{Co} & 18 & $18 \times \SI{8,68E-23}{\gram} = \SI{1,56E-21}{\gram}$ & $\dfrac{\SI{1,56E-21}{\gram}}{\sum \text{masses}} \times 100 = \SI{15,53}{\percent}$\\
+    \hline \ce{Cr} & 15 & $15 \times \SI{8,68E-23}{\gram} = \SI{1,30E-21}{\gram}$ & $\dfrac{\SI{1,30E-21}{\gram}}{\sum \text{masses}} \times 100 = \SI{12,94}{\percent}$\\
+    \hline \ce{Si} & 15 & $15 \times \SI{4,68E-23}{\gram} = \SI{7,02E-22}{\gram}$ & $\dfrac{\SI{7,02E-22}{\gram}}{\sum \text{masses}} \times 100 = \SI{6,97}{\percent}$\\
+    \hline
+    \textbf{Sommes} & & $\sum \text{masses} = \SI{1,01E-20}{\gram}$ & 100\%\\
+    \hline
+\end{tabular}
+\begin{itemize}
+    \item Calcul du prix de chaque élément dans le bouclier :
+\end{itemize}
+    \noindent\begin{tabular}{|c|c|c|c|c|}
+    \hline 
+    \textbf{Élément} & \textbf{Pourcentage} & \textbf{Masse dans le bouclier (g)} & \textbf{Prix par tonne (\$)} & \textbf{Prix total (\$)}\\
+    \hline \ce{Fe} & \SI{39,02}{\percent} & $\SI{16170}{\gram} \times \dfrac{\SI{39,02}{\percent}}{100} = \SI{6308}{\gram}$ & 57 & $\dfrac{\SI{6308}{\gram}}{\SI{1E6}{\gram}} \times 57 = \SI{0,360}{\$}$\\
+    \hline \ce{Mn} & \SI{25,55}{\percent} & $\SI{16170}{\gram} \times \dfrac{\SI{25,55}{\percent}}{100} = \SI{4135}{\gram}$ & 1600 & $\dfrac{\SI{4135}{\gram}}{\SI{1E6}{\gram}} \times 1600 = \SI{6,62}{\$}$\\
+    \hline \ce{Co} & \SI{15,53}{\percent} & $\SI{16170}{\gram} \times \dfrac{\SI{15,53}{\percent}}{100} = \SI{2512}{\gram}$ & 25000 & $\dfrac{\SI{2512}{\gram}}{\SI{1E6}{\gram}} \times 25000 = \SI{62,80}{\$}$\\
+    \hline \ce{Cr} & \SI{12,94}{\percent} & $\SI{16170}{\gram} \times \dfrac{\SI{12,94}{\percent}}{100} = \SI{2092}{\gram}$ & 7100 & $\dfrac{\SI{2092}{\gram}}{\SI{1E6}{\gram}} \times 7100 = \SI{14,85}{\$}$\\
+    \hline \ce{Si} & \SI{6,97}{\percent} & $\SI{16170}{\gram} \times \dfrac{\SI{6,97}{\percent}}{100} = \SI{1128}{\gram}$ & 1600 & $\dfrac{\SI{1128}{\gram}}{\SI{1E6}{\gram}} \times 1600 = \SI{1,80}{\$}$\\
+    \hline
+    \textbf{Total} & 100\% & \SI{16170}{\gram} & & $\sum \text{prix} = \SI{85,57}{\$}$\\
+    \hline
+\end{tabular}\\
+    Le prix brut du bouclier de Captain America serait d'environ \SI{85,57}{\$}. Bien sûr, ce prix ne prend pas en compte les coûts de fabrication, de recherche et développement, ni la valeur symbolique du bouclier dans l'univers Marvel, qui pourraient considérablement augmenter son prix sur le marché.
+
+
+\end{document}
