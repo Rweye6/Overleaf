@@ -29,28 +29,28 @@
              & $\lambda = a \cdot \dfrac{L}{2D}$ soit $L = 2 \lambda \cdot \dfrac{D}{a}$ & \\
              & Donc $L = k \cdot \dfrac{1}{a}$ avec $k = 2 \lambda \cdot D$ & \\
              \hline
-            1.d & A partir du graphique, on détermine la valeur du coefficient directeur $k = \SI{1,27E-6}{\meter\squared}$. & /2\\
+            1.d & A partir du graphique, on détermine la valeur du coefficient directeur $k = \SI{2,5E-6}{\meter\squared}$. & /2\\
              & On en déduit la valeur de la longueur d'onde : & \\
-             & $\lambda = \dfrac{k}{2D} = \dfrac{\SI{1,27E-6}{\meter\squared}}{2 \cdot \SI{0,85}{\meter}} = \SI{7,47E-7}{\meter} = \SI{747}{nm}$ & \\
+             & $\lambda = \dfrac{k}{2D} = \dfrac{\SI{2,5E-6}{\meter\squared}}{2 \cdot \SI{2,00}{\meter}} = \SI{6,25E-7}{\meter} = \SI{625}{nm}$ & \\
              \hline
             1.e & L'incertitude absolue sur la longueur d'onde est : & /2\\
-             & $u(\lambda) = \lambda \cdot \sqrt{\left(\dfrac{u(D)}{D}\right)^2 + \left(\d      frac{u(k)}{k}\right)^2}$ & \\
-             & $u(\lambda) = \SI{747}{nm} \cdot \sqrt{\left(\dfrac{\SI{0,01}{m}}{\SI{0,85}{m}}\right)^2 + \left(\dfrac{\SI{1,2E-7}{\meter\squared}}{\SI{1,27E-6}{\meter\squared}}\right)^2} \approx \SI{10}{nm}$ & \\
-             & La valeur de la longueur d'onde avec son incertitude est : $\lambda = \SI{747 \pm 10}{nm}$. & \\
+             & $u(\lambda) = \lambda \cdot \sqrt{\left(\dfrac{u(D)}{D}\right)^2 + \left(\dfrac{u(k)}{k}\right)^2}$ & \\
+             & $u(\lambda) = \SI{625}{nm} \cdot \sqrt{\left(\dfrac{\SI{0,01}{m}}{\SI{2,00}{m}}\right)^2 + \left(\dfrac{\SI{1,2E-7}{\meter\squared}}{\SI{2,5E-6}{\meter\squared}}\right)^2} \approx \SI{10}{nm}$ & \\
+             & La valeur de la longueur d'onde avec son incertitude est : $\lambda = \SI{625 \pm 10}{nm}$. & \\
              & Pour le z-score, on choisit la valeur théorique $\lambda_{th} = \SI{635}{nm}$ & \\
-             & $z = \dfrac{|\lambda_{exp} - \lambda_{th}|}{u(\lambda)} = \dfrac{|\SI{747}{nm} - \SI{635}{nm}|}{\SI{10}{nm}} = 11,2$ & \\
-             & Comme $z > 2$, la valeur expérimentale n'est pas en accord avec la valeur théorique. & \\
+             & $z = \dfrac{|\lambda_{exp} - \lambda_{th}|}{u(\lambda)} = \dfrac{|\SI{625}{nm} - \SI{635}{nm}|}{\SI{10}{nm}} = 1$ & \\
+             & Comme $z < 2$, la valeur expérimentale est en accord avec la valeur théorique. & \\
              \hline
             2.a & Les grains de cacao sont assimilés à des sphères. Lorsqu'un faisceau laser rencontre une sphère, on observe une figure de diffraction similaire à celle obtenue avec un trou circulaire de même diamètre. & /2\\
              \hline
-            2.b & On repère sur le graphique la position du premier minimum d'intensité lumineuse : $\theta_0 \approx \SI{0,014}{rad}$. & /2\\
+            2.b & On repère sur le graphique la position du premier minimum d'intensité lumineuse : $\theta_0 \approx \SI{0,018}{rad}$. & /2\\
              & On utilise la relation : $\sin \theta_0 = \dfrac{1,22 \cdot \lambda}{a}$ & \\
-             & $a = \dfrac{1,22 \cdot \lambda}{\sin \theta_0} = \dfrac{1,22 \cdot \SI{635E-9}{m}}{\sin(\SI{0,014}{rad})} \approx \SI{5,53E-5}{m} = \SI{55,3}{\micro\meter}$ & \\
-             & Le diamètre moyen des grains de cacao est $a \approx \SI{55,3}{\micro\meter}$. & \\
+             & $a = \dfrac{1,22 \cdot \lambda}{\sin \theta_0} = \dfrac{1,22 \cdot \SI{635E-9}{m}}{\sin(\SI{0,018}{rad})} \approx \SI{4,30E-5}{m} = \SI{43,0}{\micro\meter}$ & \\
+             & Le diamètre moyen des grains de cacao est $a \approx \SI{43,0}{\micro\meter}$. & \\
              & Pour un chocolat de couverture, le diamètre moyen recommandé est $a_{th} = \SI{10}{\micro\meter}$. & \\
              & On calcule le z-score : & \\
              & $z = \dfrac{|a_{exp} - a_{th}|}{u(a)}$ avec $u(a) = \SI{5}{\micro\meter}$ & \\
-             & $z = \dfrac{|\SI{55,3}{\micro\meter} - \SI{10}{\micro\meter}|}{\SI{5}{\micro\meter}} = 9,06$ & \\
+             & $z = \dfrac{|\SI{43,0}{\micro\meter} - \SI{10}{\micro\meter}|}{\SI{5}{\micro\meter}} = 6,6$ & \\
              & Comme $z > 2$, on ne peut pas utiliser cet échantillon pour un chocolat de couverture. & \\
              \hline
         \end{tabular}

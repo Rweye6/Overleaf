@@ -5,6 +5,82 @@
 \newcommand{\chtitle}{De la structure à la polarité d'une entité}
 \newcommand{\dtype}{cours}
 
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\usetikzlibrary{calc}
+
+% --------- Liaison simple (inchangée) ----------
+\newcommand{\Bond}[6]%
+% start, end, thickness, incolor, outcolor, iterations
+{ \begin{pgfonlayer}{background}
+    \colorlet{InColor}{#4}
+    \colorlet{OutColor}{#5}
+    \foreach \I in {#6,...,1}
+    {   \pgfmathsetlengthmacro{\r}{#3/#6*\I}
+        \pgfmathsetmacro{\C}{sqrt(1-\r*\r/#3/#3)*100}
+        \draw[InColor!\C!OutColor, line width=\r]
+        (#1.center) -- (#2.center);
+    }
+  \end{pgfonlayer}
+}
+\newcommand{\SingleBond}[2]%
+{   \Bond{#1}{#2}{1mm}{white}{gray!50}{10} }
+% --------- Liaison double ----------
+\newcommand{\DoubleBond}[2]%
+% start, end
+{
+    % distance de séparation
+    \def\Offset{0.8mm}
+
+    % vecteur normal unitaire
+    \path let
+        \p1 = (#1.center),
+        \p2 = (#2.center),
+        \n1 = {veclen(\x2-\x1,\y2-\y1)}
+    in
+    coordinate (N) at ({-(\y2-\y1)/\n1},{(\x2-\x1)/\n1});
+
+    % deux liaisons décalées
+    \Bond{#1}{#2}{0.8mm}{white}{gray!50}{10}
+    \begin{pgfonlayer}{background}
+        \foreach \s in {-1,1}
+        {
+            \draw[line width=0.8mm, gray!60]
+            ($(#1.center)+\s*\Offset*(N)$) --
+            ($(#2.center)+\s*\Offset*(N)$);
+        }
+    \end{pgfonlayer}
+}
+
+% --------- Liaison triple ----------
+\newcommand{\TripleBond}[2]%
+% start, end
+{
+    \def\Offset{1mm}
+
+    \path let
+        \p1 = (#1.center),
+        \p2 = (#2.center),
+        \n1 = {veclen(\x2-\x1,\y2-\y1)}
+    in
+    coordinate (N) at ({-(\y2-\y1)/\n1},{(\x2-\x1)/\n1});
+
+    % liaison centrale
+    \Bond{#1}{#2}{0.7mm}{white}{gray!50}{10}
+
+    % deux liaisons latérales
+    \begin{pgfonlayer}{background}
+        \foreach \s in {-1,1}
+        {
+            \draw[line width=0.7mm, gray!60]
+            ($(#1.center)+\s*\Offset*(N)$) --
+            ($(#2.center)+\s*\Offset*(N)$);
+        }
+    \end{pgfonlayer}
+}
+
+
 
 \begin{document}
     \maketitle
@@ -62,15 +138,15 @@
             \hline
             \textbf{Nombre de liaison (simples ou doubles) et de doublets liants}  & \textbf{Géométrie autour de l'atome central} & \textbf{Répartition spatiale} & \textbf{Exemple}\\
             \hline
-            2 liaisons simples & Linéaire & & \\
+            2 liaisons & Linéaire & \rule{0pt}{3em} & \\
             \hline
-            2 liaisons simples et une liaison double & Plane trigonale  & & \\
+            2 liaisons simples et une liaison double & Plane trigonale  & \rule{0pt}{4em}& \\
             \hline
-            4 liaisons simples & Tétraédrique & & \\
+            4 liaisons simples & Tétraédrique & \rule{0pt}{4em}& \\
             \hline
-            5 liaisons simples & Bipyramide trogonale & & \\
+            5 liaisons simples & Bipyramide trogonale & \rule{0pt}{5em}& \\
             \hline
-            6 liaisons simples & Octaèdre & & \\
+            6 liaisons simples & Octaèdre & \rule{0pt}{5em} & \\
             \hline
         \end{tabular}
     \end{center}
@@ -97,3 +173,40 @@
         \vspace{10em}
     \end{exemple}
 \end{document}
+
+\begin{tikzpicture}
+[   oxygen/.style={circle, ball color=red, minimum size=6mm, inner sep=0},
+    hydrogen/.style={circle, ball color=white, minimum size=2.5mm, inner sep=0},
+    carbon/.style={circle, ball color=black!75, minimum size=7mm, inner sep=0}
+]
+    \node[oxygen] (O1) at (0,0) {};
+    \node[hydrogen] (H1) at (1,-0.5) {};
+    \node[hydrogen] (H2) at (-1,-0.5) {};
+    \SingleBond{O1}{H1}
+    \SingleBond{O1}{H2}
+
+    \foreach \c in {1,...,6}
+    {   \node[carbon] (C-\c) at ($(2,3)+(\c*60:1.5)$) {};
+        \node[hydrogen] (H-\c-a) at ($(2,3)+(\c*60-15:2.5)$) {};
+        \node[hydrogen] (H-\c-b) at ($(2,3)+(\c*60+15:2.5)$) {};
+        \SingleBond{C-\c}{H-\c-a}
+        \SingleBond{C-\c}{H-\c-b}
+    }
+    \foreach \c [evaluate={\c as \n using int(mod(\c,6)+1)}] in {1,...,6}
+    {   \SingleBond{C-\c}{C-\n}
+    }
+\end{tikzpicture}
+
+\begin{tikzpicture}
+[   oxygen/.style={circle, ball color=red, minimum size=6mm, inner sep=0},
+    hydrogen/.style={circle, ball color=white, minimum size=5mm, inner sep=0},
+    carbon/.style={circle, ball color=black!75, minimum size=7mm, inner sep=0}
+]
+    \node[carbon] (C1) at (0,0) {};
+    \node[hydrogen] (H1) at (-.75,.75) {};
+    \node[hydrogen] (H2) at (.75,.75) {};
+    \node[oxygen] (O) at (0,-1) {};
+    \SingleBond{C1}{H1}
+    \SingleBond{C1}{H2}
+    \DoubleBond{C1}{O}
+\end{tikzpicture}
