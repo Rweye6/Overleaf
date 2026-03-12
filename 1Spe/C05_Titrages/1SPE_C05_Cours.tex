@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
 \usepackage{../../Styles/Cours}
 
 
@@ -11,22 +11,22 @@
 \section{Rappels}
 Une solution est un mélange liquide homogène de deux ou plusieurs substances. La substance majoritaire d'une solution est appelée le solvant, les autres substances dispersées dans le solvant sont appelées les solutés.\\
 La quantité de matière $n$ d'un soluté de concentration $C$ dans une solution de volume $V$ est donnée par la relation : $n= C \cdot V$
-\begin{exercice}
-    On dissout une masse $m=\SI{10,0}{g}$ de chlorure de fer (III) dans de l'eau distillée afin d'obtenir un volume de solution $V = \SI{250}{mL}$ contenant du chlorure de fern (\ce{Fe^3+ ; Cl^-}).
+\begin{exemple}
+    On dissout une masse $m=\SI{10,0}{g}$ de chlorure de fer (III) dans de l'eau distillée afin d'obtenir un volume de solution $V = \SI{250}{mL}$ contenant du chlorure de fern (\ce{Fe^3+}; \ce{Cl-}).
     \begin{enumerate}
         \item Quel nom donne-t-on à une telle opération ?
         \item Déterminer la concentration en masse $\gamma$ de cette solution.
         \item Déterminer la concentration molaire $C$ de cette solution sachant que la masse molaire du chlorure de fer (III) est $M(\ce{FeCl3}) = \SI{162,5}{g.mol^{-1}}$.
     \end{enumerate}
-\end{exercice}
+\end{exemple}
 \section{Principe d'un titrage}
 Un titrahe, ou dosage, consiste à déterminer la concentration en quantité de matière $C$ ou la concentration en masse $\gamma$ d'un soluté dissout dans une solution.
 
-\begin{exercice}
+\begin{exemple}
     Soient A et B deux espèces chimiques pouvant réagir selon l'équation bilan : \ce{A + 2B -> AB2}.\\
     On précise que l'espèce B est jaune en solution aqueuse alors que les espèces \ce{A} et \ce{AB2} sont inclores.\\
     On place dans un bécher un volume $V_A = \SI{100}{mL}$ d'une solution aqueuse $S_A$ contennat une quantité de matière inconnue $n_A$ de l'espèce chimique \ce{A}.\\
-    On plmace ensuite, au-dessus du bécher, une burette graduée contenant une solution $S_B$ jaune de concentration en quantité de matière $C_B = \SI{0,0200}{mol.L^{-1}}$ de l'espèce chimique \ce{B}. Pour finir, on allume k'agitateur magnétique pour faire tourner un barreau aimanté placé dans le bécher.
+    On plmace ensuite, au-dessus du bécher, une burette graduée contenant une solution $S_B$ jaune de concentration en quantité de matière $C_B = \SI{0,0200}{mol.L^{-1}}$ de l'espèce chimique \ce{B}. Pour finir, on allume l'agitateur magnétique pour faire tourner un barreau aimanté placé dans le bécher.
     \begin{enumerate}
         \item Quel est le rôle du barreau aimanté ?
         \item On verse \SI{1,0}{mL} de la solution $S_B$ dans le bécher. Le volume introduit se décolore instantanémant en se mélangeant à la solution $S_A$. Expliquer cette observation.
@@ -36,8 +36,30 @@ Un titrahe, ou dosage, consiste à déterminer la concentration en quantité de 
         \item Déterminer alors la quantité de matière $n_B$ introduire dans le bécher pou observer cette coloration persistante.
         \item En déduire la quantité de matière $n_A$ initialement présente dans le bécher.
         \item Déterminer alors la concentration en quantité de matière $C_A$ en espèce \ce{A} de la solution $S_A$.
-        \item Pourquoir peut-on qualifier ce type de titrage de solorimétrique ?
+        \item Pourquoir peut-on qualifier ce type de titrage de colorimétrique ?
     \end{enumerate}
-\end{exercice}
+\end{exemple}
+
+\begin{cours}
+    Titrer une espèce chimique revient à déterminer la quantité de matière ou la concentration en quantité de matière de cette espèce chimique en solution grâce à une transformation chimique. Lors d’un titrage, une solution de concentration en quantité de matière connue est ajoutée progressivement à la solution à titrer.\\
+    L’espèce chimique de concentration inconnue est appelée réactif titré. L’espèce chimique de concentration connue est appelée réactif titrant.\\
+    Pour déterminer la concentration du réactif titré, un échantillon de cette solution est prélevé avec de la verrerie de précision (pipette jaugée et pro pipette) et placé dans un erlenmeyer ou un bécher. La solution titrante est ensuite ajoutée progressivement à l’aide d’une burette graduée.\\
+    La transformation chimique ayant lieu entre les réactifs titrant et titré est modélisée par une réaction de titrage qui doit être :\begin{itemize}
+        \item Totale
+        \item Rapide
+        \item Spécifique de l’espèce titrée (seule l’espèce titrée réagit)
+    \end{itemize}
+\end{cours}
+    \subsection{Evolution des quantités de matière}
+    Le réactif titrant réagit immédiatement et totalement avec le réactif titré. Ainsi la quantité de matière de réactif titré diminue à chaque ajout jusqu’à devenir nulle.
+    \begin{exemple}
+        \textbf{Exemple du titrage des ions \ce{Fe^2+} par une solution titrante de \ce{MnO4-}}
+        \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+                \hline
+                \multicolumn{2}{|c|}{\textbf{Équation chimique}} & \ce{5 Fe^2+ (aq)} & + \ce{MnO4- (aq)} & + \ce{8 H+ (aq)} & $\rightarrow$ & \ce{5 Fe^3+ (aq)} & + \ce{Mn^2+ (aq)} & + \ce{4 H2O (l)}\\
+            \end{tabular}
+        \end{center}
+    \end{exemple}
 
 \end{document}
