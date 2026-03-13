@@ -1,0 +1,425 @@
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
+
+
+\newcommand{\chnum}{Chapitre 14}
+\newcommand{\chtitle}{Modélisation de l'écoulement d'un fluide}
+\newcommand{\dtype}{Exercices}
+  
+\begin{document}
+\section*{Corrigé}
+
+\section{Comprendre le déplacement vertical des poissons}
+
+\begin{enumerate}
+\item Lorsque le poisson gonfle ou dégonfle sa vessie natatoire, la grandeur physique qui varie est le \textbf{volume} du poisson. Sa masse reste pratiquement constante mais son volume change.
+
+\item Bilan des forces exercées sur un poisson immobile dans l'eau :
+\begin{itemize}
+\item son \textbf{poids} $\vec{P}=m\vec{g}$ dirigé vers le bas ;
+\item la \textbf{poussée d'Archimède} $\vec{F_A}$ dirigée vers le haut.
+\end{itemize}
+
+À l'équilibre (poisson immobile) :
+
+\[
+F_A = P
+\]
+
+Si le poisson gonfle sa vessie natatoire, son volume augmente. La poussée d'Archimède
+
+\[
+F_A = \rho_{eau} g V
+\]
+
+augmente donc également. On obtient alors :
+
+\[
+F_A > P
+\]
+
+La résultante des forces est dirigée vers le haut : le poisson \textbf{remonte}.
+\end{enumerate}
+
+\section{Calculer une norme}
+
+\begin{enumerate}
+
+\item La poussée d'Archimède vaut :
+
+\[
+F_A = \rho_{eau} g V
+\]
+
+Avec :
+
+\[
+\rho_{eau}= \SI{1000}{kg.m^{-3}}, \quad g=\SI{9,81}{m.s^{-2}}, \quad V=\SI{2,0}{m^3}
+\]
+
+\[
+F_A = 1000 \times 9,81 \times 2,0
+\]
+
+\[
+F_A = \SI{1,96e4}{N}
+\]
+
+La poussée d'Archimède exercée sur la barque vaut donc environ :
+
+\[
+F_A \approx \SI{2,0e4}{N}
+\]
+
+\item La poussée d'Archimède provient du fait que la pression du fluide augmente avec la profondeur.  
+La pression exercée sur la partie inférieure de l'objet immergé est donc plus grande que celle exercée sur sa partie supérieure.  
+Cette différence de pression crée une force résultante verticale dirigée vers le haut.
+\end{enumerate}
+
+\section{Calculer un débit volumique}
+
+\begin{enumerate}
+
+\item Le débit volumique est défini par :
+
+\[
+Q = \frac{V}{\Delta t}
+\]
+
+\[
+V=\SI{1,5}{L}= \SI{1,5e-3}{m^3}
+\]
+
+\[
+\Delta t = \SI{60}{s}
+\]
+
+\[
+Q=\frac{1,5\times10^{-3}}{60}
+\]
+
+\[
+Q=\SI{2,5e-5}{m^3.s^{-1}}
+\]
+
+\item La relation entre débit et vitesse est :
+
+\[
+Q = S v
+\]
+
+avec
+
+\[
+S = \SI{1,0}{cm^2} = \SI{1,0e-4}{m^2}
+\]
+
+\[
+v = \frac{Q}{S}
+\]
+
+\[
+v = \frac{2,5\times10^{-5}}{1,0\times10^{-4}}
+\]
+
+\[
+v = \SI{0,25}{m.s^{-1}}
+\]
+
+La vitesse d'écoulement de l'eau est donc :
+
+\[
+v = \SI{0,25}{m.s^{-1}}
+\]
+
+\end{enumerate}
+
+\section{Calculer une dépression}
+
+\begin{enumerate}
+
+\item Équation de continuité :
+
+\[
+Q = S_1 v_1 = S_2 v_2
+\]
+
+\[
+v_2 = \frac{S_1}{S_2} v_1
+\]
+
+\[
+v_2 = \frac{2,0}{1,0} \times 5,0
+\]
+
+\[
+v_2 = \SI{10}{m.s^{-1}}
+\]
+
+\item Équation de Bernoulli pour un écoulement horizontal :
+
+\[
+P_1 + \frac12 \rho v_1^2 = P_2 + \frac12 \rho v_2^2
+\]
+
+On obtient :
+
+\[
+P_1 - P_2 = \frac12 \rho (v_2^2 - v_1^2)
+\]
+
+\[
+P_1 - P_2 = \frac12 \times 1,2 \times (10^2 - 5^2)
+\]
+
+\[
+P_1 - P_2 = 0,6 \times 75
+\]
+
+\[
+P_1 - P_2 = \SI{45}{Pa}
+\]
+
+La dépression vaut donc :
+
+\[
+\Delta P = \SI{45}{Pa}
+\]
+
+\end{enumerate}
+
+\section{Calculer une vitesse d'éjection de vidange}
+
+On applique le théorème de Bernoulli entre la surface libre et l'orifice.
+
+La pression est atmosphérique aux deux points et la vitesse de la surface est négligeable.
+
+On obtient la \textbf{loi de Torricelli} :
+
+\[
+v = \sqrt{2 g h_0}
+\]
+
+Avec :
+
+\[
+h_0=\SI{1,0}{m}
+\]
+
+\[
+v = \sqrt{2\times 9,81 \times 1,0}
+\]
+
+\[
+v = \sqrt{19,62}
+\]
+
+\[
+v \approx \SI{4,4}{m.s^{-1}}
+\]
+
+\section{Siphon}
+
+\begin{enumerate}
+
+\item Comme $s << \Sigma$, le débit étant conservé :
+
+\[
+Q = s v_C = \Sigma v_D
+\]
+
+Donc :
+
+\[
+v_D << v_C
+\]
+
+La vitesse au point $D$ est donc \textbf{négligeable} devant celle au point $C$.
+
+\item Bernoulli entre $D$ et $C$ :
+
+\[
+P_a + \rho g z_D = P_a + \frac12 \rho v_C^2 + \rho g z_C
+\]
+
+\[
+\frac12 \rho v_C^2 = \rho g (z_D - z_C)
+\]
+
+\[
+v_C = \sqrt{2 g (z_D - z_C)}
+\]
+
+\[
+z_D - z_C = 0,60 - (-0,10) = 0,70
+\]
+
+\[
+v_C = \sqrt{2\times 9,81\times0,70}
+\]
+
+\[
+v_C \approx \SI{3,7}{m.s^{-1}}
+\]
+
+Condition d'écoulement :
+
+\[
+z_D > z_C
+\]
+
+\item Pression au point $A$
+
+Bernoulli entre $D$ et $A$ :
+
+\[
+P_a + \rho g z_D = P_A + \frac12 \rho v_A^2 + \rho g z_A
+\]
+
+avec $v_A = v_C$.
+
+On obtient :
+
+\[
+P_A = P_a + \rho g (z_D - z_A) - \frac12 \rho v_C^2
+\]
+
+Pression au point $B$ :
+
+\[
+P_B = P_a + \rho g (z_D - z_B) - \frac12 \rho v_C^2
+\]
+
+\item Pour amorcer le siphon, il faut \textbf{remplir le tube d'eau} afin d'éviter la présence d'air.
+
+La hauteur du point $B$ ne peut pas être quelconque.  
+Si $B$ est trop haut, la pression $P_B$ devient trop faible et peut atteindre la pression de vapeur de l'eau : des bulles apparaissent et le siphon cesse de fonctionner.
+\end{enumerate}
+
+\section{Tube de Venturi — Corrigé}
+
+\begin{enumerate}
+
+\item \textbf{Différence de pression entre les positions 1 et 2}
+
+\textbf{a) Expression en fonction de la différence de niveaux $h$}
+
+Dans le tube en U, les fluides sont au repos : on applique la relation fondamentale de l'hydrostatique.
+
+La différence de pression entre les points 1 et 2 est liée à la différence de niveaux du mercure :
+
+\[
+P_1 - P_2 = (\rho_{\ce{Hg}}-\rho_{eau}) g h
+\]
+
+Cette relation tient compte du fait que les deux branches contiennent au-dessus du mercure de l'eau.
+
+\bigskip
+
+\textbf{b) Expression en fonction du débit volumique}
+
+On applique l'équation de Bernoulli entre les sections 1 et 2 du tube de Venturi (écoulement horizontal) :
+
+\[
+P_1 + \frac12 \rho_{eau} v_1^2
+=
+P_2 + \frac12 \rho_{eau} v_2^2
+\]
+
+d'où :
+
+\[
+P_1 - P_2 = \frac12 \rho_{eau}(v_2^2-v_1^2)
+\]
+
+Le débit volumique est constant :
+
+\[
+D_V = S_1 v_1 = S_2 v_2
+\]
+
+avec
+
+\[
+S = \frac{\pi d^2}{4}
+\]
+
+Donc
+
+\[
+v_1 = \frac{D_V}{S_1}, \qquad v_2 = \frac{D_V}{S_2}
+\]
+
+On obtient :
+
+\[
+P_1-P_2 =
+\frac12 \rho_{eau} D_V^2
+\left(
+\frac{1}{S_2^2}-\frac{1}{S_1^2}
+\right)
+\]
+
+\bigskip
+
+\item \textbf{Débit volumique en fonction de $h$}
+
+On identifie les deux expressions de la différence de pression :
+
+\[
+(\rho_{\ce{Hg}}-\rho_{eau})gh
+=
+\frac12 \rho_{eau} D_V^2
+\left(
+\frac{1}{S_2^2}-\frac{1}{S_1^2}
+\right)
+\]
+
+On isole le débit volumique :
+
+\[
+D_V =
+\sqrt{
+\frac{2(\rho_{\ce{Hg}}-\rho_{eau})gh}
+{\rho_{eau}
+\left(\frac{1}{S_2^2}-\frac{1}{S_1^2}\right)}
+}
+\]
+
+\bigskip
+
+\textbf{Calcul des sections}
+
+\[
+d_1=\SI{10}{mm}=1,0\times10^{-2}\,\text{m}
+\]
+
+\[
+d_2=\SI{5,0}{mm}=5,0\times10^{-3}\,\text{m}
+\]
+
+\[
+S_1=\frac{\pi d_1^2}{4}
+=7,85\times10^{-5}\,\text{m}^2
+\]
+
+\[
+S_2=\frac{\pi d_2^2}{4}
+=1,96\times10^{-5}\,\text{m}^2
+\]
+
+La relation finale devient donc :
+
+\[
+D_V =
+\sqrt{
+\frac{2(13550-1000)gh}
+{1000
+\left(\frac{1}{S_2^2}-\frac{1}{S_1^2}\right)}
+}
+\]
+
+Cette expression permet de déterminer expérimentalement le débit volumique à partir de la différence de niveaux mesurée dans le manomètre.
+
+\end{enumerate}
+\end{document}

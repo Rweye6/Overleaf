@@ -1,5 +1,5 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
-\usepackage{/home/rweye/Nextcloud/Documents/Overleaf/Styles/Exercice}
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Exercice}
 
 
 \newcommand{\chnum}{Chapitre 5}
@@ -8,10 +8,12 @@
 
 \begin{document}
 	\maketitle
-\section{Exercice 1 :}
+
+\begin{multicols}{2}
+\section{Configuration électronique}
 Inès pense que l'atome de sodium \ce{Na} ($Z$ = 11) a pour configuration électronique 1$s^2$ 2$p^6$ 3$s^2$ 3$p^1$. Dire si elle a raison et justifier.
 
-\section{Exercice 2 :}
+\section{Autour de l'atome de fluor}
 Le fluor renforce la structure de l'émail des dents, les protégeant ainsi des caries. La configuration
 électronique d'un atome de fluor est : 1$s^2$ 2$s^2$ 2$p^5$.
 	\begin{itemize*}
@@ -19,27 +21,27 @@ Le fluor renforce la structure de l'émail des dents, les protégeant ainsi des 
 		\item Les pâtes à dentifrice contiennent des ions fluorure \ce{F-}. Donner la configuration électronique de cet ion.
 	\end{itemize*}
 
-\section{Exercice 3 : }
+\section{Classification périodique}
 Un atome a pour configuration électronique  1$s^2$ 2$s^2$ 2$p^3$.
 	\begin{itemize*}
 		\item Donner la position (numéro de ligne et de colonne) dans la classification périodique.
 	\end{itemize*}
 
-\section{Exercice 4 :}
+\section{L'antimoine et le plomb}
 L'antimoine est associé au plomb dans des alliages pour augmenter leur dureté.
 	\begin{itemize*}
 		\item L'antimoine se situe dans la colonne 15. Donner le nombre d'électrons de valence de cet atome.
-		\item La dernière couche occupée en a 5. Retrouver la ligne de la classification périodique correspondante.
+		\item La dernière couche occupée est la couche 5. Retrouver la ligne de la classification périodique correspondante.
 	\end{itemize*}
 
-\section{Exercice 5 :}
+\section{Solides ioniques et ions monoatomiques}
 La fluorine est un assemblage contenant des ions calcium et fluorure.
 	\begin{itemize*}
 		\item Donner la formule de ces ions.
 		\item Nommer et donner la formule du cristal ionique correspondant.
 	\end{itemize*}
 
-\section{Exercice 6 :}
+\section{Ions monoatomiques}
 	\begin{itemize*}
 		\item Indiquer quels sont les ions contenus dans une solution aqueuse de chlorure de magnésium.
 		\item Avec le même raisonnement, lister les ions présents dans une solution de fluorure de potassium.
@@ -47,35 +49,35 @@ La fluorine est un assemblage contenant des ions calcium et fluorure.
 		\item En déduire celle du chlorure de baryum. Justifier.
 	\end{itemize*}
 
-\section{Exercice 7 :}
+\section{Ions monoatomiques}
 L'indium est un semi-conducteur situé dans la même colonne de  la classification que le bore dont la configuration électronique est  1$s^2$ 2$s^2$ 2$p^1$.
 	\begin{itemize*}
 		\item Quelle est le nombre d'électrons de valence de l'indium ?
 		\item En déduire la formule de l'ion stable formé par l'indium.
 	\end{itemize*}
 
-\section{Exercice 8 :}
+\section{Solide ionique}
 Un solide ionique contient les éléments aluminium et souffre dont les configurations électroniques sont respectivement :  1$s^2$ 2$s^2$ 2$p^6$ 3$s^2$ 3$p^1$ et 1$s^2$ 2$s^2$ 2$p^6$ 3$s^2$ 3$p^4$.
 	\begin{itemize*}
 		\item Quels ions stables peuvent donner ces deux atomes ?
 		\item Donner la formule du solide ionique.
 	\end{itemize*}
 
-	\section{Justifier un nombre de doublets non liants}
+\section{Doublets non liants}
 	Des schémas de Lewis de différentes molécules dont présentés ci-dessous.\\
 	
 	\begin{center}
-	\chemfig{H-C(-[2]H)(-[-2]H)-C(=[2]O)-H} \hspace{2cm} \chemfig{\charge{90=\| ,-90=\|, 180=\|}{Cl}-C(=[2]\charge{135=\| ,45=\|}{O})-\charge{90=\| ,-90=\|, 0=\|}{Cl}}\\
+	\chemfig[atom sep = 2em]{H-C(-[2]H)(-[-2]H)-C(=[2]\charge{135=\| ,45=\|}{O})-H} \hspace{2em} \chemfig[atom sep = 2em]{\charge{90=\| ,-90=\|, 180=\|}{Cl}-C(=[2]\charge{135=\| ,45=\|}{O})-\charge{90=\| ,-90=\|, 0=\|}{Cl}}\\
 	\end{center}
 	
 	\textit{Justifier le nombre de doublets non liants sur les atomes d'oxygène et de chlore.}
 	
-	\section{Prévoir le nombre de doublets non liants}
+\section{Doublets non liants}
 	Des schémas de Lewis incomplets de différentes molécules sont présentées ci-dessous.\\
-	\begin{tabular}{>{\centering\arraybackslash}m{.3\textwidth} >{\centering\arraybackslash}m{.4\textwidth}  >{\centering\arraybackslash}m{.25\textwidth}}
-	\chemfig{H-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-N(-[2]H)-H} &
-	\chemfig{H-O-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-O-H} &
-	\chemfig{H-C(=[2]O)-H}  \rule[2.5cm]{0cm}{0cm} \\
+	\begin{tabular}{>{\centering\arraybackslash}m{.3\linewidth} >{\centering\arraybackslash}m{.3\linewidth}  >{\centering\arraybackslash}m{.3\linewidth}}
+	\chemfig[atom sep = 2em]{H-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-N(-[2]H)-H} &
+	\chemfig[atom sep = 2em]{H-O-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-O-H} &
+	\chemfig[atom sep = 2em]{H-C(=[2]O)-H}  \rule[2.5cm]{0cm}{0cm} \\
 	Ethanamine & Ethan-1,2-diol & Méthanal\\
 	\end{tabular}
 	
@@ -89,7 +91,7 @@ Un solide ionique contient les éléments aluminium et souffre dont les configur
 	L'oxyde de baryum BaO contient des ions monoatomiques issus des atomes des éléments oxygène O et de baryum Ba.\\
 	\textit{Déterminer à quelle colonne du tableau périodique appartient l'élément baryum Ba.}
 	
-	\section{Schéma de Lewis de l'acide cyanhydride}
+	\section{Schéma de Lewis}
 	L'acide cyanhydride HCN est une substance toxique que l'on trouve dans certains noyaux (pêche, prune, etc.) ou dans les amandes amères. Deux schémas sont donnés ci-dessous.\\
 	\begin{center}
 	
@@ -97,7 +99,7 @@ Un solide ionique contient les éléments aluminium et souffre dont les configur
 	\hline
 	Proposition 1 & Proposition 2\\
 	\hline
-	\chemfig{H-\charge{90=\| ,-90=\|}{C}-\charge{90=\| ,-90=\|, 0=\|}{N}} & \chemfig{H-C~\charge{0=\| }{N}} \rule[.5cm]{0cm}{0cm}\\
+	\chemfig[atom sep = 2em]{H-\charge{90=\| ,-90=\|}{C}-\charge{90=\| ,-90=\|, 0=\|}{N}} & \chemfig[atom sep = 2em]{H-C~\charge{0=\| }{N}} \rule[.5cm]{0cm}{0cm}\\
 	\hline
 	\end{tabular}
 	\end{center}
@@ -108,39 +110,36 @@ Un solide ionique contient les éléments aluminium et souffre dont les configur
 	\item En déduire le schéma de Lewis correspondant à l'acide cyanhydride HCN.
 	\end{enumerate}
 	
-	\section{L'odeur du gaz de ville}
+\section{L'odeur du gaz de ville}
 	Le méthane utilisé comme "gaz de ville" est un combustible incolore et inodore. Pour des raisons de sécurité, il est odorisé à l'aide d'une espèce chimique, l'éthylmercaptan, dont la formule brute est $C_2 H_6 S$. Lors d'une fuite de gaz, l'odeur soufrée de l'éthylmercaptan est rapidement perçue.\\
 	
 	Document A : Schémas de Lewis de molécules contenant l'élément oxygène O\\
-	\begin{tabular}{>{\centering\arraybackslash}m{.3\textwidth} >{\centering\arraybackslash}m{.4\textwidth}  >{\centering\arraybackslash}m{.25\textwidth}}
-	\chemfig{H-C(-[2]H)(-[-2]H)-\charge{90=\| ,-90=\|}{O}-C(-[2]H)(-[-2]H)-H} &
-	\chemfig{H-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-\charge{90=\| ,-90=\|}{O}-H} & \chemfig{H-\charge{90=\| ,-90=\|}{O}-H}\\
+
+	\begin{tabular}{>{\centering\arraybackslash}m{.3\linewidth} >{\centering\arraybackslash}m{.4\linewidth}  >{\centering\arraybackslash}m{.2\linewidth}}
+	\chemfig[atom sep = 2em]{H-C(-[2]H)(-[-2]H)-\charge{90=\| ,-90=\|}{O}-C(-[2]H)(-[-2]H)-H} &
+	\chemfig[atom sep = 2em]{H-C(-[2]H)(-[-2]H)-C(-[2]H)(-[-2]H)-\charge{90=\| ,-90=\|}{O}-H} & \chemfig[atom sep = 2em]{H-\charge{90=\| ,-90=\|}{O}-H}\\
 	Méthoxyméthane & Ethanol & Eau\\
 	
-	\end{tabular}
-	
-	\vspace{.5cm}
+	\end{tabular}\\
+
 	Document B : Schémas de Lewis de molécules contenant des éléments d'une même famille (carbone et silicium)\\
-	\begin{tabular}{>{\centering\arraybackslash}m{.3\textwidth} >{\centering\arraybackslash}m{.4\textwidth}}
-	\chemfig{H-C(-[2]H)(-[-2]H)-H} & \chemfig{H-Si(-[2]H)(-[-2]H)-H}\\
+
+	\begin{tabular}{>{\centering\arraybackslash}m{.3\linewidth} >{\centering\arraybackslash}m{.4\linewidth}}
+	\chemfig[atom sep = 2em]{H-C(-[2]H)(-[-2]H)-H} & \chemfig[atom sep = 2em]{H-Si(-[2]H)(-[-2]H)-H}\\
 	Méthane & Silane\\
-	\end{tabular}
-	
-	\vspace{.5cm}
+	\end{tabular}\\
 	
 	\textit{Proposer un schéma de Lewis de la  molécule d'éthylmercaptan.}
 	
 	\section{Énergie de liaison double}
 	Voici deux schémas de Lewis incomplets de molécules contenant des liaisons doubles.\\
 	
-	\vspace{.5cm}
 	
-	\begin{tabular}{>{\centering\arraybackslash}m{.3\textwidth} >{\centering\arraybackslash}m{.4\textwidth}}
-	\chemfig{H-C(=[2]O)-H} & \chemfig{H-C(=[2]N-H)-H}\\
+	\begin{tabular}{>{\centering\arraybackslash}m{.3\linewidth} >{\centering\arraybackslash}m{.4\linewidth}}
+	\chemfig[atom sep = 2em]{H-C(=[2]O)-H} & \chemfig[atom sep = 2em]{H-C(=[2]N-H)-H}\\
 	Méthanal & Méthanaimine\\
-	\end{tabular}
+	\end{tabular}\\
 	
-	\vspace{.5cm}
 	
 	
 	\begin{enumerate}
@@ -153,4 +152,6 @@ Un solide ionique contient les éléments aluminium et souffre dont les configur
 	$E_\text{liaison} (N-H) = 391$ U.S.I\\
 	$E_\text{atomisation} (\text{méthanal}) = 1567$ U.S.I\\
 	$E_\text{atomisation} (\text{méthanomine}) = 1564$ U.S.I\\
+
+\end{multicols}
 \end{document}

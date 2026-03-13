@@ -1,0 +1,42 @@
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Cours}
+
+\newcommand{\chnum}{Chapitre 15}
+\newcommand{\chtitle}{Etudes énergétiques en mécanique}
+\newcommand{\dtype}{Cours}
+
+
+\begin{document}
+	\maketitle
+
+\section{Energie cinétique d'un système}
+    \subsection{Définition de l'énergie cinétique}
+    \begin{cours}
+        Dans un référentiel donné, l'énergie cinétique $E_c$ d'un système s'exprime par la relation : $$E_c = \dfrac{1}{2} m\cdot v^2 $$
+        avec $E_c$ : l'énergie cinétique en joule (\unit{\joule})\\
+        $m$ : la masse du système en kilogramme (\unit{\kilo\gram})\\
+        $v$ : la vitesse du système en mètre par seconde (\unit{\meter\per\second})
+    \end{cours}
+
+    \subsection{Travail d'une force}
+    Le travail d'une force est une grandeur physique permettant d'évaluer l'effet de cette force sur l'énergie cinétique d'un système au cours d'un mouvement.\\
+    Le travail noté $W_{AB}(\vv{F})$ d'une force $\vv{F}$ dont le point d'application se déplace d'un point $A$ vers un point $B$ s'exprime par la relation scalaire : $$W_{AB}(\vv{F}) = \vv{F} \cdot \vv{AB} = F \cdot AB \cdot \cos(\alpha) $$
+    avec : $W_{AB}(\vv{F})$ : le travail de la force $\vv{F}$ en joule (\unit{\joule})\\
+    $F$ : a valeur de la force en newton (\unit{\newton})\\
+    $AB$ : le déplacement en mètre (\unit{\meter})\\
+    $\alpha$ : l'angle entre la direction de la force $\vv{F}$ et celle du déplacement $\vv{AB}$
+
+    \begin{documentboxenv}{Cas 1}
+        La force $\vv{F}$ ne travaille pas $\vv{F}$ et $\vv{AB}$ sont orthogonaux. $W_{AB}(\vv{F}) = \SI{0}{\joule}$
+    \end{documentboxenv}
+
+     \begin{documentboxenv}{cas 2}
+        La force $\vv{F}$ travaille et ce travail est dit moteur car $$W_{AB}(\vv{F}) = \vv{F}\cdot \vv{AB}  = F \cdot AB \cdot \cos(0)> \SI{0}{\joule}$$
+    \end{documentboxenv}
+
+    \begin{documentboxenv}{cas 3}
+        La force $\vv{F}$ travaille et ce travail est dit moteur car $$W_{AB}(\vv{F}) = \vv{F}\cdot \vv{AB}  = F \cdot AB \cdot \cos(0)> \SI{0}{\joule}$$
+    \end{documentboxenv}
+	
+	
+\end{document}

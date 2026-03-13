@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  18 SEP 2024 13:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.31)  9 MAR 2026 09:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/rweye/Nextcloud/Documents/Overleaf/2GT/2GT_C17_Signaux et capteurs/2GT_C17_Act2.tex"
-(/home/rweye/Nextcloud/Documents/Overleaf/2GT/2GT_C17_Signaux et capteurs/2GT_C17_Act2.tex
+**"/home/rweye/Documents/Overleaf/2GT/2GT_C17_Signaux et capteurs/2GT_C17_Act2.tex"
+(/home/rweye/Documents/Overleaf/2GT/2GT_C17_Signaux et capteurs/2GT_C17_Act2.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -875,10 +875,15 @@ Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \ULC@box=\box169
 Package: ulem 2019/11/18
 \ULdepth=\dimen366
-) (/usr/share/texlive/texmf-dist/tex/latex/romannum/romannum.sty
-Package: romannum 2009/09/03 v1.0b roman numerals
- (/usr/share/texlive/texmf-dist/tex/latex/stdclsdv/stdclsdv.sty
-Package: stdclsdv 2009/09/04 v1.1a Sectional divisions
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 
 Package siunitx Info: Option "detect-all" has been deprecated in this release.
@@ -917,36 +922,145 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
-) (/usr/share/texlive/texmf-dist/tex/latex/mwe/mwe.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (/usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count383
+Package zref Info: New property: abspage on input line 67.
+) (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip98
+\c@mdf@globalstyle@cnt=\count384
+\mdf@skipabove@length=\skip99
+\mdf@skipbelow@length=\skip100
+\mdf@leftmargin@length=\skip101
+\mdf@rightmargin@length=\skip102
+\mdf@innerleftmargin@length=\skip103
+\mdf@innerrightmargin@length=\skip104
+\mdf@innertopmargin@length=\skip105
+\mdf@innerbottommargin@length=\skip106
+\mdf@splittopskip@length=\skip107
+\mdf@splitbottomskip@length=\skip108
+\mdf@outermargin@length=\skip109
+\mdf@innermargin@length=\skip110
+\mdf@linewidth@length=\skip111
+\mdf@innerlinewidth@length=\skip112
+\mdf@middlelinewidth@length=\skip113
+\mdf@outerlinewidth@length=\skip114
+\mdf@roundcorner@length=\skip115
+\mdf@footenotedistance@length=\skip116
+\mdf@userdefinedwidth@length=\skip117
+\mdf@needspace@length=\skip118
+\mdf@frametitleaboveskip@length=\skip119
+\mdf@frametitlebelowskip@length=\skip120
+\mdf@frametitlerulewidth@length=\skip121
+\mdf@frametitleleftmargin@length=\skip122
+\mdf@frametitlerightmargin@length=\skip123
+\mdf@shadowsize@length=\skip124
+\mdf@extratopheight@length=\skip125
+\mdf@subtitleabovelinewidth@length=\skip126
+\mdf@subtitlebelowlinewidth@length=\skip127
+\mdf@subtitleaboveskip@length=\skip128
+\mdf@subtitlebelowskip@length=\skip129
+\mdf@subtitleinneraboveskip@length=\skip130
+\mdf@subtitleinnerbelowskip@length=\skip131
+\mdf@subsubtitleabovelinewidth@length=\skip132
+\mdf@subsubtitlebelowlinewidth@length=\skip133
+\mdf@subsubtitleaboveskip@length=\skip134
+\mdf@subsubtitlebelowskip@length=\skip135
+\mdf@subsubtitleinneraboveskip@length=\skip136
+\mdf@subsubtitleinnerbelowskip@length=\skip137
+ (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box172
+\mdf@footnotebox=\box173
+\mdf@splitbox@one=\box174
+\mdf@splitbox@two=\box175
+\mdf@splitbox@save=\box176
+\mdfsplitboxwidth=\skip138
+\mdfsplitboxtotalwidth=\skip139
+\mdfsplitboxheight=\skip140
+\mdfsplitboxdepth=\skip141
+\mdfsplitboxtotalheight=\skip142
+\mdfframetitleboxwidth=\skip143
+\mdfframetitleboxtotalwidth=\skip144
+\mdfframetitleboxheight=\skip145
+\mdfframetitleboxdepth=\skip146
+\mdfframetitleboxtotalheight=\skip147
+\mdffootnoteboxwidth=\skip148
+\mdffootnoteboxtotalwidth=\skip149
+\mdffootnoteboxheight=\skip150
+\mdffootnoteboxdepth=\skip151
+\mdffootnoteboxtotalheight=\skip152
+\mdftotallinewidth=\skip153
+\mdfboundingboxwidth=\skip154
+\mdfboundingboxtotalwidth=\skip155
+\mdfboundingboxheight=\skip156
+\mdfboundingboxdepth=\skip157
+\mdfboundingboxtotalheight=\skip158
+\mdf@freevspace@length=\skip159
+\mdf@horizontalwidthofbox@length=\skip160
+\mdf@verticalmarginwhole@length=\skip161
+\mdf@horizontalspaceofbox=\skip162
+\mdfsubtitleheight=\skip163
+\mdfsubsubtitleheight=\skip164
+\c@mdfcountframes=\count385
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count386
+\c@mdf@env@i=\count387
+\c@mdf@env@ii=\count388
+\c@mdf@zref@counter=\count389
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)) (/usr/share/texlive/texmf-dist/tex/latex/mwe/mwe.sty
 Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
  (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count383
-\l__lipsum_a_int=\count384
-\l__lipsum_b_int=\count385
+\g__lipsum_par_int=\count390
+\l__lipsum_a_int=\count391
+\l__lipsum_b_int=\count392
  (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count386
-\c@Blindtext=\count387
-\c@blind@countparstart=\count388
-\blind@countxx=\count389
-\blindtext@numBlindtext=\count390
-\blind@countyy=\count391
-\c@blindlist=\count392
-\c@blindlistlevel=\count393
-\c@blindlist@level=\count394
-\blind@listitem=\count395
-\c@blind@listcount=\count396
-\c@blind@levelcount=\count397
-\blind@mathformula=\count398
-\blind@Mathformula=\count399
-\c@blind@randomcount=\count400
-\c@blind@randommax=\count401
-\c@blind@pangramcount=\count402
-\c@blind@pangrammax=\count403
+\c@blindtext=\count393
+\c@Blindtext=\count394
+\c@blind@countparstart=\count395
+\blind@countxx=\count396
+\blindtext@numBlindtext=\count397
+\blind@countyy=\count398
+\c@blindlist=\count399
+\c@blindlistlevel=\count400
+\c@blindlist@level=\count401
+\blind@listitem=\count402
+\c@blind@listcount=\count403
+\c@blind@levelcount=\count404
+\blind@mathformula=\count405
+\blind@Mathformula=\count406
+\c@blind@randomcount=\count407
+\c@blind@randommax=\count408
+\c@blind@pangramcount=\count409
+\c@blind@pangrammax=\count410
 )) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
@@ -973,16 +1087,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
 LaTeX Font Info:    ... okay on input line 93.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count404
+\scratchcounter=\count411
 \scratchdimen=\dimen371
-\scratchbox=\box172
-\nofMPsegments=\count405
-\nofMParguments=\count406
+\scratchbox=\box177
+\nofMPsegments=\count412
+\nofMParguments=\count413
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count407
+\MPscratchCnt=\count414
 \MPscratchDim=\dimen372
-\MPnumerator=\count408
-\makeMPintoPDFobject=\count409
+\MPnumerator=\count415
+\makeMPintoPDFobject=\count416
 \everyMPtoPDFconversion=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -999,14 +1113,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* v-part:(T,H,B)=(42.67912pt, 745.46222pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=540.60239pt
-* \textheight=731.23584pt
+* \textheight=745.46222pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-52.36449pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1035,7 +1149,7 @@ Package caption Info: End \AtBeginDocument code.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 93.
-\c@lstlisting=\count410
+\c@lstlisting=\count417
 LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1120,15 +1234,15 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 48115 strings out of 474222
- 1185988 string characters out of 5748733
- 2268293 words of memory out of 5000000
- 69754 multiletter control sequences out of 15000+600000
- 600053 words of font info for 94 fonts, out of 8000000 for 9000
+ 48981 strings out of 474222
+ 1203858 string characters out of 5748732
+ 2299347 words of memory out of 5000000
+ 70585 multiletter control sequences out of 15000+600000
+ 600743 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,11n,115p,651b,1653s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,11n,115p,641b,1653s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on 2GT_C17_Act2.pdf (3 pages, 820922 bytes).
+Output written on 2GT_C17_Act2.pdf (3 pages, 820926 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

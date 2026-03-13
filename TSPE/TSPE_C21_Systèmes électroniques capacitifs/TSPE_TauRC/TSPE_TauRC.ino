@@ -1,6 +1,3 @@
-// C++ code
-//
-
 //broches
 const int(Alim)=2;
 const int(mesure) = A0;
@@ -12,7 +9,6 @@ unsigned long tau10 = 0;
 float C;
 float R = 10000000;
 int i;
-
 
 void setup()
 {

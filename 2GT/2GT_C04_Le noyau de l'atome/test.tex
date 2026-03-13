@@ -1,0 +1,26 @@
+\documentclass{article}
+
+\usepackage{tikz} % for precise positioning (optional)
+%--- Simple overlay with \makebox ---
+\newcommand{\overlay},[2],{%
+  \makebox[0pt][l]{#1}% lower text (width 0, left‑aligned)
+  \makebox[0pt][l]{#2}% upper text (drawn on top)
+}
+
+\begin{document}
+
+
+
+Here is an example: \overlay{Hello}{\textbf{World}}
+
+%--- Overlay using TikZ (more control) ---
+\newcommand{\tikzoverlay},[2],{%
+  \begin{tikzpicture}[baseline=(base.base)]
+    \node[inner sep=0pt] (base) {#1};
+    \node[inner sep=0pt, overlay] at (base.center) {#2};
+  \end{tikzpicture}%
+}
+
+Another example: \tikzoverlay{Hello}{\textcolor{red}{\bfseries World}}
+
+\end{document}
