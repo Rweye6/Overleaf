@@ -1,0 +1,210 @@
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Eval}
+\usepackage{longtable}
+
+\newcommand{\chnum}{Chapitre 5 et 18}
+\newcommand{\chtitle}{Mouvement des planètes et lunette astronomique}
+\newcommand{\dtype}{DS 5}
+
+\begin{document}
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+
+\section*{Correction}
+
+\renewcommand{\arraystretch}{1.6}
+
+\begin{longtable}{||p{.1\linewidth}|p{.78\linewidth}|p{.07\linewidth}|}
+\hline
+\textbf{Question} & \textbf{Réponse} & \textbf{Barème} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Question} & \textbf{Réponse} & \textbf{Barème} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{Suite page suivante} \\
+\hline
+\endfoot
+
+\hline
+\textbf{Total} & & \textbf{20 pts} \\
+\hline
+\endlastfoot
+
+1 &
+\textbf{Première loi de Kepler :} Les planètes décrivent des orbites elliptiques dont le Soleil occupe l'un des foyers. 
+
+\textbf{Deuxième loi de Kepler :} Le segment reliant la planète au Soleil balaie des aires égales pendant des durées égales. 
+& 2 pts \\
+
+\hline
+
+2 &
+La deuxième loi indique que des aires égales sont balayées pendant des durées égales.  
+Lorsque Mars est plus proche du Soleil (périhélie), elle parcourt une portion d'orbite plus grande pendant la même durée que lorsqu'elle est plus éloignée (aphélie).  
+
+La vitesse de Mars varie donc au cours du temps : le mouvement n'est pas uniforme.
+& 2 pts \\
+
+\hline
+
+3 &
+Ligne 8 du programme :
+
+\begin{verbatim}
+T2_a3.append(T[i]**2/a[i]**3)
+\end{verbatim}
+
+Cette ligne calcule le rapport $T^2/a^3$ pour chaque planète.
+& 2 pts \\
+
+\hline
+
+4 &
+Les lignes 16 et 17 permettent de calculer puis d'afficher la valeur moyenne du rapport $T^2/a^3$ pour les planètes étudiées.
+
+La finalité est de vérifier que ce rapport est constant pour toutes les planètes.
+
+Unités :$$
+\frac{T^2}{a^3} \quad \Rightarrow \quad \text{s}^2\cdot \text{m}^{-3}$$
+
+& 2 pts \\
+
+\hline
+
+5 &
+La représentation graphique montre que les points expérimentaux sont alignés sur une droite.
+
+Cela signifie que le rapport $T^2/a^3$ est constant pour les planètes du système solaire.
+
+Cela confirme la \textbf{troisième loi de Kepler} :$$\frac{T^2}{a^3}= \text{constante}$$
+
+& 2 pts \\
+
+\hline
+
+6 &
+Période de Mars : $
+T_{Mars}=687\,\text{jours}$
+
+Conversion en secondes : 
+$
+T_{Mars}=687\times 86400
+$
+
+Troisième loi de Kepler : $\frac{T^2}{a^3}= \text{constante}$
+
+En utilisant les données de la Terre : 
+\[
+\frac{T_{Mars}^2}{a_{Mars}^3}=\frac{T_T^2}{a_T^3}
+\]
+
+On obtient : $a_{Mars} \approx 2,28\times 10^{11}\,m$
+
+soit environ :
+\[
+a_{Mars} \approx 1,52 \, UA
+\]
+
+Cette distance est supérieure à celle de la Terre (1 UA) mais inférieure à celle de Jupiter, ce qui correspond à la \textbf{4\textsuperscript{ième} planète à partir du Soleil}.
+
+& 4 pts \\
+
+\hline
+
+7 &
+Dans une lunette astronomique :
+
+\begin{itemize*}
+\item $L_1$ est l'\textbf{objectif} (lentille proche de l'objet observé)
+\item $L_2$ est l'\textbf{oculaire} (lentille proche de l'œil)
+\end{itemize*}
+
+& 1 pt \\
+
+\hline
+
+8 &
+Les rayons lumineux issus de $B_\infty$ arrivent parallèles sur l'objectif $L_1$.  
+
+Ils convergent vers le foyer image $F'_1$ de l'objectif et forment l'image réelle intermédiaire $A_1B_1$.  
+
+Cette image se trouve dans le plan focal objet de l'oculaire $L_2$.
+L'oculaire transforme alors les rayons en un faisceau parallèle permettant l'observation à l'infini.
+& 2 pts \\
+
+\hline
+
+9 &
+$\theta_1$ : angle sous lequel Mars est vue à l'œil nu.  
+
+$\theta_2$ : angle sous lequel Mars est vue à travers la lunette.  
+
+Ces deux angles sont mesurés depuis l'œil de l'observateur, l'angle $\theta_2$ étant plus grand que $\theta_1$.
+
+& 1 pt \\
+
+\hline
+
+10 &
+Le grossissement est défini par :
+$G=\frac{\theta_2}{\theta_1}$
+
+Dans une lunette astronomique afocale : $G=\frac{f'_{obj}}{f'_{ocu}}$
+
+où :
+\begin{itemize*}
+\item $f'_{obj}$ est la distance focale de l'objectif
+\item $f'_{ocu}$ est la distance focale de l'oculaire
+\end{itemize*}
+
+& 2 pts \\
+
+\hline
+
+11 &
+Angle sous lequel Mars est vue depuis la Terre : $
+\theta_1 \approx \frac{h}{d}$
+
+avec : $
+h=6794\,km$
+\[
+d=62,07\times10^6\,km
+\]
+\[
+\theta_1 \approx 1,1\times10^{-4}\,rad
+\]
+
+Pour voir Mars aussi grosse que la Lune :
+\[
+\theta_2 \ge 9,0\times10^{-3}\,rad
+\]
+
+Grossissement minimal :
+$$G_{min}=\frac{\theta_2}{\theta_1} \rightarrow G_{min}\approx 82$$
+Calcul du grossissement de la lunette :
+\[
+G=\frac{f'_{obj}}{f'_{ocu}}
+\]
+avec $f'_{obj}=900\,mm$
+\[
+G_{10}=\frac{900}{10}=90
+\]
+\[
+G_{25}=36
+\]
+\[
+G_{40}=22,5
+\]
+Seul l’oculaire de \textbf{10 mm} permet d’obtenir un grossissement suffisant pour voir Mars au moins aussi grosse que la Lune vue à l’œil nu.
+& 4 pts \\
+\hline
+
+\end{longtable}
+\end{center}
+
+\end{document}
