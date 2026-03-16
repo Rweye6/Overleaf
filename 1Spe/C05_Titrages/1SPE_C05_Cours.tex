@@ -20,7 +20,7 @@ La quantité de matière $n$ d'un soluté de concentration $C$ dans une solution
     \end{enumerate}
 \end{exemple}
 \section{Principe d'un titrage}
-Un titrahe, ou dosage, consiste à déterminer la concentration en quantité de matière $C$ ou la concentration en masse $\gamma$ d'un soluté dissout dans une solution.
+Un titrage, ou dosage, consiste à déterminer la concentration en quantité de matière $C$ ou la concentration en masse $\gamma$ d'un soluté dissout dans une solution.
 
 \begin{exemple}
     Soient A et B deux espèces chimiques pouvant réagir selon l'équation bilan : \ce{A + 2B -> AB2}.\\
@@ -53,13 +53,42 @@ Un titrahe, ou dosage, consiste à déterminer la concentration en quantité de 
     \subsection{Evolution des quantités de matière}
     Le réactif titrant réagit immédiatement et totalement avec le réactif titré. Ainsi la quantité de matière de réactif titré diminue à chaque ajout jusqu’à devenir nulle.
     \begin{exemple}
-        \textbf{Exemple du titrage des ions \ce{Fe^2+} par une solution titrante de \ce{MnO4-}}
-        \begin{center}
-            \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \textbf{Exemple du titrage des ions \ce{Fe^2+} par une solution titrante de \ce{MnO4-}}\\
+        %\begin{center}
+        \footnotesize
+            \noindent \begin{tabular}{|>{\centering}m{.08\linewidth}|>{\centering}m{.11\linewidth}|>{\centering}m{.1\linewidth}|>{\centering}m{.15\linewidth}|>{\centering}m{.09\linewidth}|>{\centering}m{.02\linewidth}|>{\centering}m{.1\linewidth}|>{\centering}m{.09\linewidth}|>{\centering \arraybackslash}m{.09\linewidth}|}
                 \hline
                 \multicolumn{2}{|c|}{\textbf{Équation chimique}} & \ce{5 Fe^2+ (aq)} & + \ce{MnO4- (aq)} & + \ce{8 H+ (aq)} & $\rightarrow$ & \ce{5 Fe^3+ (aq)} & + \ce{Mn^2+ (aq)} & + \ce{4 H2O (l)}\\
+                \hline
+                Etat du système & Avancement (\unit{\mole}) & \multicolumn{7}{|c|}{Quantités de matière (\unit{\mole})}\\
+                \hline
+                Etat initial & $x=0$ & $n_i(\ce{Fe^2+})$ & $n_{\text{versé}}(\ce{MnO4-})$ & Excès & &0 & 0 & Excès\\
+                \hline
+                Etat final & $x_f = x_E$  & $n_i(\ce{Fe^2+}) - 5 x_f$ & $n_{\text{versé}}(\ce{MnO4-}) - x_f$ & Excès & & $5x_f$ & $x_f$ & Excès\\
+                \hline
             \end{tabular}
-        \end{center}
+        %\end{center}
     \end{exemple}
+    \subsection{Equivalence et réactifs limitants}
+    Au début du titrage, le réactif titrant est le réactif limitant puis le réactif titré devient le réactif limitant. L'état particulier au cours duquel se produit un changement re réactif limitant est appelé l'\textbf{équivalence}. C'est le moment où les réactifs sont introduits en proportions st\oe chiométriques.
+
+    \subsection{Virage du titrage}
+    Dans le cas d'un titrage colorimétrique, l'équivalence est repérée apr un changement de teinte du milieu réactionnel appelé \textit{virage}. Dans certains cas, un indicateur coloré peut être utilisé pour détecter la présence d'une espèce chimique comme par exemple l'empois d'amidon ou le thiodène utilisés pour révéler la présence de diiode.
+
+\section{Relation entre les quantités de mayière des réactifs à l'équivalecne}
+L'équivalence est assimilée à l'état final. Les réactifs titrés sont entièrement consommés et leurs quantités de matière sont nulles. Ils sont donc dans des proportions st\oe chiométriques.\\
+Soit la relation suivante pour une équation chimique du type :
+$$ aA(aq) + bB(aq) \rightarrow cC(aq) + dD(aq)$$
+et $x_E$ l'état d'avancement à l'équivalence :
+$$x_E = x_f $$
+$$\dfrac{n_i(A)}{a} = \dfrac{n_{\text{versé},E}(B)}{b}$$
+Avec $A$ le réactif titré et $B$ le réactif titrant.\\
+Il est ainsi facile de calculer la quantité de matière du réactif titré.
+
+\section{Incertitudes}
+Pour limiter les erreurs expérimentales, il est classique de réaliser deux titrages consécutifs afin de déterminer précisément l'équivalence.\\
+Pour les mêmes raisons il est aussi commun de réaliser plusieurs déterminations du volume équivalent dans les mêmes conditions expérimentales pour déterminer une moyenne de la concentration de la solution titrée.\\
+Enfin, la prise en compte de l'écart-type expérimetal permete de réaliser un traitement statistique de ces mesures pour estimer l'incertityde-type notée $U(V_E)$ et se rapprocher au plus près de la valeur attendue.
+
 
 \end{document}
