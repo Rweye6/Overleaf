@@ -9,8 +9,55 @@
 \maketitle
 
 \begin{documentboxenv}{L'effet Doppler}
-    En 1842, le  physicien autrichien Christian Doppler prédit le pomportement des ondes sonores selon que leur source s'approche ou s'éloigne de l'observateur. Trois and plus tard,  l'expérience suivante confirma son hypothèse : un train en garen avec à bord 15 trompétistes qui firent retentir leurs trompettes à l'approche du train, à son passage et à son éloignement.\\ Sur le quai 
-
+    En 1842, le  physicien autrichien Christian Doppler prédit le pomportement des ondes sonores selon que leur source s'approche ou s'éloigne de l'observateur. Trois and plus tard,  l'expérience suivante confirma son hypothèse : un train en garen avec à bord 15 trompétistes qui firent retentir leurs trompettes à l'approche du train, à son passage et à son éloignement.\\ Sur le quai, les observateurs entendirent le son des instruments dont la hauteur augmenta progressivement, puis diminua une fois le train passé, tout comme l'avait prédit Doppler.\\
+    Cet effet Doppler (aussi appelé effet Doppler-Fizeau pour les ondes électromagnétiques) s'applique également à toutes sortes d'ondes. Il permet de déterminer la vitesse d'une source en mouvement et est utilisé en astronomie, par les radars, en médecine...
 \end{documentboxenv}
+
+\begin{documentboxenv}{Liste du matériel mis à disposition}
+    \begin{itemize}
+        \item Enregistrement sonore d'un klaxon de voiture qui roule à vitesse constante au format .wav: « Son Doppler Voiture Kangoo MG »
+        \item Enregistrement sonore d'un klaxon de voiture qui est à l'arrêt au format wav : « Son Kangoo arret Mono Voiture MG »
+        \item Ordinateur - Audacity - Casque audio - Latis Pro
+    \end{itemize}
+\end{documentboxenv}
+
+\begin{documentboxenv}{Exploitation d'un signal sonore}
+    On peut distinguer deux phrases sur l'enregistrement : la phase d'approche et le phase d'éloignement.
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{Ressources/TSPE_C17_Act1_Fig1.png}
+    \end{center}
+\end{documentboxenv}
+
+\begin{documentboxenv}{Formule de Doppler}
+    Par approximation, en appliquand la formule de Doppler, une formule lie la vitesse expérimentale $v_{exp}$ de la voiture, la vitesse du son et les fréquences d'approche $f_a$ et d'éloignement $f_e$ :
+    \begin{center}
+        $v_{exp} = v_{son} \frac{f_a - f_e}{f_a + f_e}$
+    \end{center}
+    Dans les conditions expérimemntales, on prendra $v_{son} = 340 m/s$.
+    Dans toue els cas, les fréquences d'éloignement ou d'approche peuvent correspondre à la fréquence fondamentale ou les harmoniques du signal sonore.\\
+\end{documentboxenv}
+
+\begin{problematique}
+    Mathieu et Victor, basés au bord d'un boulevard, on enregistré l'émission sonore du klaxon d'une voiture qui roule à vitesse constante en ville puis à l'arrêt. À l'aide des documents, déterminer si le conducteur peut être sanctionné pour excès de vitesse.\\
+\end{problematique}
+
+\begin{data}
+    \begin{itemize}
+        \item La vitesse affichée au compteur est de \SI{70}{\kilo\meter\per\hour} (compteur à aiguille).
+        \item La fréquence du klaxon pour la voiture à l'arrêt est de \SI{511}{\hertz}.
+        \item La tolérence d'un radar fixe est de \SI{5}{\kilo\meter\per\hour} pour des vitesses inférieures à \SI{100}{\kilo\meter\per\hour}.
+        \item La limitation de vitesse sur le boulevard est de \SI{70}{\kilo\meter\per\hour}.
+    \end{itemize}
+\end{data}
+
+\begin{question}
+    \begin{enumerate}
+        \item Quelles sont les grandeurs nécessaires pour déterminer la vitesse ?
+        \item Proposer un protocole, reposant sur une analyse spectrale, pour répondre à la problématique.
+        \item Mesurer les grandeurs nécessaires lors des deux phases (relever les 5 premières valeurs) et les consigner dans un tableau. L'ensemble de la résolution sera clairement rédigée. Discuter de la cohérence des valeurs obtenues.
+        \item En déduire la vitesse expérimentale de la voiture dans les 5 cas. la convertir en \unit{\kilo\meter\per\hour}. Quelle est, selon vous, la valeur la plus précise ? Justifier.
+        \item L'automobiliste est-il en infraction ? Justifier.
+    \end{enumerate}
+\end{question}
 \end{document}
 

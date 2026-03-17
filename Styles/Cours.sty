@@ -204,6 +204,21 @@ innerbottommargin=8pt
 		]
 	}{\end{basebox}}
 
+  \newenvironment{data}[1][Données]{%
+	\begin{basebox}[
+		backgroundcolor=gray!5,
+		linecolor=gray!5,
+		frametitle={\color{gray!75!black}\bfseries #1}
+		]
+	}{\end{basebox}}
+
+   \newenvironment{problematique}[1][Problématique]{%
+	\begin{basebox}[
+		backgroundcolor=gray!25,
+		linecolor=gray!25,
+		frametitle={\color{gray!75!black}\bfseries \centering #1}
+		]
+	}{\end{basebox}}
 
 	\tcbuselibrary{skins, breakable}
 
