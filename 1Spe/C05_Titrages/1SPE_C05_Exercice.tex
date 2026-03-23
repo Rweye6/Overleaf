@@ -63,5 +63,48 @@
     \hline
 \end{tabular}
     \end{center}
+\begin{enumerate}
+    \item Déterminer la valeur estimée de $V_{eq}$.
+    \item Évaluer l'incertitude de répétabilité $U_A(V_{eq})$ associée à $V_{eq}$ par une approche de type $A$.
+    \item Chacune des mesurer de $V_{eq}$, indépendamment des autres, présente une incertitude du fait de la lecture sur la burette du volume. La burette est graduée au dixième de millilitre. Évaluer l'incertitude $U_B(V_{eq})$ associée à une mesure de $V_{eq}$ par une méthode de type $B$.
+    \item Calculer l'incertitude $U(V_{eq})$ de cette mesure par : $$U(V_{eq}) = \sqrt{U_A(V_{eq})^2 + U_B(V_{eq})^2} $$
+    \item Présenter le résultat de la mesure avec son incertitude. $$ \bar{x}\pm U(x)$$
+    \item Écrire l'intervalle de confiance.
+\end{enumerate}
+
+\section{Vitamine C dans un comprimé}
+Le principe actif des médicaments à la vitamine C est l'acide ascorbique \ce{C6H8O6}.\\
+On cherche à effectuer un contrôle de qualité sur un comprimé de "Vitamine C 500" censé contenir $m_{th} = \SI{500}{mg}$ d'acide ascorbique.
+
+\begin{protocole}
+    \begin{itemize*}
+        \item Broyer un comprimé puis l'introduire dans une fiole jaugée de $V_0 = \SI{1,00}{L}$, le disssoudre
+        \item Prélever $V_1 = \SI{10,0}{mL}$ de cette solution et les introduire dans un erlenmeyer.
+        \item Ajouter $V_2 = \SI{10,0}{mL}$ d'une solution de diiode \ce{I2} de concentration $c_2 = \SI{5,00E-3}{\mole\per\liter}$.
+        \item Titrer le diiode restant à l'aide d'une solution d'ions thiosulfate \ce{S2O3^2-} de concentration $c=\SI{5,00E-3}{\mole\per\liter}$.
+    \end{itemize*}
+\end{protocole}
+
+les couples d'oxydoréduction mis en jeu sont : 
+\ce{I2}/\ce{I-} \hspace{1em} \ce{C6H6O6}/\ce{C6H8O6} \hspace{1em} \ce{S4O6^2-}/\ce{S2O3^2-}\\
+Le diiode est la seule espèce colorée (jaune).
+
+\begin{enumerate}
+    \item \begin{enumerate}
+        \item Écrire l'équation de la réaction entre l'acide ascorbique et le diiode. Elle sera supposée totale.
+        \item Déterminer la quantité de matière de diiode apportée, notée $n_2$.
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item Écrire l'équation de la réaction de titrage.
+        \item Identifier le réactif titré et le réactif titrant.
+        \item Préciser comment repérer l'équivalence.
+    \end{enumerate}
+    \item Le volume de solution d'ion thiosulfate versé à l'équivalence est $V{eq} = \SI{8,9}{mL}$. \begin{enumerate}
+        \item En déduire la quantité de matière de diiode titrée, notée $n_t$.
+        \item Montrer que la quantité de matière d'acide ascorbique ayant réagi avec le diiode est $n_2-n_t$.
+        \item En déduire la quantité de matière d'acide ascorbique dans un comprimé, puis la masse correspondante $m_{exp}$.
+        \item Dalculer l'écart relatif entre la valeur obtenue et l'indication de l'étiquette, calculé comme : $$ |\dfrac{m_{exp}}{}|$$
+    \end{enumerate}
+\end{enumerate}
 
 \end{document}
