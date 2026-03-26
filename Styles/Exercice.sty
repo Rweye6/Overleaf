@@ -174,5 +174,33 @@ innerbottommargin=8pt
 	}{\end{basebox}}
 
 
+	\tcbuselibrary{skins, breakable}
+
+\newenvironment{protocole}[1][\faFlask~Protocole expérimental]{
+  \begin{tcolorbox}[
+    breakable,
+    colframe=black,
+    colback=white,
+    title=\textbf{#1},
+    fonttitle=\bfseries,
+    left=2mm, right=2mm, top=1mm, bottom=1mm
+  ]
+}{
+  \end{tcolorbox}
+}
+\newenvironment{materiel}[1][\faTools~Liste de matériel]{
+  \begin{tcolorbox}[
+    breakable,
+    colframe=black!35,
+    colback=white,
+    title=\textbf{#1},
+    fonttitle=\bfseries,
+    left=2mm, right=2mm, top=1mm, bottom=1mm
+  ]
+}{
+  \end{tcolorbox}
+}
+
+
 % Finally, we'll use \endinput to indicate that LaTeX can stop reading this file. LaTeX will ignore anything after this line.
 \endinput

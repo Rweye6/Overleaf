@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,10pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 \usepackage{../../Styles/Exercice}
 
 \usepackage{multirow}
@@ -8,11 +8,12 @@
 
 \begin{document}
 	\maketitle
+    \begin{multicols}{2}
     \section{Dosage par étalonnage des ions nitrate}
     Les ions nitrate \ce{NO3-} sont un polluant des eeaux : une eau contenant plus de \SI{50}{\mg\per\liter} d'ions nitrate est déclarée non potable. Une solution aqueuse d'ions nitrate est incolore. Une solution aqueuse d'ions nitrate est incolore, mais prend une soloration jaune en présence d'acide phénoldisulfonique.\\
     On dispose d'une solution d'ions nitrate en présence de cet acide, de concentration $c_0 = \SI{1,0E-3}{\mol\per\liter}$. Par dilution, on prépare une échelle de teintes et on mesure les absorbances à \SI{410}{\nm}, dans une cuve de longueur $l = \SI{1,0}{\cm}$. on obtient les résultats suivants.
     \begin{center}
-        \begin{tabular}{|c|>{\centering}m{.12\linewidth}|>{\centering}m{.12\linewidth}|>{\centering}m{.12\linewidth}|>{\centering}m{.12\linewidth}|>{\centering\arraybackslash}m{.12\linewidth}|}
+        \begin{tabular}{|>{\centering}m{.16\linewidth}|>{\centering}m{.11\linewidth}|>{\centering}m{.11\linewidth}|>{\centering}m{.11\linewidth}|>{\centering}m{.11\linewidth}|>{\centering\arraybackslash}m{.11\linewidth}|}
             \hline
             $c$ (\unit{\milli\mol\per\liter}) & \num{1,0} & \num{0,75} & \num{0,50} & \num{0,25} & \num{0,10} \\
             \hline
@@ -29,7 +30,7 @@
 
     \section{Relation à l'équivalence}
     On considère le titrage de l'éthanol \ce{C2H6O} par les ions dichromate \ce{Cr2O7^2-} en présence d'ions \ce{H+} en excès. L'équation de la réaction est la suivante :
-    $$ \ce{2Cr2O7^2- (aq)+ 3C2H6O (aq)+ 16H+ (aq)-> 4Cr^3+(aq) + 3C2H4O2(aq) + 11H2O(l)}$$
+    $$ \ce{2Cr2O7^2- (aq)}+ \ce{3C2H6O (aq)}+ \ce{16H+ (aq)} \rightarrow$$ $$\ce{4Cr^3+ (aq)} + \ce{3C2H4O2(aq)} + \ce{11H2O(l)}$$
     Un élève a tracé le tableau suivant au brouillon.
     \begin{center}
         \includegraphics[width = \linewidth]{Ressources/1SPE_C05_Exercice2_tableau.png}
@@ -76,14 +77,15 @@
 Le principe actif des médicaments à la vitamine C est l'acide ascorbique \ce{C6H8O6}.\\
 On cherche à effectuer un contrôle de qualité sur un comprimé de "Vitamine C 500" censé contenir $m_{th} = \SI{500}{mg}$ d'acide ascorbique.
 
-\begin{protocole}
+%\begin{protocole}{Protocole}
+\textbf{Protocole}
     \begin{itemize*}
         \item Broyer un comprimé puis l'introduire dans une fiole jaugée de $V_0 = \SI{1,00}{L}$, le disssoudre
         \item Prélever $V_1 = \SI{10,0}{mL}$ de cette solution et les introduire dans un erlenmeyer.
         \item Ajouter $V_2 = \SI{10,0}{mL}$ d'une solution de diiode \ce{I2} de concentration $c_2 = \SI{5,00E-3}{\mole\per\liter}$.
         \item Titrer le diiode restant à l'aide d'une solution d'ions thiosulfate \ce{S2O3^2-} de concentration $c=\SI{5,00E-3}{\mole\per\liter}$.
     \end{itemize*}
-\end{protocole}
+%\end{protocole}
 
 les couples d'oxydoréduction mis en jeu sont : 
 \ce{I2}/\ce{I-} \hspace{1em} \ce{C6H6O6}/\ce{C6H8O6} \hspace{1em} \ce{S4O6^2-}/\ce{S2O3^2-}\\
@@ -103,8 +105,10 @@ Le diiode est la seule espèce colorée (jaune).
         \item En déduire la quantité de matière de diiode titrée, notée $n_t$.
         \item Montrer que la quantité de matière d'acide ascorbique ayant réagi avec le diiode est $n_2-n_t$.
         \item En déduire la quantité de matière d'acide ascorbique dans un comprimé, puis la masse correspondante $m_{exp}$.
-        \item Dalculer l'écart relatif entre la valeur obtenue et l'indication de l'étiquette, calculé comme : $$ |\dfrac{m_{exp}}{}|$$
+        \item Calculer l'écart relatif entre la valeur obtenue et l'indication de l'étiquette, calculé comme : $$ \left|\dfrac{m_{exp}-m_{th}}{m_{th}}\right|$$
+        On l'exprimera en \unit{\percent}. Commenter le résultat.
+        \item Suite à une erreur de préparation des solutions, on trouve $m_{exp} = \SI{524}{mg}$. Quelle erreur a pu être commise pour la valeur de $c_2$ : une surestimation ou une sous-estimation ? Même question pour $c$.
     \end{enumerate}
 \end{enumerate}
-
+\end{multicols}
 \end{document}
