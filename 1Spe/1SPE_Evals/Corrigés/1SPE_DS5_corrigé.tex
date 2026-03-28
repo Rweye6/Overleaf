@@ -1,0 +1,307 @@
+\documentclass[a4paper,fontsize=11pt,fleqn]{scrartcl}
+
+\usepackage{../../../Styles/Eval}
+
+\newcommand{\chnum}{Chapitre 5 et 8}
+\newcommand{\chtitle}{Corrigé DS5 -- Polarité des molécules et titrages colorimétriques}
+\newcommand{\dtype}{Corrigé}
+
+\begin{document}
+\maketitle
+
+\section{Polarité des molécules organiques}
+
+On considère les espèces chimiques suivantes : \ce{HSO4^-}, \ce{HPO3} et \ce{H2CO2}.
+
+\begin{enumerate}
+    \item Proposer pour chaque molécule un schéma de Lewis correct.
+    \item En se basant sur le tableau des électronégativités de Pauling, réécrire les structures de Lewis en indiquant les éventuelles charges partielles qui y sont présentes.
+    \item Déterminer la géométrie de ces structures autour des atomes de soufre, de phosphore et du carbone.
+    \item Déterminer si chacune des molécules est polaire ou apolaire.
+\end{enumerate}
+
+\subsection*{Corrigé}
+
+\begin{enumerate}
+    \item \textbf{Schémas de Lewis}
+
+    \begin{itemize}
+        \item \textbf{\ce{HSO4^-}} : l'atome central est le soufre.  
+        Une représentation correcte est :
+        \[
+        \ce{HO-S(=O)2-O^-}
+        \]
+        Le soufre est lié à 4 oxygènes : un groupe \ce{-OH}, deux oxygènes en double liaison et un oxygène portant la charge négative.
+
+        \item \textbf{\ce{HPO3}} : dans le cadre de l'exercice, on peut écrire :
+        \[
+        \ce{HO-P(=O)2}
+        \]
+        Le phosphore est lié à trois oxygènes, dont un sous forme \ce{-OH}.
+
+        \item \textbf{\ce{H2CO2}} : on reconnaît l'acide méthanoïque :
+        \[
+        \ce{H-C(=O)-OH}
+        \]
+        Le carbone est lié à un hydrogène, à un oxygène par double liaison et à un groupe \ce{-OH}.
+    \end{itemize}
+
+    \item \textbf{Charges partielles}
+
+    Les liaisons \ce{O-H}, \ce{S-O}, \ce{P-O} et \ce{C-O} sont polarisées car l'oxygène est plus électronégatif que H, S, P et C.
+
+    \begin{itemize}
+        \item Dans toutes les liaisons avec l'oxygène, l'oxygène porte une charge partielle \(\delta^-\).
+        \item Les atomes liés à l'oxygène (H, S, P, C) portent une charge partielle \(\delta^+\).
+    \end{itemize}
+
+    On peut donc indiquer :
+    \begin{itemize}
+        \item pour \ce{HSO4^-} : \(\ce{S^{\delta+}}\) et les oxygènes \(\ce{O^{\delta-}}\), ainsi que l'hydrogène du groupe \ce{OH} en \(\delta^+\) ;
+        \item pour \ce{HPO3} : \(\ce{P^{\delta+}}\), oxygènes en \(\delta^-\), hydrogène du groupe \ce{OH} en \(\delta^+\) ;
+        \item pour \ce{H2CO2} : \(\ce{C^{\delta+}}\), oxygènes en \(\delta^-\), hydrogène du groupe \ce{OH} en \(\delta^+\).
+    \end{itemize}
+
+    \item \textbf{Géométrie autour de l'atome central}
+
+    \begin{itemize}
+        \item \textbf{\ce{HSO4^-}} : autour du soufre, il y a 4 domaines électroniques liants.  
+        Géométrie : \textbf{tétraédrique}.
+
+        \item \textbf{\ce{HPO3}} : autour du phosphore, il y a 3 domaines électroniques liants.  
+        Géométrie : \textbf{trigonale plane}.
+
+        \item \textbf{\ce{H2CO2}} : autour du carbone, il y a 3 domaines électroniques liants.  
+        Géométrie : \textbf{trigonale plane}.
+    \end{itemize}
+
+    \item \textbf{Polarité}
+
+    \begin{itemize}
+        \item \ce{HSO4^-} est \textbf{polaire} ;
+        \item \ce{HPO3} est \textbf{polaire} ;
+        \item \ce{H2CO2} est \textbf{polaire}.
+    \end{itemize}
+
+    En effet, ces espèces comportent des liaisons polarisées et leur géométrie ne permet pas une compensation totale des moments dipolaires.
+\end{enumerate}
+
+\newpage
+
+\section{Dosage de l'eau de Javel}
+
+L'eau de Javel est une solution oxydante utilisée comme désinfectant et comme décolorant. Selon l'emploi désiré, il est important de connaître sa concentration.
+
+\begin{documentboxenv}{Synthèse de l'eau de Javel}
+Charles Guillaume Scheele (1742-1786), pharmacien suédois, découvrit le dichlore au 18\textsuperscript{e} siècle. Ce gaz intervient dans la fabrication de l'eau de Javel, qui doit son nom à un ancien village aujourd'hui intégré à un quartier de Paris.\\
+C'est à Javel que Claude Louis Berthollet (1748-1822), directeur à la manufacture des Gobelins, fabriqua ce produit décolorant et désinfectant et l'employa en 1785 pour le blanchiment des toiles textiles. L'eau de Javel est obtenue par action du dichlore \ce{Cl2(g)} sur l'hydroxyde de sodium et contient notamment des ions \ce{Cl^-(aq)}, \ce{ClO^-(aq)}, \ce{Na^+(aq)} ainsi que de l'eau \ce{H2O(l)}.\\
+En milieu acide, l'eau de Javel subit une transformation complète représentée par :
+\[
+\ce{ClO^-(aq) + Cl^-(aq) + 2H^+(aq) -> H2O(l) + Cl2(g)}
+\]
+Cette transformation permet de définir le degré chlorométrique. Celui-ci est égal au volume, exprimé en litres, de dichlore produit par un litre d'eau de Javel. Ce volume est mesuré à \SI{0}{\celsius} sous une pression de \SI{1.013}{\bar}.
+\end{documentboxenv}
+
+\begin{documentboxenv}{Méthode expérimentale}
+Pour vérifier l'indication portée sur une bouteille commerciale d'eau de Javel, \SI{12}{\degree chl}, on procède à une expérience.\\
+\textbf{Principe de la manipulation}
+\begin{itemize}
+    \item On ajoute un excès d'ions iodure à un volume connu de solution d'eau de Javel.
+    \item En milieu acide, les ions hypochlorite \ce{ClO^-(aq)} oxydent les ions iodure \ce{I^-(aq)}.
+    \item L'équation de la réaction est :
+    \[
+    \ce{ClO^-(aq) + 2I^-(aq) + 2H^+(aq) -> I2(aq) + H2O(l)}
+    \]
+\end{itemize}
+On considère cette réaction comme totale. Le diiode formé est ensuite dosé par les ions thiosulfate.
+\end{documentboxenv}
+
+\subsection{Réaction entre les ions hypochlorite et les ions iodure}
+
+\begin{enumerate}
+    \item L'eau de Javel commerciale étant trop concentrée, il faut d'abord effectuer une dilution du dixième pour obtenir \SI{50,0}{mL} de solution diluée $S$. Décrire une méthode qui permet d'effectuer cette dilution. Préciser la verrerie nécessaire (noms et volumes).
+    \item Dans un erlenmeyer (noté $E$), on introduit dans cet ordre : $V = \SI{10,0}{mL}$ de solution $S$ puis $V' = \SI{20,0}{mL}$ de solution d'iodure de potassium. Indiquer la verrerie à utiliser.
+\end{enumerate}
+
+\subsection*{Corrigé}
+
+\begin{enumerate}
+    \item \textbf{Dilution au dixième}
+
+    Pour préparer \SI{50,0}{mL} de solution diluée au dixième :
+    \begin{itemize}
+        \item on prélève \SI{5,0}{mL} de solution commerciale avec une \textbf{pipette jaugée de \SI{5,0}{mL}} ;
+        \item on verse ce prélèvement dans une \textbf{fiole jaugée de \SI{50,0}{mL}} ;
+        \item on complète avec de l'eau distillée jusqu'au trait de jauge ;
+        \item on bouche et on homogénéise.
+    \end{itemize}
+
+    \item \textbf{Verrerie à utiliser}
+
+    \begin{itemize}
+        \item pour prélever \SI{10,0}{mL} de solution $S$ : \textbf{pipette jaugée de \SI{10,0}{mL}} ;
+        \item pour prélever \SI{20,0}{mL} de solution d'iodure de potassium : \textbf{pipette jaugée de \SI{20,0}{mL}} ;
+        \item le mélange est réalisé dans un \textbf{erlenmeyer}.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Détermination de la concentration en eau de Javel}
+
+\begin{documentboxenv}{Montage pour dosage}
+On dose le diiode formé par une solution de thiosulfate de sodium de concentration molaire apportée
+\[
+c_1 = \SI{0,10}{\mole\per\liter}
+\]
+Le volume à l'équivalence est :
+\[
+V_{1E} = \SI{10,0}{mL}
+\]
+\end{documentboxenv}
+
+\begin{enumerate}
+    \item Écrire l'équation de la réaction entre le diiode et les ions thiosulfate.
+    \item Justifier la décoloration progressive du mélange réactionnel.
+    \item Quel est le réactif limitant avant l'équivalence ? Après l'équivalence ? À l'équivalence ?
+    \item Déduire des résultats de l'expérience la quantité de matière de diiode présente dans le mélange réactionnel.
+    \item Calculer la quantité de matière d'ions hypochlorite initialement présents dans le prélèvement de volume $V$.
+    \item Déterminer la concentration en ions hypochlorite de la solution $S$, puis de la solution commerciale.
+    \item En utilisant l'équation de la réaction chimique donnée au Doc. 1, calculer la quantité de matière de dichlore produite par un litre d'eau de Javel.
+    \item En déduire le degré chlorométrique de l'eau de Javel commerciale utilisée.
+\end{enumerate}
+
+\subsection*{Corrigé}
+
+\begin{enumerate}
+    \item \textbf{Équation de la réaction de dosage}
+
+    Le diiode réagit avec les ions thiosulfate selon :
+    \[
+    \ce{I2(aq) + 2S2O3^{2-}(aq) -> 2I^-(aq) + S4O6^{2-}(aq)}
+    \]
+
+    \item \textbf{Décoloration progressive}
+
+    Le diiode en solution donne, en présence d'amidon, une coloration bleue.  
+    Au cours du dosage, les ions thiosulfate consomment progressivement le diiode.  
+    La quantité de diiode diminue donc, et la coloration bleue s'atténue puis disparaît à l'équivalence.
+
+    \item \textbf{Réactif limitant}
+
+    \begin{itemize}
+        \item avant l'équivalence : les ions thiosulfate sont le \textbf{réactif limitant} ;
+        \item à l'équivalence : les réactifs sont introduits dans les proportions stoechiométriques ;
+        \item après l'équivalence : le diiode a été totalement consommé, c'est donc le \textbf{diiode} qui était limitant.
+    \end{itemize}
+
+    \item \textbf{Quantité de matière de diiode}
+
+    À l'équivalence :
+    \[
+    n(\ce{S2O3^{2-}}) = c_1 \times V_{1E}
+    \]
+    avec
+    \[
+    c_1 = \SI{0,10}{\mole\per\liter}
+    \quad \text{et} \quad
+    V_{1E} = \SI{10,0}{mL} = \SI{10,0e-3}{L}
+    \]
+    donc
+    \[
+    n(\ce{S2O3^{2-}}) = 0,10 \times 10,0\times10^{-3} = \SI{1,0e-3}{mol}
+    \]
+
+    Or d'après l'équation :
+    \[
+    \ce{I2 + 2S2O3^{2-} -> 2I^- + S4O6^{2-}}
+    \]
+    donc
+    \[
+    n(\ce{I2}) = \frac{1}{2}n(\ce{S2O3^{2-}})
+    \]
+    soit
+    \[
+    n(\ce{I2}) = \frac{1,0\times10^{-3}}{2} = \SI{5,0e-4}{mol}
+    \]
+
+    \item \textbf{Quantité de matière d'ions hypochlorite dans le prélèvement}
+
+    La réaction entre les ions hypochlorite et les ions iodure est :
+    \[
+    \ce{ClO^- + 2I^- + 2H^+ -> I2 + H2O}
+    \]
+
+    Les coefficients stoechiométriques montrent que :
+    \[
+    n(\ce{ClO^-}) = n(\ce{I2})
+    \]
+    donc dans le prélèvement de volume \(\SI{10,0}{mL}\) :
+    \[
+    n(\ce{ClO^-}) = \SI{5,0e-4}{mol}
+    \]
+
+    \item \textbf{Concentration en ions hypochlorite}
+
+    Dans la solution diluée $S$ :
+    \[
+    c_S = \frac{n(\ce{ClO^-})}{V}
+    = \frac{5,0\times10^{-4}}{10,0\times10^{-3}}
+    = \SI{5,0e-2}{\mole\per\liter}
+    \]
+
+    Donc :
+    \[
+    c_S = \SI{5,0e-2}{\mole\per\liter}
+    \]
+
+    La solution commerciale est 10 fois plus concentrée :
+    \[
+    c_{\text{commerciale}} = 10 \times c_S = \SI{5,0e-1}{\mole\per\liter}
+    \]
+
+    Donc :
+    \[
+    c_{\text{commerciale}} = \SI{0,50}{\mole\per\liter}
+    \]
+
+    \item \textbf{Quantité de matière de dichlore produite par 1 litre d'eau de Javel}
+
+    D'après la réaction :
+    \[
+    \ce{ClO^- + Cl^- + 2H^+ -> H2O + Cl2}
+    \]
+
+    Il y a une proportion \(1:1\) entre \(\ce{ClO^-}\) et \(\ce{Cl2}\).
+
+    Dans \SI{1,0}{L} d'eau de Javel commerciale :
+    \[
+    n(\ce{ClO^-}) = c_{\text{commerciale}} \times V = 0,50 \times 1,0 = \SI{0,50}{mol}
+    \]
+
+    Donc :
+    \[
+    n(\ce{Cl2}) = \SI{0,50}{mol}
+    \]
+
+    \item \textbf{Degré chlorométrique}
+
+    Avec le volume molaire :
+    \[
+    V_m = \SI{22,4}{\liter\per\mole}
+    \]
+
+    le volume de dichlore produit par \SI{1,0}{L} d'eau de Javel vaut :
+    \[
+    V(\ce{Cl2}) = n(\ce{Cl2}) \times V_m
+    = 0,50 \times 22,4
+    = \SI{11,2}{L}
+    \]
+
+    Le degré chlorométrique de l'eau de Javel est donc :
+    \[
+    \boxed{\SI{11,2}{\degree chl}}
+    \]
+
+    Cette valeur est proche de l'indication de \(\SI{12}{\degree chl}\).
+\end{enumerate}
+
+\end{document}
