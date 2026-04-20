@@ -1,10 +1,11 @@
-\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,12pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 \usepackage{../../Styles/Cours}
 
 
 \newcommand{\chnum}{Chapitre 16}
 \newcommand{\chtitle}{Thermodynamique}
 \newcommand{\dtype}{Cours}
+\usepackage{ltablex}
   
 
 \begin{document}
@@ -185,7 +186,7 @@
 		\includegraphics[scale=.6]{Ressources/TSPE_C14_Cours_Fig11.png}\\
 	
 	La température du système suit une décroissance exponentielle. Il est possible de le démontrer en établissant l'équation différentielle que vérifie cette température.
-
+\newpage
 	\tabletail{\hline}
 	\begin{xtabular}{|p{8cm}|p{10cm}|}
 		\hline
@@ -249,7 +250,9 @@
 		\begin{eqnarray}
 			\dfrac{dT}{dt} + \dfrac{1}{\tau}\times T = \dfrac{T_{ext}}{\tau} \text{ avec : } \tau = \dfrac{m\times c}{h\times S}\nonumber
 		\end{eqnarray}\\
+		&\\
 		\hline
+	%\pagebreak
 		\multicolumn{2}{|c|}{\textbf{Résolution de l'équation différentielle}}\\
 		\hline
 		Trouver l'expression générale des solutions à cette équation. & Les solution de l'équation précédente sont de la forme :
@@ -274,6 +277,7 @@
 		\multicolumn{2}{|c|}{\includegraphics[scale=.8]{Ressources/TSPE_C14_Cours_Fig8.png}}\\
 		\hline
 	\end{xtabular}
+\newpage
 \section{Bilan radiatif de la Terre}
 	\subsection{Loi de Stefan-Boltzmann}
 	Tour corps à température $T$ émet un rayonnement électromagnétique. La loi de Stefan-Boltzmann permet s'établir une relation entre le flux thermique surfacique émis $\varphi$ et la température $T$ :

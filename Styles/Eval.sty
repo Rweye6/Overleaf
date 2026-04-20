@@ -21,7 +21,7 @@
 
 %\setlength{\mathindent}{0pt}%indentation dans math = 0
 
-\RequirePackage[top = 1.5cm, bottom = 2.5cm, left = 1cm, right = 1cm]{geometry}
+\RequirePackage[top = 2cm, bottom = 2.5cm, left = 1cm, right = 1cm]{geometry}
 \RequirePackage{titlesec}
 %\setcounter{secnumdepth}{4}
 \RequirePackage[dvipsnames]{xcolor}
@@ -74,13 +74,13 @@
 } %setup pour SIunitx
 
 \RequirePackage[format=hang,labelfont=bf]{caption}
+\renewcommand{\autodot}{}
+\titleformat{\section}{\vspace{0.1ex}%
+\normalfont \bfseries \normalsize}{\thesection}{.1em}{\bfseries}
 
-\titleformat{\section}{\vspace{.8ex}%
-\normalfont \bfseries \normalsize}{\thesection.}{.5em}{\bfseries}
-
-\renewcommand{\thesection}{Exercice \arabic{section} :}
-\titlespacing{\section}{0pt}{1em}{.5em}
-\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+\renewcommand{\thesection}{Exercice \arabic{section} : }
+%\titlespacing{\section}{0pt}{1em}{0.5em}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}. }
 \renewcommand{\thesubsubsection}{\hspace{1em}{$\rightarrow$}}
 \renewcommand{\figurename}{\textbf{Document }}
 
@@ -140,7 +140,7 @@
 \renewcommand{\arraystretch}{1.5}
 
 
-\title{\vspace{-2em}%\large 
+\title{\vspace{-3em}%\large 
 	\boxput*(0 ,1){
 		\colorbox {gray!10}{ \small \chnum}
 			}{

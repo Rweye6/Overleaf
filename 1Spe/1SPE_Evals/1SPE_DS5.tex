@@ -1,4 +1,4 @@
-\documentclass[a4paper,fontsize=11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\documentclass[a4paper,fontsize=10pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
 
 \usepackage{../../Styles/Eval}
 
@@ -11,20 +11,59 @@
 
 \section{Polarité des molécules organiques}
 
-On considère les structures chimiques suivantes : \ce{HSO4-} ; \ce{HPO3} et \ce{H2CO2}
+On considère les structures chimiques suivantes : \ce{H2CCl2} ; \ce{CCl4} et \ce{H2CO2}
 \begin{enumerate}
     \item Proposer pour chaque molécule un schéma de Lewis correct.
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{20cm} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
     \item En se basant sur le tableau des électronégativités de Pauling, réécrire les structures de Lewis en indiquant les éventuelles charges partielles qui y sont présentes.
-    \item Déterminer la géométrie de ces structures autour des atomes de soufre, de phosphore et du carbone.
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{15em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
+    \item Déterminer la géométrie de ces structures autour de l'atome de carbone de chaque structure.
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{17em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
     \item Déterminer si chacune des molécules est polaires ou apolaires.
 \end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{10em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{table}[h!]
+\caption{Tableau des électronégativités sur l'échelle de Pauling}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\cline{1-3}\cline{6-11} & 1 & 2 & & & 13 & 14 & 15 & 16 & 17 & 18\\
+		\cline{1-3}\cline{6-11} 1 & \textbf{\ce{_1H}}& & & & & & & & & \textbf{\ce{_2He}}\\
+		&2,20& & & & & & & & & \\
+		
+		\cline{1-3}\cline{6-11} 2 & \textbf{\ce{_3Li}}& \textbf{\ce{_4Be}} & & & \textbf{\ce{_5B}}&\textbf{\ce{_6C}} &\textbf{\ce{_7N}} & \textbf{\ce{_8O}}&\textbf{\ce{_9F}} & \textbf{\ce{_10Ne}}\\
+		&0,98 & 1,57 & & & 2,04 & 2,55 & 3,04 & 3,44 & 3,98 & \\
+		
+		\cline{1-3}\cline{6-11} 3 & \textbf{\ce{_11Na}}& \textbf{\ce{_12Mg}} & & & \textbf{\ce{_13Al}}&\textbf{\ce{_14Si}} &\textbf{\ce{_15P}} & \textbf{\ce{_16S}}&\textbf{\ce{_17Cl}} & \textbf{\ce{_18Ar}}\\
+		&0,93 & 1,31 & & & 1,61 & 1,90 & 2,19 & 2,58 & 3,16 & \\
+		\cline{1-3}\cline{6-11}		
+	\end{tabular}
+
+\end{table}
 
 \section{Dosage de l'eau de Javel}
 L'eau de Javel est une solution oxydante utilisée comme désinfectant et comme décolorant. Selon l'emploi désiré, il est important de connaître sa concentration.
 
 \begin{documentboxenv}{Synthèse de l'eau de Javel}
 Charles Guillaume Scheele (1742-1786), pharmacien suédois, découvrit le dichlore au 18\textsuperscript{ème} siècle. Ce gaz intervient dans la fabrication de l'eau de Javel ;  qui doit son nom à un ancien village aujourd'hui compris dans un quartier de Paris.\\
-C'est à Javel que Claude Louis Berthollet (1748-1822), directeur à la manufacture des Gobelins, fabriqua ce produit décolorant et désinfectant et l'employa en 1785 pour le blanchiment des toiles textiles. L'eau de Javel est obtenue par action du dichlore \ce{Cl2(g)} sur l'hydroxyde de sodium ou soude et contient des ions \ce{Cl-(aq)}., \ce{ClO-(aq)}, \ce{Na+(aq)} ainsi que de l'eau \ce{H2O l)}.\\
+C'est à Javel que Claude Louis Berthollet (1748-1822), directeur à la manufacture des Gobelins, fabriqua ce produit décolorant et désinfectant et l'employa en 1785 pour le blanchiment des toiles textiles. L'eau de Javel est obtenue par action du dichlore \ce{Cl2(g)} sur l'hydroxyde de sodium ou soude et contient des ions \ce{Cl-(aq)}., \ce{ClO-(aq)}, \ce{Na+(aq)} ainsi que de l'eau \ce{H2O(l)}.\\
 C'est donc une solution aqueuse constituée entre autres d'ions chlorure et d'ions hypochlorite \ce{ClO-(aq)}. En milieu acide, l'eau de Javel subit une transformation complète représentée par la réaction d'équation : $$\ce{ClO-(aq) + Cl-(aq) + 2 H+(aq) -> H2O(l) + Cl2(g)} $$
 Cette transformation permet de définir le degré chlorométrique. Celui-ci est égal au volume, exprimé en litres, de dichlore produit par un litre d'eau de Javel. Ce volume est mesuré à une température de \SI{0}{\celsius} sous une pression de \SI{1,013}{\bar}.
 \end{documentboxenv}
@@ -42,15 +81,23 @@ Pour vérifier l'indication portée sur une bouteille commerciale d'eau de Javel
     \subsection{Réaction entre les ions hypochlorite et les ions iodure}
     \begin{enumerate}
         \item L'eau de Javel commerciale étant trop concentrée, il faut  d'abord effectuer une dilution du dixième pour obtenir \SI{50,0}{mL} de solution diluée $S$. Décrire une méthode qui permet d'effectuer cette dilution. Préciser la verrerie nécessaire (noms et volumes).
+    \end{enumerate}
+    \noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{16em} \hspace{\linewidth}
+\end{minipage}}
+\begin{enumerate}[resume]
         \item Dans un erlenmeyer (noté $E$), on introduit dans cet ordre : $V = \SI{10,0}{mL}$ de solution $S$ puis $V' = \SI{20,0}{mL}$ de la solution d'iodure de potassium (\ce{K+(aq)} ; \ce{I-(aq)}). Indiquer la verrerie à utiliser.
     \end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{8em} \hspace{\linewidth}
+\end{minipage}}
 
     \subsection{Détermination de la concentration en eau de Javel}
     
         \begin{documentboxenv}{Montage pour dosage}
         \noindent\begin{minipage}{.49\linewidth}
         \begin{center}
-            \includegraphics[width = .8\linewidth,trim={0 2cm 20cm 1.5cm},clip]{Ressources/Capture d’écran 2026-03-28 à 20.17.49.png}
+            \includegraphics[width = .6\linewidth,trim={0 2cm 20cm 1.5cm},clip]{Ressources/Capture d’écran 2026-03-28 à 20.17.49.png}
         \end{center}
     \end{minipage}
     \begin{minipage}{.49\linewidth}
@@ -60,15 +107,61 @@ Pour vérifier l'indication portée sur une bouteille commerciale d'eau de Javel
     \end{documentboxenv}
     
     
-    \begin{enumerate}
+    \begin{enumerate}[resume]
         \item Écrire l'équation de la réaction qui sera notée (2), entre le diiode et les ions thiosulfate.
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{6em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
         \item Justifier la décoloration progressive du mélange réactionnel.
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{8em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
         \item Quel est le réactif limitant avant l'équivalence ? Après l'équivalence ? À l'équivalence ?
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{15em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
         \item Déduire des résultats de l'expérience, la quantité de matière de diiode présente dans le mélange réactionnel. Cette quantité de matière correspond aussi à la quantité produite lors de la réaction (1).
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{18em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
         \item Calculer la quantité de matière d'ions hypochlorite initialement présents dans le prélèvement de volume $V$.
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{18em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
         \item Déterminer la concentration en ions hypochlorite de la solution $S$, puis de la solution commerciale.
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{18em} \hspace{\linewidth}
+\end{minipage}}
+\newpage
+\begin{enumerate}[resume]
         \item En utilisant l'équation de la réaction chimique donnée au Doc. 1, calculer la quantité de matière de dichlore produite par un litre d'eau de Javel.
+\end{enumerate}
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{22em} \hspace{\linewidth}
+\end{minipage}}
+
+\begin{enumerate}[resume]
         \item Le volume molaire d'un gaz parfait, dans les conditions de température et de pression citées dans le texte vaut \SI{22,4}{\liter\per\mole}. En déduire le degré chlorométrique de l'eau de Javel commerciale utilisée.
     \end{enumerate}
+
+\noindent \fbox{\begin{minipage}{\linewidth}
+    \vspace{22em} \hspace{\linewidth}
+\end{minipage}}
 \end{document}
 

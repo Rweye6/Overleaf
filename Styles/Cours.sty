@@ -79,6 +79,7 @@
 \titleformat{\section}{\vspace{.8ex}%
 \normalfont \bfseries \normalsize}{\thesection.}{.5em}{\bfseries}
 
+\renewcommand{\autodot}{}
 \renewcommand{\thesection}{\arabic{section}}
 \titlespacing{\section}{0pt}{1em}{.5em}
 \renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}}
@@ -184,7 +185,7 @@ innerbottommargin=8pt
 	\begin{basebox}[
 		backgroundcolor=blue!5,
 		linecolor=blue!5,
-		frametitle={\color{blue!75!black}\bfseries #1}
+		frametitle={\color{blue!75!black}\bfseries}
 		]
 	}{\end{basebox}}
 

@@ -1,0 +1,123 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Eval}
+\usepackage{longtable}
+
+\newcommand{\chnum}{Chapitre 21 et 14}
+\newcommand{\chtitle}{Dipole RC et Mouvement d'un fluide}
+\newcommand{\dtype}{DS 5}
+
+\begin{document}
+\maketitle
+\section{Installation sanitaire}
+Pour obtenir une pression de l'eau confortable aux robinets ditués à l'étage, il est parfois conseillé d'utiliser un surpresseur. Ce dispositif est monté à l'entrée de l'installation si la pression de l'eau distribuée est inférieure à \SI{2,0}{\bar}.
+\begin{data}
+    \begin{itemize}
+        \item Intensité de la pesanter : $g =\SI{9,81}{\meter\per\second\squared}$
+        \item Masse volumique de l'eau : $\rho_{eau} = \SI{1,00E3}{\kilo\gram\per\meter\squared}$
+        \item Conversion : \SI{1,0}{\bar} $=$ \SI{1,0E5}{\pascal}
+        \item Expression du débit volumique : $D = v \cdot S$
+        \item On considère que la relation de Bernoulli peut s'appliquer le long d'une ligne de courant s'un fluide incompressible en écoulement permanent indépendant du temps.
+    \end{itemize}
+    Le tableau suivant définit $s$ et $P$ et donne les caractéristiques du logement.
+    \begin{center}
+        \begin{tabular}{|>{\centering}m{.3\linewidth}|>{\centering}m{.3\linewidth}|>{\centering\arraybackslash}m{.3\linewidth}|}
+            \hline
+            \textbf{Caractéristiques de l'installation sanitaire du logement} & \textbf{Entrée du cumulus} & \textbf{Robinet à l'étage}\\
+            \hline
+            \textbf{Altitude $z$ (\unit{\meter})} & \num{0,0} & \num{5,0}\\
+            \hline
+            \textbf{Section $S$ (\unit{\meter\squared})} & \num{2,0E-4} & \num{1,1E-4}\\
+            \hline
+            \textbf{Pression $P$ (\unit{\pascal})} & \num{3,0E5} & $P_2$\\
+            \hline
+            \textbf{Vitesse d'écoulement $v$ (\unit{\meter\per\second})} & \num{1,0} & $v_2$\\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{data}
+L'eau est considérée comme un fluide incompressible en écoulement permanent indépendant du temps.
+
+\begin{enumerate}
+    \item Indiquer, en justifiant, la relation entre les débits volumiques $D_1$ à l'entrée du cumulus et $D_2$ au robinet à l'étage.
+    \item Endéduire que la vitesse de l'eau au robinet à l'étage a pour valeur $V_2 = \SI{1,8}{\meter\per\second}$.
+    \item Déterminer la valeur de la pression de l'eau $P_2$ à la sortie du robinet à l'étabe en appliquant la relation de Bernoulli.
+    \item Indiquer si un surpresseur est nécessaire à l'entrée de l'installation sanitaire du logement nouvellement acheté par le couple.
+\end{enumerate}
+
+\section{Capteur capacitif}
+Un capteur de déplacement capacitif est une famille de capteurs utilisant l'effet capacitif pour détecer une variation de faibles distances.Il est généralement réalisé avec une électrode, en forme de disque, plane entourée d'un anneau de garde isolé de l'électrode centrale. L'électrode forme, avec la pièce à mesurer conductrice, un condensateur plan.\\
+La capacité d'un condensateur dépend de sa géométrie et de l'isolant entre ses armatures. Si on modifie l'un de ces deux paramètres, la capacité du condensateur va varier. On se sert donc de cette propriété pour utiliser un condensateur comme capteur.\\
+L'objectif de cet exercice est de faire l'étude d'un dipôle RC et d'utiliser ensuite cette étude pour expliquer le fonctionnement d'un capteur capacitif.
+
+\subsection{Étude théorique de la charge d'un dipôle RC}
+On réalise un circuit électrique composé d'un générateur de tension supposé idéal, d'un interrupteur, d'un dipôle ohmique de résistance $R$ et d'un condensateur de capacité $C$ reliés en série. Le schéma électrique est donné figure~\ref{Fig1}.
+\begin{figure}[h!]
+    \caption{Schéma électrique du circuit réalisé}
+    \label{Fig1}
+    \begin{center}
+        \includegraphics[width=.7\linewidth]{Ressources/Capture d’écran 2026-04-01 à 20.56.48.png}
+    \end{center}
+\end{figure}
+
+L'interrupteur est initialement ouvert et le condensateur est déchargé. À l'instant $t = \SI{0}{s}$, on ferme l'interrupteur et un courant d'intensité $i$ circule dans le circuit.
+
+\begin{enumerate}
+    \item Établir une relation entre les trois tensions électriques à l’aide de la loi des mailles, une fois l’interrupteur fermé.
+    \item Écrire l'expression traduisant la loi d'Ohm pour le conducteur ohmique de résistance $R$.
+    \item Écrire l'expression reliant le courant d’intensité $i$, la tension $u_C$ et la capacité $C$ du condensateur.
+    \item En déduire que l'équation différentielle régissant l'évolution de la tension $u_C$ aux bornes du condensateur s’écrit : $$\dfrac{du_C}{dt} + \dfrac{u_C}{RC}=\dfrac{E}{RC} $$
+    \item Vérifier que la solution est de la forme $u_C = E \times \left(1-e^{-\dfrac{t}{RC}}\right)$.
+\end{enumerate}
+    \subsection{Étude expérimentale de la charge d'un dipôle RC.}
+
+    On réalise expérimentalement le montage précédent. On utilise un dipôle ohmique de résistance $R$ égale à \SI{330}{\ohm}. À l'instant $t = \SI{0}{s}$, on ferme l'interrupteur. On relève les valeurs de la tension $u_C$ aux bornes du condensateur en fonction du temps. L'évolution de la tension $u_C$ aux bornes du condensateur est donnée figure~\ref{Fig2}.
+    \begin{figure}
+        \caption{Évolution de la tension $u_C$ aux bornes du condensateur en fonction du temps}
+        \label{Fig2}
+        \begin{center}
+            \includegraphics[width=.7\linewidth]{Ressources/Capture d’écran 2026-04-01 à 21.09.07.png}
+        \end{center}
+    \end{figure}
+    Le temps caractéristique, $\tau$, correspond à la durée nécessaire pour atteindre \SI{63}{\percent} de la tension finale aux bornes du condensateur.
+    \begin{enumerate}[resume]
+        \item Déterminer graphiquement la valeur du temps caractéristique $\tau$.
+        \item Écrire l'expression reliant le temps caractéristique $\tau$, la résistance $R$ du conducteur ohmique et la capacité $C$ du condensateur.
+        \item En déduire la valeur de la capacité $C$ du condensateur.
+    \end{enumerate}
+
+    \subsection{Étude d'un condensateur à capacité variable.}
+    Un condensateur à capacité variable peut être réalisé avec un condensateur plan qui comporte une armature fixe et une armature mobile. Les armatures sont des plaques métalliques séparées par un isolant.
+    \begin{data}
+    La capacité C d'un condensateur plan est donnée par la relation : $$C = \dfrac{\varepsilon\cdot S}{d} $$
+    avec $\varepsilon$ la permittivité de l'isolant, $S$ la surface des armatures et d la distance entre les armatures.
+    \end{data}
+    \begin{figure}[h!]
+        \begin{center}
+        \label{Fig3}
+        \caption{Schéma d'un condensateur à capacité variable}
+        \includegraphics[width = .5\linewidth]{Ressources/Capture d’écran 2026-04-01 à 21.15.09.png}
+    \end{center}
+    \end{figure}
+    \begin{enumerate}[resume]
+        \item Sachant que la capacité $C$ d'un condensateur s’exprime en farad (F), déterminer l'unité légale de la permittivité $\varepsilon$ grâce à la relation précédente.
+    \end{enumerate}
+    Dans ce condensateur à capacité variable, les surfaces $S$ des armatures sont  constantes et la permittivité de l'isolant $\varepsilon$ reste la même. Seule la distance $d$ entre les armatures peut être modifiée puisqu'une armature est mobile.
+    \begin{enumerate}[resume]
+        \item On rapproche l'armature mobile de l'armature fixe. Décrire l’évolution de la capacité $C$ du condensateur.
+    \end{enumerate}
+
+    \subsection{Réalisation d'un capteur de position}
+    On souhaite coller deux plaques métalliques et contrôler l'épaisseur de colle entre les deux plaques pour éviter qu'il y en ait trop ou pas assez. Les deux plaques peuvent constituer des armatures et la colle est un isolant dont la permittivité $\varepsilon$ est supposée constante et connue. On utilise le circuit capacitif de la figure~\ref{Fig4} pour contrôler cette épaisseur.
+
+    \begin{figure}[h!]
+        \caption{Schéma du circuit de contrôle de l'épaisseur}
+        \label{Fig4}
+        \begin{center}
+            \includegraphics[width=.7\linewidth]{Ressources/Capture d’écran 2026-04-01 à 21.22.12.png}
+        \end{center}
+    \end{figure}
+
+    \begin{enumerate}[resume]
+        \item Expliquer comment utiliser ce montage pour contrôler l'épaisseur de colle.
+    \end{enumerate}
+\end{document}
