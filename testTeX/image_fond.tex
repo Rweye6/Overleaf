@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[top=2cm, bottom=2cm, outer=0cm, inner=0cm]{geometry}
+\begin{document}
+	Some content
+	\tikz[remember picture,overlay] \node[opacity=0.1 ,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{example-image.jpg}};
+	\clearpage
+	text
+	\tikz[remember picture,overlay] \node[opacity=0.2 ,inner sep=0pt] at (current page.center){\begin{tikzpicture}
+			\fill[purple] (0,0) rectangle (10,15);
+	\end{tikzpicture}};
+\end{document}
