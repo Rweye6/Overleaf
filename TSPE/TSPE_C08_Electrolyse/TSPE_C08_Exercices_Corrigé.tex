@@ -1,0 +1,180 @@
+\documentclass[a4paper,11pt,fleqn]{article}
+\usepackage{../../Styles/Exercice}
+
+\newcommand{\chnum}{Chapitre 8}
+\newcommand{\chtitle}{Réactions chimiques forcées}
+\newcommand{\dtype}{Corrigé}
+
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+
+\section{Schématiser les transferts d'électrons aux électrodes}
+
+\subsection*{1. Demi-équations électroniques}
+
+On observe :
+\begin{itemize}
+    \item Formation de dihydrogène à l’électrode B $\Rightarrow$ réduction des ions $\ce{H+}$
+    \item Formation de dioxygène à l’électrode A $\Rightarrow$ oxydation de l’eau
+\end{itemize}
+
+\textbf{À la cathode (réduction, électrode B)} :
+\[
+\ce{2H+(aq) + 2e^- -> H2(g)}
+\]
+
+\textbf{À l’anode (oxydation, électrode A)} :
+\[
+\ce{2H2O(l) -> O2(g) + 4H+(aq) + 4e^-}
+\]
+
+\subsection*{2. Sens des électrons et bornes}
+
+\begin{itemize}
+    \item Les électrons circulent dans le circuit extérieur de l’anode vers la cathode.
+    \item L’anode est reliée au pôle positif du générateur.
+    \item La cathode est reliée au pôle négatif du générateur.
+\end{itemize}
+
+Donc :
+\begin{itemize}
+    \item Électrode A : anode (+)
+    \item Électrode B : cathode (-)
+\end{itemize}
+
+\section{Déterminer les variations de quantité de matière}
+
+\subsection*{1. Quantité d’électricité}
+
+\[
+Q = I \times \Delta t
+\]
+
+Avec :
+\[
+\Delta t = 20\,\text{min} = 1200\,\text{s}
+\]
+
+\[
+Q = 0{,}40 \times 1200 = 480\,\text{C}
+\]
+
+\subsection*{2. Quantité de matière d’électrons}
+
+\[
+n(e^-) = \frac{Q}{\mathcal{F}} = \frac{480}{96500}
+\]
+
+\[
+n(e^-) \approx 4{,}97 \times 10^{-3}\,\text{mol}
+\]
+
+\subsection*{3. Quantités de matière formées}
+
+\textbf{Pour le rhodium :}
+\[
+\ce{Rh^{3+} + 3e^- -> Rh}
+\]
+
+\[
+n(\ce{Rh}) = \frac{n(e^-)}{3} \approx \frac{4{,}97 \times 10^{-3}}{3}
+\]
+
+\[
+n(\ce{Rh}) \approx 1{,}66 \times 10^{-3}\,\text{mol}
+\]
+
+\textbf{Pour le dioxygène :}
+\[
+\ce{2H2O -> O2 + 4H+ + 4e^-}
+\]
+
+\[
+n(\ce{O2}) = \frac{n(e^-)}{4} \approx \frac{4{,}97 \times 10^{-3}}{4}
+\]
+
+\[
+n(\ce{O2}) \approx 1{,}24 \times 10^{-3}\,\text{mol}
+\]
+
+\subsection*{4. Masse et volume}
+
+\textbf{Masse de rhodium :}
+\[
+m = n \times M = 1{,}66 \times 10^{-3} \times 102{,}9
+\]
+
+\[
+m \approx 0{,}171\,\text{g}
+\]
+
+\textbf{Volume de dioxygène :}
+\[
+V = n \times V_m = 1{,}24 \times 10^{-3} \times 24{,}0
+\]
+
+\[
+V \approx 2{,}98 \times 10^{-2}\,\text{L} \approx 29{,}8\,\text{mL}
+\]
+
+\section{Nickelage électrolytique d'une pièce métallique}
+
+\subsection*{1. Électrode de la pièce}
+
+La pièce doit être reliée au pôle négatif (cathode), car il y a réduction :
+
+\[
+\ce{Ni^{2+}(aq) + 2e^- -> Ni(s)}
+\]
+
+\subsection*{2. Nature de l’électrode}
+
+La pièce est la \textbf{cathode}.
+
+\subsection*{3. Rôle de l’électrode en nickel}
+
+L’électrode en nickel joue le rôle d’anode soluble :
+
+\[
+\ce{Ni(s) -> Ni^{2+}(aq) + 2e^-}
+\]
+
+Cela permet de maintenir constante la concentration en ions $\ce{Ni^{2+}}$.
+
+\subsection*{4. Quantités de matière}
+
+\[
+n(\ce{Ni}) = \frac{m}{M} = \frac{3{,}0}{59{,}0}
+\]
+
+\[
+n(\ce{Ni}) \approx 5{,}08 \times 10^{-2}\,\text{mol}
+\]
+
+D’après la demi-équation :
+
+\[
+n(e^-) = 2 \times n(\ce{Ni}) \approx 1{,}02 \times 10^{-1}\,\text{mol}
+\]
+
+\subsection*{5. Durée de l’électrolyse}
+
+\[
+Q = n(e^-) \times \mathcal{F}
+\]
+
+\[
+Q = 1{,}02 \times 10^{-1} \times 96500 \approx 9{,}84 \times 10^{3}\,\text{C}
+\]
+
+\[
+\Delta t = \frac{Q}{I} = \frac{9{,}84 \times 10^{3}}{8{,}0}
+\]
+
+\[
+\Delta t \approx 1230\,\text{s} \approx 20{,}5\,\text{min}
+\]
+
+\end{multicols}
+\end{document}
