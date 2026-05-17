@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 id="nanosatellite">Nanosatellite</h1>
+<p>Le projet Janus (Jeunes en Apprentissage pour la réalisation de
+Nanosatellites au sein des Universités et des écoles de l’enseignement
+Supérieur) a pour objectif de promouvoir les technologies de
+l’aérospatial auprès des étudiants des écoles et universités
+françaises.<br />
+Pour cela, le CNES leur propose de développer et d’envoyer dans l’espace
+sous le format "Cubesats", c’est-à-dire de petits systèmes cubiques de
+masse comprise entre 1 et 10 kg.<br />
+Les satellites X-CubeSat et Spacecube ont été mis au point par des
+étudiants de l’école polytechnique, de l’école des mines de Paris et du
+BTS du lycée Diderot à Paris. Ils ont été mis en orbite les 17 et 18 mai
+2017 depuis la station spatiale internationale et ont pour mission
+d’analyser le taux d’oxygène atomique de la thermosphère, partie
+supérieure de l’atmosphère.<br />
+<strong>Données :</strong></p>
+<ul>
+<li><p>masse de la Terre : <span class="math inline">\(M_T\)</span> =
+5,97E24 kg</p></li>
+<li><p>rayon de la Terre : <span class="math inline">\(R_T\)</span> =
+6400 km</p></li>
+<li><p>constante universelle de gravitation : <span
+class="math inline">\(G\)</span> = 6,67E-11 S.I.</p></li>
+<li><p>vitesse de la lumière dans le vide : <span
+class="math inline">\(c\)</span> = 3,00E8 m s<sup>−1</sup></p></li>
+</ul>
+<p>On se place dans le référentiel géocentrique.<br />
+</p>
+<div class="minipage">
+<p>Les caractéristiques de l’orbite de Spacecube sont les suivantes
+:</p>
+<ul>
+<li><p>altitude minimale au point <span class="math inline">\(P\)</span>
+: 395 km</p></li>
+<li><p>altitude maximale au point <span class="math inline">\(A\)</span>
+: 402 km</p></li>
+<li><p>nombre de révolutions par jour : 15.56</p></li>
+</ul>
+</div>
+<div class="minipage">
+<p><img src="Ressources/TSPE_DS5_25_fig1.png" alt="image" /></p>
+</div>
+<ol>
+<li><p>Montrer par un calcul d’écart relatif qu’il est possible de
+considérer que l’orbite de ce satellite est quasi-circulaire. On
+calculera pour cela le pourcentage d’écart entre les extremums.</p></li>
+</ol>
+<p>on considère pour la suite de l’exercice que l’orbite est
+effectivement circulaire, d’altitude <span
+class="math inline">\(h\)</span>= 400 km.</p>
+<ol>
+<li><p>Exprimer la vitesse <span class="math inline">\(v\)</span> su
+satellite en fonction de sa période de rotations <span
+class="math inline">\(T\)</span> et du rayon de l’orbite <span
+class="math inline">\(R\)</span>.</p></li>
+<li><p>Donner l’expression de l’accélération <span
+class="math inline">\(a_N\)</span> du satellite dans le cas d’un
+mouvement circulaire.</p></li>
+<li><p>A l’aide de la seconde loi de Newton et des réponses aux
+questions précédentes, calculer le nombre de révolutions effectuées par
+jour par ce satellites. Conclure quant à l’approximation d’une orbite
+circulaire.</p></li>
+</ol>
+<h1 id="la-pile-au-méthanol">La pile au méthanol</h1>
+<p>La pile au méthanol fait partie des piles à combustibles. Elle est
+constituée de deux électrodes en platine, au niveau desquelles se
+produisent une réaction d’oxydation et une réaction de réduction. Le
+platine sert de catalyseur pour les réactions d’oxydo-réduction. Les
+deux électrodes sont séparées par une membrane poreuse riche en ions
+hydrogène , appelée membrane protonique. L’une des électrodes est
+alimentée par du dioxygène puisé dans l’air, et l’autre est alimentée
+par un combustible, ici le méthanol en solution aqueuse.<br />
+<strong>Données :</strong></p>
+<ul>
+<li><p>masse molaire du méthanol : <span
+class="math inline">\(M_{\text{méthanol}}\)</span> =
+32.0 g mol<sup>−1</sup></p></li>
+<li><p>masse volumique du méthanol : <span
+class="math inline">\(\rho_{\text{méthanol}}\)</span> =
+0.792 g mL<sup>−1</sup></p></li>
+<li><p>composition volumique de l’air : 20 % de dioxygène et 80 % de
+diazote</p></li>
+<li><p>volume molaire du dioxygène dans les conditions de l’expérience :
+<span class="math inline">\(V_m\)</span> =
+24.5 L mol<sup>−1</sup></p></li>
+<li><p>constante de Faraday : <span
+class="math inline">\(\mathcal{F}\)</span> =
+9,5E4 C mol<sup>−1</sup></p></li>
+<li><p>le rendement <span class="math inline">\(r\)</span> d’une pile
+relie sa capacité électrique réelle <span
+class="math inline">\(Q&#39;_{max}\)</span> à sa capacité électrique
+théorique <span class="math inline">\(Q_{max}\)</span> par la relation :
+<span class="math inline">\(Q&#39;_{max}= r \times
+Q_{max}\)</span></p></li>
+<li><p>lorsqu’on associe des piles en série, leurs capacité électriques
+s’ajoutent.</p></li>
+</ul>
+<h2 id="étude-du-fonctionnement-de-la-pile-au-méthanol">Étude du
+fonctionnement de la pile au méthanol</h2>
+<p>Les demi-équations traduisant les réactions au niveau des électrodes
+de la pile au méthanol sont données ci-dessous :</p>
+<ul>
+<li><p>Electrode 1 :</p></li>
+<li><p>Electrode 2 :</p></li>
+</ul>
+<ol>
+<li><p>Identifier quelle électrode constitue l’anode et quelle électrode
+constitue la cathode dans la pile au méthanol.</p></li>
+<li><p>Indiquer sur le schéma du circuit en annexe, les pôles de la pile
+ainsi que le sens du courant électrique.</p></li>
+<li><p>Expliquer le rôle de la membrane protonique dans la pile au
+méthanol.</p></li>
+<li><p>. Indiquer le sens de circulation des porteurs de charge à
+l’intérieur et à l’extérieur de la pile sur le schéma en
+annexe.</p></li>
+<li><p>Écrire l’équation de la réaction chimique modélisant le
+fonctionnement de la pile.</p></li>
+</ol>
+<p>La pile est alimentée par un volume <span
+class="math inline">\(V\)</span> = 5.0 mL d’une solution aqueuse de
+méthanol à 10 % en volume et avec de l’air ambiant. Le compartiment qui
+contient l’air est constamment en contact avec l’air ambiant.</p>
+<ol>
+<li><p>Montrer que la quantité de matière de méthanol introduite dans la
+pile au méthanol a pour valeur <span
+class="math inline">\(n(\ce{CH3OH})\)</span> = 1,2E-2 mol.</p></li>
+<li><p>Justifier que le dioxygène est le réactif en excès.</p></li>
+<li><p>Déterminer le volume d’air <span
+class="math inline">\(V(air)\)</span> consommé lors du fonctionnement de
+la pile jusqu’à son usure.</p></li>
+</ol>
+<h2
+id="alimentation-dun-circuit-comportant-un-petit-ventilateur">Alimentation
+d’un circuit comportant un petit ventilateur</h2>
+<p>Au laboratoire du lycée, des élèves cherchent à faire fonctionner un
+petit ventilateur avec la pile au méthanol étudiée dans la partie a.
+Pour y parvenir, ils doivent associer deux piles en série. Ils mesurent
+alors que l’intensité du courant qui circule dans le circuit lorsque le
+ventilateur fonctionne vaut <span class="math inline">\(I\)</span> =
+450 mA. Chacune des piles a un rendement de 70 %.</p>
+<ol>
+<li><p>Calculer la capacité électrique théorique de la pile au méthanol
+étudiée dans la partie a.</p></li>
+<li><p>Les élèves souhaitent faire fonctionner le ventilateur pendant au
+moins une heure. Expliquer, en argumentant la réponse, s’ils y
+parviendront.</p></li>
+</ol>
+<h1 class="unnumbered" id="annexe">ANNEXE</h1>
+<div class="center">
+<p><img src="Ressources/TSPE_DS5_25_fig2.png" alt="image" /></p>
+</div>
+
+</body>
+</html>

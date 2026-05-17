@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 id="cinétique-dune-saponification">Cinétique d’une
+saponification</h1>
+<p>L’éthanoate d’éthyle est un liquide incolore de formule topologique
+:</p>
+<ol>
+<li><p>Recopier la formule topologique fournie et entourer le(s)
+groupement(s) fonctionnel(s). (0,5)</p></li>
+<li><p>À quelle famille de composés organiques l’éthanoate d’éthyle
+appartient-il ? (0,5)</p></li>
+</ol>
+<p>C’est la réaction entre l’éthanoate d’éthyle et une solution de soude
+(par exemple) que l’on nomme saponification. L’équation chimique
+associée s’écrit : <span class="math display">\[\ce{C4H8O2(aq) + Na+(aq)
++ HO-(aq) = Na+(aq) + A-(aq) + B(aq)}\]</span></p>
+<ol>
+<li><p>Écrire la formule semi-développée de l’espèce chimique . Donner
+son nom. (0,5)</p></li>
+<li><p>En illustrant votre propos par un schéma légendé et des flèches
+courbes, décrire la première étape nécessaire pour initier la réaction
+entre et . (0,5)</p></li>
+</ol>
+<p>À un instant choisi comme la date <span
+class="math inline">\(t=0\)</span> , on introduit de l’éthanoate
+d’éthyle dans un bécher contenant une solution de soude. On obtient un
+volume <span class="math inline">\(V = \SI{100,0}{mL}\)</span> de
+solution où les concentrations de toutes les espèces chimiques valent
+<span class="math inline">\(c_0 = \SI{1,0E-2}{\mole\per\liter} =
+\SI{10}{\mole\per\meter\cubed}\)</span>. La température est maintenue
+égale à 30 °C. On plonge dans le mélange la sonde d’un conductimètre qui
+permet de mesurer à chaque instant la conductivité <span
+class="math inline">\(\sigma\)</span> de la solution. Le tableau
+ci-dessous regroupe quelques valeurs.</p>
+<figure id="fig1">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="math inline">\(t\)</span>
+en min</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">9</th>
+<th style="text-align: center;">13</th>
+<th style="text-align: center;">20</th>
+<th style="text-align: center;">27</th>
+<th style="text-align: center;"><span
+class="math inline">\(\infty\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\sigma\)</span> en S m<sup>−1</sup></td>
+<td style="text-align: center;">0,250</td>
+<td style="text-align: center;">0,210</td>
+<td style="text-align: center;">0,192</td>
+<td style="text-align: center;">0,178</td>
+<td style="text-align: center;">0,160</td>
+<td style="text-align: center;">0,148</td>
+<td style="text-align: center;">0,091</td>
+</tr>
+</tbody>
+</table>
+<figcaption>Valeurs de conductivité au cours du temps</figcaption>
+</figure>
+<ol>
+<li><p>Soit <span class="math inline">\(x(t)\)</span> l’avancement de la
+transformation à un instant <span class="math inline">\(t\)</span>.
+Compléter le tableau d’avancement de la réaction sur la page Annexe.
+(0,5)</p></li>
+<li><p>Quelles sont les espèces chimiques responsables du caractère
+conducteur de la solution ? (0,5)</p></li>
+<li><p>Pourquoi la conductivité de la solution diminue-t-elle ?
+(1)</p></li>
+</ol>
+<p><strong>Conductivités molaires ioniques :</strong><br />
+<span class="math inline">\(\lambda (\ce{Na+}) =
+\SI{5,0E-3}{\siemens\meter\squared\per\mole}\)</span> ; <span
+class="math inline">\(\lambda (\ce{HO-}) =
+\SI{2,0E-2}{\siemens\meter\squared\per\mole}\)</span> ; <span
+class="math inline">\(\lambda (\ce{A-}) =
+\SI{4,1E-3}{\siemens\meter\squared\per\mole}\)</span></p>
+<ol>
+<li><p>Exprimer <span class="math inline">\(\sigma(t)\)</span>, valeur
+de conductivité de la solution à un instant <span
+class="math inline">\(t\)</span> en fonction de <span
+class="math inline">\(c_0\)</span>, <span
+class="math inline">\(V\)</span>, <span
+class="math inline">\(x(t)\)</span> et des conductivités molaires
+ioniques. (1)</p></li>
+<li><p>Les expressions de <span class="math inline">\(\sigma_0\)</span>
+et <span class="math inline">\(\sigma_{\infty}\)</span>, valeurs de la
+conductivité de la solution à l’instant <span
+class="math inline">\(t=0\)</span> et au bout d’une durée très grande,
+sont : <span class="math display">\[\sigma_0 = (\lambda_{\ce{Na+}} +
+\lambda_{\ce{HO-}}) \times c_0\]</span> <span
+class="math display">\[\sigma_{\infty} = (\lambda_{\ce{Na+}} +
+\lambda_{\ce{A-}}) \times c_0\]</span> Justifier ces expressions.
+(1)</p></li>
+<li><p>Montrer que l’avancement <span
+class="math inline">\(x(t)\)</span> peut être calculé par l’expression :
+<span class="math display">\[x(t) = c_0 \cdot V \cdot \dfrac{\sigma_0 -
+\sigma_t}{\sigma_0 - \sigma_{\infty}}\]</span> (1)</p></li>
+</ol>
+<p>La relation présentée ci-dessus permet de calculer les valeurs de
+l’avancement <span class="math inline">\(x(t)\)</span> à chaque instant.
+Le graphique fourni en Annexe représente l’évolution de l’avancement
+<span class="math inline">\(x(t)\)</span> en fonction du temps.</p>
+<ol>
+<li><p>Donner l’expression de la vitesse volumique de réaction en
+précisant les unités. (1)</p></li>
+<li><p>Expliquer la méthode permettant d’évaluer graphiquement cette
+vitesse à un instant donné. (1)</p></li>
+<li><p>Comment évolue cette vitesse au cours de la transformation
+chimique ? Quel est la facteur cinétique mis en jeu ici ? (1)</p></li>
+<li><p>Calculer l’avancement final. (1)</p></li>
+<li><p>Définir le temps de demi-réaction. Trouver sa valeur à partir du
+graphique. (1)</p></li>
+<li><p>On reproduit la même expérience à 50 °C. Tracer, sur le
+graphique, l’allure de la courbe obtenue. Justifier du tracé proposé.
+(1)</p></li>
+</ol>
+<h1 id="la-mécanique-au-service-de-la-pétanque">La mécanique au service
+de la pétanque</h1>
+<p>La pétanque est un jeu de boules dérivé du jeu provençal aussi appelé
+"la longue". Le but du jeu consiste tout simplement à lancer la boule le
+plus près possible du "but" matérialisé par le bouchon. Le terrain de
+jeu est horizontal.<br />
+Au début d’une partie de pétanque, un joueur trace un cercle sur le sol,
+il se place dans ce cercle et lance le bouchon à une distance entre 6 et
+10 mètres de ce cercle.<br />
+Les joueurs de pétanque ont le choix entre <em>pointer</em> c’est-à-dire
+tenter de placer leur boule plus près du "but" que l’adversaire ou
+<em>tirer</em> c’est-à-dire déplacer la boule adverse pour l’éloigner du
+"but" et remporter le point.<br />
+Le pointeur joue avec des boules de petit diamètre (71 à 74 mm) pour
+offrir moins de surface au tireur, assez lourdes pour un meilleur
+contrôle (710 à 740 g). Le tireur joue avec des boules de gros diamètre
+(74 à 78 mm), légères afin de limiter la fatigue (670 à 700 g).<br />
+Cet exercice aborde l’étude d’un lancer d’une boule par un pointeur,
+puis par un tireur. Dans tout l’exercice, les frottements seront
+négligés.</p>
+<h2 id="le-pointeur">Le pointeur</h2>
+<p>Le pointeur lance sa boule de masse <span
+class="math inline">\(m=\SI{710}{g}\)</span> avec une vitesse initiale
+<span class="math inline">\(\Vec{V_0}\)</span> faisant un angle <span
+class="math inline">\(\alpha\)</span> par rapport à l’horizontale.
+L’origine <span class="math inline">\(O\)</span> est prise au point où
+le pointeur lâche la boule. Le modèle de la chute libre conduit aux
+équations horaires du mouvement du centre <span
+class="math inline">\(G\)</span> de la boule dans le repère <span
+class="math inline">\((O,x,y)\)</span> : <span
+class="math display">\[x=v_0 \cdot \cos(\alpha)\cdot t\]</span> <span
+class="math display">\[y = -\dfrac{1}{2} g \cdot t^2 + v_0 \cdot
+\sin(\alpha)\cdot t\]</span></p>
+<p><strong>Donnée :</strong> intensité du champ de pesanteur sur Terre :
+<span
+class="math inline">\(g=\SI{9,81}{\meter\per\second\squared}\)</span><br />
+On réalise la chronophotographie du mouvement de la boule lancée par le
+pointeur. Cette chronophotographie est représentée ci-dessous.
+L’intervalle de temps entre deux prises de vue est de 33.3 ms.</p>
+<figure id="fig3">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Date <span
+class="math inline">\(t\)</span> (s)</th>
+<th style="text-align: left;"><span class="math inline">\(x\)</span>
+(m)</th>
+<th style="text-align: left;"><span class="math inline">\(y\)</span>
+(m)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">,000</td>
+<td style="text-align: left;">,000</td>
+<td style="text-align: left;">,000</td>
+</tr>
+<tr>
+<td style="text-align: left;">,033</td>
+<td style="text-align: left;">,117</td>
+<td style="text-align: left;">,117</td>
+</tr>
+<tr>
+<td style="text-align: left;">,067</td>
+<td style="text-align: left;">,243</td>
+<td style="text-align: left;">,243</td>
+</tr>
+<tr>
+<td style="text-align: left;">,100</td>
+<td style="text-align: left;">,346</td>
+<td style="text-align: left;">,360</td>
+</tr>
+</tbody>
+</table>
+<figcaption>Quelques coordonnées du centre de la boule de
+pétanque</figcaption>
+</figure>
+<figure id="fig4">
+<img src="Ressources/TSPE_DS4_24_Fig1.png" style="width:80.0%" />
+<figcaption>Chronophotographie du lancer</figcaption>
+</figure>
+<ol>
+<li><p>Déterminer, à partir de la chronophotographie, la valeur de
+l’angle <span class="math inline">\(\alpha\)</span> entre l’horizontale
+et le vecteur vitesse à l’origine des dates en précisant la méthode
+choisie. (1)</p></li>
+<li><p>En exploitant le modèle de la chute libre et en utilisant les
+résultats expérimentaux, déterminer la valeur de la vitesse initiale
+<span class="math inline">\(v_0\)</span>. (2)</p></li>
+</ol>
+<p>Le pointeur lance la boule en direction du bouchon et la lâche au
+point <span class="math inline">\(O\)</span> origine du repère choisi.
+Le point <span class="math inline">\(O\)</span> est situé à une hauteur
+de 1.2 m du sol.</p>
+<ol>
+<li><p>Montrer que la boule suit une trajectoire parabolique d’équation
+: <span class="math display">\[y = -\dfrac{1}{2} g \cdot
+\dfrac{x^2}{(v_0\cdot \cos(\alpha))^2} + \tan(\alpha)\cdot x\]</span>
+(2)</p></li>
+<li><p>Pour un angle <span class="math inline">\(\alpha\)</span> de
+<span class="math inline">\(\SI{51}{\degree}\)</span> et une vitesse
+initiale égale à 5.5 m s<sup>−1</sup>, la boule touche le sol, puis
+roule vers le bouchon. Calculer l’abscisse du point d’impact de la boule
+sur le sol. (2)</p></li>
+</ol>
+<p>On propose pour terminer l’exercice de déterminer la vitesse au point
+d’impact au sol.</p>
+<ol>
+<li><p>En utilisant l’expression de <span
+class="math inline">\(x(t)\)</span> déterminer le temps mis par la boule
+pour toucher le sol. (1)</p></li>
+<li><p>On peut déterminer la valeur de la vitesse à l’impact en
+utilisant la formule suivante : <span class="math display">\[v(t_f) =
+\sqrt{(v_x(t_f))^2+(v_y(t_f))^2}\]</span> Calculer la vitesse d’impact
+au sol. (2)</p></li>
+</ol>
+<h1 class="unnumbered" id="annexes">Annexes</h1>
+<figure id="tab1">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Réaction</strong></th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">+</th>
+<th style="text-align: left;">+</th>
+<th style="text-align: left;">=</th>
+<th style="text-align: left;">+</th>
+<th style="text-align: left;">+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Avancement</strong></td>
+<td style="text-align: left;"><span style="color: white"></span></td>
+<td style="text-align: left;"><span style="color: white"></span></td>
+<td style="text-align: left;"><span style="color: white"></span></td>
+<td style="text-align: left;"><span style="color: white"></span></td>
+<td style="text-align: left;"><span style="color: white"></span></td>
+<td style="text-align: left;"><span style="color: white"></span></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(x(t)\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(x_{max}\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<figcaption>Tableau d’avancement</figcaption>
+</figure>
+<figure id="fig:enter-label">
+
+<figcaption>Évolution de l’avancement en fonction du temps</figcaption>
+</figure>
+
+</body>
+</html>

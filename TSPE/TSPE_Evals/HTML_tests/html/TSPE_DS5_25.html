@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 id="mars-due-sous-lœil-de-kepler">Mars due sous l’œil de Kepler</h1>
+<p>Johannes Kepler (1571-1630) est un astronome allemand connu pour
+avoir établi les trois lois sui portent son nom et qui permettent
+notamment de décrire le mouvement des planètes du système solaire.<br />
+On étudie dans cet exercice la troisième loi de Kepler appliquée à la
+planète Mars, puis on détermine les caractéristiques d’une lunette
+astronomique permettant d’observer cette planète.</p>
+<h2 id="etude-et-utilisation-des-lois-de-kepler">Etude et utilisation
+des lois de Kepler</h2>
+<div class="data">
+<p>Valeur de l’unité astronomique (UA) : 149597870700 m</p>
+</div>
+<p>En 1600, Kepler devient l’assistant de l’astronome danois Tycho
+Brahe. Celui-ci le charge d’étudier la trajectoire de Mars et de
+déterminer son orbite à l’aide des observations astronomiques et des
+mesures qu’il a lui-même effectuées. Cette tâche, longue et délicate,
+conduit Kepler à envisager une trajectoire elliptique pour Mars, il
+publie ses deux premières lois en 1609, puis la troisième loi en
+1618.<br />
+</p>
+<div class="flushright">
+<p>D’après <em>La science moderne : de 1450 à 1800</em>, de René
+Taton</p>
+</div>
+<figure id="fig1">
+<img src="Ressources/TSPE_DS5_25_Ellipse.png" />
+<figcaption>Trajectoire elliptique de Mars dans le référentiel
+héliocentrique (échelle non respectée). Les aires <span
+class="math inline">\(A_1\)</span> et <span
+class="math inline">\(A_2\)</span> sont balayées pendant des durées
+égales.</figcaption>
+</figure>
+<p>Le référentiel d’étude est le référentiel héliocentrique supposé
+galiléen : son origine est au centre du Soleil et ses axes sont fixés
+par rapport aux étoiles lointaines.<br />
+</p>
+<ol>
+<li><p>Énoncer les deux premières loide de Kepler.</p></li>
+<li><p>En exploitant la deuxième loi et le schéma de la Figure <a
+href="#fig1" data-reference-type="ref" data-reference="fig1">1</a>,
+justifier que le mouvement de Mars dans le référentiel héliocentrique
+n’est pas uniforme.</p></li>
+</ol>
+<p>Les périodes de révolution <span class="math inline">\(T\)</span> ’en
+années) et les demi-grands axes <span class="math inline">\(a\)</span>
+(en unité astronomique) des trajectoires des planètes du système solaire
+(à l’exception de Mars) sont saisies dans un programme écrit en langage
+Python. Afin de vérifier la troisième loi de Kepler. Un extrait de ce
+programme est donné sur la Figure <a href="#fig2"
+data-reference-type="ref" data-reference="fig2">2</a>.</p>
+<figure id="fig2">
+<img src="Ressources/TSPE_DS5_25_Python.png" />
+<figcaption>Extrait du programme Python permettant de vérifier la
+troisième loi de Kepler.</figcaption>
+</figure>
+<p>Le programme permet d’obtenir une représenation graphique dont un
+zoom est proposéen Figure <a href="#fig3" data-reference-type="ref"
+data-reference="fig3">3</a>.</p>
+<figure id="fig3">
+<img src="Ressources/TSPE_DS5_25_Graph.png" />
+<figcaption>Modélisation de la troisième loi de Kepler à partir des
+données des planètes du système solaire.</figcaption>
+</figure>
+<p>Dans le tableau 1 sont regroupés les périodes de révolution (en s) et
+les demi-grands axes (en m) des trajectoires des plnètes du système
+solaire (à l’exception de Mars).</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Planète</th>
+<th style="text-align: center;">Période de révolution <span
+class="math inline">\(T\)</span> (en s)</th>
+<th style="text-align: center;">Demi-grand axe <span
+class="math inline">\(a\)</span> (en m)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Mercure</td>
+<td style="text-align: center;">7.60 × 10<sup>6</sup></td>
+<td style="text-align: center;">5.79 × 10<sup>10</sup></td>
+</tr>
+<tr>
+<td style="text-align: center;">Vénus</td>
+<td style="text-align: center;">1.94 × 10<sup>7</sup></td>
+<td style="text-align: center;">1.08 × 10<sup>11</sup></td>
+</tr>
+<tr>
+<td style="text-align: center;">Terre</td>
+<td style="text-align: center;">3.15 × 10<sup>7</sup></td>
+<td style="text-align: center;">1.50 × 10<sup>11</sup></td>
+</tr>
+<tr>
+<td style="text-align: center;">Jupiter</td>
+<td style="text-align: center;">3.74 × 10<sup>8</sup></td>
+<td style="text-align: center;">7.78 × 10<sup>11</sup></td>
+</tr>
+<tr>
+<td style="text-align: center;">Saturne</td>
+<td style="text-align: center;">9.29 × 10<sup>8</sup></td>
+<td style="text-align: center;">1.43 × 10<sup>12</sup></td>
+</tr>
+<tr>
+<td style="text-align: center;">Uranus</td>
+<td style="text-align: center;">2.66 × 10<sup>9</sup></td>
+<td style="text-align: center;">2.87 × 10<sup>12</sup></td>
+</tr>
+<tr>
+<td style="text-align: center;">Neptune</td>
+<td style="text-align: center;">5.20 × 10<sup>9</sup></td>
+<td style="text-align: center;">4.50 × 10<sup>12</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol>
+<li><p>Recopier sur la copie la ligne 8 du programme et la
+compléter.</p></li>
+<li><p>Proposer sur la copie un commentaire en précisant la finalité des
+lignes 16 et 17 du programme et les unités des grandeurs
+calculées.</p></li>
+<li><p>Commenter le Figure <a href="#fig3" data-reference-type="ref"
+data-reference="fig3">3</a> au regard des lois de Kepler.</p></li>
+</ol>
+<p>À partir des relevés de Tycho Brahe, Kepler a pu déterminer que la
+période de révolution de Mars, notée <span
+class="math inline">\(T_{Mars}\)</span> était de 687 jours.</p>
+<ol>
+<li><p>Déterminer la valeur du demi-grand axe de l’orbite de Mars, noté
+<span class="math inline">\(a_{Mars}\)</span>, et justifier qu’elle
+correspond à la quatrième planète du système solaire en partant du
+Soleil.</p></li>
+</ol>
+<h2 id="observer-mars-à-laide-dune-lunette-astronomique">Observer Mars à
+l’aide d’une lunette astronomique</h2>
+<p>En 1611, Johannes Jepler propose dans son ourvrage
+<em>Dioptricae</em> une nouvelle combinaison optique pour la lunette
+astronomique utilisée par Galilée en remplaçant la lentille divergente
+par une lentille convergente.</p>
+<div class="flushright">
+<p>D’après <em>La science moderne : de 1450 à 1800</em>, de René
+Taton</p>
+</div>
+<p>Fondées sur ce modèle, les lunettes astronomiques actuelles sont
+formées de deux lentilles minces convergentes. On a représenté sur la
+Figure <a href="#fig4" data-reference-type="ref"
+data-reference="fig4">5</a>, le schéma optique d’une lunette
+astronomique afocale.</p>
+<div class="data">
+<ul>
+<li><p>distance minimale entre Mars et la Terre :
+62.07 × 10<sup>6</sup> km</p></li>
+<li><p>à l’œil nu, l’angle sous lequel est vue la Lune est de
+9.0 × 10<sup>−3</sup> rad</p></li>
+<li><p>le diamètre de Mars est de 6794 km</p></li>
+<li><p>pour des angles suffisamment petits, c’est-à-dire très inférieurs
+à 1 radian, on peut écrire : <span class="math display">\[\tan(\theta)
+\approx \theta \text{~ où } \theta \text{ est en
+radian}\]</span></p></li>
+</ul>
+</div>
+<p>On présente sur le schéma ci-dessous l’angle <span
+class="math inline">\(\theta\)</span> sous lequel l’observateur voit un
+objet <span class="math inline">\(AB\)</span> de hauteur <span
+class="math inline">\(h\)</span> lorsqu’il se situe à une distance <span
+class="math inline">\(d\)</span> grande devant <span
+class="math inline">\(h\)</span>.</p>
+<figure id="fig5">
+<p><img src="Ressources/TSPE_DS5_25_Observation.png" alt="image" />
+<span id="fig5" data-label="fig5"></span></p>
+</figure>
+<ol>
+<li><p>Sur la Figure <a href="#fig4" data-reference-type="ref"
+data-reference="fig4">5</a>, on note <span
+class="math inline">\(L_1\)</span> et <span
+class="math inline">\(L_2\)</span> les deux lentilles minces
+convergentes. Préciser la lentille correspondant à l’objectif et celle
+correspondant à l’occulaire de la lunette.</p></li>
+</ol>
+<p>On considère un objet situé à l’infini, noté <span
+class="math inline">\(A_{\infty}B_{\infty}\)</span>. On observe cet
+objet avec la lunette.</p>
+<ol>
+<li><p>Tracer sur la Figure <a href="#fig4" data-reference-type="ref"
+data-reference="fig4">5</a> la marche des rayons lumineux provenent de
+<span class="math inline">\(B_{\infty}\)</span> à travers la lentille
+<span class="math inline">\(L_1\)</span> et la lentille <span
+class="math inline">\(L_2\)</span> en faisant apparaitre l’imahe
+intermédiaire, notée <span class="math inline">\(A_1B_1\)</span> de
+l’objet <span class="math inline">\(A_{\infty}B_{\infty}\)</span> formée
+par la lentille <span class="math inline">\(L_1\)</span>.</p></li>
+</ol>
+<p>La plupart du temps, il est difficile d’observer Mars depuis la
+Terre, notamment à cause de sa petite taille. La situation la plus
+favorable est quand Mars est en opposition, c’est-à-dire alignée avec la
+Terre et le Soleil. Cette situation correspond au moment où Mars est au
+plus près de la Terre.</p>
+<div class="flushright">
+<p>D’après <em>http://www.observatoiredeparis.psl.eu</em></p>
+</div>
+<p>On observe Mars à l’aide d’une lunette astronomique dont les
+caractéristiques sont données au tableau 2.</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Distance focale de l’objectf</th>
+<th style="text-align: center;">900 mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Diamètre de l’objectif</td>
+<td style="text-align: center;">70 mm</td>
+</tr>
+<tr>
+<td style="text-align: center;">Masse du tube optique</td>
+<td style="text-align: center;">1.75 kg</td>
+</tr>
+<tr>
+<td style="text-align: center;">Distance focale des oculaires
+interchangeables</td>
+<td style="text-align: center;">10 mm, 25 mm et 40 mm</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol>
+<li><p>Représenter les angles <span
+class="math inline">\(\theta_{1}\)</span> (angle sous lequel est vu Mars
+à l’œil nu) et <span class="math inline">\(\theta_2\)</span> (angle sous
+lequel est vu Mars à l’aide de la lunette) sur la Figure <a href="#fig4"
+data-reference-type="ref" data-reference="fig4">5</a>.</p></li>
+<li><p>On rappelle que le grossissement <span
+class="math inline">\(G\)</span> de la lunette s’écrit <span
+class="math inline">\(G = \dfrac{\theta_2}{\theta_1}\)</span>. Établir
+que le grossissement s’exprime en fonction des distance focales de
+l’objectif et de l’oculaire notée respectivement <span
+class="math inline">\(f&#39;_{obj}\)</span> et <span
+class="math inline">\(f&#39;_{ocu}\)</span> : <span
+class="math inline">\(G =
+\dfrac{f&#39;_{obj}}{f&#39;_{ocu}}\)</span>.</p></li>
+<li><p>Dans la situation où Mars est au plus près de la Terre,
+déterminer parmi les oculaires fournies avec la lunette décrite dans le
+tableau 2, celui qui permet à un observateur de voir Mars au moins aussi
+grosse que la Lune vue à l’œil nu.</p></li>
+</ol>
+<figure id="fig4">
+<img src="Ressources/TSPE_DS5_25_Lunette.png" />
+<figcaption>Schéma optique d’une lunette astronomique
+afocale.</figcaption>
+</figure>
+
+</body>
+</html>

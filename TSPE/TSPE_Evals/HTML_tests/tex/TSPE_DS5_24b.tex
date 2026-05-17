@@ -1,0 +1,136 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+
+\usepackage{../../Styles/Eval}
+
+\newcommand{\chnum}{Chapitre 7}
+\newcommand{\chtitle}{Force des acides}
+\newcommand{\dtype}{TP}
+
+\begin{document}
+\maketitle
+
+
+\section{Réalisation d'une pile nickel-zinc}
+On réalise une pile formée à partir des couples \ce{Ni^2+}/\ce{Ni} et \ce{Zn^2+}/\ce{Zn}. Chaque solution a pour volume $V = \SI{100}{mL}$ et la concentration initiale des ions positifs est $C = \SI{5,0E-2}{\mole\per\liter}$.\\
+\textbf{Données :}
+\begin{itemize}
+	\item \textbf{Masse molaire du zinc :} $M(\ce{Zn}) = \SI{65,4}{\gram\per\mole}$
+	\item \textbf{Masse molaire du nickel :} $M(\ce{Ni}) = \SI{58,7}{\gram\per\mole}$
+	\item \textbf{Charge élémentaire de l'électron :} $e= \SI{-1,6E-19}{C}$
+	\item \textbf{Constante d'Avogadro :} $N_A = \SI{6,02E23}{\per\mole}$
+	\item \textbf{Constante de Faraday :} $F = \SI{9,65E4}{C}$
+	\item Pour la réaction suivante : \ce{Ni^2+ + Zn = Zn^2+ + Ni}, la constante d'équilibre vaut $K = 10^{18}$.
+\end{itemize}
+\begin{enumerate}
+	\item \textbf{Réalisation de la pile}
+	\begin{enumerate}[label=\theenumi.\arabic*]
+		\item L'électrode positive de cette pile est l'électrode de nickel. Légender le schéma de la \textbf{Figure 1} en annexe avec les termes suivants : électrode de nickel, électrode de zinc, pont salin, solution contenant des ions \ce{Zn^2+}, solution contenant des ions \ce{Ni^2+}.
+		\item Écrire les demi-équations des réactions se produisant aux électrodes. Préciser à chaque électrode s'il s'agit d'une oxydation ou d'une réduction.
+		\item Écrire l'équation de la réaction globale qui intervient quand la pile débite.
+		\item Calculer la valeur du quotient réactionnel initial $Q_{r,i}$. Cette valeur est elle cohérente avec la polarité proposée ?
+	\end{enumerate}
+	\item \textbf{Étude de la pile}
+	\begin{enumerate}[label=\theenumi.\arabic*]
+		\item On fait débiter la pile dans un conducteur ohmique. Compléter le schéma de la \textbf{Figure 1}
+		\item Préciser sur ce schéma le sens du courant et le sens de déplacement des électrons dans le circuit extérieur.
+		\item Comment varie la concentration des ions positifs dans chacun des béchers ? En déduire l'évolution du quotient de réaction $Q_r$.
+		\item Sachant que la masse des électrodes ne limite pas la réaction, pour quelle raison la pile s'arrêtera-t-elle de débiter ? Quelle est alors la valeur de $Q_r$ ?
+		\item La réaction étant considérée totale, calculer l'avancement maximal $x_{max}$ de la réaction.
+		\item Quelle relation existe-t-il entre $x_{max}$ et la quantité de matière d'électrons qui ont circulé ?
+		\item En déduire la charge totale de la pile.
+	\end{enumerate}
+\end{enumerate}
+
+\vspace{2cm}
+\begin{figure}[h!]
+    \centering
+    \caption*{\textbf{Figure 1}}
+    \begin{tikzpicture}[scale=1.5,transform shape]
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Béchers
+    \fill[gray!20] (-1.5,0)--(-4,0)--(-4,2.5)--(-1.5,2.5)--cycle;
+    \fill[gray!20] (1.5,0)--(4,0)--(4,2.5)--(1.5,2.5)--cycle;
+    
+    \draw (-1.5,0)--(-1.5,3);
+    \draw (-1.5,0)--(-4,0);
+    \draw (-4,0)--(-4,3);
+
+    \draw (1.5,0)--(1.5,3);
+    \draw (1.5,0)--(4,0);
+    \draw (4,0)--(4,3);
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plaques
+    \filldraw[gray!35,draw=black] (-3.05,0.5)--(-3.6,0.5)--(-3.6,4.5)--(-3.05,4.5)--cycle;
+    \filldraw[gray!35,draw=black] (3.05,0.5)--(3.6,0.5)--(3.6,4.5)--(3.05,4.5)--cycle;
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Pont salin
+    \tikzstyle{suite}=[-,thick,rounded corners=10pt]
+    \node (b1) at (1.95,0.7){};
+    \node (a1) at (-1.95,0.7){};
+    \node (i1) at (0,4.2){};
+
+    \draw[suite] (b1)|-(i1)-|(a1.north) ;
+    
+    \node (b2) at (2.25,0.7){};
+    \node (a2) at (-2.25,0.7){};
+    \node (i2) at (0,4.5){};
+    \tikzstyle{suite2}=[-,thick,rounded corners=20pt]
+    \draw[suite2] (b2)|-(i2)-|(a2.north) ;
+    \draw[thick] (-0.2,4.2) -- (0.2,4.2);
+    \draw[thick] (-0.2,4.5) -- (0.2,4.5);
+\end{tikzpicture}
+\end{figure}
+
+\section{La planète Mercure}
+Planète la plus proche du Soleil, Mercure est longtemps restée mal connue. En première approximation, sa trajectoire dans le référentiel héliocentrique peut être considérée comme circulaire. Toutefois, de toutes les planètes du Système ssolaire, c'est celle qui possède l'orbite la plus excentrique. Sa distance au Soleil varie en effet de 0,31 ua à 0,4è ua. La vitesse orbitale de Mercure, qui vaut en moyenne \SI{47}{\kilo\meter\per\second} varie quand même entre les valeurs extrèmes de \SI{39}{\kilo\meter\per\second} et \SI{59}{\kilo\meter\per\second}.\\
+Ce n'est que récement, entre mars 2011 et avril 2015, que la conde américaine MESSENGER (MErcury, Surface, Space ENvironment, GEochemistry and Ranging) a pu être saturée autour de Mercure. En complément d'autres informations précieuses, la mission MESSENGER a permis de connaître avec précision la masse de cette planète qui ne possède aucun satellite naturel.\\
+L'objectif de cet exercice est d'étudier le mouvement de Mercure autour du Soleil et le mouvement de MESSENGER autour de Mercure. Dans la première partir, on cherchera à déterminer la période de révolution de Mercure. Dans la seconde partie, on cherchera à préciser la trajectoire de MESSENGER.\\
+\textbf{Données :}
+\begin{itemize}
+    \item Rayonn de Mercure : $R_M =$ \SI{2440}{km}
+    \item Unité astronomique : \SI{1}{ua} = \SI{1,5E11}{m}
+    \item Constante universelle de gravitation : $G =$ \SI{6,67E-11}{\meter\cubed\per\kilo\gram\per\second\squared}
+\end{itemize}
+
+\subsection{Etude de la trajectoire de Mercure}
+\begin{enumerate}
+    \item Énoncer la première loi de Kepler, dite "loi des orbites". Représenter, sans soucis d'échelle, l'allure de la trajectoir de Mercure autour du Soleil. Le schéma fera apparaitre la position du Soleil et le demi-grand axe de l'orbite.
+    \item En vous appuyant sur le schéma réalisé et sur des informations tirées du texte introductif, montret par un calcul simple que le demi-grand axe vaut \SI{0,39}{ua}.
+    \item Énoncer la deuxième loi de Kepler, dite "loi des aires". Appliquer cette loi pour déterminer dans quelle partie de sa trajectoir Mercure atteint la vitesse de \SI{39}{\kilo\meter\per\second}. Une justification claire, pour laquelle le schéma pourra être complété, est attendue.
+\end{enumerate}
+La troisième loi de Kepler est souvent écrite sous la forme : $\dfrac{r^2}{a^3} =k$, où la constante de Kepler $k$ évoque le mot allemant "konstante".\\
+\textbf{Donnée :}
+\begin{itemize}
+    \item Constante de Kepler pour le Système solaire : $k =$ \SI{2,9E-19}{\second\squared\per\meter\cubed}
+\end{itemize}
+\begin{enumerate}[resume]
+    \item Donner la signification des grandeurs $T$ et $a$ pour Mercure. À l'aide des données utiles et de la troisième loi de Kepler, justifier que cette planète parcourt l'ensemble de son orbite autour du Soleil en un peu moins de trois mois.
+\end{enumerate}
+
+\subsection{Étude de la trajectoire de MESSENGER}
+Une fois satellisée autour de Mercure, la conde MESSENGER a effectué ses orbites avec une période de révolution $T_S$ égale à \SI{8,00}{heures}. Lors de son passage au plus près de la surface de la planète, à son altitude $h$ égale à \SI{200}{km}, la sonde possédait une accélération $a_S$ de valeur \SI{3,15}{\meter\per\second\squared}. On supposera que cette accélération était uniquement due à l'attraction gravitationnelle de Mercure.\\
+On rappelle l'expression de la force gravitationnelle exercée par un corps $A$ de masse $m_A$ sur un corps $B$ de masse $m_B$ : $$\overrightarrow{F_{A/B}} = \frac{G\cdot m_A \cdot m_B}{r^2} \cdot \vec{u}$$
+Dans cette expression $\vec{u}$ est un vecteur unitaire orienté de $B$ vers $A$ et $r$ représente la distance entre les centres de masse des corps.\\
+Pour les questions suivantes, on pourra noter $m_S$ la masse de la sonde, $M$ la masse de Mercure et $R_M$ son rayon.\\
+La document~\ref{fig1} représente la conde MESSENGER (symbolisée par son centre de masse $S$) se déplaçant sur une portion de sa trajectoire à l'altitude $h$.
+\begin{figure}[h!]
+    \centering
+    \caption{La sonde MESSENGER passant au plus près de Mercure}
+    \includegraphics[width=.3\linewidth]{Ressources/TSPE_DS5_24b_Fig1.png}
+    \label{fig1}
+\end{figure}
+
+\begin{enumerate}[resume]
+    \item Reproduire le schéma du document~\ref{fig1} pour le compléter en y faisant apparaitre sans soucis d'échelle : \begin{itemize}
+        \item les distances $R_M$, $h$ et $r$
+        \item le vecteur force gravitationnelle exercée par Mercure sur la sonde $\vec{F_{M/S}}$
+        \item le vecteur vitesse $\vec{v_S}$ de la sonde
+        \item le vecteur accélération $\vec{a_S}$ de la sonde
+    \end{itemize}
+    \item Énoncer la deuxième loi de Newton, pui l'appliquer au système MESSENGER dans le référentiel mercurocentrique considéré comme galiléen. En déduire l'expression du vecteur accélération $\vec{a_S}$ de la sonde.
+    \item À l'aide des données utiles, montrer que la valeur de l'accélération mesurée à l'altitude $h$ permet d'attribuer à la planète Mercure une masse $M$ égale à \SI{3,29E23}{kg}.
+\end{enumerate}
+Ces lois de la gravitation et du mouvement ont permis à Newton d'établir l'expression de la constante de Kepler pour tout corps de masse $m$ orbitant autour d'un astre attracteur de masse $M$ (très supérieure à $m$): $k = \dfrac{4\pi ^2}{G\cdot M}$.
+\begin{enumerate}[resume]
+    \item En appliquant la troisième loi de Kepler au mouvement de la sonde Messenger autour de Mercure, calculer la valeur du demi-grand axe,$a$, de son orbite. À l'aide de cette valeur, expliquer pourquoi la trajectoire de la sonde ne peut pas être considérée comme circulaire.
+\end{enumerate}
+\end{document}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 id="diffraction-par-une-poudre-de-cacao">Diffraction par une poudre
+de cacao</h1>
+<p>On attribue la découverte de la diffraction à Francesco Grimaldi
+(1618-1663). Le but de l’exercice est d’étudier une application pratique
+de la diffraction : la détermination de la taille moyenne de poudre de
+cacao par granulométrie.<br />
+Les deux parties de l’exercice sont indépendantes.</p>
+<figure>
+<div class="minipage">
+<img src="Ressources/TSPE_DS2b_Fig4.PNG" />
+</div>
+<div class="minipage">
+<p>L’appareil ci-contre permet de mesurer la taille de particules allant
+de 40 nm à 2500 μm tout en occupant un encombrement extrèmement
+réduit.<br />
+Le fabricant de l’appareil indique que deux diodes laser de longueur
+d’onde 635 nm et 830 nm sont utilisées dans cet instrument de
+mesure.</p>
+</div>
+<figcaption>Granulomètre laser</figcaption>
+</figure>
+<figure>
+<p>Le succès du chocolat, auprès des consommateurs, est lié à des
+caractéristiques gustatives bien identifiées mais aussi à la
+granulométrie de chacun des constituants.<br />
+Cette dernière propriété représente un enjeu important du procédé de
+fabrication puisque des particules trop finement broyées rendront le
+chocolat collant alors que de trop grosses particules lui donneront un
+aspect granuleux à l’œil et en bouche.<br />
+La mesure de la taille des particules, par diffraction laser, est une
+technique simple et rapide, adaptée à la détermination de la
+distribution granulométrique de tous les types de chocolat comme les
+chocolats de couverture utilisés pour le nappage, les chocolats au lait
+ou les chocolats utilisés pour les recettes instantanées.<br />
+</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Type de chocolat</th>
+<th style="text-align: center;">De couverture</th>
+<th style="text-align: center;">Au lait</th>
+<th style="text-align: center;">Aggloméré</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="math inline">\(a\)</span>
+(*) en μm</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">300</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>(*) <span class="math inline">\(a\)</span> représente le diamètre
+moyen recommandé de la poudre de cacao pour un type de chocolat.</p>
+<figcaption>Différents types de chocolat</figcaption>
+</figure>
+<figure>
+<p>Le z-score permet de comparer une valeur expérimentale à une valeur
+théorique en tenant compte des incertitudes associées. Il est défini par
+la relation suivante : <span class="math display">\[z =
+\dfrac{|x_{\text{expérimentale}} - x_{\text{théorique}}|}{u(x)}\]</span>
+Si <span class="math inline">\(z &lt; 2\)</span>, on considère que la
+valeur expérimentale est en accord avec la valeur théorique.</p>
+<figcaption>Le z-score</figcaption>
+</figure>
+<h2 class="unnumbered"
+id="partie-1-vérification-de-la-longueur-donde-dune-des-diodes-laser-utilisées">Partie
+1 : Vérification de la longueur d’onde d’une des diodes laser
+utilisées</h2>
+<p>L’objectif de cette partie est de vérifier la valeur de la longueur
+d’onde <span class="math inline">\(\lambda\)</span> d’une des diodes
+laser utilisées dans l’appareil de granulométrie. Sur le trajet du
+faisceau laser, on intercale des fils de différents diamètres. Sur un
+écran placé à une distance <span class="math inline">\(D\)</span>, on
+observe une figure de diffraction.<br />
+<span class="math inline">\(L\)</span> représente la largeur de la tache
+centrale et <span class="math inline">\(\theta_0\)</span> le demi-angle
+au sommet exprimé en radian.</p>
+<ol>
+<li><ol>
+<li><p>Rappeler les principales propriétés du faisceau d’un
+laser.</p></li>
+<li><p>Pour une longueur d’onde donnée, déduire l’évolution du
+demi-angle <span class="math inline">\(\theta_0\)</span> en fonction du
+diamètre <span class="math inline">\(a\)</span> du fil. Donner la
+relation qui lie <span class="math inline">\(\lambda\)</span>, <span
+class="math inline">\(\theta_0\)</span> et <span
+class="math inline">\(a\)</span>.</p></li>
+<li><p>On fait l’hypothèse que l’angle <span
+class="math inline">\(\theta_0\)</span> est petit. Dans ce cas, on peut
+écrire <span class="math inline">\(\tan \theta_0 \approx
+\theta_0\)</span> avec <span class="math inline">\(\theta_0\)</span> en
+radian.<br />
+A l’aide du schema, démontrer que la largeur de la tache centrale est
+donnée par l’expression : <span class="math display">\[L = k \cdot
+\dfrac{1}{a}\]</span> avec <span class="math inline">\(k =  2 \lambda
+\cdot D\)</span></p></li>
+<li><p>Expérimentalement, on mesure la largeur de la tache centrale
+<span class="math inline">\(L\)</span> pour des fils calibrés de
+différentes valeurs de diamètre <span class="math inline">\(a\)</span>.
+On porte les valeurs obtenues dans le graphique ci-dessous. A partir du
+graphique, déterminer la longueur d’onde <span
+class="math inline">\(\lambda\)</span> de la diode laser
+utilisée.</p></li>
+<li><p>L’incertitude absolue sur la longueur d’onde <span
+class="math inline">\(\lambda\)</span>, notée <span
+class="math inline">\(u(\lambda)\)</span>, peut être déterminée à partir
+de la relation suivante : <span class="math display">\[u(\lambda) =
+\lambda \cdot \sqrt{\left(\dfrac{u(D)}{D}\right)^2 +
+\left(\dfrac{u(k)}{k}\right)^2}\]</span> L’incertitude absolue sur la
+valeur du coefficient directeur est <span class="math inline">\(u(k) =
+\SI{1,2E-7}{\meter\squared}\)</span>.<br />
+Exprimer la valeur de la longueur d’onde <span
+class="math inline">\(\lambda\)</span> avec son incertitude. Confronter
+aux valeurs donnnées par le fabriquant de l’appareil en calculant le
+z-score puis conclure.</p></li>
+</ol></li>
+</ol>
+<figure>
+<div class="center">
+<img src="Ressources/TSPE_DS2b_Fig6.PNG" />
+</div>
+<figcaption>Représentation de l’évolution de la largeur de la tache
+centrale de diffraction en fonction de l’inverse de l’épaisseur des fils
+calibrés.</figcaption>
+</figure>
+<h2 class="unnumbered"
+id="partie-2-etude-de-la-diffraction-apr-la-poudre-de-cacao">Partie 2 :
+Etude de la diffraction apr la poudre de cacao</h2>
+<p>Dans cette partie, on considère que l’on peut déterminer le diamètre
+moyen des grains de cacao d’une poudre donnée en utilisant une figure de
+diffraction réalisée avec la diode laser de longueur d’onde <span
+class="math inline">\(\lambda = \SI{635}{nm}\)</span>.</p>
+<figure>
+<div class="center">
+<img src="Ressources/TSPE_DS2b_Fig5.PNG" />
+</div>
+<p>La figure de diffraction obtenue par un trou circulaire est
+constituée de cercles concentriques alternativement brillants et sombres
+avec : <span class="math display">\[\sin \theta_0 = \dfrac{1,22 \cdot
+\lambda}{a}\]</span> <span class="math inline">\(\lambda\)</span> :
+longueur d’onde du faisceau laser, exprimée en mètre<br />
+<span class="math inline">\(a\)</span> : diamètre du trou, exprimé en
+mètre<br />
+<span class="math inline">\(\theta_0\)</span> : demi-angle au sommet,
+exprimé en radian</p>
+<figcaption>Expérience de diffraction par un trou
+circulaire</figcaption>
+</figure>
+<ol>
+<li><ol>
+<li><p>En utilisant un montage proche de celui donné ci-dessous, on
+réalise l’expérience sur un échantillon de poudre de cacao. Sachant que
+les grains de cacao sont assimilés à des sphères, justifier le fait
+qu’on observe une figure de diffraction identique à celle obtenue avec
+un trou circilaire.</p></li>
+<li><p>Après traitement informatique, des résultats expérimentaux lors
+du contrôle d’un échantillon de poudre de cacao, on obtient le graphe
+ci-après donnant l’intensité lumineuse relative sur l’écran en fonction
+du demi-angle <span class="math inline">\(\theta_0\)</span>. Peut-on
+utiliser cet échantillon pour un chocolat de couverture ?</p></li>
+</ol></li>
+</ol>
+<figure>
+<div class="center">
+<img src="Ressources/TSPE_DS2b_Fig8.PNG" />
+</div>
+<figcaption>Intensité lumineuse relative en fonction du demi-angle au
+sommet</figcaption>
+</figure>
+<h1 id="une-potion-radioactive">Une potion radioactive</h1>
+<p>De tous temps, certaines substances sont considérées comme des
+remèdes contre tous les maux, des panacées.<br />
+</p>
+<div class="minipage">
+<p>Au début du 20<sup>e</sup> siècle, le Radithor, sorte de "potion
+magique" était censé soigner plus d’une centaine de maladies.<br />
+Un cancérologue américain a trouvé chez un antiquaire, plusieurs
+bouteilles de Radithor. Bien que vidées depuis 10 ans de leur contenu,
+les bouteilles se sont avérées être encore dangereusement radioactives.
+Chacune avait vraisemblablement contenu environ un microcurie de radium
+226 et de radium 228<br />
+1 microcurie correspond à 3,7E4 Bq.</p>
+</div>
+<div class="minipage">
+<p><img src="Ressources/TSPE_DS5_Fig1.jpg" alt="image" /></p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Noyau</strong></th>
+<th style="text-align: center;">Radium 226</th>
+<th style="text-align: center;">Radium 228</th>
+<th style="text-align: center;">Actinium 228</th>
+<th style="text-align: center;">Radon 222</th>
+<th style="text-align: center;">Hélium 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Symbole</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Noyau</strong></th>
+<th style="text-align: center;">Radium 226</th>
+<th style="text-align: center;">Radon 222</th>
+<th style="text-align: center;">Hélium 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Masse en <span
+class="math inline">\(u\)</span></strong></td>
+<td style="text-align: center;">225.9970</td>
+<td style="text-align: center;">221.9703</td>
+<td style="text-align: center;">4.0015</td>
+</tr>
+</tbody>
+</table>
+<div class="itemize*">
+<p><strong>Unité de masse atomique</strong> : <span
+class="math inline">\(\SI{1}{u}=\SI{1,66054E-27}{kg}\)</span></p>
+<p><strong>Célérité de la lumière dans le vide</strong> : <span
+class="math inline">\(c=\SI{3,00E8}{\meter\per\second}\)</span></p>
+<p><strong>Constante d’Avogadro</strong> : <span
+class="math inline">\(N_A=\SI{6,02E23}{\per\mole}\)</span></p>
+<p><strong>Masse molaire du</strong> : <span
+class="math inline">\(M=\SI{226}{\gram\per\mole}\)</span></p>
+</div>
+<h2 id="le-radium-226-et-le-médothorium">Le radium 226 et le
+médothorium</h2>
+<p>Sur l’étiquette du flacon de Radithor est mentionnée la présence de
+mésothorium, ancienne dénomination du radium 228. Cette "eau certifiée
+radioactive" contenait également du radium 226.</p>
+<ol>
+<li><p>Les noyaux de radium 228 et de radium 226 sont des isotopes.
+Expliquer.</p></li>
+<li><p>Le radium 228 se désintègre pour donner l’isotope 228 de
+l’actinium et une particule notée . <span
+class="math display">\[\ce{^228_88Ra -&gt; ^228_89Ac + ^A_Z X}\]</span>
+Compléter l’équation de désintégration en justifiant puis identifier .
+De quel type de radioactivité s’agit-il ?</p></li>
+</ol>
+<p>Dans la suite de l’exercice, on néglige la présence de radium 228
+dans le Radithor.<br />
+On suppose que l’activité radioactive du flacon est uniquement due à la
+présence de l’isotope 226 du radium. Celui-ci se désintègre spontanément
+selon l’équation suivante : <span class="math display">\[\ce{^226_88Ra
+-&gt; ^222_86Ac + ^4_2He}\]</span></p>
+<h2 id="constante-radioactive-du-radium-226">Constante radioactive du
+radium 226</h2>
+<p>L’activité A(t) d’un échantillon de noyaux de radium 226 suit la loi
+de décroissance exponentielle <span class="math inline">\(A(t)=A_0\cdot
+e^{-\lambda \cdot t}\)</span>, avec <span
+class="math inline">\(A_0\)</span> l’activité à <span
+class="math inline">\(t=\SI{0}{s}\)</span>.</p>
+<ol>
+<li><p>Rappeler la définition de la demi-vie <span
+class="math inline">\(t_{1/2}\)</span> d’un échantillon
+radioactif.</p></li>
+<li><p>Vérifier sur la courbe donnant l’évolution de l’activité de
+l’échantillon en fonction du temps représentée dans le <strong>Figure <a
+href="#doc1" data-reference-type="ref"
+data-reference="doc1">1</a></strong>, que la demi-vie du radium 226 est
+égale à 1,60E3 ans.</p></li>
+<li><p>Établir la relation entre la demi-vie et la constante radioactive
+<span class="math inline">\(\lambda\)</span> puis calculer la valeur de
+<span class="math inline">\(\lambda\)</span> en  s.</p></li>
+</ol>
+<h2 id="masse-de-radium-226">Masse de radium 226</h2>
+<ol>
+<li><p>Donner la relation liant l’activité <span
+class="math inline">\(A(t)\)</span> d’un échantillon radioactif au
+nombre <span class="math inline">\(N(t)\)</span> de noyaux radioactifs
+présents.</p></li>
+<li><p>Calculer <span class="math inline">\(N_0\)</span>, le nombre de
+noyaux de radium 226 initialement présents dans le flacon de
+Radithor.</p></li>
+<li><p>Vérifier que le flacon contenait alors une masse <span
+class="math inline">\(m_0 = \SI{1,0}{\micro\gram}\)</span> de radium
+226.</p></li>
+</ol>
+<figure id="doc1">
+<p><img src="Ressources/TSPE_DS5b_Fig1.png" alt="image" /> <span
+id="doc1" data-label="doc1"></span></p>
+<figcaption>Activité d’un échantillon de radium 226 en fonction du temps
+</figcaption>
+</figure>
+
+</body>
+</html>

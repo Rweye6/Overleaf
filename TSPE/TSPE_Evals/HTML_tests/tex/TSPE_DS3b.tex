@@ -1,0 +1,169 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{lscape}
+
+\usepackage{tgheros,textcomp}%Police Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+%\setlength{\mathindent}{0pt}%indentation dans math = 0
+
+\usepackage[top = 1cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
+\usepackage{titlesec}
+%\setcounter{secnumdepth}{4}
+\usepackage{xcolor}
+\usepackage{amssymb} %double flèche de réaction
+\usepackage{mathrsfs}%farraday
+\usepackage{xtab}%tableau sur plusieurs pages
+\usepackage{esvect}%grands vecteurs
+
+\usepackage[version=4]{mhchem} %equations chimiques
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{multirow}
+%\usepackage{sectsty}
+
+\usepackage{caption}
+\usepackage{adjustbox}
+\usepackage[labelformat=simple]{subfig}
+\usepackage{float}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[cal=boondoxo]{mathalfa} 
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage[european, straightvoltages, RPvoltages]{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usetikzlibrary{automata,positioning}
+\usepackage{multicol}
+\usepackage{eqnarray}
+\usepackage{tabularx,colortbl}%colorer fond cellules
+
+\sisetup{
+	detect-all,
+	output-decimal-marker={,},
+	group-minimum-digits = 3,
+	group-separator={~},
+	number-unit-separator={~},
+	inter-unit-product={~}
+} %setup pour SIunitx
+
+\usepackage{listings}%pour insérer le code python
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+%\graphicspath{ {/home/rweye/Documents/Enseignement/2023/Cours/TSPE/Eval/Ressources/} }
+
+\titleformat{\section}
+{\titlerule
+\vspace{.8ex}%
+\normalfont \bfseries}
+{\thesection :}{.5em}{\bfseries}
+
+\renewcommand{\thesection}{Exercice \arabic{section}}
+\titlespacing{\section}{0pt}{1em}{1em}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+\renewcommand\thesubfigure{\textbf{Document \arabic{subfigure} :}}
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|m{5cm}|>{\centering}m{8cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		Nom : & \textbf{\textsc{DS TSPE N°3}} &  Note : \\
+		Prénom : & & $\_\_\_$ \textbf{20} \\ \hline
+\end{tabular}}
+\date{}
+
+\newpagestyle{mystyle}{%
+	\setfoot{ROSALIE}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+\renewpagestyle{plain}{%
+	\setfoot{ROSALIE}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+
+\pagestyle{mystyle}
+
+\newenvironment{itemize*}%
+{\begin{itemize}[label=$-$]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\newenvironment{itemize**}%
+{\begin{itemize}[label=$\_\_$,labelindent=0pt, leftmargin=*,topsep=0pt]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\renewcommand{\arraystretch}{1.5}
+
+
+\begin{document}
+\maketitle
+\vspace{-2.5cm}
+\section{Casque à réduction active de bruit}
+La réduction active de bruit consiste à supprimer le bruit résiduel dans les oreillettes per émission d’un signal appelé « anti-bruit ». Le Document 1 présente le niveau d'intensité sonore mesuré en fonction de la fréquence dans les situations suivantes :
+\begin{itemize*}
+	\item  sans casque (cas n°1)
+	\item avec casque en réduction passive (cas n°2)
+	\item avec casque en réduction passive et active (cas n°3)
+\end{itemize*}
+\begin{enumerate}
+	\item Identifier approximativement les domaines de fréquence pour lesquels :
+	\begin{itemize*}
+		\item seule la réduction passive est efficace
+		\item seule la réduction active est efficace
+		\item les deux réductions sont efficaces
+	\end{itemize*}
+\end{enumerate}
+On mesure l'intensité sonore lorsque le bruit et l'anti-bruit sont émis simultanément dans trois situations (Document 2). Le niveau sonore du bruit et de l'anti-bruit lorsqu'ils sont émis seuls est de \SI{50}{dB}.
+\begin{enumerate}[resume]
+	\item \begin{enumerate}
+		\item Préciser dans quelle situation l'intensité sonore est la somme des intensités des sons pris séparément.
+		\item Déterminer la situation qu'il faut retenir pour le dispositif de réduction active de bruit.
+		\item Calculer l'atténuation associée.
+	\end{enumerate}
+\end{enumerate}
+
+\begin{center}
+\includegraphics[scale=.55]{Ressources/TSPE_DS3b_E1_doc1.png}
+\end{center}
+\textbf{Document 2 : Variation de l'intensité sonore}\\
+
+\begin{tabular}{|>{\centering}m{4cm}|>{\centering}m{4cm}|>{\centering}m{4cm}|>{\centering \arraybackslash}m{4cm}|} \hline
+\textbf{Situation} & a & b & c\\ \hline
+\textbf{Verrouillage de phase} & Non & En phase & En opposition de phase \\ \hline
+\textbf{Niveau sonore (\unit{\deci\bel})} & \num{53} $\pm$ \num{1} & \num{56} $\pm$ \num{1} &\num{44} $\pm$ \num{1} \\ \hline
+\end{tabular}
+
+\section{Détermination de la viscosité du glycérol}
+Le glycérol est un liquide transparent, incolore et visqueux. Du fait de sa non-toxicité, il est utilisé notamment dans l'industrie pharmaceutique, car il améliore l'onctuosité des médicaments sous forme de sirop.\\
+On souhaite déterminer la viscosité d'un échantillon de glycérol à l'aide d'un viscosimètre à chute de bille.
+\begin{enumerate}
+	\item Faire un schéma représentant les différentes forces s'exerçant sur la bille lors de sa chute.
+	 \item Exprimer le poids de la bille $\vec{P}$ en fonction de $\rho$, $V$ et $\vec{g}$.
+	 \item A l'aide de la deuxième loi de Newton, du document 4 et du document 5, donner une relation vectorielle liant les vecteurs $\vec{a}$, $\vec{v}$ et $\vec{g}$.
+	 \item Projeter cette relation sur un axe ($Oz$) vertical dirigé vers le bas.
+	 \item Montrer que la relation précédente peut s'écrire sous la forme : $$ \dfrac{dv}{dt} = A + B \cdot v$$
+	 On précisera les expressions littérales de $A$ et $B$.
+	 \item On a filmé la chute de différentes billes dans le glycérol afin de déterminer l'évolution de leur vitesse en fonction du temps. D'après le document 6, expliquer pourquoi on peut parler d'une vitesse limite de la bille/
+	 \item Montrer que la vitesse limite $v_{lim}$ a pour expression : $$v_{lim} = \dfrac{2(\rho - \rho_0) \cdot g \cdot r^2}{9 \eta}$$
+	 \item Exploiter le document 7  afin de déterminer la viscosité $\eta$ du glycérol.
+\end{enumerate}
+\begin{multicols}{2}
+\noindent \includegraphics[scale=.5]{Ressources/TSPE_DS3b_E2_doc1.png} \includegraphics[scale=.5]{Ressources/TSPE_DS3b_E2_doc2.png}
+\includegraphics[scale=.5]{Ressources/TSPE_DS3b_E2_doc3.png} \includegraphics[scale=.5]{Ressources/TSPE_DS3b_E2_doc4.png}
+\includegraphics[scale=.6]{Ressources/TSPE_DS3b_E2_doc5.png} \includegraphics[scale=.55]{Ressources/TSPE_DS3b_E2_doc6.png}
+\includegraphics[scale=.5]{Ressources/TSPE_DS3b_E2_doc7.png}\\ \includegraphics[scale=.5]{Ressources/TSPE_DS3b_E2_donnees.png}
+\end{multicols}
+\end{document}

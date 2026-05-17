@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 id="le-mölkky">Le Mölkky</h1>
+<p>Le Mölkky, créé en 1996, est un jeu de plein air orifinaire de
+Finlande. Dans ce jeu, le joueur doit faire tomber des quilles en bois,
+à l’aide d’un bâton, afin d’atteindre un score de 50 points.<br />
+Une quille tombée lui donnera le nombre de points sur cette dernière,
+compris entre 1 et 12. Plusieurs quilles tombées donneront au joueur le
+nombre de points correspondant au nombre de quilles au sol.<br />
+L’objectif de cet exercice est d’établir l’équation horaire de la
+trajectoire du bâton lancé et de déterminer le lieu d’impact au sol afin
+de prévoir une éventuelle victoire d’un joueur.</p>
+<figure id="doc1">
+<div class="minipage">
+<p>On s’intéresse au mouvement du centre de masse <span
+class="math inline">\(G\)</span> du bâton lorsqu’un joueur le lance afin
+de faire tomber une quille. L’étude est réalisée dans le référentiel
+terrestre supposé galiléen et on considère qu’une fois lancé, le bâton
+n’est soumis qu’ç son poids. Pour simplifier, on suppose que le bâton ne
+tourne pas sur lui-même. La masse du bâton est notée <span
+class="math inline">\(m\)</span>.<br />
+Quand le bâton quitte la main du joueur, son centre de masse <span
+class="math inline">\(G\)</span> est situé à une hauteur <span
+class="math inline">\(h\)</span> par rapport au sol avec un vecteur
+vitesse initiale <span class="math inline">\(\vv{v_0}\)</span> qui forme
+un angle <span class="math inline">\(\alpha\)</span> avec
+l’horizontale.<br />
+On étudie le mouvement du centre de masse du système <span>bâton</span>
+dans le repère cartésien indique sur le Doc. <a href="#doc1"
+data-reference-type="ref" data-reference="doc1">1</a></p>
+</div>
+<div class="minipage">
+
+</div>
+<figcaption>Schémam de la situation du lancer</figcaption>
+</figure>
+<ol>
+<li><p>Énoncer la deuxième loi de Newton et l’utiliser pour établir les
+expressions des coordonnées notées <span
+class="math inline">\(a_x(t)\)</span> et <span
+class="math inline">\(a_y(t)\)</span> du vecteur accélération <span
+class="math inline">\(\vv{a(t)}\)</span> du point <span
+class="math inline">\(G\)</span> selon les axes (<span
+class="math inline">\(Ox\)</span>) et (<span
+class="math inline">\(Oy\)</span>).</p></li>
+<li><p>Établir les expressions des coordonnées horizontales notées <span
+class="math inline">\(v_x(t)\)</span> et verticales <span
+class="math inline">\(v_y(t)\)</span> du vecteur vitesse <span
+class="math inline">\(\vv{v(t)}\)</span> du point <span
+class="math inline">\(G\)</span>.</p></li>
+<li><p>À partir des expressions des coordonnées de la vitesse <span
+class="math inline">\(v_x(t)\)</span> et <span
+class="math inline">\(v_y(t)\)</span> et du Doc. <a href="#doc1"
+data-reference-type="ref" data-reference="doc1">1</a>, établir que les
+équations horaires du mouvement <span
+class="math inline">\(x(t)\)</span> et <span
+class="math inline">\(y(t)\)</span> du point <span
+class="math inline">\(G\)</span> sont : <span
+class="math display">\[\left\{
+        \begin{array}{l}
+        x(t) = v_0 \cdot \cos(\alpha) \cdot t \\[4pt]
+        y(t) = - \dfrac{1}{2} g \cdot t^2 + v_0 \cdot \sin(\alpha)\cdot
+t + h
+        \end{array}
+        \right.\]</span></p></li>
+</ol>
+<div class="data">
+<ul>
+<li><p>vitesse initiale de lancer du bâton de Mölkky : <span
+class="math inline">\(v_0 =
+\SI{4,9}{\meter\per\second}\)</span></p></li>
+<li><p>hauteur depuis laquelle le bâton est lancé : <span
+class="math inline">\(h = \SI{.70}{\meter}\)</span></p></li>
+<li><p>angle avec lequel le bâton est lancé par rapport à l’horizontale
+: <span class="math inline">\(\alpha =
+\SI{30}{\degree}\)</span></p></li>
+<li><p>intensité du champ de pesanteur terrestre : <span
+class="math inline">\(g = \SI{9.8}{\meter\per\second}\)</span></p></li>
+</ul>
+</div>
+<ol>
+<li><p>À l’aide des données et des équations horaires du mouvement,
+montrer que l’expression de l’équation de la trajectoire <span
+class="math inline">\(y(x)\)</span>, <span
+class="math inline">\(x\)</span> et <span
+class="math inline">\(y\)</span> étant exprimés en mètres, s’écrit dous
+la forme : <span class="math display">\[y(x) = -0.27 x^2 + 0,58 x +
+0,70\]</span></p></li>
+</ol>
+<p>Un joueur ayant déjà marqué 41 points s’apprête à lancer le bâton de
+Mölkky. Pour gagner, il doit atteindre exactement le score de 50 points.
+La configuration du jeu est représentée sur la photographie du doc. <a
+href="#doc2" data-reference-type="ref" data-reference="doc2">2</a>.</p>
+<figure id="doc2">
+<img src="Ressources/TSPE_DS2_25_Fig2.png" />
+<figcaption>Photographie de la configuration du jeu avant le
+lancer</figcaption>
+</figure>
+<p>Dans notre étude, la taille des quilles est considérée comme
+négligeable au regard des distances mises en jeu. On assimilera alors la
+quille à un point posé au sol. On suppose qu’il n’y a pas de rebond du
+bâton à la suite du lancer.<br />
+<em>Dans la question suivante, le candidat est invité à prendre des
+initiatives et à présenter la démarche quivie, même si elle n’a pas
+abouti. La démarche est évaluée et nécessite d’être correctement
+présentée.</em></p>
+<ol>
+<li><p>Vérifier que la partie est remportée par le joueur si le lancer
+est réalisé dans les conditions précisées dans les données
+précédentes.</p></li>
+</ol>
+<p>Sur le doc. <a href="#doc3" data-reference-type="ref"
+data-reference="doc3">3</a>, on a reproduit un extrait d’un programme
+Python qui permet de calculer puis de tracer les courbes représentant
+l’énergie cinétique <span class="math inline">\(E_c\)</span>, l’énergie
+potentielle de pesanteur <span class="math inline">\(E_p\)</span> et
+l’énergie mécanique <span class="math inline">\(E_m\)</span> du bâton de
+Mölkky lors de son lancer. Les données numériques utilisées sont
+identiques aux questions précédentes.</p>
+<figure id="doc3">
+<div class="sourceCode" id="cb1" data-language="Python"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># [...] lignes precedentes</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Ec1 <span class="op">=</span> []</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Ep1 <span class="op">=</span> []</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Em1 <span class="op">=</span> []</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(tl)):</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    Ec1 <span class="op">=</span> <span class="fl">0.5</span> <span class="op">*</span> <span class="fl">0.4</span> <span class="op">*</span> (vxl[i]<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> vyl[i]<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    Ec1.append(Ec)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    Ep1 <span class="op">=</span> <span class="fl">0.4</span> <span class="op">*</span> <span class="fl">9.81</span> <span class="op">*</span> y[i]</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    Ep1.append(Ep1)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    Em1 <span class="op">=</span> </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    Em1.append(Em1)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># [...] lignes suivantes</span></span></code></pre></div>
+<figcaption>Extrait du programme python</figcaption>
+</figure>
+<ol>
+<li><p>À partir du doc. <a href="#doc3" data-reference-type="ref"
+data-reference="doc3">3</a>, déterminer la masse <span
+class="math inline">\(m\)</span> du bâton de Mölkky. justifier la
+réponse.</p></li>
+<li><p>Écrire et compléter, sur votre copie, la ligne 14 du programme du
+doc. <a href="#doc3" data-reference-type="ref"
+data-reference="doc3">3</a> qui permet de calculer l’énergie mécanique
+<span class="math inline">\(E_m\)</span> du bâton de Mölkky.</p></li>
+</ol>
+<p>Le doc. <a href="#doc4" data-reference-type="ref"
+data-reference="doc4">4</a> représente les courbes affichées après avoir
+exécuté le programme Python complet.</p>
+<figure id="doc4">
+<img src="Ressources/TSPE_DS2_25_Fig4.png" />
+<figcaption>Évolution temporelle des énergies</figcaption>
+</figure>
+<ol>
+<li><p>Attribuer chaque courbe du doc. <a href="#doc4"
+data-reference-type="ref" data-reference="doc4">4</a> à l’énergie
+représentée. Justifier la réponse.</p></li>
+<li><p>Déterminer la "durée de vol" du bâton de Mölkky (durée de chute)
+et en déduire que la partie décrite précédemment est remportée par le
+joueur, en considérant les équations horaires du mouvement établies dans
+la question 3.</p></li>
+</ol>
+
+</body>
+</html>

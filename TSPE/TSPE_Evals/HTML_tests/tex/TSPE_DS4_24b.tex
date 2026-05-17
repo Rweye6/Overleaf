@@ -1,0 +1,119 @@
+\documentclass[a4paper,12pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{Eval}
+\usepackage[toc,page]{appendix}
+
+
+\newcommand{\chnum}{Chapitres 3 et 12}
+\newcommand{\chtitle}{Cinétique chimique et mouvement dans un champ uniforme}
+\newcommand{\dtype}{DS 4}
+
+\begin{document}
+\maketitle
+\section{Détecteur ionique de fumées}
+\begin{figure}[h!]
+    \begin{minipage}{.48\linewidth}
+    Le principe de ce détecteur de fumées repose sur l’ionisation de l’air par des particules $\alpha$. En l’absence de fumées, ces particules arrachent des électrons aux molécules de dioxygène  et de diazote présentes dans la chambre à ionisation. Pour le dioxygène, l’ionisation nécessite un apport d’énergie de 12 eV par molécule.\\
+    Les ions et les électrons formés par l’ionisation de l’air sont soumis à un champ électrique uniforme entre deux plaques. Un courant électrique de faible intensité apparaît alors dans le circuit électrique (Figure~\ref{Fig1}).\\
+    Lorsque la fumée pénètre dans la chambre à ionisation, une partie des électrons et des ions issus de l’ionisation se fixe aux poussières de fumées. La baisse de l’intensité électrique qui en résulte déclenche un avertisseur sonore.
+\end{minipage}
+\begin{minipage}{.5\linewidth}
+    \includegraphics[width=\linewidth]{Ressources/TSPE_DS4_24b_Fig1.png}
+    \caption{Illustration du principe d'une chambre à ionidation}
+    \label{Fig1}
+\end{minipage}
+\end{figure}
+\begin{figure}[h!]
+    \begin{minipage}{.48\linewidth}
+    On s’intéresse au mouvement d’une particule $\alpha$ arrivant dans la chambre à ionisation en l’absence de fumée. Cette particule arrive en un point $O$ avec un vecteur vitesse initiale parallèle aux plaques $C$ et $D$ du condensateur plan (voir Figure~\ref{Fig2}).\\
+    Une tension constante $U = \SI{9,0}{V}$ est appliquée entre les deux plaques $C$ et $D$. La valeur de la vitesse initiale $v_O$ est égale à \SI{1,6E7}{\meter\per\second}.\\
+    On étudie le mouvement de la particule $\alpha$ dans le référentiel terrestre supposé galiléen. À l’instant $t = 0$, la particule $\alpha$ est au point O.\\
+    Lors de cette étude, on négligera les éventuelles collisions avec les molécules de l’air ainsi que la valeur du poids de la particule $\alpha$ devant la valeur de la force électrique $\vv{F_e}$ subie par cette particule.
+\end{minipage}
+\begin{minipage}{.5\linewidth}
+    \includegraphics[width=\linewidth]{Ressources/TSPE_DS4_24b_Fig2.png}
+    \caption{Condensateur plan utilisé dans le détecteur de fumée}
+    \label{Fig2}
+\end{minipage}
+\end{figure}
+
+\textbf{Données :}
+\begin{itemize}
+    \item 1 électronvolt (eV) = \SI{1,5E-19}{J}
+    \item charge élémentaire : $e=\SI{1,6E-19}{C}$
+    \item Pour un condensateur plan, le champ électronique $E$ est relié à la tension $u$ à à la distance $d$ qui sépare les deux plaques par la relation $E=\dfrac{U}{d}$
+    \item Charge de la particule $\alpha$ : $q_{\alpha} = + 2 e$
+    \item Masse d'une particule $\alpha$ : $m_{\alpha} = \SI{6,64E-27}{kg}$
+    \item Intensité du champ de pesanteur terrestre : $g = \SI{9,81}{\meter\per\second}$
+\end{itemize}
+
+
+\begin{enumerate}
+    \item Vérifier par le calcul que l’hypothèse concernant le poids de la particule $\alpha$ est justifiée.
+    \item Reproduire sur la copie le schéma de la figure~\ref{Fig1} puis y représenter le champ électrostatique $\vv{E}$ et la force électrique que subit la particule $\alpha$ au point $O$. Justifier.
+    \item Établir que les équations horaires du mouvement de la particule $\alpha$ sont : $$x(t)=v_0 \cdot t$$
+    $$y(t)= \dfrac{e\cdot U}{m_{\alpha}\cdot d}\cdot t^2$$
+    \item Déterminer la valeur de la coordonnée $y_L$ de la particule lorsqu’elle a parcouru une distance suivant l’axe $Ox$ égale à $L = \SI{4,0}{cm}$. Expliquer pourquoi le mouvement de cette particule peut être considérée comme rectiligne dans la chambre d’ionisation.
+    \item Montrer que l’énergie cinétique initiale des particules $\alpha$ est suffisante pour ioniser des molécules de dioxygène.
+\end{enumerate}
+
+
+\section{Étude cinétique d’une réaction d’oxydoréduction}
+On se propose d’étudier la cinétique de la transformation lente de décomposition de l’eau oxygénée par les ions iodure en présence d’acide sulfurique, transformation considérée comme totale.\\
+L’équation de la réaction qui modélise la transformation d’oxydoréduction s’écrit :
+$$\ce{H2O2(aq) + 2 I-(aq) + 2 H+(aq) <=> I2(aq) + 2H2O(l)}$$
+
+La solution de diiode formée étant colorée, la transformation est suivie par spectrophotométrie, méthode qui consiste  à mesurer l'absorbance A de la solution, grandeur proportionnelle à la concentration en diiode.
+
+	\subsection{Étude théorique de la réaction}
+	\begin{enumerate}
+		\item Identifier,  dans l'équation de la réaction étudiée, les deux couples d'oxydoréduction mis en jeu en écrivant leurs demi-équations correspondantes.
+		Justifier l’écriture de l’équation de la réaction.
+	\end{enumerate}
+	\subsection{Suivi de la réaction}
+	À la date $t$= \SI{0}{s}, on mélange un volume $V_1$ = \SI{20,0}{mL} d'une solution d'iodure de potassium (\ce{K+} ; \ce{I-}) de concentration $C_1$ = \SI{2,0}{mL} d'eau oxygénée \ce{H2O2} de concentration $C_2$ = \SI{0,10}{\mole\per\liter}.\\
+	On remplit une cuve de spectrophotométrie et on relève les valeurs de l'absorbance au cours du temps. On détermine alors, grâce à la loi de Beer-Lambert, la concentration en quantité de matière  [\ce{I2}] du diiode formé :
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline t (s)& 0 & 126 & 434 & 682 & 930 & 1178 & 1420\\
+		\hline [\ce{I2}] (\unit{\milli\mole\per\liter}) & 0,00 & 1,74 & 4,06 & 5,16 & 5,84 & 6,26 & 6,53\\
+		\hline
+	\end{tabular}
+    \end{center}
+	
+	
+	\begin{enumerate}
+		\item Justifier l'utilisation du spectrophotomètre pour le suivi cinétique de la réaction.
+		\item Rappeler la relation entre l'absorbance $A$ et la concentration en quantité de matière [\ce{I2}] de l'espèce colorée.
+		\item Le mélange initial est-il dans les proportions sot\oe chiométriques ? Justifier la réponse par des calculs.
+		\item Compléter le tableau d'avancement de la transformation et justifier les calculs de $n_1$ et $n_2$.
+        \end{enumerate}
+		\noindent \begin{tabular}{|>{\centering}m{3cm}|>{\centering}m{2.5cm}|>{\centering}m{2cm}|>{\centering}m{2cm}|>{\centering}m{2cm}||>{\centering}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
+			\hline
+			\multicolumn{2}{|c|}{Équation chimique} & \multicolumn{5}{|c|}{\ce{H2O2(aq) + 2 I-(aq) + 2 H+(aq) <=> I2(aq) + 2H2O(l)}}\\
+			\hline État du système & Avancement (\unit{\mole}) & \multicolumn{5}{|c|}{Quantité de matière (\unit{\mole})}\\
+			\hline État initial & 0 & $n_2$ = \num{2,0e-4} & $n_1$ = \num{20e-4} & Excès & Beaucoup & \\
+			\hline État en cours de transformation & $x$ & & & Excès & Beaucoup & \\
+			\hline État final & $x_{max}$ & & & Excès & Beaucoup & \\
+			\hline
+		\end{tabular}
+        \begin{enumerate}[resume]
+		\item Déterminer l'avancement maximal. En déduire la valeur théorique de la concentration en diiode formé lorsque la transformation est terminée. Cette concentration est-elle en accord avec le tableau de mesures ?
+	\end{enumerate}
+	
+	\subsection{Exploitation des résultats}
+	À l'aide d'un tableur, on calcule la concentration et la vitesse de disparition de l'eau oxygénée au cours du temps. Une capture d'écran est donnée ci-dessous.\\
+	\begin{center}\includegraphics[width = .5\linewidth]{Ressources/TSPE_C10_Eval_Fig8.png}\end{center}
+	\begin{enumerate}
+		\item Donner la définition du temps de demi-réaction dans le cas étudié, puis déterminer graphiquement $t_{1/2}$ à l'aide de la courbe de l'évolution de la concentration en eau oxygénée au cours du temps ci-après.\\
+		\begin{center}\includegraphics[width = .5\linewidth]{Ressources/TSPE_C10_Eval_Fig6.png}\end{center}
+		\item  Retrouver par un calcul, la vitesse de disparition de \ce{H2O2} à $t$ = \SI{434}{s}.\\
+		On trace ensuite la courbe donnant la vitesse de disparition $v_D$ de l'eau oxygénée en fonction de sa concentration.\\
+		\begin{center}\includegraphics[width = .5\linewidth]{Ressources/TSPE_C10_Eval_Fig7.png}\end{center}
+		\item Expliquer pourquoi cette transformation chimique suit une loi de vitesse d'ordre 1.
+		\item La modélisation de la concentration en eau oxygénée au cours du temps est donnée par la relation
+        $$[\ce{H2O2}](t) = [\ce{H2O2}]_0 \cdot  e^{-kt}$$
+		À l'aide de cette relation et du tableau de mesures, déterminer [\ce{H2O2}]$_0$, concentration initiale en eau oxygénée.
+		\item Retrouver cette valeur par le calcul.
+		\item Déterminer $k$ la constante de vitesse en utilisant la droite donnant la vitesse de disparition $v_D$ de l'eau oxygénée en fonction de sa concentration.
+	\end{enumerate}
+\end{document}

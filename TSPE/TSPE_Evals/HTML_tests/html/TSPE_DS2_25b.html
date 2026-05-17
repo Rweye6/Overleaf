@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 class="unnumbered" id="le-scanner-à-rayons-x">Le scanner à rayons
+X</h1>
+<p>La radiographie réalisée par un scanner à rayons X est une technique
+d’imagerie médicale utile dans le diagnostique de nombreuses
+pathologies.<br />
+Le scanner crée un faisceau à rayons X à l’aide d’un tube à rayons X ou
+de Coolidge.</p>
+<div class="center">
+<div class="documentboxenv">
+<p><span>Fonctionnemnent d’un scanner</span> <img
+src="Ressources/TSPE_DS2_25_Fig5.png" alt="image" /></p>
+</div>
+</div>
+<p>Dans ce tube à rayons X, une tension élevée <span
+class="math inline">\(U\)</span> est maintenue entre un filament
+cathodique. borne négative, et une anode tournante, norne positive
+(doc. <a href="#doc5" data-reference-type="ref"
+data-reference="doc5">[doc5]</a> et <a href="#doc6"
+data-reference-type="ref" data-reference="doc6">[doc6]</a>). Un courant
+électrique provoque l’échauffement d’un filament situé à la cathode.
+L’agitation des électrons présents augente et une partie d’entre eux est
+éjectée du filament au point <span class="math inline">\(O\)</span>,
+avec une vitesse négligeable. La tension <span
+class="math inline">\(U\)</span> accélère les électrons du point <span
+class="math inline">\(O\)</span> vers l’anode en tungstène. Denevus très
+énergétiques, ils frappent l’anode, ce qui produit des rayons X. Pour
+obtenir ces rayons X, chaque électron doit avoir acquis une énergie
+cinétique égale à 6,4E-15 J au minimum.</p>
+<div class="minipage">
+<div class="documentboxenv">
+<p><span>Schéma du tube à rayons X</span> <span id="doc5"
+data-label="doc5"></span> <img src="Ressources/TSPE_DS2_25_Fig6.png"
+alt="image" /></p>
+</div>
+</div>
+<div class="minipage">
+<div class="documentboxenv">
+<p><span>Schéma simplifié</span> <span id="doc6"
+data-label="doc6"></span> <img src="Ressources/TSPE_DS2_25_Fig7.png"
+alt="image" /></p>
+</div>
+</div>
+<p>Le but de cet exercice est de calculer la tension à appliquer entre
+la cathode et l’anode pour que le faisceau d’électrons parvienne à
+provoquer l’émission de photons X au niveau de l’anode. On considèrera
+l’électrons comme système d’étude assimilé à un point matériel dont on
+négligera le poids. Son mouvement sera étudié dans le référentiel
+terrestre considéré comme galiléen. on mouvement sera étudié dans un
+référentiel terrestre considéré comme galiléen. À l’instant initial,
+l’électron est situé au point <span class="math inline">\(O\)</span> et
+sa vitesse est considérée comme nulle.<br />
+</p>
+<div class="data">
+<ul>
+<li><p>Masse de l’électron : <span class="math inline">\(m =
+\SI{9,1E31}{kg}\)</span></p></li>
+<li><p>Charge de l’électrons : <span class="math inline">\(q = -e =
+\SI{-1,6E-19}{C}\)</span></p></li>
+</ul>
+</div>
+<div class="question">
+<ol>
+<li><p>Reproduire le doc. <a href="#doc6" data-reference-type="ref"
+data-reference="doc6">[doc6]</a> puis tracer, entre la cathode et
+l’anode, sans préciser d’échelle :</p>
+<ul>
+<li><p>le vecteur champ électrique supposé uniforme <span
+class="math inline">\(\vv{E}\)</span></p></li>
+<li><p>la force <span class="math inline">\(\vv{F}\)</span> que subit un
+électron situé en un point de l’axe (<span
+class="math inline">\(0x\)</span>)</p></li>
+</ul></li>
+<li><p>Donner l’expression vectorielle de <span
+class="math inline">\(\vv{F}\)</span> en fonction de <span
+class="math inline">\(e\)</span> et <span
+class="math inline">\(\vv{E}\)</span>.</p></li>
+<li><p>Montrer que les coordonnées du vecteur accélération <span
+class="math inline">\(\vv{a}\)</span> de l’électron, exprimées dans le
+repère (<span class="math inline">\(Oxy\)</span>) du doc. <a
+href="#doc6" data-reference-type="ref" data-reference="doc6">[doc6]</a>,
+sont <span class="math inline">\(a_x = \dfrac{e\cdot U}{m \cdot
+d}\)</span> et <span class="math inline">\(a_y = 0\)</span>.</p></li>
+<li><p>En déduire le coordonnées du vecteur vitesse de l’électron selon
+l’axe (<span class="math inline">\(Ox\)</span>), notée <span
+class="math inline">\(v_x\)</span>. Établir que <span
+class="math inline">\(x\)</span> d’écrit <span
+class="math inline">\(\dfrac{1}{2} \cdot \left(\dfrac{e\cdot U}{m \cdot
+d}\right) \cdot t^2\)</span>.</p></li>
+<li><p>Donner l’expression litterale de <span
+class="math inline">\(T_A\)</span>, l’instant où l’électron atteint
+l’anode (au point <span class="math inline">\(A\)</span>) située à la
+distance <span class="math inline">\(d\)</span> de <span
+class="math inline">\(O\)</span></p></li>
+<li><p>Grâce aux deux questions précédentes, en déduire que l’expression
+de la vitesse de l’électron au niveau de l’anode est <span
+class="math inline">\(v_A = \sqrt{\dfrac{2\cdot e \cdot
+U}{m}}\)</span>.</p></li>
+<li><p>Répondre à la problématique de l’exercice "trouver la tension
+minimale à appliquer entre la cathode et l’anode pour que le faisceau
+d’électron parvienne à provoquer l’émission de photons X an niveau de
+l’anode".</p></li>
+</ol>
+</div>
+
+</body>
+</html>

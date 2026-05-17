@@ -1,0 +1,185 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Eval}
+
+
+\newcommand{\chnum}{Chapitre 17 et 18}
+\newcommand{\chtitle}{Ondes Effet Doppler, Atténuation et diffraction}
+\newcommand{\dtype}{DS 2}
+
+\begin{document}
+\maketitle
+
+\section*{Exercice 1 : Galaxie d'Andromède}
+    Notre galaxie, la Voie lactée, est membre d'un groupe d'une cinquantaine de galaxies appelé Groupe local et dont la taille atteint dix millions d'années-lumière. Ce groupe est dominé par deux galaxies spirales massives : la Voie lactée et la galaxie d'Andromède (qui contient 2 à 5 fois plus d'étoiles que la Voie lactée) séparées d'environ 2,5 millions d'années-lumière.\\
+    Dans le bulletin n° 58 de l'observatoire de Lowell (USA) de 1913, l'analyse des spectres de la lumière émise par Andromède amène Vesto Slipher à conclure que cette galaxie se rapproche de la Voie lactée à une vitesse radiale d'environ \SI{300}{\kilo\meter\per\second}.\\
+    \textbf{Donnée :} célérité de la lumière dans le vide : $c = \SI{3,0E8}{\meter\per\second}$\\
+
+    La mesure par analyse du décalage de fréquence (effet Doppler) indique que la galaxie d'Andromède se rapproche de la Voie lactée. On se base pour effectuer cette mesure sur plusieurs raies spectrales, mais plus particulièrement sur la raie $H_{\alpha}$ caractéristique de l'atome d'hydrogène de longueur d'onde dans le vide égale à $\lambda_0 = \SI{656,3}{nm}$ dans le référentiel de l'atome.
+
+    \begin{enumerate}
+        \item Décrire qualitativement ce qu'est l'effet Doppler.
+    \end{enumerate}
+
+    On se limite dans cet exercice à une configuration à une dimension dans le cas d'un observateur considéré fixe et situé dans la Voie lactée et d'un émetteur mobile, la galaxie d'Andromède. Dans cette configuration, la vitesse d'Andromède est uniquement radiale.
+
+    \begin{enumerate}[resume]
+        \item Montrer que dans le cas où la source d'une onde lumineuse de fréquence $f_{emise}$ se rapproche d'un récepteur fixe à une vitesse $v$, la fréquence $f_{recue}$ de l'onde de célérité $c$ mesurée par le récepteur s'écrit sous la forme suivants : $$f_{recue} = \dfrac{f_{emise}}{1-\dfrac{v}{c}}$$
+        \item Une approximation mathématique classique est $\dfrac{1}{1-x} \approx 1 + x$ pour $|x|$ très petit devant 1. Vérifier qu'elle convient pour $x = \dfrac{v}{c}$ dans le cas de la vitesse d'Andromède.
+        \item Montrer que, dans ce cas, on peut écrire l'expression du décalage Doppler $\Delta f = f_{recue} - f_{emise}$ sous la forme suivante $$ \Delta f \approx f_{emise} \cdot \dfrac{v}{c}$$
+        \item Calculer le décalage Doppler $\Delta f$ das le cas de la mesure de Vesto Slipher en 1913 pour la raie $H_{\alpha}$ de l'hydrogène.
+        \item En déduire la valeur de la longueur d'onde $\lambda$ mesurée sur Terre pour cette raie. Comparer avec $\lambda_0$.
+    \end{enumerate}
+
+    Vesto Slipher poursuit sa campagne de mesures et publie en 1917 un article montrant que sur 25 galaxies qui nous environnent, 21 s'éloignent de nous. Ces observations sont à l'origine de la découverte de l'expansion de l'Univers : les galaxies s'éloignent souvent les unes des autres.
+
+    \begin{enumerate}[resume]
+        \item Indiquer le signe du décalage Doppler dans le cas d'une source émettrice qui s'éloigne d'un observateur fixe. Justifier alors qualitativement l'appellation "décallager vers le rouge" utilisée par les astrophysiciens dans le cadre de l'expansion de l'Univers.
+    \end{enumerate}
+
+\section*{Exercice 2 : Diffraction par une poudre de cacao}
+On attribue la découverte de la diffraction à Francesco Grimaldi (1618-1663). Le but de l'exercice est d'étudier une application pratique de la diffraction : la détermination de la taille moyenne de poudre de cacao par granulométrie.\\
+Les deux parties de l'exercice sont indépendantes.
+
+\begin{figure}[h!]
+    \caption{Granulomètre laser}
+    \begin{minipage}{.4\linewidth}
+    \includegraphics[width=\linewidth]{Ressources/TSPE_DS2b_Fig4.PNG}
+    \end{minipage}\hspace{.02\linewidth}
+    \begin{minipage}{.48\linewidth}
+    L'appareil ci-contre permet de mesurer la taille de particules allant de \SI{40}{nm} à \SI{2500}{\micro\meter} tout en occupant un encombrement extrèmement réduit.\\
+    Le fabricant de l'appareil indique que deux diodes laser de longueur d'onde \SI{635}{nm} et \SI{830}{nm} sont utilisées dans cet instrument de mesure.
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[h!]
+    \caption{Différents types de chocolat}
+    Le succès du chocolat, auprès des consommateurs, est lié à des caractéristiques gustatives bien identifiées mais aussi à la granulométrie de chacun des constituants.\\
+    Cette dernière propriété représente un enjeu important du procédé de fabrication puisque des particules trop finement broyées rendront le chocolat collant alors que de trop grosses particules lui donneront un aspect granuleux à l'\oe il et en bouche.\\
+    La mesure de la taille des particules, par diffraction laser, est une technique simple et rapide, adaptée à la détermination de la distribution granulométrique de tous les types de chocolat comme les chocolats de couverture utilisés pour le nappage, les chocolats au lait ou les chocolats utilisés pour les recettes instantanées.\\
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            Type de chocolat & De couverture & Au lait & Aggloméré\\
+            \hline
+            $a$ (*) en \unit{\micro\meter} & 10 & 30 & 300\\
+            \hline
+        \end{tabular}
+    \end{center}
+    (*) $a$ représente le diamètre moyen recommandé de la poudre de cacao pour un type de chocolat.
+\end{figure}
+
+    \subsection*{Partie 1 : Vérification de la longueur d'onde d'une des diodes laser utilisées}
+    L'objectif de cette partie est de vérifier la valeur de la longueur d'onde $\lambda$ d'une des diodes laser utilisées dans l'appareil de granulométrie. Sur le trajet du faisceau laser, on intercale des fils de différents diamètres. Sur un écran placé à une distance $D$, on observe une figure de diffraction.\\
+    $L$ représente la largeur de la tache centrale et $\theta_0$ le demi-angle au sommet exprimé en radian.
+
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item Rappeler les trois principales propriétés du faisceau d'un laser.
+            \item Pour une longueur d'onde donnée, déduire l'évolution du demi-angle $\theta_0$ en fonction du diamètre $a$ du fil. Donner la relation qui lie $\lambda$, $\theta_0$ et $a$.
+            \item On fait l'hypothèse que l'angle $\theta_0$ est petit. Dans ce cas, on peut écrire $\tan \theta_0 \approx \theta_0$ avec $\theta_0$ en radian.\\
+            A l'aide du schema, démontrer que la largeur de la tache centrale est donnée par l'expression : $$ L = k \cdot \dfrac{1}{a} $$
+            avec $k =  2 \lambda \cdot D $
+            \item Expérimentalement, on mesure la largeur de la tache centrale $L$ pour des fils calibrés de différentes valeurs de diamètre $a$. On porte les valeurs obtenues dans le graphique ci-dessous. A partir du graphique, déterminer la longueur d'onde $\lambda$ de la diode laser utilisée.
+            \item L'incertitude absolue sur la longueur d'onde $\lambda$, notée $\Delta \lambda$, peut être déterminée à partir de la relation suivante : $$ \Delta \lambda = \lambda \cdot \sqrt{\left(\dfrac{\Delta D}{D}\right)^2 + \left(\dfrac{\Delta k}{k}\right)^2}$$
+            L'incertitude absolue sur la valeur du coefficient directeur est $\Delta k = \SI{1,2E-7}{\meter\squared}$.\\
+            Exprimer la valeur de la longueur d'onde $\lambda$ avec son incertitude. Confronter aux valeurs donnnées par le fabriquant de l'appareil puis conclure.
+        \end{enumerate}
+    \end{enumerate}
+
+    \begin{figure}[h!]
+        \caption{Représentation de l'évolution de la largeur de la tache centrale de diffraction en fonction de l'inverse de l'épaisseur des fils calibrés.}
+        \begin{center}
+            \includegraphics[width= .8\linewidth, trim = 0 0 0 2.5cm,clip]{Ressources/TSPE_DS2b_Fig6.PNG}
+        \end{center}
+    \end{figure}
+
+    \subsection*{Partie 2 : Etude de la diffraction apr la poudre de cacao}
+    Dans cette partie, on considère que l'on peut déterminer le diamètre moyen des grains de cacao d'une poudre donnée en utilisant une figure de diffraction réalisée avec la diode laser de longueur d'onde $\lambda = \SI{635}{nm}$.
+
+    \begin{figure}[h!]
+        \caption{Expérience de diffraction par un trou circulaire}
+        \begin{center}
+            \includegraphics[width = .6\linewidth]{Ressources/TSPE_DS2b_Fig5.PNG}
+        \end{center}
+        La figure de diffraction obtenue par un trou circulaire est constituée de cercles concentriques alternativement brillants et sombres avec : $$ \sin \theta_0 = \dfrac{1,22 \cdot \lambda}{a} $$
+        $\lambda$ : longueur d'onde du faisceau laser, exprimée en mètre\\
+        $a$ : diamètre du trou, exprimé en mètre\\
+        $\theta_0$ : demi-angle au sommet, exprimé en radian
+    \end{figure}
+
+    \begin{enumerate}[resume]
+        \item \begin{enumerate}
+            \item En utilisant un montage proche de celui donné ci-dessous, on réalise l'expérience sur un échantillon de poudre de cacao. Sachant que les grains de cacao sont assimilés à des sphères, justifier le fait qu'on observe une figure de diffraction identique à celle obtenue avec un trou circilaire.
+            \item Après traitement informatique, des résultats expérimentaux lors du contrôle d'un échantillon de poudre de cacao, on obtient le graphe ci-après donnant l'intensité lumineuse relative sur l'écran en fonction du demi-angle $\theta_0$. Peut-on utiliser cet échantillon pour un chocolat de couverture ?
+        \end{enumerate}
+    \end{enumerate}
+
+    \begin{figure}[h!]
+        \caption{Intensité lumineuse relative en fonction du demi-angle au sommet}
+        \begin{center}
+            \includegraphics[width=.8\linewidth, trim = 0 0 0 2cm, clip]{Ressources/TSPE_DS2b_Fig8.PNG}
+        \end{center}
+        
+    \end{figure}
+
+    
+
+\end{document}
+
+\section*{Exercice 1 : Niveau d'intensité sonore}
+Les casques audios permettent tous une réduction des bruits de façon passive de par la forme et la constitution des écouteurs. Cependant; les technologies actuelles permettent un contrôle des sons extérieurs plus poussés.\\
+Leur constructeur annonce que son casque antibruit est efficace même dans les environnements exigeants tels que l'avion ou le train.
+
+\begin{figure}[h!]
+    \caption{Niveau d'intensité sonore dans le casque avec réduction de bruit passive ou réduction active}
+    \begin{center}
+        \includegraphics[width=.8\linewidth]{Ressources/TSPE_DS2b_Fig1.PNG}
+    \end{center}
+    \label{doc1}
+    Dans ce graphique, on représente le niveau d'intensité sonore d'un bruit de référence ayant un spectre large que l'on compare avec des mesures de niveau d'intensité sonore prises dans l'oreillette du casque selon les deux modes de fonstionnement prévus : la réduction passive du bruit et la réduction active.
+\end{figure}
+
+\begin{figure}[h!]
+    \caption{Schéma de l'expérience}
+    \begin{center}
+        \includegraphics[width=.8\linewidth]{Ressources/TSPE_DS2b_Fig2.PNG}
+    \end{center}
+    \label{doc2}
+\end{figure}
+
+\begin{figure}[h!]
+    \caption{Profil sonore du bruit ambiant dans un RER, niveau d'intensité sonore moyen de \SI{80}{dB}}
+    \begin{center}
+        \includegraphics[width=.8\linewidth]{Ressources/TSPE_DS2b_Fig3.PNG}
+    \end{center}
+    \label{doc3}
+\end{figure}
+
+\textbf{Données :}\\
+\begin{itemize*}
+    \item Intensité donore de référence : $I_0 = \SI{1,0E-12}{\watt\per\meter\squared}$
+    \item lien entre l'intensité donore $I$ et la distance $r$ avec les sources du son, dont on suppose qu'elle émet de manière identique dans toutes les directions : $I = \dfrac{P}{4\pi r^2}$\\
+    avec $P$ la puissance sonore en watt et $r$ la distance à la source en mètre
+    \item Quelques exemples de valeurs de niveaux d'intensité sonore $L$ :
+\end{itemize*}
+\begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \textbf{Situation} & Forêt calme & Bibliothèque & Conversation & Seuil de danger & Concert\\
+    \hline
+    $\mathbf{L}$ & \SI{20}{dB} & \SI{40}{dB} & \SI{60}{dB} & \SI{90}{dB} & \SI{110}{dB}\\
+    \hline
+\end{tabular}
+
+Pour mettre en évidence l'atténuation passive du casque, on considère une voiture qui klaxonne. A $r_1 = \SI{5,0}{m}$ du véhicule, là où se trouve un observateur, le son produit a une intensité sonore $I_1 = \SI{1,0E-3}{\watt\per\meter\squared}$.
+
+\begin{enumerate}
+    \item Calculer la valeur du niveau d'intensité sonore $L_1$ du son reçu par la personne et qualifier ce son.
+    \item Après avoir rappelé la définition de l'atténuation $A$ en décibel, montrer que : $$ A = 10 \log \left(\dfrac{I_1}{I'_1}\right)$$ avec $I'_1$ l'intensité sonore de son atténué.\\
+    Déterminer l'intensité sonore $I'_1$ entendue à travers le casque si l'atténuation est de \SI{15}{dB}.
+    \item Déterminer à quelle distance de la source on doit se situer pour obtenir la même atténuation sans casque. Commenter.
+\end{enumerate}
+\textbf{Dans les questions suivantes, on s'intéresse aux effets de la réduction active de bruit.}
+\begin{enumerate}[resume]
+    \item A l'aide des données, identifier le domaine de fréquences pour lequel la réduction passibe de bruit est efficace et le dommaine de fréquences pour lequel la réduction active de bruit est efficace.
+    \item En utilisant l'ensemble des sonnées, expliquer si la promesse du constructeurà propos de l'efficacité de son casque dans les transports est respectée et si la technologie de réduction active est nécessaire.
+\end{enumerate}

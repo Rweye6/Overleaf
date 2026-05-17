@@ -1,0 +1,209 @@
+\documentclass[a4paper,11pt,fleqn]{article}%fleqn pour aligner les equations à gauche
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{lscape}
+
+\usepackage{tgheros,textcomp}%Police Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+%\setlength{\mathindent}{0pt}%indentation dans math = 0
+
+\usepackage[top = 1cm, bottom = 2cm, left = 1cm, right = 1cm]{geometry}
+\usepackage{titlesec}
+%\setcounter{secnumdepth}{4}
+\usepackage{xcolor}
+\usepackage{amssymb} %double flèche de réaction
+\usepackage{mathrsfs}%farraday
+\usepackage{xtab}%tableau sur plusieurs pages
+\usepackage{esvect}%grands vecteurs
+
+\usepackage[version=4]{mhchem} %equations chimiques
+
+\usepackage{array}
+\usepackage{chemfig}
+\usepackage{multirow}
+%\usepackage{sectsty}
+
+\usepackage{caption}
+\usepackage{adjustbox}
+\usepackage[labelformat=simple]{subfig}
+\usepackage{float}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[cal=boondoxo]{mathalfa} 
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage[european, straightvoltages, RPvoltages]{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usetikzlibrary{automata,positioning}
+\usepackage{multicol}
+\usepackage{eqnarray}
+\usepackage{tabularx,colortbl}%colorer fond cellules
+
+\sisetup{
+	detect-all,
+	output-decimal-marker={,},
+	group-minimum-digits = 3,
+	group-separator={~},
+	number-unit-separator={~},
+	inter-unit-product={~}
+} %setup pour SIunitx
+
+\usepackage{listings}%pour insérer le code python
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+%\graphicspath{ {/home/rweye/Documents/Enseignement/2023/Cours/TSPE/Eval/Ressources/} }
+
+\titleformat{\section}
+{\titlerule
+\vspace{.8ex}%
+\normalfont \bfseries}
+{\thesection :}{.5em}{\bfseries}
+
+\renewcommand{\thesection}{Exercice \arabic{section}}
+\titlespacing{\section}{0pt}{1em}{1em}
+\renewcommand{\thesubsection}{\hspace{1cm}\alph{subsection}.}
+\renewcommand\thesubfigure{\textbf{Document \arabic{subfigure} :}}
+
+
+\title{\vspace{-1cm}\large 
+	\begin{tabular}{|m{5cm}|>{\centering}m{8cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		Nom : & \textbf{\textsc{DS TSPE N°4}} &  Note : \\
+		Prénom : & & $\_\_\_$ \textbf{20} \\ \hline
+\end{tabular}}
+\date{}
+
+\newpagestyle{mystyle}{%
+	\setfoot{ROSALIE}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+\renewpagestyle{plain}{%
+	\setfoot{ROSALIE}{\thepage\,$|$\,\pageref{LastPage}}{}
+}
+
+\pagestyle{mystyle}
+
+\newenvironment{itemize*}%
+{\begin{itemize}[label=$-$]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\newenvironment{itemize**}%
+{\begin{itemize}[label=$\_\_$,labelindent=0pt, leftmargin=*,topsep=0pt]%
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}}%
+	{\end{itemize}}
+
+\renewcommand{\arraystretch}{1.5}
+
+
+\begin{document}
+\maketitle
+\vspace{-2.5cm}
+\section{CD et autres supports de l'information}
+A partir du début des années 80, le disque audio (CD) a supplanté les vinyles en raison d'une grande facilité d'utilisation et de la quantité d'information stockable. Nous allons, dans un premier temps, étudier un Compact-Disc, puis nous nous intéresserons à la technologie Blue-ray.
+\subsection{Le Compact-Disc}
+	\begin{enumerate}
+		\item Montrer que la surface "utile" $S$ du CD, correspond à la surface grisée du document 1, s'exprime par : $S=\pi \cdot (R_2^2 - R_1^2)$.\\
+		\textcolor{blue}{La surface lisible du disque correspond à la surface totale - la surface interne, soit $$S =  \pi \cdot R_2^2 - \pi \cdot R_1^2$$ $$ S =  \pi \cdot (R_2^2 -R_1^2)$$}
+		\item On peut estimer la longueur $L$ de la piste par l'expression $L \approx \dfrac{S}{a}$ où $a$ est le pas de la spirale. Evaluer la longueur de la piste de ce CD.\\
+		\textcolor{blue}{$$ L = \dfrac{S}{a} = \dfrac{\pi \cdot (R_2^2 - R_1^2)}{a}$$
+		$$L = \dfrac{\pi \times (\num{6,0E-2}^2 -\num{2,5E-2}^2)}{\num{1,6E-6}} = \SI{5,8E3}{m} $$
+		La piste d'un CD a une longueur d'environ \SI{5,8}{km}.}
+		\item En déduire la durée totale de lecture du CD en minutes.\\
+		\textcolor{blue}{La durée de lecture peut s'exprimer comme : $$\Delta t = \dfrac{L}{V}$$ $$ \Delta t = \dfrac{\num{5,8E3}}{\num{1,2}} = \SI{4,9}{s}$$
+		La lecture aura une durée de \SI{4,9}{s}, soit \SI{81}{min}.}
+		\item Lorsque le spot laser se réfléchit autour d'une alvéole, il y a interférences entre la partie de l'onde qui se réfléchit sur le plat et celle qui se réfléchit sur le creux.
+		\begin{enumerate}[label=\theenumi.\arabic*]
+			\item Déterminer la différence de parcours entre l'onde qui se réfléchit sur un creux et celle qui se réfléchit sur un plat.\\
+			\textcolor{blue}{La différence de parcours mis en jeu consiste en un aller retour dans un creux soit $\delta = 2\cdot h_c  = 2 \times \num{0,12E-6} = \SI{0,24E-6}{\micro\meter}$. }
+			\item Ce parcours ayant lieu dans le polycarbonate, déterminer le retard de l'onde réfléchie dans un creux par rapport à l'onde réfléchie sur un plat au niveau du capteur.\\
+			\textcolor{blue}{Temps de parcours : $$\Delta t = \dfrac{2h_c}{v}$$
+			D'après le document 2 $2h_c = \dfrac{\lambda}{2}$\\
+			Donc : $ \Delta t = \dfrac{\dfrac{\lambda}{2}}{v} = \dfrac{\lambda}{2v} = \SI{1,3E-15}{s}$}
+			\item Comparer ce retard à la période de l'onde émise par le laser.\\
+			\textcolor{blue}{Calcul de la période de l'onde : $$T = \dfrac{\lambda}{c}$$ $$T = \dfrac{\num{780E-9}}{\num{3E8}} = \SI{2,6E-15}{s}$$
+			Comparaison entre le retard et la période : $$\dfrac{\delta t }{T} = \dfrac{\num{1,3E-15}}{\num{2,6E-15}} = \frac{1}{2}$$
+			Le retard correspond à la moitié d'une longueur d'onde.}
+			\item En déduire le type d'interférences (constructive ou destructive) entre l'onde réfléchie par un creux et celle réfléchie par un plat au niveau du capteur. La réponse s'appuiera sur un schéma.\\
+			\textcolor{blue}{On constate que le rapport entre les périodes est de 1/2 ce qui correspond à des interférences destructives.}
+			\item Dans ce cas, le signal reçu par le capteur est-il maximal ou minimal ? Commenter.\\
+			\textcolor{blue}{Dans ce cas, le capteur reçoit un signal minimal car en opposition de phase.}
+		\end{enumerate}
+		
+		\item Déterminer la capacité totale théorique d'information (en Mo) que l'on peut enregistrer sur ce CD.\\
+		\textcolor{blue}{•}
+	\end{enumerate}
+\subsection{Le Blue-ray}
+La technologie Blue-ray a été développée au début des années 2000 afin de commercialiser des films en haute définition. Le principe de fonctionnement est le même que celui d'un CD.
+	\begin{enumerate}[resume]
+		\item Quelle doit-être la profondeur d'un creux sur un disque Blue-ray ?\\
+		\textcolor{blue}{Pour pouvoir utiliser le phénomène d'interférences dans le polycarbonate, il faut que le décalage de parcours corresponde à $\lambda \cdot (k + \frac{1}{2})$ On aura donc $$\delta = \num{261E-9} \times \frac{1}{2}$$ pour $k=0$, soit $\delta = \SI{130,5E-9}{m}$\\
+		 On aura une profondeur $h_b = \delta /2 = \SI{65,3}{nm}$ }
+		\item Pourquoi ne peut-on pas lire un disque Blue-ray avec un lecteur CD ?\\
+		\textcolor{blue}{La longueur d'onde utilisée par un lecteur CD ne correspond pas à celle employée par un lecteur Blue-ray, il n'y aura donc pas de mise en place d'interférence et donc de lecture possible.}
+		\item En supposant que le codage de l'information et la lecture d'un disque Blue-ray sont identiques à ceux d'un CD, déterminer la capacité de stockage qu'aurait un disque Blu-ray. Que peut-on en conclure ?\\
+		\textcolor{blue}{.}
+	\end{enumerate}
+
+\section{Réalisation d'une pile nickel-zinc}
+On réalise une pile formée à partir des couples \ce{Ni^2+}/\ce{Ni} et \ce{Zn^2+}/\ce{Zn}. Chaque solution a pour volume $V = \SI{100}{mL}$ et la concentration initiale des ions positifs est $C = \SI{5,0E-2}{\mole\per\liter}$.\\
+\textbf{Données :}
+\begin{itemize}
+	\item \textbf{Masse molaire du zinc :} $M(\ce{Zn}) = \SI{65,4}{\gram\per\mole}$
+	\item \textbf{Masse molaire du nickel :} $M(\ce{Ni}) = \SI{58,7}{\gram\per\mole}$
+	\item \textbf{Charge élémentaire de l'électron :} $e= \SI{-1,6E-19}{C}$
+	\item \textbf{Constante d'Avogadro :} $N_A = \SI{6,02E23}{\per\mole}$
+	\item \textbf{Constante de Faraday :} $F = \SI{9,65E4}{C}$
+	\item Pour la réaction suivante : \ce{Ni^2+ + Zn = Zn^2+ + Ni}, la constante d'équilibre vaut $K = 10^{18}$.
+\end{itemize}
+\begin{enumerate}
+	\item \textbf{Réalisation de la pile}
+	\begin{enumerate}[label=\theenumi.\arabic*]
+		\item L'électrode positive de cette pile est l'électrode de nickel. Légender le schéma de la \textbf{Figure 1} en annexe avec les termes suivants : électrode de nickel, électrode de zinc, pont salin, solution contenant des ions \ce{Zn^2+}, solution contenant des ions \ce{Ni^2+}.\\
+		\textcolor{blue}{•}
+		\item Écrire les demi-équations des réactions se produisant aux électrodes. Préciser à chaque électrode s'il s'agit d'une oxydation ou d'une réduction.\\
+		\textcolor{blue}{Électrode de nickel : \ce{Ni^2+(aq) + 2e- = Ni(s)} REDUCTION\\
+		Électrode de zinc : \ce{Zn(s) = Zn^2+(aq) + 2e-} OXYDATION}
+		\item Écrire l'équation de la réaction globale qui intervient quand la pile débite.\\
+		\textcolor{blue}{Équation globale : \ce{Zn(s) + Ni^2+(aq) -> Zn^2+(aq) + Ni(s)}}
+		\item Calculer la valeur du quotient réactionnel initial $Q_{r,i}$. Cette valeur est elle cohérente avec la polarité proposée ?\\
+		\textcolor{blue}{Calcul de $Q_{r,i}$ :
+		$$Q_{r,i} = \dfrac{\dfrac{[\ce{Zn^2+}]_i}{c^0}}{\dfrac{[\ce{Ni^2+}]_i}{c^0}}$$
+		$$ Q_{r,i} = \dfrac{[\ce{Zn^2+}]_i}{[\ce{Ni^2+}]_i}$$
+		$$ Q_{r,i} = \dfrac{\num{5,0E-2}}{\num{5,0E-2}} = 1$$
+		On constate que $Q_{r,i}<K$ donc la réaction a lieu dans le sens direct, ce qui est cohérent par rapport à la polarité proposée.}
+	\end{enumerate}
+	\item \textbf{Étude de la pile}
+	\begin{enumerate}[label=\theenumi.\arabic*]
+		\item On fait débiter la pile dans un conducteur ohmique. Compléter le schéma de la \textbf{Figure 1}
+		\item Préciser sur ce schéma le sens du courant et le sens de déplacement des électrons dans le circuit extérieur.
+		\item Comment varie la concentration des ions positifs dans chacun des béchers ? En déduire l'évolution du quotient de réaction $Q_r$.\\
+		\textcolor{blue}{Dans le bécher contenant des ions nickel, la concentration va diminuer car les ions sont consommés. Dans le bécher contenant des ions zinc, la concentration va augmenter. Dans ce cas de figure, le quotient de réaction va augmenter.}
+		\item Sachant que la masse des électrodes ne limite pas la réaction, pour quelle raison la pile s'arrêtera-t-elle de débiter ? Quelle est alors la valeur de $Q_r$ ?\\
+		\textcolor{blue}{Si les électrodes ne limitent pas la réaction, c'est lorsque la concentration des ions nickel sera nulle que la pile s'arrêtera de débiter du courant. $Q_r$ aura une valeur proche de celle de $K$.}
+		\item La réaction étant considérée totale, calculer l'avancement maximal $x_{max}$ de la réaction.\\
+		\textcolor{blue}{Si les ions nickel sont réactifs limitant alors on aura : $$x_{max} = n_i(\ce{Ni^2+}) = [\ce{Ni^2+}]_i\cdot V$$
+		$$x_{max} = \num{5,0E-2} \times \num{0,1} = \SI{5,0E-3}{\mole}$$}
+		\item Quelle relation existe-t-il entre $x_{max}$ et la quantité de matière d'électrons qui ont circulé ?\\
+		\textcolor{blue}{Pour chaque mole d'ion nickel consommé on aura deux électrons qui auront circulé, donc :$$n_{\ce{e-}} = 2\cdot x_{max}$$}
+		\item En déduire la charge totale de la pile.\\
+		\textcolor{blue}{$$q_{pile} = n_{\ce{e-}} \cdot F$$
+		$$q_{pile} = 2\cdot x_{max} \cdot F$$
+		$$q_{pile} = 2\times \num{5,0E-3} \times  \num{9,65E4} =\SI{9,65E2}{C}$$}
+	\end{enumerate}
+\end{enumerate}
+
+\end{document}

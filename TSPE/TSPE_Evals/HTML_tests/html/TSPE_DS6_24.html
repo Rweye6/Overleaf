@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 id="les-supercondensateurs">Les supercondensateurs</h1>
+<p>Un supercondensateur permet de stocker et de restituer rapidement de
+l’énergie électrique. Dans certains transports en commun, un super
+condensateur est utilisé pour emmagasiner un maximum d’énergie
+électrique en quelques secondes lors des phases de freinage.<br />
+Si des condensateurs classiques étaient utilisée à la place des
+supercondensateurs, il faudrait <em>des armatures de très grandes
+surfaces</em> et <em>très rapprochées</em>, séparées par un excellent
+diélectrique.<br />
+Cet exercice a pour objectifs :</p>
+<ul>
+<li><p>de comparer qualitativement un supercondensateur avec un
+condensateur usuel,</p></li>
+<li><p>d’étudier le comportement d’un supercondensateur lors de sa
+charge afin de déterminer expérimentalement la veleur de sa capacité et
+de la comparer à celle fournie par le fabricant.</p></li>
+</ul>
+<p><strong>Données constructeur pour le supercondensateur étudié
+:</strong></p>
+<ul>
+<li><p>dimensions : 35 mm <span class="math inline">\(\times\)</span>
+60 mm</p></li>
+<li><p>capacité : 400 F</p></li>
+<li><p>tension maximale : 2.5 V</p></li>
+<li><p>énergie maximale : 0.35 W h</p></li>
+</ul>
+<ol>
+<li><p>Comparer la valeur de al capacité du supercondensateur étudié aux
+valeurs usuelles des capacités des condensateurs utilisés au lycée ou en
+électronique.</p></li>
+</ol>
+<p>La valeur de la capacité <span class="math inline">\(C\)</span> d’un
+condensateur plan peut être déterminée à l’aide de la relation : <span
+class="math display">\[C =\epsilon \cdot \dfrac{S}{d}\]</span></p>
+<table>
+<tbody>
+<tr>
+<td style="text-align: center;">où</td>
+<td style="text-align: left;"><span class="math inline">\(S\)</span> est
+la surface en regard des deux armatures</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(d\)</span> est
+l’écartement entre les deux armatures</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span
+class="math inline">\(\epsilon\)</span> est une constante
+caractéristique eu matériaux isolant placé entre les deux armatures</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><p>Justifier qualitativement les parties soulignées du texte de
+présentation des superconducteurs.</p></li>
+</ol>
+<h2 id="étude-du-modèle-du-circuit-rc-série">Étude du modèle du circuit
+RC série</h2>
+<p>On souhaite déterminer la valeur de la capacité du supersonducteur en
+utilisant un cycle de charge dans un circuit RC. pour cela, on étudie
+dans un premier temps le comportement d’un modèle de circuit RC
+série.<br />
+On considère le circuit électrique schématisé ci-dessous (Figure <a
+href="#fig1" data-reference-type="ref" data-reference="fig1">1</a>)
+composé d’une source idéale de tension <span
+class="math inline">\(E\)</span>, d’un interrupteur <span
+class="math inline">\(K\)</span>, d’un conducteur ohmique de résistance
+<span class="math inline">\(R\)</span>, du superconducteur de capacité
+<span class="math inline">\(C\)</span> et d’un ampèremètre de résistance
+interne négligeable.</p>
+<figure id="fig1">
+<img src="Ressources/TSPE_DS6_24_fig1.png" />
+<figcaption>Circuit électrique RC série</figcaption>
+</figure>
+<p>Le superconducteur est initialement déchargé. À l’instant <span
+class="math inline">\(t=\SI{0}{s}\)</span>, on ferme l’interrupteur.</p>
+<ol>
+<li><p>Donner la relation entre l’intensité <span
+class="math inline">\(i(t)\)</span> du courant électrique et la dérivée
+de la charge <span class="math inline">\(q(t)\)</span> portée par
+l’armature <span class="math inline">\(A\)</span> du superconducteur,
+puis la relation entre l’intensité <span
+class="math inline">\(i(t)\)</span>, la capacité <span
+class="math inline">\(C\)</span> et la dérivée de la tension électrique
+<span class="math inline">\(u_C(t)\)</span> aux bornes du
+supercondensateur.</p></li>
+<li><p>Montrer que l’équation différentielle dont la tension électrique
+aux bornes du supercondensateur <span
+class="math inline">\(u_C(t)\)</span> est de la forme : <span
+class="math display">\[\dfrac{du_C(t)}{dt}  + \frac{1}{\tau}\cdot u_C(t)
+= \dfrac{E}{\tau}\]</span> Rappeler comment s’exprimer la constante
+<span class="math inline">\(\tau\)</span>.</p></li>
+<li><p>Vérifier que les solutions de cette équation différentielle dont
+de la forme : <span class="math display">\[u_C(t) = A \cdot
+e^{-\frac{t}{\tau}} + E\]</span> Déterminer l’expression de <span
+class="math inline">\(A\)</span> pour la situation étudiée.</p></li>
+</ol>
+<h2
+id="étude-expérimentale-et-détermination-de-la-valeur-de-la-capacité">Étude
+expérimentale et détermination de la valeur de la capacité</h2>
+<p>On réalise le montage précédent avec une source idéale de tension de
+valeur <span class="math inline">\(E = \SI{2,5}{V}\)</span> et un
+condensateur ohmique de résiatance <span
+class="math inline">\(R=\SI{2,0}{\ohm}\)</span><br />
+À l’aide d’une carte d’acquisition, on réalise le suivi temporel de la
+tension aux bornes du supercondensateur durant sa charge (Figure <a
+href="#fig2" data-reference-type="ref" data-reference="fig2">2</a>).</p>
+<figure id="fig2">
+<img src="Ressources/TSPE_DS6_24_fig2.png" />
+<figcaption>Courbe caractéristique du superconducteur</figcaption>
+</figure>
+<ol>
+<li><p>Déterminer la valeur <span class="math inline">\(C_1\)</span> de
+la capacité du supercondensateur en explicitant la démarche
+suivie.</p></li>
+</ol>
+<p>À l’aide d’un microcontrôleur et d’un programme en python, on peut
+reproduire l’expérience un grand nombre de fois pour affiner la
+détermination du temps caractéristique du dipôle RC réalisé avec ce même
+supercondensateur. Ce programme permet d’obtenir le temps
+caractéristique du dipôle RC en déterminant la date pour laquelle le
+condensateur est chargé à 63 %.<br />
+Après 10 exécutions successives du programme, on obtient, pour le temps
+caractéristique du dipôle, la série de valeurs suivante exprimées en
+millisecondes :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">811614</th>
+<th style="text-align: center;">818076</th>
+<th style="text-align: center;">810301</th>
+<th style="text-align: center;">810495</th>
+<th style="text-align: center;">818526</th>
+<th style="text-align: center;">812067</th>
+<th style="text-align: center;">811327</th>
+<th style="text-align: center;">813109</th>
+<th style="text-align: center;">817838</th>
+<th style="text-align: center;">819474</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>La moyenne <span class="math inline">\(\bar{\tau_2}\)</span> de la
+série de mesures est <span class="math inline">\(\bar{\tau_2} =
+\SI{814,2827}{s}\)</span> .<br />
+La calculatrice donne 1.175 s pour le calcul de l’incertitude-type.</p>
+<ol>
+<li><p>Écrire de manière appropriée le résultat de la mesure du temps
+caractéristique avec son incertitude-type.</p></li>
+</ol>
+<p>On estime que l’incertitude-type de la résistance du conducteur
+ohmique est <span class="math inline">\(u(R) =
+\SI{0,1}{\ohm}\)</span>.<br />
+L’incertitude-type sur la valeur de la capacité <span
+class="math inline">\(C_2\)</span> du supercondensateur se déduit des
+mesures de la résistance et du temps caractéristique moyen par la
+relation suivante : <span class="math display">\[u(C_2) = C_2 \cdot
+\sqrt{\left(\dfrac{u(R)}{R}\right)^2 +
+\left(\dfrac{u(\bar{\tau_2})}{\bar{\tau_2}}\right)^2}\]</span></p>
+<ol>
+<li><p>Déterminer la valeur de la capacité <span
+class="math inline">\(C_2\)</span> du supercondensateur ainsi que son
+incertitude-type.</p></li>
+<li><p>Comparer la valeur de la capacité <span
+class="math inline">\(C_2\)</span> mesurée expérimentalement avec la
+valeur de référence <span class="math inline">\(C_{ref}\)</span> donnée
+par le constructeur en utilisant le quotient <span
+class="math inline">\(\dfrac{|C_2 - C_{ref}|}{u(C_2)}\)</span>.
+Conclure.</p></li>
+</ol>
+<h1 id="constante-dacidité-dun-indicateur-coloré">Constante d’acidité
+d’un indicateur coloré</h1>
+<p>Le vert de bromocrésol est un indicateur coloré acido-basique. C’est
+un couple acide-base dont l’acide et la base possèdent deux couleurs
+différentes : la forme acide est jaune tandis que la forme basique est
+bleue.<br />
+Le but de cet exercice est de déterminer la valeur de la constante
+d’acidité du vert de bromocrésol par deux méthodes différentes.</p>
+<h2
+id="détermination-de-la-constante-dacidité-du-vert-de-bromocrésol-par-ph-métrie">Détermination
+de la constante d’acidité du vert de bromocrésol par pH-métrie</h2>
+<p>On dispose d’une solution commerciale <span
+class="math inline">\(S\)</span> de vert de bromocrésol à 0.02 % en
+solution aqueuse. La concentration molaire en soluté apporté de cette
+solution est <span class="math inline">\(c =\SI{
+2,9E-4}{\mole\per\liter}\)</span>.<br />
+Après avoir étalonné un pH-mètre, on mesure le pH d’un volume <span
+class="math inline">\(V=\SI{100,0}{mL}\)</span> de la solution <span
+class="math inline">\(S\)</span>, on trouve un pH égal à 4,2.</p>
+<ol>
+<li><p>Écrire l’équation de la réaction de l’acide avec l’eau.</p></li>
+<li><p>Calculer la valeur de l’avancement final <span
+class="math inline">\(x_f\)</span> de la réaction entre l’acide et l’eau
+(on pourra s’aider d’un tableau descriptif de l’évolution du système
+chimique).</p></li>
+<li><p>Calculer le taux d’avancement final <span
+class="math inline">\(\tau\)</span> de cette réaction. La transformation
+de l’acide avec l’eau est-elle totale ?</p></li>
+<li><p>Établir l’expression de la constante d’acidité <span
+class="math inline">\(K_A\)</span> de l’indicateur en fonction du pH de
+la solution et de la concentration molaire en soluté apporté <span
+class="math inline">\(c\)</span> de la solution <span
+class="math inline">\(S\)</span>.</p></li>
+<li><p>Calculer la valeur de <span class="math inline">\(K_A\)</span> .
+En déduire la valeur du <span class="math inline">\(pK_A\)</span> du
+vert de bromocrésol.</p></li>
+</ol>
+<h2
+id="détermination-de-la-constante-dacidité-du-vert-de-bromocrésol-par-spectrophotométrie">Détermination
+de la constante d’acidité du vert de bromocrésol par
+spectrophotométrie</h2>
+<p>À l’aide d’un spectrophotomètre, on relève l’absorbance des formes
+acide et basique du vert de bromocrésol. On obtient les courbes
+suivantes :</p>
+<figure id="fig3">
+<img src="Ressources/TSPE_DS6_24_fig3.png" />
+<figcaption>Courbe d’absorbance des espèces et </figcaption>
+</figure>
+<ol>
+<li><p>À quelle longueur d’onde <span
+class="math inline">\(\lambda\)</span> faut-il régler le
+spectrophotomètre afin que l’absorbance de la forme acide soit quasiment
+nulle et celle de la forme basique du vert de bromocrésol soit maximale
+?</p></li>
+</ol>
+<p>On utilise seize solutions de volumes identiques mais de pH
+différents dans lesquelles on ajoute le même volume de la solution
+commerciale <span class="math inline">\(S\)</span> de vert de
+bromocrésol. Après avoir réglé le spectrophotomètre, on mesure
+l’absorbance de ces seize solutions (résultats voir tableau).</p>
+<div class="center">
+<p><img src="Ressources/TSPE_DS6_24_Fig4.png" alt="image" /></p>
+</div>
+<p>À partir des mesures du tableau précédent, il est possible de
+calculer les pourcentages de forme acide et de forme basique présentes
+dans chacune des seize solutions et ainsi de construire le diagramme de
+distribution des espèces du couple /.</p>
+<figure id="fig5">
+<img src="Ressources/TSPE_DS6_24_Fig5.png" />
+<figcaption>Diagramme de distribution du couple et </figcaption>
+</figure>
+<ol>
+<li><p>En quel point du diagramme de distribution des espèces a-t-on
+<span class="math inline">\([\ce{HInd}] = [\ce{Ind-}]\)</span> ? En
+déduire la valeur du pKA du vert de bromocrésol.</p></li>
+<li><p>Tracer le diagramme de prédominance du couple et .</p></li>
+<li><p>Évaluer, à l’aide du tableau, l’intervalle des valeurs de pH pour
+lesquelles le vert de bromocrésol prend sa teinte sensible. Comment
+appelle-t-on cet intervalle ?</p></li>
+</ol>
+<p>On considère que le vert de bromocrésol prend sa teinte acide lorsque
+<span class="math inline">\(\dfrac{[\ce{HInd}]}{[\ce{Ind-}]}
+&gt;10\)</span> et qu’il prend sa teinte basique lorsque <span
+class="math inline">\(\dfrac{[\ce{Ind-}]}{[\ce{HInd}]} &gt;10\)</span>
+.</p>
+<ol>
+<li><p>En utilisant la relation <span class="math inline">\(pH = pKA +
+log\left(\dfrac{[base]}{[acide]}\right)\)</span> , déterminer par le
+calcul l’intervalle de pH pour lequel <span
+class="math inline">\([\ce{Hlnd}]\)</span> et <span
+class="math inline">\([\ce{Ind-}]\)</span> sont considérées voisines.
+Comparer cet intervalle à celui évalué précédemment.</p></li>
+</ol>
+
+</body>
+</html>

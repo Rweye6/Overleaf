@@ -1,0 +1,80 @@
+/* Style général */
+
+body {
+    font-family: Georgia, serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 2em;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Titres */
+
+h1 {
+    text-align: center;
+    border-top: 2px solid #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 0.3em;
+    color: #003366;
+    counter-reset: section;
+}
+
+h2 {
+    color: #005599;
+    margin-top: 2em;
+}
+
+exercice {
+    counter-reset: section;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+/* Tableaux */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 0.5em;
+}
+
+/* Équations */
+
+.math {
+    overflow-x: auto;
+}
+body {
+    counter-reset: question;
+}
+
+.questions {
+    list-style: none;
+    padding-left: 2em;
+}
+
+.questions li {
+    counter-increment: question;
+    position: relative;
+}
+
+.questions li::before {
+    content: counter(question) ". ";
+    position: absolute;
+    left: -2em;
+    font-weight: bold;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
