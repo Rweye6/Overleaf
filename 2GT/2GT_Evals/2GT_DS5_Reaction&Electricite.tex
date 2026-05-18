@@ -1,0 +1,128 @@
+\documentclass[a4paper,11pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+\usepackage{../../Styles/Eval}
+
+
+\newcommand{\chnum}{Chapitre 6 et 21}
+\newcommand{\chtitle}{Transformations chimiques et électricité}
+\newcommand{\dtype}{DS}
+
+\begin{document}
+	\maketitle
+	\section{Autour des définitions}
+    Equation de réaction : \fbox{$CH_4(g) + $\fbox{$O_2(g)$}} \fbox{$\rightarrow$} \fbox{$CO_2$\fbox{$(g)$} $ + \fbox{2} H_2O(g)$}
+    \begin{enumerate}
+        \item Que désignent chacun des éléments encadrés ? (3pts)
+    \end{enumerate}
+    \noindent\fbox{
+    \begin{minipage}{\textwidth}
+        \vspace{6em}
+        \hspace{\linewidth}
+    \end{minipage}
+}
+    \begin{enumerate}[resume]
+        \item Traduire cette équation de réaction en langage courant. (2pts)
+    \end{enumerate}
+\noindent\fbox{
+    \begin{minipage}{\textwidth}
+        \vspace{6em}
+        \hspace{\linewidth}
+    \end{minipage}
+}
+    \section{Équilibrer des équations chimiques}
+    \begin{enumerate}
+        \item \hspace{2em}$C_6H_{12}O_6(s) + $ \hspace{2em}$O_2(g) \rightarrow $\hspace{2em}$CO_2(g) + $\hspace{2em}$H_2O(l)$ (1pt)
+        \item \hspace{2em}$Fe(s) + $\hspace{2em}$O_2(g) \rightarrow $\hspace{2em}$Fe_2O_3(s)$ (1pt)
+        \item \hspace{2em}$N_2H_4(l) + $\hspace{2em}$O_2(g) \rightarrow $\hspace{2em}$N_2(g) + $\hspace{2em}$H_2O(l)$ (1pt)
+        \item \hspace{2em}$Al^{3+}(aq) + $\hspace{2em}$Cu(s) \rightarrow $\hspace{2em}$Al(s) + $\hspace{2em}$Cu^{2+}(aq)$ (1pt)
+    \end{enumerate}
+
+    \section{Lois des circuits électriques}
+    
+    \begin{minipage}
+        {0.45\textwidth}
+        \begin{circuitikz}{transformer, scale=1.5}
+            \draw (0,0) to[battery2, v_=$E$,i=$I_1$] (3,0) -- (3,-2)
+            to[R, l=$R_1$,i=$I_2$] (0,-2) -- (0,0);
+            \draw (3,0) to[lamp,l=$L$,i=$I_3$] (6,0) -- (6,-2) to[R, l=$R_2$] (3,-2);
+        \end{circuitikz}
+    \end{minipage}\hspace{2em}
+    \begin{minipage}
+        {0.45\textwidth}
+        \begin{itemize}
+            \item $R_1$ = ?
+            \item $R_2$ = 100 $\Omega$
+            \item $E$ = 12 V
+            \item $I_1$ = 0.1 A
+            \item $I_3$ = 0.04 A
+        \end{itemize}
+    \end{minipage}
+
+    \begin{enumerate}
+        \item Représenter sur le schéma les tensions orientées $U_L$, $U_{R1}$ et  $U_{R2}$. (1pt)
+        \item Calculer la valeur de $I_2$. (1pt)
+    \end{enumerate}
+    \noindent\fbox{
+    \begin{minipage}{\textwidth}
+        \vspace{8em}
+        \hspace{\linewidth}
+    \end{minipage}
+}
+    \begin{enumerate}[resume]
+        \item Calculer la valeur de $R_1$. (2pts)
+    \end{enumerate}
+    \noindent\fbox{
+    \begin{minipage}{\textwidth}
+        \vspace{8em}
+        \hspace{\linewidth}
+    \end{minipage}
+}
+
+\section{Quantité de matière}
+Dans la réaction  de combustion du méthanol $CH_3OH(l) + O_2(g) \rightarrow CO_2(g) + H_2O(l)$, on introduit $20g$ de méthanol et $20g$ de dioxygène.
+
+\begin{enumerate}
+    \item Equilibrer l’équation de réaction. (1pt)
+    \end{enumerate}
+    \noindent\fbox{
+    \begin{minipage}{\textwidth}
+        \vspace{2em}
+        \hspace{\linewidth}
+    \end{minipage}
+}
+    \begin{enumerate}[resume]
+    \item Montrer que les quantités de matière introduites sont $n(CH_3OH) = 0,625~mol$ et $n(O_2) = 0,938~mol$. (3pt)
+    \end{enumerate}
+    \noindent\fbox{
+    \begin{minipage}{\textwidth}
+        \vspace{10em}
+        \hspace{\linewidth}
+    \end{minipage}
+}
+    \begin{enumerate}[resume]
+    \item Le premier réactif à être consommé entièrement est nommé \underline{réactif limitant}. Déterminer le réactif limitant de cette réaction. (1pt)
+    \end{enumerate}
+    \noindent\fbox{
+    \begin{minipage}{\textwidth}
+        \vspace{8em}
+        \hspace{\linewidth}
+    \end{minipage}
+}
+    \begin{enumerate}[resume]
+    \item En déduire la quantité de matière de dioxyde de carbone produite. (2pt)
+    %\item Calculer la masse de dioxyde de carbone produite. (2pt)
+\end{enumerate}
+\noindent\fbox{
+    \begin{minipage}{\textwidth}
+        \vspace{8em}
+        \hspace{\linewidth}
+    \end{minipage}
+}
+
+\textbf{Données :}
+\begin{itemize}
+    \item Masse d'un atome de carbone : $1,99 \times 10^{-26}~kg$
+    \item Masse d'un atome d'hydrogène : $1,67 \times 10^{-27}~kg$
+    \item Masse d'un atome d'oxygène : $2,66 \times 10^{-26}~kg$
+    \item Nombre d'Avogadro : $6,02 \times 10^{23}~mol^{-1}$
+\end{itemize}
+\end{document}

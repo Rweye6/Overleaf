@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.4)  12 MAY 2026 08:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.5.4)  18 MAY 2026 09:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1263,11 +1263,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 739.77176pt, 62.59596pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=540.60239pt
-* \textheight=759.6886pt
+* \textheight=739.77176pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
 * \topmargin=-66.99088pt
@@ -1361,7 +1361,7 @@ L3 programming layer <2026-01-19>
 Here is how much of TeX's memory you used:
  54354 strings out of 467533
  1353053 string characters out of 5422139
- 2212221 words of memory out of 5000000
+ 2212226 words of memory out of 5000000
  82611 multiletter control sequences out of 15000+600000
  675279 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
