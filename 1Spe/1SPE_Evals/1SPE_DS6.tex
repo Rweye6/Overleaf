@@ -1,0 +1,71 @@
+\documentclass[a4paper,fontsize=12pt,fleqn]{scrartcl}%fleqn pour aligner les equations à gauche
+
+\usepackage{../../Styles/Eval}
+
+\newcommand{\chnum}{Chapitre 10}
+\newcommand{\chtitle}{Polarité des molécules et titrages colorimétriques}
+\newcommand{\dtype}{DS5}
+
+\begin{document}
+\maketitle
+
+\section{La calcite}
+C'est après avoir fait tomber au sol un morceau de calcite, et intrigué par la régularité de la fracture, que René Just Haüy (1743-1822) se lance dans l'observation et l'étude des cristaux. Ses études le conduisent à conclure que les cristaux sont des composés organisés et il introduit alors la notion de molécule intégrante remplacée plus tard par le terme maille cristalline.\\
+La calcite pure est un solide ionique translucide et blanchâtre constitué d'ions calcium $Ca^{2+}$ et d'ions carbonate $CO_3^{2-}$ lorsque les eaux de pluie s'écoulent et ruissellent sur les sols riches en calcite, la calcite se dissout dans l'eau qui s'enrichit alors en ions calcium.
+
+\begin{enumerate}
+    \item Quelles sont les interactions à l'origine de la cohésion de la calcite ? Donner une explication de ces interactions. (3pts)
+    \item Écrire l'équation de dissolution de la calcite dans l'eau. (1pt)
+    \item Calculer la concentration maximale, exprimée en \unit{\gram\per\liter}, des ions calcium $Ca^{2+}$ et carbonate $CO_3^{2-}$ dans un litre d'eau douce. (3pts)
+\end{enumerate}
+\begin{data}
+    \begin{itemize}
+        \item \textbf{Solubilité de la calcite :} $s = \SI{50}{ppm}$ environ à \SI{20}{\celsius}.
+        \item \textbf{Masse volumique de la solution :} $\rho = \SI{1,0}{\gram\per\centi\meter\cubed}$
+        \item \SI{1}{ppm} signifie \SI{1}{g} dans \SI{1000000}{g} de solution
+    \end{itemize}
+\end{data}
+
+\newpage 
+\section{Extraction du limonène}
+\begin{minipage}{.49\linewidth}
+    Le limonène est la molécule responsable de l'arôme d'orange, sa formule est donnée ci-contre. Lorsque l'on fabrique une huile essentielle d'orange, une petite partie du liminène se retrouve en solution aqueuse, et pas dans l'huile essentielle. On souhaite extraire ce liminène résiduel.
+\end{minipage}
+\begin{minipage}{.49\linewidth}
+    \centering 
+    \chemfig{
+        CH_3-[6]C*6(-CH_2-CH_2-CH(-[6]C(=[5]H_2C)-[7]CH_3)-CH_2-CH=)
+        }
+\end{minipage}
+
+\begin{enumerate}
+    \item Solubilité \begin{enumerate}
+        \item Le limonène est-il polaire ? (2pts)
+        \item Justifier qu'il soit très peu soluble dans l'eau, mais très soluble dans le cyclohexane. (2pts)
+    \end{enumerate}
+    \item Miscibilité \begin{enumerate}
+        \item Quels types de liaisons inter-moléculaires peuvent exister entre l'eau et l'éthanol ? En faire une représentation schématique. (2pts)
+        \item Justifier que l'eau et l'éthanol sont miscibles. (2pts)
+    \end{enumerate}
+    \item Quel solvant doit-on utiliser pour réaliser cette extraction ? Faire un schéma légendé de l'ampoule à décanter après agitation et repos. (3pts)
+    \item Pour séparer le limonène du solvant extracteur, on veut évaporer le solvant sans évaporer le limonène. À quelle température soit-on se placer ? (2pts)
+\end{enumerate}
+\begin{table}[h!]
+    \centering 
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nom} & \textbf{Formule} & $\theta_{eb}$ (\unit{\celsius}) & \textbf{Solubilité du limonène} & \textbf{Miscibilité avec l'eau}\\
+        \hline
+        Limonène & $C_{10}H_{16}$ & 176 & & \\
+        \hline
+        Eau & $H_2O$ 100 & Très faible & & \\
+        \hline
+        Cyclohexane & $C_6H_{12}$ & 81 & Bonne & Non \\
+        \hline
+        Éthanol & $CH_3CH_2OH$ & 79 & Bonne & Oui \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\end{document}
+
