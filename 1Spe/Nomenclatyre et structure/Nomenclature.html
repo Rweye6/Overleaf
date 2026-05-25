@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Nomenclature des alcanes</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f7fb;
+    color: #222;
+}
+
+header {
+    background: #173a70;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.blue { background: #dcecff; }
+.green { background: #dff5e1; }
+.purple { background: #efe4ff; }
+.orange { background: #fff1dd; }
+.cyan { background: #ddf7f7; }
+
+h2 {
+    margin-top: 0;
+    color: #173a70;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+}
+
+.full {
+    grid-column: 1 / span 3;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+svg{
+    border : 1px solid #ccc;
+    background :none;
+}
+text{
+    font-family : Arial;
+    font-size : 18px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>NOMENCLATURE DES ALCANES</h1>
+    <p>Règles simplifiées de nomenclature organique</p>
+</header>
+
+<div class="container">
+
+<div class="box blue">
+    <h2>Chaîne principale</h2>
+
+<div class="box blue">
+    <h2>1. Chaîne principale</h2>
+    <ul>
+        <li>Prendre la chaîne continue de carbone la plus longue.</li>
+        <li>Numéroter pour obtenir les plus petits indices.</li>
+        <li>Inclure le groupe principal.</li>
+    </ul>
+    <svg id="mol" width="800" height="250"></svg>
+<script>
+    class Alkane {
+        constructor(n){
+            this.n = n;
+
+            //coordonnées des carbones
+            this.points = [];
+
+            //liste des ramifications
+            this.branches = [];
+        }
+
+        addBranch(position,type){
+            this.branches.push({
+                position: position,
+                type: type
+            });
+
+        }
+
+        generatePoints(){
+            const dx = 60;
+            const dy = 35;
+
+            for(let i=0; i<this.n; i++){
+                let x = 60 +  i*dx;
+                let y;
+
+                if(i%2 ===0){
+                    y=140;
+                }
+                else{
+                    y=140-dy;
+                }
+
+                this.points.push({x,y});
+            }
+        }
+
+        draw(svg){
+            // génération des coordonnées
+            this.generatePoints();
+
+            //Chaine principale//
+
+            for(let i=0;i<this.points.letgth-1; i++){
+
+                let p1 = this.points[i];
+                let p2 = this.points[i+1];
+
+                let line = document.createElementNS(
+                    "http://www.http://www.w3.org/2000/svg",
+                    "line"
+                );
+
+                line.setAttribute("x1", p1.x);
+                line.setAttribute("y1", p1.y);
+
+                line.setAttribute("x2", p2.x);
+                line.setAttribute("y2", p2.y);
+
+                line.setAttribute("stroke", "black");
+                line.setAttribute("stroke-width", "3");
+
+                svg.appendChild(line);
+
+            }
+
+            //sommets carbone //
+            for(let p of this.points){
+                let circle = document.createElementNS(
+                    "http://www.w3.org/2000/svg",
+                    "circle"
+                );
+                circle.setAttribute("cx",p.x);
+                circle.setAttribute("cy",p.y);
+
+                ciecle.setAttribute("r", 4);
+
+                svg.appendChild(circle);
+            }
+
+            //ramifications //
+            for(let b of this.branches){
+                let p = this.points[b.position - 1];
+
+                //liaison verticale
+
+                let line= document.createElementNS(
+                    "http://www.w3.org/2000/svg",
+                    "line"
+                );
+            
+                line.setAttribute("x1", p.x);
+                line.setAttribute("y1", p.y);
+
+                line.setAttribute("x2", p.x);
+                line.setAttribute("y2", p.y - 50);
+
+                line.setAttribute("stroke", "black");
+                line.setAttribute("stroke-width", "2");
+
+                svg.appendChild(line);
+
+                //texte du groupe
+
+                let text = document.createElementNS(
+                "http://www.w3.org/2000/svg",
+                "text"
+            );
+
+            text.setAttribute("x", p.x - 15);
+            text.setAttribute("y", p.y - 60);
+
+            text.textContent = b.type;
+
+            svg.appendChild(text);
+            }
+        }
+    }
+
+    //création molécule //
+
+    const svg = document.getElementById("mol");
+
+    let mol = new Alkane(6);
+    
+    mol.addBranch(2,"CH3");
+    
+    mol.draw(svg);
+</script>
+
+</body>
+</div>
+
+<div class="box green">
+    <h2>2. Ramifications</h2>
+    <ul>
+        <li>CH₃ : méthyl</li>
+        <li>CH₂CH₃ : éthyl</li>
+        <li>Nommer avec leur position.</li>
+    </ul>
+</div>
+
+<div class="box purple">
+    <h2>3. Groupes caractéristiques</h2>
+
+    <table>
+        <tr>
+            <th>Fonction</th>
+            <th>Suffixe</th>
+        </tr>
+        <tr>
+            <td>Alcool</td>
+            <td>-ol</td>
+        </tr>
+        <tr>
+            <td>Aldéhyde</td>
+            <td>-al</td>
+        </tr>
+        <tr>
+            <td>Cétone</td>
+            <td>-one</td>
+        </tr>
+        <tr>
+            <td>Acide</td>
+            <td>-oïque</td>
+        </tr>
+    </table>
+</div>
+
+<div class="box orange full">
+    <h2>4. Priorité des groupes</h2>
+    <p>
+        Acide > Ester > Aldéhyde > Cétone > Alcool > Amine > Alcène > Alcyne > Alcane
+    </p>
+</div>
+
+<div class="box cyan full">
+    <h2>5. Construction du nom</h2>
+    <p>
+        Préfixes + chaîne principale + insaturation + suffixe
+    </p>
+
+    <p><strong>Exemple :</strong></p>
+
+    <p>
+        3-éthylhex-2-ène
+    </p>
+</div>
+
+</div>
+
+<div class="footer">
+À retenir : substituants + chaîne + positions + suffixe principal
+</div>
+
+</body>
+</html>
