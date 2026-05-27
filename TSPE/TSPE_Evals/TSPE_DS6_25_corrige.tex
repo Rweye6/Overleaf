@@ -1,0 +1,243 @@
+\documentclass[a4paper,11pt,fleqn]{scrartcl}
+\usepackage{../../Styles/Eval}
+\usepackage{longtable}
+
+\newcommand{\chnum}{Chapitre 21 et 14}
+\newcommand{\chtitle}{Corrigé -- Dipôle RC et Mouvement d'un fluide}
+\newcommand{\dtype}{DS 5}
+
+\begin{document}
+\maketitle
+
+\section{Installation sanitaire}
+
+\begin{enumerate}
+    \item L'eau est considérée comme un fluide incompressible en régime permanent.\\
+    Le débit volumique se conserve donc tout au long de l'installation :
+    \[
+    D_1 = D_2
+    \]
+
+    \item Or :
+    \[
+    D = v \times S
+    \]
+
+    Donc :
+    \[
+    v_1S_1 = v_2S_2
+    \]
+
+    D'où :
+    \[
+    v_2 = \dfrac{v_1S_1}{S_2}
+    \]
+
+    Application numérique :
+    \[
+    v_2 = \dfrac{1,0 \times 2,0\times10^{-4}}{1,1\times10^{-4}}
+    \]
+
+    \[
+    v_2 \approx \SI{1,8}{\meter\per\second}
+    \]
+
+    \item La relation de Bernoulli entre les points 1 et 2 s'écrit :
+    \[
+    P_1 + \dfrac{1}{2}\rho v_1^2 + \rho gz_1
+    =
+    P_2 + \dfrac{1}{2}\rho v_2^2 + \rho gz_2
+    \]
+
+    On isole $P_2$ :
+    \[
+    P_2 =
+    P_1 + \dfrac{1}{2}\rho(v_1^2-v_2^2)+\rho g(z_1-z_2)
+    \]
+
+    Application numérique :
+    \[
+    P_2 =
+    3,0\times10^5
+    +\dfrac{1}{2}\times1000\times(1,0^2-1,8^2)
+    +1000\times9,81\times(0-5)
+    \]
+
+    \[
+    P_2 \approx 2,4\times10^5\ \si{\pascal}
+    \]
+
+    Conversion en bar :
+    \[
+    P_2 \approx \SI{2,4}{\bar}
+    \]
+
+    \item Un surpresseur est nécessaire uniquement si la pression est inférieure à \SI{2,0}{\bar}.\\
+
+    Or :
+    \[
+    P_2 \approx \SI{2,4}{\bar}
+    \]
+
+    Donc la pression reste suffisante :\\
+    \textbf{un surpresseur n'est pas nécessaire.}
+\end{enumerate}
+
+\section{Capteur capacitif}
+
+\subsection{Étude théorique de la charge d'un dipôle RC}
+
+\begin{enumerate}
+    \item Loi des mailles :
+    \[
+    E-u_R-u_C=0
+    \]
+
+    soit :
+    \[
+    E=u_R+u_C
+    \]
+
+    \item Loi d'Ohm :
+    \[
+    u_R=Ri
+    \]
+
+    \item Relation pour le condensateur :
+    \[
+    i=C\dfrac{du_C}{dt}
+    \]
+
+    \item On remplace $u_R$ dans la loi des mailles :
+    \[
+    E=Ri+u_C
+    \]
+
+    Puis :
+    \[
+    E=RC\dfrac{du_C}{dt}+u_C
+    \]
+
+    Donc :
+    \[
+    \dfrac{du_C}{dt}+\dfrac{u_C}{RC}
+    =
+    \dfrac{E}{RC}
+    \]
+
+    \item On considère :
+    \[
+    u_C=E\left(1-e^{-t/RC}\right)
+    \]
+
+    Calculons sa dérivée :
+    \[
+    \dfrac{du_C}{dt}
+    =
+    \dfrac{E}{RC}e^{-t/RC}
+    \]
+
+    Alors :
+    \[
+    \dfrac{du_C}{dt}+\dfrac{u_C}{RC}
+    =
+    \dfrac{E}{RC}e^{-t/RC}
+    +
+    \dfrac{E(1-e^{-t/RC})}{RC}
+    \]
+
+    \[
+    =
+    \dfrac{E}{RC}
+    \]
+
+    La fonction proposée vérifie bien l'équation différentielle.
+\end{enumerate}
+
+\subsection{Étude expérimentale de la charge d'un dipôle RC}
+
+\begin{enumerate}[resume]
+    \item Graphiquement, le temps caractéristique correspond à :
+    \[
+    u_C = 0,63\times U_f
+    \]
+
+    La lecture graphique donne :
+    \[
+    \tau \approx \SI{3,3}{ms}
+    \]
+
+    \item La relation entre le temps caractéristique, la résistance et la capacité est :
+    \[
+    \tau = RC
+    \]
+
+    \item On en déduit :
+    \[
+    C=\dfrac{\tau}{R}
+    \]
+
+    Application numérique :
+    \[
+    C=\dfrac{3,3\times10^{-3}}{330}
+    \]
+
+    \[
+    C=1,0\times10^{-5}\ \si{\farad}
+    \]
+
+    soit :
+    \[
+    C=\SI{10}{\micro\farad}
+    \]
+\end{enumerate}
+
+\subsection{Étude d'un condensateur à capacité variable}
+
+\begin{enumerate}[resume]
+    \item On part de :
+    \[
+    C=\dfrac{\varepsilon S}{d}
+    \]
+
+    Donc :
+    \[
+    \varepsilon = \dfrac{Cd}{S}
+    \]
+
+    Unités :
+    \[
+    [\varepsilon]=\dfrac{\si{\farad}\times\si{\meter}}{\si{\meter\squared}}
+    \]
+
+    \[
+    [\varepsilon]=\si{\farad\per\meter}
+    \]
+
+    \item Lorsque l'on rapproche les armatures, la distance $d$ diminue.\\
+
+    Or :
+    \[
+    C=\dfrac{\varepsilon S}{d}
+    \]
+
+    Donc si $d$ diminue, la capacité $C$ augmente.
+\end{enumerate}
+
+\subsection{Réalisation d'un capteur de position}
+
+\begin{enumerate}[resume]
+    \item Les deux plaques métalliques constituent les armatures d'un condensateur et la colle joue le rôle d'isolant.\\
+
+    La capacité dépend de l'épaisseur de colle :
+    \[
+    C=\dfrac{\varepsilon S}{d}
+    \]
+
+    Si l'épaisseur de colle augmente, la distance $d$ augmente donc la capacité diminue.\\
+    Si l'épaisseur diminue, la capacité augmente.\\
+
+    En mesurant la capacité du condensateur grâce au circuit RC (par exemple via le temps caractéristique $\tau=RC$), on peut déterminer l'épaisseur de colle et vérifier qu'elle est correcte.
+\end{enumerate}
+
+\end{document}
