@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 id="détecteur-ionique-de-fumées">Détecteur ionique de fumées</h1>
+<figure id="Fig1">
+<div class="minipage">
+<p>Le principe de ce détecteur de fumées repose sur l’ionisation de
+l’air par des particules <span class="math inline">\(\alpha\)</span>. En
+l’absence de fumées, ces particules arrachent des électrons aux
+molécules de dioxygène et de diazote présentes dans la chambre à
+ionisation. Pour le dioxygène, l’ionisation nécessite un apport
+d’énergie de 12 eV par molécule.<br />
+Les ions et les électrons formés par l’ionisation de l’air sont soumis à
+un champ électrique uniforme entre deux plaques. Un courant électrique
+de faible intensité apparaît alors dans le circuit électrique (Figure <a
+href="#Fig1" data-reference-type="ref"
+data-reference="Fig1">1</a>).<br />
+Lorsque la fumée pénètre dans la chambre à ionisation, une partie des
+électrons et des ions issus de l’ionisation se fixe aux poussières de
+fumées. La baisse de l’intensité électrique qui en résulte déclenche un
+avertisseur sonore.</p>
+</div>
+<div class="minipage">
+<img src="Ressources/TSPE_DS4_24b_Fig1.png" />
+</div>
+<figcaption>Illustration du principe d’une chambre à
+ionidation</figcaption>
+</figure>
+<figure id="Fig2">
+<div class="minipage">
+<p>On s’intéresse au mouvement d’une particule <span
+class="math inline">\(\alpha\)</span> arrivant dans la chambre à
+ionisation en l’absence de fumée. Cette particule arrive en un point
+<span class="math inline">\(O\)</span> avec un vecteur vitesse initiale
+parallèle aux plaques <span class="math inline">\(C\)</span> et <span
+class="math inline">\(D\)</span> du condensateur plan (voir Figure <a
+href="#Fig2" data-reference-type="ref"
+data-reference="Fig2">2</a>).<br />
+Une tension constante <span class="math inline">\(U =
+\SI{9,0}{V}\)</span> est appliquée entre les deux plaques <span
+class="math inline">\(C\)</span> et <span
+class="math inline">\(D\)</span>. La valeur de la vitesse initiale <span
+class="math inline">\(v_O\)</span> est égale à
+1,6E7 m s<sup>−1</sup>.<br />
+On étudie le mouvement de la particule <span
+class="math inline">\(\alpha\)</span> dans le référentiel terrestre
+supposé galiléen. À l’instant <span class="math inline">\(t =
+0\)</span>, la particule <span class="math inline">\(\alpha\)</span> est
+au point O.<br />
+Lors de cette étude, on négligera les éventuelles collisions avec les
+molécules de l’air ainsi que la valeur du poids de la particule <span
+class="math inline">\(\alpha\)</span> devant la valeur de la force
+électrique <span class="math inline">\(\vv{F_e}\)</span> subie par cette
+particule.</p>
+</div>
+<div class="minipage">
+<img src="Ressources/TSPE_DS4_24b_Fig2.png" />
+</div>
+<figcaption>Condensateur plan utilisé dans le détecteur de
+fumée</figcaption>
+</figure>
+<p><strong>Données :</strong></p>
+<ul>
+<li><p>1 électronvolt (eV) = 1,5E-19 J</p></li>
+<li><p>charge élémentaire : <span
+class="math inline">\(e=\SI{1,6E-19}{C}\)</span></p></li>
+<li><p>Pour un condensateur plan, le champ électronique <span
+class="math inline">\(E\)</span> est relié à la tension <span
+class="math inline">\(u\)</span> à à la distance <span
+class="math inline">\(d\)</span> qui sépare les deux plaques par la
+relation <span class="math inline">\(E=\dfrac{U}{d}\)</span></p></li>
+<li><p>Charge de la particule <span
+class="math inline">\(\alpha\)</span> : <span
+class="math inline">\(q_{\alpha} = + 2 e\)</span></p></li>
+<li><p>Masse d’une particule <span class="math inline">\(\alpha\)</span>
+: <span class="math inline">\(m_{\alpha} =
+\SI{6,64E-27}{kg}\)</span></p></li>
+<li><p>Intensité du champ de pesanteur terrestre : <span
+class="math inline">\(g = \SI{9,81}{\meter\per\second}\)</span></p></li>
+</ul>
+<ol>
+<li><p>Vérifier par le calcul que l’hypothèse concernant le poids de la
+particule <span class="math inline">\(\alpha\)</span> est
+justifiée.</p></li>
+<li><p>Reproduire sur la copie le schéma de la figure <a href="#Fig1"
+data-reference-type="ref" data-reference="Fig1">1</a> puis y représenter
+le champ électrostatique <span class="math inline">\(\vv{E}\)</span> et
+la force électrique que subit la particule <span
+class="math inline">\(\alpha\)</span> au point <span
+class="math inline">\(O\)</span>. Justifier.</p></li>
+<li><p>Établir que les équations horaires du mouvement de la particule
+<span class="math inline">\(\alpha\)</span> sont : <span
+class="math display">\[x(t)=v_0 \cdot t\]</span> <span
+class="math display">\[y(t)= \dfrac{e\cdot U}{m_{\alpha}\cdot d}\cdot
+t^2\]</span></p></li>
+<li><p>Déterminer la valeur de la coordonnée <span
+class="math inline">\(y_L\)</span> de la particule lorsqu’elle a
+parcouru une distance suivant l’axe <span
+class="math inline">\(Ox\)</span> égale à <span class="math inline">\(L
+= \SI{4,0}{cm}\)</span>. Expliquer pourquoi le mouvement de cette
+particule peut être considérée comme rectiligne dans la chambre
+d’ionisation.</p></li>
+<li><p>Montrer que l’énergie cinétique initiale des particules <span
+class="math inline">\(\alpha\)</span> est suffisante pour ioniser des
+molécules de dioxygène.</p></li>
+</ol>
+<h1 id="étude-cinétique-dune-réaction-doxydoréduction">Étude cinétique
+d’une réaction d’oxydoréduction</h1>
+<p>On se propose d’étudier la cinétique de la transformation lente de
+décomposition de l’eau oxygénée par les ions iodure en présence d’acide
+sulfurique, transformation considérée comme totale.<br />
+L’équation de la réaction qui modélise la transformation
+d’oxydoréduction s’écrit : <span class="math display">\[\ce{H2O2(aq) + 2
+I-(aq) + 2 H+(aq) &lt;=&gt; I2(aq) + 2H2O(l)}\]</span></p>
+<p>La solution de diiode formée étant colorée, la transformation est
+suivie par spectrophotométrie, méthode qui consiste à mesurer
+l’absorbance A de la solution, grandeur proportionnelle à la
+concentration en diiode.</p>
+<h2 id="étude-théorique-de-la-réaction">Étude théorique de la
+réaction</h2>
+<ol>
+<li><p>Identifier, dans l’équation de la réaction étudiée, les deux
+couples d’oxydoréduction mis en jeu en écrivant leurs demi-équations
+correspondantes. Justifier l’écriture de l’équation de la
+réaction.</p></li>
+</ol>
+<h2 id="suivi-de-la-réaction">Suivi de la réaction</h2>
+<p>À la date <span class="math inline">\(t\)</span>= 0 s, on mélange un
+volume <span class="math inline">\(V_1\)</span> = 20.0 mL d’une solution
+d’iodure de potassium ( ; ) de concentration <span
+class="math inline">\(C_1\)</span> = 2.0 mL d’eau oxygénée de
+concentration <span class="math inline">\(C_2\)</span> =
+0.10 mol L<sup>−1</sup>.<br />
+On remplit une cuve de spectrophotométrie et on relève les valeurs de
+l’absorbance au cours du temps. On détermine alors, grâce à la loi de
+Beer-Lambert, la concentration en quantité de matière [] du diiode formé
+:</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">t (s)</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">126</th>
+<th style="text-align: center;">434</th>
+<th style="text-align: center;">682</th>
+<th style="text-align: center;">930</th>
+<th style="text-align: center;">1178</th>
+<th style="text-align: center;">1420</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">(mmol L<sup>−1</sup>)</td>
+<td style="text-align: center;">0,00</td>
+<td style="text-align: center;">1,74</td>
+<td style="text-align: center;">4,06</td>
+<td style="text-align: center;">5,16</td>
+<td style="text-align: center;">5,84</td>
+<td style="text-align: center;">6,26</td>
+<td style="text-align: center;">6,53</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol>
+<li><p>Justifier l’utilisation du spectrophotomètre pour le suivi
+cinétique de la réaction.</p></li>
+<li><p>Rappeler la relation entre l’absorbance <span
+class="math inline">\(A\)</span> et la concentration en quantité de
+matière [] de l’espèce colorée.</p></li>
+<li><p>Le mélange initial est-il dans les proportions sotœchiométriques
+? Justifier la réponse par des calculs.</p></li>
+<li><p>Compléter le tableau d’avancement de la transformation et
+justifier les calculs de <span class="math inline">\(n_1\)</span> et
+<span class="math inline">\(n_2\)</span>.</p></li>
+</ol>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;">État du système</td>
+<td style="text-align: left;">Avancement (mol)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">État initial</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="math inline">\(n_2\)</span> =
+2.0 × 10<sup>−4</sup></td>
+<td style="text-align: left;"><span class="math inline">\(n_1\)</span> =
+20 × 10<sup>−4</sup></td>
+<td style="text-align: left;">Excès</td>
+<td style="text-align: left;">Beaucoup</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">État en cours de transformation</td>
+<td style="text-align: left;"><span
+class="math inline">\(x\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Excès</td>
+<td style="text-align: left;">Beaucoup</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">État final</td>
+<td style="text-align: left;"><span
+class="math inline">\(x_{max}\)</span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Excès</td>
+<td style="text-align: left;">Beaucoup</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><p>Déterminer l’avancement maximal. En déduire la valeur théorique
+de la concentration en diiode formé lorsque la transformation est
+terminée. Cette concentration est-elle en accord avec le tableau de
+mesures ?</p></li>
+</ol>
+<h2 id="exploitation-des-résultats">Exploitation des résultats</h2>
+<p>À l’aide d’un tableur, on calcule la concentration et la vitesse de
+disparition de l’eau oxygénée au cours du temps. Une capture d’écran est
+donnée ci-dessous.<br />
+</p>
+<div class="center">
+<p><img src="Ressources/TSPE_C10_Eval_Fig8.png" alt="image" /></p>
+</div>
+<ol>
+<li><p>Donner la définition du temps de demi-réaction dans le cas
+étudié, puis déterminer graphiquement <span
+class="math inline">\(t_{1/2}\)</span> à l’aide de la courbe de
+l’évolution de la concentration en eau oxygénée au cours du temps
+ci-après.<br />
+</p>
+<div class="center">
+<p><img src="Ressources/TSPE_C10_Eval_Fig6.png" alt="image" /></p>
+</div></li>
+<li><p>Retrouver par un calcul, la vitesse de disparition de à <span
+class="math inline">\(t\)</span> = 434 s.<br />
+On trace ensuite la courbe donnant la vitesse de disparition <span
+class="math inline">\(v_D\)</span> de l’eau oxygénée en fonction de sa
+concentration.<br />
+</p>
+<div class="center">
+<p><img src="Ressources/TSPE_C10_Eval_Fig7.png" alt="image" /></p>
+</div></li>
+<li><p>Expliquer pourquoi cette transformation chimique suit une loi de
+vitesse d’ordre 1.</p></li>
+<li><p>La modélisation de la concentration en eau oxygénée au cours du
+temps est donnée par la relation <span
+class="math display">\[[\ce{H2O2}](t) = [\ce{H2O2}]_0
+\cdot  e^{-kt}\]</span> À l’aide de cette relation et du tableau de
+mesures, déterminer []<span class="math inline">\(_0\)</span>,
+concentration initiale en eau oxygénée.</p></li>
+<li><p>Retrouver cette valeur par le calcul.</p></li>
+<li><p>Déterminer <span class="math inline">\(k\)</span> la constante de
+vitesse en utilisant la droite donnant la vitesse de disparition <span
+class="math inline">\(v_D\)</span> de l’eau oxygénée en fonction de sa
+concentration.</p></li>
+</ol>
+
+</body>
+</html>

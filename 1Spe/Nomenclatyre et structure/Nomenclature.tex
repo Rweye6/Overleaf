@@ -1,0 +1,160 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[margin=1.2cm]{geometry}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\pagestyle{empty}
+
+\definecolor{mainblue}{HTML}{163A70}
+\definecolor{lightblue}{HTML}{DCEBFF}
+\definecolor{greenbox}{HTML}{DFF5E1}
+\definecolor{purplebox}{HTML}{EEE3FF}
+\definecolor{orangebox}{HTML}{FFF1DD}
+\definecolor{cyanbox}{HTML}{DDF7F7}
+
+\newtcolorbox{sectionbox}[2][]{
+colback=#1,
+colframe=mainblue,
+fonttitle=\bfseries\large,
+title=#2,
+arc=4mm,
+boxrule=1pt
+}
+
+\begin{document}
+
+%==================== TITRE ====================
+
+\begin{center}
+\begin{tcolorbox}[
+colback=mainblue,
+colframe=mainblue,
+width=\textwidth,
+arc=3mm,
+boxrule=0pt
+]
+\centering
+{\Huge \textcolor{white}{\textbf{NOMENCLATURE DES ALCANES}}}\\[0.3cm]
+{\Large \textcolor{white}{Règles simplifiées de nomenclature organique}}
+\end{tcolorbox}
+\end{center}
+
+\vspace{0.4cm}
+%==================== LIGNE 1 ====================
+\begin{sectionbox}[greenbox]{2. Identifier les ramifications}
+
+Tout groupe attaché à la chaîne principale est un substituant.
+
+\begin{itemize}[leftmargin=*]
+    \item CH$_3$ : méthyl
+    \item CH$_2$CH$_3$ : éthyl
+    \item CH(CH$_3$)$_2$ : isopropyl
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Exemple :}
+
+2-méthylhexane
+
+\end{sectionbox}
+
+%\columnbreak
+
+\begin{sectionbox}[purplebox]{3. Groupes caractéristiques courants}
+
+\small
+
+\begin{tabularx}{\linewidth}{|X|X|X|}
+\hline
+\textbf{Fonction} & \textbf{Préfixe} & \textbf{Suffixe} \\
+\hline
+Alcool & hydroxy- & -ol \\
+\hline
+Aldéhyde & formyl- & -al \\
+\hline
+Cétone & oxo- & -one \\
+\hline
+Acide carboxylique & carboxy- & -oïque \\
+\hline
+Amine & amino- & -amine \\
+\hline
+Alcène & & -ène \\
+\hline
+Alcyne & & -yne \\
+\hline
+\end{tabularx}
+
+\end{sectionbox}
+
+%\end{multicols}
+%==================== PRIORITE ====================
+
+\begin{sectionbox}[orangebox]{4. Choisir le groupe principal}
+
+Le groupe de plus haute priorité fournit le suffixe du nom.
+
+\vspace{0.3cm}
+
+\begin{center}
+\Large
+Acide $>$ Ester $>$ Aldéhyde $>$ Cétone $>$ Alcool $>$ Amine $>$ Alcène $>$ Alcyne $>$ Alcane
+\end{center}
+
+\end{sectionbox}
+
+\vspace{0.3cm}
+
+%==================== CONSTRUCTION ====================
+
+\begin{sectionbox}[cyanbox]{5. Construire le nom de la molécule}
+
+\begin{center}
+\Large
+\textbf{Préfixes + chaîne principale + insaturation + suffixe}
+\end{center}
+
+\vspace{0.4cm}
+
+\begin{tabularx}{\linewidth}{|X|X|X|X|}
+\hline
+\textbf{Étape} & \textbf{Exemple} & \textbf{Rôle} & \textbf{Exemple obtenu} \\
+\hline
+Substituants & 2-méthyl & Préfixe & 2-méthyl \\
+\hline
+Chaîne & hex- & Nombre de carbones & hex \\
+\hline
+Insaturation & -ène & Double liaison & hex-2-ène \\
+\hline
+Fonction & -ol & Groupe principal & hex-2-én-1-ol \\
+\hline
+\end{tabularx}
+
+\end{sectionbox}
+
+\vspace{0.4cm}
+
+%==================== EXEMPLES ====================
+
+\begin{sectionbox}[lightblue]{Exemples}
+
+\begin{enumerate}
+    \item \textbf{2-méthylhexane}
+    \item \textbf{3-éthylpent-1-ène}
+    \item \textbf{acide 2-méthylbutanoïque}
+\end{enumerate}
+
+\end{sectionbox}
+
+\end{document}

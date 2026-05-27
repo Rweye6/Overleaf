@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script>
+MathJax = {
+  tex: {
+    packages: {'[+]': ['mhchem']}
+  }
+};
+</script>
+
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<h1 id="diffraction-par-une-poudre-de-cacao">Diffraction par une poudre
+de cacao</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Question</th>
+<th style="text-align: left;">Correction</th>
+<th style="text-align: center;">Barème</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.a</td>
+<td style="text-align: left;">Un faisceau laser est :</td>
+<td style="text-align: center;">/1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">- monochromatique (même longueur
+d’onde)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">- cohérent (les ondes sont en phase)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">- directionnel (faible divergence)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.b</td>
+<td style="text-align: left;">La diffraction est d’autant plus
+importante que le diamètre <span class="math inline">\(a\)</span> de
+l’obstacle est petit devant la longueur d’onde <span
+class="math inline">\(\lambda\)</span>.</td>
+<td style="text-align: center;">/1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">La relation qui lie <span
+class="math inline">\(\lambda\)</span>, <span
+class="math inline">\(\theta_0\)</span> et <span
+class="math inline">\(a\)</span> est : <span
+class="math inline">\(\theta_0 = \dfrac{\lambda}{a}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.c</td>
+<td style="text-align: left;">Pour un angle <span
+class="math inline">\(\theta_0\)</span> petit, on a :</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(\tan \theta_0
+\approx \theta_0 = \dfrac{L/2}{D} = \dfrac{L}{2D}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">En remplaçant dans la relation précédente,
+on obtient :</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(\lambda = a
+\cdot \dfrac{L}{2D}\)</span> soit <span class="math inline">\(L = 2
+\lambda \cdot \dfrac{D}{a}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Donc <span class="math inline">\(L = k
+\cdot \dfrac{1}{a}\)</span> avec <span class="math inline">\(k = 2
+\lambda \cdot D\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.d</td>
+<td style="text-align: left;">A partir du graphique, on détermine la
+valeur du coefficient directeur <span class="math inline">\(k =
+\SI{2,5E-6}{\meter\squared}\)</span>.</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">On en déduit la valeur de la longueur
+d’onde :</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(\lambda =
+\dfrac{k}{2D} = \dfrac{\SI{2,5E-6}{\meter\squared}}{2 \cdot
+\SI{2,00}{\meter}} = \SI{6,25E-7}{\meter} = \SI{625}{nm}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.e</td>
+<td style="text-align: left;">L’incertitude absolue sur la longueur
+d’onde est :</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(u(\lambda) =
+\lambda \cdot \sqrt{\left(\dfrac{u(D)}{D}\right)^2 +
+\left(\dfrac{u(k)}{k}\right)^2}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(u(\lambda) =
+\SI{625}{nm} \cdot
+\sqrt{\left(\dfrac{\SI{0,01}{m}}{\SI{2,00}{m}}\right)^2 +
+\left(\dfrac{\SI{1,2E-7}{\meter\squared}}{\SI{2,5E-6}{\meter\squared}}\right)^2}
+\approx \SI{10}{nm}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">La valeur de la longueur d’onde avec son
+incertitude est : <span class="math inline">\(\lambda = \SI{625 \pm
+10}{nm}\)</span>.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Pour le z-score, on choisit la valeur
+théorique <span class="math inline">\(\lambda_{th} =
+\SI{635}{nm}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(z =
+\dfrac{|\lambda_{exp} - \lambda_{th}|}{u(\lambda)} =
+\dfrac{|\SI{625}{nm} - \SI{635}{nm}|}{\SI{10}{nm}} = 1\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Comme <span class="math inline">\(z &lt;
+2\)</span>, la valeur expérimentale est en accord avec la valeur
+théorique.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">2.a</td>
+<td style="text-align: left;">Les grains de cacao sont assimilés à des
+sphères. Lorsqu’un faisceau laser rencontre une sphère, on observe une
+figure de diffraction similaire à celle obtenue avec un trou circulaire
+de même diamètre.</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;">2.b</td>
+<td style="text-align: left;">On repère sur le graphique la position du
+premier minimum d’intensité lumineuse : <span
+class="math inline">\(\theta_0 \approx \SI{0,018}{rad}\)</span>.</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">On utilise la relation : <span
+class="math inline">\(\sin \theta_0 = \dfrac{1,22 \cdot
+\lambda}{a}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(a =
+\dfrac{1,22 \cdot \lambda}{\sin \theta_0} = \dfrac{1,22 \cdot
+\SI{635E-9}{m}}{\sin(\SI{0,018}{rad})} \approx \SI{4,30E-5}{m} =
+\SI{43,0}{\micro\meter}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Le diamètre moyen des grains de cacao est
+<span class="math inline">\(a \approx
+\SI{43,0}{\micro\meter}\)</span>.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Pour un chocolat de couverture, le
+diamètre moyen recommandé est <span class="math inline">\(a_{th} =
+\SI{10}{\micro\meter}\)</span>.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">On calcule le z-score :</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(z =
+\dfrac{|a_{exp} - a_{th}|}{u(a)}\)</span> avec <span
+class="math inline">\(u(a) = \SI{5}{\micro\meter}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(z =
+\dfrac{|\SI{43,0}{\micro\meter} -
+\SI{10}{\micro\meter}|}{\SI{5}{\micro\meter}} = 6,6\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Comme <span class="math inline">\(z &gt;
+2\)</span>, on ne peut pas utiliser cet échantillon pour un chocolat de
+couverture.</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="une-potion-radioactive">Une potion radioactive</h1>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Question</th>
+<th style="text-align: left;">Correction</th>
+<th style="text-align: center;">Barème</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.</td>
+<td style="text-align: left;">Les deux noyaux ont le même nombre de
+protons (88) mais un nombre de neutrons différent (138 pour le radium
+226 et 140 pour le radium 228).</td>
+<td style="text-align: center;">/1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2.</td>
+<td style="text-align: left;">Pour que la somme des nombres de masse
+soit conservée, on a :</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(228 = 228 + A
+\Rightarrow A = 0\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Pour que la somme des numéros atomiques
+soit conservée, on a :</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(88 = 89 + Z
+\Rightarrow Z = -1\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">La particule est donc un électron : <span
+class="math inline">\(\ce{^0_{-1}e}\)</span>. Il s’agit d’une
+radioactivité <span class="math inline">\(\beta^-\)</span>.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">3.</td>
+<td style="text-align: left;">La demi-vie est la durée au bout de
+laquelle la moitié des noyaux radioactifs initiaux se sont
+désintégrés.</td>
+<td style="text-align: center;">/1</td>
+</tr>
+<tr>
+<td style="text-align: center;">4.</td>
+<td style="text-align: left;">A partir de la courbe, on constate que
+l’activité passe de 3,7E4 Bq à 1,85E4 Bq en 1,60E3 ans.</td>
+<td style="text-align: center;">/1</td>
+</tr>
+<tr>
+<td style="text-align: center;">5.</td>
+<td style="text-align: left;">A <span class="math inline">\(t =
+t_{1/2}\)</span>, on a :</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(A(t_{1/2}) =
+A_0 \cdot e^{-\lambda \cdot t_{1/2}} = \dfrac{A_0}{2}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Donc <span
+class="math inline">\(e^{-\lambda \cdot t_{1/2}} = \dfrac{1}{2}\)</span>
+soit <span class="math inline">\(-\lambda \cdot t_{1/2} =
+\ln\left(\dfrac{1}{2}\right) = -\ln(2)\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">On en déduit : <span
+class="math inline">\(\lambda = \dfrac{\ln(2)}{t_{1/2}} =
+\dfrac{\ln(2)}{\SI{1,60E3}{ans}} =
+\SI{1,37E-11}{\per\second}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">6.</td>
+<td style="text-align: left;">L’activité est reliée au nombre de noyaux
+par la relation :</td>
+<td style="text-align: center;">/1</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(A(t) = \lambda
+\cdot N(t)\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">7.</td>
+<td style="text-align: left;">A <span class="math inline">\(t =
+0\)</span>, on a :</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(N_0 =
+\dfrac{A_0}{\lambda} =
+\dfrac{\SI{3,7E4}{Bq}}{\SI{1,37E-11}{\per\second}} \approx
+\num{2,70E15}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">8.</td>
+<td style="text-align: left;">La masse est reliée au nombre de noyaux
+par la relation :</td>
+<td style="text-align: center;">/2</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><span class="math inline">\(m_0 = N_0
+\cdot \dfrac{M}{N_A} = \num{2,70E15} \cdot
+\dfrac{\SI{226E-3}{\kilogram\per\mole}}{\SI{6,02E23}{\per\mole}} \approx
+\SI{1,0E-9}{\kilogram} = \SI{1,0}{\micro\gram}\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html>
