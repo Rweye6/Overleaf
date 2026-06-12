@@ -64,7 +64,7 @@
   "latex-workshop.latex.tools": [
   {
     "name": "latexmk",
-    "command": "/usr/bin/latexmk",
+    "command": "/Library/TeX/texbin/latexmk",
     "args": [
       "-synctex=1",
       "-interaction=nonstopmode",
@@ -73,5 +73,7 @@
       "%DOC%"
     ]
   }
+
 ]
 }
+
