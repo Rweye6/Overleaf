@@ -14,13 +14,13 @@ h2.subtitle {
 
 h2 {
     font-size: 20px;
-    color: #000000;
+    color: #173a70;
     text-align: left;
     font-weight: bold;
 }
 h3 {
     font-size: 16px;
-    color: #000000;
+    color: #173a70;
     text-align: left;
     font-weight: bold;
 }
@@ -44,11 +44,12 @@ td {
 }
 
 header {
-    background-color: #a3c6fa;
+    background-color: #ffffff;
     color: #000000;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+    border: #a3c6fa solid 3px;
 }
 
 .checklist {
